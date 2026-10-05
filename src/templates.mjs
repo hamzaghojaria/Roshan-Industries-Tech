@@ -648,7 +648,7 @@ export function aboutPage(products) {
     /* HTML */ `${breadcrumb('About Us')}
       <section class="container page-intro">
         <p class="eyebrow">QUALITY HAS A NAME</p>
-        <h1>A heritage built<br />around the details.</h1>
+        <h1>A heritage built around the details.</h1>
         <p>Roshan Industries. Watch parts manufacturing and tools for the craft of time.</p>
       </section>
       <section class="section container about-story">
