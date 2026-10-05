@@ -1,0 +1,1830 @@
+{
+  "source_pdf_sha256": "5d1cfc5fe2eb084ed8a47c65f2f1f720bd2d2a3e0087b60253237d41fcd4ec35",
+  "source_pages": 20,
+  "photo_panels": 200,
+  "unique_products": 199,
+  "categories": 15,
+  "uncaptioned_photos": [
+    "p17-01",
+    "p17-02",
+    "p19-01",
+    "p19-02",
+    "p19-03",
+    "p19-04"
+  ],
+  "ambiguous_names": [
+    "p03-10",
+    "p03-11",
+    "p16-11",
+    "p17-03",
+    "p18-01",
+    "p18-02",
+    "p18-04"
+  ],
+  "covers": [
+    1,
+    20
+  ],
+  "photos": [
+    {
+      "source_image": "p02-01",
+      "page": 2,
+      "slot": 1,
+      "sku": "RIT-0001",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "ad4c75d11cbcd641eb05b35002432951ccf67557094ab0cf81e0d99cff7eaec6"
+    },
+    {
+      "source_image": "p02-02",
+      "page": 2,
+      "slot": 2,
+      "sku": "RIT-0002",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "ef6cfb9400e0b69bd54345dd249b4d8448d0796c8f42716e77c9720187273ef1"
+    },
+    {
+      "source_image": "p02-03",
+      "page": 2,
+      "slot": 3,
+      "sku": "RIT-0003",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "bdb06a92790cf95b197f27da39624ef4fa8e5a7850d71d0c6f8c0011c5bd7b5b"
+    },
+    {
+      "source_image": "p02-04",
+      "page": 2,
+      "slot": 4,
+      "sku": "RIT-0004",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "71e6cdaa2d6ae190accd6fab3fa618b13e9047f7e31890f6ce3e9be251c75684"
+    },
+    {
+      "source_image": "p02-05",
+      "page": 2,
+      "slot": 5,
+      "sku": "RIT-0005",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "920628420c580d7a299f13c4e49ae548dbb76bc9b6c257ba427a5683d942cbc1"
+    },
+    {
+      "source_image": "p02-06",
+      "page": 2,
+      "slot": 6,
+      "sku": "RIT-0006",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "227665307d0911c3e9a98848ae5b6b2706679a36ace7d0d73b134dcba7b232b0"
+    },
+    {
+      "source_image": "p02-07",
+      "page": 2,
+      "slot": 7,
+      "sku": "RIT-0007",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9ba934550918378fde91710c5d573a1aefcbbbe51e39bd7f4e06e717718705fd"
+    },
+    {
+      "source_image": "p02-08",
+      "page": 2,
+      "slot": 8,
+      "sku": "RIT-0008",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "4a80166e6ebe7070a04e60c8552af09b35b50716fa10eb28b5099aad2d6591ea"
+    },
+    {
+      "source_image": "p02-09",
+      "page": 2,
+      "slot": 9,
+      "sku": "RIT-0009",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b960b12eba67abfaa7afd3834331ea4bc897179fd6d3abbccf79ffcedef86c70"
+    },
+    {
+      "source_image": "p02-10",
+      "page": 2,
+      "slot": 10,
+      "sku": "RIT-0010",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "476936ab1f256730906f5ff350d55b4fdbe47367d365a498214cf2429b48ac3f"
+    },
+    {
+      "source_image": "p02-11",
+      "page": 2,
+      "slot": 11,
+      "sku": "RIT-0011",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "7f743133804390a46c6fe3415b8f65fd63b1db1cee760cac0ba5b35178c24acd"
+    },
+    {
+      "source_image": "p02-12",
+      "page": 2,
+      "slot": 12,
+      "sku": "RIT-0012",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e0be27916da3343f6f21310d9fe1cf3384da2ae5fd7bee707b7e9533c84b2c06"
+    },
+    {
+      "source_image": "p03-01",
+      "page": 3,
+      "slot": 1,
+      "sku": "RIT-0013",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "8266b315015355f86c8b38ce76d7c7167928c0cb65d88d16724dfda5857d7f42"
+    },
+    {
+      "source_image": "p03-02",
+      "page": 3,
+      "slot": 2,
+      "sku": "RIT-0014",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "87837a95bd084c4cd5f0d914dc5290b0095b680c57684bfb1d6fbf4e3aa2ade9"
+    },
+    {
+      "source_image": "p03-03",
+      "page": 3,
+      "slot": 3,
+      "sku": "RIT-0015",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e15e5116e8798afe2249af6d54f131469784258744960851dc4ede89b3fa4525"
+    },
+    {
+      "source_image": "p03-04",
+      "page": 3,
+      "slot": 4,
+      "sku": "RIT-0016",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "67ca23140500a264ddad9be6e406a4b921620d61ac28dff91410c573fdb495e0"
+    },
+    {
+      "source_image": "p03-05",
+      "page": 3,
+      "slot": 5,
+      "sku": "RIT-0017",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b85a69da10e856c55dd5ba4b8de1fe9ac305a38be13c537933e2671fc1f6b5dd"
+    },
+    {
+      "source_image": "p03-06",
+      "page": 3,
+      "slot": 6,
+      "sku": "RIT-0018",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "1a03e628e6c389abc389212bf8ec4c18472e1c180dd6b6a5bf3f5c5ed6d40eb5"
+    },
+    {
+      "source_image": "p03-07",
+      "page": 3,
+      "slot": 7,
+      "sku": "RIT-0019",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "0000e74ee993b64e908357e02263e7e6234a19b3c28cf234b936d8a47f98febc"
+    },
+    {
+      "source_image": "p03-08",
+      "page": 3,
+      "slot": 8,
+      "sku": "RIT-0020",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e66c6dc9d3d0b781df5caefc769c1162c74a347b5f17cd9159efe9e75fc6bf20"
+    },
+    {
+      "source_image": "p03-09",
+      "page": 3,
+      "slot": 9,
+      "sku": "RIT-0021",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "8fcfc394165a68eb1b19c265746ecaf2b68496ae3ffdb8fe858e4459b06bd43f"
+    },
+    {
+      "source_image": "p03-10",
+      "page": 3,
+      "slot": 10,
+      "sku": "RIT-0022",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "0628e3306b4367050643dc5d1d7d4968819b16173f408e9569bfa7b49ed50f08"
+    },
+    {
+      "source_image": "p03-11",
+      "page": 3,
+      "slot": 11,
+      "sku": "RIT-0023",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "62f367dc9f44afc6c6be935f84bb9a5dde74f0b61cd2685f80e7413a571135ae"
+    },
+    {
+      "source_image": "p03-12",
+      "page": 3,
+      "slot": 12,
+      "sku": "RIT-0024",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "82fdbe6b4ef97df8db8c1569155a39009b993cbc4be770bae0c2a9cbd241342b"
+    },
+    {
+      "source_image": "p04-01",
+      "page": 4,
+      "slot": 1,
+      "sku": "RIT-0025",
+      "coverage": "Included",
+      "image_comparison_error": 2.0,
+      "image_sha256": "204eff52064230882db662cd400636a1138fdd7ef967915fa155f674b5e2257e"
+    },
+    {
+      "source_image": "p04-02",
+      "page": 4,
+      "slot": 2,
+      "sku": "RIT-0026",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "14cf32292d5915c8b2488b1a8b1e964fc039366707f4352a13f3751d99476c66"
+    },
+    {
+      "source_image": "p04-03",
+      "page": 4,
+      "slot": 3,
+      "sku": "RIT-0027",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "54664c3b8143f6d0b10a69e9bb9a6ebc1891981245080944ca7f1398d94ecf85"
+    },
+    {
+      "source_image": "p04-04",
+      "page": 4,
+      "slot": 4,
+      "sku": "RIT-0028",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "fd6513a252fd265836b7eb222b3161b5663e4a7220606e920c5737ff0c0076be"
+    },
+    {
+      "source_image": "p04-05",
+      "page": 4,
+      "slot": 5,
+      "sku": "RIT-0029",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "cd7b782de57169e0bf31e8d162b8e5132bae59c139a33abb7e643f12250d0fe5"
+    },
+    {
+      "source_image": "p04-06",
+      "page": 4,
+      "slot": 6,
+      "sku": "RIT-0030",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "cda7deca9a6884be23eb44c55fa2575c9715925a171d84106e3b37cc1cc2794c"
+    },
+    {
+      "source_image": "p04-07",
+      "page": 4,
+      "slot": 7,
+      "sku": "RIT-0031",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "cd77cde0c0646813247daede5ee393acbe2c64de7690866bc7775ce87e7bc11d"
+    },
+    {
+      "source_image": "p04-08",
+      "page": 4,
+      "slot": 8,
+      "sku": "RIT-0032",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "1301153dcbd8525ce2b43d58ce5f63261dd8eb8e0206df7b557f2322fde45321"
+    },
+    {
+      "source_image": "p04-09",
+      "page": 4,
+      "slot": 9,
+      "sku": "RIT-0033",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "5302ae06375994c6feef421b68523545c2f2ce6e1ae62edf62cf5d47b78c5652"
+    },
+    {
+      "source_image": "p04-10",
+      "page": 4,
+      "slot": 10,
+      "sku": "RIT-0034",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b68cd15e8814280b3ad2f0f09442dbd0dd7c71a3172972439ea387ff99f09556"
+    },
+    {
+      "source_image": "p04-11",
+      "page": 4,
+      "slot": 11,
+      "sku": "RIT-0035",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "45f56edbc6a21a5e5e56bcf342871977d2017e9f2c6ab240d03788945e857185"
+    },
+    {
+      "source_image": "p04-12",
+      "page": 4,
+      "slot": 12,
+      "sku": "RIT-0036",
+      "coverage": "Included",
+      "image_comparison_error": 1.667,
+      "image_sha256": "9a4cbb0bfef944d80c2d33fb5bc3947905889d061f2fa9f7a781abced787c13e"
+    },
+    {
+      "source_image": "p05-01",
+      "page": 5,
+      "slot": 1,
+      "sku": "RIT-0037",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "dfcb0e11841982fb7fdf3fb9b6ff40ad47466222748b93ca4b467bf804cf20d8"
+    },
+    {
+      "source_image": "p05-02",
+      "page": 5,
+      "slot": 2,
+      "sku": "RIT-0038",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f61d34f71c07a7262cfa8e3ee9d44ca1ab8916bb2a86f06af9611199ae5cac3b"
+    },
+    {
+      "source_image": "p05-03",
+      "page": 5,
+      "slot": 3,
+      "sku": "RIT-0039",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "492c4ae2d9e9b5d40b6c0c3b29a34a074d004db2dc9c3c18f3f78b37ed4cd988"
+    },
+    {
+      "source_image": "p05-04",
+      "page": 5,
+      "slot": 4,
+      "sku": "RIT-0039",
+      "coverage": "Repeated photo; represented by p05-03",
+      "image_comparison_error": 0.667,
+      "image_sha256": "56a0e341764bb54831ec318d9e4618277d4e13fb27adf22447ea4ed6f3e9aad5"
+    },
+    {
+      "source_image": "p05-05",
+      "page": 5,
+      "slot": 5,
+      "sku": "RIT-0040",
+      "coverage": "Included",
+      "image_comparison_error": 1.667,
+      "image_sha256": "136f60aa9b3682a3d0cff7ce625e3ef59888a25e469bc353ff921b42a430b674"
+    },
+    {
+      "source_image": "p05-06",
+      "page": 5,
+      "slot": 6,
+      "sku": "RIT-0041",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "2f5d0efff0c3b9f6eedcb79352ce46221ae4f00dcf18a09f3e0bfce22483d1fa"
+    },
+    {
+      "source_image": "p05-07",
+      "page": 5,
+      "slot": 7,
+      "sku": "RIT-0042",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "fd302f5d713f1c548dd393dfca4ab3cb7e4623f04127973ee3e532b6a739810b"
+    },
+    {
+      "source_image": "p05-08",
+      "page": 5,
+      "slot": 8,
+      "sku": "RIT-0043",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "3c7b7886da3c22a582a3c5818fbc19f890a7339ad2866c899630b85b1a117fee"
+    },
+    {
+      "source_image": "p05-09",
+      "page": 5,
+      "slot": 9,
+      "sku": "RIT-0044",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "4ab44985fc4e91ea017d5290ce46736075fc878320558fcff52fa2ca53b9fedf"
+    },
+    {
+      "source_image": "p05-10",
+      "page": 5,
+      "slot": 10,
+      "sku": "RIT-0045",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "39e1993dfad167aebeaaf0e75a12ca62055a977eb5181af8002f5d569590efd1"
+    },
+    {
+      "source_image": "p05-11",
+      "page": 5,
+      "slot": 11,
+      "sku": "RIT-0046",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b6e7a0bb9d99ff02f0dbefa3a7599ed0a91fc7851294b1030fad44e3f209a6a3"
+    },
+    {
+      "source_image": "p05-12",
+      "page": 5,
+      "slot": 12,
+      "sku": "RIT-0047",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "002100e377f2f23a5c964f3761a70593665766823c2560c53f54d4ac0a81cc3a"
+    },
+    {
+      "source_image": "p06-01",
+      "page": 6,
+      "slot": 1,
+      "sku": "RIT-0048",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9ebed5291f81eec230a39ec65fae7990b2ffa629744f3a321dd8620e7d2520be"
+    },
+    {
+      "source_image": "p06-02",
+      "page": 6,
+      "slot": 2,
+      "sku": "RIT-0049",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "31396c617e0aee090eaaf4596497bf06852496dd6eceb3b27f9dccc5b6975b4e"
+    },
+    {
+      "source_image": "p06-03",
+      "page": 6,
+      "slot": 3,
+      "sku": "RIT-0050",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "16828774801030ada7df430ea66c6888885c30f5e1700812fb59e4d13e6e7eb5"
+    },
+    {
+      "source_image": "p06-04",
+      "page": 6,
+      "slot": 4,
+      "sku": "RIT-0051",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "7168848c5cd27a72ac9fa5d721acdd8cfffafbc052a225f876f77cdf58877776"
+    },
+    {
+      "source_image": "p06-05",
+      "page": 6,
+      "slot": 5,
+      "sku": "RIT-0052",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9231e9778826f855403aa110207fd6e37858ad9de81360d0a01dfbbf1119f18b"
+    },
+    {
+      "source_image": "p06-06",
+      "page": 6,
+      "slot": 6,
+      "sku": "RIT-0053",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b17bed33ef652e2145440b5840ae5cfd11aaaff649adfc02b82e40a8b6364f1a"
+    },
+    {
+      "source_image": "p06-07",
+      "page": 6,
+      "slot": 7,
+      "sku": "RIT-0054",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f762a2b39a9175095a58971c18cfeb4f030dbc8793650e6fbc2e10ade2f2edd0"
+    },
+    {
+      "source_image": "p06-08",
+      "page": 6,
+      "slot": 8,
+      "sku": "RIT-0055",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "6700a8918d1d5f5e6ba5e8db2d439145f30663d067710425d2bbd30d4e7b8d8a"
+    },
+    {
+      "source_image": "p06-09",
+      "page": 6,
+      "slot": 9,
+      "sku": "RIT-0056",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "3ecc4535954f454885711d5f20bc9cd331dac19119eb9602be37ec363abd9373"
+    },
+    {
+      "source_image": "p06-10",
+      "page": 6,
+      "slot": 10,
+      "sku": "RIT-0057",
+      "coverage": "Included",
+      "image_comparison_error": 1.333,
+      "image_sha256": "43cb9f54e1b0277e1ffbe7c6948d8b739b2b7e346a810e18af23295110930893"
+    },
+    {
+      "source_image": "p06-11",
+      "page": 6,
+      "slot": 11,
+      "sku": "RIT-0058",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "80b404fcf9dfe888aec0490de7db92e67c01e6663afaa849b18f74640e702002"
+    },
+    {
+      "source_image": "p06-12",
+      "page": 6,
+      "slot": 12,
+      "sku": "RIT-0059",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "c068301bab7010addeaf906c227c2eba5be51b9aff7ad21f1bd5ef4760febecb"
+    },
+    {
+      "source_image": "p07-01",
+      "page": 7,
+      "slot": 1,
+      "sku": "RIT-0060",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "bee043081cdb059b8e8801e7bb30f36f4bbd9ff3e63937e1080c3b1ad80686b4"
+    },
+    {
+      "source_image": "p07-02",
+      "page": 7,
+      "slot": 2,
+      "sku": "RIT-0061",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "21a47b402145f20a3f50804f57c2b30a89da20fa52d556313c091b432ae8badf"
+    },
+    {
+      "source_image": "p07-03",
+      "page": 7,
+      "slot": 3,
+      "sku": "RIT-0062",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "a12e2626902ad65f5c2949e54fd30172fb2c580ca93d6b87cf698fac7526e9f9"
+    },
+    {
+      "source_image": "p07-04",
+      "page": 7,
+      "slot": 4,
+      "sku": "RIT-0063",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "f7e24e8f8429c2f3b21db237c7b29bf906e231def52cded26d628f8403f03695"
+    },
+    {
+      "source_image": "p07-05",
+      "page": 7,
+      "slot": 5,
+      "sku": "RIT-0064",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "2e4427dd5b91f0d6d852e347ee92bd12cc59df264586e93f3118d8735125324e"
+    },
+    {
+      "source_image": "p07-06",
+      "page": 7,
+      "slot": 6,
+      "sku": "RIT-0065",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "77da6da792e2821295893d48d687f801b527070a56f1f33bbd913a56e80b4afc"
+    },
+    {
+      "source_image": "p07-07",
+      "page": 7,
+      "slot": 7,
+      "sku": "RIT-0066",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f69ba77dc5c5fba0d120bdc07f961cf54e7c26849e472945c138e26f09a8391a"
+    },
+    {
+      "source_image": "p07-08",
+      "page": 7,
+      "slot": 8,
+      "sku": "RIT-0067",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f03c290133a867301a6090c82fd9010736b8a70926f37123916ff7235a1c6eed"
+    },
+    {
+      "source_image": "p07-09",
+      "page": 7,
+      "slot": 9,
+      "sku": "RIT-0068",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "12598dc0055c8dde5c811378a5f6fe81723f58e083eb50d7e3d4263bd0c74852"
+    },
+    {
+      "source_image": "p07-10",
+      "page": 7,
+      "slot": 10,
+      "sku": "RIT-0069",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f89a461f92ced926932383d99b53560db334c745a8cd94bd624f7bf1615ac270"
+    },
+    {
+      "source_image": "p07-11",
+      "page": 7,
+      "slot": 11,
+      "sku": "RIT-0070",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "520338f0b75609c1dee6276aaa6da90eb10098d275e8f2669bb1d8b5ef744a89"
+    },
+    {
+      "source_image": "p07-12",
+      "page": 7,
+      "slot": 12,
+      "sku": "RIT-0071",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b3ba347a00037ee660325f24c2caf3f06873a3d9ef4a8a721530643cf01f6ae9"
+    },
+    {
+      "source_image": "p08-01",
+      "page": 8,
+      "slot": 1,
+      "sku": "RIT-0072",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "a08eb6904860b40c1f9e26bc83eee52cb049e58e110cbf8b73ad526e4efd960c"
+    },
+    {
+      "source_image": "p08-02",
+      "page": 8,
+      "slot": 2,
+      "sku": "RIT-0073",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e4fe51ef0cda4e933cd23b593a0c628ae06c4f055369707796a15e20f2ddf5fe"
+    },
+    {
+      "source_image": "p08-03",
+      "page": 8,
+      "slot": 3,
+      "sku": "RIT-0074",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "66386223453fe1776073a7bd8c343e77f5f692e4dcb6ce0ed28d809601399a8a"
+    },
+    {
+      "source_image": "p08-04",
+      "page": 8,
+      "slot": 4,
+      "sku": "RIT-0075",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "3a7abf12e7c923b11aec15af07488b326f119051c6bd4cece242024c4be5153d"
+    },
+    {
+      "source_image": "p08-05",
+      "page": 8,
+      "slot": 5,
+      "sku": "RIT-0076",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "15734ae983a20438dd6703d7ff6b9164e966a17a3e5bb22719ffc03a75ba9c0d"
+    },
+    {
+      "source_image": "p08-06",
+      "page": 8,
+      "slot": 6,
+      "sku": "RIT-0077",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "2ef64d9c53837549e4ad8afb3b7d93524fb1ed18aa70cf112d4365be68760eb6"
+    },
+    {
+      "source_image": "p08-07",
+      "page": 8,
+      "slot": 7,
+      "sku": "RIT-0078",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "baca806cbb3537f4edab18f3ea7b7c2659584cc66537aea2b4dbe45cbfe6fb37"
+    },
+    {
+      "source_image": "p08-08",
+      "page": 8,
+      "slot": 8,
+      "sku": "RIT-0079",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "a588eac14f8685e32536818339a1aad7b12eb0553f1ab745c685a4eb7d55270a"
+    },
+    {
+      "source_image": "p08-09",
+      "page": 8,
+      "slot": 9,
+      "sku": "RIT-0080",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "893fa8fec0b35a966d5ed006319c532d32dc1f8e71f3597c3ddad9c98ef21fe3"
+    },
+    {
+      "source_image": "p08-10",
+      "page": 8,
+      "slot": 10,
+      "sku": "RIT-0081",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "56488362c9f06000a468443f833d14f1201d9b2f7574ffba90d0fcd5c1449084"
+    },
+    {
+      "source_image": "p08-11",
+      "page": 8,
+      "slot": 11,
+      "sku": "RIT-0082",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "a1ccc53504bbbf6c152fc03cc6b00cbe7ebc5991e30a2a4f22bface38548b892"
+    },
+    {
+      "source_image": "p08-12",
+      "page": 8,
+      "slot": 12,
+      "sku": "RIT-0083",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "cb71b4436e25d7aec9d15ddb4664d1fabdba8e666fa66e5c5b10c976b526ee94"
+    },
+    {
+      "source_image": "p09-01",
+      "page": 9,
+      "slot": 1,
+      "sku": "RIT-0084",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "837a9f97e3106ae85cce10c4bc8a45f9f06febcea09ca8ab975086a1590b8225"
+    },
+    {
+      "source_image": "p09-02",
+      "page": 9,
+      "slot": 2,
+      "sku": "RIT-0085",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "2f011d89db24cedf5a17f2a408a662dffec490f80d81440a345a014b8dd96882"
+    },
+    {
+      "source_image": "p09-03",
+      "page": 9,
+      "slot": 3,
+      "sku": "RIT-0086",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "3fa985eb6c31d4d584741d3372c61d0d1b5561e115af8ff3ec54d45093dbb1a0"
+    },
+    {
+      "source_image": "p09-04",
+      "page": 9,
+      "slot": 4,
+      "sku": "RIT-0087",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "794d842c35fcc6343b211b98e04030dd5441514fef16fbda880a781746e4c52e"
+    },
+    {
+      "source_image": "p09-05",
+      "page": 9,
+      "slot": 5,
+      "sku": "RIT-0088",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "b6de0342702b05e47ee1920d34007567a51157b80f01397abafdf05fe7bd080d"
+    },
+    {
+      "source_image": "p09-06",
+      "page": 9,
+      "slot": 6,
+      "sku": "RIT-0089",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "05e484d6b20ff6afb18da80b5a12d9651197fccbff4ab0e417420d90b9fdc306"
+    },
+    {
+      "source_image": "p09-07",
+      "page": 9,
+      "slot": 7,
+      "sku": "RIT-0090",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "1aa66de335b70e459cd0a1c88c897678fa554b637b236011e4526c2f9eb98fe9"
+    },
+    {
+      "source_image": "p09-08",
+      "page": 9,
+      "slot": 8,
+      "sku": "RIT-0091",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "4000ac30a19e5b124fa10764e9eeaa8b4617e83e87c9f05a02e8237b82e06cf2"
+    },
+    {
+      "source_image": "p09-09",
+      "page": 9,
+      "slot": 9,
+      "sku": "RIT-0092",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "a382add31d2c40bbe190919993a6b4ddec2dd643f19d5a7d318c3d745862eebf"
+    },
+    {
+      "source_image": "p09-10",
+      "page": 9,
+      "slot": 10,
+      "sku": "RIT-0093",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "aebcc768481e7220613184b1ea53b6fa79c63d203130617e4c482f915138c793"
+    },
+    {
+      "source_image": "p09-11",
+      "page": 9,
+      "slot": 11,
+      "sku": "RIT-0094",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "4a8c73f0439b7c6dcf8bd3fa9d19c3421f5a5db4d367fb7a64e65c62c74e1d7c"
+    },
+    {
+      "source_image": "p09-12",
+      "page": 9,
+      "slot": 12,
+      "sku": "RIT-0095",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "1608a75060bdebf39163db54189e86b0ce7190614f18154672ef1e965d382e02"
+    },
+    {
+      "source_image": "p10-01",
+      "page": 10,
+      "slot": 1,
+      "sku": "RIT-0096",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "ddd044f56098bf891dc667bfb4b4299df69c4f70c0a9495f7ea4f3e9b7bcdbd8"
+    },
+    {
+      "source_image": "p10-02",
+      "page": 10,
+      "slot": 2,
+      "sku": "RIT-0097",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "d7dd728b2b2abf9698a889624cde8ae89e20b1668f1234f270990e20b7e44416"
+    },
+    {
+      "source_image": "p10-03",
+      "page": 10,
+      "slot": 3,
+      "sku": "RIT-0098",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f3a28b1b86e7b37bd54e8b6c6e084f9d85f3f9ed0320558fcacebc68ba224f9f"
+    },
+    {
+      "source_image": "p10-04",
+      "page": 10,
+      "slot": 4,
+      "sku": "RIT-0099",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9b71d898ef3d96ec1bfbde2ed09c23dc826ccffca23445c65eb25c3ba1ba05b3"
+    },
+    {
+      "source_image": "p10-05",
+      "page": 10,
+      "slot": 5,
+      "sku": "RIT-0100",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "89f0d78012c04d61c54b68cbcb4f9f7cb11ce110914d6b958d4506da43852df6"
+    },
+    {
+      "source_image": "p10-06",
+      "page": 10,
+      "slot": 6,
+      "sku": "RIT-0101",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e4539532dc53cf1a01d0a102d377600f2cbef12764e1bc84ee42385b85faefc6"
+    },
+    {
+      "source_image": "p10-07",
+      "page": 10,
+      "slot": 7,
+      "sku": "RIT-0102",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "6bfe09ee7a4e032d3aa1205e31490594375dfd3b99d930442bd5c5f011e273b1"
+    },
+    {
+      "source_image": "p10-08",
+      "page": 10,
+      "slot": 8,
+      "sku": "RIT-0103",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "904e9cbcd28244fb3470bcf9b60d0315af8a6ab5baf4d30e6a4e3f2da008f946"
+    },
+    {
+      "source_image": "p10-09",
+      "page": 10,
+      "slot": 9,
+      "sku": "RIT-0104",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "43d1e5be8c25f0badce46658bf17355a779c3f6b7909aa25f29e8bf24fe1c1d1"
+    },
+    {
+      "source_image": "p10-10",
+      "page": 10,
+      "slot": 10,
+      "sku": "RIT-0105",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "7e46a22e6029b388221ef6f158f8baec95117e8574cbdd5005ac10b412941ea7"
+    },
+    {
+      "source_image": "p10-11",
+      "page": 10,
+      "slot": 11,
+      "sku": "RIT-0106",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "dd4eeba40adab71fe8499ee6d96f0b7fcc900968d118368b6bd6729108c471c4"
+    },
+    {
+      "source_image": "p10-12",
+      "page": 10,
+      "slot": 12,
+      "sku": "RIT-0107",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "caea8dc7fa9a81b8c9a752413a05c1eec8b94ae8b4949b3d920a874c1a37c42a"
+    },
+    {
+      "source_image": "p11-01",
+      "page": 11,
+      "slot": 1,
+      "sku": "RIT-0108",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "fa518698047d17f0971b1dfe0ab5a5a0ec01bf60621382e50fd9f3d98125fe03"
+    },
+    {
+      "source_image": "p11-02",
+      "page": 11,
+      "slot": 2,
+      "sku": "RIT-0109",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "0185cebf9007863418eeb1b62886347b1810e4949c29fde133a227e29ac9417e"
+    },
+    {
+      "source_image": "p11-03",
+      "page": 11,
+      "slot": 3,
+      "sku": "RIT-0110",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "85016bcc4afdc99c1a8715d2446343ccc6e2c04da5e0cc3610301a39e3d5ff52"
+    },
+    {
+      "source_image": "p11-04",
+      "page": 11,
+      "slot": 4,
+      "sku": "RIT-0111",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "2a33e273b03989010b2377484eddc0bad0ec16fc853ce5b3fec6aa336370d441"
+    },
+    {
+      "source_image": "p11-05",
+      "page": 11,
+      "slot": 5,
+      "sku": "RIT-0112",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "bcf5004e37118769c145977c66ba18bff9992490404eea71800388b88ebb52dc"
+    },
+    {
+      "source_image": "p11-06",
+      "page": 11,
+      "slot": 6,
+      "sku": "RIT-0113",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "ac16b6fb85b8c6b84fd180f89d13b519e717951affccfdde6e56012b68eb7922"
+    },
+    {
+      "source_image": "p11-07",
+      "page": 11,
+      "slot": 7,
+      "sku": "RIT-0114",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "35027dfeb5d197fde7b465a8cfb916935cbbcc6edcae95e3cc53f25f34615aa2"
+    },
+    {
+      "source_image": "p11-08",
+      "page": 11,
+      "slot": 8,
+      "sku": "RIT-0115",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "cfc60c00192cc8514ba4c5c60bdfcd891107191c3bdfc9c28743502e4899c81c"
+    },
+    {
+      "source_image": "p11-09",
+      "page": 11,
+      "slot": 9,
+      "sku": "RIT-0116",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "3fdca0646c04cdc5eb5fd13ff9cebc202c37df7c65aef0b57df9c1ec553bdbee"
+    },
+    {
+      "source_image": "p11-10",
+      "page": 11,
+      "slot": 10,
+      "sku": "RIT-0117",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "a5b6677380d31412964f0c58549ab28bc48eea3294f75faf49c9928333e73156"
+    },
+    {
+      "source_image": "p11-11",
+      "page": 11,
+      "slot": 11,
+      "sku": "RIT-0118",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b27ecf8305e0b1244627e2c4282b0d963ef2988ec4e32cdbe3a8f6816e03b656"
+    },
+    {
+      "source_image": "p11-12",
+      "page": 11,
+      "slot": 12,
+      "sku": "RIT-0119",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "379ca2f093fb70ddb6758b1430756c8392a66599017c3f61e8373f46fa3fea2b"
+    },
+    {
+      "source_image": "p12-01",
+      "page": 12,
+      "slot": 1,
+      "sku": "RIT-0120",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "564e417dabc17ca2a9d26a89779ef56e870e8c55f030738989207e239a0b2799"
+    },
+    {
+      "source_image": "p12-02",
+      "page": 12,
+      "slot": 2,
+      "sku": "RIT-0121",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "7ac69755aeaab49df5ed738f90a87e4dd39addf82fbcd82ba3dfb16782b6d1f9"
+    },
+    {
+      "source_image": "p12-03",
+      "page": 12,
+      "slot": 3,
+      "sku": "RIT-0122",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "d18dd5646ad7d24de25a27969ae232826fab0f990eeb6c4e579f2accca855bf2"
+    },
+    {
+      "source_image": "p12-04",
+      "page": 12,
+      "slot": 4,
+      "sku": "RIT-0123",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "0c31333fda8792792c8647a2637cc56b76cf6dc09f7e28e4d02efe45e38b2411"
+    },
+    {
+      "source_image": "p12-05",
+      "page": 12,
+      "slot": 5,
+      "sku": "RIT-0124",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "57e3e5f3500d2837f521230b8c891e32b15c05c1f22e6b00ee4f6b131bc7da9c"
+    },
+    {
+      "source_image": "p12-06",
+      "page": 12,
+      "slot": 6,
+      "sku": "RIT-0125",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "61804da594e0fef34875c147e3e8a5d4cdde308216d703f8db2bd6f259818835"
+    },
+    {
+      "source_image": "p12-07",
+      "page": 12,
+      "slot": 7,
+      "sku": "RIT-0126",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "c6411bd888ddb678d8bddd53b4858c04e3aab1084d43d314465d01e148b4ac6e"
+    },
+    {
+      "source_image": "p12-08",
+      "page": 12,
+      "slot": 8,
+      "sku": "RIT-0127",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "36f4c21daa43b2f670fb62b103386495bb1c857dcfc824c0be8d3a578a6d32d5"
+    },
+    {
+      "source_image": "p12-09",
+      "page": 12,
+      "slot": 9,
+      "sku": "RIT-0128",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "27a88d85877f27345441fa602aab4e92027bacd3c4002966c3acc7e51ea8e89b"
+    },
+    {
+      "source_image": "p12-10",
+      "page": 12,
+      "slot": 10,
+      "sku": "RIT-0129",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "a0d8f72e2b49901f8bfc261209fc630930d5967d4d5435835ad8adf78c69215c"
+    },
+    {
+      "source_image": "p12-11",
+      "page": 12,
+      "slot": 11,
+      "sku": "RIT-0130",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e1626ada2ef9e9a94270e5c96f8ada72773977a8abf96660382b4c8bd19e261a"
+    },
+    {
+      "source_image": "p12-12",
+      "page": 12,
+      "slot": 12,
+      "sku": "RIT-0131",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "be733e6b66232597236f480e826fc24954ca09f42012b4146b5220d5761e940d"
+    },
+    {
+      "source_image": "p13-01",
+      "page": 13,
+      "slot": 1,
+      "sku": "RIT-0132",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "3ddfbc64133a834f2629b23c73a766eb01753dd667345ac37971772d0f95babb"
+    },
+    {
+      "source_image": "p13-02",
+      "page": 13,
+      "slot": 2,
+      "sku": "RIT-0133",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "4b7f957a8440aa63919e85b52d5a54243605c42055a10d807c467164a6cf7d5e"
+    },
+    {
+      "source_image": "p13-03",
+      "page": 13,
+      "slot": 3,
+      "sku": "RIT-0134",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "0a0f72383b8488679071c6a45844b9c39cb1324286c0bde36dbabb5cb3384b89"
+    },
+    {
+      "source_image": "p13-04",
+      "page": 13,
+      "slot": 4,
+      "sku": "RIT-0135",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "38e1960afa8df4a1c67b6b2c7b3a19a77089a4a50c01904b4ab1277758804652"
+    },
+    {
+      "source_image": "p13-05",
+      "page": 13,
+      "slot": 5,
+      "sku": "RIT-0136",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "1a8aadcb87f08c161e12121239bd7671b7eca586d903f7bc1eef4a26f9b6b66d"
+    },
+    {
+      "source_image": "p13-06",
+      "page": 13,
+      "slot": 6,
+      "sku": "RIT-0137",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "03ec57b4e78e7b7ef4bacdd8c465b1543ff542b3e87527475f2f8126ca0c936b"
+    },
+    {
+      "source_image": "p13-07",
+      "page": 13,
+      "slot": 7,
+      "sku": "RIT-0138",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "0bf7c238e42e3f4c588befcc96dbae4ba59664612656dbe6c438d5e7d0eea8e8"
+    },
+    {
+      "source_image": "p13-08",
+      "page": 13,
+      "slot": 8,
+      "sku": "RIT-0139",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "6bf5ac379240324a834234b5e40e1d8c3818ac42866b6e33bf5e73b710376cc5"
+    },
+    {
+      "source_image": "p13-09",
+      "page": 13,
+      "slot": 9,
+      "sku": "RIT-0140",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "2b945f262e72701cb55d04f483f09a5499d009db0eec0e6b3af7fa98e92ac224"
+    },
+    {
+      "source_image": "p13-10",
+      "page": 13,
+      "slot": 10,
+      "sku": "RIT-0141",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "af0722e6c73127a4a989060c63cab187667f2efbec7860127d4ba50f5a618b89"
+    },
+    {
+      "source_image": "p13-11",
+      "page": 13,
+      "slot": 11,
+      "sku": "RIT-0142",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "27fae9287f1446340f9556fcc0169409164b8c53fec66e2fbb94db82c0bf3e6f"
+    },
+    {
+      "source_image": "p13-12",
+      "page": 13,
+      "slot": 12,
+      "sku": "RIT-0143",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "bb113cfd2e3ed308bedf6bd444d9af0a8281663d2ed70a15d2e4f63c3dd85ced"
+    },
+    {
+      "source_image": "p14-01",
+      "page": 14,
+      "slot": 1,
+      "sku": "RIT-0144",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "ce95aeac0d25912a3e6f5c3ee876c885980199fad56272d866654a55ec9dac1e"
+    },
+    {
+      "source_image": "p14-02",
+      "page": 14,
+      "slot": 2,
+      "sku": "RIT-0145",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "cb1269586640a6797ee62808c2fd5aaa6170411def49b61c15dbaf9df864d349"
+    },
+    {
+      "source_image": "p14-03",
+      "page": 14,
+      "slot": 3,
+      "sku": "RIT-0146",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "c231e24bd7373b32974793f648bb125a76cd653dc3df9ae04d7a03b9c9c0cd92"
+    },
+    {
+      "source_image": "p14-04",
+      "page": 14,
+      "slot": 4,
+      "sku": "RIT-0147",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "379e6fde566a4919411574a8f98094ed26b5ba46bb6ae55fc7db66721bf3abde"
+    },
+    {
+      "source_image": "p14-05",
+      "page": 14,
+      "slot": 5,
+      "sku": "RIT-0148",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f1d0bba503a92bf42625ea57d568c47c64b273b1e7c114253ded14a2eadc8742"
+    },
+    {
+      "source_image": "p14-06",
+      "page": 14,
+      "slot": 6,
+      "sku": "RIT-0149",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9b25e36a3299d997d81adc4f6cff5ab5725a6e077b5a0cecba39139e034719eb"
+    },
+    {
+      "source_image": "p14-07",
+      "page": 14,
+      "slot": 7,
+      "sku": "RIT-0150",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "972305fecca12394270d1095bb53005f9e578efb0ff1eef7fdcd52638a55bcd3"
+    },
+    {
+      "source_image": "p14-08",
+      "page": 14,
+      "slot": 8,
+      "sku": "RIT-0151",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b98b4dde58636903f45c87f3b03d7721e1513a4c2500849d1edbe5804e145156"
+    },
+    {
+      "source_image": "p14-09",
+      "page": 14,
+      "slot": 9,
+      "sku": "RIT-0152",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "627d24b1f79ad8c265d1f4d18e11c5939d81ee51c0b9c580eeaf3554fed74d85"
+    },
+    {
+      "source_image": "p14-10",
+      "page": 14,
+      "slot": 10,
+      "sku": "RIT-0153",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "d0eca9a3745e0dadad7de22f3992985ce9d06ce0fbfc8cd0c260a4a2dd353e44"
+    },
+    {
+      "source_image": "p14-11",
+      "page": 14,
+      "slot": 11,
+      "sku": "RIT-0154",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "d216bbb08c5c5bd47cdbe84c992d4dd5700b19126f3cd731b1920d46cddd8422"
+    },
+    {
+      "source_image": "p14-12",
+      "page": 14,
+      "slot": 12,
+      "sku": "RIT-0155",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "5578e7acd2e91c90ce9cd5fc73fbf275233772ee40a713b6893ac36545b968c5"
+    },
+    {
+      "source_image": "p15-01",
+      "page": 15,
+      "slot": 1,
+      "sku": "RIT-0156",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "e10a0e1eb12036ef2a2d6b84f5ea4c7bb9d13708c713453ddc90e3600090c120"
+    },
+    {
+      "source_image": "p15-02",
+      "page": 15,
+      "slot": 2,
+      "sku": "RIT-0157",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "f58aa6b53f5d3fb648780c5aa854a84578b7ac7529a0ba2bafda9812e81e0e8f"
+    },
+    {
+      "source_image": "p15-03",
+      "page": 15,
+      "slot": 3,
+      "sku": "RIT-0158",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "aa970f7c99ee988d2613021ba6136dab4ef0b45d485520d3ae608802ab761cee"
+    },
+    {
+      "source_image": "p15-04",
+      "page": 15,
+      "slot": 4,
+      "sku": "RIT-0159",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b12b92b14944b9a50184167bbdda48e68aa4c15d69193b3e2ab3482dbca86b11"
+    },
+    {
+      "source_image": "p15-05",
+      "page": 15,
+      "slot": 5,
+      "sku": "RIT-0160",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b1d62830bad04cc6183eac3196816ef53ff688b90ec927f0fa2667e81f1cdbdc"
+    },
+    {
+      "source_image": "p15-06",
+      "page": 15,
+      "slot": 6,
+      "sku": "RIT-0161",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "e7678c50b4ac8ca456bd2657122f0c4e303e1b386ce79438e7f110b4e5b31331"
+    },
+    {
+      "source_image": "p15-07",
+      "page": 15,
+      "slot": 7,
+      "sku": "RIT-0162",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "25d01648b3d4202adcec136e62ae15053b097869fa08bd82030e2633999ce19e"
+    },
+    {
+      "source_image": "p15-08",
+      "page": 15,
+      "slot": 8,
+      "sku": "RIT-0163",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "59296707139ddca97e56ad4ce4ac01b62de191eabd617d6bd06b0d731070b8c9"
+    },
+    {
+      "source_image": "p15-09",
+      "page": 15,
+      "slot": 9,
+      "sku": "RIT-0164",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "4fd49b2fc38da1d3ddc9e6af8a182255977f9f57f2a24a0bc0fb31d72c4863d1"
+    },
+    {
+      "source_image": "p15-10",
+      "page": 15,
+      "slot": 10,
+      "sku": "RIT-0165",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "aca8e18cda572383c43ef34dd95916b55b6e05dc7a79b31dc4a0a60abd69a100"
+    },
+    {
+      "source_image": "p15-11",
+      "page": 15,
+      "slot": 11,
+      "sku": "RIT-0166",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "ff8d24760a57f7e7eb4f276bae0f930c43b6dcd561c04cf0ce9745592a81165b"
+    },
+    {
+      "source_image": "p15-12",
+      "page": 15,
+      "slot": 12,
+      "sku": "RIT-0167",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "377f76f0d8ef83bb215c4fffe8883d960b26a6951f3a0fc41c49b8f5cf6ec4c1"
+    },
+    {
+      "source_image": "p16-01",
+      "page": 16,
+      "slot": 1,
+      "sku": "RIT-0168",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "37999cad596adaed64b40dc56385b4f8cd5234d04ffb1a29b63739c412de3ac8"
+    },
+    {
+      "source_image": "p16-02",
+      "page": 16,
+      "slot": 2,
+      "sku": "RIT-0169",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "01702ddc025ff4b68b044bd2a44331286f599a855922ffa053682ee709791aa1"
+    },
+    {
+      "source_image": "p16-03",
+      "page": 16,
+      "slot": 3,
+      "sku": "RIT-0170",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b5ecd39811ef970c706d84e4993b8f9abe79c9179c325c9da4aad6b35d6179b8"
+    },
+    {
+      "source_image": "p16-04",
+      "page": 16,
+      "slot": 4,
+      "sku": "RIT-0171",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "1360e57ace814defe9c1efee56df6e4e6f81e524c2cbb5f770cbaef77adfa176"
+    },
+    {
+      "source_image": "p16-05",
+      "page": 16,
+      "slot": 5,
+      "sku": "RIT-0172",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "4d02e6b6f554b639e14ec2372a1f2d7ec76f725ca127c83b27a739ee91f25ec7"
+    },
+    {
+      "source_image": "p16-06",
+      "page": 16,
+      "slot": 6,
+      "sku": "RIT-0173",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "7efe36ebef401b7fe2179d946a667c9b0689e4408a11f772ac122e31ae83199c"
+    },
+    {
+      "source_image": "p16-07",
+      "page": 16,
+      "slot": 7,
+      "sku": "RIT-0174",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "fbb45cdecea26c62fd1f90372e148e1d6bf021d9fc37f0ac46dd39b040c0dada"
+    },
+    {
+      "source_image": "p16-08",
+      "page": 16,
+      "slot": 8,
+      "sku": "RIT-0175",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "404cfeb17ff4c455bf15f04581edb58f1486aeb3047355d26bbb9e2d75a489a4"
+    },
+    {
+      "source_image": "p16-09",
+      "page": 16,
+      "slot": 9,
+      "sku": "RIT-0176",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "42eea511d3a9230571a475bc8da3df49e6416648cd9537c07f215f48eaa73186"
+    },
+    {
+      "source_image": "p16-10",
+      "page": 16,
+      "slot": 10,
+      "sku": "RIT-0177",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "dc66a10bf0e0a64e631aeff3f8da43609e5714445d3eb4b30112ebf0a2cae0bc"
+    },
+    {
+      "source_image": "p16-11",
+      "page": 16,
+      "slot": 11,
+      "sku": "RIT-0178",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "de3c4150b27072563f193f1807e8441e5f98d0659dcf877468d56361ff709684"
+    },
+    {
+      "source_image": "p16-12",
+      "page": 16,
+      "slot": 12,
+      "sku": "RIT-0179",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "c4b6b3e899c89fcdc3303d592f20aadefcfd82bf252415cc8caf859e41820b5a"
+    },
+    {
+      "source_image": "p17-01",
+      "page": 17,
+      "slot": 1,
+      "sku": "RIT-0180",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "b64071a7111b243ca4f444c2ef5984ad05d7672fe1dbb7fd802a67dabfff35eb"
+    },
+    {
+      "source_image": "p17-02",
+      "page": 17,
+      "slot": 2,
+      "sku": "RIT-0181",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9f5d1e94bffc419a8c9918c0d6402c7f9dfb2cd4c1861c4917849ddb98750edc"
+    },
+    {
+      "source_image": "p17-03",
+      "page": 17,
+      "slot": 3,
+      "sku": "RIT-0182",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "0d9dd0ae41fc16edc6437c8b61ed31d96e50f73f534e1360e9e5d97f1c685f66"
+    },
+    {
+      "source_image": "p17-04",
+      "page": 17,
+      "slot": 4,
+      "sku": "RIT-0183",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "ed75fc541c3705ae9ccec438037d1a5807698e30768d99c85bd8872662472acd"
+    },
+    {
+      "source_image": "p17-05",
+      "page": 17,
+      "slot": 5,
+      "sku": "RIT-0184",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "dc29cbcd7bbf75083965184e8f21b43d1242b2440c80c1812880eaaa390bdd46"
+    },
+    {
+      "source_image": "p17-06",
+      "page": 17,
+      "slot": 6,
+      "sku": "RIT-0185",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "1727f431d226fa4d0658d965b9e2cc5357c46e388aefc599bd55f5f60a87acbc"
+    },
+    {
+      "source_image": "p17-07",
+      "page": 17,
+      "slot": 7,
+      "sku": "RIT-0186",
+      "coverage": "Included",
+      "image_comparison_error": 0.667,
+      "image_sha256": "fd50404cef9b38959ddb39490a87a80cb336d7391f51e84bdff13a11749390b7"
+    },
+    {
+      "source_image": "p17-08",
+      "page": 17,
+      "slot": 8,
+      "sku": "RIT-0187",
+      "coverage": "Included",
+      "image_comparison_error": 1.333,
+      "image_sha256": "706fe0204fee268ac3d2e7753e957f090144c3ed62b5e46f5fa9b92aed5be009"
+    },
+    {
+      "source_image": "p17-09",
+      "page": 17,
+      "slot": 9,
+      "sku": "RIT-0188",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "7ddb5ea32350e7c4925285ef7f76d8d9be37c0f039b87a8bceff0c198cac8f69"
+    },
+    {
+      "source_image": "p17-10",
+      "page": 17,
+      "slot": 10,
+      "sku": "RIT-0189",
+      "coverage": "Included",
+      "image_comparison_error": 1.333,
+      "image_sha256": "02afdcee5531209335397eb4316902437f70408b12a259454da15c7f7eae4de7"
+    },
+    {
+      "source_image": "p17-11",
+      "page": 17,
+      "slot": 11,
+      "sku": "RIT-0190",
+      "coverage": "Included",
+      "image_comparison_error": 0.0,
+      "image_sha256": "63ee6a5144681659efe41ef40097f2d2cc5ef61d038656bedddda1449ac36190"
+    },
+    {
+      "source_image": "p17-12",
+      "page": 17,
+      "slot": 12,
+      "sku": "RIT-0191",
+      "coverage": "Included",
+      "image_comparison_error": 0.333,
+      "image_sha256": "cc26df623a8cdf5f5ffab04ed429d6213d3315c8260f5a81e241a91528b869ba"
+    },
+    {
+      "source_image": "p18-01",
+      "page": 18,
+      "slot": 1,
+      "sku": "RIT-0192",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "dce9855abdeafeafd0b2e8d1814fa752c0f5757b8dc44e9a9185003104a9ba4b"
+    },
+    {
+      "source_image": "p18-02",
+      "page": 18,
+      "slot": 2,
+      "sku": "RIT-0193",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "ef462a8db5765e740d60f178334f4559ae0b11341714ee821a3da857f03e1969"
+    },
+    {
+      "source_image": "p18-03",
+      "page": 18,
+      "slot": 3,
+      "sku": "RIT-0194",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "9f141e87df157da65fbb1855a094377e0ec8eaa52067d61fcd0b8024ccbdeeed"
+    },
+    {
+      "source_image": "p18-04",
+      "page": 18,
+      "slot": 4,
+      "sku": "RIT-0195",
+      "coverage": "Included",
+      "image_comparison_error": 1.0,
+      "image_sha256": "5a9eb4a6e368fc0f432c855600ae8f4dc6e5665ccdc3464016800c19f84cf2cd"
+    },
+    {
+      "source_image": "p19-01",
+      "page": 19,
+      "slot": 1,
+      "sku": "RIT-0196",
+      "coverage": "Included",
+      "image_comparison_error": 2.0,
+      "image_sha256": "1b7cc9c0aafd5eec802591ae42ccdb6836fbe258dc01f56d3ed1bd2912ac9103"
+    },
+    {
+      "source_image": "p19-02",
+      "page": 19,
+      "slot": 2,
+      "sku": "RIT-0197",
+      "coverage": "Included",
+      "image_comparison_error": 2.333,
+      "image_sha256": "85b90727cccde857f2e04ab96560d5a08f020b8d8fba8c632892fea83c3aac23"
+    },
+    {
+      "source_image": "p19-03",
+      "page": 19,
+      "slot": 3,
+      "sku": "RIT-0198",
+      "coverage": "Included",
+      "image_comparison_error": 1.333,
+      "image_sha256": "94eb949c662a9b7bbcc7144dc577f35f5a493ed59850e87c044dbea3e3c0c305"
+    },
+    {
+      "source_image": "p19-04",
+      "page": 19,
+      "slot": 4,
+      "sku": "RIT-0199",
+      "coverage": "Included",
+      "image_comparison_error": 1.333,
+      "image_sha256": "02a76cb815cb918d9166e4ab0e9d8e78ef05e18efbb4d8cf959f42b51d9f0596"
+    }
+  ]
+}

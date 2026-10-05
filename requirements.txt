@@ -1,0 +1,4 @@
+# PDF/image extraction and audited Excel export; unused by the website runtime.
+pillow
+pypdfium2
+openpyxl

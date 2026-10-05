@@ -1,0 +1,21 @@
+{
+  "name": "roshan-industries",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static company website and product catalogue for Roshan Industries",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test:content": "node tests/content-qa.cjs",
+    "test:catalogue": "node tests/multipage-qa.cjs",
+    "test:motion": "node tests/hover-qa.cjs",
+    "test:mobile": "node tests/mobile-qa.cjs",
+    "test:anchors": "node tests/anchor-qa.cjs",
+    "format": "prettier --write src scripts/*.mjs tests package.json README.md",
+    "format:check": "prettier --check src scripts/*.mjs tests package.json README.md"
+  },
+  "devDependencies": {
+    "playwright-core": "1.63.0",
+    "prettier": "3.9.9"
+  }
+}

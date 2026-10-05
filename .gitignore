@@ -1,0 +1,34 @@
+# Local tools, dependencies and secrets
+node_modules/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+# Disposable output generated from src/
+/dist/
+/index.html
+/catalogue.html
+/categories.html
+/about.html
+/contact.html
+/categories/
+/products/
+/products.js
+/product-skus.csv
+/app.js
+/styles.css
+/modern.css
+# Review artifacts and exports stay local
+/artifacts/
+/reports/catalogue-audit/page-*-comparison.jpg
+*.xlsx
+~$*
+*.zip
+*.tar.gz
+__pycache__/
+*.py[cod]
+.venv/

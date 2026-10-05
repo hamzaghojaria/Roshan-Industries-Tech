@@ -1,0 +1,13 @@
+dist/
+assets/
+reports/
+artifacts/
+node_modules/
+src/data/
+*.html
+products/
+categories/
+products.js
+/app.js
+/styles.css
+/modern.css
