@@ -155,3 +155,7 @@ All Products and every category listing also have a family selector. On All Prod
 The Excel category sheets and master list now include every product’s current description and a custom-manufacturing enquiry note. The export validates names and descriptions against the same records used to build the website.
 
 About Us uses a connected three-generation timeline: Ahmed Rashid Roshan (father), Imran Roshan (son), then Abdullah Roshan and Mohammed Roshan (grandsons). These are owner-supplied relationships; no executive titles, founder dates or biographies are inferred. Edit the timeline in `src/templates.mjs` and its responsive styling in `src/modern.css`. The centred footer includes company/email, Explore/catalogue download and the office map.
+
+### Updated clickable PDF catalogue
+
+`scripts/export-pdf.py` builds `Roshan-Industries-Product-Catalogue.pdf` and the downloadable `assets/roshan-updated-product-catalogue.pdf` from `products.js`. It includes all 200 SKUs, product images, names, categories, family dividers, linked index, PDF bookmarks and contact details. Run `python scripts/export-pdf.py` after the website build, with dependencies from `requirements.txt` installed. Segoe UI is embedded on Windows; DejaVu Sans is used on Linux. The original scan remains available for source-page references.

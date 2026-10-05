@@ -2,3 +2,5 @@
 pillow
 pypdfium2
 openpyxl
+reportlab
+pypdf

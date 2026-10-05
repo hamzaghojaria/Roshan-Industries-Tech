@@ -179,9 +179,9 @@ export function layout(title, body, { base = '', active = '', description = '', 
             </form>
             <a
               class="catalogue-download"
-              href="${base}assets/roshan-product-catalogue.pdf"
+              href="${base}assets/roshan-updated-product-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download catalogue<small>PDF · 20 pages</small></a
+              >Download catalogue<small>PDF · 200 products</small></a
             >
           </div>
           <nav aria-label="Main navigation">
@@ -245,7 +245,7 @@ export function layout(title, body, { base = '', active = '', description = '', 
               ><a href="${base}index.html#custom-manufacturing">Custom manufacturing</a
               ><a href="${base}about.html">About Us</a><a href="${base}contact.html">Contact Us</a>
               <a
-                href="${base}assets/roshan-product-catalogue.pdf"
+                href="${base}assets/roshan-updated-product-catalogue.pdf"
                 download="Roshan-Industries-Catalogue.pdf"
                 >Download catalogue</a
               >
@@ -854,7 +854,7 @@ export function contactPage() {
             <span class="eyebrow">PRODUCT CATALOGUE</span
             ><a
               class="text-link"
-              href="assets/roshan-product-catalogue.pdf"
+              href="assets/roshan-updated-product-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
               >Download our 20-page catalogue</a
             >
