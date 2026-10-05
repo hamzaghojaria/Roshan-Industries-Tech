@@ -1963,3 +1963,173 @@ footer {
 .footer-email:hover {
   text-decoration-color: currentColor;
 }
+
+/* Home-only decorative effects retain normal layout and readable static fallbacks. */
+body[data-page='home'] .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(#315bd609 1px, transparent 1px),
+    linear-gradient(90deg, #315bd609 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(90deg, transparent 25%, #000);
+}
+body[data-page='home'] .hero-layout {
+  position: relative;
+}
+body[data-page='home'] .hero h1 span {
+  background: linear-gradient(110deg, #315bd6 20%, #658cf1 45%, #214db5 70%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: home-title-glow 5s ease-in-out 2;
+}
+body[data-page='home'] .hero-visual {
+  position: relative;
+  isolation: isolate;
+}
+body[data-page='home'] .hero-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(280px circle at var(--spot-x, 50%) var(--spot-y, 50%), #7398ff24, transparent 75%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+body[data-page='home'] .hero-visual.spotlight-active::after {
+  opacity: 1;
+}
+body[data-page='home'] .hero-actions .button {
+  position: relative;
+  overflow: hidden;
+}
+body[data-page='home'] .hero-actions .button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, #ffffff30 50%, transparent 70%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-page='home'] .hero-actions .button:hover::after {
+    animation: home-button-sheen 0.7s ease;
+  }
+  body[data-page='home'] .trust-row > div {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  body[data-page='home'] .trust-row > div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px #214db512;
+  }
+}
+@keyframes home-title-glow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+@keyframes home-button-sheen {
+  to { transform: translateX(120%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-page='home'] .hero h1 span,
+  body[data-page='home'] .hero-actions .button:hover::after {
+    animation: none;
+  }
+  body[data-page='home'] .hero-visual::after {
+    display: none;
+  }
+  body[data-page='home'] .trust-row > div:hover {
+    transform: none;
+  }
+}
+
+/* Shared visual effects for catalogue, categories, product, about and contact pages. */
+.page-intro {
+  position: relative;
+  isolation: isolate;
+}
+.page-intro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: linear-gradient(#315bd607 1px, transparent 1px),
+    linear-gradient(90deg, #315bd607 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(90deg, transparent 35%, #000);
+}
+.interactive-spotlight {
+  position: relative;
+  isolation: isolate;
+}
+.interactive-spotlight::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(280px circle at var(--spot-x, 50%) var(--spot-y, 50%), #7398ff20, transparent 75%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.interactive-spotlight.spotlight-active::after {
+  opacity: 1;
+}
+main .button {
+  position: relative;
+  overflow: hidden;
+}
+main .button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, #ffffff30 50%, transparent 70%);
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+.family-count {
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  main .button:hover::after,
+  main .button:focus-visible::after {
+    animation: home-button-sheen 0.7s ease;
+  }
+  .family-heading:hover .family-count {
+    background: #dfe9ff;
+    border-color: #aec6ff;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .interactive-spotlight::after {
+    display: none;
+  }
+  main .button:hover::after,
+  main .button:focus-visible::after {
+    animation: none;
+  }
+  .family-count {
+    transition: none;
+  }
+}
+
+/* Keep product-card actions visibly identifiable as links. */
+.details-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* Ellipses indicate hidden page numbers and are not interactive. */
+.pagination-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  color: var(--muted);
+}

@@ -1,7 +1,7 @@
 // Progressive enhancement: every page remains readable without JavaScript.
 (() => {
   'use strict';
-  // Keep the footer current and batch sticky-header updates to animation frames.
+  // Batch sticky-header updates to animation frames.
   const header = document.querySelector('header');
   // Collapse mobile navigation only with JavaScript; links stay available without it.
   const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -62,6 +62,21 @@
   );
   // Reveal below-the-fold sections once; respect reduced-motion preferences.
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  // Soft cursor spotlights add depth to shared feature panels without tilting content.
+  const showcases = document.querySelectorAll('.hero-visual, .page-intro, .detail-image, .custom-enquiry');
+  const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+  for (const showcase of showcases) {
+    showcase.classList.add('interactive-spotlight');
+    showcase.addEventListener('pointermove', (event) => {
+      if (reducedMotion.matches || !finePointer.matches) return;
+      const bounds = showcase.getBoundingClientRect();
+      showcase.style.setProperty('--spot-x', `${event.clientX - bounds.left}px`);
+      showcase.style.setProperty('--spot-y', `${event.clientY - bounds.top}px`);
+      showcase.classList.add('spotlight-active');
+    });
+    showcase.addEventListener('pointerleave', () => showcase.classList.remove('spotlight-active'));
+    reducedMotion.addEventListener('change', () => showcase.classList.remove('spotlight-active'));
+  }
   if ('IntersectionObserver' in window && !reducedMotion.matches) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -158,7 +173,19 @@
         pagination.append(node);
       };
       button('Previous', state.page - 1, state.page === 1);
-      for (let page = 1; page <= pages; page++) button(String(page), page);
+      // Show at most three numbers, keeping the current page within the window.
+      const firstPage = Math.max(1, Math.min(state.page - 1, pages - 2));
+      const lastPage = Math.min(pages, firstPage + 2);
+      const ellipsis = () => {
+        const node = document.createElement('span');
+        node.className = 'pagination-ellipsis';
+        node.textContent = '…';
+        node.setAttribute('aria-label', 'More pages');
+        pagination.append(node);
+      };
+      if (firstPage > 1) ellipsis();
+      for (let page = firstPage; page <= lastPage; page++) button(String(page), page);
+      if (lastPage < pages) ellipsis();
       button('Next', state.page + 1, state.page === pages);
     }
   }

@@ -44,6 +44,16 @@ let browser;
   );
   await page.goto(url('catalogue.html'));
   assert.equal(await page.locator('#catalogue-grid .product-card').count(), 24);
+  assert.equal(await page.locator('#pagination button[aria-label^="Page "]').count(), 3);
+  assert.equal(await page.locator('.pagination-ellipsis').count(), 1);
+  // Next traverses every page even though only three page numbers are shown.
+  for (let current = 2; current <= 9; current++) {
+    await page.locator('#pagination button').filter({ hasText: /^Next$/ }).click();
+    assert.equal(await page.locator('#pagination [aria-current="page"]').textContent(), String(current));
+    assert.equal(await page.locator('#pagination button[aria-label^="Page "]').count(), 3);
+  }
+  assert(await page.locator('#pagination button').filter({ hasText: /^Next$/ }).isDisabled());
+  await page.goto(url('catalogue.html'));
   await page.locator('[data-page="2"]').first().click();
   assert.match(await page.locator('#results-count').textContent(), /Showing 25–48/);
   await page.locator('#catalogue-query').fill('glass fitting');
