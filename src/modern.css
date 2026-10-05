@@ -1916,6 +1916,11 @@ footer {
   .topbar .container {
     flex-wrap: wrap;
     gap: 7px;
+    justify-content: center;
+    text-align: center;
+  }
+  .topbar .container > span {
+    width: 100%;
   }
   .topbar .container > .header-email {
     display: inline-flex;

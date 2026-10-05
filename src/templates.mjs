@@ -107,6 +107,15 @@ export function categoryCard(c, products, base = '') {
 }
 /** Shared document shell, navigation, branding, styles and footer for every route. */
 export function layout(title, body, { base = '', active = '', description = '', page = '' } = {}) {
+  // Give each main page a relevant search description; products supply their own.
+  const descriptions = {
+    home: 'Roshan Industries manufactures watch parts and custom products in Mumbai, with over 100 years of heritage. Explore our tools and discuss your requirements.',
+    categories: 'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
+    products: 'Explore 199 watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
+    about: 'Discover Roshan Industries, a Mumbai watch parts manufacturer with over 100 years of heritage and three generations of experience. Learn about our custom manufacturing.',
+    contact: 'Contact Roshan Industries in Goregaon West, Mumbai for watch parts, catalogue enquiries and custom manufacturing. Share your drawing, sample or product requirements.',
+  };
+  const pageDescription = description || descriptions[active] || descriptions.home;
   const logo = /* HTML */ `<img
       src="${base}assets/roshan-logo.png"
       width="102"
@@ -121,8 +130,12 @@ export function layout(title, body, { base = '', active = '', description = '', 
         <title>${esc(title)} | Roshan Industries</title>
         <meta
           name="description"
-          content="${esc(description || 'Watchmaking, clock and jewellery tools from Roshan Industries, Mumbai. Explore the catalogue and enquire about your requirements.')}"
+          content="${esc(pageDescription)}"
         />
+        <meta property="og:title" content="${esc(title)} | Roshan Industries" />
+        <meta property="og:description" content="${esc(pageDescription)}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Roshan Industries" />
         <meta name="theme-color" content="#111d30" />
         <link rel="icon" href="${base}assets/roshan-logo.png" />
         <link rel="stylesheet" href="${base}styles.css" />
