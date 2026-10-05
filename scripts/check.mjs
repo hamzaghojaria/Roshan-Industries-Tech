@@ -10,20 +10,22 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'products.js'), 'utf8'), sandbox);
 const products = sandbox.window.ROSHAN_PRODUCTS;
-assert.equal(products.length, 199);
-assert.equal(new Set(products.map((p) => p.sku)).size, 199);
-assert.equal(new Set(products.map((p) => p.id)).size, 199);
+assert.equal(products.length, 200);
+assert.equal(new Set(products.map((p) => p.sku)).size, 200);
+assert.equal(new Set(products.map((p) => p.id)).size, 200);
+assert.equal(products.find((p) => p.id === 'p05-03').sku, 'RIT-0039');
+assert.equal(products.find((p) => p.id === 'p05-04').sku, 'RIT-0200');
 assert.equal(new Set(products.map((p) => p.categoryId)).size, 15);
-// Keep only live pages; the repeated panel is retained solely as audit evidence.
+// Every product photo has a live product page.
 assert.equal(
   fs.readdirSync(path.join(root, 'products')).filter((p) => p.endsWith('.html')).length,
-  199,
+  200,
 );
 assert.equal(
   fs.readdirSync(path.join(root, 'categories')).filter((p) => p.endsWith('.html')).length,
   15,
 );
-const expectedImages = new Set([...products.map((p) => p.id + '.webp'), 'p05-04.webp']);
+const expectedImages = new Set(products.map((p) => p.id + '.webp'));
 for (const image of fs.readdirSync(path.join(root, 'assets/products'))) {
   assert(expectedImages.has(image), `Unreferenced product image: ${image}`);
 }
@@ -89,7 +91,7 @@ for (const p of products) {
 }
 assert.equal(
   new Set(products.map((p) => p.description)).size,
-  199,
+  200,
   'Descriptions must identify each product.',
 );
 assert(
@@ -109,5 +111,5 @@ for (const file of files) {
   assert(!/\bRoshan\b(?! Industries)/i.test(visible), `Shortened company name: ${file}`);
 }
 console.log(
-  `PASS: ${files.length} pages, all local links/assets, 199 unique stable SKUs, 15 categories, clean product text and shared header/footer logos.`,
+  `PASS: ${files.length} pages, all local links/assets, 200 unique stable SKUs, 15 categories, clean product text and shared header/footer logos.`,
 );

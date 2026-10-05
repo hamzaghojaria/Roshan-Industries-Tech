@@ -2,7 +2,7 @@
   "source_pdf_sha256": "5d1cfc5fe2eb084ed8a47c65f2f1f720bd2d2a3e0087b60253237d41fcd4ec35",
   "source_pages": 20,
   "photo_panels": 200,
-  "unique_products": 199,
+  "unique_products": 200,
   "categories": 15,
   "uncaptioned_photos": [
     "p17-01",
@@ -21,6 +21,18 @@
     "p18-02",
     "p18-04"
   ],
+  "confirmed_names": [
+    "p17-01",
+    "p17-02",
+    "p18-01",
+    "p18-02",
+    "p18-04",
+    "p19-01",
+    "p19-02",
+    "p19-03",
+    "p19-04"
+  ],
+  "name_confirmation_date": "2026-10-05",
   "covers": [
     1,
     20
@@ -381,8 +393,8 @@
       "source_image": "p05-04",
       "page": 5,
       "slot": 4,
-      "sku": "RIT-0039",
-      "coverage": "Repeated photo; represented by p05-03",
+      "sku": "RIT-0200",
+      "coverage": "Included",
       "image_comparison_error": 0.667,
       "image_sha256": "56a0e341764bb54831ec318d9e4618277d4e13fb27adf22447ea4ed6f3e9aad5"
     },

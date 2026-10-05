@@ -37,8 +37,8 @@ expected = [
     for page in range(2, 20)
     for slot in range(1, 13 if page < 18 else 5)
 ]
-assert len(expected) == 200 and set(expected) - set(by_id) == {"p05-04"}
-assert len(products) == len({p["sku"] for p in products}) == 199
+assert len(expected) == 200 and set(expected) == set(by_id)
+assert len(products) == len({p["sku"] for p in products}) == 200
 assert len({p["categoryId"] for p in products}) == 15
 columns = [(33, 301), (313, 581), (593, 861)]
 rows = [(23, 271), (340, 563), (632, 855), (924, 1147)]
@@ -70,7 +70,7 @@ for page in range(2, 20):
     boxes = special.get(page, [(l, t, r, b) for t, b in rows for l, r in columns])
     for slot, box in enumerate(boxes, 1):
         ident = f"p{page:02}-{slot:02}"
-        p = by_id.get(ident, by_id["p05-03"])
+        p = by_id[ident]
         image_path = ROOT / "assets/products" / f"{ident}.webp"
         with Image.open(image_path) as saved:
             assert saved.size == (480, 480)
@@ -100,7 +100,7 @@ for page in range(2, 20):
             )
         draw.text(
             (x + 8, y + 214),
-            f'{ident} -> {p["sku"]}' + (" [repeat]" if ident == "p05-04" else ""),
+            f'{ident} -> {p["sku"]}',
             fill="black",
         )
         audit.append(
@@ -109,11 +109,7 @@ for page in range(2, 20):
                 "page": page,
                 "slot": slot,
                 "sku": p["sku"],
-                "coverage": (
-                    "Repeated photo; represented by p05-03"
-                    if ident == "p05-04"
-                    else "Included"
-                ),
+                "coverage": "Included",
                 "image_comparison_error": round(error, 3),
                 "image_sha256": hashlib.sha256(image_path.read_bytes()).hexdigest(),
             }
@@ -133,15 +129,15 @@ summary.merge_cells("A1:F2")
 summary["A1"] = "ROSHAN INDUSTRIES | PRODUCT CATALOGUE"
 summary["A1"].font = Font(size=22, bold=True, color=white)
 summary["A1"].fill = PatternFill("solid", fgColor=navy)
-summary["A4"] = "199 products • 15 categories • 200 PDF photo panels"
+summary["A4"] = "200 products • 15 categories • 200 PDF photo panels"
 summary["A4"].font = Font(size=16, bold=True, color=blue)
 notes = [
     "Source: 20 page.pdf | Audit: 05 October 2026 | Mumbai, India",
-    "All 200 product-photo panels are represented. Page 5 / slot 4 repeats slot 3.",
+    "All 200 product-photo panels have separate listings. Page 5 selectors have distinct centres.",
     "Pages 1 and 20 are covers, not additional product entries.",
-    "Six photos have no printed caption; descriptive names require company confirmation.",
+    "Six photos have no printed caption; their website names were confirmed on 05 October 2026.",
     "Other names are transcribed/normalised from the scan, not independently certified specifications.",
-    "Ambiguous source terms and tray materials require confirmation; no prices or stock are inferred.",
+    "Page 18 tray and Hands names confirmed; materials and specifications still require confirmation.",
     "Each category sheet includes embedded photos, SKUs, source references and product-page links.",
     "Website links work when this workbook stays beside the website files. Photos remain embedded.",
     "Contact: roshanindustriestech@gmail.com",
@@ -175,6 +171,8 @@ ambiguous = {"p18-01", "p18-02", "p18-04", "p03-10", "p03-11", "p17-03", "p16-11
 
 
 def status(p):
+    if p.get("nameConfirmed"):
+        return "Name confirmed by company"
     return (
         "No printed caption"
         if p["id"] in uncertain
@@ -247,7 +245,7 @@ def product_sheet(ws, items, photos):
     )
     for p in sorted(items, key=lambda p: p["sku"]):
         note = p["note"]
-        if p["id"] in ambiguous:
+        if p["id"] in ambiguous and not p.get("nameConfirmed"):
             note = "Original caption is ambiguous; confirm terminology, material and exact specification before ordering."
         ws.append(
             [
@@ -274,7 +272,7 @@ def product_sheet(ws, items, photos):
         ws.cell(r, 2).font = Font(size=12, bold=True, color=blue)
         ws.cell(r, 11).hyperlink = p["url"]
         ws.cell(r, 11).style = "Hyperlink"
-        if p["id"] in uncertain | ambiguous:
+        if p["id"] in uncertain | ambiguous and not p.get("nameConfirmed"):
             ws.cell(r, 9).fill = PatternFill("solid", fgColor="FFF0CA")
         if photos:
             photo = Image.open(ROOT / p["image"]).convert("RGB")
@@ -334,7 +332,7 @@ for cell in summary[16]:
     cell.font = Font(bold=True, color=white)
     cell.fill = PatternFill("solid", fgColor=blue)
 summary["A34"] = "Photo coverage: 200 / 200"
-summary["A35"] = "Unique products: 199 / 199"
+summary["A35"] = "Unique products: 200 / 200"
 summary["A36"] = "Uncaptioned photos: 6"
 summary["A37"] = "Amber cells mark names needing confirmation."
 summary["A39"] = "All Products"
@@ -351,8 +349,8 @@ wb.save(destination)
 verified = load_workbook(destination)
 category_sheets = [verified[names[c]] for c in groups]
 skus = [ws.cell(r, 2).value for ws in category_sheets for r in range(6, ws.max_row + 1)]
-assert len(skus) == len(set(skus)) == 199 and set(skus) == {p["sku"] for p in products}
-assert sum(len(ws._images) for ws in category_sheets) == 199
+assert len(skus) == len(set(skus)) == 200 and set(skus) == {p["sku"] for p in products}
+assert sum(len(ws._images) for ws in category_sheets) == 200
 assert verified["PDF Audit"].max_row - 5 == 200
 for ws in category_sheets:
     for r in range(6, ws.max_row + 1):
@@ -364,10 +362,12 @@ manifest = {
     "source_pdf_sha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
     "source_pages": 20,
     "photo_panels": 200,
-    "unique_products": 199,
+    "unique_products": 200,
     "categories": 15,
     "uncaptioned_photos": sorted(uncertain),
     "ambiguous_names": sorted(ambiguous),
+    "confirmed_names": [p["id"] for p in products if p.get("nameConfirmed")],
+    "name_confirmation_date": "2026-10-05",
     "covers": [1, 20],
     "photos": audit,
 }
@@ -377,16 +377,16 @@ with (OUT / "photo-coverage.csv").open("w", newline="", encoding="utf-8-sig") as
     writer.writeheader()
     writer.writerows(audit)
 (ROOT / "reports" / "Catalogue-Audit.md").write_text(
-    """# Roshan Industries catalogue audit\n\nAudited 05 October 2026 against the original `20 page.pdf`.\n\n- 20 source pages: front and back covers plus 18 product pages.\n- 200 photo panels: all have a website image and an assigned listing.\n- 199 unique listings and stable SKUs in 15 categories.\n- Page 5, panel 4 repeats the side-bar selector in panel 3 and maps to the same SKU.\n- Six uncaptioned images: page 17 panels 1–2 and all four page 19 compasses. Names are descriptive and need company confirmation.\n- Ambiguous captions are flagged in Excel, including page 18 trays and “Hands”; tray material is not asserted.\n- Multi-part sets count as one source photo panel, not one entry per piece.\n\nEach original PDF crop was independently rendered and compared numerically with its website image (mean RGB difference below 5/255). Page-by-page visual comparisons are in `catalogue-audit`. This verifies extraction fidelity; source scan resolution limits available detail. Product terminology, specifications, availability and prices still require company confirmation.\n\nThe workbook was reopened and checked for 199 unique SKUs, all 15 category sheets, 199 embedded category images, 200 audit rows and working local product-page targets. Original PDF SHA-256 and per-image hashes are recorded in `catalogue-audit/coverage.json`.\n""",
+    """# Roshan Industries catalogue audit\n\nAudited 05 October 2026 against the original `20 page.pdf`.\n\n- 20 source pages: front and back covers plus 18 product pages.\n- 200 photo panels: all have a website image and an assigned listing.\n- 200 unique listings and stable SKUs in 15 categories.\n- Page 5 panels 3 and 4 are distinct selectors: slotted centre RIT-0039 and solid centre RIT-0200.\n- Six uncaptioned images: page 17 panels 1–2 and all four page 19 compasses. Names confirmed by the company on 05 October 2026.\n- Ambiguous captions are flagged in Excel, including page 18 trays and “Hands”; tray material is not asserted.\n- Multi-part sets count as one source photo panel, not one entry per piece.\n\nEach original PDF crop was independently rendered and compared numerically with its website image (mean RGB difference below 5/255). Page-by-page visual comparisons are in `catalogue-audit`. This verifies extraction fidelity; source scan resolution limits available detail. Product terminology, specifications, availability and prices still require company confirmation.\n\nThe workbook was reopened and checked for 200 unique SKUs, all 15 category sheets, 200 embedded category images, 200 audit rows and working local product-page targets. Original PDF SHA-256 and per-image hashes are recorded in `catalogue-audit/coverage.json`.\n""",
     encoding="utf8",
 )
 print(
     json.dumps(
         {
             "workbook": str(destination),
-            "products": 199,
+            "products": 200,
             "category_sheets": 15,
-            "embedded_photos": 199,
+            "embedded_photos": 200,
             "source_panels_verified": 200,
             "largest_image_error": max(a["image_comparison_error"] for a in audit),
             "bytes": destination.stat().st_size,

@@ -111,7 +111,7 @@ export function layout(title, body, { base = '', active = '', description = '', 
   const descriptions = {
     home: 'Roshan Industries manufactures watch parts and custom products in Mumbai, with over 100 years of heritage. Explore our tools and discuss your requirements.',
     categories: 'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
-    products: 'Explore 199 watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
+    products: 'Explore 200 watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
     about: 'Discover Roshan Industries, a Mumbai watch parts manufacturer with over 100 years of heritage and three generations of experience. Learn about our custom manufacturing.',
     contact: 'Contact Roshan Industries in Goregaon West, Mumbai for watch parts, catalogue enquiries and custom manufacturing. Share your drawing, sample or product requirements.',
   };

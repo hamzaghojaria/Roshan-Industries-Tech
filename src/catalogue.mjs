@@ -147,6 +147,9 @@ const assignment = {
 };
 /** Build product records from reviewed photo assignments, preserving permanent SKUs. */
 export function loadCatalogue(root) {
+  const confirmedNames = new Set(
+    JSON.parse(fs.readFileSync(path.join(root, 'src/data/name-confirmations.json'), 'utf8')).productIds,
+  );
   const sourceFile = path.join(root, 'src/data/catalogue-source.json');
   let text = fs
     .readFileSync(sourceFile, 'utf8')
@@ -160,7 +163,7 @@ export function loadCatalogue(root) {
   const skus = fs.existsSync(mapFile) ? JSON.parse(fs.readFileSync(mapFile, 'utf8')) : {};
   // Allocate new identifiers only after the highest existing SKU. Never renumber.
   let next = Math.max(0, ...Object.values(skus).map((sku) => Number(sku.split('-')[1]))) + 1;
-  // A null caption deliberately excludes the repeated page-5 selector panel.
+  // Each reviewed photo panel has its own listing, including the two different selectors.
   const products = [];
   for (const [pageText, names] of Object.entries(source)) {
     const page = Number(pageText);
@@ -171,7 +174,8 @@ export function loadCatalogue(root) {
       if (!skus[id]) skus[id] = `RIT-${String(next++).padStart(4, '0')}`;
       const category = categories.find((c) => c.id === assignment[page]?.[index]);
       if (!category) throw new Error(`Missing category for ${id}`);
-      const unlabelled = page === 19 || (page === 17 && slot <= 2);
+      const nameConfirmed = confirmedNames.has(id);
+      const unlabelled = !nameConfirmed && (page === 19 || (page === 17 && slot <= 2));
       products.push({
         id,
         sku: skus[id],
@@ -183,6 +187,7 @@ export function loadCatalogue(root) {
         slot,
         image: `assets/products/${id}.webp`,
         url: `products/${skus[id].toLowerCase()}.html`,
+        nameConfirmed,
         note: unlabelled
           ? 'This photograph has no caption in the printed catalogue. Please confirm the exact model and specifications with our team.'
           : 'Please contact our team to confirm available options, specifications, quantities and pricing.',

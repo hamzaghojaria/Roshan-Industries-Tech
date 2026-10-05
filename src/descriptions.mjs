@@ -49,6 +49,10 @@ export function describeProduct(p) {
     use =
       'A screwdriver set with a stand for organising tools at the watchmaker’s bench. Confirm the included tools and their tip sizes before ordering.';
   const intro = `${split[0]} is part of Roshan Industries’ ${p.category.toLowerCase()} range.`;
-  const detail = variant ? `The catalogue lists this entry as ${variant}.` : '';
+  const detail = p.id === 'p05-03'
+    ? 'This version has three slots through the centre, as shown in the catalogue photograph.'
+    : p.id === 'p05-04'
+      ? 'This version has a solid centre and numbered notches around its edge, as shown in the catalogue photograph.'
+      : variant ? `The catalogue lists this entry as ${variant}.` : '';
   return [intro, use, detail].filter(Boolean).join(' ');
 }

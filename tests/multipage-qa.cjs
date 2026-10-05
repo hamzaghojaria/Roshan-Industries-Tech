@@ -24,6 +24,8 @@ let browser;
     headless: true,
   });
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  // External map availability must not delay local catalogue interaction checks.
+  await page.route('https://www.google.com/maps**', (route) => route.abort());
   const errors = [];
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto(url('index.html'));
@@ -76,7 +78,7 @@ let browser;
     ['Watchmaking', 86],
     ['Clockmaking', 36],
     ['Jewellery', 21],
-    ['Workshop Essentials', 56],
+    ['Workshop Essentials', 57],
   ]) {
     await page.goto(url('catalogue.html') + '?family=' + encodeURIComponent(family));
     assert.equal(await page.locator('#family-filter').count(), 0);
