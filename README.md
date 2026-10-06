@@ -52,6 +52,8 @@ Open the generated `index.html` in your browser to preview the website. After ch
 
 **Keep existing SKUs unchanged.** The permanent mapping lives in [src/data/sku-map.json](src/data/sku-map.json).
 
+The footer stays at the bottom of short pages on mobile and desktop. On long pages it follows the content naturally. This layout is defined in `src/styles.css`; the footer does not cover page content while scrolling.
+
 <details>
 <summary><strong>Click to explore the folders</strong></summary>
 
