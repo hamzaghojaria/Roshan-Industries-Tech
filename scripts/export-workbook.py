@@ -29,6 +29,8 @@ products = json.loads(
     .strip()
     .rstrip(";")
 )
+# Online enquiry additions are not panels in the verified source PDF.
+products = [p for p in products if not p.get("onlineRange")]
 by_id = {p["id"]: p for p in products}
 premium_report = ROOT / "reports" / "premium-catalogue-audit.json"
 premium_pages = json.loads(premium_report.read_text(encoding="utf8"))["sku_pages"] if premium_report.exists() else {}

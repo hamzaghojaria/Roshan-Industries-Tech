@@ -18,6 +18,8 @@ SOURCE = ROOT / 'src/data/roshan-premium-catalogue-source.pdf'
 OUTPUT = ROOT / 'Roshan-Industries-Catalogue-Premium-Verified.pdf'
 reader = PdfReader(SOURCE)
 products = json.loads((ROOT/'products.js').read_text(encoding='utf8').split('window.ROSHAN_PRODUCTS =', 1)[1].strip().rstrip(';'))
+# Online enquiry additions are not panels in the verified source PDF.
+products = [p for p in products if not p.get("onlineRange")]
 by_sku = {p['sku']: p for p in products}
 families = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials']
 groups = {f: OrderedDict() for f in families}

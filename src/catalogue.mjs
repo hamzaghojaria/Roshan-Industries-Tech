@@ -1,4 +1,5 @@
 // Reviewed category assignments and product records with permanent SKU allocation.
+import { pumpCategories, pumpProducts } from './pumps.mjs';
 import { describeProduct } from './descriptions.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -109,7 +110,9 @@ export const categories = [
     'p19-03',
     'Round and hanging compass models photographed in the Roshan Industries catalogue.',
   ],
-].map(([id, name, family, image, description]) => ({ id, name, family, image, description }));
+]
+  .map(([id, name, family, image, description]) => ({ id, name, family, image, description }))
+  .concat(pumpCategories);
 // Assignments are reviewed against catalogue photos rather than guessed from keywords.
 const E = 'eye-loupes',
   H = 'holders-stands',
@@ -198,8 +201,12 @@ export function loadCatalogue(root) {
   }
   // Descriptions explain application; missing captions retain explicit confirmation notes.
   for (const product of products) product.description = describeProduct(product);
+  for (const pump of pumpProducts) {
+    if (skus[pump.id] && skus[pump.id] !== pump.sku) throw new Error('Pump SKU changed');
+    skus[pump.id] = pump.sku;
+  }
   const serialized = JSON.stringify(skus, null, 2) + '\n';
   if (!fs.existsSync(mapFile) || fs.readFileSync(mapFile, 'utf8') !== serialized)
     fs.writeFileSync(mapFile, serialized);
-  return products;
+  return products.concat(pumpProducts);
 }

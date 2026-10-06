@@ -1,6 +1,6 @@
 ﻿# Roshan Industries website
 
-Static website for Roshan Industries, watch parts and custom manufacturing in Mumbai. The reviewed catalogue contains **200 products, 15 categories and four families**. The brand is **Since 1900**, with **125+ years of service**. About Us presents four generations, starting with Vali Mohammed Roshan.
+Static website for Roshan Industries, watch parts and custom manufacturing in Mumbai. The verified printed catalogue contains **200 products, 15 categories and four families**. The website also includes **12 pump enquiry entries in six additional categories** (212 entries, 21 categories and five families in total). The brand is **Since 1900**, with **125+ years of service**. About Us presents four generations, starting with Vali Mohammed Roshan.
 
 ## Build and deploy
 
@@ -36,7 +36,7 @@ Push source changes to GitHub to trigger Render deployment. The generated `dist`
 | reports                 | Original image audit and premium catalogue/page/link verification records.               |
 | reports/catalogue-audit | Per-panel source references, image hashes and visual comparisons.                        |
 | artifacts/qa            | Disposable screenshots produced by browser checks; ignored by Git.                       |
-| categories and products | Generated HTML for 15 categories and 200 products; do not edit.                          |
+| categories and products | Generated HTML for 21 categories and 212 entries; do not edit.                           |
 | dist                    | Disposable deployment output; safely recreated on every build.                           |
 | .openai                 | Existing Sites project metadata; Render deployment uses the settings above.              |
 
@@ -59,12 +59,12 @@ The parent `.site-tools` folder contains portable Node/Git and local QA dependen
 | src/data/name-confirmations.json             | Company-approved names; approval does not assert dimensions or materials.                                                                                             |
 | src/data/roshan-premium-catalogue-source.pdf | Owner-supplied premium design, preserved as the reproducible export source.                                                                                           |
 | scripts/build.mjs                            | Generate 220 HTML pages, browser catalogue data, SKU CSV and a fresh dist.                                                                                            |
-| scripts/check.mjs                            | Validate links/assets, 200 unique SKUs, clean product names, routes, branding and data stability.                                                                     |
+| scripts/check.mjs                            | Validate links/assets, 212 unique SKUs, clean product names, routes, branding and data stability.                                                                     |
 | scripts/extract-catalogue.py                 | Extract original scan images/logo and web reference PDF; never alters the supplied scan.                                                                              |
 | scripts/prepare-premium-pdf.py               | Compare 200 names/SKUs/categories/images, repair premium PDF heritage, clickable family/category index, return links and bookmarks; record the verified page map.     |
 | scripts/export-pdf.py                        | Small compatibility entry point that delegates to the approved premium exporter.                                                                                      |
 | scripts/export-workbook.py                   | Export category/master/audit sheets, embedded photos, website links and premium-PDF page links; reopen and verify the workbook.                                       |
-| tests/mobile-qa.cjs                          | All 220 routes at 320/390/760px, overflow, breadcrumbs, mobile menu, footer/map, timeline and no-JavaScript navigation.                                               |
+| tests/mobile-qa.cjs                          | All generated routes at 320/390/760px, overflow, breadcrumbs, mobile menu, footer/map, timeline and no-JavaScript navigation.                                         |
 | tests/anchor-qa.cjs                          | Homepage category destination and custom-manufacturing anchors on mobile/tablet/desktop.                                                                              |
 | tests/content-qa.cjs                         | Enquiry links, SKU context, FAQ behavior, responsive layout and text enlargement.                                                                                     |
 | tests/hover-qa.cjs                           | Hover/focus feedback, sticky header, reduced motion and readable no-JavaScript fallbacks.                                                                             |
@@ -133,3 +133,15 @@ npm run format:check
 ```
 
 Browser checks use installed playwright-core, or the parent portable QA toolchain, with Microsoft Edge by default. Set EDGE_PATH to override the browser executable. Screenshots are regenerated into artifacts/qa. The PDF and workbook exporters separately verify their saved output, SKU completeness, embedded images and page-link mappings.
+
+### Pumps enquiry range
+
+`src/pumps.mjs` defines 12 researched pump enquiry entries in six categories, with permanent SKUs RIT-0201 to RIT-0212. Pumps appear on the homepage, category overview, filters and product pages. `assets/pumps/` holds photographs of actual pumps from Wikimedia Commons. Visible product-page credits link to each source and licence; these images illustrate types rather than Roshan stock. Descriptions are original summaries informed by manufacturer references linked in each entry. Photos retain their original framing and brand markings; product pages credit the creator and licence. Confirm real models and replace reference images with company photographs when available. The verified PDF and Excel remain the original 200-product range; exporters exclude `onlineRange` records deliberately.
+
+`tests/pumps-qa.cjs` checks all 12 photo files load, six category counts, Pumps family filtering, SKU-specific WhatsApp links and responsive layouts. Run `npm run test:pumps` after changes to the pump range.
+
+Photo credits are generated as `photo-credits.html` by `photoCreditsPage` in `src/templates.mjs`, linked from every footer. Product pages omit the photo-credit paragraph. Category family cards and category tiles fill each row evenly, including shorter final rows.
+
+Homepage discovery sections use `homeSlider` in `src/templates.mjs`, scroll-snap styles in `src/modern.css`, and enhancement in `src/app.js`. Visible sliders advance every five seconds, pause for hover/focus/touch and hidden tabs, support swipe/arrow controls, and start paused for reduced motion. Photo credits remain on the footer-linked credits page; card reference labels are removed.
+
+`tests/sliders-qa.cjs` verifies homepage automatic movement, next/previous and wrapping at mobile/tablet/desktop sizes, reduced motion and no-JavaScript fallback. Run `npm run test:sliders`.

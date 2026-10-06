@@ -127,6 +127,139 @@
         if (element.getBoundingClientRect().top > innerHeight) observer.observe(element);
       });
   }
+  // Auto-advance only visible carousels. Focus, hover and touch stop motion while browsing.
+  document.querySelectorAll('[data-slider]').forEach((slider) => {
+    const track = slider.querySelector('.slider-track');
+    const cards = [...track.children];
+    const controls = slider.querySelector('.slider-controls');
+    const playback = slider.querySelector('[data-slider-pause]');
+    const position = slider.querySelector('.slider-position');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    let paused = motion.matches;
+    let visible = false;
+    let hovered = false;
+    let interacting = false;
+    let lastInteraction = 0;
+    let frame = 0;
+    controls.hidden = false;
+    const current = () =>
+      cards.reduce(
+        (best, card, index) =>
+          Math.abs(card.offsetLeft - cards[0].offsetLeft - track.scrollLeft) <
+          Math.abs(cards[best].offsetLeft - cards[0].offsetLeft - track.scrollLeft)
+            ? index
+            : best,
+        0,
+      );
+    const update = () => {
+      frame = 0;
+      position.textContent = `${current() + 1} / ${cards.length}`;
+      playback.textContent = paused ? 'Play' : 'Pause';
+      playback.setAttribute(
+        'aria-label',
+        paused ? 'Start automatic sliding' : 'Pause automatic sliding',
+      );
+    };
+    const advance = (direction) => {
+      const max = track.scrollWidth - track.clientWidth;
+      const step = cards[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap);
+      let target = track.scrollLeft + direction * step;
+      if (direction > 0 && track.scrollLeft >= max - 2) target = 0;
+      if (direction < 0 && track.scrollLeft <= 2) target = max;
+      track.scrollTo({
+        left: Math.max(0, Math.min(max, target)),
+        behavior: motion.matches ? 'auto' : 'smooth',
+      });
+    };
+    const manual = (direction) => {
+      lastInteraction = Date.now();
+      advance(direction);
+    };
+    slider.querySelector('[data-slider-prev]').addEventListener('click', () => manual(-1));
+    slider.querySelector('[data-slider-next]').addEventListener('click', () => manual(1));
+    playback.addEventListener('click', () => {
+      paused = !paused;
+      lastInteraction = Date.now();
+      update();
+    });
+    track.addEventListener('keydown', (event) => {
+      if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault();
+      manual(event.key === 'ArrowRight' ? 1 : -1);
+    });
+    track.addEventListener(
+      'scroll',
+      () => {
+        if (!frame) frame = requestAnimationFrame(update);
+      },
+      { passive: true },
+    );
+    slider.addEventListener('mouseenter', () => {
+      hovered = true;
+    });
+    slider.addEventListener('mouseleave', () => {
+      hovered = false;
+      lastInteraction = Date.now();
+    });
+    track.addEventListener(
+      'pointerdown',
+      () => {
+        interacting = true;
+        lastInteraction = Date.now();
+      },
+      { passive: true },
+    );
+    window.addEventListener(
+      'pointerup',
+      () => {
+        interacting = false;
+        lastInteraction = Date.now();
+      },
+      { passive: true },
+    );
+    window.addEventListener(
+      'pointercancel',
+      () => {
+        interacting = false;
+      },
+      { passive: true },
+    );
+    motion.addEventListener('change', () => {
+      paused = motion.matches;
+      update();
+    });
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+      },
+      { threshold: 0.25 },
+    );
+    observer.observe(slider);
+    const timer = setInterval(() => {
+      if (
+        !paused &&
+        visible &&
+        !document.hidden &&
+        !hovered &&
+        !interacting &&
+        !slider.contains(document.activeElement) &&
+        Date.now() - lastInteraction >= 5000
+      )
+        advance(1);
+    }, 5000);
+    window.addEventListener(
+      'pagehide',
+      (event) => {
+        // A cached page resumes its timers when visitors return with Back.
+        if (event.persisted) return;
+        clearInterval(timer);
+        observer.disconnect();
+      },
+      { once: true },
+    );
+    window.addEventListener('resize', update, { passive: true });
+    update();
+  });
   // Catalogue controls are installed only on catalogue/category listing pages.
   const section = document.querySelector('[data-catalogue]');
   if (!section) return;

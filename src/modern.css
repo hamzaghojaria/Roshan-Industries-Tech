@@ -540,6 +540,27 @@ header nav {
   padding: 22px 21px 20px;
 }
 
+/* Keep reference-photo context readable without competing with the product name. */
+.reference-label,
+.image-credit {
+  color: var(--slate);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.reference-label {
+  margin: 8px 0 12px;
+}
+
+.image-credit {
+  margin-top: 18px;
+}
+
+.image-credit a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .product-category {
   font-size: 0.75rem;
   color: #67788f;
@@ -728,13 +749,14 @@ footer {
 /* Family overview links and clear group headers keep taxonomy visible. */
 
 .family-overview {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-top: 26px;
 }
 
 .family-overview > a {
+  flex: 1 1 180px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -789,8 +811,8 @@ footer {
   line-height: 1.5;
 }
 @media (max-width: 900px) {
-  .family-overview {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .family-overview > a {
+    flex-basis: calc(50% - 8px);
   }
 }
 @media (max-width: 760px) {
@@ -813,8 +835,8 @@ footer {
   }
 }
 @media (max-width: 380px) {
-  .family-overview {
-    grid-template-columns: 1fr;
+  .family-overview > a {
+    flex-basis: 100%;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2646,4 +2668,125 @@ main .button::after {
   text-decoration-color: #819ac4;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+}
+
+/* Fill category rows evenly so families with two or five tiles have no empty columns. */
+.family-section .category-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.family-section .category-card {
+  flex: 1 1 calc(33.333% - 16px);
+  min-width: min(100%, 260px);
+}
+.footer-photo-credits {
+  font-size: 0.75rem;
+  color: #aabbd6;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 32px;
+}
+.credits-grid h2 {
+  font-size: 1.1rem;
+}
+.credits-grid a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .family-section .category-card {
+    flex-basis: calc(50% - 12px);
+    min-width: min(100%, 240px);
+  }
+}
+
+/* Home discovery sliders: three cards on desktop, two on tablets, one with a swipe hint on phones. */
+.home-slider {
+  min-width: 0;
+  margin-top: 24px;
+}
+.slider-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #b9c7dd transparent;
+  padding: 8px 0 14px;
+  position: relative;
+}
+.slider-track > * {
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
+  scroll-snap-align: start;
+}
+.slider-track .product-card {
+  display: flex;
+  flex-direction: column;
+}
+.slider-track .product-card-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.slider-track .card-bottom {
+  margin-top: auto;
+  padding-top: 16px;
+}
+.slider-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.slider-controls[hidden] {
+  display: none;
+}
+.slider-controls button {
+  min-height: 44px;
+  min-width: 44px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
+  font: inherit;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.slider-controls button:hover {
+  background: #edf3ff;
+  border-color: #91a6c4;
+}
+.slider-playback {
+  padding: 0 18px;
+}
+.slider-position {
+  min-width: 42px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--slate);
+}
+@media (max-width: 1024px) {
+  .slider-track > * {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 600px) {
+  .slider-track {
+    gap: 14px;
+  }
+  .slider-track > * {
+    flex-basis: 86%;
+  }
+  .slider-controls {
+    justify-content: center;
+  }
 }

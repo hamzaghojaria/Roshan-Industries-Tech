@@ -10,7 +10,7 @@ const premiumCataloguePages = fs.existsSync(premiumAuditFile)
   ? JSON.parse(fs.readFileSync(premiumAuditFile, 'utf8')).sku_pages
   : {};
 // The same family order is used in desktop groups and mobile filters.
-const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials'];
+const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'];
 /** Escape catalogue text before inserting it into HTML attributes or content. */
 export const esc = (value) =>
   String(value).replace(
@@ -100,7 +100,7 @@ export function categoryCard(c, products, base = '') {
   return /* HTML */ `<a class="category-card" href="${base}categories/${c.id}.html"
     ><div class="category-image">
       <img
-        src="${base}assets/products/${c.image}.webp"
+        src="${base}${c.image.startsWith('assets/') ? c.image : `assets/products/${c.image}.webp`}"
         alt=""
         width="480"
         height="480"
@@ -300,6 +300,7 @@ export function layout(
               <span>LinkedIn</span><span>Instagram</span><span>X</span>
             </div>
             <span class="footer-heritage">Roshan Industries · Since 1900</span>
+            <a class="footer-photo-credits" href="${base}photo-credits.html">Photo credits</a>
           </div>
         </footer>
         <a
@@ -322,6 +323,18 @@ const breadcrumb = (label, base = '', parent = '') =>
       <li aria-current="page">${esc(label)}</li>
     </ol>
   </nav>`;
+/** Native scrolling remains available when carousel enhancement is unavailable. */
+function homeSlider(id, label, cards) {
+  return `<div class="home-slider" data-slider role="region" aria-roledescription="carousel" aria-label="${esc(label)}">
+    <div class="slider-track" id="slider-${id}" tabindex="0" aria-label="${esc(label)}; swipe or use arrow keys">${cards}</div>
+    <div class="slider-controls" hidden>
+      <button type="button" data-slider-prev aria-controls="slider-${id}" aria-label="Previous ${esc(label.toLowerCase())}">&#8592;</button>
+      <span class="slider-position"></span>
+      <button type="button" data-slider-next aria-controls="slider-${id}" aria-label="Next ${esc(label.toLowerCase())}">&#8594;</button>
+      <button type="button" class="slider-playback" data-slider-pause aria-label="Pause automatic sliding">Pause</button>
+    </div>
+  </div>`;
+}
 /** Homepage: custom manufacturing leads, followed by catalogue discovery. */
 export function home(products) {
   const featured = [
@@ -394,7 +407,7 @@ export function home(products) {
           ><span>Since 1900 &middot; 125+ years of service</span>
         </div>
         <div>
-          <strong>${products.length} catalogue products</strong
+          <strong>${products.length} products & enquiry items</strong
           ><span>Organised for the way you work</span>
         </div>
         <div>
@@ -402,6 +415,27 @@ export function home(products) {
           ><span>Your drawings, dimensions and requirements</span>
         </div>
       </div>
+      <section class="section container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">EXPLORE PUMPS</p>
+            <h2>Discuss your pumping requirements.</h2>
+          </div>
+          <a class="text-link" href="catalogue.html?family=Pumps">Explore all pumps</a>
+        </div>
+        <p class="lead">
+          Explore our new enquiry range. Share the liquid, flow rate, operating head and
+          installation details; our team will confirm the suitable options.
+        </p>
+        ${homeSlider(
+          'pumps',
+          'Pump categories',
+          categories
+            .filter((c) => c.family === 'Pumps')
+            .map((c) => categoryCard(c, products))
+            .join(''),
+        )}
+      </section>
       ${customSection()}
       <section class="section container">
         <div class="section-head">
@@ -411,12 +445,14 @@ export function home(products) {
           </div>
           <a class="text-link" href="categories.html">View all categories</a>
         </div>
-        <div class="category-grid">
-          ${categories
+        ${homeSlider(
+          'trades',
+          'Tool categories',
+          categories
             .slice(0, 6)
             .map((c) => categoryCard(c, products))
-            .join('')}
-        </div>
+            .join(''),
+        )}
       </section>
       <section class="section section-muted">
         <div class="container">
@@ -427,7 +463,7 @@ export function home(products) {
             </div>
             <a class="text-link" href="catalogue.html">Browse all products</a>
           </div>
-          <div class="product-grid">${featured.map((p) => card(p)).join('')}</div>
+          ${homeSlider('range', 'Featured products', featured.map((p) => card(p)).join(''))}
         </div>
       </section>
       <section class="section container legacy-layout">
@@ -454,7 +490,7 @@ export function home(products) {
 export function categoriesPage(products) {
   // Compute family totals once, then reuse them for overview links and section headers.
   const index = indexCatalogue(products);
-  const families = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials'].map(
+  const families = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'].map(
     (name) => ({
       name,
       id: name.toLowerCase().replaceAll(' ', '-'),
@@ -635,7 +671,9 @@ export function productPage(p, products) {
             </div>
             <div>
               <dt>Catalogue reference</dt>
-              <dd>${p.id.toUpperCase()} · Page ${p.page}</dd>
+              <dd>
+                ${p.onlineRange ? 'Online enquiry range' : `${p.id.toUpperCase()} · Page ${p.page}`}
+              </dd>
             </div>
             <div>
               <dt>Pricing & availability</dt>
@@ -652,13 +690,17 @@ export function productPage(p, products) {
               >${whatsappIcon}Chat on WhatsApp</a
             >
           </div>
-          <a
+          ${
+            p.onlineRange
+              ? ''
+              : `<a
             class="text-link"
             href="../assets/${premiumCataloguePages[p.sku] ? 'roshan-updated-product-catalogue.pdf' : 'roshan-product-catalogue.pdf'}#page=${premiumCataloguePages[p.sku] || p.page}"
             target="_blank"
             rel="noopener"
             >View in the product catalogue</a
-          >
+          >`
+          }
         </div>
       </section>
       <section class="container product-custom">
@@ -960,5 +1002,14 @@ export function contactPage() {
         </details>
       </section>`,
     { active: 'contact', page: 'contact' },
+  );
+}
+
+/** Keep licensed-photo attribution accessible from every page footer. */
+export function photoCreditsPage(products) {
+  const photos = products.filter((p) => p.onlineRange);
+  return layout(
+    'Photo credits',
+    `${breadcrumb('Photo credits')}<section class="container page-intro"><p class="eyebrow">PHOTOGRAPHY</p><h1>Photo credits.</h1><p>Pump photographs illustrate equipment types. Credits and licences are listed below.</p></section><section class="section container credits-grid">${photos.map((p) => `<article><h2>${esc(p.name)}</h2><p>${esc(p.sku)}</p><a href="${p.imageSource}" target="_blank" rel="noopener">${esc(p.imageCredit)}</a><p><a href="${p.imageLicense}" target="_blank" rel="noopener">Image licence</a></p><p>${esc(p.imageChanges)}</p></article>`).join('')}</section>`,
   );
 }

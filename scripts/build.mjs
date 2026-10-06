@@ -10,6 +10,7 @@ import {
   productPage,
   aboutPage,
   contactPage,
+  photoCreditsPage,
 } from '../src/templates.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -41,6 +42,7 @@ write('catalogue.html', cataloguePage(products));
 write('categories.html', categoriesPage(products));
 write('about.html', aboutPage(products));
 write('contact.html', contactPage());
+write('photo-credits.html', photoCreditsPage(products));
 for (const c of categories) write(`categories/${c.id}.html`, cataloguePage(products, c));
 for (const p of products) write(p.url, productPage(p, products));
 // Quote each CSV field so punctuation in product names remains safe.
@@ -69,6 +71,7 @@ for (const file of [
   'categories.html',
   'about.html',
   'contact.html',
+  'photo-credits.html',
   'styles.css',
   'modern.css',
   'app.js',
