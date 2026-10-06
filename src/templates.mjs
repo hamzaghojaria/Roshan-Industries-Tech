@@ -11,6 +11,11 @@ const premiumCataloguePages = fs.existsSync(premiumAuditFile)
   : {};
 // The same family order is used in desktop groups and mobile filters.
 const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'];
+// Keep catalogue labels and destinations identical in the header and footer at every width.
+const catalogueNavigation = [
+  ['catalogue.html', 'Products', 'products'],
+  ['categories.html', 'Categories', 'categories'],
+];
 /** Escape catalogue text before inserting it into HTML attributes or content. */
 export const esc = (value) =>
   String(value).replace(
@@ -211,8 +216,7 @@ export function layout(
             <div class="container nav-links" id="primary-navigation">
               ${[
                 ['./', 'Home', 'home'],
-                ['catalogue.html', 'Products', 'products'],
-                ['categories.html', 'Categories', 'categories'],
+                ...catalogueNavigation,
                 ['./#custom-manufacturing', 'Custom Manufacturing', 'custom'],
                 ['about.html', 'About Us', 'about'],
                 ['contact.html', 'Contact Us', 'contact'],
@@ -272,9 +276,10 @@ export function layout(
             </div>
             <div>
               <h3>Explore</h3>
-              <a href="${base}catalogue.html">All products</a
-              ><a href="${base}categories.html">Product categories</a
-              ><a href="${base || './'}#custom-manufacturing">Custom manufacturing</a
+              ${catalogueNavigation
+                .map(([url, label]) => `<a href="${base + url}">${label}</a>`)
+                .join('')}
+              <a href="${base || './'}#custom-manufacturing">Custom manufacturing</a
               ><a href="${base}about.html">About Us</a><a href="${base}contact.html">Contact Us</a>
               <a
                 href="${base}assets/roshan-updated-product-catalogue.pdf"
@@ -420,8 +425,7 @@ export function home(products) {
           <a class="text-link" href="catalogue.html?family=Pumps">Explore all pumps</a>
         </div>
         <p class="lead">
-          Explore our new enquiry range. Share the liquid, flow rate, operating head and
-          installation details; our team will confirm the suitable options.
+          Tell us your requirements. We’ll help you find a suitable pump.
         </p>
         ${homeSlider(
           'pumps',
