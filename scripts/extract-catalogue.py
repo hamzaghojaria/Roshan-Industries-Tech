@@ -72,19 +72,7 @@ for y in range(logo.height):
         alpha = max(0, min(255, int((180 - min(r, g, b)) * 255 / 125)))
         pixels[x, y] = (16, 31, 50, alpha)
 logo.save(assets / "roshan-logo.png")
-# The supplied scan is 33 MB, exceeding common per-asset hosting limits.
-# Preserve all 20 pages in a smaller, readable web copy; leave the original untouched.
-web_pages = [
-    pdf[number].render(scale=2).to_pil().convert("RGB") for number in range(len(pdf))
-]
-web_pages[0].save(
-    assets / "roshan-product-catalogue.pdf",
-    "PDF",
-    resolution=144,
-    save_all=True,
-    append_images=web_pages[1:],
-    quality=86,
-)
+# Keep the reference scan external; extraction generates product images only.
 sheet = Image.new("RGB", (1200, 800), "white")
 draw = ImageDraw.Draw(sheet)
 for index, name in enumerate(

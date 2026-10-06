@@ -35,3 +35,7 @@ __pycache__/
 .venv/
 
 /photo-credits.html
+# Obsolete reference PDFs must not be added back to the repository.
+/assets/roshan-product-catalogue.pdf
+/src/data/roshan-premium-catalogue-source.pdf
+/reference-documents/

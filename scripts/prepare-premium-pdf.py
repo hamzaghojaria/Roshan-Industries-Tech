@@ -2,7 +2,7 @@
 from pathlib import Path
 from io import BytesIO
 from collections import OrderedDict
-import json, re, hashlib, shutil
+import json, re, hashlib, shutil, os
 from PIL import Image, ImageChops, ImageStat
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject, TextStringObject
@@ -14,7 +14,10 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE = ROOT / 'src/data/roshan-premium-catalogue-source.pdf'
+# Reference documents stay outside the Git repository and deployment assets.
+SOURCE = Path(os.environ.get('ROSHAN_PREMIUM_SOURCE', str(ROOT.parent / 'reference-documents/roshan-premium-catalogue-source.pdf')))
+if not SOURCE.is_file():
+    raise FileNotFoundError('Set ROSHAN_PREMIUM_SOURCE to the owner-supplied premium PDF before running catalogue exports.')
 OUTPUT = ROOT / 'Roshan-Industries-Catalogue-Premium-Verified.pdf'
 reader = PdfReader(SOURCE)
 products = json.loads((ROOT/'products.js').read_text(encoding='utf8').split('window.ROSHAN_PRODUCTS =', 1)[1].strip().rstrip(';'))

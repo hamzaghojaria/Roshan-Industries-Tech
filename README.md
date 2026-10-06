@@ -57,7 +57,6 @@ The parent `.site-tools` folder contains portable Node/Git and local QA dependen
 | src/data/catalogue-source.json               | Product names indexed by original PDF page/panel. Both page-5 selectors are separate products.                                                                        |
 | src/data/sku-map.json                        | Permanent image-to-SKU mapping; never renumber existing entries.                                                                                                      |
 | src/data/name-confirmations.json             | Company-approved names; approval does not assert dimensions or materials.                                                                                             |
-| src/data/roshan-premium-catalogue-source.pdf | Owner-supplied premium design, preserved as the reproducible export source.                                                                                           |
 | scripts/build.mjs                            | Generate 220 HTML pages, browser catalogue data, SKU CSV and a fresh dist.                                                                                            |
 | scripts/check.mjs                            | Validate links/assets, 212 unique SKUs, clean product names, routes, branding and data stability.                                                                     |
 | scripts/extract-catalogue.py                 | Extract original scan images/logo and web reference PDF; never alters the supplied scan.                                                                              |
@@ -82,9 +81,8 @@ Every executable source file has responsibility/section comments. Generated HTML
 
 Root HTML/CSS/JS files are disposable local-preview copies. Edit `src`, then rebuild. `products.js` loads only on catalogue listing pages. Product cards reference the matching image/SKU and verified premium-PDF page.
 
-- `Roshan-Industries-Catalogue-Premium-Verified.pdf`: Current 41-page customer catalogue.
+- `Roshan-Industries-Catalogue-Premium-Verified.pdf`: Current 48-page customer catalogue.
 - `assets/roshan-updated-product-catalogue.pdf`: Same verified PDF served by website downloads.
-- `assets/roshan-product-catalogue.pdf`: Original scan reference, retained for source traceability/fallback; customer downloads use the premium version.
 - `Roshan-Industries-Product-Catalogue.xlsx`: Customer workbook with Overview, All Products and 21 category sheets. Includes 212 embedded category photos and correct PDF-page hyperlinks. Audit and pump-source sheets are excluded.
 - `roshan-website.zip`: Contents of dist, ready for a static host.
 - `Roshan-Industries-Source.zip`: Editable source, scripts, tests, assets and reports.
@@ -103,13 +101,15 @@ Install Python dependencies and run exports from the project directory:
 ```powershell
 python -m pip install -r requirements.txt
 npm run build
-python scripts/prepare-premium-pdf.py
+$env:ROSHAN_PREMIUM_SOURCE = "C:\path\to\owner-supplied-premium.pdf"
+python scripts/export-updated-catalogue.py --pdf "C:\Users\Hamza\Downloads\20 page.pdf"
 npm run build
-python scripts/export-workbook.py --pdf "C:\Users\Hamza\Downloads\20 page.pdf"
 npm run check
 ```
 
 Build again after PDF generation to copy the current PDF into dist and use its page map. If product identities change, the premium verifier stops on a mismatch so the source design must be updated deliberately.
+
+Old reference PDFs are kept outside the repository in `../reference-documents/` and excluded from website/source ZIPs. The premium exporter uses that local folder by default; set `ROSHAN_PREMIUM_SOURCE` when the source document is stored elsewhere. Only the current customer catalogue in `assets/` is deployed.
 
 ## Contact and interactions
 
