@@ -305,7 +305,6 @@ export function layout(
               <span>LinkedIn</span><span>Instagram</span><span>X</span>
             </div>
             <span class="footer-heritage">Roshan Industries · Since 1900</span>
-            <a class="footer-photo-credits" href="${base}photo-credits.html">Photo credits</a>
           </div>
         </footer>
         <a
@@ -1005,11 +1004,3 @@ export function contactPage() {
   );
 }
 
-/** Keep licensed-photo attribution accessible from every page footer. */
-export function photoCreditsPage(products) {
-  const photos = products.filter((p) => p.onlineRange);
-  return layout(
-    'Photo credits',
-    `${breadcrumb('Photo credits')}<section class="container page-intro"><p class="eyebrow">PHOTOGRAPHY</p><h1>Photo credits.</h1><p>Pump photographs illustrate equipment types. Credits and licences are listed below.</p></section><section class="section container credits-grid">${photos.map((p) => `<article><h2>${esc(p.name)}</h2><p>${esc(p.sku)}</p><a href="${p.imageSource}" target="_blank" rel="noopener">${esc(p.imageCredit)}</a><p><a href="${p.imageLicense}" target="_blank" rel="noopener">Image licence</a></p><p>${esc(p.imageChanges)}</p></article>`).join('')}</section>`,
-  );
-}

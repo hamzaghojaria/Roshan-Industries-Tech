@@ -53,15 +53,14 @@ def heading(c, title):
 
 buf = BytesIO()
 c = canvas.Canvas(buf, pagesize=(W, H))
-pump_annotations = []
 category_targets = {category: first+1+i for i, category in enumerate(groups)}
 report = json.loads((ROOT/'reports/premium-catalogue-audit.json').read_text())
-# Two matching index pages start the catalogue; pumps lead the first page.
-all_groups = {'Pumps': groups, **base['groups']}
+# Two matching index pages start the catalogue; pumps are the final family.
+all_groups = {**base['groups'], 'Pumps': groups}
 index_annotations = []
 index_buffer = BytesIO()
 index_canvas = canvas.Canvas(index_buffer, pagesize=(W,H))
-index_families = [['Pumps','Watchmaking','Clockmaking'], ['Jewellery','Workshop Essentials']]
+index_families = [['Watchmaking','Clockmaking','Jewellery'], ['Workshop Essentials','Pumps']]
 for index_number, families in enumerate(index_families):
     page_index = 2+index_number
     heading(index_canvas, 'Find your category.' if index_number == 0 else 'Find your category. / continued')
@@ -114,8 +113,6 @@ for category, items in groups.items():
         name.drawOn(c, x+12, top-129-height)
         new_sku_pages[p['sku']] = page_index+1
     base['label'](c, 'Enquiry range: specifications and availability confirmed on enquiry.', 38, 75, 7, base['muted'])
-    base['label'](c, 'Photo credits', 38, 62, 6, base['blue'])
-    pump_annotations.append((page_index,(38,59,260,71),base['website']+'/photo-credits.html'))
     base['footer'](c, page_index+1, index=True)
     c.showPage()
 c.save()
@@ -144,22 +141,22 @@ for family, family_groups in all_groups.items():
         writer.add_outline_item(category,target,parent=parent)
 for number,rect,target in index_annotations:
     writer.add_annotation(number,Link(rect=rect,target_page_index=target))
-for number, rect, url in pump_annotations:
-    writer.add_annotation(number, Link(rect=rect, url=url))
 for number in range(len(writer.pages)):
     if number >= 4:
         writer.add_annotation(number, Link(rect=(W-169,15,W-78,37), target_page_index=2))
     writer.add_annotation(number, Link(rect=(225,25,411,38), url=base['website']))
     writer.add_annotation(number, Link(rect=(225,9,411,23), url='https://wa.me/919821216170'))
 writer.add_annotation(1,Link(rect=(44,115,285,134),url='mailto:roshanindustriestech@gmail.com'))
-writer.add_metadata({'/Title': 'Roshan Industries | 200+ Products', '/Author': 'Roshan Industries', '/Subject': '200 verified catalogue products plus 12 pump enquiry entries'})
+writer.add_metadata({'/Title': 'Roshan Industries | 200+ Products', '/Author': 'Roshan Industries', '/Subject': '200 verified catalogue products plus 12 pump enquiry entries', '/PumpPhotoAttribution': json.dumps([{key:p[key] for key in ['sku','imageCredit','imageSource','imageLicense','imageChanges']} for p in pumps])})
 with pdf_path.open('wb') as out:
     writer.write(out)
 final = PdfReader(pdf_path)
 content = '\n'.join(page.extract_text() or '' for page in final.pages)
 assert len(final.pages) == first+1+len(groups)
 assert 'Reference photographs' not in content
-assert (final.pages[2].extract_text() or '').index('PUMPS') < (final.pages[2].extract_text() or '').index('WATCHMAKING')
+assert 'Photo credits' not in content
+assert 'PUMPS' not in (final.pages[2].extract_text() or '')
+assert (final.pages[3].extract_text() or '').index('PUMPS') > (final.pages[3].extract_text() or '').index('WORKSHOP ESSENTIALS')
 for page_index in category_targets.values():
     for ref in final.pages[page_index].get('/Annots',[]):
         annotation = ref.get_object()

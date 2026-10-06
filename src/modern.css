@@ -2679,24 +2679,6 @@ main .button::after {
   flex: 1 1 calc(33.333% - 16px);
   min-width: min(100%, 260px);
 }
-.footer-photo-credits {
-  font-size: 0.75rem;
-  color: #aabbd6;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.credits-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: 32px;
-}
-.credits-grid h2 {
-  font-size: 1.1rem;
-}
-.credits-grid a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
 @media (max-width: 760px) {
   .family-section .category-card {
     flex-basis: calc(50% - 12px);

@@ -48,7 +48,6 @@ const files = [
   'categories.html',
   'about.html',
   'contact.html',
-  'photo-credits.html',
   ...categories.map((c) => `categories/${c.id}.html`),
   ...products.map((p) => p.url),
 ];
@@ -95,7 +94,7 @@ for (const p of products) {
     assert(!html.includes('Page undefined'), `Invalid PDF reference: ${p.sku}`);
     assert(!html.includes('View in the product catalogue'), `Unverified PDF link: ${p.sku}`);
     assert(
-      fs.readFileSync(path.join(root, 'photo-credits.html'), 'utf8').includes(p.imageSource),
+      fs.readFileSync(path.join(root, 'assets/pumps/LICENSES.txt'), 'utf8').includes(p.imageSource),
       `Missing image attribution: ${p.sku}`,
     );
     assert(

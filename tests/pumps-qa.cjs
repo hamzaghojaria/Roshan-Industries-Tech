@@ -47,7 +47,7 @@ try {
         });
         assert(await photo.evaluate((img) => img.naturalWidth > 0));
         assert.equal(await page.locator('.image-credit').count(), 0);
-        assert.equal(await page.locator('a.footer-photo-credits').count(), 1);
+        assert.equal(await page.locator('a.footer-photo-credits').count(), 0);
         assert(
           await page
             .locator('.product-note')

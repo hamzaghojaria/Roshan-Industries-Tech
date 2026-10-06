@@ -10,7 +10,6 @@ import {
   productPage,
   aboutPage,
   contactPage,
-  photoCreditsPage,
 } from '../src/templates.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -42,7 +41,12 @@ write('catalogue.html', cataloguePage(products));
 write('categories.html', categoriesPage(products));
 write('about.html', aboutPage(products));
 write('contact.html', contactPage());
-write('photo-credits.html', photoCreditsPage(products));
+// Remove the retired generated route from local previews as well as deployment output.
+const retiredCreditsPage = path.join(root, 'photo-credits.html');
+if (fs.existsSync(retiredCreditsPage)) fs.unlinkSync(retiredCreditsPage);
+// Keep source/licence records with the pump assets without a customer-facing credits page.
+fs.writeFileSync(path.join(root, 'assets/pumps/LICENSES.txt'), products.filter((p) => p.onlineRange)
+  .map((p) => `${p.sku} - ${p.name}\n${p.imageCredit}\nSource: ${p.imageSource}\nLicence: ${p.imageLicense}\nChanges: ${p.imageChanges}\n`).join('\n'));
 for (const c of categories) write(`categories/${c.id}.html`, cataloguePage(products, c));
 for (const p of products) write(p.url, productPage(p, products));
 // Quote each CSV field so punctuation in product names remains safe.
@@ -71,7 +75,6 @@ for (const file of [
   'categories.html',
   'about.html',
   'contact.html',
-  'photo-credits.html',
   'styles.css',
   'modern.css',
   'app.js',
