@@ -31,7 +31,6 @@ reader = PdfReader(pdf_path)
 W, H = base['W'], base['H']
 first = len(reader.pages)
 writer = PdfWriter()
-writer.append(reader)
 style = ParagraphStyle('PumpBody', fontName='PremiumBody', fontSize=10, leading=15, textColor=base['navy'])
 
 def paragraph(c, text, x, y, width, size=10):
@@ -43,38 +42,60 @@ def paragraph(c, text, x, y, width, size=10):
 def heading(c, title):
     # Match the original premium catalogue's logo, rules and category heading.
     c.setFillColor(base['blue'])
-    c.rect(0, H-58, 6, 58, fill=1, stroke=0)
+    c.rect(0, H-58, 5, 58, fill=1, stroke=0)
     c.drawImage(ImageReader(str(ROOT/'assets/roshan-logo.png')), 38, H-42, 48, 31, preserveAspectRatio=True, mask='auto')
     base['label'](c, 'ROSHAN INDUSTRIES', 96, H-24, 8, bold=True)
     base['label'](c, 'WATCH PARTS & CUSTOM MANUFACTURING', 96, H-38, 5.5, base['muted'])
     c.setStrokeColor(base['line'])
     c.line(38, H-53, W-38, H-53)
     c.line(38, H-70, W-38, H-70)
-    base['label'](c, title, 38, H-103, 23, bold=True)
+    base['label'](c, title, 38, H-104, 23, bold=True)
 
 buf = BytesIO()
 c = canvas.Canvas(buf, pagesize=(W, H))
 pump_annotations = []
-heading(c, 'Explore pumps.')
-paragraph(c, 'Pumps / 6 categories / 12 products', 38, H-119, W-76, 10)
-y = H-170
-category_targets = {}
-for category, items in groups.items():
-    target = first + 1 + len(category_targets)
-    category_targets[category] = target
-    base['label'](c, category, 51, y, 9, bold=True)
-    base['label'](c, f'{len(items)} products', W-147, y, 7, base['muted'])
-    base['label'](c, 'VIEW >', W-83, y, 7, base['blue'], True)
-    c.setStrokeColor(base['line'])
-    c.line(51, y-9, W-51, y-9)
-    y -= 26
-base['footer'](c, first+1, index=True)
-c.showPage()
+category_targets = {category: first+1+i for i, category in enumerate(groups)}
+report = json.loads((ROOT/'reports/premium-catalogue-audit.json').read_text())
+# Two matching index pages start the catalogue; pumps lead the first page.
+all_groups = {'Pumps': groups, **base['groups']}
+index_annotations = []
+index_buffer = BytesIO()
+index_canvas = canvas.Canvas(index_buffer, pagesize=(W,H))
+index_families = [['Pumps','Watchmaking','Clockmaking'], ['Jewellery','Workshop Essentials']]
+for index_number, families in enumerate(index_families):
+    page_index = 2+index_number
+    heading(index_canvas, 'Find your category.' if index_number == 0 else 'Find your category. / continued')
+    base['label'](index_canvas, f'Click a family, category name or VIEW. / Index {index_number+1} of 2',38,H-126,8,base['muted'])
+    y = H-160
+    for family in families:
+        family_groups = all_groups[family]
+        targets = {category: category_targets[category] if family == 'Pumps' else report['category_pages'][category] for category in family_groups}
+        index_canvas.setFillColor(HexColor('#f4f6fb'))
+        index_canvas.rect(40,y-9,W-80,28,fill=1,stroke=0)
+        base['label'](index_canvas,family.upper(),51,y,8,base['blue'],True)
+        base['label'](index_canvas,f'{sum(len(items) for items in family_groups.values())} products',W-105,y,7,base['muted'])
+        index_annotations.append((page_index,(40,y-9,W-40,y+19),next(iter(targets.values()))))
+        y -= 33
+        for category, items in family_groups.items():
+            base['label'](index_canvas,category,51,y,9,bold=True)
+            base['label'](index_canvas,f'{len(items)} products',W-147,y,7,base['muted'])
+            base['label'](index_canvas,'VIEW >',W-83,y,7,base['blue'],True)
+            index_canvas.setStrokeColor(base['line'])
+            index_canvas.line(51,y-9,W-51,y-9)
+            index_annotations.append((page_index,(40,y-9,W-40,y+14),targets[category]))
+            y -= 26
+        y -= 17
+    assert y > 80, 'Index content overlaps footer'
+    base['label'](index_canvas,'NEXT INDEX >' if index_number == 0 else '< PREVIOUS INDEX',40,65,8,base['blue'],True)
+    index_annotations.append((page_index,(40,59,200,79),3 if index_number == 0 else 2))
+    base['footer'](index_canvas,page_index+1)
+    index_canvas.showPage()
+index_canvas.save()
 new_sku_pages = {}
 for category, items in groups.items():
     page_index = category_targets[category]
     heading(c, category)
-    base['label'](c, f'Pumps / {len(items)} products / Category page 1 of 1', 38, H-124, 10, base['muted'])
+    base['label'](c, f'Pumps / {len(items)} products / Category page 1 of 1', 38, H-126, 10, base['muted'])
     # Reuse the original two-column, three-row category card geometry.
     card_width, card_height = (W-94)/2, 184
     for j, p in enumerate(items):
@@ -82,49 +103,68 @@ for category, items in groups.items():
         top = H-158-(j//2)*(card_height+19)
         bottom = top-card_height
         c.setFillColor(white)
-        c.setStrokeColor(HexColor('#d6e1f6'))
+        c.setStrokeColor(HexColor('#d1def2'))
+        c.setLineWidth(0.75)
         c.roundRect(x, bottom, card_width, card_height, 8, fill=1, stroke=1)
+        c.line(x, top, x+card_width, top)
         c.drawImage(ImageReader(str(ROOT/p['image'])), x+12, top-107, card_width-24, 95, preserveAspectRatio=True, anchor='c', mask='auto')
         base['label'](c, p['sku'], x+12, top-121, 9, base['blue'], True)
-        name = Paragraph(p['name'].replace('&','&amp;'), ParagraphStyle('CardName', parent=style, fontName='PremiumBold', fontSize=10, leading=14))
+        name = Paragraph(p['name'].replace('&','&amp;'), ParagraphStyle('CardName', parent=style, fontName='PremiumBold', fontSize=11, leading=15))
         _, height = name.wrap(card_width-24, 48)
-        name.drawOn(c, x+12, top-132-height)
+        name.drawOn(c, x+12, top-129-height)
         new_sku_pages[p['sku']] = page_index+1
-        pump_annotations.append((page_index,(x,bottom,x+card_width,top),base['website']+'/'+p['url']))
     base['label'](c, 'Enquiry range: specifications and availability confirmed on enquiry.', 38, 75, 7, base['muted'])
-    base['label'](c, 'Reference photographs / Photo credits', 38, 62, 6, base['blue'])
+    base['label'](c, 'Photo credits', 38, 62, 6, base['blue'])
     pump_annotations.append((page_index,(38,59,260,71),base['website']+'/photo-credits.html'))
     base['footer'](c, page_index+1, index=True)
     c.showPage()
 c.save()
 extra = PdfReader(buf)
-for page in extra.pages:
+indexes = PdfReader(index_buffer)
+# Replace the old single index, insert its continuation, then append pump cards.
+ordered_pages = list(reader.pages[:2])+list(indexes.pages)+list(reader.pages[3:])+list(extra.pages)
+for number,page in enumerate(ordered_pages):
+    if '/Annots' in page:
+        del page['/Annots']
+    if 4 <= number <= first:
+        overlay_buffer = BytesIO()
+        overlay_canvas = canvas.Canvas(overlay_buffer,pagesize=(W,H))
+        base['footer'](overlay_canvas,number+1,index=True)
+        overlay_canvas.save()
+        page.merge_page(PdfReader(overlay_buffer).pages[0])
     writer.add_page(page)
-# Connect the original category index to the pump section without disturbing its links.
-overlay_buf = BytesIO()
-overlay = canvas.Canvas(overlay_buf, pagesize=(W,H))
-base['label'](overlay, 'PUMPS / 6 CATEGORIES / 12 ENQUIRY ENTRIES / VIEW >', 40, 66, 8, base['blue'], True)
-overlay.save()
-writer.pages[2].merge_page(PdfReader(overlay_buf).pages[0])
-writer.add_annotation(2, Link(rect=(40,54,W-40,82), target_page_index=first))
-parent = writer.add_outline_item('Pumps enquiry range', first)
-for i, (category, target) in enumerate(category_targets.items()):
-    y = H-170-26*i
-    writer.add_annotation(first, Link(rect=(40,y-12,W-40,y+18), target_page_index=target))
-    writer.add_outline_item(category, target, parent=parent)
-report = json.loads((ROOT/'reports/premium-catalogue-audit.json').read_text())
+report['sku_pages'] = {sku:page+1 for sku,page in report['sku_pages'].items()}
+report['category_pages'] = {category:page+1 for category,page in report['category_pages'].items()}
 report['sku_pages'].update(new_sku_pages)
+writer.add_outline_item('Category index',2)
+for family, family_groups in all_groups.items():
+    targets = {category: category_targets[category] if family == 'Pumps' else report['category_pages'][category]-1 for category in family_groups}
+    parent = writer.add_outline_item(family,next(iter(targets.values())))
+    for category,target in targets.items():
+        writer.add_outline_item(category,target,parent=parent)
+for number,rect,target in index_annotations:
+    writer.add_annotation(number,Link(rect=rect,target_page_index=target))
 for number, rect, url in pump_annotations:
     writer.add_annotation(number, Link(rect=rect, url=url))
-for number in range(first, len(writer.pages)):
-    writer.add_annotation(number, Link(rect=(W-169,15,W-78,37), target_page_index=2))
+for number in range(len(writer.pages)):
+    if number >= 4:
+        writer.add_annotation(number, Link(rect=(W-169,15,W-78,37), target_page_index=2))
+    writer.add_annotation(number, Link(rect=(225,25,411,38), url=base['website']))
     writer.add_annotation(number, Link(rect=(225,9,411,23), url='https://wa.me/919821216170'))
+writer.add_annotation(1,Link(rect=(44,115,285,134),url='mailto:roshanindustriestech@gmail.com'))
 writer.add_metadata({'/Title': 'Roshan Industries | 200+ Products', '/Author': 'Roshan Industries', '/Subject': '200 verified catalogue products plus 12 pump enquiry entries'})
 with pdf_path.open('wb') as out:
     writer.write(out)
 final = PdfReader(pdf_path)
 content = '\n'.join(page.extract_text() or '' for page in final.pages)
 assert len(final.pages) == first+1+len(groups)
+assert 'Reference photographs' not in content
+assert (final.pages[2].extract_text() or '').index('PUMPS') < (final.pages[2].extract_text() or '').index('WATCHMAKING')
+for page_index in category_targets.values():
+    for ref in final.pages[page_index].get('/Annots',[]):
+        annotation = ref.get_object()
+        # Product-card images and names occupy the region above y=100.
+        assert float(annotation['/Rect'][3]) < 100, 'Pump product card is clickable'
 for p in products:
     assert content.count(p['sku']) == 1, p['sku']
 internal_links = 0
