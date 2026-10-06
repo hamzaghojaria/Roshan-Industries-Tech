@@ -1,14 +1,18 @@
-# Local tools, dependencies and secrets
+# Dependencies and local runtime tools
 node_modules/
+.site-tools/
 .sites-runtime/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Secrets: keep example configuration available
 .env
 .env.*
 !.env.example
-*.log
-.DS_Store
-Thumbs.db
-Desktop.ini
-# Disposable output generated from src/
+
+# Finished website and generated local-preview files
+# Render recreates these from src/ using npm run build.
 /dist/
 /index.html
 /catalogue.html
@@ -22,20 +26,25 @@ Desktop.ini
 /app.js
 /styles.css
 /modern.css
-# Review artifacts and exports stay local
-/artifacts/
-/reports/catalogue-audit/page-*-comparison.jpg
-*.xlsx
-/Roshan-Industries-Catalogue-Premium-Verified.pdf
-~$*
-*.zip
-*.tar.gz
-__pycache__/
-*.py[cod]
-.venv/
 
+# Retired generated page and old reference documents
 /photo-credits.html
-# Obsolete reference PDFs must not be added back to the repository.
 /assets/roshan-product-catalogue.pdf
 /src/data/roshan-premium-catalogue-source.pdf
 /reference-documents/
+
+# Local exports and review artifacts
+# Keep assets/roshan-updated-product-catalogue.pdf tracked for website downloads.
+/Roshan-Industries-Catalogue-Premium-Verified.pdf
+*.xlsx
+~$*
+*.zip
+*.tar.gz
+/artifacts/
+/reports/catalogue-audit/page-*-comparison.jpg
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
