@@ -85,7 +85,7 @@ Root HTML/CSS/JS files are disposable local-preview copies. Edit `src`, then reb
 - `Roshan-Industries-Catalogue-Premium-Verified.pdf`: Current 41-page customer catalogue.
 - `assets/roshan-updated-product-catalogue.pdf`: Same verified PDF served by website downloads.
 - `assets/roshan-product-catalogue.pdf`: Original scan reference, retained for source traceability/fallback; customer downloads use the premium version.
-- `Roshan-Industries-Product-Catalogue.xlsx`: Current workbook with 15 category sheets, All Products and PDF Audit. Name verification was removed. Includes 200 product photos and correct PDF-page hyperlinks.
+- `Roshan-Industries-Product-Catalogue.xlsx`: Customer workbook with Overview, All Products and 21 category sheets. Includes 212 embedded category photos and correct PDF-page hyperlinks. Audit and pump-source sheets are excluded.
 - `roshan-website.zip`: Contents of dist, ready for a static host.
 - `Roshan-Industries-Source.zip`: Editable source, scripts, tests, assets and reports.
 - `reports/premium-catalogue-audit.json`: Source/output hashes, all SKU-page mappings, image comparison scores and verified internal links.
@@ -146,4 +146,4 @@ Homepage discovery sections use `homeSlider` in `src/templates.mjs`, scroll-snap
 
 `tests/sliders-qa.cjs` verifies homepage automatic movement, next/previous and wrapping at mobile/tablet/desktop sizes, reduced motion and no-JavaScript fallback. Run `npm run test:sliders`.
 
-The UI uses ?200+ products? for headline totals; exports retain exact SKU counts. Updated PDF: 54 pages with a linked pump index and grouped product pages. Updated Excel: 21 category sheets, all 212 entries and embedded photos, plus pump photo credits. `reports/export-audit.json` records combined export totals; the original source-panel audit remains 200. Slider controls contain previous/next only.
+The UI uses "200+ products" for headline totals; exports retain exact SKU counts. Updated PDF: 48 pages with a linked pump index and the same category card grid as the original catalogue. Updated Excel: 21 category sheets, all 212 entries and embedded photos, with no audit or pump-source sheets. Pump photo attribution is accessible through the PDF's photo-credit links and the website. `reports/export-audit.json` records combined export totals; the original source-panel audit remains 200. Slider controls contain previous/next only.

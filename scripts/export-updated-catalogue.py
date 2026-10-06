@@ -9,6 +9,7 @@ from pypdf.annotations import Link
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import ImageReader
 from reportlab.lib.styles import ParagraphStyle
+from reportlab.lib.colors import white, HexColor
 from reportlab.platypus import Paragraph
 from openpyxl import load_workbook
 from openpyxl.drawing.image import Image as ExcelImage
@@ -40,39 +41,60 @@ def paragraph(c, text, x, y, width, size=10):
     return y-height
 
 def heading(c, title):
+    # Match the original premium catalogue's logo, rules and category heading.
     c.setFillColor(base['blue'])
-    c.rect(0, H-6, W, 6, fill=1, stroke=0)
-    base['label'](c, 'ROSHAN INDUSTRIES', 40, H-40, 12, bold=True)
-    base['label'](c, 'SINCE 1900 / 125+ YEARS OF SERVICE', 40, H-57, 7, base['muted'])
-    base['label'](c, title, 40, H-102, 21, bold=True)
+    c.rect(0, H-58, 6, 58, fill=1, stroke=0)
+    c.drawImage(ImageReader(str(ROOT/'assets/roshan-logo.png')), 38, H-42, 48, 31, preserveAspectRatio=True, mask='auto')
+    base['label'](c, 'ROSHAN INDUSTRIES', 96, H-24, 8, bold=True)
+    base['label'](c, 'WATCH PARTS & CUSTOM MANUFACTURING', 96, H-38, 5.5, base['muted'])
+    c.setStrokeColor(base['line'])
+    c.line(38, H-53, W-38, H-53)
+    c.line(38, H-70, W-38, H-70)
+    base['label'](c, title, 38, H-103, 23, bold=True)
 
 buf = BytesIO()
 c = canvas.Canvas(buf, pagesize=(W, H))
 pump_annotations = []
 heading(c, 'Explore pumps.')
-paragraph(c, '200+ products across our catalogue and enquiry range. This section adds 12 pump entries. Photographs show reference equipment; specifications and availability are confirmed on enquiry.', 40, H-128, W-80)
-y = H-210
+paragraph(c, 'Pumps / 6 categories / 12 products', 38, H-119, W-76, 10)
+y = H-170
 category_targets = {}
 for category, items in groups.items():
-    target = first + 1 + pumps.index(items[0])
+    target = first + 1 + len(category_targets)
     category_targets[category] = target
-    base['label'](c, category, 40, y, 12, bold=True)
-    base['label'](c, f'{len(items)} entries / VIEW >', W-175, y, 9, base['blue'])
-    y -= 49
+    base['label'](c, category, 51, y, 9, bold=True)
+    base['label'](c, f'{len(items)} products', W-147, y, 7, base['muted'])
+    base['label'](c, 'VIEW >', W-83, y, 7, base['blue'], True)
+    c.setStrokeColor(base['line'])
+    c.line(51, y-9, W-51, y-9)
+    y -= 26
 base['footer'](c, first+1, index=True)
 c.showPage()
-for i, p in enumerate(pumps):
-    heading(c, p['name'])
-    base['label'](c, f"{p['sku']} / {p['category']}", 40, H-128, 10, base['blue'], True)
-    base['label'](c, 'PUMP ENQUIRY RANGE', 40, H-149, 8, base['muted'])
-    c.drawImage(ImageReader(str(ROOT/p['image'])), 50, H-485, W-100, 300, preserveAspectRatio=True, anchor='c', mask='auto')
-    y = paragraph(c, p['description'], 40, H-510, W-80)
-    y = paragraph(c, p['note'], 40, y-14, W-80, 8)
-    y = paragraph(c, 'Photo: ' + p['imageCredit'] + '. ' + p['imageChanges'], 40, y-14, W-80, 7)
-    for text, offset, url in [('Photo source',16,p['imageSource']), ('Photo licence',32,p['imageLicense']), ('View product online',50,base['website']+'/'+p['url'])]:
-        base['label'](c, text, 40, y-offset, 8, base['blue'])
-        pump_annotations.append((first+i+1,(40,y-offset-3,250,y-offset+10),url))
-    base['footer'](c, first+i+2, index=True)
+new_sku_pages = {}
+for category, items in groups.items():
+    page_index = category_targets[category]
+    heading(c, category)
+    base['label'](c, f'Pumps / {len(items)} products / Category page 1 of 1', 38, H-124, 10, base['muted'])
+    # Reuse the original two-column, three-row category card geometry.
+    card_width, card_height = (W-94)/2, 184
+    for j, p in enumerate(items):
+        x = 38 + (j % 2)*(card_width+18)
+        top = H-158-(j//2)*(card_height+19)
+        bottom = top-card_height
+        c.setFillColor(white)
+        c.setStrokeColor(HexColor('#d6e1f6'))
+        c.roundRect(x, bottom, card_width, card_height, 8, fill=1, stroke=1)
+        c.drawImage(ImageReader(str(ROOT/p['image'])), x+12, top-107, card_width-24, 95, preserveAspectRatio=True, anchor='c', mask='auto')
+        base['label'](c, p['sku'], x+12, top-121, 9, base['blue'], True)
+        name = Paragraph(p['name'].replace('&','&amp;'), ParagraphStyle('CardName', parent=style, fontName='PremiumBold', fontSize=10, leading=14))
+        _, height = name.wrap(card_width-24, 48)
+        name.drawOn(c, x+12, top-132-height)
+        new_sku_pages[p['sku']] = page_index+1
+        pump_annotations.append((page_index,(x,bottom,x+card_width,top),base['website']+'/'+p['url']))
+    base['label'](c, 'Enquiry range: specifications and availability confirmed on enquiry.', 38, 75, 7, base['muted'])
+    base['label'](c, 'Reference photographs / Photo credits', 38, 62, 6, base['blue'])
+    pump_annotations.append((page_index,(38,59,260,71),base['website']+'/photo-credits.html'))
+    base['footer'](c, page_index+1, index=True)
     c.showPage()
 c.save()
 extra = PdfReader(buf)
@@ -87,13 +109,11 @@ writer.pages[2].merge_page(PdfReader(overlay_buf).pages[0])
 writer.add_annotation(2, Link(rect=(40,54,W-40,82), target_page_index=first))
 parent = writer.add_outline_item('Pumps enquiry range', first)
 for i, (category, target) in enumerate(category_targets.items()):
-    y = H-210-49*i
+    y = H-170-26*i
     writer.add_annotation(first, Link(rect=(40,y-12,W-40,y+18), target_page_index=target))
     writer.add_outline_item(category, target, parent=parent)
 report = json.loads((ROOT/'reports/premium-catalogue-audit.json').read_text())
-for i, p in enumerate(pumps):
-    number = first+i+1
-    report['sku_pages'][p['sku']] = number+1
+report['sku_pages'].update(new_sku_pages)
 for number, rect, url in pump_annotations:
     writer.add_annotation(number, Link(rect=rect, url=url))
 for number in range(first, len(writer.pages)):
@@ -104,7 +124,7 @@ with pdf_path.open('wb') as out:
     writer.write(out)
 final = PdfReader(pdf_path)
 content = '\n'.join(page.extract_text() or '' for page in final.pages)
-assert len(final.pages) == first+1+len(pumps)
+assert len(final.pages) == first+1+len(groups)
 for p in products:
     assert content.count(p['sku']) == 1, p['sku']
 internal_links = 0
@@ -160,16 +180,25 @@ for i, (category, items) in enumerate(groups.items(),43):
     summary.cell(i,1,category); summary.cell(i,2,len(items))
     summary.cell(i,3,'View products').hyperlink=f"#'{category}'!A1"
     summary.cell(i,3).style='Hyperlink'
-credits=wb.create_sheet('Pump Photo Credits')
-credits.append(['SKU','Product','Photographer / licence','Source URL','Licence URL','Image changes'])
-for p in pumps:
-    credits.append([p['sku'],p['name'],p['imageCredit'],p['imageSource'],p['imageLicense'],p['imageChanges']])
-    credits.cell(credits.max_row,4).hyperlink=p['imageSource']
-    credits.cell(credits.max_row,5).hyperlink=p['imageLicense']
-for col in 'ABCDEF': credits.column_dimensions[col].width=45
-credits.freeze_panes='A2'
+# Internal audit reports and image attribution remain separate from the customer workbook.
+for sheet_name in list(wb.sheetnames):
+    if 'audit' in sheet_name.lower() or sheet_name == 'Pump Photo Credits':
+        del wb[sheet_name]
+summary['A4']='200+ products / 21 categories'
+summary['A6']='Roshan Industries / Since 1900 / Mumbai, India'
+summary['A7']='Browse 212 products across 21 category sheets.'
+summary['A8']='Each product has a permanent SKU for easy enquiries.'
+summary['A9']='Category sheets include product photographs and descriptions.'
+summary['A10']='Contact our team to confirm specifications and availability.'
+summary['A11']='Custom manufacturing: share your drawing, sample or requirements.'
+summary['A12']='Use the product and PDF links to explore each catalogue entry.'
+for row in [34,35,36,37]:
+    summary.cell(row,1).value=None
+summary['C39'].value=None
+summary['C39'].hyperlink=None
 wb.save(destination)
 check=load_workbook(destination)
+assert not any('audit' in name.lower() or 'source' in name.lower() or 'credits' in name.lower() for name in check.sheetnames)
 assert check['All Products'].max_row-5 == len(products)
 assert sum(len(check[c]._images) for c in groups) == len(pumps)
 assert all(p['sku'] in content for p in pumps)
