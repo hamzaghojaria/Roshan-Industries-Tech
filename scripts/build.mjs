@@ -1,3 +1,4 @@
+// Generate static HTML, browser assets and the disposable Render publish directory.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -55,6 +56,12 @@ write(
 );
 // dist is a disposable hosting copy, never an editable source directory.
 const output = path.join(root, 'dist');
+// Recreate only the verified build directory so removed files cannot survive deployments.
+if (fs.existsSync(output)) {
+  if (path.relative(root, fs.realpathSync(output)) !== 'dist')
+    throw new Error('Refusing to clean a build directory outside this project');
+  fs.rmSync(output, { recursive: true });
+}
 fs.mkdirSync(output, { recursive: true });
 for (const file of [
   'index.html',

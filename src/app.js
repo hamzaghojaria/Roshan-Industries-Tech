@@ -1,6 +1,20 @@
 // Progressive enhancement: every page remains readable without JavaScript.
 (() => {
   'use strict';
+  // Hosted home links use the directory root; preserve index.html for file previews.
+  if (location.protocol === 'file:') {
+    document.querySelectorAll('a[href]').forEach((link) => {
+      const target = new URL(link.href);
+      if (target.protocol === 'file:' && target.pathname.endsWith('/')) {
+        target.pathname += 'index.html';
+        link.href = target.href;
+      }
+    });
+  } else if (location.pathname.endsWith('/index.html')) {
+    const home = new URL(location.href);
+    home.pathname = home.pathname.slice(0, -'index.html'.length);
+    history.replaceState(null, '', home.href);
+  }
   // Batch sticky-header updates to animation frames.
   const header = document.querySelector('header');
   // Collapse mobile navigation only with JavaScript; links stay available without it.
@@ -62,8 +76,25 @@
   );
   // Reveal below-the-fold sections once; respect reduced-motion preferences.
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  // Hide the mobile shortcut where enquiry buttons, pagination or the footer are visible.
+  const floatingWhatsApp = document.querySelector('.floating-whatsapp');
+  if (floatingWhatsApp && 'IntersectionObserver' in window) {
+    const visibleContactAreas = new Set();
+    const contactObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) visibleContactAreas.add(entry.target);
+        else visibleContactAreas.delete(entry.target);
+      }
+      floatingWhatsApp.hidden = visibleContactAreas.size > 0;
+    });
+    document
+      .querySelectorAll('.enquiry-actions, .pagination, footer')
+      .forEach((area) => contactObserver.observe(area));
+  }
   // Soft cursor spotlights add depth to shared feature panels without tilting content.
-  const showcases = document.querySelectorAll('.hero-visual, .page-intro, .detail-image, .custom-enquiry');
+  const showcases = document.querySelectorAll(
+    '.hero-visual, .page-intro, .detail-image, .custom-enquiry',
+  );
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   for (const showcase of showcases) {
     showcase.classList.add('interactive-spotlight');

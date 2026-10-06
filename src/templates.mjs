@@ -1,7 +1,14 @@
+// Shared HTML generators, navigation and product/company page content.
 // Source templates generate all pages; edit here rather than generated HTML.
 import { categories } from './catalogue.mjs';
 import { officeLocation } from './location.mjs';
 import { indexCatalogue } from './catalogue-index.mjs';
+import fs from 'node:fs';
+// Verified premium-PDF pages keep each product's catalogue link in sync.
+const premiumAuditFile = new URL('../reports/premium-catalogue-audit.json', import.meta.url);
+const premiumCataloguePages = fs.existsSync(premiumAuditFile)
+  ? JSON.parse(fs.readFileSync(premiumAuditFile, 'utf8')).sku_pages
+  : {};
 // The same family order is used in desktop groups and mobile filters.
 const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials'];
 /** Escape catalogue text before inserting it into HTML attributes or content. */
@@ -10,8 +17,10 @@ export const esc = (value) =>
     /[&<>"']/g,
     (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c],
   );
-const email = 'roshanindustriestech@gmail.com',
-  listing = 'https://share.google/FMr11h7ed3ixmurjm';
+const email = 'roshanindustriestech@gmail.com';
+const whatsapp = (p) =>
+  `https://wa.me/919821216170?text=${encodeURIComponent(p ? `Hello Roshan Industries, I would like to enquire about ${p.name} (SKU ${p.sku}).` : 'Hello Roshan Industries, I would like to discuss my product requirements.')}`;
+const whatsappIcon = `<svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 6.8c-.5 0-1.4.7-1.4 1.8 0 2.7 3.9 6.8 7.3 7.6 1.3.3 2.7-.5 2.9-1.5.1-.5 0-.6-.4-.8l-2-1c-.4-.2-.6-.1-.8.2l-.7.8c-.2.2-.4.2-.7.1-1.4-.6-2.6-1.6-3.4-2.9-.2-.3-.2-.5 0-.7l.6-.7c.2-.2.2-.4.1-.7L8.7 7c-.1-.2-.3-.2-.7-.2Z" fill="currentColor"/></svg>`;
 /** Prepare a catalogue enquiry; visitors review and send it in their email app. */
 export const mail = (p) =>
   `mailto:${email}?subject=${encodeURIComponent(p ? `Product enquiry: ${p.sku} — ${p.name}` : 'Roshan Industries product enquiry')}&body=${encodeURIComponent(p ? `Hello Roshan Industries,\n\nProduct: ${p.name}\nSKU: ${p.sku}\nCatalogue reference: ${p.id.toUpperCase()}\n\nQuantity required: \nSpecifications: \nCompany: \nContact number: ` : 'Hello Roshan Industries,\n\nProduct / SKU: \nQuantity: \nSpecifications: \nCompany: \nContact number: ')}`;
@@ -106,14 +115,22 @@ export function categoryCard(c, products, base = '') {
   >`;
 }
 /** Shared document shell, navigation, branding, styles and footer for every route. */
-export function layout(title, body, { base = '', active = '', description = '', page = '' } = {}) {
+export function layout(
+  title,
+  body,
+  { base = '', active = '', description = '', page = '', product = null } = {},
+) {
   // Give each main page a relevant search description; products supply their own.
   const descriptions = {
-    home: 'Roshan Industries manufactures watch parts and custom products in Mumbai, with over 100 years of heritage. Explore our tools and discuss your requirements.',
-    categories: 'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
-    products: 'Explore 200 watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
-    about: 'Discover Roshan Industries, a Mumbai watch parts manufacturer with over 100 years of heritage and three generations of experience. Learn about our custom manufacturing.',
-    contact: 'Contact Roshan Industries in Goregaon West, Mumbai for watch parts, catalogue enquiries and custom manufacturing. Share your drawing, sample or product requirements.',
+    home: 'Roshan Industries manufactures watch parts and custom products in Mumbai, with 125+ years of service since 1900. Explore our tools and discuss your requirements.',
+    categories:
+      'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
+    products:
+      'Explore 200 watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
+    about:
+      'Discover Roshan Industries, a Mumbai watch parts manufacturer with 125+ years of service since 1900 and four generations of experience. Learn about our custom manufacturing.',
+    contact:
+      'Contact Roshan Industries in Goregaon West, Mumbai for watch parts, catalogue enquiries and custom manufacturing. Share your drawing, sample or product requirements.',
   };
   const pageDescription = description || descriptions[active] || descriptions.home;
   const logo = /* HTML */ `<img
@@ -128,10 +145,7 @@ export function layout(title, body, { base = '', active = '', description = '', 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>${esc(title)} | Roshan Industries</title>
-        <meta
-          name="description"
-          content="${esc(pageDescription)}"
-        />
+        <meta name="description" content="${esc(pageDescription)}" />
         <meta property="og:title" content="${esc(title)} | Roshan Industries" />
         <meta property="og:description" content="${esc(pageDescription)}" />
         <meta property="og:type" content="website" />
@@ -147,13 +161,22 @@ export function layout(title, body, { base = '', active = '', description = '', 
         <a class="skip" href="#main">Skip to content</a>
         <div class="topbar">
           <div class="container">
-            <span>Custom manufacturing. A century of experience.</span
-            ><a class="header-email" href="mailto:${email}">${email}</a>
+            <span>Custom manufacturing. Since 1900. 125+ years of service.</span>
+            <div class="header-contact">
+              <a class="header-email" href="mailto:${email}">${email}</a
+              ><a
+                class="header-whatsapp"
+                href="${esc(whatsapp())}"
+                target="_blank"
+                rel="noopener noreferrer"
+                >${whatsappIcon}Chat on WhatsApp</a
+              >
+            </div>
           </div>
         </div>
         <header>
           <div class="container header-main">
-            <a class="brand" href="${base}index.html">${logo}</a>
+            <a class="brand" href="${base || './'}">${logo}</a>
             <button
               class="mobile-menu-toggle"
               type="button"
@@ -187,10 +210,10 @@ export function layout(title, body, { base = '', active = '', description = '', 
           <nav aria-label="Main navigation">
             <div class="container nav-links" id="primary-navigation">
               ${[
-                ['index.html', 'Home', 'home'],
+                ['./', 'Home', 'home'],
                 ['catalogue.html', 'Products', 'products'],
                 ['categories.html', 'Categories', 'categories'],
-                ['index.html#custom-manufacturing', 'Custom Manufacturing', 'custom'],
+                ['./#custom-manufacturing', 'Custom Manufacturing', 'custom'],
                 ['about.html', 'About Us', 'about'],
                 ['contact.html', 'Contact Us', 'contact'],
               ]
@@ -227,6 +250,15 @@ export function layout(title, body, { base = '', active = '', description = '', 
                 Tools and components for watchmaking,<br />clock repair and jewellery bench work.
               </p>
               <a class="footer-email" href="mailto:${email}">${email}</a>
+              <div class="contact-actions">
+                <a
+                  class="whatsapp-link"
+                  href="${esc(whatsapp())}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >${whatsappIcon}Chat on WhatsApp</a
+                >
+              </div>
               <div class="footer-custom-highlight">
                 <h3>Custom Manufacturing</h3>
                 <p>
@@ -242,7 +274,7 @@ export function layout(title, body, { base = '', active = '', description = '', 
               <h3>Explore</h3>
               <a href="${base}catalogue.html">All products</a
               ><a href="${base}categories.html">Product categories</a
-              ><a href="${base}index.html#custom-manufacturing">Custom manufacturing</a
+              ><a href="${base || './'}#custom-manufacturing">Custom manufacturing</a
               ><a href="${base}about.html">About Us</a><a href="${base}contact.html">Contact Us</a>
               <a
                 href="${base}assets/roshan-updated-product-catalogue.pdf"
@@ -264,9 +296,20 @@ export function layout(title, body, { base = '', active = '', description = '', 
             </div>
           </div>
           <div class="container footer-bottom">
-            <span class="footer-heritage">© 1900 Roshan Industries</span>
+            <div class="footer-social" role="group" aria-label="Social media">
+              <span>LinkedIn</span><span>Instagram</span><span>X</span>
+            </div>
+            <span class="footer-heritage">Roshan Industries · Since 1900</span>
           </div>
         </footer>
+        <a
+          class="floating-whatsapp"
+          href="${esc(whatsapp(product))}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat with Roshan Industries on WhatsApp"
+          >${whatsappIcon}<span>Chat on WhatsApp</span></a
+        >
       </body>
     </html>`;
 }
@@ -299,8 +342,8 @@ export function home(products) {
             <p class="eyebrow">MADE FOR YOUR REQUIREMENTS</p>
             <h1>Custom products.<br /><span>Made for your needs.</span></h1>
             <p>
-              Custom product manufacturing in Mumbai, backed by over 100 years of heritage. Bring us
-              your requirements, or explore our watchmaking, clock and jewellery tools.
+              Custom product manufacturing in Mumbai, backed by 125+ years of service since 1900.
+              Bring us your requirements, or explore our watchmaking, clock and jewellery tools.
             </p>
             <div class="hero-actions">
               <a class="button button-gold" href="contact.html#custom-enquiry"
@@ -308,7 +351,8 @@ export function home(products) {
               ><a class="quiet-link" href="catalogue.html">Explore the catalogue</a>
             </div>
             <div class="heritage-line">
-              <strong>100+</strong><span>years of manufacturing heritage<br />Mumbai, India</span>
+              <strong>125+</strong
+              ><span>years of service<br />Since 1900 &middot; Mumbai, India</span>
             </div>
           </div>
           <div class="hero-visual">
@@ -346,7 +390,8 @@ export function home(products) {
       </section>
       <div class="trust-row container">
         <div>
-          <strong>Manufacturing heritage</strong><span>Over a century, rooted in Mumbai</span>
+          <strong>Manufacturing heritage</strong
+          ><span>Since 1900 &middot; 125+ years of service</span>
         </div>
         <div>
           <strong>${products.length} catalogue products</strong
@@ -387,7 +432,7 @@ export function home(products) {
       </section>
       <section class="section container legacy-layout">
         <div class="legacy-stat">
-          <strong>100<span>+</span></strong>
+          <strong>125<span>+</span></strong>
           <p>YEARS OF HERITAGE</p>
           <span>Mumbai, India</span>
         </div>
@@ -396,9 +441,8 @@ export function home(products) {
           <h2>Roshan Industries</h2>
           <p class="lead">A long-standing connection to the craft of time.</p>
           <p>
-            With over 100 years of manufacturing heritage in Mumbai, Roshan Industries brings
-            together horological tools, watchmaker’s essentials, jewellery tools and allied
-            products.
+            With 125+ years of service in Mumbai since 1900, Roshan Industries brings together
+            horological tools, watchmaker’s essentials, jewellery tools and allied products.
           </p>
           <a class="text-link" href="about.html">Discover our story</a>
         </div>
@@ -441,7 +485,9 @@ export function categoriesPage(products) {
                   <h2>${esc(family.name)}</h2>
                 </div>
                 <div class="family-count">
-                  <span>${family.categories.length} categories &middot; ${family.count} products</span>
+                  <span
+                    >${family.categories.length} categories &middot; ${family.count} products</span
+                  >
                 </div>
               </div>
               <div class="category-grid">
@@ -596,11 +642,19 @@ export function productPage(p, products) {
               <dd>On enquiry</dd>
             </div>
           </dl>
-          <a class="button button-navy" href="${esc(mail(p))}">Enquire about this product</a>
-          <p class="enquiry-hint">Your email will include the product name and SKU.</p>
+          <div class="enquiry-actions">
+            <a class="button button-navy" href="${esc(mail(p))}">Enquire about this product</a>
+            <a
+              class="button whatsapp-link"
+              href="${esc(whatsapp(p))}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >${whatsappIcon}Chat on WhatsApp</a
+            >
+          </div>
           <a
             class="text-link"
-            href="../assets/roshan-product-catalogue.pdf#page=${p.page}"
+            href="../assets/${premiumCataloguePages[p.sku] ? 'roshan-updated-product-catalogue.pdf' : 'roshan-product-catalogue.pdf'}#page=${premiumCataloguePages[p.sku] || p.page}"
             target="_blank"
             rel="noopener"
             >View in the product catalogue</a
@@ -637,6 +691,7 @@ export function productPage(p, products) {
       base: '../',
       active: 'products',
       page: 'product',
+      product: p,
       description: `${p.name}. ${p.description}`,
     },
   );
@@ -659,7 +714,7 @@ export function aboutPage(products) {
         </div>
         <div>
           <h2>Rooted in Mumbai.<br />Connected to the craft.</h2>
-          <p class="lead">Over 100 years of manufacturing heritage.</p>
+          <p class="lead">Since 1900. Over 125 years of service.</p>
           <p>
             Roshan Industries works in watch parts manufacturing in Mumbai. Our catalogue brings
             together horological and watchmaker’s tools, jewellery tools and allied products.
@@ -683,7 +738,7 @@ export function aboutPage(products) {
       </section>
       <section class="section section-muted">
         <div class="container about-numbers">
-          <div><strong>100+</strong><span>Years of manufacturing heritage</span></div>
+          <div><strong>125+</strong><span>Years of service &middot; Since 1900</span></div>
           <div><strong>${products.length}</strong><span>Products in our catalogue</span></div>
           <div><strong>${categories.length}</strong><span>Curated product categories</span></div>
         </div>
@@ -728,28 +783,36 @@ export function aboutPage(products) {
             <h2 id="leaders-title">The family behind Roshan Industries.</h2>
           </div>
         </div>
-        <p class="lead">Three generations. One family story.</p>
+        <p class="lead">Four generations. One family story.</p>
         <ol class="generation-timeline">
           <li>
             <span class="generation-number" aria-hidden="true">01</span>
             <div class="generation-copy">
               <p class="eyebrow">FIRST GENERATION</p>
-              <h3>Ahmed Rashid Roshan</h3>
-              <p class="generation-relation">Father</p>
+              <h3>Vali Mohammed Roshan</h3>
+              <p class="generation-relation">Great-grandfather</p>
             </div>
           </li>
           <li>
             <span class="generation-number" aria-hidden="true">02</span>
             <div class="generation-copy">
               <p class="eyebrow">SECOND GENERATION</p>
-              <h3>Imran Roshan</h3>
-              <p class="generation-relation">Son</p>
+              <h3>Ahmed Rashid Roshan</h3>
+              <p class="generation-relation">Father</p>
             </div>
           </li>
           <li>
             <span class="generation-number" aria-hidden="true">03</span>
             <div class="generation-copy">
               <p class="eyebrow">THIRD GENERATION</p>
+              <h3>Imran Roshan</h3>
+              <p class="generation-relation">Son</p>
+            </div>
+          </li>
+          <li>
+            <span class="generation-number" aria-hidden="true">04</span>
+            <div class="generation-copy">
+              <p class="eyebrow">FOURTH GENERATION</p>
               <div class="generation-names">
                 <h3>Abdullah Roshan</h3>
                 <h3>Mohammed Roshan</h3>
@@ -797,9 +860,6 @@ export function contactPage() {
           <a class="button button-navy" href="${esc(customMail())}"
             >Prepare a custom product enquiry</a
           >
-          <p class="enquiry-hint">
-            Opens your email application. Attach your drawings or photos, then review and send.
-          </p>
         </div>
         <div class="enquiry-checklist">
           <h3>A useful starting point</h3>
@@ -822,10 +882,16 @@ export function contactPage() {
             Tell us which product you’re interested in and the quantity you need. Include the SKU
             where possible so we can identify the exact catalogue entry.
           </p>
-          <a class="button button-navy" href="${esc(mail())}">Prepare an email enquiry</a>
-          <p class="enquiry-hint">
-            Opens your email application. Review and send the message there.
-          </p>
+          <div class="enquiry-actions">
+            <a class="button button-navy" href="${esc(mail())}">Prepare an email enquiry</a>
+            <a
+              class="button whatsapp-link"
+              href="${esc(whatsapp())}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >${whatsappIcon}Chat on WhatsApp</a
+            >
+          </div>
         </div>
         <div class="contact-info">
           <div>

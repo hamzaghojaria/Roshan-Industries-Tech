@@ -1,3 +1,4 @@
+// Validate generated routes, assets, brand names, product totals and SKU stability.
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -11,6 +12,10 @@ const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'products.js'), 'utf8'), sandbox);
 const products = sandbox.window.ROSHAN_PRODUCTS;
 assert.equal(products.length, 200);
+assert(
+  products.every((p) => !/[?\uFFFD\u00C3]/u.test(p.name)),
+  'Corrupted character in product name',
+);
 assert.equal(new Set(products.map((p) => p.sku)).size, 200);
 assert.equal(new Set(products.map((p) => p.id)).size, 200);
 assert.equal(products.find((p) => p.id === 'p05-03').sku, 'RIT-0039');
@@ -62,6 +67,10 @@ for (const file of files) {
   const ids = new Set([...html.matchAll(/id="([^"]+)"/g)].map((m) => m[1]));
   for (const m of html.matchAll(/(?:href|src|action)="([^"]+)"/g)) {
     const value = decode(m[1]);
+    if (value.startsWith('tel:')) {
+      assert.equal(value, 'tel:+919821216170', `Unexpected phone link: ${file}`);
+      continue;
+    }
     if (/^(?:https?:|mailto:|data:)/.test(value)) continue;
     if (value.startsWith('#')) {
       assert(ids.has(value.slice(1)), `Missing anchor ${file}: ${value}`);
@@ -69,7 +78,7 @@ for (const file of files) {
     }
     const local = path.resolve(path.dirname(filename), value.split(/[?#]/)[0]);
     assert(fs.existsSync(local), `Broken local link ${file}: ${value}`);
-    assert(local.startsWith(root + path.sep), `Link outside the site: ${value}`);
+    assert(local === root || local.startsWith(root + path.sep), `Link outside the site: ${value}`);
   }
   const logos = [...html.matchAll(/<img\s+src="([^"]+roshan-logo\.png)"/g)];
   assert(logos.length >= 2, `Missing shared header/footer logo: ${file}`);
@@ -107,7 +116,10 @@ for (const file of files) {
   const visible = html
     .replace(/<[^>]*>/g, ' ')
     .replace(/\s+/g, ' ')
-    .replace(/\b(?:Ahmed Rashid|Ahmed|Imran|Abdullah|Mohammed) Roshan\b/g, 'Family member');
+    .replace(
+      /\b(?:Vali Mohammed|Ahmed Rashid|Ahmed|Imran|Abdullah|Mohammed) Roshan\b/g,
+      'Family member',
+    );
   assert(!/\bRoshan\b(?! Industries)/i.test(visible), `Shortened company name: ${file}`);
 }
 console.log(

@@ -37,7 +37,7 @@ let browser;
   await page.locator('#catalogue-grid h3 a').click();
   await page.waitForURL(/products\/rit-0001\.html/);
   assert.equal(await page.locator('.detail-sku').textContent(), 'SKU RIT-0001');
-  const email = await page.locator('.detail-copy .button').getAttribute('href');
+  const email = await page.locator('.detail-copy a[href^="mailto:"]').getAttribute('href');
   assert.match(decodeURIComponent(email), /SKU: RIT-0001/);
   await page.screenshot({ path: path.join(root, 'artifacts/qa/new-product.png') });
   assert.equal(
@@ -50,11 +50,22 @@ let browser;
   assert.equal(await page.locator('.pagination-ellipsis').count(), 1);
   // Next traverses every page even though only three page numbers are shown.
   for (let current = 2; current <= 9; current++) {
-    await page.locator('#pagination button').filter({ hasText: /^Next$/ }).click();
-    assert.equal(await page.locator('#pagination [aria-current="page"]').textContent(), String(current));
+    await page
+      .locator('#pagination button')
+      .filter({ hasText: /^Next$/ })
+      .click();
+    assert.equal(
+      await page.locator('#pagination [aria-current="page"]').textContent(),
+      String(current),
+    );
     assert.equal(await page.locator('#pagination button[aria-label^="Page "]').count(), 3);
   }
-  assert(await page.locator('#pagination button').filter({ hasText: /^Next$/ }).isDisabled());
+  assert(
+    await page
+      .locator('#pagination button')
+      .filter({ hasText: /^Next$/ })
+      .isDisabled(),
+  );
   await page.goto(url('catalogue.html'));
   await page.locator('[data-page="2"]').first().click();
   assert.match(await page.locator('#results-count').textContent(), /Showing 25–48/);
@@ -99,7 +110,10 @@ let browser;
   assert.match(await page.locator('#results-count').textContent(), /of 36 products$/);
   await page.goto(url('categories/screwdrivers.html'));
   assert.equal(await page.locator('#family-filter').count(), 0);
-  assert.equal(await page.locator('#primary-navigation [aria-current="page"]').textContent(), 'Products');
+  assert.equal(
+    await page.locator('#primary-navigation [aria-current="page"]').textContent(),
+    'Products',
+  );
   assert.equal(await page.locator('.sidebar-family').count(), 4);
   assert.equal(await page.locator('#category-jump optgroup').count(), 4);
   for (const file of fs.readdirSync(path.join(root, 'categories'))) {

@@ -26,7 +26,11 @@ const assert = require('node:assert/strict');
     const audit = await browser.newPage({ reducedMotion: 'reduce' });
     await audit.route('https://**/*', (route) => route.abort());
     const routes = [
-      'index.html', 'catalogue.html', 'categories.html', 'about.html', 'contact.html',
+      'index.html',
+      'catalogue.html',
+      'categories.html',
+      'about.html',
+      'contact.html',
       ...fs.readdirSync(path.join(root, 'categories')).map((file) => `categories/${file}`),
       ...fs.readdirSync(path.join(root, 'products')).map((file) => `products/${file}`),
     ];
@@ -39,9 +43,12 @@ const assert = require('node:assert/strict');
           const content = document.querySelector('.page-intro, .product-detail');
           return {
             overflow: document.documentElement.scrollWidth > innerWidth + 1,
-            offset: breadcrumb && content
-              ? Math.abs(breadcrumb.getBoundingClientRect().left - content.getBoundingClientRect().left)
-              : 0,
+            offset:
+              breadcrumb && content
+                ? Math.abs(
+                    breadcrumb.getBoundingClientRect().left - content.getBoundingClientRect().left,
+                  )
+                : 0,
             current: breadcrumb?.querySelectorAll('[aria-current="page"]').length || 0,
           };
         });
@@ -50,13 +57,15 @@ const assert = require('node:assert/strict');
         if (file !== 'index.html') assert.equal(geometry.current, 1, file);
       }
       await audit.goto(url('contact.html'));
-      const trail = await audit.locator('.breadcrumb li').evaluateAll((items) =>
-        items.map((item) => item.getBoundingClientRect().top),
-      );
+      const trail = await audit
+        .locator('.breadcrumb li')
+        .evaluateAll((items) => items.map((item) => item.getBoundingClientRect().top));
       assert.equal(trail[0], trail[1], 'Short breadcrumbs should stay on one line');
     }
     await audit.close();
-    console.log(`PASS: ${routes.length} routes at 320/390/760px, no overflow, aligned breadcrumbs and inline short trails.`);
+    console.log(
+      `PASS: ${routes.length} routes at 320/390/760px, no overflow, aligned breadcrumbs and inline short trails.`,
+    );
     for (const width of [320, 390, 760]) {
       await page.setViewportSize({ width, height: 844 });
       await page.goto(url('index.html'));
@@ -125,8 +134,8 @@ const assert = require('node:assert/strict');
     await page.locator('footer').scrollIntoViewIfNeeded();
     await page.screenshot({ path: path.join(root, 'artifacts/qa/mobile-footer.png') });
     await page.goto(url('about.html'));
-    assert.equal(await page.locator('.generation-timeline > li').count(), 3);
-    assert.equal(await page.locator('.generation-timeline h3').count(), 4);
+    assert.equal(await page.locator('.generation-timeline > li').count(), 4);
+    assert.equal(await page.locator('.generation-timeline h3').count(), 5);
     assert.equal(await page.locator('.leader-card').count(), 0);
     await page
       .locator('.leadership-section')

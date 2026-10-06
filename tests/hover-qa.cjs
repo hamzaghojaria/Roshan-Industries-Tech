@@ -42,13 +42,15 @@ let browser;
     /matrix\(1, 0, 0, 1, 0, -7\)/,
   );
   await page.goto(url('contact.html'));
-  const button = page.locator('.contact-primary .button');
-  await button.hover();
-  await page.waitForTimeout(350);
-  assert.match(
-    await button.evaluate((el) => getComputedStyle(el).transform),
-    /matrix\(1, 0, 0, 1, 0, -2\)/,
-  );
+  // Both enquiry channels should retain the same hover feedback.
+  for (const button of await page.locator('.contact-primary .button').all()) {
+    await button.hover();
+    await page.waitForTimeout(350);
+    assert.match(
+      await button.evaluate((el) => getComputedStyle(el).transform),
+      /matrix\(1, 0, 0, 1, 0, -2\)/,
+    );
+  }
   await page.locator('#search').focus();
   await page.waitForTimeout(250);
   assert.equal(

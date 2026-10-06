@@ -1,161 +1,135 @@
-# Roshan Industries
+﻿# Roshan Industries website
 
-Static company website with custom product manufacturing as its main message, 200 catalogue products, 15 category pages, About Us and Contact Us. It uses no backend and needs no production dependencies. Email enquiries open the visitor’s email application; the visitor attaches drawings and sends the message there.
+Static website for Roshan Industries, watch parts and custom manufacturing in Mumbai. The reviewed catalogue contains **200 products, 15 categories and four families**. The brand is **Since 1900**, with **125+ years of service**. About Us presents four generations, starting with Vali Mohammed Roshan.
 
-## Open and build
+## Build and deploy
 
-The supplied checkout is already built: open `index.html` in a browser. After editing source, rebuild with Node.js 22 or newer:
+Use Node.js 22 or newer. There are no production package dependencies.
 
-```sh
+```powershell
+npm install
 npm run build
 npm run check
 ```
 
-These two commands need only Node.js, not `npm install`. For formatting and browser tests, first run `npm install`. Tests use Microsoft Edge; set `EDGE_PATH` to another compatible Chromium executable if necessary.
+Render settings:
 
-```sh
+| Setting           | Value         |
+| ----------------- | ------------- |
+| Service           | Static Site   |
+| Branch            | main          |
+| Root directory    | Empty         |
+| Build command     | npm run build |
+| Publish directory | dist          |
+
+Push source changes to GitHub to trigger Render deployment. The generated `dist` directory is ignored by Git and rebuilt on Render. Home links use the directory root, so hosted navigation shows `/` instead of `/index.html`. Opening `/index.html` directly also cleans the address in JavaScript, preserving its query and anchor. Local `file:` previews keep the actual filename to remain usable.
+
+## Folder guide
+
+| Folder                  | Purpose                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| src                     | Editable templates, browser logic and styles.                                            |
+| src/data                | Reviewed names, stable SKU map, name confirmations and the supplied premium PDF.         |
+| scripts                 | Website build/check, original PDF extraction, premium PDF verification and Excel export. |
+| tests                   | Browser regression checks with Playwright and Microsoft Edge.                            |
+| assets                  | Logo, all 200 product images, original scan reference and current customer PDF.          |
+| reports                 | Original image audit and premium catalogue/page/link verification records.               |
+| reports/catalogue-audit | Per-panel source references, image hashes and visual comparisons.                        |
+| artifacts/qa            | Disposable screenshots produced by browser checks; ignored by Git.                       |
+| categories and products | Generated HTML for 15 categories and 200 products; do not edit.                          |
+| dist                    | Disposable deployment output; safely recreated on every build.                           |
+| .openai                 | Existing Sites project metadata; Render deployment uses the settings above.              |
+
+The parent `.site-tools` folder contains portable Node/Git and local QA dependencies. It is required by this workstation and is excluded from Git. Keep it if Node/Git are not installed globally.
+
+## Source file guide
+
+| File                                         | Responsibility                                                                                                                                                        |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| src/templates.mjs                            | Shared header/footer, home and company pages, catalogue/category listings, product pages, breadcrumbs, email/WhatsApp links and verified PDF-page links.              |
+| src/catalogue.mjs                            | Fifteen category definitions, reviewed photo assignments, product records and permanent SKU allocation.                                                               |
+| src/catalogue-index.mjs                      | Cached lookups by image ID, category and family; avoids repeated catalogue scans.                                                                                     |
+| src/descriptions.mjs                         | Product descriptions using reviewed names and category applications without inventing specifications.                                                                 |
+| src/location.mjs                             | Owner-confirmed address and exact Google Maps business CID.                                                                                                           |
+| src/app.js                                   | Mobile menu, measured anchor offsets, local/home URL handling, sticky header, reveal/spotlight effects, floating WhatsApp visibility, search, sorting and pagination. |
+| src/styles.css                               | Base typography, layout, components and responsive breakpoints.                                                                                                       |
+| src/modern.css                               | Current theme, responsive refinements, timeline, footer and accessible interaction effects.                                                                           |
+| src/data/catalogue-source.json               | Product names indexed by original PDF page/panel. Both page-5 selectors are separate products.                                                                        |
+| src/data/sku-map.json                        | Permanent image-to-SKU mapping; never renumber existing entries.                                                                                                      |
+| src/data/name-confirmations.json             | Company-approved names; approval does not assert dimensions or materials.                                                                                             |
+| src/data/roshan-premium-catalogue-source.pdf | Owner-supplied premium design, preserved as the reproducible export source.                                                                                           |
+| scripts/build.mjs                            | Generate 220 HTML pages, browser catalogue data, SKU CSV and a fresh dist.                                                                                            |
+| scripts/check.mjs                            | Validate links/assets, 200 unique SKUs, clean product names, routes, branding and data stability.                                                                     |
+| scripts/extract-catalogue.py                 | Extract original scan images/logo and web reference PDF; never alters the supplied scan.                                                                              |
+| scripts/prepare-premium-pdf.py               | Compare 200 names/SKUs/categories/images, repair premium PDF heritage, clickable family/category index, return links and bookmarks; record the verified page map.     |
+| scripts/export-pdf.py                        | Small compatibility entry point that delegates to the approved premium exporter.                                                                                      |
+| scripts/export-workbook.py                   | Export category/master/audit sheets, embedded photos, website links and premium-PDF page links; reopen and verify the workbook.                                       |
+| tests/mobile-qa.cjs                          | All 220 routes at 320/390/760px, overflow, breadcrumbs, mobile menu, footer/map, timeline and no-JavaScript navigation.                                               |
+| tests/anchor-qa.cjs                          | Homepage category destination and custom-manufacturing anchors on mobile/tablet/desktop.                                                                              |
+| tests/content-qa.cjs                         | Enquiry links, SKU context, FAQ behavior, responsive layout and text enlargement.                                                                                     |
+| tests/hover-qa.cjs                           | Hover/focus feedback, sticky header, reduced motion and readable no-JavaScript fallbacks.                                                                             |
+| tests/multipage-qa.cjs                       | Category navigation, search, sorting, empty states, family URL subsets and compact pagination.                                                                        |
+| tests/root-navigation-qa.cjs                 | Hosted root navigation and index.html cleanup with preserved query/hash.                                                                                              |
+| package.json                                 | Node development dependencies and build/check/test/format commands.                                                                                                   |
+| requirements.txt                             | Python dependencies for catalogue extraction, verification and export.                                                                                                |
+| .gitignore                                   | Exclude generated pages, dist, exports, caches and local secrets.                                                                                                     |
+| .prettierrc.json and .prettierignore         | Consistent source formatting without changing generated/data artifacts.                                                                                               |
+| pending task.txt                             | Owner-maintained ideas/backlog; preserved as notes, not implemented automatically.                                                                                    |
+
+Every executable source file has responsibility/section comments. Generated HTML/data also identify their source. JSON data files stay valid JSON and cannot contain comments; their role is documented here.
+
+## Generated files and exports
+
+Root HTML/CSS/JS files are disposable local-preview copies. Edit `src`, then rebuild. `products.js` loads only on catalogue listing pages. Product cards reference the matching image/SKU and verified premium-PDF page.
+
+- `Roshan-Industries-Catalogue-Premium-Verified.pdf`: Current 41-page customer catalogue.
+- `assets/roshan-updated-product-catalogue.pdf`: Same verified PDF served by website downloads.
+- `assets/roshan-product-catalogue.pdf`: Original scan reference, retained for source traceability/fallback; customer downloads use the premium version.
+- `Roshan-Industries-Product-Catalogue.xlsx`: Current workbook with 15 category sheets, All Products and PDF Audit. Name verification was removed. Includes 200 product photos and correct PDF-page hyperlinks.
+- `roshan-website.zip`: Contents of dist, ready for a static host.
+- `Roshan-Industries-Source.zip`: Editable source, scripts, tests, assets and reports.
+- `reports/premium-catalogue-audit.json`: Source/output hashes, all SKU-page mappings, image comparison scores and verified internal links.
+
+Identical legacy PDF/Updated.xlsx exports and old QA screenshots were removed. If Excel locks the canonical workbook, export-workbook.py writes an Updated.xlsx instead; close Excel before replacing the canonical file.
+
+## Catalogue maintenance
+
+Keep source photo order and stable SKUs. RIT-0039 is the slotted-centre selector, and RIT-0200 is the solid-centre selector. All 200 original photo panels now have separate listings. Multi-piece sets remain one listing per panel.
+
+Families: Watchmaking 86 products / 6 categories; Clockmaking 36 / 2; Jewellery 21 / 2; Workshop Essentials 57 / 5. Catalogue listings keep category navigation, search and sorting. The removed family dropdown stays removed, while existing family query URLs still filter correctly. Pagination shows at most three numbers, ellipses and Previous/Next.
+
+Install Python dependencies and run exports from the project directory:
+
+```powershell
+python -m pip install -r requirements.txt
+npm run build
+python scripts/prepare-premium-pdf.py
+npm run build
+python scripts/export-workbook.py --pdf "C:\Users\Hamza\Downloads\20 page.pdf"
+npm run check
+```
+
+Build again after PDF generation to copy the current PDF into dist and use its page map. If product identities change, the premium verifier stops on a mismatch so the source design must be updated deliberately.
+
+## Contact and interactions
+
+Company name: **Roshan Industries**. Email: roshanindustriestech@gmail.com. Owner-confirmed phone/WhatsApp destination: +91 98212 16170. Website contact actions show **Chat on WhatsApp**, without a separate phone-number link. Messages include product/SKU context on product pages and are reviewed/sent by the visitor.
+
+Office: C-20, 1st Singh Industrial Estate, Ram Mandir Road, Near Movie Star Cinema, Goregaon (W), Mumbai - 400 104. Map uses exact CID 2993568223158557359; do not replace it with an ambiguous business-name search.
+
+The floating WhatsApp shortcut appears on mobile and hides near enquiry actions, pagination or the footer. Motion effects respect reduced-motion preferences, preserve readable content without JavaScript, and do not tilt product images. No prices, stock, tolerances, certifications or lead-time promises are inferred.
+
+## Verification
+
+```powershell
+npm run check
 npm run test:content
 npm run test:catalogue
 npm run test:motion
-npm run format
+npm run test:mobile
+npm run test:anchors
+npm run test:home
+npm run format:check
 ```
 
-The workspace also retains a portable Node executable at `../.site-tools/node-ready/node-v22.14.0-win-x64/node.exe`. Example in PowerShell: `& '../.site-tools/node-ready/node-v22.14.0-win-x64/node.exe' scripts/build.mjs`.
-
-## Directory map
-
-```text
-Roshan Industries Tech/          Workspace
-├── README.md                    Workspace entry point
-├── .gitignore                   Excludes portable tools and local caches
-├── .site-tools/                 Local Node, Git and test/format dependencies
-└── roshan-industries-tech/       Website project
-    ├── src/                     Editable browser code and page generators
-    │   ├── data/                Reviewed product names and permanent SKU map
-    │   ├── templates.mjs        Shared layout and all page content
-    │   ├── catalogue.mjs        Product loading and reviewed taxonomy
-    │   ├── descriptions.mjs     Product-description rules
-    │   ├── app.js               Browser interactions
-    │   ├── styles.css           Base layouts and components
-    │   └── modern.css           Shared theme, hover effects and custom sections
-    ├── scripts/                 Build, verification, PDF and Excel utilities
-    ├── tests/                   Browser regression checks
-    ├── assets/                  Supplied logo, PDF and product photographs
-    ├── reports/                 Preserved catalogue audit and coverage evidence
-    ├── artifacts/               Disposable screenshots and extraction previews
-    ├── categories/              Generated category pages
-    ├── products/                Generated product pages
-    ├── dist/                    Generated static hosting copy
-    ├── *.html                   Generated root pages for local preview
-    └── *.xlsx / *.zip           Local deliverables, excluded from Git
-```
-
-`src/` is the editable source. Generated root pages let you open the site without a server. `dist/` repeats those files for hosting and contains no source, tests, Excel workbooks or tooling. Generated output is ignored by Git and can be rebuilt; it is not an abandoned duplicate.
-
-## Source and code files
-
-| File                                   | Purpose and editing guidance                                                                                                                                                                                                                                             |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `src/templates.mjs`                    | HTML escaping, product/category cards, breadcrumbs, shared header/footer, enquiry emails and generators for Home, Categories, Catalogue, Product, About and Contact. Edit website copy and email/contact details here. All relative links account for nested page depth. |
-| `src/catalogue.mjs`                    | Fifteen category definitions, explicit page/slot assignments, source loading, permanent SKU allocation, missing-caption notes and generated product records. Categories are reviewed assignments, not keyword guesses.                                                   |
-| `src/descriptions.mjs`                 | Category application guidance, specific tool exceptions and printed variant details. Descriptions avoid unsupported specifications, stock or pricing claims.                                                                                                             |
-| `src/data/catalogue-source.json`       | Product names indexed by PDF page, then photo slot. Page 5 slots 3 and 4 are distinct slotted-centre and solid-centre selectors. Edit captions carefully and preserve order.                                                                                                                        |
-| `src/data/sku-map.json`                | Permanent photo-ID-to-SKU mapping. Preserve this file: changing or deleting it can break existing identifiers and product URLs.                                                                                                                                          |
-| `src/app.js`                           | Current footer year, sticky-header feedback, reduced-motion-aware scroll reveals, query matching, sorting, pagination, live result counts and mobile category navigation. Non-catalogue pages skip catalogue controls.                                                   |
-| `src/styles.css`                       | Base typography, document reset, header, cards, catalogue layouts, product details and responsive breakpoints.                                                                                                                                                           |
-| `src/modern.css`                       | White/charcoal/cobalt theme overrides, focus and hover feedback, responsive adjustments, custom-manufacturing sections and reduced-motion behaviour. Loaded after the base stylesheet.                                                                                   |
-| `scripts/build.mjs`                    | Loads the source once; generates five root pages, 15 category pages, 200 product pages, browser data and SKU CSV; copies browser source to the preview root; creates `dist/`. Generated HTML names its source in a comment.                                              |
-| `scripts/check.mjs`                    | Checks every local page/link/asset, stable and unique SKUs, taxonomy, descriptions, shared logo sources, custom enquiry sections and full company naming.                                                                                                                |
-| `scripts/extract-catalogue.py`         | Renders product panels and the supplied logo from the original PDF, writes optimised WebP assets and a readable 20-page web PDF. Never modifies the original. Re-extract only when intentional: it replaces generated assets.                                            |
-| `scripts/export-workbook.py`           | Re-renders and compares all 200 source panels; builds the category Excel workbook with 200 embedded photos, overview/master/audit sheets; records source and image hashes; reopens the workbook to verify it. Close the existing Excel workbook before replacing it.     |
-| `tests/content-qa.cjs`                 | Custom CTA navigation, email contents and SKU context, FAQ interactions, changed-page layouts and 200% text.                                                                                                                                                             |
-| `tests/multipage-qa.cjs`               | All category routes, SKU search, product navigation, sorting, pagination, empty states, mobile navigation and enlarged text.                                                                                                                                             |
-| `tests/hover-qa.cjs`                   | Card lift, image zoom, category/button hover, search focus, sticky header, reduced motion and no-JavaScript visibility.                                                                                                                                                  |
-| `package.json`                         | Project metadata, build/check/format/test commands and development-only dependencies.                                                                                                                                                                                    |
-| `requirements.txt`                     | Optional Python packages for PDF extraction and Excel export. Not needed to view or build the website.                                                                                                                                                                   |
-| `.prettierrc.json` / `.prettierignore` | Formatting conventions and exclusions for generated files/assets.                                                                                                                                                                                                        |
-| `.gitignore`                           | Generated output, development dependencies, caches, Excel lock files, secrets and downloadable archives.                                                                                                                                                                 |
-| `.openai/hosting.json`                 | Existing Sites project ID and the `dist/` hosting directory. This is configuration, not a credential.                                                                                                                                                                    |
-
-## Generated pages and assets
-
-| Path                                            | Contents                                                                                                                 |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `index.html`                                    | Custom manufacturing homepage and catalogue discovery.                                                                   |
-| `catalogue.html`                                | Searchable, sortable, paginated catalogue.                                                                               |
-| `categories.html`                               | Category index grouped by trade.                                                                                         |
-| `about.html`                                    | Company heritage, products and custom manufacturing approach.                                                            |
-| `contact.html`                                  | Email/location details, custom project checklist and FAQs.                                                               |
-| `categories/*.html`                             | One listing page per category.                                                                                           |
-| `products/rit-*.html`                           | One product page per stable SKU, with description, photograph, source reference, enquiries and related items.            |
-| `products.js`                                   | Browser-readable catalogue generated from source data.                                                                   |
-| `app.js`, `styles.css`, `modern.css`            | Preview copies of browser source in `src/`.                                                                              |
-| `product-skus.csv`                              | Spreadsheet-compatible generated product/SKU index.                                                                      |
-| `assets/products/*.webp`                        | 200 extracted photo panels. `p05-04.webp` is deliberately retained for source audit although it has no separate listing. |
-| `assets/roshan-logo.png`                        | Original supplied company mark used in both header and footer.                                                           |
-| `assets/roshan-product-catalogue.pdf`           | Optimised complete 20-page PDF for website download.                                                                     |
-| `reports/Catalogue-Audit.md`                    | Human-readable coverage findings and limitations.                                                                        |
-| `reports/catalogue-audit/coverage.json`         | Original PDF SHA-256, panel/SKU mappings, image hashes and comparison results.                                           |
-| `reports/catalogue-audit/photo-coverage.csv`    | Coverage mapping in spreadsheet-compatible form.                                                                         |
-| `reports/catalogue-audit/page-*-comparison.jpg` | Original crop beside its website image for visual review.                                                                |
-| `artifacts/qa/*.png`                            | Screenshots written by browser tests, ignored by Git.                                                                    |
-| `Roshan-Industries-Product-Catalogue.xlsx`      | Category workbook deliverable, retained locally.                                                                         |
-| `roshan-website.zip`                            | Static website download, refreshed from `dist/`.                                                                         |
-
-## PDF and Excel utilities
-
-Install Python requirements, then pass the source path explicitly:
-
-```sh
-python -m pip install -r requirements.txt
-python scripts/extract-catalogue.py --pdf "C:/Users/Hamza/Downloads/20 page.pdf"
-npm run build
-npm run check
-python scripts/export-workbook.py --pdf "C:/Users/Hamza/Downloads/20 page.pdf"
-```
-
-`uv run --with pillow --with pypdfium2 --with openpyxl python ...` is also supported. The default source is `Downloads/20 page.pdf` under the current user’s home. The original scan is external to the repository and is never deleted or edited.
-
-## Product facts and branding
-
-The 20-page scan has 200 product-photo panels and two covers. Page 5 panels 3 and 4 are distinct selectors (slotted centre and solid centre), giving 200 listings in 15 categories. A panel may depict a multi-piece set; it counts as one listing. Six photos lack captions: page 17 panels 1–2 and all four page 19 compasses. The company confirmed these six names and the page 18 tray/Hands names on 05 October 2026. Confirmation is recorded in `src/data/name-confirmations.json`; materials and specifications are not inferred. Other ambiguous captions are flagged in the workbook.
-
-SKUs `RIT-0001`–`RIT-0200` are assigned website identifiers, not codes printed in the PDF. New products receive the next unused SKU; existing names can change without changing their SKUs. Source references such as `P02-01` retain PDF page/panel traceability.
-
-Use **Roshan Industries** in visible company copy. Keep the supplied logo, technical asset filenames, existing SKU prefix and actual email address unchanged. Confirmed owner details: watch parts manufacturing, Mumbai, 100+ years of heritage, custom product manufacturing, `roshanindustriestech@gmail.com` and the linked Google listing. No certifications, street address, telephone, guaranteed tolerances, minimum quantities, prices or lead times are invented.
-
-## Cleanup decisions
-
-Removed redundant portable Node extraction, downloaded Node/Git ZIP archives, the superseded single-page QA test and outdated preview screenshots. Kept the functioning portable Node/Git binaries because this computer needs them for development and hosting, current regression tests, all product assets and audit evidence. Excel temporary lock files belong to the active Excel session and are ignored rather than forcibly removed.
-
-Website publishing has not succeeded: the hosting service returned expired credentials. The local preview and static ZIP work independently of hosting.
-
-## Banner links and anchor alignment
-
-The homepage Watchmaker’s Bench image links to the Precision Screwdrivers category. The two smaller panels retain their labelled category links. `src/app.js` measures the actual sticky-header height and sets one CSS scroll offset; custom sections have no additional scroll margin. This prevents doubled spacing and corrects cross-page anchor landings after mobile navigation initialises.
-
-`tests/anchor-qa.cjs` checks the banner’s category destination and both custom-manufacturing header links on mobile, tablet and desktop, including navigation from About Us. Run it with `npm run test:anchors`.
-
-## Category families and optimisation
-
-The Categories page highlights Watchmaking, Clockmaking, Jewellery and Workshop Essentials with quick section links, prominent headers and category/product totals. Totals are derived from source records; Watchmaking currently includes six categories.
-
-All Products and every category listing also have a family selector. On All Products it filters existing cards and combines with search, sorting and pagination; the selected family is saved in the URL for reloads and shared links. On category pages, choosing another family opens its full range in All Products. Desktop sidebars and mobile category selectors group the fifteen categories under the same four families. Browser regressions in `tests/multipage-qa.cjs` verify family counts, search combinations, reloads and navigation between families.
-
-`src/catalogue-index.mjs` builds and caches product lookups by photo ID, category and family without changing source records. Templates reuse this index for feature selection and counts. Browser search uses direct SKU lookups and precomputed normalised text instead of rescanning and normalising all records per keystroke. Only catalogue/category listing pages load `products.js`; other pages keep the shared navigation script without the full catalogue payload. Source data and SKU files are written only when they change. Code remains dependency-free at runtime and keeps explanatory comments around these responsibilities.
-
-## Mobile navigation, location and updated workbook
-
-`src/location.mjs` holds the owner-confirmed office address: C-20, 1st Singh Industrial Estate, Ram Mandir Road, Near Movie Star Cinema, Goregaon (W), Mumbai - 400 104. The embedded Google map and directions link use this complete address, and the Contact page displays it as well. Google Maps requires an internet connection.
-
-`src/app.js` now adds a collapsible mobile menu with an expanded-state announcement, Escape-key support and keyboard focus return. Links stay visible without JavaScript. Interior pages use breadcrumb navigation with the current page marked for assistive technology. The homepage product montage has no rotation.
-
-`tests/mobile-qa.cjs` checks menu open/close and Escape, breadcrumb navigation, banner alignment, footer columns, map attributes and navigation without JavaScript. Run it with `npm run test:mobile`. Screenshots are written to `artifacts/qa/`.
-
-The Excel category sheets and master list now include every product’s current description and a custom-manufacturing enquiry note. The export validates names and descriptions against the same records used to build the website.
-
-About Us uses a connected three-generation timeline: Ahmed Rashid Roshan (father), Imran Roshan (son), then Abdullah Roshan and Mohammed Roshan (grandsons). These are owner-supplied relationships; no executive titles, founder dates or biographies are inferred. Edit the timeline in `src/templates.mjs` and its responsive styling in `src/modern.css`. The centred footer includes company/email, Explore/catalogue download and the office map.
-
-### Updated clickable PDF catalogue
-
-`scripts/export-pdf.py` builds `Roshan-Industries-Product-Catalogue.pdf` and the downloadable `assets/roshan-updated-product-catalogue.pdf` from `products.js`. It includes all 200 SKUs, product images, names, categories, family dividers, linked index, PDF bookmarks and contact details. Run `python scripts/export-pdf.py` after the website build, with dependencies from `requirements.txt` installed. Segoe UI is embedded on Windows; DejaVu Sans is used on Linux. The original scan remains available for source-page references.
+Browser checks use installed playwright-core, or the parent portable QA toolchain, with Microsoft Edge by default. Set EDGE_PATH to override the browser executable. Screenshots are regenerated into artifacts/qa. The PDF and workbook exporters separately verify their saved output, SKU completeness, embedded images and page-link mappings.

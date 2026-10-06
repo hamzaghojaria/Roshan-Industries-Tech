@@ -30,6 +30,8 @@ products = json.loads(
     .rstrip(";")
 )
 by_id = {p["id"]: p for p in products}
+premium_report = ROOT / "reports" / "premium-catalogue-audit.json"
+premium_pages = json.loads(premium_report.read_text(encoding="utf8"))["sku_pages"] if premium_report.exists() else {}
 pdf = pdfium.PdfDocument(SOURCE)
 assert len(pdf) == 20
 expected = [
@@ -140,7 +142,7 @@ notes = [
     "Page 18 tray and Hands names confirmed; materials and specifications still require confirmation.",
     "Each category sheet includes embedded photos, SKUs, source references and product-page links.",
     "Website links work when this workbook stays beside the website files. Photos remain embedded.",
-    "Contact: roshanindustriestech@gmail.com",
+    "Contact: roshanindustriestech@gmail.com | +91 98212 16170 | WhatsApp: https://wa.me/919821216170",
 ]
 for row, text in enumerate(notes, 6):
     summary.merge_cells(start_row=row, start_column=1, end_row=row, end_column=6)
@@ -168,20 +170,6 @@ names = {
 }
 uncertain = {"p17-01", "p17-02", "p19-01", "p19-02", "p19-03", "p19-04"}
 ambiguous = {"p18-01", "p18-02", "p18-04", "p03-10", "p03-11", "p17-03", "p16-11"}
-
-
-def status(p):
-    if p.get("nameConfirmed"):
-        return "Name confirmed by company"
-    return (
-        "No printed caption"
-        if p["id"] in uncertain
-        else (
-            "Caption needs clarification"
-            if p["id"] in ambiguous
-            else "Caption transcribed"
-        )
-    )
 
 
 def setup(ws, title, headers, widths):
@@ -235,13 +223,14 @@ def product_sheet(ws, items, photos):
             "PDF page",
             "Panel",
             "Image reference",
-            "Name verification",
             "Review / enquiry notes",
             "Website product page",
             "Product description",
             "Custom manufacturing",
+            "Premium PDF page",
+            "Premium PDF link",
         ],
-        [17, 16, 48, 31, 25, 12, 10, 18, 28, 58, 28, 76, 42],
+        [17, 16, 48, 31, 25, 12, 10, 18, 58, 28, 76, 42, 18, 26],
     )
     for p in sorted(items, key=lambda p: p["sku"]):
         note = p["note"]
@@ -257,11 +246,12 @@ def product_sheet(ws, items, photos):
                 p["page"],
                 p["slot"],
                 p["id"],
-                status(p),
                 note,
                 "Open product page",
                 p["description"],
                 "Discuss custom requirements with our team; feasibility and specifications are confirmed on enquiry.",
+                premium_pages.get(p["sku"], ""),
+                "Open premium catalogue" if p["sku"] in premium_pages else "",
             ]
         )
         r = ws.max_row
@@ -270,10 +260,11 @@ def product_sheet(ws, items, photos):
             cell.alignment = Alignment(vertical="center", wrap_text=True)
             cell.font = Font(size=11, color=navy)
         ws.cell(r, 2).font = Font(size=12, bold=True, color=blue)
-        ws.cell(r, 11).hyperlink = p["url"]
-        ws.cell(r, 11).style = "Hyperlink"
-        if p["id"] in uncertain | ambiguous and not p.get("nameConfirmed"):
-            ws.cell(r, 9).fill = PatternFill("solid", fgColor="FFF0CA")
+        ws.cell(r, 10).hyperlink = p["url"]
+        ws.cell(r, 10).style = "Hyperlink"
+        if p["sku"] in premium_pages:
+            ws.cell(r, 14).hyperlink = f'assets/roshan-updated-product-catalogue.pdf#page={premium_pages[p["sku"]]}'
+            ws.cell(r, 14).style = "Hyperlink"
         if photos:
             photo = Image.open(ROOT / p["image"]).convert("RGB")
             photo.thumbnail((105, 105))
@@ -334,7 +325,7 @@ for cell in summary[16]:
 summary["A34"] = "Photo coverage: 200 / 200"
 summary["A35"] = "Unique products: 200 / 200"
 summary["A36"] = "Uncaptioned photos: 6"
-summary["A37"] = "Amber cells mark names needing confirmation."
+summary["A37"] = "Product names and source references are retained for catalogue traceability."
 summary["A39"] = "All Products"
 summary["A39"].hyperlink = "#'All Products'!A1"
 summary["A39"].style = "Hyperlink"
@@ -344,20 +335,31 @@ summary["C39"].style = "Hyperlink"
 wb.properties.title = "Roshan Industries Product Catalogue"
 wb.properties.creator = "Roshan Industries"
 destination = ROOT / "Roshan-Industries-Product-Catalogue.xlsx"
-wb.save(destination)
+try:
+    wb.save(destination)
+except PermissionError:
+    # Preserve an open workbook; write the requested revision to a new file.
+    destination = ROOT / 'Roshan-Industries-Product-Catalogue-Updated.xlsx'
+    wb.save(destination)
 # Reopen the actual saved file to verify embedded photos, data and local links.
 verified = load_workbook(destination)
 category_sheets = [verified[names[c]] for c in groups]
+for ws in category_sheets + [verified['All Products']]:
+    assert 'Name verification' not in [cell.value for cell in ws[5]]
+    assert ws.max_column == 14
 skus = [ws.cell(r, 2).value for ws in category_sheets for r in range(6, ws.max_row + 1)]
 assert len(skus) == len(set(skus)) == 200 and set(skus) == {p["sku"] for p in products}
 assert sum(len(ws._images) for ws in category_sheets) == 200
 assert verified["PDF Audit"].max_row - 5 == 200
 for ws in category_sheets:
     for r in range(6, ws.max_row + 1):
-        assert (ROOT / ws.cell(r, 11).hyperlink.target).is_file()
+        assert (ROOT / ws.cell(r, 10).hyperlink.target).is_file()
         product = next(p for p in products if p["sku"] == ws.cell(r, 2).value)
         assert ws.cell(r, 3).value == product["name"]
-        assert ws.cell(r, 12).value == product["description"]
+        assert ws.cell(r, 11).value == product["description"]
+        if product["sku"] in premium_pages:
+            assert ws.cell(r, 13).value == premium_pages[product["sku"]]
+            assert ws.cell(r, 14).hyperlink.target.endswith(f'#page={premium_pages[product["sku"]]}')
 manifest = {
     "source_pdf_sha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
     "source_pages": 20,

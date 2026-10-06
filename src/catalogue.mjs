@@ -1,3 +1,4 @@
+// Reviewed category assignments and product records with permanent SKU allocation.
 import { describeProduct } from './descriptions.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -148,7 +149,8 @@ const assignment = {
 /** Build product records from reviewed photo assignments, preserving permanent SKUs. */
 export function loadCatalogue(root) {
   const confirmedNames = new Set(
-    JSON.parse(fs.readFileSync(path.join(root, 'src/data/name-confirmations.json'), 'utf8')).productIds,
+    JSON.parse(fs.readFileSync(path.join(root, 'src/data/name-confirmations.json'), 'utf8'))
+      .productIds,
   );
   const sourceFile = path.join(root, 'src/data/catalogue-source.json');
   let text = fs

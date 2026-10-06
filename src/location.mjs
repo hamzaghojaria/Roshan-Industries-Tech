@@ -1,3 +1,4 @@
+// Owner-confirmed address and exact Google Maps business identifier.
 // The owner's Maps link identifies the selected business, not the other nearby result.
 const address =
   'C-20, 1st Singh Industrial Estate, Ram Mandir Road, Near Movie Star Cinema, Goregaon (W), Mumbai - 400 104';

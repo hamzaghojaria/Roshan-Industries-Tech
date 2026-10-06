@@ -12,7 +12,8 @@
     "test:mobile": "node tests/mobile-qa.cjs",
     "test:anchors": "node tests/anchor-qa.cjs",
     "format": "prettier --write src scripts/*.mjs tests package.json README.md",
-    "format:check": "prettier --check src scripts/*.mjs tests package.json README.md"
+    "format:check": "prettier --check src scripts/*.mjs tests package.json README.md",
+    "test:home": "node tests/root-navigation-qa.cjs"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",
