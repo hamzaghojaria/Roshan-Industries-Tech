@@ -85,6 +85,7 @@ Root HTML, CSS, JavaScript and CSV files are also generated local-preview copies
 | `scripts/build.mjs` | Generates pages and recreates `dist/` |
 | `scripts/check.mjs` | Checks links, images, product counts and SKU stability |
 | `scripts/export-updated-catalogue.py` | Creates the complete PDF and Excel, including pumps |
+| `scripts/workbook-overview.py` | Creates the simple Excel opening sheet with clickable categories |
 | `scripts/prepare-premium-pdf.py` | Verifies and prepares the original 200-product PDF |
 | `scripts/export-workbook.py` | Prepares the original workbook and internal audit |
 | `scripts/extract-catalogue.py` | Extracts product photos and the logo from the original scan |
@@ -145,6 +146,8 @@ You can also extract `roshan-website.zip` there. `index.html` must sit directly 
 - **Source ZIP:** `Roshan-Industries-Source.zip`, editable project files.
 
 The PDF contains 48 pages and 212 entries. Pumps is last in the two-page index. Family/category navigation is clickable; product cards are not. Excel contains Overview, All Products and 21 category sheets with embedded photos, without audit or pump-source sheets.
+
+Excel product and PDF hyperlinks use full live website URLs, so they work from any folder. Update those URLs and regenerate the workbook when moving to a new domain.
 
 <details>
 <summary><strong>Click for catalogue export commands</strong></summary>

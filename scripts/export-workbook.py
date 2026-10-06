@@ -143,7 +143,7 @@ notes = [
     "Other names are transcribed/normalised from the scan, not independently certified specifications.",
     "Page 18 tray and Hands names confirmed; materials and specifications still require confirmation.",
     "Each category sheet includes embedded photos, SKUs, source references and product-page links.",
-    "Website links work when this workbook stays beside the website files. Photos remain embedded.",
+    "Product and catalogue links open the live website. Photos remain embedded.",
     "Contact: roshanindustriestech@gmail.com | +91 98212 16170 | WhatsApp: https://wa.me/919821216170",
 ]
 for row, text in enumerate(notes, 6):
@@ -262,10 +262,10 @@ def product_sheet(ws, items, photos):
             cell.alignment = Alignment(vertical="center", wrap_text=True)
             cell.font = Font(size=11, color=navy)
         ws.cell(r, 2).font = Font(size=12, bold=True, color=blue)
-        ws.cell(r, 10).hyperlink = p["url"]
+        ws.cell(r, 10).hyperlink = 'https://roshan-industries-tech.onrender.com/' + p["url"]
         ws.cell(r, 10).style = "Hyperlink"
         if p["sku"] in premium_pages:
-            ws.cell(r, 14).hyperlink = f'assets/roshan-updated-product-catalogue.pdf#page={premium_pages[p["sku"]]}'
+            ws.cell(r, 14).hyperlink = f'https://roshan-industries-tech.onrender.com/assets/roshan-updated-product-catalogue.pdf#page={premium_pages[p["sku"]]}'
             ws.cell(r, 14).style = "Hyperlink"
         if photos:
             photo = Image.open(ROOT / p["image"]).convert("RGB")
@@ -355,8 +355,8 @@ assert sum(len(ws._images) for ws in category_sheets) == 200
 assert verified["PDF Audit"].max_row - 5 == 200
 for ws in category_sheets:
     for r in range(6, ws.max_row + 1):
-        assert (ROOT / ws.cell(r, 10).hyperlink.target).is_file()
         product = next(p for p in products if p["sku"] == ws.cell(r, 2).value)
+        assert ws.cell(r, 10).hyperlink.target == 'https://roshan-industries-tech.onrender.com/' + product['url']
         assert ws.cell(r, 3).value == product["name"]
         assert ws.cell(r, 11).value == product["description"]
         if product["sku"] in premium_pages:

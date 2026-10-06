@@ -190,8 +190,8 @@ def add_entry(ws, p, photo=False):
     for col in range(1,15):
         ws.cell(row,col)._style = copy(template.cell(6,col)._style)
     ws.row_dimensions[row].height = 110 if photo else 60
-    ws.cell(row,10).hyperlink = p['url']
-    ws.cell(row,14).hyperlink = 'assets/roshan-updated-product-catalogue.pdf#page='+str(report['sku_pages'][p['sku']])
+    ws.cell(row,10).hyperlink = base['website']+'/'+p['url']
+    ws.cell(row,14).hyperlink = base['website']+'/assets/roshan-updated-product-catalogue.pdf#page='+str(report['sku_pages'][p['sku']])
     if photo:
         im = Image.open(ROOT/p['image']).convert('RGBA')
         bg = Image.new('RGBA', im.size, 'white')
@@ -233,6 +233,8 @@ for row in [34,35,36,37]:
     summary.cell(row,1).value=None
 summary['C39'].value=None
 summary['C39'].hyperlink=None
+# Use the same compact opening sheet for every future customer export.
+runpy.run_path(str(ROOT/'scripts/workbook-overview.py'))['simplify_overview'](wb)
 wb.save(destination)
 check=load_workbook(destination)
 assert not any('audit' in name.lower() or 'source' in name.lower() or 'credits' in name.lower() for name in check.sheetnames)
@@ -242,6 +244,6 @@ assert all(p['sku'] in content for p in pumps)
 for category in groups:
     for row in check[category].iter_rows(min_row=6):
         assert row[12].value == report['sku_pages'][row[1].value]
-        assert (ROOT/row[9].hyperlink.target).is_file()
+        assert row[9].hyperlink.target.startswith(base['website']+'/products/')
 print(json.dumps({'pdf_pages':len(final.pages),'entries':len(products),'pump_photos':len(pumps),'xlsx':str(destination)}))
 (ROOT/'reports/export-audit.json').write_text(json.dumps({'pdf_pages':len(final.pages),'entries':len(products),'categories':21,'embedded_category_photos':212,'verified_source_panels':200,'pump_reference_photos':12,'xlsx':destination.name},indent=2),encoding='utf8')
