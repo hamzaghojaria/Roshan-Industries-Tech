@@ -33,7 +33,6 @@ try {
     for (const width of [320, 390, 760, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       for (const slider of await page.locator('[data-slider]').all()) {
-        await slider.locator('[data-slider-pause]').click();
         const track = slider.locator('.slider-track');
         await track.evaluate((el) => el.scrollTo({ left: 0, behavior: 'instant' }));
         await slider.locator('[data-slider-next]').click();
@@ -67,7 +66,7 @@ try {
     await reduced.goto(home, { waitUntil: 'domcontentloaded' });
     const first = reduced.locator('[data-slider]').first();
     await first.scrollIntoViewIfNeeded();
-    assert.equal(await first.locator('[data-slider-pause]').innerText(), 'Play');
+    assert.equal(await first.locator('[data-slider-pause]').count(), 0);
     await reduced.waitForTimeout(5500);
     assert.equal(await first.locator('.slider-track').evaluate((el) => el.scrollLeft), 0);
     await first.locator('[data-slider-next]').click();

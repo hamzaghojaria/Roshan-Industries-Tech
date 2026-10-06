@@ -126,7 +126,7 @@ export function layout(
     categories:
       'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
     products:
-      'Explore 200 watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
+      'Explore 200+ watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
     about:
       'Discover Roshan Industries, a Mumbai watch parts manufacturer with 125+ years of service since 1900 and four generations of experience. Learn about our custom manufacturing.',
     contact:
@@ -204,7 +204,7 @@ export function layout(
               class="catalogue-download"
               href="${base}assets/roshan-updated-product-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download catalogue<small>PDF · 200 products</small></a
+              >Download catalogue<small>PDF &middot; 200+ products</small></a
             >
           </div>
           <nav aria-label="Main navigation">
@@ -331,7 +331,6 @@ function homeSlider(id, label, cards) {
       <button type="button" data-slider-prev aria-controls="slider-${id}" aria-label="Previous ${esc(label.toLowerCase())}">&#8592;</button>
       <span class="slider-position"></span>
       <button type="button" data-slider-next aria-controls="slider-${id}" aria-label="Next ${esc(label.toLowerCase())}">&#8594;</button>
-      <button type="button" class="slider-playback" data-slider-pause aria-label="Pause automatic sliding">Pause</button>
     </div>
   </div>`;
 }
@@ -406,10 +405,7 @@ export function home(products) {
           <strong>Manufacturing heritage</strong
           ><span>Since 1900 &middot; 125+ years of service</span>
         </div>
-        <div>
-          <strong>${products.length} products & enquiry items</strong
-          ><span>Organised for the way you work</span>
-        </div>
+        <div><strong>200+ products</strong><span>Organised for the way you work</span></div>
         <div>
           <strong>Custom manufacturing</strong
           ><span>Your drawings, dimensions and requirements</span>
@@ -560,7 +556,7 @@ export function cataloguePage(products, category = null) {
         <aside class="sidebar">
           <h2>Product categories</h2>
           <a href="${base}catalogue.html" ${!category ? ' class="active"' : ''}
-            >All products <span>${products.length}</span></a
+            >All products <span>200+</span></a
           >${familyNames
             .map(
               (family) =>
@@ -581,7 +577,7 @@ export function cataloguePage(products, category = null) {
         </aside>
         <div class="catalogue-content">
           <div class="catalogue-toolbar">
-            <p id="results-count">${items.length} products</p>
+            <p id="results-count">${items.length >= 200 ? '200+' : items.length} products</p>
             <div>
               <label for="sort">Sort by</label
               ><select id="sort">
@@ -781,7 +777,7 @@ export function aboutPage(products) {
       <section class="section section-muted">
         <div class="container about-numbers">
           <div><strong>125+</strong><span>Years of service &middot; Since 1900</span></div>
-          <div><strong>${products.length}</strong><span>Products in our catalogue</span></div>
+          <div><strong>200+</strong><span>Products in our catalogue</span></div>
           <div><strong>${categories.length}</strong><span>Curated product categories</span></div>
         </div>
       </section>

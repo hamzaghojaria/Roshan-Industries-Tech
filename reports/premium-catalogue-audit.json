@@ -1,12 +1,12 @@
 {
   "source_pdf_sha256": "b185dea26405a5ead8e5a8da2c64df44e8c3ee29d5ec5850087a07e94134fa35",
-  "verified_pdf_sha256": "12eb0fd679d359ed9b94f2c6e44e192f607eda9618c83bd8861237c97db911c0",
-  "pages": 41,
-  "products": 200,
-  "categories": 15,
-  "family_links": 4,
-  "category_links": 15,
-  "verified_internal_links": 57,
+  "verified_pdf_sha256": "4fc8d0972d11c1ef8f82924df59e300fe288e7075ab357e82d130437be03b8e4",
+  "pages": 54,
+  "products": 212,
+  "categories": 21,
+  "family_links": 5,
+  "category_links": 21,
+  "verified_internal_links": 77,
   "sku_pages": {
     "RIT-0001": 4,
     "RIT-0002": 4,
@@ -207,7 +207,19 @@
     "RIT-0196": 41,
     "RIT-0197": 41,
     "RIT-0198": 41,
-    "RIT-0199": 41
+    "RIT-0199": 41,
+    "RIT-0201": 43,
+    "RIT-0204": 44,
+    "RIT-0205": 45,
+    "RIT-0202": 46,
+    "RIT-0206": 47,
+    "RIT-0203": 48,
+    "RIT-0207": 49,
+    "RIT-0208": 50,
+    "RIT-0209": 51,
+    "RIT-0210": 52,
+    "RIT-0211": 53,
+    "RIT-0212": 54
   },
   "category_pages": {
     "Eye Loupes & Magnifiers": 4,
@@ -224,7 +236,13 @@
     "Trays, Covers & Storage": 34,
     "Gauges & Selectors": 36,
     "Tweezers": 39,
-    "Compasses": 41
+    "Compasses": 41,
+    "Centrifugal Pumps": 43,
+    "Submersible Pumps": 46,
+    "Diaphragm Pumps": 48,
+    "Gear Pumps": 51,
+    "Peristaltic Pumps": 52,
+    "Vacuum Pumps": 54
   },
   "image_comparison_errors": {
     "RIT-0001": 0.102,
@@ -428,5 +446,7 @@
     "RIT-0198": 0.169,
     "RIT-0199": 0.195
   },
-  "heritage": "Since 1900 / 125+ years of service"
+  "heritage": "Since 1900 / 125+ years of service",
+  "verified_source_products": 200,
+  "pump_enquiry_entries": 12
 }

@@ -2790,3 +2790,41 @@ main .button::after {
     justify-content: center;
   }
 }
+
+/* Compact homepage discovery imagery and a restrained heritage gradient. */
+#slider-range .product-image {
+  padding: 14px;
+}
+#slider-range .product-image img {
+  aspect-ratio: auto;
+  height: 180px;
+  object-fit: contain;
+}
+.heritage-line {
+  padding: 10px 16px;
+  margin-top: 20px;
+  border-radius: 12px;
+  background: linear-gradient(115deg, #eaf0ff, #f3f7ff 65%, #fff2e5);
+  border: 1px solid #dce6f7;
+  gap: 14px;
+}
+.heritage-line strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+.heritage-line span {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  #slider-range .product-image img {
+    height: 140px;
+  }
+  .heritage-line {
+    padding: 10px 12px;
+    margin-top: 16px;
+  }
+  .heritage-line strong {
+    font-size: 1.8rem;
+  }
+}

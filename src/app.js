@@ -132,7 +132,6 @@
     const track = slider.querySelector('.slider-track');
     const cards = [...track.children];
     const controls = slider.querySelector('.slider-controls');
-    const playback = slider.querySelector('[data-slider-pause]');
     const position = slider.querySelector('.slider-position');
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
     let paused = motion.matches;
@@ -154,11 +153,6 @@
     const update = () => {
       frame = 0;
       position.textContent = `${current() + 1} / ${cards.length}`;
-      playback.textContent = paused ? 'Play' : 'Pause';
-      playback.setAttribute(
-        'aria-label',
-        paused ? 'Start automatic sliding' : 'Pause automatic sliding',
-      );
     };
     const advance = (direction) => {
       const max = track.scrollWidth - track.clientWidth;
@@ -177,11 +171,6 @@
     };
     slider.querySelector('[data-slider-prev]').addEventListener('click', () => manual(-1));
     slider.querySelector('[data-slider-next]').addEventListener('click', () => manual(1));
-    playback.addEventListener('click', () => {
-      paused = !paused;
-      lastInteraction = Date.now();
-      update();
-    });
     track.addEventListener('keydown', (event) => {
       if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
       event.preventDefault();
@@ -318,7 +307,7 @@
     const visible = matches.slice(start, start + pageSize);
     grid.replaceChildren(...visible.map((item) => item.node));
     count.textContent = matches.length
-      ? `Showing ${start + 1}–${start + visible.length} of ${matches.length} products`
+      ? `Showing ${start + 1}–${start + visible.length} of ${matches.length >= 200 ? '200+' : matches.length} products`
       : '0 products';
     document.getElementById('empty-state').hidden = matches.length > 0;
     pagination.replaceChildren();
