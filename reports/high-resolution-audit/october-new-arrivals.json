@@ -1,0 +1,526 @@
+{
+  "date": "2026-10-07",
+  "zipPhotos": 31,
+  "uniqueZipProducts": 30,
+  "linkedProducts": 1,
+  "addedProducts": 31,
+  "sourceZipSha256": "c6615b8091c514ad8d99c3c581d1cb68c75fc338fb87d7b23a3a541f638d0eae",
+  "duplicatePhotos": [
+    {
+      "photo": 5,
+      "duplicateOf": 4,
+      "reason": "Same 20x1 Window tray at lower resolution"
+    }
+  ],
+  "sourceFilenameMap": [
+    {
+      "photo": 1,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.42 AM.jpeg"
+    },
+    {
+      "photo": 2,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.42 AM (1).jpeg"
+    },
+    {
+      "photo": 3,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.42 AM (2).jpeg"
+    },
+    {
+      "photo": 4,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.43 AM.jpeg"
+    },
+    {
+      "photo": 5,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.43 AM (1).jpeg"
+    },
+    {
+      "photo": 6,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.44 AM.jpeg"
+    },
+    {
+      "photo": 7,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.44 AM (1).jpeg"
+    },
+    {
+      "photo": 8,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.45 AM.jpeg"
+    },
+    {
+      "photo": 9,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.45 AM (1).jpeg"
+    },
+    {
+      "photo": 10,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.45 AM (2).jpeg"
+    },
+    {
+      "photo": 11,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.46 AM.jpeg"
+    },
+    {
+      "photo": 12,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.46 AM (1).jpeg"
+    },
+    {
+      "photo": 13,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.46 AM (2).jpeg"
+    },
+    {
+      "photo": 14,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.47 AM.jpeg"
+    },
+    {
+      "photo": 15,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.48 AM.jpeg"
+    },
+    {
+      "photo": 16,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.48 AM (1).jpeg"
+    },
+    {
+      "photo": 17,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.48 AM (2).jpeg"
+    },
+    {
+      "photo": 18,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.49 AM.jpeg"
+    },
+    {
+      "photo": 19,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.49 AM (1).jpeg"
+    },
+    {
+      "photo": 20,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.50 AM.jpeg"
+    },
+    {
+      "photo": 21,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.50 AM (1).jpeg"
+    },
+    {
+      "photo": 22,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.50 AM (2).jpeg"
+    },
+    {
+      "photo": 23,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.51 AM.jpeg"
+    },
+    {
+      "photo": 24,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.51 AM (1).jpeg"
+    },
+    {
+      "photo": 25,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.51 AM (2).jpeg"
+    },
+    {
+      "photo": 26,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.52 AM.jpeg"
+    },
+    {
+      "photo": 27,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.52 AM (1).jpeg"
+    },
+    {
+      "photo": 28,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.53 AM.jpeg"
+    },
+    {
+      "photo": 29,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.53 AM (1).jpeg"
+    },
+    {
+      "photo": 30,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.54 AM.jpeg"
+    },
+    {
+      "photo": 31,
+      "originalFilename": "WhatsApp Image 2026-10-06 at 11.13.54 AM (1).jpeg"
+    }
+  ],
+  "existingProductsChecked": [
+    "RIT-0025",
+    "RIT-0215",
+    "RIT-0042",
+    "RIT-0043",
+    "RIT-0044",
+    "RIT-0024",
+    "RIT-0216"
+  ],
+  "notes": [
+    "Model 5324 explicitly lists 12 tins and the photograph shows 12. The model number is retained without assuming it means 24.",
+    "Rectangular 6x1 containers measure 63 by 53 mm and are distinguished from square 12x1 containers.",
+    "Supplier reference stand has 50 slots but exact hole dimensions and model compatibility are deliberately left for enquiry."
+  ],
+  "frozenExports": {
+    "assets/roshan-industries-catalogue.pdf": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+    "Roshan-Industries-Catalogue.pdf": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+    "Roshan-Industries-Product-Catalogue.xlsx": "0c24c5b3d3d8a76af41dc809881c6f56228ee66f4b59948297d5874f8ce2ab03"
+  },
+  "products": [
+    {
+      "sku": "RIT-0229",
+      "name": "Angled Acrylic Drill Bit Stand",
+      "image": "assets/products/rit-0229-angled-acrylic-drill-bit-stand.webp",
+      "imageWidth": 1254,
+      "imageHeight": 1254,
+      "imageSha256": "1f4f7cb5d523c6ea456a39f71204bfaa7cf201554571b68d152be1292a1589af",
+      "sourcePhotoNumber": null,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0230",
+      "name": "Plastic Storage Box with 12 Square Containers and Window Lid",
+      "image": "assets/products/rit-0230-plastic-storage-box-with-12-square-containers-and-window-lid.webp",
+      "imageWidth": 902,
+      "imageHeight": 657,
+      "imageSha256": "20583cb75c4f4886cb90eb82995658dd303a80625dad8fdffc5dd2007467ad6d",
+      "sourcePhotoNumber": 1,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0231",
+      "name": "Aluminium Storage Box with 12 Tins Model 4112",
+      "image": "assets/products/rit-0231-aluminium-storage-box-with-12-tins-model-4112.webp",
+      "imageWidth": 720,
+      "imageHeight": 737,
+      "imageSha256": "1483c9d301a11b894a5858b2667aee61fdab0829af5d30b448f864dbda8aeadc",
+      "sourcePhotoNumber": 2,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0232",
+      "name": "Boxed Aluminium Tin Set with 6 Containers Model 4A",
+      "image": "assets/products/rit-0232-boxed-aluminium-tin-set-with-6-containers-model-4a.webp",
+      "imageWidth": 772,
+      "imageHeight": 900,
+      "imageSha256": "474935d12ea86493b7fbc281cdd58250638a2f688e02b7c58195313f730598f6",
+      "sourcePhotoNumber": 3,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0233",
+      "name": "Plastic Storage Box with 20 Round Containers and Window Lid",
+      "image": "assets/products/rit-0233-plastic-storage-box-with-20-round-containers-and-window-lid.webp",
+      "imageWidth": 1254,
+      "imageHeight": 1254,
+      "imageSha256": "d382bb6dc884a4457440af17cefc117533b59bedbb65d077de2eb60ccc1eb81b",
+      "sourcePhotoNumber": 4,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0234",
+      "name": "Plastic Storage Box with 12 Round Containers and Window Lid",
+      "image": "assets/products/rit-0234-plastic-storage-box-with-12-round-containers-and-window-lid.webp",
+      "imageWidth": 1079,
+      "imageHeight": 1457,
+      "imageSha256": "8247b9f564a1d316bdb9448c34ec1fdaf20d48c0774473c2bf7cbd93d41d0f4e",
+      "sourcePhotoNumber": 6,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0235",
+      "name": "Aluminium Storage Box with 24 Tins Model 2624",
+      "image": "assets/products/rit-0235-aluminium-storage-box-with-24-tins-model-2624.webp",
+      "imageWidth": 720,
+      "imageHeight": 713,
+      "imageSha256": "c28ceb2509a3274af5a03990444c0a3630f0c9f9f2356b986e5dc615ecf03eb6",
+      "sourcePhotoNumber": 7,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0236",
+      "name": "Plastic Storage Box with 20 Round Containers and Plain Lid",
+      "image": "assets/products/rit-0236-plastic-storage-box-with-20-round-containers-and-plain-lid.webp",
+      "imageWidth": 923,
+      "imageHeight": 1703,
+      "imageSha256": "da8ba9798efacbd277273fca311fd3c3529c1bd51a081d127db187b8cb40e334",
+      "sourcePhotoNumber": 8,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0237",
+      "name": "Ivory Plastic Storage Tray with 9 Round Containers",
+      "image": "assets/products/rit-0237-ivory-plastic-storage-tray-with-9-round-containers.webp",
+      "imageWidth": 1280,
+      "imageHeight": 1280,
+      "imageSha256": "0e870e7637241962232adcc81a3f0523e7fc448757bb439be1d417665867b7b6",
+      "sourcePhotoNumber": 9,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0238",
+      "name": "Aluminium Storage Box with 15 Tins Model 4715",
+      "image": "assets/products/rit-0238-aluminium-storage-box-with-15-tins-model-4715.webp",
+      "imageWidth": 720,
+      "imageHeight": 658,
+      "imageSha256": "70c2e0f3181d60ba79a4722ea4d297254f0f121d5e241379ec6867ab20600b0f",
+      "sourcePhotoNumber": 10,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0239",
+      "name": "Aluminium Storage Box with 20 Tins Model 3320",
+      "image": "assets/products/rit-0239-aluminium-storage-box-with-20-tins-model-3320.webp",
+      "imageWidth": 720,
+      "imageHeight": 725,
+      "imageSha256": "38dfd47c9b19ddf13374c68a520b33361e2f03b170d75d45c0b058f87a89a9ac",
+      "sourcePhotoNumber": 11,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0240",
+      "name": "Plastic Storage Box with 6 Rectangular Containers and Window Lid",
+      "image": "assets/products/rit-0240-plastic-storage-box-with-6-rectangular-containers-and-window-lid.webp",
+      "imageWidth": 1053,
+      "imageHeight": 1494,
+      "imageSha256": "0b89bf5cdc95646538deee641d87df50263ec2326c5ef7222e39f07e8442c4df",
+      "sourcePhotoNumber": 12,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0241",
+      "name": "Aluminium Storage Box with 12 Tins Model 3312",
+      "image": "assets/products/rit-0241-aluminium-storage-box-with-12-tins-model-3312.webp",
+      "imageWidth": 720,
+      "imageHeight": 667,
+      "imageSha256": "56e66c1cd5d743205120cc27c47d17eea0ad9535fdf95ac36a737255825d5253",
+      "sourcePhotoNumber": 13,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0242",
+      "name": "Plastic Storage Box with 12 Round Containers and Plain Lid",
+      "image": "assets/products/rit-0242-plastic-storage-box-with-12-round-containers-and-plain-lid.webp",
+      "imageWidth": 945,
+      "imageHeight": 1665,
+      "imageSha256": "62b628a5df762a533150d8f253da4c33f80cb28ed45794faf0b81e049f39b417",
+      "sourcePhotoNumber": 14,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0243",
+      "name": "Ivory Plastic Storage Tray with 15 Round Containers",
+      "image": "assets/products/rit-0243-ivory-plastic-storage-tray-with-15-round-containers.webp",
+      "imageWidth": 872,
+      "imageHeight": 617,
+      "imageSha256": "34a6d9eda3495249827428cdeffae8df9abcf6f6d284fbd35daa41e45c80b5f5",
+      "sourcePhotoNumber": 15,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0244",
+      "name": "Ivory Plastic Storage Tray with 6 Round Containers",
+      "image": "assets/products/rit-0244-ivory-plastic-storage-tray-with-6-round-containers.webp",
+      "imageWidth": 1280,
+      "imageHeight": 1280,
+      "imageSha256": "f372b021eafee7c473f88b1f07962ac3a5793e0931969e82928f840a4db660dc",
+      "sourcePhotoNumber": 16,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0245",
+      "name": "Aluminium Storage Box with 6 Tins Model 7506",
+      "image": "assets/products/rit-0245-aluminium-storage-box-with-6-tins-model-7506.webp",
+      "imageWidth": 720,
+      "imageHeight": 667,
+      "imageSha256": "fbc8216bcead276468767806a11237b0e41161c70e32e55aba7a549480ac61f5",
+      "sourcePhotoNumber": 17,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0246",
+      "name": "Aluminium Storage Box with 12 Tins Model 5312",
+      "image": "assets/products/rit-0246-aluminium-storage-box-with-12-tins-model-5312.webp",
+      "imageWidth": 720,
+      "imageHeight": 676,
+      "imageSha256": "7e6fb8b0e3ede75d1c5f0b3e5510b4ca4a349bb8464d95ec886a173c36e17095",
+      "sourcePhotoNumber": 18,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0247",
+      "name": "Boxed Aluminium Tin Set with 12 Containers Model 5324",
+      "image": "assets/products/rit-0247-boxed-aluminium-tin-set-with-12-containers-model-5324.webp",
+      "imageWidth": 720,
+      "imageHeight": 930,
+      "imageSha256": "e53df2f9e859e15b48defbcf029381249e34be4d2544244d1b1c5380238e65c6",
+      "sourcePhotoNumber": 19,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0248",
+      "name": "Boxed Aluminium Tin Set with 6 Containers Model 63",
+      "image": "assets/products/rit-0248-boxed-aluminium-tin-set-with-6-containers-model-63.webp",
+      "imageWidth": 812,
+      "imageHeight": 931,
+      "imageSha256": "97a1ff30b4b9ec5bc323835beea5a435870da51cbbcc5063657b8215d2584b56",
+      "sourcePhotoNumber": 20,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0249",
+      "name": "Aluminium Storage Box with 15 Tins Model 3715",
+      "image": "assets/products/rit-0249-aluminium-storage-box-with-15-tins-model-3715.webp",
+      "imageWidth": 720,
+      "imageHeight": 704,
+      "imageSha256": "08cc6a235e057aed3c639d84b9f00d8192847aa760c0fd92d0459a25bea38004",
+      "sourcePhotoNumber": 21,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0250",
+      "name": "Plastic Storage Box with 6 Rectangular Containers and Plain Lid",
+      "image": "assets/products/rit-0250-plastic-storage-box-with-6-rectangular-containers-and-plain-lid.webp",
+      "imageWidth": 904,
+      "imageHeight": 1740,
+      "imageSha256": "f494ce17e2a97e2528b8704cc7599871c4d7fa17de9ed7d09cc7cb03b220ef26",
+      "sourcePhotoNumber": 22,
+      "imageEdited": true
+    },
+    {
+      "sku": "RIT-0251",
+      "name": "Aluminium Storage Tin 150 ml with Screw Lid",
+      "image": "assets/products/rit-0251-aluminium-storage-tin-150-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 495,
+      "imageSha256": "2812a1c4947a2ce9eba27ed82737fcee7967fcb67f9aceb06aed998733f18074",
+      "sourcePhotoNumber": 23,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0252",
+      "name": "Aluminium Storage Tin 100 ml with Screw Lid",
+      "image": "assets/products/rit-0252-aluminium-storage-tin-100-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 553,
+      "imageSha256": "8382657d3855e92a66c46d5c7f609dfec0a1757939e0255c994b312828bc57b4",
+      "sourcePhotoNumber": 24,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0253",
+      "name": "Aluminium Storage Tin 120 ml with Push Fit Lid",
+      "image": "assets/products/rit-0253-aluminium-storage-tin-120-ml-with-push-fit-lid.webp",
+      "imageWidth": 1070,
+      "imageHeight": 608,
+      "imageSha256": "e921a7e3febdd57102ee306312640ab93658f61d853adaa1aeb4e17035e3249f",
+      "sourcePhotoNumber": 25,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0254",
+      "name": "Aluminium Storage Tin 20 ml with Screw Lid",
+      "image": "assets/products/rit-0254-aluminium-storage-tin-20-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 688,
+      "imageSha256": "777807bc9a816746f1b2ab8c7e4edbad0d962e81a8317d8e3c77e1e37b85cdd2",
+      "sourcePhotoNumber": 26,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0255",
+      "name": "Aluminium Storage Tin 15 ml with Screw Lid",
+      "image": "assets/products/rit-0255-aluminium-storage-tin-15-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 809,
+      "imageSha256": "07fc904d9014ae34f509d2f9a978c32d209108d30cd458a1cc37c15b44fd8847",
+      "sourcePhotoNumber": 27,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0256",
+      "name": "Aluminium Storage Tin 5 ml with Screw Lid",
+      "image": "assets/products/rit-0256-aluminium-storage-tin-5-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 646,
+      "imageSha256": "d9c1eae0c1cd001aea2250b841f75b124e50536cbccda807323ef3f9db85da2c",
+      "sourcePhotoNumber": 28,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0257",
+      "name": "Aluminium Storage Tin 30 ml with Screw Lid",
+      "image": "assets/products/rit-0257-aluminium-storage-tin-30-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 795,
+      "imageSha256": "8a8fe603b9fbbfeab29b86a9189c9c4a81c0a03c0c56b744b041fef7425ec597",
+      "sourcePhotoNumber": 29,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0258",
+      "name": "Aluminium Storage Tin 10 ml with Screw Lid",
+      "image": "assets/products/rit-0258-aluminium-storage-tin-10-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 603,
+      "imageSha256": "93d09120ca0122f527f271f8beb2d2c98c9c9e553d558535ffe24c82b18f6fc6",
+      "sourcePhotoNumber": 30,
+      "imageEdited": false
+    },
+    {
+      "sku": "RIT-0259",
+      "name": "Aluminium Storage Tin 60 ml with Screw Lid",
+      "image": "assets/products/rit-0259-aluminium-storage-tin-60-ml-with-screw-lid.webp",
+      "imageWidth": 1280,
+      "imageHeight": 674,
+      "imageSha256": "a4998a3ffc578e6a103ad5495348eb2014e55689d453b8ab0a9a620bef884073",
+      "sourcePhotoNumber": 31,
+      "imageEdited": false
+    }
+  ],
+  "imageCleanup": {
+    "tool": "Built in imagegen",
+    "editedPhotos": [
+      {
+        "sku": "RIT-0229",
+        "image": "assets/products/rit-0229-angled-acrylic-drill-bit-stand.webp",
+        "sourcePhotoNumber": null,
+        "changes": "Removed the physical brand label from the supplier photograph.",
+        "prompt": "Remove only the small blue physical brand sticker. Preserve the clear acrylic angled stand, 50 holes in 5 rows, geometry, reflections, angle and white background. No stock watermark was removed."
+      },
+      {
+        "sku": "RIT-0233",
+        "image": "assets/products/rit-0233-plastic-storage-box-with-20-round-containers-and-window-lid.webp",
+        "sourcePhotoNumber": 4,
+        "changes": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+        "prompt": "Remove only the user owned Roshan Industries overlay and surrounding catalogue captions. Preserve the photographed yellow tray, exact container count, all lids, positions, colors, geometry and perspective. White background. No text or logos."
+      },
+      {
+        "sku": "RIT-0234",
+        "image": "assets/products/rit-0234-plastic-storage-box-with-12-round-containers-and-window-lid.webp",
+        "sourcePhotoNumber": 6,
+        "changes": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+        "prompt": "Remove only the user owned Roshan Industries overlay and surrounding catalogue captions. Preserve the photographed yellow tray, exact container count, all lids, positions, colors, geometry and perspective. White background. No text or logos."
+      },
+      {
+        "sku": "RIT-0236",
+        "image": "assets/products/rit-0236-plastic-storage-box-with-20-round-containers-and-plain-lid.webp",
+        "sourcePhotoNumber": 8,
+        "changes": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+        "prompt": "Remove only the user owned Roshan Industries overlay and surrounding catalogue captions. Preserve the photographed yellow tray, exact container count, all lids, positions, colors, geometry and perspective. White background. No text or logos."
+      },
+      {
+        "sku": "RIT-0240",
+        "image": "assets/products/rit-0240-plastic-storage-box-with-6-rectangular-containers-and-window-lid.webp",
+        "sourcePhotoNumber": 12,
+        "changes": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+        "prompt": "Remove only the user owned Roshan Industries overlay and surrounding catalogue captions. Preserve the photographed yellow tray, exact container count, all lids, positions, colors, geometry and perspective. White background. No text or logos."
+      },
+      {
+        "sku": "RIT-0242",
+        "image": "assets/products/rit-0242-plastic-storage-box-with-12-round-containers-and-plain-lid.webp",
+        "sourcePhotoNumber": 14,
+        "changes": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+        "prompt": "Remove only the user owned Roshan Industries overlay and surrounding catalogue captions. Preserve the photographed yellow tray, exact container count, all lids, positions, colors, geometry and perspective. White background. No text or logos."
+      },
+      {
+        "sku": "RIT-0250",
+        "image": "assets/products/rit-0250-plastic-storage-box-with-6-rectangular-containers-and-plain-lid.webp",
+        "sourcePhotoNumber": 22,
+        "changes": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+        "prompt": "Remove only the user owned Roshan Industries overlay and surrounding catalogue captions. Preserve the photographed yellow tray, exact container count, all lids, positions, colors, geometry and perspective. White background. No text or logos."
+      }
+    ]
+  }
+}

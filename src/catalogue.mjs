@@ -6,9 +6,13 @@ export const categories = JSON.parse(
   fs.readFileSync(new URL('./data/reviewed-categories.json', import.meta.url), 'utf8'),
 );
 export function loadCatalogue(root) {
+  const imageOverrides = JSON.parse(
+    fs.readFileSync(path.join(root, 'src/data/product-image-overrides.json'), 'utf8'),
+  );
   const records = [
     ...JSON.parse(fs.readFileSync(path.join(root, 'src/data/reviewed-products.json'), 'utf8')),
     ...JSON.parse(fs.readFileSync(path.join(root, 'src/data/pump-products.json'), 'utf8')),
+    ...JSON.parse(fs.readFileSync(path.join(root, 'src/data/online-products.json'), 'utf8')),
   ];
   const cataloguePages = JSON.parse(
     fs.readFileSync(path.join(root, 'src/data/catalogue-pages.json'), 'utf8'),
@@ -33,8 +37,10 @@ export function loadCatalogue(root) {
     const { previousName, previousCategory, ...current } = record;
     return {
       ...current,
+      ...imageOverrides[record.sku],
       cataloguePage: cataloguePages[record.sku],
-      description: record.onlineRange ? record.description : describeProduct(record),
+      description:
+        record.onlineRange || record.onlineProduct ? record.description : describeProduct(record),
     };
   });
 }

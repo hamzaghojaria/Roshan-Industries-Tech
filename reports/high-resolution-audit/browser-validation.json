@@ -1,7 +1,7 @@
 {
   "date": "2026-10-07",
   "allRoutesMobile": {
-    "routes": 255,
+    "routes": 286,
     "widths": [
       320,
       390,
@@ -18,15 +18,19 @@
       1024,
       1440
     ],
-    "products": 0,
-    "emptyState": true,
+    "products": 31,
+    "filters": true,
+    "mobileHorizontalSlider": true,
+    "imagesDecode": true,
     "activeNavigation": true,
     "homePreviewRemoved": true
   },
   "productBadges": {
-    "selectedProducts": 0,
-    "allProductPagesChecked": 228,
-    "noNewBadges": true
+    "selectedProducts": 31,
+    "allProductPagesChecked": 259,
+    "selectedBadgesConsistent": true,
+    "unselectedProductsHaveNoBadge": true,
+    "mobileAndDesktop": true
   },
   "catalogue": {
     "pagination": true,
@@ -93,5 +97,42 @@
     "repeatBuildPassed": true,
     "obsoleteRoutesRemoved": true,
     "validatedPages": 255
+  },
+  "websitePhotographReplacements": {
+    "skus": [
+      "RIT-0012",
+      "RIT-0013"
+    ],
+    "naturalDimensions": [
+      1100,
+      1100
+    ],
+    "allImagesDecode": true,
+    "brandNamesOrWatermarksVisible": false,
+    "pdfAndExcelUnchanged": true
+  },
+  "productImages": {
+    "decoded": 259,
+    "naturalDimensionsMatchRecords": true,
+    "onlinePhotos": 31,
+    "editedPhotos": 7
+  },
+  "onlineAdditions": {
+    "zipPhotos": 31,
+    "uniqueZipProducts": 30,
+    "linkedProduct": 1,
+    "duplicatesSkipped": 1,
+    "stableSkus": true,
+    "modelAndCapacitySearch": true,
+    "descriptionValidation": true,
+    "pdfAndXlsxUnchanged": true,
+    "newProductButtonsAligned": true
+  },
+  "cleanCheckoutBuild": {
+    "products": 259,
+    "routes": 286,
+    "freshBuild": true,
+    "repeatBuild": true,
+    "obsoleteGeneratedRoutesRemoved": true
   }
 }

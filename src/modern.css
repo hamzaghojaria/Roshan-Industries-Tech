@@ -2821,6 +2821,9 @@ main .button::after {
 .product-catalogue-actions {
   margin-top: 12px;
 }
+.product-catalogue-actions-single .button {
+  grid-column: 1 / -1;
+}
 .detail-copy .enquiry-actions .button,
 .product-catalogue-actions .button {
   display: flex;

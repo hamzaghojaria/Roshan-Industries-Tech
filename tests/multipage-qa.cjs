@@ -16,6 +16,12 @@ const assert = require('node:assert/strict');
 let browser;
 (async () => {
   const root = path.resolve(__dirname, '..');
+  const sandbox = { window: {} };
+  require('node:vm').runInNewContext(
+    fs.readFileSync(path.join(root, 'products.js'), 'utf8'),
+    sandbox,
+  );
+  const products = sandbox.window.ROSHAN_PRODUCTS;
   require('node:fs').mkdirSync(path.join(root, 'artifacts/qa'), { recursive: true });
   const url = (file) => pathToFileURL(path.join(root, file)).href;
   browser = await chromium.launch({
@@ -49,7 +55,7 @@ let browser;
   assert.equal(await page.locator('#pagination button[aria-label^="Page "]').count(), 3);
   assert.equal(await page.locator('.pagination-ellipsis').count(), 1);
   // Next traverses every page even though only three page numbers are shown.
-  for (let current = 2; current <= 10; current++) {
+  for (let current = 2; current <= Math.ceil(products.length / 24); current++) {
     await page
       .locator('#pagination button')
       .filter({ hasText: /^Next$/ })
@@ -89,7 +95,7 @@ let browser;
     ['Watchmaking', 98],
     ['Clockmaking', 36],
     ['Jewellery', 21],
-    ['Workshop Essentials', 61],
+    ['Workshop Essentials', products.filter((p) => p.family === 'Workshop Essentials').length],
     ['Pumps', 12],
   ]) {
     await page.goto(url('catalogue.html') + '?family=' + encodeURIComponent(family));

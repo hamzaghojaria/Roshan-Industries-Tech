@@ -2,11 +2,12 @@
 
 Source reviewed on 7 October 2026. The 21-page high resolution PDF is authoritative.
 
-216 PDF product entries plus 12 restored pump enquiry listings match 228 website and XLSX records in 21 categories and five families. Stable SKUs are preserved.
+The website has 259 products: 216 PDF entries, 12 restored pump listings and 31 online additions. PDF and XLSX retain 228 records until the user requests export updates. There are 21 categories and five families. Stable SKUs are preserved.
 
-All 216 product images are native scan crops saved losslessly. Every image has a recorded source page, panel, embedded-image reference, crop rectangle, dimensions and checksum. All descriptions are newly generated and differ from every previous description.
+The source inventory records 216 native scan crops and their page, panel, crop, dimensions and checksum. Requested online photograph replacements are tracked separately in product-image-overrides.json. All PDF product descriptions are newly generated.
 
-The supplied PDF is preserved unchanged as the image and product reference. The branded downloadable catalogue contains all 228 products with a clickable category index and website headers and footers. The XLSX contains 228 matching records, 21 family-colored category sheets and 456 embedded PNG previews.
+The supplied PDF is preserved unchanged as the image and product reference. The branded downloadable catalogue retains its 228 exported products with a clickable category index and website headers and footers. The XLSX retains 228 exported records, 21 family-colored category sheets and 456 embedded PNG previews.
+Online additions and website photograph replacements are pending in the PDF and XLSX. Those exports are intentionally unchanged at the user request; export dimensions and embedded photographs reflect the earlier export.
 
 ## Page Coverage
 

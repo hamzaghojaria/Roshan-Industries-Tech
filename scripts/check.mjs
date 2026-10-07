@@ -11,20 +11,21 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'products.js'), 'utf8'), sandbox);
 const products = sandbox.window.ROSHAN_PRODUCTS;
-assert.equal(products.length, 228);
+const expectedProducts = loadCatalogue(root).length;
+assert.equal(products.length, expectedProducts);
 assert(
   products.every((p) => !/[?\uFFFD\u00C3]/u.test(p.name)),
   'Corrupted character in product name',
 );
-assert.equal(new Set(products.map((p) => p.sku)).size, 228);
-assert.equal(new Set(products.map((p) => p.id)).size, 228);
+assert.equal(new Set(products.map((p) => p.sku)).size, expectedProducts);
+assert.equal(new Set(products.map((p) => p.id)).size, expectedProducts);
 assert.equal(products.find((p) => p.id === 'p05-03').sku, 'RIT-0039');
 assert.equal(products.find((p) => p.id === 'p05-04').sku, 'RIT-0200');
 assert.equal(new Set(products.map((p) => p.categoryId)).size, 21);
 // Every product photo has a live product page.
 assert.equal(
   fs.readdirSync(path.join(root, 'products')).filter((p) => p.endsWith('.html')).length,
-  228,
+  expectedProducts,
 );
 assert.equal(
   fs.readdirSync(path.join(root, 'categories')).filter((p) => p.endsWith('.html')).length,
@@ -101,7 +102,7 @@ for (const p of products) {
 }
 assert.equal(
   new Set(products.map((p) => p.description)).size,
-  228,
+  expectedProducts,
   'Descriptions must identify each product.',
 );
 assert(
@@ -124,5 +125,5 @@ for (const file of files) {
   assert(!/\bRoshan\b(?! Industries)/i.test(visible), `Shortened company name: ${file}`);
 }
 console.log(
-  `PASS: ${files.length} pages, all local links/assets, 228 unique stable SKUs, 21 categories, clean product text and shared header/footer logos.`,
+  `PASS: ${files.length} pages, all local links/assets, ${expectedProducts} unique stable SKUs, 21 categories, clean product text and shared header/footer logos.`,
 );

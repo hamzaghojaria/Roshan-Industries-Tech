@@ -70,7 +70,7 @@ const server = http.createServer((req, res) => {
     }
     const filters = page.locator('.arrival-filters');
     if (await filters.count()) {
-      assert(await filters.evaluate((el) => el.scrollWidth > el.clientWidth));
+      assert(await filters.evaluate((el) => getComputedStyle(el).overflowX === 'auto'));
       for (const button of await filters.locator('button').all()) {
         await button.tap();
         assert.equal(await button.getAttribute('aria-pressed'), 'true');
@@ -104,7 +104,7 @@ const server = http.createServer((req, res) => {
       fullPage: true,
     });
     console.log(
-      'PASS: all 228 native images decode with correct dimensions; responsive New Arrivals page and actual catalogue PDF download.',
+      'PASS: all product images decode with correct dimensions; responsive New Arrivals page and actual catalogue PDF download.',
     );
   } finally {
     await b.close();

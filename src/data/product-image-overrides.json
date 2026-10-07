@@ -1,0 +1,24 @@
+{
+  "RIT-0012": {
+    "imageWidth": 1100,
+    "imageHeight": 1100,
+    "imageOverride": true,
+    "imageKind": "reference-photograph",
+    "imageSource": "https://www.timeconnectioninc.com/products/watchmaker-loupe-for-spectacle",
+    "imageSourceUrl": "https://www.timeconnectioninc.com/cdn/shop/products/13405_de0ee0a9-c994-4f5e-9f7e-baa51af0ee4a.jpg?v=1659131236",
+    "imageSha256": "3cc9650e9b62ff40ccb647afd5e2c2b23c7d0d285a298c8f314b8fc021bcb5dd",
+    "imageChanges": "Lossless WebP conversion. No crop, retouching or upscaling.",
+    "imageBrandingReview": "No visible watermark or brand name."
+  },
+  "RIT-0013": {
+    "imageWidth": 1100,
+    "imageHeight": 1100,
+    "imageOverride": true,
+    "imageKind": "reference-photograph",
+    "imageSource": "https://www.timeconnectioninc.com/products/watchmaker-loupe-for-spectacle",
+    "imageSourceUrl": "https://www.timeconnectioninc.com/cdn/shop/products/13405_de0ee0a9-c994-4f5e-9f7e-baa51af0ee4a.jpg?v=1659131236",
+    "imageSha256": "3cc9650e9b62ff40ccb647afd5e2c2b23c7d0d285a298c8f314b8fc021bcb5dd",
+    "imageChanges": "Lossless WebP conversion. No crop, retouching or upscaling.",
+    "imageBrandingReview": "No visible watermark or brand name."
+  }
+}

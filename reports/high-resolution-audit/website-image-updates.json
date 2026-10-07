@@ -1,0 +1,20 @@
+{
+  "updatedSkus": [
+    "RIT-0012",
+    "RIT-0013"
+  ],
+  "nativeImageDimensions": [
+    1100,
+    1100
+  ],
+  "exportsUpdated": false,
+  "exportsSha256": {
+    "assets/roshan-industries-catalogue.pdf": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+    "Roshan-Industries-Catalogue.pdf": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+    "Roshan-Industries-Product-Catalogue.xlsx": "0c24c5b3d3d8a76af41dc809881c6f56228ee66f4b59948297d5874f8ce2ab03"
+  },
+  "pendingExportImageUpdates": true,
+  "originalWebsiteImagesArchived": true,
+  "noVisibleBrandingOrWatermark": true,
+  "upscaled": false
+}

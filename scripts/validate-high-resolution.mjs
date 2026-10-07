@@ -26,24 +26,34 @@ assert.equal(hash(pdf), branded.pdfSha256);
 
 assert.equal(hash(pdf), workbook.sourceSha256);
 assert.equal(images.pdfPages, 21);
-assert.equal(products.length, 228);
+const onlineProducts = products.filter((p) => p.onlineProduct);
+const arrivals = JSON.parse(
+  fs.readFileSync(path.join(root, 'src/data/new-arrivals.json'), 'utf8'),
+).skus;
+assert.equal(products.length, 228 + onlineProducts.length);
 assert.equal(categories.length, 21);
-assert.equal(new Set(products.map((p) => p.name)).size, 228);
-assert.equal(new Set(products.map((p) => p.sku)).size, 228);
+assert.equal(new Set(products.map((p) => p.name)).size, products.length);
+assert.equal(new Set(products.map((p) => p.sku)).size, products.length);
 assert.equal(images.images.length, 216);
 const expected = new Map([...Array(17)].map((_, n) => [n + 2, 12]));
 expected.set(19, 8);
 expected.set(20, 4);
 for (const [page, count] of expected)
   assert.equal(products.filter((p) => p.page === page).length, count, 'PDF page coverage ' + page);
-assert.equal(products.filter((p) => p.newArrival).length, 0);
+assert.equal(products.filter((p) => p.newArrival).length, arrivals.length);
 assert.equal(changes.removed.length, 12);
 for (const p of products) {
   const html = fs.readFileSync(path.join(root, p.url), 'utf8');
-  assert(
-    html.includes('roshan-industries-catalogue.pdf#page=' + p.cataloguePage),
-    'Wrong current catalogue page ' + p.sku,
-  );
+  if (p.cataloguePage)
+    assert(
+      html.includes('roshan-industries-catalogue.pdf#page=' + p.cataloguePage),
+      'Wrong current catalogue page ' + p.sku,
+    );
+  else
+    assert(
+      !html.includes('roshan-industries-catalogue.pdf#page='),
+      'Online product has a false PDF reference ' + p.sku,
+    );
   assert.equal(p.cataloguePage, branded.skuPages[p.sku]);
   assert(fs.existsSync(path.join(root, p.image)));
   assert(!/[\\/|*#@!~^<>{}\[\]]/.test(p.name), 'Unclean title ' + p.sku);
@@ -51,6 +61,13 @@ for (const p of products) {
   assert(p.description.length > 120);
   const old = previous.find((old) => old.sku === p.sku);
   if (old) assert.equal(p.id, old.id, 'Stable product ID changed');
+  if (p.onlineProduct) {
+    assert(p.exportPending);
+    assert.equal(p.imageSha256, hash(path.join(root, p.image)));
+    assert(p.imageWidth > 0 && p.imageHeight > 0);
+    assert.equal(html.includes('arrival-badge-detail'), arrivals.includes(p.sku));
+    continue;
+  }
   if (p.onlineRange) {
     assert.equal(p.family, 'Pumps');
     assert(p.imageWidth > 0 && p.imageHeight > 0);
@@ -66,6 +83,11 @@ for (const p of products) {
   assert(image);
   assert.equal(image.page, p.page);
   assert.equal(image.slot, p.slot);
+  if (p.imageOverride) {
+    assert.equal(p.imageSha256, hash(path.join(root, p.image)));
+    assert(p.imageSourceUrl && p.imageWidth > 0 && p.imageHeight > 0);
+    continue;
+  }
   assert.equal(image.sha256, hash(path.join(root, p.image)));
   assert.deepEqual(image.dimensions, [p.imageWidth, p.imageHeight]);
   assert.equal(p.imageWidth, p.sourceCrop[2] - p.sourceCrop[0]);
@@ -108,7 +130,7 @@ assert.equal(
   'Published PDF differs',
 );
 assert.equal(workbook.allFieldsMatchWebsite, true);
-assert.equal(workbook.products, products.length);
+assert.equal(workbook.products, products.length - onlineProducts.length);
 assert.equal(workbook.categorySheets, categories.length);
 assert.equal(workbook.embeddedPhotos, 456);
 const routes = [
@@ -139,20 +161,28 @@ const result = {
   sourcePages: 21,
   productPagesReviewed: 19,
   pdfProducts: 216,
-  websiteProducts: 228,
+  websiteProducts: products.length,
   workbookProducts: 228,
   categories: 21,
   retainedSkus: 200,
   newProducts: 16,
   restoredPumpProducts: 12,
-  nativeProductImages: 216,
-  uniqueTitles: 228,
+  nativeProductImages: products.filter(
+    (p) => !p.onlineRange && !p.imageOverride && !p.onlineProduct,
+  ).length,
+  websiteImageOverrides: products.filter((p) => p.imageOverride).length,
+  onlineProductsPendingExport: onlineProducts.length,
+  exportImageUpdatesPending: products.some((p) => p.imageOverride),
+  uniqueTitles: products.length,
   freshDescriptions: 216,
+  newlyGeneratedOnlineDescriptions: onlineProducts.length,
   downloadLinks,
   sourcePdfSha256: hash(source),
   brandedPdfSha256: hash(pdf),
   brandedCataloguePages: branded.pages,
-  validation: 'Passed',
+  validation: products.some((p) => p.imageOverride)
+    ? 'Website passed; PDF and XLSX product and image updates deferred at user request'
+    : 'Passed',
   notes: [
     'Pages 1 and 21 are covers.',
     'Page 19 has eight populated panels and four empty panels.',
@@ -169,11 +199,14 @@ const lines = [
   '',
   'Source reviewed on 7 October 2026. The 21-page high resolution PDF is authoritative.',
   '',
-  '216 PDF product entries plus 12 restored pump enquiry listings match 228 website and XLSX records in 21 categories and five families. Stable SKUs are preserved.',
+  `The website has ${products.length} products: 216 PDF entries, 12 restored pump listings and ${onlineProducts.length} online additions. PDF and XLSX retain 228 records until the user requests export updates. There are 21 categories and five families. Stable SKUs are preserved.`,
   '',
-  'All 216 product images are native scan crops saved losslessly. Every image has a recorded source page, panel, embedded-image reference, crop rectangle, dimensions and checksum. All descriptions are newly generated and differ from every previous description.',
+  'The source inventory records 216 native scan crops and their page, panel, crop, dimensions and checksum. Requested online photograph replacements are tracked separately in product-image-overrides.json. All PDF product descriptions are newly generated.',
   '',
-  'The supplied PDF is preserved unchanged as the image and product reference. The branded downloadable catalogue contains all 228 products with a clickable category index and website headers and footers. The XLSX contains 228 matching records, 21 family-colored category sheets and 456 embedded PNG previews.',
+  'The supplied PDF is preserved unchanged as the image and product reference. The branded downloadable catalogue retains its 228 exported products with a clickable category index and website headers and footers. The XLSX retains 228 exported records, 21 family-colored category sheets and 456 embedded PNG previews.',
+  products.some((p) => p.imageOverride)
+    ? 'Online additions and website photograph replacements are pending in the PDF and XLSX. Those exports are intentionally unchanged at the user request; export dimensions and embedded photographs reflect the earlier export.'
+    : 'Website images and exports are synchronized.',
   '',
   '## Page Coverage',
   '',
@@ -208,5 +241,5 @@ const lines = [
 ];
 fs.writeFileSync(path.join(auditPath, 'Catalogue-Update-Audit.md'), lines.join('\n') + '\n');
 console.log(
-  'PASS: PDF coverage, all 216 images and fresh descriptions, stable SKUs, clean titles, branded catalogue links, restored pumps, and synchronized XLSX.',
+  'PASS: PDF coverage, all 216 images and fresh descriptions, stable SKUs, clean titles, branded catalogue links and restored pumps. Export image synchronization is reported separately.',
 );

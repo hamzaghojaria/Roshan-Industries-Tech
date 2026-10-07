@@ -20,7 +20,8 @@
     "test:source": "node tests/high-resolution-qa.cjs",
     "check:source": "node scripts/validate-high-resolution.mjs",
     "test:product-actions": "node tests/catalogue-actions-qa.cjs",
-    "test:build": "node tests/fresh-build-qa.cjs"
+    "test:build": "node tests/fresh-build-qa.cjs",
+    "test:online": "node tests/online-products-qa.cjs"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",

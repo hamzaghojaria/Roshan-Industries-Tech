@@ -7,9 +7,13 @@ import fs from 'node:fs';
 const catalogueRecords = JSON.parse(
   fs.readFileSync(new URL('./data/reviewed-products.json', import.meta.url), 'utf8'),
 );
-const productCount =
+const downloadProductCount =
   catalogueRecords.length +
   JSON.parse(fs.readFileSync(new URL('./data/pump-products.json', import.meta.url), 'utf8')).length;
+const productCount =
+  downloadProductCount +
+  JSON.parse(fs.readFileSync(new URL('./data/online-products.json', import.meta.url), 'utf8'))
+    .length;
 const arrivalSelection = JSON.parse(
   fs.readFileSync(new URL('./data/new-arrivals.json', import.meta.url), 'utf8'),
 );
@@ -136,8 +140,7 @@ export function layout(
     home: 'Roshan Industries manufactures watch parts and custom products in Mumbai, with 125+ years of service since 1900. Explore our tools and discuss your requirements.',
     categories:
       'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
-    products:
-      'Explore 228 watchmaking, clockmaking, jewellery, workshop and pump products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
+    products: `Explore ${productCount} watchmaking, clockmaking, jewellery, workshop and pump products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.`,
     about:
       'Discover Roshan Industries, a Mumbai watch parts manufacturer with 125+ years of service since 1900 and four generations of experience. Learn about our custom manufacturing.',
     contact:
@@ -215,7 +218,7 @@ export function layout(
               class="catalogue-download"
               href="${base}assets/roshan-industries-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download catalogue<small>PDF &middot; ${productCount} products</small></a
+              >Download catalogue<small>PDF &middot; ${downloadProductCount} products</small></a
             >
           </div>
           <nav aria-label="Main navigation">
@@ -722,10 +725,15 @@ export function productPage(p, products) {
               <dt>Category</dt>
               <dd><a href="../categories/${p.categoryId}.html">${esc(p.category)}</a></dd>
             </div>
-            <div>
+            ${
+              p.cataloguePage
+                ? `<div>
               <dt>Catalogue reference</dt>
               <dd>Page ${p.cataloguePage}</dd>
-            </div>
+            </div>`
+                : ''
+            }
+            ${(p.specifications || []).map((s) => `<div><dt>${esc(s.label)}</dt><dd>${esc(s.value)}</dd></div>`).join('')}
             <div>
               <dt>Pricing & availability</dt>
               <dd>On enquiry</dd>
@@ -741,14 +749,20 @@ export function productPage(p, products) {
               >${whatsappIcon}Chat on WhatsApp</a
             >
           </div>
-          <div class="product-catalogue-actions">
-            <a
+          <div
+            class="product-catalogue-actions${p.cataloguePage ? '' : ' product-catalogue-actions-single'}"
+          >
+            ${
+              p.cataloguePage
+                ? `<a
               class="button button-light"
               href="../assets/roshan-industries-catalogue.pdf#page=${p.cataloguePage}"
               target="_blank"
               rel="noopener"
               >View in catalogue &#8599;</a
-            >
+            >`
+                : ''
+            }
             <a
               class="button button-light"
               href="../assets/roshan-industries-catalogue.pdf"
@@ -836,7 +850,7 @@ export function aboutPage(products) {
       <section class="section section-muted">
         <div class="container about-numbers">
           <div><strong>125+</strong><span>Years of service &middot; Since 1900</span></div>
-          <div><strong>${productCount}</strong><span>Products in our catalogue</span></div>
+          <div><strong>${productCount}</strong><span>Products in our range</span></div>
           <div><strong>${categories.length}</strong><span>Curated product categories</span></div>
         </div>
       </section>

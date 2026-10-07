@@ -312,7 +312,7 @@
     const product = products.get(sku);
     // Search text is fixed for each product; normalise once rather than on every keystroke.
     const searchText = normalize(
-      `${product.name} ${product.sku} ${product.category} ${product.id}`,
+      `${product.name} ${product.sku} ${product.category} ${product.id} ${(product.specifications || []).map((s) => s.value).join(' ')}`,
     );
     return { node, product, searchText };
   });

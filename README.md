@@ -4,7 +4,7 @@ Watch parts, tools and custom manufacturing in Mumbai. **Since 1900 · 125+ year
 
 [View website](https://roshan-industries-tech.onrender.com/) · [GitHub repository](https://github.com/hamzaghojaria/Roshan-Industries-Tech) · [Email us](mailto:roshanindustriestech@gmail.com)
 
-**216 products · 15 categories · 4 families**. All products and images are verified against the latest 21-page high resolution PDF.
+**259 products · 21 categories · 5 families**. The website includes 216 reviewed PDF products, 12 restored pump listings and 31 approved October New Arrivals. The PDF and XLSX remain at 228 products until the user requests an export update.
 
 [Start locally](#start-locally) · [What to edit](#what-to-edit) · [Render](#publish-on-render) · [Hostinger](#publish-on-hostinger) · [PDF and Excel](#pdf-and-excel)
 
@@ -36,6 +36,10 @@ npm run check
 ```
 
 Open the generated `index.html` in your browser to preview the website. After changing source files, run the build again and refresh the browser.
+
+## October New Arrivals
+
+`src/data/online-products.json` holds the approved linked acrylic stand and 30 distinct ZIP products. One repeated ZIP image was excluded. `src/data/new-arrivals.json` controls the shared blue New badges across listings and detail pages. New products have stable SKUs RIT-0229 through RIT-0259. They have no PDF page link until exported. Supplied dimensions are recorded separately from generated descriptions. Seven images were cleaned using the built in imagegen tool; original references and edits are tracked in the source data.
 
 ## What to edit
 
@@ -139,7 +143,7 @@ You can also extract `roshan-website.zip` there. `index.html` must sit directly 
 - **Product database:** [Roshan-Industries-Product-Catalogue.xlsx](Roshan-Industries-Product-Catalogue.xlsx), tracked so website builds include the synchronized database.
 - **Audit:** [reports/high-resolution-audit/](reports/high-resolution-audit/) contains the page review, before and after inventory, native crop provenance and validation results.
 
-The site, branded catalogue and workbook contain 228 products in 21 categories and five families. All 200 previous photographed products retain their SKUs; 16 new PDF entries are added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
+The website contains 259 products in 21 categories and five families. The branded catalogue and workbook retain 228 products while the October additions await the requested export update. All 200 previous photographed products retain their SKUs; 16 new PDF entries were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
 
 Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions for PDF products, branded catalogue page links, source panel references, image dimensions, checksums, and 456 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
 
@@ -167,3 +171,5 @@ Close Excel before regenerating the workbook. `src/data/reviewed-products.json` 
 Your normal workflow: **edit source → build and check → commit and push → Render deploys.**
 
 To refresh the branded exports, build the website, run `python scripts/export-branded-catalogue.py`, rebuild to refresh catalogue page links, run `python scripts/export-high-resolution-workbook.py`, then rebuild and validate. The original supplied PDF remains unchanged in the workspace reference documents.
+
+Website-only photograph replacements are stored in `src/data/product-image-overrides.json`, with source URLs, natural image dimensions and checksums. The two spectacle loupe photographs were replaced at the user request. PDF and XLSX image updates are deferred until the New Arrivals batch is complete.
