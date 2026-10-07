@@ -15,7 +15,8 @@
     "format:check": "prettier --check src scripts/*.mjs tests package.json README.md",
     "test:home": "node tests/root-navigation-qa.cjs",
     "test:pumps": "node tests/pumps-qa.cjs",
-    "test:sliders": "node tests/sliders-qa.cjs"
+    "test:sliders": "node tests/sliders-qa.cjs",
+    "test:arrivals": "node tests/new-arrivals-qa.cjs"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",

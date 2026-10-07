@@ -1,8 +1,7 @@
-Can we get the images online based on image and title and description
+Can we get the images online based on image and title and
 Linkedun roshan account
 Admin pannel for website ?
 New products add
-Make new arrivals page
 Update pdf based on updated catalogue
 
 
@@ -11,3 +10,4 @@ On product page of each product ass view product or download catalogue
 In same category on product page can we add a slider ?
 For the work you do on about us make a slider
 The family behind Roshan Industries. Make it more creative
+Make new arrivals page

@@ -9,12 +9,16 @@ const premiumAuditFile = new URL('../reports/premium-catalogue-audit.json', impo
 const premiumCataloguePages = fs.existsSync(premiumAuditFile)
   ? JSON.parse(fs.readFileSync(premiumAuditFile, 'utf8')).sku_pages
   : {};
+const arrivalSelection = JSON.parse(fs.readFileSync(new URL('./data/new-arrivals.json', import.meta.url), 'utf8'));
+const arrivalSkus = new Set(arrivalSelection.skus);
+const newBadge = (p, detail = false) => arrivalSkus.has(p.sku) ? `<span class="arrival-badge${detail ? ' arrival-badge-detail' : ''}">New</span>` : '';
 // The same family order is used in desktop groups and mobile filters.
 const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'];
 // Keep catalogue labels and destinations identical in the header and footer at every width.
 const catalogueNavigation = [
   ['catalogue.html', 'Products', 'products'],
   ['categories.html', 'Categories', 'categories'],
+  ['new-arrivals.html', 'New Arrivals', 'arrivals'],
 ];
 /** Escape catalogue text before inserting it into HTML attributes or content. */
 export const esc = (value) =>
@@ -80,6 +84,7 @@ const customSection = (base = '', id = 'custom-manufacturing') =>
 /** Render one product card with links relative to its current page depth. */
 export function card(p, base = '') {
   return /* HTML */ `<article class="product-card">
+    ${newBadge(p)}
     <a class="product-image" href="${base + p.url}"
       ><img src="${base + p.image}" alt="${esc(p.name)}" width="480" height="480" loading="lazy"
     /></a>
@@ -220,7 +225,7 @@ export function layout(
                   ([url, label, id]) =>
                     /* HTML */ `<a
                       href="${base + url}"
-                      class="${[active === id ? 'active' : '', id === 'custom' ? 'nav-custom-highlight' : ''].filter(Boolean).join(' ')}"
+                      class="${[active === id ? 'active' : '', id === 'custom' ? 'nav-custom-highlight' : '', id === 'arrivals' ? 'nav-arrivals-highlight' : ''].filter(Boolean).join(' ')}"
                       ${active === id ? 'aria-current="page"' : ''}
                       >${label}</a
                     >`,
@@ -333,6 +338,25 @@ function homeSlider(id, label, cards) {
     </div>
   </div>`;
 }
+
+/** Curated additions use stable SKUs and never infer release dates. */
+function arrivalProducts(products) {
+  return arrivalSelection.skus.map((sku) => {
+    const product = products.find((p) => p.sku === sku);
+    if (!product) throw new Error('Unknown arrival SKU: ' + sku);
+    return product;
+  });
+}
+function arrivalCard(p) {
+  return card(p).replace('<article class="product-card">', '<article class="product-card arrival-card" data-arrival-category="' + esc(p.categoryId) + '">');
+}
+export function newArrivalsPage(products) {
+  const arrivals = arrivalProducts(products);
+  const groups = [...new Map(arrivals.map((p) => [p.categoryId, p.category])).entries()];
+  return layout('New Arrivals',     breadcrumb('New Arrivals') +     '<section class="container arrivals-intro"><p class="eyebrow">DISCOVER WHAT’S NEW</p><h1>New to the Roshan Industries range.</h1><p>Explore the latest additions to our online range. Find a product and speak with our team about your requirements.</p></section>' +     '<section class="container arrivals-section" aria-label="New arrival products"><div class="arrivals-toolbar"><div class="arrival-filters" role="group" aria-label="Filter new arrivals by category" hidden><button type="button" data-arrival-filter="all" aria-pressed="true">All arrivals</button>' + groups.map(([id, name]) => '<button type="button" data-arrival-filter="' + esc(id) + '" aria-pressed="false">' + esc(name) + '</button>').join('') + '</div></div><div class="product-grid arrivals-grid">' + arrivals.map(arrivalCard).join('') + '</div><div class="arrivals-more"><p>Looking for something else?</p><a class="text-link" href="catalogue.html">Explore the complete catalogue &#8594;</a></div></section>',
+    {active: 'arrivals', page: 'arrivals', description: 'Explore new additions to the Roshan Industries online product range. View product details and enquire about specifications and availability.'});
+}
+
 /** Homepage: custom manufacturing leads, followed by catalogue discovery. */
 export function home(products) {
   const featured = [
@@ -460,6 +484,7 @@ export function home(products) {
           ${homeSlider('range', 'Featured products', featured.map((p) => card(p)).join(''))}
         </div>
       </section>
+      <section class="section container home-arrivals"><div class="section-head"><div><p class="eyebrow">NEW TO OUR RANGE</p><h2>Discover the latest additions.</h2></div><a class="text-link" href="new-arrivals.html">View all new arrivals &#8594;</a></div><div class="product-grid">        ${arrivalProducts(products).slice(0, 3).map(arrivalCard).join('')}      </div></section>
       <section class="section container legacy-layout">
         <div class="legacy-stat">
           <strong>125<span>+</span></strong>
@@ -647,6 +672,7 @@ export function productPage(p, products) {
           <a class="eyebrow" href="../categories/${p.categoryId}.html"
             >${esc(p.family)} / ${esc(p.category)}</a
           >
+          ${newBadge(p, true)}
           <h1>${esc(p.name)}</h1>
           <span class="detail-sku">SKU ${p.sku}</span>
           <div class="product-description">

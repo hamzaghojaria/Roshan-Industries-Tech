@@ -2907,3 +2907,77 @@ main .button::after {
   .footer-grid .contact-actions { margin-top: 10px; }
   .footer-email { padding-block: 6px; }
 }
+
+/* New arrivals reuse the catalogue cards in a compact, focused collection. */
+.arrivals-intro { padding-block: 28px 20px; }
+.arrivals-intro h1 { font-size: clamp(1.8rem, 3vw, 2.8rem); line-height: 1.2; margin: 10px 0 14px; max-width: 800px; }
+.arrivals-intro > p:not(.eyebrow) { max-width: 720px; color: var(--muted); margin: 0 0 12px; }
+.arrivals-note { display: block; max-width: 780px; color: var(--muted); font-size: .85rem; }
+.arrivals-section { padding-bottom: 36px; }
+.arrivals-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.arrival-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.arrival-filters[hidden], .arrival-card[hidden] { display: none; }
+.arrival-filters button { border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 24px; padding: 10px 16px; font-size: .875rem; min-height: 44px; }
+.arrival-filters button[aria-pressed="true"] { background: #14263d; color: #fff; border-color: #14263d; }
+#arrival-count { white-space: nowrap; font-size: .875rem; color: var(--muted); }
+.arrivals-grid, .home-arrivals > .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.arrival-card { position: relative; }
+.arrival-badge { position: absolute; z-index: 1; top: 12px; left: 12px; background: #edf3ff; color: #173faf; border: 1px solid #cddcfd; padding: 4px 10px; font-size: .7rem; border-radius: 20px; pointer-events: none; }
+.arrivals-more { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.arrivals-more p { margin: 0; color: var(--muted); }
+.home-arrivals { padding-block: 32px; }
+@media (max-width: 1000px) {
+  .arrivals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .arrivals-toolbar { align-items: flex-start; flex-direction: column; gap: 8px; }
+  #arrival-count { margin: 0; }
+}
+@media (max-width: 640px) {
+  .arrivals-grid, .home-arrivals > .product-grid { grid-template-columns: 1fr; }
+  .arrivals-intro { padding-block: 20px 16px; }
+  .home-arrivals .section-head { align-items: flex-start; flex-direction: column; gap: 12px; }
+}
+
+/* Shared arrival status on catalogue cards and product details. */
+.product-card { position: relative; }
+.arrival-badge-detail { position: static; display: inline-flex; margin-top: 12px; padding: 4px 14px; font-size: .8rem; }
+
+/* Tactile arrival filters with a clear selected marker. */
+.arrival-filters { gap: 10px; }
+.arrival-filters button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #f7f9fc; border-color: #dce3ed; box-shadow: 0 2px 5px #14263d05; transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+.arrival-filters button::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #a7b4c5; flex-shrink: 0; transition: background-color .18s ease, box-shadow .18s ease; }
+.arrival-filters button[aria-pressed="true"] { background: linear-gradient(120deg, #14263d, #294564); border-color: #294564; box-shadow: 0 3px 10px #14263d22; }
+.arrival-filters button[aria-pressed="true"]::before { background: #d8bd86; box-shadow: 0 0 0 3px #d8bd861f; }
+.arrival-filters button:focus-visible { outline: 3px solid #577cb6; outline-offset: 3px; }
+.arrival-filters button:active { transform: scale(.98); }
+@media (hover: hover) and (pointer: fine) {
+  .arrival-filters button:hover { transform: translateY(-2px); background: #dfe9ff; color: #173faf; border-color: #cddcfd; box-shadow: 0 5px 12px #315bd61a; }
+  .arrival-filters button:hover::before { background: #315bd6; }
+  .arrival-filters button[aria-pressed="true"]:hover { background: #dfe9ff; color: #173faf; border-color: #cddcfd; }
+  .arrival-filters button[aria-pressed="true"]:hover::before { background: #315bd6; }
+}
+@media (max-width: 640px) {
+  .arrival-filters { width: 100%; gap: 8px; }
+  .arrival-filters button { padding: 10px 12px; font-size: .8125rem; min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arrival-filters button, .arrival-filters button::before { transition: none; }
+  .arrival-filters button:hover, .arrival-filters button:active { transform: none; }
+}
+
+/* Swipe through arrival categories on small screens. */
+@media (max-width: 640px) {
+  .arrivals-toolbar { min-width: 0; }
+  .arrival-filters { flex-wrap: nowrap; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: #b6c6db transparent; padding: 5px 3px 10px; scroll-padding-inline: 3px; }
+  .arrival-filters button { flex: 0 0 auto; white-space: nowrap; scroll-snap-align: start; }
+}
+
+/* Give New Arrivals a consistent accent in the shared navigation. */
+.nav-links > a.nav-arrivals-highlight { display: inline-flex; align-items: center; justify-content: center; gap: 8px; align-self: center; padding: 9px 14px; border: 1px solid #cddcfd; border-radius: 8px; background: #edf3ff; color: var(--slate); font-weight: 700; }
+.nav-links > a.nav-arrivals-highlight::before { content: ''; width: 6px; height: 6px; flex-shrink: 0; border-radius: 50%; background: #315bd6; }
+.nav-links > a.nav-arrivals-highlight::after { display: none; }
+.nav-links > a.nav-arrivals-highlight:hover, .nav-links > a.nav-arrivals-highlight:focus-visible { background: #dfe9ff; color: #173faf; border-color: #cddcfd; }
+.nav-links > a.nav-arrivals-highlight.active { background: #edf3ff; border-color: #cddcfd; color: var(--slate); }
+.nav-links > a.nav-arrivals-highlight.active::before { background: #315bd6; }
+@media (max-width: 760px) {
+  .nav-links > a.nav-arrivals-highlight { align-self: stretch; min-height: 44px; }
+}

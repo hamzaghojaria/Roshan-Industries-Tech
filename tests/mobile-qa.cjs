@@ -28,6 +28,7 @@ const assert = require('node:assert/strict');
     const routes = [
       'index.html',
       'catalogue.html',
+      'new-arrivals.html',
       'categories.html',
       'about.html',
       'contact.html',
@@ -134,8 +135,9 @@ const assert = require('node:assert/strict');
     await page.locator('footer').scrollIntoViewIfNeeded();
     await page.screenshot({ path: path.join(root, 'artifacts/qa/mobile-footer.png') });
     await page.goto(url('about.html'));
-    assert.equal(await page.locator('.generation-timeline > li').count(), 4);
-    assert.equal(await page.locator('.generation-timeline h3').count(), 5);
+    assert.equal(await page.locator('#slider-generations > .family-chapter').count(), 4);
+    assert.equal(await page.locator('.family-person h3').count(), 4);
+    assert.match(await page.locator('.family-person').last().textContent(), /Abdullah Roshan.*Mohammed Roshan/s);
     assert.equal(await page.locator('.leader-card').count(), 0);
     await page
       .locator('.leadership-section')

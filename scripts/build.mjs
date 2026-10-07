@@ -10,6 +10,7 @@ import {
   productPage,
   aboutPage,
   contactPage,
+  newArrivalsPage,
 } from '../src/templates.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -41,6 +42,7 @@ write('catalogue.html', cataloguePage(products));
 write('categories.html', categoriesPage(products));
 write('about.html', aboutPage(products));
 write('contact.html', contactPage());
+write('new-arrivals.html', newArrivalsPage(products));
 // Remove the retired generated route from local previews as well as deployment output.
 const retiredCreditsPage = path.join(root, 'photo-credits.html');
 if (fs.existsSync(retiredCreditsPage)) fs.unlinkSync(retiredCreditsPage);
@@ -75,6 +77,7 @@ for (const file of [
   'categories.html',
   'about.html',
   'contact.html',
+  'new-arrivals.html',
   'styles.css',
   'modern.css',
   'app.js',
@@ -85,5 +88,5 @@ for (const file of [
 for (const dir of ['assets', 'categories', 'products'])
   fs.cpSync(path.join(root, dir), path.join(output, dir), { recursive: true });
 console.log(
-  `Built ${products.length} product pages, ${categories.length} category pages and 5 main pages. Stable SKUs saved to sku-map.json.`,
+  `Built ${products.length} product pages, ${categories.length} category pages and 6 main pages. Stable SKUs saved to sku-map.json.`,
 );

@@ -48,6 +48,7 @@ const files = [
   'categories.html',
   'about.html',
   'contact.html',
+  'new-arrivals.html',
   ...categories.map((c) => `categories/${c.id}.html`),
   ...products.map((p) => p.url),
 ];

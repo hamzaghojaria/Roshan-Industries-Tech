@@ -88,7 +88,7 @@
       floatingWhatsApp.hidden = visibleContactAreas.size > 0;
     });
     document
-      .querySelectorAll('.enquiry-actions, .pagination, footer')
+      .querySelectorAll('.enquiry-actions, .pagination, .arrival-filters, footer')
       .forEach((area) => contactObserver.observe(area));
   }
   // Soft cursor spotlights add depth to shared feature panels without tilting content.
@@ -258,6 +258,30 @@
     window.addEventListener('resize', update, { passive: true });
     update();
   });
+  const arrivalFilters = document.querySelector('.arrival-filters');
+  if (arrivalFilters) {
+    arrivalFilters.hidden = false;
+    const cards = [...document.querySelectorAll('[data-arrival-category]')];
+    arrivalFilters.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-arrival-filter]');
+      if (!button) return;
+      const category = button.dataset.arrivalFilter;
+      if (matchMedia('(max-width: 640px)').matches) {
+        const filterBounds = arrivalFilters.getBoundingClientRect();
+        const buttonBounds = button.getBoundingClientRect();
+        const offset = buttonBounds.left < filterBounds.left + 3
+          ? buttonBounds.left - filterBounds.left - 3
+          : buttonBounds.right > filterBounds.right - 3
+            ? buttonBounds.right - filterBounds.right + 3
+            : 0;
+        if (offset) arrivalFilters.scrollBy({left: offset, behavior: reducedMotion.matches ? 'auto' : 'smooth'});
+      }
+      arrivalFilters.querySelectorAll('button').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      cards.forEach((card) => {
+        card.hidden = category !== 'all' && card.dataset.arrivalCategory !== category;
+      });
+    });
+  }
   // Catalogue controls are installed only on catalogue/category listing pages.
   const section = document.querySelector('[data-catalogue]');
   if (!section) return;

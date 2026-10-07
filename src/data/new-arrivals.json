@@ -1,0 +1,11 @@
+{
+  "description": "Manually selected additions to the online range; ordered for display. Add only confirmed arrivals. No launch dates are inferred.",
+  "skus": [
+    "RIT-0201",
+    "RIT-0202",
+    "RIT-0203",
+    "RIT-0209",
+    "RIT-0210",
+    "RIT-0212"
+  ]
+}
