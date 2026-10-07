@@ -198,3 +198,5 @@ Product photographs open in an accessible image dialog with zoom controls, reset
 Product detail photographs magnify under a desktop hover pointer, following the cursor and resetting on exit. Touch devices use the tap-to-enlarge viewer. The Show selector is omitted from both All Products and category pages.
 
 In the same category uses a manual horizontal product slider on mobile, with swipe/native scrolling, a thin scrollbar and arrow controls. Desktop related products retain their grid layout.
+
+The product title link extends across each card, making the card clickable with native browser link behavior. Category labels are plain text, so every area of the card opens the product page. Sliders retain native touch scrolling.

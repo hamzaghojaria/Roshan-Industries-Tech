@@ -3910,3 +3910,26 @@ main .button::after {
     border-radius: 5px;
   }
 }
+/* Extend the product title link across the card without nesting links. */
+.product-card {
+  position: relative;
+  cursor: pointer;
+}
+.product-card h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 15px;
+}
+.product-card .details-link {
+  position: relative;
+  z-index: 2;
+}
+.product-card .product-category {
+  align-self: flex-start;
+}
+.product-card h3 a:focus-visible::after {
+  outline: 3px solid #3156d9;
+  outline-offset: -3px;
+}

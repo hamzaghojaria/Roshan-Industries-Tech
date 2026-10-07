@@ -99,9 +99,7 @@ export function card(p, base = '') {
         loading="lazy"
     /></a>
     <div class="product-card-copy">
-      <a class="product-category" href="${base}categories/${p.categoryId}.html"
-        >${esc(p.category)}</a
-      >
+      <span class="product-category">${esc(p.category)}</span>
       <h3><a href="${base + p.url}">${esc(p.name)}</a></h3>
       <div class="card-bottom">
         <span class="sku">${p.sku}</span
