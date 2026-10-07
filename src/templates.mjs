@@ -168,7 +168,7 @@ export function layout(
         <link rel="icon" href="${base}assets/roshan-logo.png" />
         <link rel="stylesheet" href="${base}styles.css" />
         <link rel="stylesheet" href="${base}modern.css" />
-        ${page === 'catalogue' ? `<script src="${base}products.js" defer></script>` : ''}
+        <script src="${base}products.js" defer></script>
         <script src="${base}app.js" defer></script>
         <script>
           document.documentElement.classList.add('page-loading');
@@ -225,6 +225,19 @@ export function layout(
                   <path d="m15 15 6 6" />
                 </svg>
               </button>
+              <div
+                id="search-suggestions"
+                class="search-suggestions"
+                role="listbox"
+                aria-label="Search suggestions"
+                hidden
+              ></div>
+              <span
+                id="search-announcement"
+                class="sr-only"
+                role="status"
+                aria-live="polite"
+              ></span>
             </form>
             <a
               class="catalogue-download"
@@ -329,14 +342,12 @@ export function layout(
           </div>
         </footer>
         <a
-          class="${product ? 'mobile-product-enquiry' : 'floating-whatsapp'}"
+          class="floating-whatsapp"
           href="${esc(whatsapp(product))}"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="${product ? 'Enquire about this product on WhatsApp' : 'Chat with Roshan Industries on WhatsApp'}"
-          >${whatsappIcon}<span
-            >${product ? 'Enquire about this product' : 'Chat on WhatsApp'}</span
-          ></a
+          aria-label="Chat with Roshan Industries on WhatsApp"
+          >${whatsappIcon}<span>Chat on WhatsApp</span></a
         >
       </body>
     </html>`;

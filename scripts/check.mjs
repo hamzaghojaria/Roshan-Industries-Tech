@@ -59,8 +59,8 @@ for (const file of files) {
   const filename = path.join(root, file),
     html = fs.readFileSync(filename, 'utf8');
   assert.match(html, /<title>[^<]+<\/title>/);
-  // Non-listing routes do not need the full browser catalogue payload.
-  const needsCatalogue = file === 'catalogue.html' || file.startsWith('categories/');
+  // Every route uses the shared catalogue for header search suggestions.
+  const needsCatalogue = true;
   assert.equal(
     html.includes('products.js'),
     needsCatalogue,

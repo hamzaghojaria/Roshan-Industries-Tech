@@ -33,20 +33,7 @@ const { pathToFileURL } = require('node:url');
         const target = await link.getAttribute('href');
         await link.click();
         await page.waitForURL(/products\/rit-/);
-        const title = await page.locator('h1').textContent();
-        const sku = (await page.locator('.detail-sku').textContent()).replace('SKU ', '').trim();
-        const bar = page.locator('.mobile-product-enquiry');
-        const message = new URL(await bar.getAttribute('href')).searchParams.get('text');
-        assert(message.includes(title) && message.includes(sku));
-        assert.equal(await bar.isVisible(), width <= 760);
-        if (width <= 760) {
-          const bounds = await bar.boundingBox();
-          assert(
-            bounds.x >= 0 && bounds.x + bounds.width <= width && bounds.y + bounds.height <= 850,
-          );
-          assert.equal(await page.locator('.floating-whatsapp').count(), 0);
-          await page.screenshot({ path: 'artifacts/qa/product-enquiry-' + width + '.png' });
-        }
+        assert.equal(await page.locator('.mobile-product-enquiry').count(), 0);
         await page.goBack();
         await page.waitForTimeout(200);
         assert.equal(page.url(), beforeURL);
@@ -71,9 +58,9 @@ const { pathToFileURL } = require('node:url');
       viewport: { width: 320, height: 700 },
     });
     await plain.goto(url('products/rit-0268.html'));
-    assert(await plain.locator('.mobile-product-enquiry').isVisible());
+    assert.equal(await plain.locator('.mobile-product-enquiry').count(), 0);
     assert(!(await plain.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)));
-    console.log('PASS mobile enquiry bar, desktop visibility and no-JavaScript fallback');
+    console.log('PASS removed enquiry bar and no-JavaScript fallback');
   } finally {
     await browser.close();
   }
