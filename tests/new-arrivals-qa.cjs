@@ -22,7 +22,7 @@ const assert = require('node:assert/strict');
   for (const width of [320, 390, 760, 1024, 1440]) {
     await p.setViewportSize({ width, height: 900 });
     await p.goto(pathToFileURL(path.resolve('new-arrivals.html')).href);
-    assert.equal(await p.locator('.arrival-card').count(), arrivalCount);
+    assert.equal(await p.locator('.arrival-card').count(), Math.min(24, arrivalCount));
     for (const filter of await p.locator('[data-arrival-filter]').all()) {
       await filter.click();
       const id = await filter.getAttribute('data-arrival-filter');
@@ -34,7 +34,10 @@ const assert = require('node:assert/strict');
     }
     if (arrivalCount) await p.locator('[data-arrival-filter="all"]').click();
     else assert.equal(await p.locator('[data-arrival-filter]').count(), 0);
-    assert.equal(await p.locator('.arrival-card:not([hidden])').count(), arrivalCount);
+    assert.equal(
+      await p.locator('.arrival-card:not([hidden])').count(),
+      Math.min(24, arrivalCount),
+    );
     assert(
       !(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)),
       'Arrival overflow ' + width,

@@ -408,7 +408,7 @@ export function newArrivalsPage(products) {
         .join('') +
       '</div></div><div class="product-grid arrivals-grid">' +
       arrivals.map(arrivalCard).join('') +
-      '</div><div class="arrivals-more"><p>Looking for something else?</p><a class="text-link" href="catalogue.html">Explore the complete catalogue &#8594;</a></div></section>',
+      '</div><nav id="arrival-pagination" class="pagination" aria-label="New arrivals pages" hidden></nav><div class="arrivals-more"><p>Looking for something else?</p><a class="text-link" href="catalogue.html">Explore the complete catalogue &#8594;</a></div></section>',
     {
       active: 'arrivals',
       page: 'arrivals',
@@ -644,17 +644,22 @@ export function cataloguePage(products, category = null) {
           <div class="catalogue-toolbar">
             <p id="results-count">${items.length} products</p>
             <div class="catalogue-controls">
-              <div>
+              ${
+                category
+                  ? `              <div>
                 <label for="arrival-filter">Show</label
                 ><select id="arrival-filter">
                   <option value="all">All products</option>
                   <option value="new">New Arrivals</option>
                 </select>
-              </div>
+              </div>`
+                  : ''
+              }
               <div>
                 <label for="sort">Sort by</label
                 ><select id="sort">
                   <option value="catalogue">Catalogue order</option>
+                  <option value="new" class="new-sort-option">New Arrivals first</option>
                   <option value="asc">Name: A–Z</option>
                   <option value="desc">Name: Z–A</option>
                   <option value="sku">SKU</option>

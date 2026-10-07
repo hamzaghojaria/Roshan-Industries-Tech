@@ -1,4 +1,4 @@
-/* Brand theme, responsive refinements, hover effects and WhatsApp styling. */
+﻿/* Brand theme, responsive refinements, hover effects and WhatsApp styling. */
 /* Shared visual theme: applied to every generated page. */
 
 :root {
@@ -3398,7 +3398,6 @@ main .button::after {
   font-size: 0.875rem;
   color: var(--muted);
 }
-.arrivals-grid,
 .home-arrivals > .product-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -3436,9 +3435,6 @@ main .button::after {
   padding-block: 32px;
 }
 @media (max-width: 1000px) {
-  .arrivals-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .arrivals-toolbar {
     align-items: flex-start;
     flex-direction: column;
@@ -3449,7 +3445,6 @@ main .button::after {
   }
 }
 @media (max-width: 640px) {
-  .arrivals-grid,
   .home-arrivals > .product-grid {
     grid-template-columns: 1fr;
   }
@@ -3671,4 +3666,30 @@ main .button::after {
 .family-person {
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+#sort .new-sort-option {
+  color: #173faf;
+  font-weight: 700;
+}
+#sort.is-new-sort {
+  color: #173faf;
+  background-color: #edf3ff;
+  border-color: #b6cafa;
+  font-weight: 600;
+}
+
+/* Original New Arrivals card layout. */
+.arrivals-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 1000px) {
+  .arrivals-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .arrivals-grid {
+    grid-template-columns: 1fr;
+  }
 }

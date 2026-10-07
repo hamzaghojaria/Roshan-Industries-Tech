@@ -37,7 +37,8 @@ const server = http.createServer((req, res) => {
     for (const width of [320, 390, 760, 1024, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(origin + '/catalogue.html');
-      await page.locator('#arrival-filter').selectOption('new');
+      assert.equal(await page.locator('#arrival-filter').count(), 0);
+      await page.goto(origin + '/catalogue.html?new=1');
       assert(
         (await page.locator('#results-count').textContent()).includes(
           'of ' + selected.length + ' products',
@@ -51,12 +52,12 @@ const server = http.createServer((req, res) => {
         selected.length - 24,
       );
       await page.reload();
-      assert.equal(await page.locator('#arrival-filter').inputValue(), 'new');
+      assert.equal(await page.locator('#arrival-filter').count(), 0);
       await page.locator('#catalogue-query').fill('RIT-0268');
       assert.equal(await page.locator('#catalogue-grid .product-card').count(), 1);
       await page.locator('#catalogue-query').fill('RIT-0001');
       assert.equal(await page.locator('#catalogue-grid .product-card').count(), 0);
-      await page.locator('#arrival-filter').selectOption('all');
+      await page.goto(origin + '/catalogue.html?q=RIT-0001');
       assert.equal(await page.locator('#catalogue-grid .product-card').count(), 1);
       await page.goto(origin + '/products/rit-0268.html');
       await page.locator('.detail-image img').evaluate((el) => el.decode());

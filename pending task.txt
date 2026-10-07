@@ -1,3 +1,13 @@
 Can we get the images online based on image and title and
 Linkedun roshan account
 Admin pannel for website ?
+
+
+Yes—a small admin panel would be useful now, given how often you add products, replace images and change New Arrivals.
+I’d keep it focused on:
+- Adding and editing products, descriptions and images.
+- Managing categories and marking products as New Arrivals.
+- Previewing changes before publishing.
+- Generating the catalogue PDF and Excel from the same product data.
+The biggest benefit is keeping the website, PDF and Excel synchronized, so each update happens once.
+Your static website can stay as it is for visitors. The admin panel would manage its content and publish updates. I’d avoid adding inventory, orders or customer accounts until you need them.

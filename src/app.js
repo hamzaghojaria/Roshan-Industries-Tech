@@ -293,14 +293,97 @@
     window.addEventListener('resize', update, { passive: true });
     update();
   });
+  function renderPages(container, current, pages) {
+    container.replaceChildren();
+    if (pages > 1) {
+      const button = (label, page, disabled = false) => {
+        const node = document.createElement('button');
+        node.type = 'button';
+        node.textContent = label;
+        node.dataset.page = page;
+        node.disabled = disabled;
+        if (Number(page) === current && /^\d+$/.test(label)) {
+          node.className = 'current';
+          node.setAttribute('aria-current', 'page');
+        }
+        if (/^\d+$/.test(label)) node.setAttribute('aria-label', `Page ${page}`);
+        container.append(node);
+      };
+      button('Previous', current - 1, current === 1);
+      // Show at most three numbers, keeping the current page within the window.
+      const firstPage = Math.max(1, Math.min(current - 1, pages - 2));
+      const lastPage = Math.min(pages, firstPage + 2);
+      const ellipsis = () => {
+        const node = document.createElement('span');
+        node.className = 'pagination-ellipsis';
+        node.textContent = '…';
+        node.setAttribute('aria-label', 'More pages');
+        container.append(node);
+      };
+      if (firstPage > 1) ellipsis();
+      for (let page = firstPage; page <= lastPage; page++) button(String(page), page);
+      if (lastPage < pages) ellipsis();
+      button('Next', current + 1, current === pages);
+    }
+  }
   const arrivalFilters = document.querySelector('.arrival-filters');
   if (arrivalFilters) {
     arrivalFilters.hidden = false;
     const cards = [...document.querySelectorAll('[data-arrival-category]')];
+    const grid = document.querySelector('.arrivals-grid');
+    const pagination = document.getElementById('arrival-pagination');
+    const categories = new Set(['all', ...cards.map((card) => card.dataset.arrivalCategory)]);
+    let category = 'all',
+      page = 1;
+    const read = () => {
+      const params = new URLSearchParams(location.search);
+      category = categories.has(params.get('category')) ? params.get('category') : 'all';
+      const requested = Number(params.get('page'));
+      page = Number.isSafeInteger(requested) && requested > 0 ? requested : 1;
+    };
+    const render = (push = false) => {
+      const matches = cards.filter(
+        (card) => category === 'all' || card.dataset.arrivalCategory === category,
+      );
+      const pages = Math.max(1, Math.ceil(matches.length / 24));
+      page = Math.min(page, pages);
+      grid.replaceChildren(...matches.slice((page - 1) * 24, page * 24));
+      arrivalFilters
+        .querySelectorAll('button')
+        .forEach((button) =>
+          button.setAttribute('aria-pressed', String(button.dataset.arrivalFilter === category)),
+        );
+      renderPages(pagination, page, pages);
+      pagination.hidden = pages <= 1;
+      const url = new URL(location.href);
+      category === 'all'
+        ? url.searchParams.delete('category')
+        : url.searchParams.set('category', category);
+      page === 1 ? url.searchParams.delete('page') : url.searchParams.set('page', page);
+      if (url.href !== location.href)
+        history[push ? 'pushState' : 'replaceState'](null, '', url.href);
+    };
+    read();
+    render();
+    window.addEventListener('popstate', () => {
+      read();
+      render();
+    });
+    pagination.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-page]');
+      if (!button || button.disabled) return;
+      page = Number(button.dataset.page);
+      render(true);
+      arrivalFilters.scrollIntoView({
+        behavior: reducedMotion.matches ? 'auto' : 'smooth',
+        block: 'start',
+      });
+      pagination.querySelector('[aria-current="page"]')?.focus({ preventScroll: true });
+    });
     arrivalFilters.addEventListener('click', (event) => {
       const button = event.target.closest('[data-arrival-filter]');
       if (!button) return;
-      const category = button.dataset.arrivalFilter;
+      category = button.dataset.arrivalFilter;
       if (matchMedia('(max-width: 640px)').matches) {
         const filterBounds = arrivalFilters.getBoundingClientRect();
         const buttonBounds = button.getBoundingClientRect();
@@ -316,12 +399,8 @@
             behavior: reducedMotion.matches ? 'auto' : 'smooth',
           });
       }
-      arrivalFilters
-        .querySelectorAll('button')
-        .forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
-      cards.forEach((card) => {
-        card.hidden = category !== 'all' && card.dataset.arrivalCategory !== category;
-      });
+      page = 1;
+      render(true);
     });
   }
   // Catalogue controls are installed only on catalogue/category listing pages.
@@ -342,7 +421,7 @@
     const searchText = normalize(
       `${product.name} ${product.sku} ${product.category} ${product.id} ${(product.specifications || []).map((s) => s.value).join(' ')}`,
     );
-    return { node, product, searchText };
+    return { node, product, searchText, isArrival: Boolean(node.querySelector('.arrival-badge')) };
   });
   const queryInput = document.getElementById('catalogue-query');
   const count = document.getElementById('results-count');
@@ -351,7 +430,9 @@
   const state = {
     page: 1,
     query: new URLSearchParams(location.search).get('q') || '',
-    sort: 'catalogue',
+    sort: ['new', 'asc', 'desc', 'sku'].includes(new URLSearchParams(location.search).get('sort'))
+      ? new URLSearchParams(location.search).get('sort')
+      : 'catalogue',
     arrivals: new URLSearchParams(location.search).get('new') === '1',
     family:
       section.dataset.catalogue === 'all' &&
@@ -364,8 +445,8 @@
   count.setAttribute('aria-live', 'polite');
   queryInput.value = state.query;
   const arrivalFilter = document.getElementById('arrival-filter');
-  arrivalFilter.value = state.arrivals ? 'new' : 'all';
-  arrivalFilter.addEventListener('change', () => {
+  if (arrivalFilter) arrivalFilter.value = state.arrivals ? 'new' : 'all';
+  arrivalFilter?.addEventListener('change', () => {
     state.arrivals = arrivalFilter.value === 'new';
     state.page = 1;
     const url = new URL(location.href);
@@ -379,14 +460,24 @@
   function render() {
     const words = normalize(state.query.trim()).split(/\s+/).filter(Boolean);
     const matches = items.filter(
-      ({ searchText, product }) =>
+      ({ searchText, product, isArrival }) =>
         (!state.family || product.family === state.family) &&
-        (!state.arrivals || product.newArrival) &&
+        (!state.arrivals || isArrival) &&
         words.every((word) => searchText.includes(word)),
     );
     if (state.sort === 'asc' || state.sort === 'desc')
       matches.sort(
         (a, b) => (state.sort === 'asc' ? 1 : -1) * a.product.name.localeCompare(b.product.name),
+      );
+    document.getElementById('sort').value = state.sort;
+    document.getElementById('sort').classList.toggle('is-new-sort', state.sort === 'new');
+    if (state.sort === 'new')
+      matches.sort(
+        (a, b) =>
+          Number(b.isArrival) - Number(a.isArrival) ||
+          (a.isArrival
+            ? b.product.sku.localeCompare(a.product.sku, undefined, { numeric: true })
+            : 0),
       );
     if (state.sort === 'sku') matches.sort((a, b) => a.product.sku.localeCompare(b.product.sku));
     const pages = Math.max(1, Math.ceil(matches.length / pageSize));
@@ -398,37 +489,7 @@
       ? `Showing ${start + 1}–${start + visible.length} of ${matches.length} products`
       : '0 products';
     document.getElementById('empty-state').hidden = matches.length > 0;
-    pagination.replaceChildren();
-    if (pages > 1) {
-      const button = (label, page, disabled = false) => {
-        const node = document.createElement('button');
-        node.type = 'button';
-        node.textContent = label;
-        node.dataset.page = page;
-        node.disabled = disabled;
-        if (Number(page) === state.page && /^\d+$/.test(label)) {
-          node.className = 'current';
-          node.setAttribute('aria-current', 'page');
-        }
-        if (/^\d+$/.test(label)) node.setAttribute('aria-label', `Page ${page}`);
-        pagination.append(node);
-      };
-      button('Previous', state.page - 1, state.page === 1);
-      // Show at most three numbers, keeping the current page within the window.
-      const firstPage = Math.max(1, Math.min(state.page - 1, pages - 2));
-      const lastPage = Math.min(pages, firstPage + 2);
-      const ellipsis = () => {
-        const node = document.createElement('span');
-        node.className = 'pagination-ellipsis';
-        node.textContent = '…';
-        node.setAttribute('aria-label', 'More pages');
-        pagination.append(node);
-      };
-      if (firstPage > 1) ellipsis();
-      for (let page = firstPage; page <= lastPage; page++) button(String(page), page);
-      if (lastPage < pages) ellipsis();
-      button('Next', state.page + 1, state.page === pages);
-    }
+    renderPages(pagination, state.page, pages);
   }
   // Preserve catalogue filters in the URL without changing the separate header search.
   function updateQuery() {
@@ -448,6 +509,11 @@
   });
   document.getElementById('sort').addEventListener('change', (event) => {
     state.sort = event.target.value;
+    const url = new URL(location.href);
+    state.sort === 'catalogue'
+      ? url.searchParams.delete('sort')
+      : url.searchParams.set('sort', state.sort);
+    history.replaceState(null, '', url.href);
     state.page = 1;
     render();
   });

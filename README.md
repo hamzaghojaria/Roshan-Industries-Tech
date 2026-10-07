@@ -184,3 +184,5 @@ To refresh the branded exports, build the website, run `python scripts/export-br
 Photograph replacements are stored in `src/data/product-image-overrides.json`, with source URLs, natural image dimensions and checksums. The current loupe photos and replacement scissors stand image are included in the PDF and XLSX. Run `python scripts/validate-synchronized-exports.py` to compare every PDF image and workbook row/photo with the website.
 
 All Products and category pages include a New Arrivals filter beside sorting, with search and pagination support. A shared page loader appears during page navigation on phone and desktop, respects reduced motion and remains hidden without JavaScript. Every product page has an Explore in catalogue link to its correct PDF page.
+
+New Arrivals uses its original card layout with category filters and pagination of 24 products per page. All Products retains the highlighted New Arrivals first sorting option without the separate Show selector.
