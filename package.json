@@ -18,7 +18,8 @@
     "test:arrivals": "node tests/new-arrivals-qa.cjs",
     "export:xlsx": "python scripts/export-high-resolution-workbook.py",
     "test:source": "node tests/high-resolution-qa.cjs",
-    "check:source": "node scripts/validate-high-resolution.mjs"
+    "check:source": "node scripts/validate-high-resolution.mjs",
+    "test:product-actions": "node tests/catalogue-actions-qa.cjs"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",

@@ -36,7 +36,7 @@ expected.set(19, 8);
 expected.set(20, 4);
 for (const [page, count] of expected)
   assert.equal(products.filter((p) => p.page === page).length, count, 'PDF page coverage ' + page);
-assert.equal(products.filter((p) => p.newArrival).length, 16);
+assert.equal(products.filter((p) => p.newArrival).length, 0);
 assert.equal(changes.removed.length, 12);
 for (const p of products) {
   const html = fs.readFileSync(path.join(root, p.url), 'utf8');
@@ -190,7 +190,9 @@ const lines = [
   '',
   '| SKU | Product | PDF Page |',
   '| --- | --- | ---: |',
-  ...products.filter((p) => p.newArrival).map((p) => `| ${p.sku} | ${p.name} | ${p.page} |`),
+  ...products
+    .filter((p) => changes.added.some((a) => a.sku === p.sku))
+    .map((p) => `| ${p.sku} | ${p.name} | ${p.page} |`),
   '',
   '## Restored Pump Listings',
   '',

@@ -18,19 +18,15 @@
       1024,
       1440
     ],
-    "filters": true,
-    "images": true,
+    "products": 0,
+    "emptyState": true,
     "activeNavigation": true,
-    "homePreview": false,
     "homePreviewRemoved": true
   },
   "productBadges": {
-    "widths": [
-      390,
-      1440
-    ],
-    "selectedProducts": 16,
-    "matchedSharedSelection": true
+    "selectedProducts": 0,
+    "allProductPagesChecked": 228,
+    "noNewBadges": true
   },
   "catalogue": {
     "pagination": true,
@@ -68,6 +64,27 @@
     "products": 228,
     "categorySheets": 21,
     "familyNames": true,
-    "coloredTabs": true
+    "coloredTabs": true,
+    "newArrivalProducts": 0
+  },
+  "aboutWorkSlider": {
+    "desktopCards": 3,
+    "tabletCards": 2,
+    "mobileCards": 1,
+    "widths": [
+      320,
+      390,
+      600,
+      760,
+      1024,
+      1280,
+      1440
+    ],
+    "navigation": true
+  },
+  "catalogueActions": {
+    "matchedWidths": true,
+    "matchedDesktopHeights": true,
+    "mobileStacked": true
   }
 }

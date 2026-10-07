@@ -69,16 +69,20 @@ const server = http.createServer((req, res) => {
       );
     }
     const filters = page.locator('.arrival-filters');
-    assert(await filters.evaluate((el) => el.scrollWidth > el.clientWidth));
-    for (const button of await filters.locator('button').all()) {
-      await button.tap();
-      assert.equal(await button.getAttribute('aria-pressed'), 'true');
-      assert((await page.locator('.arrival-card:not([hidden])').count()) > 0);
+    if (await filters.count()) {
+      assert(await filters.evaluate((el) => el.scrollWidth > el.clientWidth));
+      for (const button of await filters.locator('button').all()) {
+        await button.tap();
+        assert.equal(await button.getAttribute('aria-pressed'), 'true');
+        assert((await page.locator('.arrival-card:not([hidden])').count()) > 0);
+      }
+      await filters.scrollIntoViewIfNeeded();
+      await page.waitForTimeout(150);
+      assert(await page.locator('.floating-whatsapp').isHidden());
+      await filters.locator('button').first().tap();
+    } else {
+      assert.equal(await page.locator('.arrival-card').count(), 0);
     }
-    await filters.scrollIntoViewIfNeeded();
-    await page.waitForTimeout(150);
-    assert(await page.locator('.floating-whatsapp').isHidden());
-    await filters.locator('button').first().tap();
     fs.mkdirSync(path.join(root, 'artifacts/qa'), { recursive: true });
     const downloadPromise = page.waitForEvent('download');
     await page.locator('.header-main .catalogue-download').click();
@@ -100,7 +104,7 @@ const server = http.createServer((req, res) => {
       fullPage: true,
     });
     console.log(
-      'PASS: all 228 native images decode with correct dimensions; mobile filter slider, unobstructed taps and actual high resolution PDF download.',
+      'PASS: all 228 native images decode with correct dimensions; responsive New Arrivals page and actual catalogue PDF download.',
     );
   } finally {
     await b.close();

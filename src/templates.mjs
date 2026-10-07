@@ -361,6 +361,20 @@ function arrivalCard(p) {
 }
 export function newArrivalsPage(products) {
   const arrivals = arrivalProducts(products);
+  if (!arrivals.length) {
+    return layout(
+      'New Arrivals',
+      breadcrumb('New Arrivals') +
+        '<section class="container arrivals-intro"><p class="eyebrow">NEW ARRIVALS</p><h1>New to the Roshan Industries range.</h1><p>New additions will appear here as they become available.</p></section>' +
+        '<section class="container arrivals-section"><div class="arrivals-more"><p>Explore our current product range.</p><a class="button button-navy" href="catalogue.html">Browse all products &#8594;</a></div></section>',
+      {
+        active: 'arrivals',
+        page: 'arrivals',
+        description:
+          'Check for new additions to Roshan Industries or explore the complete product catalogue.',
+      },
+    );
+  }
   const groups = [...new Map(arrivals.map((p) => [p.categoryId, p.category])).entries()];
   return layout(
     'New Arrivals',
@@ -729,7 +743,7 @@ export function productPage(p, products) {
           </div>
           <div class="product-catalogue-actions">
             <a
-              class="text-link"
+              class="button button-light"
               href="../assets/roshan-industries-catalogue.pdf#page=${p.cataloguePage}"
               target="_blank"
               rel="noopener"

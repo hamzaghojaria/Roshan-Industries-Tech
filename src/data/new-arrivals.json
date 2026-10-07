@@ -1,21 +1,4 @@
 {
-  "description": "Products newly added in the latest high resolution source PDF. No launch dates are inferred.",
-  "skus": [
-    "RIT-0213",
-    "RIT-0214",
-    "RIT-0215",
-    "RIT-0216",
-    "RIT-0217",
-    "RIT-0218",
-    "RIT-0219",
-    "RIT-0220",
-    "RIT-0221",
-    "RIT-0222",
-    "RIT-0223",
-    "RIT-0224",
-    "RIT-0225",
-    "RIT-0226",
-    "RIT-0227",
-    "RIT-0228"
-  ]
+  "description": "New Arrivals selection cleared at the user request.",
+  "skus": []
 }

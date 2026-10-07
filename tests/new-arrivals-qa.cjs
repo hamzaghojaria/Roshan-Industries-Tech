@@ -32,7 +32,8 @@ const assert = require('node:assert/strict');
         for (const card of await visible.all())
           assert.equal(await card.getAttribute('data-arrival-category'), id);
     }
-    await p.locator('[data-arrival-filter="all"]').click();
+    if (arrivalCount) await p.locator('[data-arrival-filter="all"]').click();
+    else assert.equal(await p.locator('[data-arrival-filter]').count(), 0);
     assert.equal(await p.locator('.arrival-card:not([hidden])').count(), arrivalCount);
     assert(
       !(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)),

@@ -2809,14 +2809,28 @@ main .button::after {
 }
 
 .product-catalogue-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 12px;
   margin-top: 24px;
 }
+.product-catalogue-actions .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 12px 14px;
+  text-align: center;
+  white-space: normal;
+}
 #slider-about-work > * {
-  flex-basis: calc((100% - 20px) / 2);
+  flex-basis: calc((100% - 40px) / 3);
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  #slider-about-work > * {
+    flex-basis: calc((100% - 20px) / 2);
+  }
 }
 .family-heritage {
   background: #f6f2e9;
@@ -3058,12 +3072,13 @@ main .button::after {
     font-size: 0.55rem;
     letter-spacing: 0.07em;
   }
+  .product-catalogue-actions {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
   #slider-about-work > * {
     flex-basis: 88%;
-  }
-  .product-catalogue-actions {
-    align-items: flex-start;
-    flex-direction: column;
   }
 }
 
