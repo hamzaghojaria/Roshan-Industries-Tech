@@ -150,9 +150,18 @@
             : best,
         0,
       );
+    const familyButtons = [...slider.querySelectorAll('[data-family-index]')];
+    const familyNavigation = slider.querySelector('.family-navigation');
+    if (familyNavigation) familyNavigation.hidden = false;
+    familyButtons.forEach((button, index) => button.addEventListener('click', () => {
+      lastInteraction = Date.now();
+      track.scrollTo({left: cards[index].offsetLeft - cards[0].offsetLeft, behavior: motion.matches ? 'auto' : 'smooth'});
+    }));
     const update = () => {
       frame = 0;
-      position.textContent = `${current() + 1} / ${cards.length}`;
+      const selected = current();
+      position.textContent = `${selected + 1} / ${cards.length}`;
+      familyButtons.forEach((button, index) => button.setAttribute('aria-pressed', String(index === selected)));
     };
     const advance = (direction) => {
       const max = track.scrollWidth - track.clientWidth;

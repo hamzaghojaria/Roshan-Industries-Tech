@@ -43,9 +43,7 @@ const customSection = (base = '', id = 'custom-manufacturing') =>
           <h2>Your requirement.<br />Our manufacturing experience.</h2>
         </div>
         <p class="lead">
-          Have a product in mind that is outside our catalogue? Roshan Industries can manufacture
-          custom products. Share your drawing, dimensions or reference and let’s discuss what you
-          need.
+          Need a product beyond our catalogue? Share your drawing, sample or dimensions with Roshan Industries.
         </p>
       </div>
       <div class="custom-grid">
@@ -53,31 +51,28 @@ const customSection = (base = '', id = 'custom-manufacturing') =>
           <span class="step-number">01</span>
           <h3>Tell us what you need</h3>
           <p>
-            Start with the product’s purpose, a drawing or photograph, key dimensions and your
-            required quantity.
+            Share its purpose, dimensions, quantity and a drawing or sample.
           </p>
         </article>
         <article>
           <span class="step-number">02</span>
           <h3>Discuss the details</h3>
           <p>
-            Talk through materials, finish, fit and other requirements with our team. We will review
-            feasibility for your project.
+            Review materials, finish and feasibility directly with our team.
           </p>
         </article>
         <article>
           <span class="step-number">03</span>
           <h3>Agree the next steps</h3>
           <p>
-            Confirm the specification, quotation and timeline directly with Roshan Industries before
-            proceeding.
+            Agree the specification, quotation and timeline before manufacturing.
           </p>
         </article>
       </div>
       <div class="custom-actions">
         <a class="button button-light" href="${base}contact.html#custom-enquiry"
           >Discuss a custom product</a
-        ><span>Drawings, reference photos or an existing part are a helpful starting point.</span>
+        ><span>Have a drawing or sample? Let’s talk.</span>
       </div>
     </div>
   </section>`;
@@ -689,17 +684,10 @@ export function productPage(p, products) {
               >${whatsappIcon}Chat on WhatsApp</a
             >
           </div>
-          ${
-            p.onlineRange
-              ? ''
-              : `<a
-            class="text-link"
-            href="../assets/${premiumCataloguePages[p.sku] ? 'roshan-updated-product-catalogue.pdf' : 'roshan-product-catalogue.pdf'}#page=${premiumCataloguePages[p.sku] || p.page}"
-            target="_blank"
-            rel="noopener"
-            >View in the product catalogue</a
-          >`
-          }
+          <div class="product-catalogue-actions">
+            ${!p.onlineRange ? `<a class="text-link" href="../assets/${premiumCataloguePages[p.sku] ? 'roshan-updated-product-catalogue.pdf' : 'roshan-product-catalogue.pdf'}#page=${premiumCataloguePages[p.sku] || p.page}" target="_blank" rel="noopener">View product in catalogue &#8599;</a>` : `<a class="text-link" href="../catalogue.html?q=${encodeURIComponent(p.sku)}">View product in catalogue &#8594;</a>`}
+            <a class="button button-light" href="../assets/roshan-updated-product-catalogue.pdf" download="Roshan-Industries-Catalogue.pdf">Download catalogue &#8595;</a>
+          </div>
         </div>
       </section>
       <section class="container product-custom">
@@ -817,51 +805,25 @@ export function aboutPage(products) {
           <a class="text-link" href="contact.html#custom-enquiry">Talk to us about your project</a>
         </div>
       </section>
-      <section class="section container leadership-section" aria-labelledby="leaders-title">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">OUR PEOPLE &amp; GENERATIONS</p>
-            <h2 id="leaders-title">The family behind Roshan Industries.</h2>
-          </div>
+      <section class="section container leadership-section family-heritage" aria-labelledby="leaders-title">
+        <div class="family-heading"><div><p class="eyebrow">A FAMILY LEGACY &middot; SINCE 1900</p><h2 id="leaders-title">The family behind<br /><em>Roshan Industries.</em></h2></div><p>Four generations.<br />One name. A shared legacy.</p></div>
+        <div class="home-slider family-slider" data-slider role="region" aria-roledescription="carousel" aria-label="The family behind Roshan Industries">
+          <div class="family-navigation" aria-label="Explore the family generations" hidden><button type="button" data-family-index="0" aria-controls="slider-generations" aria-pressed="true"><span>01</span><strong>first generation</strong></button><button type="button" data-family-index="1" aria-controls="slider-generations" aria-pressed="false"><span>02</span><strong>second generation</strong></button><button type="button" data-family-index="2" aria-controls="slider-generations" aria-pressed="false"><span>03</span><strong>third generation</strong></button><button type="button" data-family-index="3" aria-controls="slider-generations" aria-pressed="false"><span>04</span><strong>fourth generation</strong></button></div>
+          <div class="slider-track" id="slider-generations" tabindex="0" aria-label="Family generations; swipe or use arrow keys"><article class="family-chapter" aria-label="first generation">
+  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">VM</span><span class="family-emblem-bottom">GENERATION 01</span></div>
+  <div class="family-person"><p class="eyebrow">FIRST GENERATION <span>/ The beginning</span></p><h3>Vali Mohammed Roshan</h3><p class="family-relationship">Great-grandfather</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
+</article><article class="family-chapter" aria-label="second generation">
+  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">AR</span><span class="family-emblem-bottom">GENERATION 02</span></div>
+  <div class="family-person"><p class="eyebrow">SECOND GENERATION <span>/ A legacy continued</span></p><h3>Ahmed Rashid Roshan</h3><p class="family-relationship">Father</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
+</article><article class="family-chapter" aria-label="third generation">
+  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">IR</span><span class="family-emblem-bottom">GENERATION 03</span></div>
+  <div class="family-person"><p class="eyebrow">THIRD GENERATION <span>/ The next chapter</span></p><h3>Imran Roshan</h3><p class="family-relationship">Son</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
+</article><article class="family-chapter" aria-label="fourth generation">
+  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">AM</span><span class="family-emblem-bottom">GENERATION 04</span></div>
+  <div class="family-person"><p class="eyebrow">FOURTH GENERATION <span>/ Looking ahead</span></p><h3>Abdullah Roshan &amp;<br />Mohammed Roshan</h3><p class="family-relationship">Grandsons</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
+</article></div>
+          <div class="slider-controls" hidden><span class="family-explore">EXPLORE OUR GENERATIONS</span><button type="button" data-slider-prev aria-controls="slider-generations" aria-label="Previous generation">&#8592;</button><span class="slider-position"></span><button type="button" data-slider-next aria-controls="slider-generations" aria-label="Next generation">&#8594;</button></div>
         </div>
-        <p class="lead">Four generations. One family story.</p>
-        <ol class="generation-timeline">
-          <li>
-            <span class="generation-number" aria-hidden="true">01</span>
-            <div class="generation-copy">
-              <p class="eyebrow">FIRST GENERATION</p>
-              <h3>Vali Mohammed Roshan</h3>
-              <p class="generation-relation">Great-grandfather</p>
-            </div>
-          </li>
-          <li>
-            <span class="generation-number" aria-hidden="true">02</span>
-            <div class="generation-copy">
-              <p class="eyebrow">SECOND GENERATION</p>
-              <h3>Ahmed Rashid Roshan</h3>
-              <p class="generation-relation">Father</p>
-            </div>
-          </li>
-          <li>
-            <span class="generation-number" aria-hidden="true">03</span>
-            <div class="generation-copy">
-              <p class="eyebrow">THIRD GENERATION</p>
-              <h3>Imran Roshan</h3>
-              <p class="generation-relation">Son</p>
-            </div>
-          </li>
-          <li>
-            <span class="generation-number" aria-hidden="true">04</span>
-            <div class="generation-copy">
-              <p class="eyebrow">FOURTH GENERATION</p>
-              <div class="generation-names">
-                <h3>Abdullah Roshan</h3>
-                <h3>Mohammed Roshan</h3>
-              </div>
-              <p class="generation-relation">Grandsons</p>
-            </div>
-          </li>
-        </ol>
       </section>
       ${customSection('', 'about-custom')}
       <section class="section container">
@@ -869,9 +831,7 @@ export function aboutPage(products) {
           <h2>For the work you do.</h2>
           <a class="text-link" href="categories.html">Explore categories</a>
         </div>
-        <div class="category-grid">
-          ${[categories[0], categories[5], categories[7]].map((c) => categoryCard(c, products)).join('')}
-        </div>
+${homeSlider('about-work', 'Tools for the work you do', [categories[0], categories[5], categories[7], categories[2], categories[10], categories[14]].map((c) => categoryCard(c, products)).join(''))}
       </section>`,
     { active: 'about', page: 'about' },
   );
