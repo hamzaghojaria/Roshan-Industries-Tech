@@ -657,17 +657,6 @@ export function cataloguePage(products, category = null) {
           <div class="catalogue-toolbar">
             <p id="results-count">${items.length} products</p>
             <div class="catalogue-controls">
-              ${
-                category
-                  ? `              <div>
-                <label for="arrival-filter">Show</label
-                ><select id="arrival-filter">
-                  <option value="all">All products</option>
-                  <option value="new">New Arrivals</option>
-                </select>
-              </div>`
-                  : ''
-              }
               <div>
                 <label for="sort">Sort by</label
                 ><select id="sort">
@@ -727,6 +716,13 @@ export function cataloguePage(products, category = null) {
 }
 /** Product details, grounded description, enquiry links and related entries. */
 export function productPage(p, products) {
+  const photos = [
+    { src: '../' + p.image, alt: p.name },
+    ...(p.additionalImages || []).map((image) => ({
+      src: '../' + (typeof image === 'string' ? image : image.image || image.src),
+      alt: p.name,
+    })),
+  ];
   const related = (indexCatalogue(products).byCategory.get(p.categoryId) || [])
     .filter((q) => q.id !== p.id)
     .slice(0, 4);
@@ -735,12 +731,22 @@ export function productPage(p, products) {
     /* HTML */ `${breadcrumb(p.name, '../', /* HTML */ `<a href="../catalogue.html">Products</a><span>/</span><a href="../categories/${p.categoryId}.html">${esc(p.category)}</a><span>/</span>`)}
       <section class="container product-detail">
         <div class="detail-image">
-          <img
-            src="../${p.image}"
-            alt="${esc(p.name)}"
-            width="${p.imageWidth}"
-            height="${p.imageHeight}"
-          />
+          <a
+            class="product-image-open"
+            href="../${p.image}"
+            target="_blank"
+            rel="noopener"
+            aria-label="Enlarge ${esc(p.name)}"
+            data-product-photos="${esc(JSON.stringify(photos))}"
+          >
+            <img
+              src="../${p.image}"
+              alt="${esc(p.name)}"
+              width="${p.imageWidth}"
+              height="${p.imageHeight}"
+            />
+            <span class="image-enlarge-label">Click to enlarge</span></a
+          >
         </div>
         <div class="detail-copy">
           <a class="eyebrow" href="../categories/${p.categoryId}.html"
@@ -811,6 +817,23 @@ export function productPage(p, products) {
           </div>
         </div>
       </section>
+      <dialog class="product-image-viewer" aria-labelledby="viewer-title">
+        <div class="viewer-toolbar">
+          <h2 id="viewer-title">${esc(p.name)}</h2>
+          <button type="button" data-viewer-close aria-label="Close image viewer">×</button>
+        </div>
+        <div class="viewer-stage">
+          <div class="viewer-canvas"><img alt="" /></div>
+        </div>
+        <div class="viewer-controls">
+          <button type="button" data-viewer-prev aria-label="Previous photograph" hidden>←</button
+          ><button type="button" data-viewer-out aria-label="Zoom out">−</button
+          ><button type="button" data-viewer-reset>Reset</button
+          ><button type="button" data-viewer-in aria-label="Zoom in">+</button
+          ><button type="button" data-viewer-next aria-label="Next photograph" hidden>→</button
+          ><span class="viewer-status" role="status" aria-live="polite"></span>
+        </div>
+      </dialog>
       <section class="container product-custom">
         <div>
           <p class="eyebrow">NEED SOMETHING DIFFERENT?</p>

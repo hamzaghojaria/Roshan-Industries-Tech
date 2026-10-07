@@ -192,3 +192,7 @@ Listing history entries preserve scroll position and the selected product; pagin
 Workbook tables provide their own filter dropdowns; overlapping worksheet filters are omitted for desktop Excel compatibility. The workbook was verified by normal read-only opening in Microsoft Excel, with all 268 products and 536 embedded photos retained.
 
 Header search offers product thumbnails, names, SKUs and categories, category links and full search results, with keyboard navigation and mobile support. The full-width mobile product enquiry bar has been removed.
+
+Product photographs open in an accessible image dialog with zoom controls, reset, drag to pan, mobile pinch zoom and Escape to close. Product additionalImages entries are supported as additional photographs; navigation controls appear only when multiple photographs are supplied. Without JavaScript the image opens directly.
+
+Product detail photographs magnify under a desktop hover pointer, following the cursor and resetting on exit. Touch devices use the tap-to-enlarge viewer. The Show selector is omitted from both All Products and category pages.

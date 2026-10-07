@@ -3760,3 +3760,127 @@ main .button::after {
   line-height: 1.4;
   color: #61717c;
 }
+.product-image-open {
+  display: block;
+  position: relative;
+  color: #173faf;
+  cursor: zoom-in;
+}
+.image-enlarge-label {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #ffffffed;
+  font-size: 0.75rem;
+  border: 1px solid #d9e2f3;
+}
+.product-image-viewer {
+  width: min(1100px, 94vw);
+  height: min(820px, 90dvh);
+  max-width: 94vw;
+  max-height: 90dvh;
+  padding: 0;
+  border: 1px solid #d9e2f3;
+  border-radius: 16px;
+  background: white;
+  color: #14263d;
+}
+.product-image-viewer[open] {
+  display: flex;
+  flex-direction: column;
+}
+.product-image-viewer::backdrop {
+  background: #101c30cc;
+}
+.viewer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e7f1;
+}
+.viewer-toolbar h2 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.product-image-viewer button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #d9e2f3;
+  border-radius: 8px;
+  background: #f4f7fc;
+  color: #173faf;
+  cursor: pointer;
+  font: inherit;
+}
+.product-image-viewer button[hidden] {
+  display: none;
+}
+.product-image-viewer button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.viewer-stage {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  touch-action: none;
+  background: #f7f9fc;
+  cursor: grab;
+}
+.viewer-stage:active {
+  cursor: grabbing;
+}
+.viewer-canvas {
+  display: grid;
+  place-items: center;
+}
+.viewer-canvas img {
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+.viewer-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #e0e7f1;
+}
+.viewer-status {
+  font-size: 0.75rem;
+  color: #61717c;
+  min-width: 40px;
+  text-align: center;
+}
+/* Cursor-following magnification is reserved for devices with a hover pointer. */
+.product-image-open {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.detail-image .product-image-open img {
+  transform: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .detail-image .product-image-open.is-magnifying img {
+    transform: scale(2.2);
+    transform-origin: var(--magnifier-origin, center);
+  }
+  .product-image-open.is-magnifying {
+    cursor: zoom-in;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .detail-image .product-image-open img {
+    transition: none;
+  }
+}
