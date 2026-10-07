@@ -65,7 +65,8 @@ for (const p of products) {
   const old = previous.find((old) => old.sku === p.sku);
   if (old) assert.equal(p.id, old.id, 'Stable product ID changed');
   if (p.onlineProduct) {
-    assert(p.exportPending);
+    assert.equal(p.exportPending, false);
+    assert(p.cataloguePage, 'New product missing exported catalogue page');
     assert.equal(p.imageSha256, hash(path.join(root, p.image)));
     assert(p.imageWidth > 0 && p.imageHeight > 0);
     assert.equal(html.includes('arrival-badge-detail'), arrivals.includes(p.sku));
@@ -133,9 +134,9 @@ assert.equal(
   'Published PDF differs',
 );
 assert.equal(workbook.allFieldsMatchWebsite, true);
-assert.equal(workbook.products, products.length - onlineProducts.length);
+assert.equal(workbook.products, products.length);
 assert.equal(workbook.categorySheets, categories.length);
-assert.equal(workbook.embeddedPhotos, 456);
+assert.equal(workbook.embeddedPhotos, products.length * 2);
 const routes = [
   'index.html',
   'about.html',
@@ -165,7 +166,7 @@ const result = {
   productPagesReviewed: 19,
   pdfProducts: 216,
   websiteProducts: products.length,
-  workbookProducts: 228,
+  workbookProducts: workbook.products,
   categories: 21,
   retainedSkus: 200,
   newProducts: 16,
@@ -174,8 +175,8 @@ const result = {
     (p) => !p.onlineRange && !p.imageOverride && !p.onlineProduct,
   ).length,
   websiteImageOverrides: products.filter((p) => p.imageOverride).length,
-  onlineProductsPendingExport: onlineProducts.length,
-  exportImageUpdatesPending: products.some((p) => p.imageOverride),
+  onlineProductsPendingExport: onlineProducts.filter((p) => p.exportPending).length,
+  exportImageUpdatesPending: false,
   uniqueTitles: products.length,
   freshDescriptions: 216,
   newlyGeneratedOnlineDescriptions: onlineProducts.length,
@@ -183,9 +184,7 @@ const result = {
   sourcePdfSha256: hash(source),
   brandedPdfSha256: hash(pdf),
   brandedCataloguePages: branded.pages,
-  validation: products.some((p) => p.imageOverride)
-    ? 'Website passed; PDF and XLSX product and image updates deferred at user request'
-    : 'Passed',
+  validation: 'Website, PDF and XLSX synchronized',
   notes: [
     'Pages 1 and 21 are covers.',
     'Page 19 has eight populated panels and four empty panels.',
@@ -202,14 +201,12 @@ const lines = [
   '',
   'Source reviewed on 7 October 2026. The 21-page high resolution PDF is authoritative.',
   '',
-  `The website has ${products.length} products: 216 PDF entries, 12 restored pump listings and ${onlineProducts.length} online additions. PDF and XLSX retain 228 records until the user requests export updates. There are 21 categories and five families. Stable SKUs are preserved.`,
+  `The website, PDF and XLSX each contain ${products.length} products: 216 source PDF entries, 12 restored pump listings and ${onlineProducts.length} online additions. There are 21 categories and five families. Stable SKUs are preserved.`,
   '',
   'The source inventory records 216 native scan crops and their page, panel, crop, dimensions and checksum. Requested online photograph replacements are tracked separately in product-image-overrides.json. All PDF product descriptions are newly generated.',
   '',
-  'The supplied PDF is preserved unchanged as the image and product reference. The branded downloadable catalogue retains its 228 exported products with a clickable category index and website headers and footers. The XLSX retains 228 exported records, 21 family-colored category sheets and 456 embedded PNG previews.',
-  products.some((p) => p.imageOverride)
-    ? 'Online additions and website photograph replacements are pending in the PDF and XLSX. Those exports are intentionally unchanged at the user request; export dimensions and embedded photographs reflect the earlier export.'
-    : 'Website images and exports are synchronized.',
+  `The supplied PDF is preserved unchanged as the original image and product reference. The branded downloadable catalogue contains ${products.length} products with a centered cover logo, introductory page, clickable category index and website headers and footers. The XLSX contains ${products.length} records, 21 family-colored category sheets and ${products.length * 2} embedded PNG previews.`,
+  'All new products and current website photograph replacements are included in the PDF and XLSX.',
   '',
   '## Page Coverage',
   '',

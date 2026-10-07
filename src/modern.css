@@ -925,6 +925,72 @@ select {
 .catalogue-toolbar {
   padding-bottom: 4px;
 }
+.catalogue-toolbar .catalogue-controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.catalogue-controls > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.catalogue-controls select {
+  min-height: 44px;
+}
+.page-loader {
+  display: none;
+}
+.page-loading .page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: #fff;
+  color: #61717c;
+  font-size: 13px;
+}
+.page-loader img {
+  object-fit: contain;
+}
+.page-loader-ring {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #edf3ff;
+  border-top-color: #315bd6;
+  border-radius: 50%;
+  animation: page-loader-spin 0.7s linear infinite;
+}
+@keyframes page-loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-loader-ring {
+    animation: none;
+  }
+}
+@media (max-width: 600px) {
+  .catalogue-toolbar .catalogue-controls {
+    width: 100%;
+    gap: 10px;
+  }
+  .catalogue-controls > div {
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+  .catalogue-controls select {
+    width: 100%;
+    min-width: 0;
+  }
+}
 
 .catalogue-grid {
   gap: 20px;

@@ -1,10 +1,13 @@
 {
-  "logoCenteredOnBothAxes": true,
+  "pages": 59,
+  "products": 268,
+  "coverLogoCentered": true,
   "introductionPage": 2,
-  "allOriginalProductTextPreserved": true,
-  "allOriginalProductPhotographsPreserved": true,
-  "allOriginalInternalLinksAdjusted": true,
-  "allOriginalWebsiteLinksPreserved": true,
-  "pages": 53,
-  "products": 228
+  "categoryIndexPages": [
+    3,
+    4
+  ],
+  "productInventoryUpdated": true,
+  "allPhotoPixelsMatchWebsite": true,
+  "linksValidated": true
 }

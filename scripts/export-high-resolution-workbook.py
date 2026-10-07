@@ -53,7 +53,7 @@ selected=set(json.loads((ROOT/'src/data/new-arrivals.json').read_text(encoding='
 overview.sheet_view.showGridLines=False;overview.merge_cells('A1:D1');overview['A1']='Roshan Industries';overview['A1'].font=Font(size=25,bold=True,color=navy);overview.row_dimensions[1].height=38
 overview.merge_cells('A2:D2');overview['A2']='Product Catalogue and Database';overview['A2'].font=Font(size=16,color=blue)
 overview.sheet_properties.tabColor=blue
-for row,text in enumerate([f'{len(products)} products',f'{len(categories)} categories across {len(family_colors)} families','216 catalogue products and 12 pump enquiry listings','Updated website catalogue with clickable category index'],4):
+for row,text in enumerate([f'{len(products)} products',f'{len(categories)} categories across {len(family_colors)} families',f"216 source catalogue products, 12 pump listings and {sum(bool(p.get('onlineProduct')) for p in products)} new online products",'Updated website catalogue with clickable category index'],4):
     overview.merge_cells(start_row=row,start_column=1,end_row=row,end_column=4);overview.cell(row,1,text).font=Font(size=12,color=navy)
 overview['A9']='All Products';overview['A9'].hyperlink="#'All Products'!A1";overview['A9'].font=Font(size=13,bold=True,color=blue,underline='single')
 for col,label in enumerate(['Category','Family','Products','Open Category'],1):overview.cell(11,col,label).fill=PatternFill('solid',fgColor=navy);overview.cell(11,col).font=Font(bold=True,color='FFFFFF')
@@ -74,13 +74,13 @@ for family,color in family_colors.items():
 for col,width in zip('ABCD',[40,25,14,22]):overview.column_dimensions[col].width=width
 overview.freeze_panes='A12'
 wb.save(ROOT/'Roshan-Industries-Product-Catalogue.xlsx')
-check=load_workbook(ROOT/'Roshan-Industries-Product-Catalogue.xlsx');ws=check['All Products'];rows=list(ws.iter_rows(min_row=6,values_only=True));assert len(rows)==len(products)==228
+check=load_workbook(ROOT/'Roshan-Industries-Product-Catalogue.xlsx');ws=check['All Products'];rows=list(ws.iter_rows(min_row=6,values_only=True));assert len(rows)==len(products)
 for values,p in zip(rows,products):
     assert list(values[:9])==[p[k] for k in fields]
     assert values[9]==('Yes' if p['sku'] in selected else 'No')
-assert len(ws._images)==228
-assert sum(len(s._images) for s in check)==456
+assert len(ws._images)==len(products)
+assert sum(len(s._images) for s in check)==len(products)*2
 assert all(s.sheet_properties.tabColor is not None for s in check)
 assert all('Family:' in str(s['A2'].value) for s in list(check)[1:])
-(ROOT/'reports/high-resolution-audit/workbook-validation.json').write_text(json.dumps({'products':len(rows),'categorySheets':len(categories),'embeddedPhotos':456,'sourceSha256':source_hash,'familyColors':family_colors,'allTabsColored':True,'allFieldsMatchWebsite':True,'xlsxSha256':hashlib.sha256((ROOT/'Roshan-Industries-Product-Catalogue.xlsx').read_bytes()).hexdigest()},indent=2),encoding='utf8')
-print('PASS XLSX: 228 synchronized records, 21 category sheets, 456 embedded photos, colored family tabs and matching PDF references.',flush=True)
+(ROOT/'reports/high-resolution-audit/workbook-validation.json').write_text(json.dumps({'products':len(rows),'categorySheets':len(categories),'embeddedPhotos':len(products)*2,'sourceSha256':source_hash,'familyColors':family_colors,'allTabsColored':True,'allFieldsMatchWebsite':True,'newArrivalProducts':len(selected),'xlsxSha256':hashlib.sha256((ROOT/'Roshan-Industries-Product-Catalogue.xlsx').read_bytes()).hexdigest()},indent=2),encoding='utf8')
+print(f'PASS XLSX: {len(products)} synchronized records, {len(categories)} category sheets, {len(products)*2} embedded photos, colored family tabs and matching PDF references.',flush=True)

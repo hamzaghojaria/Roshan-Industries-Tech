@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-07",
+  "linksChecked": 3,
+  "distinctProducts": 1,
+  "duplicateReferences": 2,
+  "productsAdded": 1,
+  "websiteProducts": 268,
+  "newArrivalProducts": 40,
+  "status": "Added using user approved alternate clean photo",
+  "pdfAndXlsxUnchanged": true,
+  "draftProduct": {
+    "proposedSku": "RIT-0268",
+    "name": "Six Slot Acrylic Scissors Display Stand",
+    "description": "A clear acrylic scissors display stand with six slots in the upper support and corresponding openings in the angled panel. The open design separates scissors for organised countertop presentation and easy selection. Contact Roshan Industries to confirm the required slot size, scissors fit and quantity.",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "newArrival": true,
+    "exportPending": true,
+    "sourceUrls": [
+      "https://share.google/Msk5hmMg3niGAwSu0",
+      "https://share.google/yh4dTMJSqKQwLLVXw",
+      "https://share.google/AAq1MOqqRqCi6h2bQ"
+    ],
+    "supplierPage": "https://zxdisplay.en.made-in-china.com/product/cvbxWJqjAXYV/China-Customized-Acrylic-Scissors-Stationery-Display-Stand-for-Store.html",
+    "existingProductComparison": "No existing scissors display stand. Pen stands, pipette stand and pliers stands have different openings and support layouts.",
+    "imageStatus": "All inspected exact-design photos have supplier branding or watermarks. Clean salon stands found online have circular openings and different geometry, so they were not substituted. No watermark was removed."
+  },
+  "frozenExports": {
+    "assets/roshan-industries-catalogue.pdf": "e547de39e64133f7e7fa20c2b8be32b264c6328f43b9307ffcb2c0ba4cadd0e4",
+    "Roshan-Industries-Catalogue.pdf": "e547de39e64133f7e7fa20c2b8be32b264c6328f43b9307ffcb2c0ba4cadd0e4",
+    "Roshan-Industries-Product-Catalogue.xlsx": "0c24c5b3d3d8a76af41dc809881c6f56228ee66f4b59948297d5874f8ce2ab03"
+  },
+  "product": {
+    "id": "online-oct2026-268",
+    "sku": "RIT-0268",
+    "name": "Six Position Acrylic Scissors Stand",
+    "description": "A clear acrylic scissors stand with six openings in the raised support for arranging suitable scissors and shears in individual positions. The bent profile provides a freestanding format for bench organisation or countertop display. Contact Roshan Industries to confirm scissors fit, the required configuration and order quantity.",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0268-six-position-acrylic-scissors-stand.webp",
+    "url": "products/rit-0268.html",
+    "onlineProduct": true,
+    "nameConfirmed": true,
+    "newArrival": true,
+    "exportPending": true,
+    "page": null,
+    "slot": null,
+    "sourcePanel": "Online product range",
+    "sourceType": "User approved alternate supplier photograph",
+    "sourceUrl": "https://share.google/Msk5hmMg3niGAwSu0",
+    "sourceUrls": [
+      "https://share.google/Msk5hmMg3niGAwSu0",
+      "https://share.google/yh4dTMJSqKQwLLVXw",
+      "https://share.google/AAq1MOqqRqCi6h2bQ"
+    ],
+    "imageSourceUrl": "https://www.gosupps.com/scissors-holder-for-groomer-acrylic-rack-salon-shear-holder-clear-stylist-tool-rack-6-holes-combs-storage-container-for-barber-shop-home.html",
+    "imageDownloadUrl": "https://www.gosupps.com/media/catalog/product/cache/25/image/1500x/040ec09b1e35df139433887a97daa66f/6/1/61d9o_eRzLL._AC_SL1500_.jpg",
+    "imageWidth": 1500,
+    "imageHeight": 1500,
+    "imageKind": "photograph",
+    "imageSha256": "0bcd2264192f3a27dfde4917ee00bfedbd6433181f51c71568f2d5256e7f151d",
+    "specifications": [],
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+  },
+  "imageVariant": "Six round openings in alternate supplier photo; linked reference has rectangular slots. User authorized choosing any clear image. Description matches selected photo.",
+  "nativeImagePreserved": true,
+  "watermarkRemoved": false
+}

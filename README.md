@@ -145,28 +145,31 @@ You can also extract `roshan-website.zip` there. `index.html` must sit directly 
 
 ## PDF and Excel
 
-- **Website catalogue:** [assets/roshan-industries-catalogue.pdf](assets/roshan-industries-catalogue.pdf), a 53-page branded catalogue with a centered cover logo, refreshed introduction, high resolution product images, a clickable category index, website headers and footers, and restored pump listings.
+- **Website catalogue:** [assets/roshan-industries-catalogue.pdf](assets/roshan-industries-catalogue.pdf), a 59-page branded catalogue with a centered cover logo, refreshed introduction, high resolution product images, a clickable category index, website headers and footers, and restored pump listings.
 - **Product database:** [Roshan-Industries-Product-Catalogue.xlsx](Roshan-Industries-Product-Catalogue.xlsx), tracked so website builds include the synchronized database.
 - **Audit:** [reports/high-resolution-audit/](reports/high-resolution-audit/) contains the page review, before and after inventory, native crop provenance and validation results.
 
-The website contains 267 products in 21 categories and five families, including 39 selected New Arrivals. The branded catalogue and workbook retain 228 products while the October additions await the requested export update. All 200 previous photographed products retain their SKUs; 16 new PDF entries were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
+The website, branded catalogue and workbook contain 268 products in 21 categories and five families, including 40 selected New Arrivals. All 200 previous photographed products retain their SKUs; 16 new source PDF entries and 40 online arrivals were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
 
-Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions for PDF products, branded catalogue page links, source panel references, image dimensions, checksums, and 456 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
+Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions, branded catalogue page links, source panel references, image dimensions, checksums, and 536 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
 
 For future content changes:
 
 ```powershell
 python -m pip install -r requirements.txt
 npm run build
+python scripts/export-branded-catalogue.py
+npm run build
 python scripts/export-high-resolution-workbook.py
 npm run build
 npm run check
 node scripts/validate-high-resolution.mjs
+python scripts/validate-synchronized-exports.py
 ```
 
 Close Excel before regenerating the workbook. `src/data/reviewed-products.json` and `src/data/reviewed-categories.json` hold the reviewed records. Product descriptions come from `src/descriptions.mjs`. `src/data/new-arrivals.json` controls the shared New badges.
 
-`extract-high-resolution.py` reproduces the native product crops from `../reference-documents/roshan-high-resolution-source.pdf`. It removes red page-frame fragments from crop corners without resampling the product images. The website PDF is never recompressed or rewritten.
+`extract-high-resolution.py` reproduces the native product crops from `../reference-documents/roshan-high-resolution-source.pdf`. It removes red page-frame fragments from crop corners without resampling the product images. The original supplied PDF remains unchanged.
 
 ## What belongs in GitHub?
 
@@ -178,4 +181,6 @@ Your normal workflow: **edit source → build and check → commit and push → 
 
 To refresh the branded exports, build the website, run `python scripts/export-branded-catalogue.py`, rebuild to refresh catalogue page links, run `python scripts/export-high-resolution-workbook.py`, then rebuild and validate. The original supplied PDF remains unchanged in the workspace reference documents.
 
-Website-only photograph replacements are stored in `src/data/product-image-overrides.json`, with source URLs, natural image dimensions and checksums. The two spectacle loupe photographs were replaced at the user request. PDF and XLSX image updates are deferred until the New Arrivals batch is complete.
+Photograph replacements are stored in `src/data/product-image-overrides.json`, with source URLs, natural image dimensions and checksums. The current loupe photos and replacement scissors stand image are included in the PDF and XLSX. Run `python scripts/validate-synchronized-exports.py` to compare every PDF image and workbook row/photo with the website.
+
+All Products and category pages include a New Arrivals filter beside sorting, with search and pagination support. A shared page loader appears during page navigation on phone and desktop, respects reduced motion and remains hidden without JavaScript. Every product page has an Explore in catalogue link to its correct PDF page.

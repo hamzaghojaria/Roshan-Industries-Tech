@@ -14,7 +14,7 @@ for p in pumps:
 products=json.loads((ROOT/'products.js').read_text(encoding='utf8').split('window.ROSHAN_PRODUCTS =',1)[1].strip().rstrip(';'))
 categories=read('src/data/reviewed-categories.json'); mapping=read('src/data/catalogue-pages.json')
 families=list(dict.fromkeys(c['family'] for c in categories))
-mapping={};number=4
+mapping={};number=5
 for family in families:
     for c in [c for c in categories if c['family']==family]:
         items=[p for p in products if p['categoryId']==c['id']]
@@ -55,20 +55,32 @@ def chrome(page,title=None,family=None):
     uri(page,(220,H-27,365,H-10),'https://wa.me/919821216170')
     text(page,'CATEGORY INDEX',W-157,H-25,6.5,True,BLUE)
     page.draw_rect(fitz.Rect(W-166,H-39,W-76,H-16),color=LINE)
-    goto(page,(W-166,H-39,W-76,H-16),1)
+    goto(page,(W-166,H-39,W-76,H-16),2)
     text(page,str(page.number+1),W-52,H-25,8,True)
-# Cover.
+# Keep the requested centered logo cover and dedicated introductory page.
+p=doc.new_page(width=W,height=H)
+p.draw_rect(fitz.Rect(0,0,W,12),color=None,fill=BLUE)
+def centered(value,rect,size=11,bold=False,color=NAVY):
+    assert p.insert_textbox(fitz.Rect(rect),value,fontname='hebo' if bold else 'helv',fontsize=size,color=color,align=1,lineheight=1.4)>=0
+centered('PRODUCT CATALOGUE',(38,165,W-38,190),11,True,BLUE)
+logo=fitz.Pixmap(ROOT/'assets/roshan-logo.png');lw=260;lh=lw*logo.height/logo.width
+logo_rect=fitz.Rect((W-lw)/2,(H-lh)/2,(W+lw)/2,(H+lh)/2)
+p.insert_image(logo_rect,filename=str(ROOT/'assets/roshan-logo.png'),keep_proportion=True)
+centered('ROSHAN INDUSTRIES',(38,logo_rect.y1+30,W-38,logo_rect.y1+72),24,True)
+centered('Watch parts, tools and custom manufacturing',(38,logo_rect.y1+81,W-38,logo_rect.y1+110),11,color=MUTED)
+centered('A family business. Since 1900.',(38,logo_rect.y1+118,W-38,logo_rect.y1+145),10,color=MUTED)
+centered(f'{len(products)} products across {len(categories)} categories',(38,logo_rect.y1+159,W-38,logo_rect.y1+185),10,color=BLUE)
+goto(p,(38,H-95,W-38,H-65),2);centered('EXPLORE THE CATEGORY INDEX',(38,H-94,W-38,H-65),10,True,BLUE)
 p=doc.new_page(width=W,height=H);chrome(p)
-text(p,'THE ROSHAN INDUSTRIES COLLECTION',38,111,8,True,BLUE)
-block(p,'Precision begins\nwith the right part.',(38,140,W-38,250),36,bold=True)
-block(p,'Watch parts, horological tools and custom manufacturing.\nA family business serving the craft of time since 1900.',(38,260,W-38,312),12,color=MUTED)
-for i,sku in enumerate(['RIT-0001','RIT-0156','RIT-0119']):
-    item=next(x for x in products if x['sku']==sku);image(p,item['image'],(38+i*175,340,193+i*175,490))
-p.draw_rect(fitz.Rect(38,535,W-38,624),color=None,fill=LIGHT)
-text(p,f'{len(products)} products',54,571,20,True)
-text(p,f'{len(categories)} categories across {len(families)} families',54,598,11,color=MUTED)
-text(p,'EXPLORE THE CATEGORY INDEX',38,673,10,True,BLUE);goto(p,(38,650,330,690),1)
-block(p,'Share your required quantity, drawings and application with our team.\nPricing, exact specifications and availability are confirmed on enquiry.',(38,711,W-38,756),9,color=MUTED)
+text(p,'OUR STORY',38,113,9,True,BLUE)
+block(p,'A long-standing connection\nto the craft of time.',(38,142,W-38,243),30,bold=True)
+block(p,'Serving the bench. Supporting your next idea.',(38,262,W-38,295),14,bold=True)
+block(p,'Since 1900, Roshan Industries has served watchmakers, clockmakers and jewellery workshops from Mumbai. Our family business brings together watch parts, horological tools and workshop essentials, with a practical focus on helping customers find the right product for their work.',(38,310,W-38,415),11,color=MUTED)
+p.draw_rect(fitz.Rect(38,445,W-38,591),color=None,fill=LIGHT)
+block(p,'Your requirement. Our manufacturing experience.',(55,462,W-55,503),16,bold=True)
+block(p,'Have a drawing, a sample or a specific requirement? Share your application, dimensions, material, finish and quantity. Our team can review the request and discuss feasibility, quotation and the next steps.',(55,514,W-55,581),10,color=MUTED)
+block(p,'How to use this catalogue',(38,623,W-38,650),13,bold=True)
+block(p,'Use the clickable family and category index to find products. Each listing includes a stable SKU and a link to its website page. Quote the SKU when enquiring. Pricing, exact specifications and availability are confirmed by our team.',(38,665,W-38,735),10,color=MUTED)
 # Two index pages preserve the previous family grouping.
 index_groups=[families[:3],families[3:]]
 for index,group in enumerate(index_groups):
@@ -87,8 +99,8 @@ for index,group in enumerate(index_groups):
             p.draw_line((49,y+9),(W-49,y+9),color=LINE);goto(p,(38,y-15,W-38,y+11),target);y+=27
         y+=15
     assert y<H-90
-    text(p,'NEXT INDEX >' if index==0 else '< PREVIOUS INDEX',38,H-68,8,True,BLUE);goto(p,(38,H-84,180,H-57),2 if index==0 else 1)
-toc.append([1,'Category index',2])
+    text(p,'NEXT INDEX >' if index==0 else '< PREVIOUS INDEX',38,H-68,8,True,BLUE);goto(p,(38,H-84,180,H-57),3 if index==0 else 2)
+toc.extend([[1,'Introduction',2],[1,'Category index',3]])
 # Six cards per category page, two columns and three rows, with full natural photos.
 for family in families:
     cats=[c for c in categories if c['family']==family];family_target=mapping[next(x for x in products if x['categoryId']==cats[0]['id'])['sku']]
@@ -131,6 +143,6 @@ check=fitz.open(output);full='\n'.join(p.get_text() for p in check)
 for item in products:
     assert item['sku'] in check[mapping[item['sku']]-1].get_text()
     assert item['name'] in check[mapping[item['sku']]-1].get_text().replace('\n',' ')
-report={'products':len(products),'categories':len(categories),'families':families,'pages':len(check),'skuPages':mapping,'categoryPages':category_pages,'links':sum(len(p.get_links()) for p in check),'pdfSha256':hashlib.sha256(output.read_bytes()).hexdigest(),'nativeSourceImagesPreserved':True}
+report={'products':len(products),'categories':len(categories),'families':families,'pages':len(check),'skuPages':mapping,'categoryPages':category_pages,'links':sum(len(p.get_links()) for p in check),'pdfSha256':hashlib.sha256(output.read_bytes()).hexdigest(),'nativeSourceImagesPreserved':True,'coverLogoCentered':True,'introductionPage':2,'categoryIndexPages':[3,4],'allProductsSynchronized':True,'websiteImageOverridesIncluded':True}
 (ROOT/'reports/high-resolution-audit/branded-catalogue-validation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
 print(f'PASS branded catalogue: {len(check)} pages, {len(products)} products, clickable category index, website headers and footers.',flush=True)

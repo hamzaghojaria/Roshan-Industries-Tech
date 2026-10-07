@@ -1,8 +1,8 @@
 {
-  "products": 228,
+  "products": 268,
   "categorySheets": 21,
-  "embeddedPhotos": 456,
-  "sourceSha256": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+  "embeddedPhotos": 536,
+  "sourceSha256": "355bc23f50759e5a37dda3e928245d5b737a982f73cf4512cae13b59363ebae2",
   "familyColors": {
     "Watchmaking": "315BD6",
     "Clockmaking": "B68A42",
@@ -12,5 +12,6 @@
   },
   "allTabsColored": true,
   "allFieldsMatchWebsite": true,
-  "xlsxSha256": "0c24c5b3d3d8a76af41dc809881c6f56228ee66f4b59948297d5874f8ce2ab03"
+  "newArrivalProducts": 40,
+  "xlsxSha256": "e4a486eadbadf18a7a3114d7a8b54ff794e0b8fe81306fa0edfe81ff89175334"
 }

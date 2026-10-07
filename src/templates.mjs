@@ -7,13 +7,13 @@ import fs from 'node:fs';
 const catalogueRecords = JSON.parse(
   fs.readFileSync(new URL('./data/reviewed-products.json', import.meta.url), 'utf8'),
 );
-const downloadProductCount =
-  catalogueRecords.length +
-  JSON.parse(fs.readFileSync(new URL('./data/pump-products.json', import.meta.url), 'utf8')).length;
 const productCount =
-  downloadProductCount +
+  catalogueRecords.length +
+  JSON.parse(fs.readFileSync(new URL('./data/pump-products.json', import.meta.url), 'utf8'))
+    .length +
   JSON.parse(fs.readFileSync(new URL('./data/online-products.json', import.meta.url), 'utf8'))
     .length;
+const downloadProductCount = productCount;
 const arrivalSelection = JSON.parse(
   fs.readFileSync(new URL('./data/new-arrivals.json', import.meta.url), 'utf8'),
 );
@@ -170,8 +170,20 @@ export function layout(
         <link rel="stylesheet" href="${base}modern.css" />
         ${page === 'catalogue' ? `<script src="${base}products.js" defer></script>` : ''}
         <script src="${base}app.js" defer></script>
+        <script>
+          document.documentElement.classList.add('page-loading');
+          setTimeout(function () {
+            document.documentElement.classList.remove('page-loading');
+          }, 4000);
+        </script>
       </head>
       <body data-page="${page}">
+        <div class="page-loader" aria-hidden="true">
+          <img src="${base}assets/roshan-logo.png" alt="" width="92" height="62" /><span
+            class="page-loader-ring"
+          ></span
+          ><span>Loading</span>
+        </div>
         <a class="skip" href="#main">Skip to content</a>
         <div class="topbar">
           <div class="container">
@@ -631,14 +643,23 @@ export function cataloguePage(products, category = null) {
         <div class="catalogue-content">
           <div class="catalogue-toolbar">
             <p id="results-count">${items.length} products</p>
-            <div>
-              <label for="sort">Sort by</label
-              ><select id="sort">
-                <option value="catalogue">Catalogue order</option>
-                <option value="asc">Name: A–Z</option>
-                <option value="desc">Name: Z–A</option>
-                <option value="sku">SKU</option>
-              </select>
+            <div class="catalogue-controls">
+              <div>
+                <label for="arrival-filter">Show</label
+                ><select id="arrival-filter">
+                  <option value="all">All products</option>
+                  <option value="new">New Arrivals</option>
+                </select>
+              </div>
+              <div>
+                <label for="sort">Sort by</label
+                ><select id="sort">
+                  <option value="catalogue">Catalogue order</option>
+                  <option value="asc">Name: A–Z</option>
+                  <option value="desc">Name: Z–A</option>
+                  <option value="sku">SKU</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="catalogue-search">
@@ -759,7 +780,7 @@ export function productPage(p, products) {
               href="../assets/roshan-industries-catalogue.pdf#page=${p.cataloguePage}"
               target="_blank"
               rel="noopener"
-              >View in catalogue &#8599;</a
+              >Explore in catalogue &#8599;</a
             >`
                 : ''
             }

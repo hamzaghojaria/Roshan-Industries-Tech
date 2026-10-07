@@ -1,4 +1,4 @@
-// Check the approved ZIP/link inventory, frozen exports and new product enquiry flows.
+// Check the approved ZIP/link inventory, synchronized exports and new product enquiry flows.
 const fs = require('node:fs'),
   path = require('node:path'),
   crypto = require('node:crypto'),
@@ -23,23 +23,21 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
     new Set(Array.from({ length: 31 }, (_, i) => i + 1).filter((i) => i !== 5)),
   );
   assert.equal(products.filter((p) => p.imageEdited).length, 7);
-  for (const [file, hash] of Object.entries(audit.frozenExports)) {
-    const pdfDesign = JSON.parse(
-      fs.readFileSync('reports/high-resolution-audit/branded-catalogue-validation.json', 'utf8'),
-    );
-    assert.equal(
-      sha(file),
-      file.endsWith('.pdf') && pdfDesign.productInventoryUnchanged ? pdfDesign.pdfSha256 : hash,
-      'Unexpected export change ' + file,
-    );
-  }
+  const pdfDesign = JSON.parse(
+    fs.readFileSync('reports/high-resolution-audit/branded-catalogue-validation.json', 'utf8'),
+  );
+  const workbook = JSON.parse(
+    fs.readFileSync('reports/high-resolution-audit/workbook-validation.json', 'utf8'),
+  );
+  assert.equal(sha('assets/roshan-industries-catalogue.pdf'), pdfDesign.pdfSha256);
+  assert.equal(sha('Roshan-Industries-Product-Catalogue.xlsx'), workbook.xlsxSha256);
   for (const p of products) {
     assert.equal(sha(p.image), p.imageSha256);
-    assert(p.exportPending && p.onlineProduct && p.newArrival);
+    assert(!p.exportPending && p.onlineProduct && p.newArrival);
     assert(!/[\\/|*#@!~^<>{}\[\]]/.test(p.name + p.description));
     const html = fs.readFileSync(p.url, 'utf8');
     assert(!/Page undefined|#page=undefined/.test(html));
-    assert(!html.includes('>View in catalogue'));
+    assert(html.includes('Explore in catalogue'));
     assert(html.includes('Download catalogue'));
     for (const spec of p.specifications) assert(html.includes(spec.value));
   }
@@ -59,9 +57,9 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
         await image.evaluate((el) => el.decode());
         assert(await image.evaluate((el) => el.naturalWidth > 0));
         const actions = page.locator('.product-catalogue-actions .button');
-        assert.equal(await actions.count(), 1);
+        assert.equal(await actions.count(), 2);
         const group = await page.locator('.enquiry-actions').boundingBox(),
-          download = await actions.boundingBox();
+          download = await page.locator('.product-catalogue-actions').boundingBox();
         assert(
           Math.abs(group.x - download.x) < 1 && Math.abs(group.width - download.width) < 1,
           'Download button alignment',
@@ -99,7 +97,7 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
       fullPage: true,
     });
     console.log(
-      'PASS 31 source references, stable SKUs, photos, frozen PDF/XLSX, search by model/capacity, category badges and responsive enquiry/download flows.',
+      'PASS 31 source references, stable SKUs, photos, synchronized PDF/XLSX, search by model/capacity, category badges and responsive enquiry/catalogue flows.',
     );
   } finally {
     await browser.close();

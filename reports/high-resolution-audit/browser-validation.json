@@ -19,7 +19,7 @@
       1024,
       1440
     ],
-    "products": 39,
+    "products": 40,
     "filters": true,
     "mobileHorizontalSlider": true,
     "imagesDecode": true,
@@ -27,8 +27,8 @@
     "homePreviewRemoved": true
   },
   "productBadges": {
-    "selectedProducts": 39,
-    "allProductPagesChecked": 267,
+    "selectedProducts": 40,
+    "allProductPagesChecked": 268,
     "selectedBadgesConsistent": true,
     "unselectedProductsHaveNoBadge": true,
     "mobileAndDesktop": true
@@ -52,8 +52,8 @@
     "dimensionsMatchSource": true
   },
   "catalogueDownload": {
-    "products": 228,
-    "pages": 53,
+    "products": 268,
+    "pages": 59,
     "clickableIndex": true,
     "productPageLinksChecked": true,
     "coverLogoCentered": true,
@@ -68,11 +68,12 @@
     "imagesDecode": true
   },
   "workbook": {
-    "products": 228,
+    "products": 268,
     "categorySheets": 21,
     "familyNames": true,
     "coloredTabs": true,
-    "newArrivalProducts": 0
+    "newArrivalProducts": 40,
+    "embeddedPhotos": 536
   },
   "aboutWorkSlider": {
     "desktopCards": 3,
@@ -112,12 +113,12 @@
     ],
     "allImagesDecode": true,
     "brandNamesOrWatermarksVisible": false,
-    "pdfAndExcelUnchanged": true
+    "exportsSynchronized": true
   },
   "productImages": {
-    "decoded": 267,
+    "decoded": 268,
     "naturalDimensionsMatchRecords": true,
-    "onlinePhotos": 39,
+    "onlinePhotos": 40,
     "editedPhotos": 7
   },
   "onlineAdditions": {
@@ -128,10 +129,9 @@
     "stableSkus": true,
     "modelAndCapacitySearch": true,
     "descriptionValidation": true,
-    "pdfAndXlsxUnchanged": false,
     "newProductButtonsAligned": true,
-    "xlsxUnchanged": true,
-    "pdfCoverAndIntroductionUpdated": true
+    "pdfCoverAndIntroductionUpdated": true,
+    "exportsSynchronized": true
   },
   "cleanCheckoutBuild": {
     "products": 259,
@@ -156,10 +156,10 @@
     "searchBySku": true,
     "badgesConsistent": true,
     "noHorizontalOverflow": true,
-    "excelUnchanged": true
+    "exportsSynchronized": true
   },
   "finalStaticLinkValidation": {
-    "routes": 294,
+    "routes": 295,
     "passed": true
   },
   "thirdLinkedProducts": {
@@ -178,7 +178,45 @@
     "searchBySku": true,
     "badgesConsistent": true,
     "noHorizontalOverflow": true,
-    "pdfAndExcelUnchanged": true,
-    "earringImage": "Unwatermarked alternate photograph from the same supplier product gallery; hole layout differs from linked reference and is confirmed on enquiry."
+    "earringImage": "Unwatermarked alternate photograph from the same supplier product gallery; hole layout differs from linked reference and is confirmed on enquiry.",
+    "exportsSynchronized": true
+  },
+  "fourthLinkedProducts": {
+    "linksChecked": 3,
+    "newProducts": 1,
+    "duplicateProductReferences": 2,
+    "websiteProducts": 268,
+    "newArrivalProducts": 40,
+    "widths": [
+      320,
+      390,
+      760,
+      1440
+    ],
+    "allImagesDecode": true,
+    "searchBySku": true,
+    "badgesConsistent": true,
+    "noHorizontalOverflow": true,
+    "imageVariant": "Six round openings in alternate supplier photo; linked reference has rectangular slots. User authorized choosing any clear image. Description matches selected photo.",
+    "exportsSynchronized": true
+  },
+  "catalogueEnhancements": {
+    "newArrivalFilter": true,
+    "filterWithSearchAndPagination": true,
+    "filterRetainedOnReload": true,
+    "widths": [
+      320,
+      390,
+      760,
+      1024,
+      1440
+    ],
+    "noHorizontalOverflow": true,
+    "loaderPhoneAndDesktop": true,
+    "loaderClearsOnPageReadyAndHistoryRestore": true,
+    "loaderRespectsReducedMotion": true,
+    "noJavaScriptFallback": true,
+    "allNewProductsHaveCataloguePageLinks": true,
+    "scissorsPhotographReplaced": true
   }
 }

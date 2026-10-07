@@ -1,6 +1,34 @@
 // Progressive enhancement: every page remains readable without JavaScript.
 (() => {
   'use strict';
+  const hidePageLoader = () => document.documentElement.classList.remove('page-loading');
+  hidePageLoader();
+  window.addEventListener('pageshow', hidePageLoader);
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (
+      !link ||
+      event.defaultPrevented ||
+      event.button !== 0 ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.altKey ||
+      link.target ||
+      link.hasAttribute('download')
+    )
+      return;
+    const target = new URL(link.href, location.href);
+    if (
+      !['http:', 'https:', 'file:'].includes(target.protocol) ||
+      target.origin !== location.origin ||
+      !/\/$|\.html$/.test(target.pathname) ||
+      (target.pathname === location.pathname && target.search === location.search)
+    )
+      return;
+    document.documentElement.classList.add('page-loading');
+    setTimeout(hidePageLoader, 4000);
+  });
   // Hosted home links use the directory root; preserve index.html for file previews.
   if (location.protocol === 'file:') {
     document.querySelectorAll('a[href]').forEach((link) => {
@@ -324,6 +352,7 @@
     page: 1,
     query: new URLSearchParams(location.search).get('q') || '',
     sort: 'catalogue',
+    arrivals: new URLSearchParams(location.search).get('new') === '1',
     family:
       section.dataset.catalogue === 'all' &&
       items.some(({ product }) => product.family === requestedFamily)
@@ -334,6 +363,17 @@
   count.setAttribute('role', 'status');
   count.setAttribute('aria-live', 'polite');
   queryInput.value = state.query;
+  const arrivalFilter = document.getElementById('arrival-filter');
+  arrivalFilter.value = state.arrivals ? 'new' : 'all';
+  arrivalFilter.addEventListener('change', () => {
+    state.arrivals = arrivalFilter.value === 'new';
+    state.page = 1;
+    const url = new URL(location.href);
+    if (state.arrivals) url.searchParams.set('new', '1');
+    else url.searchParams.delete('new');
+    history.replaceState(null, '', url.href);
+    render();
+  });
 
   // Match all query words, sort, slice the current page and announce results.
   function render() {
@@ -341,6 +381,7 @@
     const matches = items.filter(
       ({ searchText, product }) =>
         (!state.family || product.family === state.family) &&
+        (!state.arrivals || product.newArrival) &&
         words.every((word) => searchText.includes(word)),
     );
     if (state.sort === 'asc' || state.sort === 'desc')

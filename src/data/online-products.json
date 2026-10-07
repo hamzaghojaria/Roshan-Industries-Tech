@@ -14,7 +14,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -30,7 +30,8 @@
     "imageSourceUrl": "https://www.plandent.no/globalassets/catalog-resources/no1/forbruksvarer/bor-diamanter-fresere-og-polerere/boroppsatser/komet-529.jpg",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the physical brand label from the supplier photograph."
+    "imageChanges": "Removed the physical brand label from the supplier photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-230",
@@ -60,7 +61,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -76,7 +77,8 @@
       902,
       657
     ],
-    "sourceImageSha256": "3839f6259b254b1eb8cf68fa4f68d3ff8de68af1e44fdc706af609a208c03999"
+    "sourceImageSha256": "3839f6259b254b1eb8cf68fa4f68d3ff8de68af1e44fdc706af609a208c03999",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-231",
@@ -114,7 +116,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -130,7 +132,8 @@
       720,
       817
     ],
-    "sourceImageSha256": "19aef79035a79a79f57a1510d5af470854b57691edff5db231a0210d2cc9c6f5"
+    "sourceImageSha256": "19aef79035a79a79f57a1510d5af470854b57691edff5db231a0210d2cc9c6f5",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-232",
@@ -164,7 +167,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -180,7 +183,8 @@
       772,
       925
     ],
-    "sourceImageSha256": "ce960caa4b5462fffcba9c5a7fb0d40fce6ad225fcc057e05bbaf95d3c59bde4"
+    "sourceImageSha256": "ce960caa4b5462fffcba9c5a7fb0d40fce6ad225fcc057e05bbaf95d3c59bde4",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-233",
@@ -214,7 +218,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -228,7 +232,8 @@
     "sourceImageSha256": "bc7d50c885c10ca722743fc791a030a2e3ebc68255d6383b8d479c8b26adbef6",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph."
+    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-234",
@@ -262,7 +267,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -276,7 +281,8 @@
     "sourceImageSha256": "9ffe5a268650cfd74e7253239eac6f477c45ea1d1eea995c43806200afc5b821",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph."
+    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-235",
@@ -314,7 +320,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -330,7 +336,8 @@
       720,
       803
     ],
-    "sourceImageSha256": "362754ca119718de90c946a3881c37cf102649e439c7ce853ed77ff71903a491"
+    "sourceImageSha256": "362754ca119718de90c946a3881c37cf102649e439c7ce853ed77ff71903a491",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-236",
@@ -364,7 +371,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -378,7 +385,8 @@
     "sourceImageSha256": "b2f7928a6762c757fa41e731580ae96c4ae8f38e95083520dc6795ccb2dd9845",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph."
+    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-237",
@@ -408,7 +416,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -419,7 +427,8 @@
     "sourceType": "User supplied product photographs",
     "sourcePhotoNumber": 9,
     "sourceCrop": null,
-    "sourceImageSha256": "c3caf7858db415c16995510e7ed6220d5da3eaa08a9c2f18c67d38ab487e43d1"
+    "sourceImageSha256": "c3caf7858db415c16995510e7ed6220d5da3eaa08a9c2f18c67d38ab487e43d1",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-238",
@@ -457,7 +466,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -473,7 +482,8 @@
       720,
       713
     ],
-    "sourceImageSha256": "013266a5382c422c94806484d7f0d3a057eed8d4ede9087836eb37387740d8b3"
+    "sourceImageSha256": "013266a5382c422c94806484d7f0d3a057eed8d4ede9087836eb37387740d8b3",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-239",
@@ -511,7 +521,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -527,7 +537,8 @@
       720,
       785
     ],
-    "sourceImageSha256": "c19c71ea70beb8e71a75091448c8e820b7edb0b33fa6e21b606f4a43d67d7d9a"
+    "sourceImageSha256": "c19c71ea70beb8e71a75091448c8e820b7edb0b33fa6e21b606f4a43d67d7d9a",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-240",
@@ -561,7 +572,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -575,7 +586,8 @@
     "sourceImageSha256": "dd3ff6d05cce051c05d94d066e1b150e672f83b947ce03f5742c58bf683089dc",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph."
+    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-241",
@@ -613,7 +625,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -629,7 +641,8 @@
       720,
       722
     ],
-    "sourceImageSha256": "03872c40d328b6083d833aea124d057f126de383451758945af4b726278843b9"
+    "sourceImageSha256": "03872c40d328b6083d833aea124d057f126de383451758945af4b726278843b9",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-242",
@@ -663,7 +676,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -677,7 +690,8 @@
     "sourceImageSha256": "cc75d0c5fa9ffa3eacddaa4d13036b7e49e06fb2d35bf8936e415554cf7b9624",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph."
+    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-243",
@@ -707,7 +721,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -718,7 +732,8 @@
     "sourceType": "User supplied product photographs",
     "sourcePhotoNumber": 15,
     "sourceCrop": null,
-    "sourceImageSha256": "85a01977ab57f003097a9bdabebd7f7e35d0dad00b247d5b24f18a3483d836ab"
+    "sourceImageSha256": "85a01977ab57f003097a9bdabebd7f7e35d0dad00b247d5b24f18a3483d836ab",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-244",
@@ -748,7 +763,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -759,7 +774,8 @@
     "sourceType": "User supplied product photographs",
     "sourcePhotoNumber": 16,
     "sourceCrop": null,
-    "sourceImageSha256": "62d870b617d5c9a5d5de79f7bab1ee5a0d26cdcefb01b50811d4a5af6337d9bc"
+    "sourceImageSha256": "62d870b617d5c9a5d5de79f7bab1ee5a0d26cdcefb01b50811d4a5af6337d9bc",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-245",
@@ -797,7 +813,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -813,7 +829,8 @@
       720,
       722
     ],
-    "sourceImageSha256": "89f7d94a0642e48ad6a73b143c2beca86a3fbf5322553bc457b4a237a0deac0b"
+    "sourceImageSha256": "89f7d94a0642e48ad6a73b143c2beca86a3fbf5322553bc457b4a237a0deac0b",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-246",
@@ -851,7 +868,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -867,7 +884,8 @@
       720,
       731
     ],
-    "sourceImageSha256": "f52930e7519a50eef0c1b34ff889ccefbcc124aa90c837fab7ec3bed262de449"
+    "sourceImageSha256": "f52930e7519a50eef0c1b34ff889ccefbcc124aa90c837fab7ec3bed262de449",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-247",
@@ -901,7 +919,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -917,7 +935,8 @@
       720,
       955
     ],
-    "sourceImageSha256": "98b3784aa4073693730ab0e08c0f85a973cc88606cc301796004229e14067e38"
+    "sourceImageSha256": "98b3784aa4073693730ab0e08c0f85a973cc88606cc301796004229e14067e38",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-248",
@@ -951,7 +970,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -967,7 +986,8 @@
       812,
       941
     ],
-    "sourceImageSha256": "0826d34243990dc98b418fd6712ec8a9503c5a0582bb592453eb373de07abbe9"
+    "sourceImageSha256": "0826d34243990dc98b418fd6712ec8a9503c5a0582bb592453eb373de07abbe9",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-249",
@@ -1005,7 +1025,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1021,7 +1041,8 @@
       720,
       774
     ],
-    "sourceImageSha256": "237b303ca91b87116f1e42f44bc43d6b4c36b09449fb141099e39aea25d587f2"
+    "sourceImageSha256": "237b303ca91b87116f1e42f44bc43d6b4c36b09449fb141099e39aea25d587f2",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-250",
@@ -1055,7 +1076,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1069,7 +1090,8 @@
     "sourceImageSha256": "d218b984716c16db22f379274cc4c3e159154560b6bacf0b5d8abc67b85e49a1",
     "imageEdited": true,
     "imageEditMethod": "Built in imagegen photo cleanup",
-    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph."
+    "imageChanges": "Removed the Roshan Industries overlay and surrounding catalogue captions from the user supplied photograph.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-251",
@@ -1103,7 +1125,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1119,7 +1141,8 @@
       1280,
       840
     ],
-    "sourceImageSha256": "2534f3dd272c5c85b9f17bb7d15338a3518d5565a56ac9b19e7c0a16c1ca43d7"
+    "sourceImageSha256": "2534f3dd272c5c85b9f17bb7d15338a3518d5565a56ac9b19e7c0a16c1ca43d7",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-252",
@@ -1153,7 +1176,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1169,7 +1192,8 @@
       1280,
       733
     ],
-    "sourceImageSha256": "4c0462c7dc3395871d2859447a9e55b486d0055ac7c3714d1b99b02002b9dd9c"
+    "sourceImageSha256": "4c0462c7dc3395871d2859447a9e55b486d0055ac7c3714d1b99b02002b9dd9c",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-253",
@@ -1203,7 +1227,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1219,7 +1243,8 @@
       1190,
       653
     ],
-    "sourceImageSha256": "e04f881a659ae3f95630dcbfbd84551dea82e67820455b97f5abe83a7baa243d"
+    "sourceImageSha256": "e04f881a659ae3f95630dcbfbd84551dea82e67820455b97f5abe83a7baa243d",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-254",
@@ -1253,7 +1278,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1269,7 +1294,8 @@
       1280,
       983
     ],
-    "sourceImageSha256": "063775a68754666b2243ddb60db78d691f63606edfe31bb09af54edb3d96dfbd"
+    "sourceImageSha256": "063775a68754666b2243ddb60db78d691f63606edfe31bb09af54edb3d96dfbd",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-255",
@@ -1303,7 +1329,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1319,7 +1345,8 @@
       1280,
       809
     ],
-    "sourceImageSha256": "5a6d1401f7db734bbc09feb839be43004219e32384bcc1dd1b3527c0d83ae543"
+    "sourceImageSha256": "5a6d1401f7db734bbc09feb839be43004219e32384bcc1dd1b3527c0d83ae543",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-256",
@@ -1353,7 +1380,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1369,7 +1396,8 @@
       1280,
       1026
     ],
-    "sourceImageSha256": "0176c0e043ac965f7d3b95943d1f45070fa2c6cbb60765ceac12f732bbc6d093"
+    "sourceImageSha256": "0176c0e043ac965f7d3b95943d1f45070fa2c6cbb60765ceac12f732bbc6d093",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-257",
@@ -1403,7 +1431,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1419,7 +1447,8 @@
       1280,
       1050
     ],
-    "sourceImageSha256": "992fd191a004c1c022fb5603ffab1b364b430acc09f2d43240c53341cbf5a85f"
+    "sourceImageSha256": "992fd191a004c1c022fb5603ffab1b364b430acc09f2d43240c53341cbf5a85f",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-258",
@@ -1453,7 +1482,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1469,7 +1498,8 @@
       1280,
       823
     ],
-    "sourceImageSha256": "bec7789abc88c0689c7f63ad5855d2798785a705efc9ad0fa740cfdc6f4b2cd2"
+    "sourceImageSha256": "bec7789abc88c0689c7f63ad5855d2798785a705efc9ad0fa740cfdc6f4b2cd2",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-259",
@@ -1503,7 +1533,7 @@
     "nameConfirmed": true,
     "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1519,7 +1549,8 @@
       1280,
       859
     ],
-    "sourceImageSha256": "52a963aca051b4053dd3e1fd0243d96a185607ac638d1be8f329d6bff7ffc5be"
+    "sourceImageSha256": "52a963aca051b4053dd3e1fd0243d96a185607ac638d1be8f329d6bff7ffc5be",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-260",
@@ -1534,7 +1565,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1546,7 +1577,8 @@
     "imageKind": "photograph",
     "imageSha256": "373605115205b1a992cc78e9798cee2be43ee5f8c0bce87e3823e6d53a5c145e",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-261",
@@ -1561,7 +1593,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1573,7 +1605,8 @@
     "imageKind": "photograph",
     "imageSha256": "d1b4088ca06e7eb9a8e5a44ed8997013ff70d3196451650c896a2df633e05d6e",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-262",
@@ -1588,7 +1621,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1600,7 +1633,8 @@
     "imageKind": "photograph",
     "imageSha256": "f14a1c27afd09afeaad3580c562ed515a8f8233f98ab62ac4cc0e7e9ca386fd7",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-263",
@@ -1615,7 +1649,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1627,7 +1661,8 @@
     "imageKind": "photograph",
     "imageSha256": "5d0e6d012c0cb37cc7c92f882f704db2a17ddfc8887471df72b2fefebc50077e",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-264",
@@ -1642,7 +1677,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1660,7 +1695,8 @@
       0,
       790,
       582
-    ]
+    ],
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-265",
@@ -1675,7 +1711,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1688,7 +1724,8 @@
     "imageKind": "photograph",
     "imageSha256": "d94da22a3463138cc59df1e05d047cf7ab4b596d5d414b95d0bb0c19b9db32f1",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-266",
@@ -1703,7 +1740,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1716,7 +1753,8 @@
     "imageKind": "photograph",
     "imageSha256": "20c548e9e56da892dd6175f20718807ad548449d6d230b69e5e1cf3277ccd99a",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-267",
@@ -1731,7 +1769,7 @@
     "onlineProduct": true,
     "nameConfirmed": true,
     "newArrival": true,
-    "exportPending": true,
+    "exportPending": false,
     "page": null,
     "slot": null,
     "sourcePanel": "Online product range",
@@ -1744,6 +1782,41 @@
     "imageKind": "photograph",
     "imageSha256": "7a1fdfd835e34b61bb8507f720be5a281bc4d0b258b890650b456090247d28e8",
     "specifications": [],
-    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation."
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
+  },
+  {
+    "id": "online-oct2026-268",
+    "sku": "RIT-0268",
+    "name": "Six Position Acrylic Scissors Stand",
+    "description": "A clear acrylic scissors stand with six openings in the raised support for arranging suitable scissors and shears in individual positions. The bent profile provides a freestanding format for bench organisation or countertop display. Contact Roshan Industries to confirm scissors fit, the required configuration and order quantity.",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0268-six-position-acrylic-scissors-stand.webp",
+    "url": "products/rit-0268.html",
+    "onlineProduct": true,
+    "nameConfirmed": true,
+    "newArrival": true,
+    "exportPending": false,
+    "page": null,
+    "slot": null,
+    "sourcePanel": "Online product range",
+    "sourceType": "User approved alternate supplier photograph",
+    "sourceUrl": "https://share.google/Msk5hmMg3niGAwSu0",
+    "sourceUrls": [
+      "https://share.google/Msk5hmMg3niGAwSu0",
+      "https://share.google/yh4dTMJSqKQwLLVXw",
+      "https://share.google/AAq1MOqqRqCi6h2bQ"
+    ],
+    "imageSourceUrl": "https://ssshair.com.au/products/transparent-self-standing-scissors-holder-display-rack-salon-6-holes",
+    "imageDownloadUrl": "https://ssshair.com.au/cdn/shop/files/Transparent-Self-Standing-Scissors-Holder-Dis-2351.jpg",
+    "imageWidth": 800,
+    "imageHeight": 800,
+    "imageKind": "photograph",
+    "imageSha256": "4fc89fecf1e035c252503c570d7857f61c9a130cdddb8a89de40849fadeedda9",
+    "specifications": [],
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   }
 ]
