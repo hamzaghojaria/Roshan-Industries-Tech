@@ -3874,3 +3874,39 @@ main .button::after {
     transition: none;
   }
 }
+/* Related products remain a grid on desktop and scroll horizontally on mobile. */
+.related-slider .slider-track {
+  display: grid;
+  padding: 0;
+  overflow: visible;
+  scroll-snap-type: none;
+}
+.related-slider .slider-controls {
+  display: none;
+}
+@media (max-width: 760px) {
+  .related-slider .slider-track {
+    display: flex;
+    gap: 14px;
+    padding: 8px 0 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #3156d9 #edf3ff;
+  }
+  .related-slider .slider-track > * {
+    flex: 0 0 82%;
+    scroll-snap-align: start;
+  }
+  .related-slider .slider-controls {
+    display: flex;
+    margin-top: 8px;
+  }
+  .related-slider .slider-track::-webkit-scrollbar {
+    height: 5px;
+  }
+  .related-slider .slider-track::-webkit-scrollbar-thumb {
+    background: #3156d9;
+    border-radius: 5px;
+  }
+}

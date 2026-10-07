@@ -854,7 +854,16 @@ export function productPage(p, products) {
                   <h2>In the same category</h2>
                   <a class="text-link" href="../categories/${p.categoryId}.html">View category</a>
                 </div>
-                <div class="product-grid">${related.map((q) => card(q, '../')).join('')}</div>
+                ${homeSlider(
+                  'related',
+                  'Products in the same category',
+                  related.map((q) => card(q, '../')).join(''),
+                )
+                  .replace(
+                    'class="home-slider" data-slider',
+                    'class="home-slider related-slider" data-static-slider data-mobile-only data-slider',
+                  )
+                  .replace('class="slider-track"', 'class="slider-track product-grid"')}
               </div>
             </section>`
           : ''

@@ -196,3 +196,5 @@ Header search offers product thumbnails, names, SKUs and categories, category li
 Product photographs open in an accessible image dialog with zoom controls, reset, drag to pan, mobile pinch zoom and Escape to close. Product additionalImages entries are supported as additional photographs; navigation controls appear only when multiple photographs are supplied. Without JavaScript the image opens directly.
 
 Product detail photographs magnify under a desktop hover pointer, following the cursor and resetting on exit. Touch devices use the tap-to-enlarge viewer. The Show selector is omitted from both All Products and category pages.
+
+In the same category uses a manual horizontal product slider on mobile, with swipe/native scrolling, a thin scrollbar and arrow controls. Desktop related products retain their grid layout.

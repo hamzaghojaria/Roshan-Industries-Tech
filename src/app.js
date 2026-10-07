@@ -471,13 +471,19 @@
     const controls = slider.querySelector('.slider-controls');
     const position = slider.querySelector('.slider-position');
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    let paused = motion.matches;
+    let paused = motion.matches || slider.hasAttribute('data-static-slider');
     let visible = false;
     let hovered = false;
     let interacting = false;
     let lastInteraction = 0;
     let frame = 0;
     controls.hidden = false;
+    if (slider.hasAttribute('data-mobile-only')) {
+      const mobile = matchMedia('(max-width: 760px)');
+      const updateTab = () => (track.tabIndex = mobile.matches ? 0 : -1);
+      updateTab();
+      mobile.addEventListener('change', updateTab);
+    }
     const current = () =>
       cards.reduce(
         (best, card, index) =>
@@ -567,7 +573,7 @@
       { passive: true },
     );
     motion.addEventListener('change', () => {
-      paused = motion.matches;
+      paused = motion.matches || slider.hasAttribute('data-static-slider');
       update();
     });
     const observer = new IntersectionObserver(
