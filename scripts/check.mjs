@@ -11,26 +11,26 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'products.js'), 'utf8'), sandbox);
 const products = sandbox.window.ROSHAN_PRODUCTS;
-assert.equal(products.length, 212);
+assert.equal(products.length, 228);
 assert(
   products.every((p) => !/[?\uFFFD\u00C3]/u.test(p.name)),
   'Corrupted character in product name',
 );
-assert.equal(new Set(products.map((p) => p.sku)).size, 212);
-assert.equal(new Set(products.map((p) => p.id)).size, 212);
+assert.equal(new Set(products.map((p) => p.sku)).size, 228);
+assert.equal(new Set(products.map((p) => p.id)).size, 228);
 assert.equal(products.find((p) => p.id === 'p05-03').sku, 'RIT-0039');
 assert.equal(products.find((p) => p.id === 'p05-04').sku, 'RIT-0200');
 assert.equal(new Set(products.map((p) => p.categoryId)).size, 21);
 // Every product photo has a live product page.
 assert.equal(
   fs.readdirSync(path.join(root, 'products')).filter((p) => p.endsWith('.html')).length,
-  212,
+  228,
 );
 assert.equal(
   fs.readdirSync(path.join(root, 'categories')).filter((p) => p.endsWith('.html')).length,
   21,
 );
-const expectedImages = new Set(products.filter((p) => !p.onlineRange).map((p) => p.id + '.webp'));
+const expectedImages = new Set(products.map((p) => path.basename(p.image)));
 for (const image of fs.readdirSync(path.join(root, 'assets/products'))) {
   assert(expectedImages.has(image), `Unreferenced product image: ${image}`);
 }
@@ -91,19 +91,6 @@ for (const p of products) {
   assert.match(p.sku, /^RIT-\d{4}$/);
   assert(!/[\u00e2\u00c3]/.test(p.name), `Corrupt product text: ${p.id}`);
   const html = fs.readFileSync(path.join(root, p.url), 'utf8');
-  if (p.onlineRange) {
-    assert(!html.includes('Page undefined'), `Invalid PDF reference: ${p.sku}`);
-    assert(!html.includes('View in the product catalogue'), `Unverified PDF link: ${p.sku}`);
-    assert(
-      fs.readFileSync(path.join(root, 'assets/pumps/LICENSES.txt'), 'utf8').includes(p.imageSource),
-      `Missing image attribution: ${p.sku}`,
-    );
-    assert(
-      !html.includes('Reference image:'),
-      `Unexpected product photo credit paragraph: ${p.sku}`,
-    );
-    assert(html.includes('Enquiry range.'), `Missing enquiry status: ${p.sku}`);
-  }
   assert(html.includes('About this product'), `Missing description section: ${p.sku}`);
   assert(html.includes('Enquire about a custom version'), `Missing custom enquiry: ${p.sku}`);
   assert(html.includes('SKU ' + p.sku), `Missing SKU on ${p.url}`);
@@ -114,7 +101,7 @@ for (const p of products) {
 }
 assert.equal(
   new Set(products.map((p) => p.description)).size,
-  212,
+  228,
   'Descriptions must identify each product.',
 );
 assert(
@@ -137,5 +124,5 @@ for (const file of files) {
   assert(!/\bRoshan\b(?! Industries)/i.test(visible), `Shortened company name: ${file}`);
 }
 console.log(
-  `PASS: ${files.length} pages, all local links/assets, 212 unique stable SKUs, 21 categories, clean product text and shared header/footer logos.`,
+  `PASS: ${files.length} pages, all local links/assets, 228 unique stable SKUs, 21 categories, clean product text and shared header/footer logos.`,
 );

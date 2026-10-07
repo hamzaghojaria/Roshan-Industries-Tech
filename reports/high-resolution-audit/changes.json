@@ -1,0 +1,2082 @@
+{
+  "oldCount": 212,
+  "newCount": 216,
+  "retained": 200,
+  "added": [
+    {
+      "id": "hr-p2-12",
+      "sku": "RIT-0213",
+      "name": "Plastic Sawing Eye Glass Set of 4",
+      "category": "Eye Loupes and Magnifiers",
+      "categoryId": "eye-loupes",
+      "family": "Watchmaking",
+      "page": 2,
+      "slot": 12,
+      "image": "assets/products/rit-0213-plastic-sawing-eye-glass-set-of-4.webp",
+      "url": "products/rit-0213.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 2 Panel 12",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p4-04",
+      "sku": "RIT-0214",
+      "name": "Dust Cover with Rubber Base",
+      "category": "Trays, Covers and Storage",
+      "categoryId": "trays-storage",
+      "family": "Workshop Essentials",
+      "page": 4,
+      "slot": 4,
+      "image": "assets/products/rit-0214-dust-cover-with-rubber-base.webp",
+      "url": "products/rit-0214.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 4 Panel 4",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p4-05",
+      "sku": "RIT-0215",
+      "name": "Plastic Storage Container for Watch Repair Parts",
+      "category": "Trays, Covers and Storage",
+      "categoryId": "trays-storage",
+      "family": "Workshop Essentials",
+      "page": 4,
+      "slot": 5,
+      "image": "assets/products/rit-0215-plastic-storage-container-for-watch-repair-parts.webp",
+      "url": "products/rit-0215.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 4 Panel 5",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p4-08",
+      "sku": "RIT-0216",
+      "name": "Transparent Tool Stand",
+      "category": "Holders and Stands",
+      "categoryId": "holders-stands",
+      "family": "Workshop Essentials",
+      "page": 4,
+      "slot": 8,
+      "image": "assets/products/rit-0216-transparent-tool-stand.webp",
+      "url": "products/rit-0216.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 4 Panel 8",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p9-04",
+      "sku": "RIT-0217",
+      "name": "Plastic Link Remover",
+      "category": "Bracelet and Strap Tools",
+      "categoryId": "link-strap-tools",
+      "family": "Watchmaking",
+      "page": 9,
+      "slot": 4,
+      "image": "assets/products/rit-0217-plastic-link-remover.webp",
+      "url": "products/rit-0217.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 9 Panel 4",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p11-12",
+      "sku": "RIT-0218",
+      "name": "Swatch Case Opener",
+      "category": "Case Opening Tools",
+      "categoryId": "case-openers",
+      "family": "Watchmaking",
+      "page": 11,
+      "slot": 12,
+      "image": "assets/products/rit-0218-swatch-case-opener.webp",
+      "url": "products/rit-0218.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 11 Panel 12",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p14-11",
+      "sku": "RIT-0219",
+      "name": "Spring Bar Remover with Measuring Scale",
+      "category": "Bracelet and Strap Tools",
+      "categoryId": "link-strap-tools",
+      "family": "Watchmaking",
+      "page": 14,
+      "slot": 11,
+      "image": "assets/products/rit-0219-spring-bar-remover-with-measuring-scale.webp",
+      "url": "products/rit-0219.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 14 Panel 11",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p15-03",
+      "sku": "RIT-0220",
+      "name": "Brass Revolving Screwdriver Stand with Screwdrivers",
+      "category": "Precision Screwdrivers",
+      "categoryId": "screwdrivers",
+      "family": "Watchmaking",
+      "page": 15,
+      "slot": 3,
+      "image": "assets/products/rit-0220-brass-revolving-screwdriver-stand-with-screwdrivers.webp",
+      "url": "products/rit-0220.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 15 Panel 3",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p15-10",
+      "sku": "RIT-0221",
+      "name": "Screwdriver Set in Wooden Box",
+      "category": "Precision Screwdrivers",
+      "categoryId": "screwdrivers",
+      "family": "Watchmaking",
+      "page": 15,
+      "slot": 10,
+      "image": "assets/products/rit-0221-screwdriver-set-in-wooden-box.webp",
+      "url": "products/rit-0221.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 15 Panel 10",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p16-09",
+      "sku": "RIT-0222",
+      "name": "Hand Presser Set of 6",
+      "category": "Glass and Hand Fitting",
+      "categoryId": "glass-hand-tools",
+      "family": "Watchmaking",
+      "page": 16,
+      "slot": 9,
+      "image": "assets/products/rit-0222-hand-presser-set-of-6.webp",
+      "url": "products/rit-0222.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 16 Panel 9",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p16-10",
+      "sku": "RIT-0223",
+      "name": "Revolving Hand Press",
+      "category": "Glass and Hand Fitting",
+      "categoryId": "glass-hand-tools",
+      "family": "Watchmaking",
+      "page": 16,
+      "slot": 10,
+      "image": "assets/products/rit-0223-revolving-hand-press.webp",
+      "url": "products/rit-0223.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 16 Panel 10",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p17-04",
+      "sku": "RIT-0224",
+      "name": "Silicone Cushions",
+      "category": "Glass and Hand Fitting",
+      "categoryId": "glass-hand-tools",
+      "family": "Watchmaking",
+      "page": 17,
+      "slot": 4,
+      "image": "assets/products/rit-0224-silicone-cushions.webp",
+      "url": "products/rit-0224.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 17 Panel 4",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p17-07",
+      "sku": "RIT-0225",
+      "name": "Aluminium Movement Holder",
+      "category": "Holders and Stands",
+      "categoryId": "holders-stands",
+      "family": "Workshop Essentials",
+      "page": 17,
+      "slot": 7,
+      "image": "assets/products/rit-0225-aluminium-movement-holder.webp",
+      "url": "products/rit-0225.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 17 Panel 7",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p18-03",
+      "sku": "RIT-0226",
+      "name": "Glass Fitting Machine Model B",
+      "category": "Glass and Hand Fitting",
+      "categoryId": "glass-hand-tools",
+      "family": "Watchmaking",
+      "page": 18,
+      "slot": 3,
+      "image": "assets/products/rit-0226-glass-fitting-machine-model-b.webp",
+      "url": "products/rit-0226.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 18 Panel 3",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p19-06",
+      "sku": "RIT-0227",
+      "name": "Watch Strap and Lug Measuring Tool",
+      "category": "Gauges and Selectors",
+      "categoryId": "gauges-selectors",
+      "family": "Workshop Essentials",
+      "page": 19,
+      "slot": 6,
+      "image": "assets/products/rit-0227-watch-strap-and-lug-measuring-tool.webp",
+      "url": "products/rit-0227.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 19 Panel 6",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    },
+    {
+      "id": "hr-p19-08",
+      "sku": "RIT-0228",
+      "name": "Brass Pin Pusher",
+      "category": "Bracelet and Strap Tools",
+      "categoryId": "link-strap-tools",
+      "family": "Watchmaking",
+      "page": 19,
+      "slot": 8,
+      "image": "assets/products/rit-0228-brass-pin-pusher.webp",
+      "url": "products/rit-0228.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 19 Panel 8",
+      "newArrival": true,
+      "previousName": null,
+      "previousCategory": null
+    }
+  ],
+  "removed": [
+    {
+      "id": "pump-1",
+      "sku": "RIT-0201",
+      "name": "Centrifugal transfer pump",
+      "category": "Centrifugal Pumps",
+      "categoryId": "centrifugal-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/KSB_09_Etanorm_mit_Motor_und_Frequenzumrichter.jpg",
+      "url": "products/rit-0201.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Centrifugal transfer pump. An impeller-based pump type for liquid transfer. Share your required flow, head and liquid properties so our team can review an appropriate configuration. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.ksb.com/en-global/centrifugal-pump-lexicon/article/type-of-pump-1117242",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:KSB_09_Etanorm_mit_Motor_und_Frequenzumrichter.jpg",
+      "imageCredit": "KSB Aktiengesellschaft, Frankenthal · CC BY-SA 3.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-2",
+      "sku": "RIT-0202",
+      "name": "Submersible water pump",
+      "category": "Submersible Pumps",
+      "categoryId": "submersible-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Submersible_Water_pump.jpg",
+      "url": "products/rit-0202.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Submersible water pump. A compact pump type that operates beneath the water surface. Discuss your tank or water feature, installation depth and required flow before selecting a model. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.ksb.com/en-global/centrifugal-pump-lexicon/article/type-of-pump-1117242",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Submersible_Water_pump.jpg",
+      "imageCredit": "Suyash Dwivedi · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-3",
+      "sku": "RIT-0203",
+      "name": "Diaphragm transfer pump",
+      "category": "Diaphragm Pumps",
+      "categoryId": "diaphragm-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Tapflo_T50_PEE.jpg",
+      "url": "products/rit-0203.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Diaphragm transfer pump. A diaphragm-based transfer pump type. Share the liquid composition, operating conditions and preferred wetted materials so compatibility can be reviewed. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://tapflo.com/en/products/",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Tapflo_T50_PEE.jpg",
+      "imageCredit": "Aleksander Ma · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-4",
+      "sku": "RIT-0204",
+      "name": "Circulation pump",
+      "category": "Centrifugal Pumps",
+      "categoryId": "centrifugal-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Centrifugal_Pump.jpg",
+      "url": "products/rit-0204.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Circulation pump. A centrifugal pump type for circulating liquid around a system. Discuss the circuit, liquid temperature and duty requirements when enquiring. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.ksb.com/en-global/centrifugal-pump-lexicon/article/type-of-pump-1117242",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Centrifugal_Pump.jpg",
+      "imageCredit": "Saud · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-5",
+      "sku": "RIT-0205",
+      "name": "Two-stage centrifugal pump",
+      "category": "Centrifugal Pumps",
+      "categoryId": "centrifugal-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Two-stage_centrifugal_pump.jpg",
+      "url": "products/rit-0205.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Two-stage centrifugal pump. A staged centrifugal pump configuration. The photograph shows a physical cutaway reference. Share your operating head and flow requirements for a suitability review. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.ksb.com/en-global/centrifugal-pump-lexicon/article/type-of-pump-1117242",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Two-stage_centrifugal_pump.jpg",
+      "imageCredit": "Bitjungle · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-6",
+      "sku": "RIT-0206",
+      "name": "Submersible drainage pump",
+      "category": "Submersible Pumps",
+      "categoryId": "submersible-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Submersible_pump.png",
+      "url": "products/rit-0206.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Submersible drainage pump. A submersible pump type for drainage and seepage-water applications. Specify the installation area, liquid condition and any solids present before enquiring. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.ksb.com/en-global/centrifugal-pump-lexicon/article/type-of-pump-1117242",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Submersible_pump.png",
+      "imageCredit": "PumpExpert · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-7",
+      "sku": "RIT-0207",
+      "name": "Metal-body diaphragm pump",
+      "category": "Diaphragm Pumps",
+      "categoryId": "diaphragm-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Tapflo_T70_STT.jpg",
+      "url": "products/rit-0207.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Metal-body diaphragm pump. A diaphragm pump configuration with a metal body. Discuss the intended fluid, temperature and connection requirements; material suitability must be confirmed for your application. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://tapflo.com/en/products/",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Tapflo_T70_STT.jpg",
+      "imageCredit": "Aleksander Ma · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-8",
+      "sku": "RIT-0208",
+      "name": "Sanitary-design diaphragm pump",
+      "category": "Diaphragm Pumps",
+      "categoryId": "diaphragm-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Tapflo_T80_SWS.jpg",
+      "url": "products/rit-0208.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Sanitary-design diaphragm pump. A sanitary-style diaphragm pump configuration. Share your process, cleaning requirements and connection standard. Any required hygienic certification must be confirmed with the team. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://tapflo.com/en/product/hygienic-diaphragm-pumps/",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Tapflo_T80_SWS.jpg",
+      "imageCredit": "Aleksander Ma · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-9",
+      "sku": "RIT-0209",
+      "name": "External gear pump assembly",
+      "category": "Gear Pumps",
+      "categoryId": "gear-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Zahnradpumpe_Werdohler_Pumpenfabrik_07.JPG",
+      "url": "products/rit-0209.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "External gear pump assembly. A positive displacement pump type using meshing gears. The reference photograph shows a dismantled physical assembly. Share fluid viscosity, pressure and drive requirements for review. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.vikingpump.com/spur-gear-pumps",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Zahnradpumpe_Werdohler_Pumpenfabrik_07.JPG",
+      "imageCredit": "Archiumtechnica · CC BY-SA 3.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-10",
+      "sku": "RIT-0210",
+      "name": "Laboratory peristaltic pump",
+      "category": "Peristaltic Pumps",
+      "categoryId": "peristaltic-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Heidolph-schlauchpumpe.jpg",
+      "url": "products/rit-0210.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Laboratory peristaltic pump. A tube-based pump configuration for controlled liquid transfer at the bench. Discuss your fluid, tubing compatibility and required flow range when enquiring. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.wmfts.com/en/industrial/products/",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Heidolph-schlauchpumpe.jpg",
+      "imageCredit": "Hannes Grobe · CC BY 3.0",
+      "imageLicense": "https://creativecommons.org/licenses/by/3.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-11",
+      "sku": "RIT-0211",
+      "name": "Peristaltic dosing pump",
+      "category": "Peristaltic Pumps",
+      "categoryId": "peristaltic-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Peristaltic_pump.jpg",
+      "url": "products/rit-0211.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Peristaltic dosing pump. A peristaltic pump configuration for controlled dosing. Share the target delivery rate, fluid properties and duty cycle so the tube and drive requirements can be reviewed. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.wmfts.com/en/industrial/products/",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Peristaltic_pump.jpg",
+      "imageCredit": "Cjp24 · CC BY-SA 3.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    },
+    {
+      "id": "pump-12",
+      "sku": "RIT-0212",
+      "name": "Rotary vane vacuum pump",
+      "category": "Vacuum Pumps",
+      "categoryId": "vacuum-pumps",
+      "family": "Pumps",
+      "image": "assets/pumps/Fruitland_RCF500_Rotary_Vane_Vacuum_Pump.jpg",
+      "url": "products/rit-0212.html",
+      "onlineRange": true,
+      "nameConfirmed": false,
+      "imageKind": "photograph",
+      "description": "Rotary vane vacuum pump. A rotary vane pump type for creating vacuum in a system. Discuss the gas, required vacuum level and operating cycle so our team can review suitable options. Confirm the exact model and availability with Roshan Industries.",
+      "note": "Enquiry range. This is a reference photograph of an actual pump, not Roshan Industries stock. Brand markings identify the photographed equipment; availability and specifications will be confirmed by our team.",
+      "sourceUrl": "https://www.fruitlandmanufacturing.com/",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Fruitland_RCF500_Rotary_Vane_Vacuum_Pump.jpg",
+      "imageCredit": "Gwhite4444 · CC BY-SA 4.0",
+      "imageLicense": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "imageChanges": "Wikimedia resized preview; no crop or retouching."
+    }
+  ],
+  "updated": [
+    {
+      "sku": "RIT-0001",
+      "previousName": "Wooden eye glass — golden ring, all sizes",
+      "name": "Plastic Eye Glass with Golden Ring",
+      "page": 2,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0002",
+      "previousName": "Wooden eye glass — anodized",
+      "name": "Plastic Headband Eye Glass with Grey Ring",
+      "page": 2,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0003",
+      "previousName": "Aluminium ring eye glass — all sizes",
+      "name": "Plastic Headband Eye Glass with Green Ring",
+      "page": 2,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0004",
+      "previousName": "Plastic silver-ring eye glass — No. 1–1.5",
+      "name": "Plastic Silver Ring Eye Glass Number 1 to 1.5",
+      "page": 2,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0005",
+      "previousName": "Plastic silver-ring eye glass — No. 2–4.5",
+      "name": "Plastic Silver Ring Eye Glass Number 2 to 4.5",
+      "page": 2,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0006",
+      "previousName": "Aluminium eye glass — No. 1–1.5",
+      "name": "Aluminium Eye Glass Number 1 to 1.5",
+      "page": 2,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0007",
+      "previousName": "Aluminium eye glass — No. 2–4.5",
+      "name": "Aluminium Eye Glass Number 2 to 4.5",
+      "page": 2,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0008",
+      "previousName": "Plastic eye glass — Bergon shape, No. 1–1.5",
+      "name": "Plastic Bergon Shape Eye Glass Number 1 to 1.5",
+      "page": 2,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0009",
+      "previousName": "Plastic eye glass — Bergon shape, No. 2–4.5",
+      "name": "Plastic Bergon Shape Eye Glass Number 2 to 4.5",
+      "page": 2,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0010",
+      "previousName": "Plastic eye glass — anchor shape, No. 1–1.5",
+      "name": "Plastic Anchor Shape Eye Glass Number 1 to 1.5",
+      "page": 2,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0011",
+      "previousName": "Plastic eye glass — anchor shape, No. 2–4.5",
+      "name": "Plastic Anchor Shape Eye Glass Number 2 to 4.5",
+      "page": 2,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0012",
+      "previousName": "Plastic spectacle eye glass — No. 1–1.5",
+      "name": "Plastic Spectacle Eye Glass Number 1 to 1.5",
+      "page": 3,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0013",
+      "previousName": "Plastic spectacle eye glass — No. 2–4.5",
+      "name": "Plastic Spectacle Eye Glass Number 2 to 4.5",
+      "page": 3,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0014",
+      "previousName": "Plastic headband eye glass — No. 1–1.5",
+      "name": "Plastic Headband Eye Glass Number 1 to 1.5",
+      "page": 3,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0015",
+      "previousName": "Plastic headband eye glass — No. 2–4.5",
+      "name": "Plastic Headband Eye Glass Number 2 to 4.5",
+      "page": 3,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0016",
+      "previousName": "Plastic eye glass — 10×",
+      "name": "Plastic Sawing Eye Glass 10x",
+      "page": 3,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0017",
+      "previousName": "Plastic eye glass — 7×",
+      "name": "Plastic Sawing Eye Glass 7x",
+      "page": 3,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0029",
+      "previousName": "SS wire hairband eye glass",
+      "name": "Stainless Steel Wire Hairband Eye Glass",
+      "page": 3,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0019",
+      "previousName": "Keychain eye glass — big",
+      "name": "Large Plastic Keychain Eye Glass",
+      "page": 3,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0020",
+      "previousName": "Keychain eye glass — small",
+      "name": "Small Plastic Keychain Eye Glass",
+      "page": 3,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0021",
+      "previousName": "Revolving bur stand — big",
+      "name": "Large Revolving Bur Stand",
+      "page": 3,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0022",
+      "previousName": "Poger stand — single step",
+      "name": "Single Step Poger Stand",
+      "page": 3,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0023",
+      "previousName": "Poger stand — three step",
+      "name": "Three Step Poger Stand",
+      "page": 3,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0025",
+      "previousName": "Plastic dividing tray",
+      "name": "Plastic Dividing Tray",
+      "page": 4,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0026",
+      "previousName": "Dust cover — single",
+      "name": "Single Dust Cover",
+      "page": 4,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0027",
+      "previousName": "Dust cover — double",
+      "name": "Double Dust Cover",
+      "page": 4,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0028",
+      "previousName": "Movement holder — set of 12",
+      "name": "Movement Holder Set of 12",
+      "page": 4,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0024",
+      "previousName": "Acrylic pliers stand",
+      "name": "Acrylic Pliers Stand",
+      "page": 4,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0030",
+      "previousName": "Movement holder — 10.5",
+      "name": "Movement Holder 10.5",
+      "page": 4,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0031",
+      "previousName": "Movement holder — 2030 ST 96 ladies",
+      "name": "Movement Holder for 2030 ST 96 Ladies Watches",
+      "page": 4,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0032",
+      "previousName": "Clips for open-ended watch straps",
+      "name": "Clips for Open Ended Watch Straps",
+      "page": 4,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0033",
+      "previousName": "Ring gauge stand — 1 to 17",
+      "name": "Ring Gauge Stand Sizes 1 to 17",
+      "page": 4,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0034",
+      "previousName": "Black battery selector — big",
+      "name": "Large Matte Black Battery Selector",
+      "page": 5,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0035",
+      "previousName": "Battery selector — square small",
+      "name": "Small Square Battery Selector",
+      "page": 5,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0036",
+      "previousName": "Battery selector — round green",
+      "name": "Green Round Battery Selector",
+      "page": 5,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0037",
+      "previousName": "Battery selector — round",
+      "name": "Round Battery Selector",
+      "page": 5,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0038",
+      "previousName": "Bangle size gauge",
+      "name": "Bangle Size Gauge",
+      "page": 5,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0039",
+      "previousName": "Side bar selector - slotted centre",
+      "name": "Round Side Bar Selector with Slotted Centre",
+      "page": 5,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0200",
+      "previousName": "Side bar selector - solid centre",
+      "name": "Round Side Bar Selector with Solid Centre",
+      "page": 5,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0040",
+      "previousName": "Ring gauge — set of 36",
+      "name": "Ring Gauge Set of 36",
+      "page": 5,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0041",
+      "previousName": "Gauge for side bars and straps",
+      "name": "Side Bar and Strap Gauge",
+      "page": 5,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0042",
+      "previousName": "Bur stand — 40 holes",
+      "name": "Bur Stand with 40 Holes",
+      "page": 5,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0043",
+      "previousName": "Bur stand — 326 holes, 100 × 150 × 6 mm, 2 mm",
+      "name": "Bur Stand with 326 Holes",
+      "page": 5,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0044",
+      "previousName": "Bur stand — 326 holes, complete 4-piece set",
+      "name": "Complete Bur Stand Set with 326 Holes",
+      "page": 5,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0045",
+      "previousName": "Yellow tweezer — set of 3",
+      "name": "Yellow Tweezer Set of 3",
+      "page": 6,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0046",
+      "previousName": "Tweezer — big, 10 inch",
+      "name": "Large Tweezer 10 Inch",
+      "page": 6,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0047",
+      "previousName": "Tweezer — medium, 7 inch",
+      "name": "Medium Tweezer 7 Inch",
+      "page": 6,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0048",
+      "previousName": "Tweezer — small, 6 inch",
+      "name": "Small Tweezer 6 Inch",
+      "page": 6,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0049",
+      "previousName": "Plastic tweezer — new model",
+      "name": "Plastic Tweezer",
+      "page": 6,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0050",
+      "previousName": "Tweezer — small, 5 inch, colour options",
+      "name": "Small Tweezer 5 Inch in Assorted Colours",
+      "page": 6,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0051",
+      "previousName": "Oil pin — single",
+      "name": "Single Oil Pin",
+      "page": 6,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0057",
+      "previousName": "Oil pin — set of 5",
+      "name": "Oil Pin Set of 5",
+      "page": 6,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0058",
+      "previousName": "Oil pin — set of 3",
+      "name": "Oil Pin Set of 3",
+      "page": 6,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0054",
+      "previousName": "Oil cup — small, all sizes",
+      "name": "Small Oil Cup",
+      "page": 6,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0055",
+      "previousName": "Oil cup and oil pin — set of 4",
+      "name": "Oil Cup and Oil Pin Set of 4",
+      "page": 6,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0056",
+      "previousName": "Oil cup and oil pin — set of 1",
+      "name": "Single Oil Cup and Oil Pin Set",
+      "page": 6,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0052",
+      "previousName": "Oil cup — 3 in 1",
+      "name": "Three in One Oil Cup",
+      "page": 7,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0053",
+      "previousName": "Oil cup — single",
+      "name": "Single Oil Cup",
+      "page": 7,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0059",
+      "previousName": "Wooden oil cup",
+      "name": "Wooden Oil Cup",
+      "page": 7,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0192",
+      "previousName": "Tray — square",
+      "name": "Square Bench Tray",
+      "page": 7,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0193",
+      "previousName": "Tray — round",
+      "name": "Round Bench Tray",
+      "page": 7,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0060",
+      "previousName": "Aluminium work holder — 60 holes",
+      "name": "Aluminium Work Holder with 60 Holes",
+      "page": 7,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0061",
+      "previousName": "Melting disc — 18 inch, wooden handle",
+      "name": "Melting Disc with Wooden Handle 18 Inch",
+      "page": 7,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0062",
+      "previousName": "Black ring stick — laser marked, 1 to 36",
+      "name": "Black Laser Marked Ring Stick Sizes 1 to 36",
+      "page": 7,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0063",
+      "previousName": "Ring stick with base — No. 4 to 13 step",
+      "name": "Stepped Ring Stick with Base Sizes 4 to 13",
+      "page": 7,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0064",
+      "previousName": "Ring stick only — No. 4 to 13 step",
+      "name": "Stepped Ring Stick without Base Sizes 4 to 13",
+      "page": 7,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0065",
+      "previousName": "Ring stick — 1 to 33",
+      "name": "Ring Stick Sizes 1 to 33",
+      "page": 7,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0066",
+      "previousName": "Ceramic clamp with base",
+      "name": "Ceramic Clamp with Base",
+      "page": 7,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0067",
+      "previousName": "Ceramic clamp",
+      "name": "Ceramic Clamp",
+      "page": 8,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0068",
+      "previousName": "Torch stand with base — 6 holes",
+      "name": "Torch Stand with Six Hole Base",
+      "page": 8,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0069",
+      "previousName": "Third hand ball with base",
+      "name": "Ball Joint Third Hand with Base",
+      "page": 8,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0070",
+      "previousName": "Third hand ball — only",
+      "name": "Ball Joint Third Hand without Base",
+      "page": 8,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0071",
+      "previousName": "Fourth hand with base",
+      "name": "Fourth Hand with Base",
+      "page": 8,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0072",
+      "previousName": "Fourth hand — only",
+      "name": "Fourth Hand without Base",
+      "page": 8,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0073",
+      "previousName": "Third hand ball — big",
+      "name": "Large Ball Joint Third Hand",
+      "page": 8,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0074",
+      "previousName": "Third hand base",
+      "name": "Third Hand Base",
+      "page": 8,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0075",
+      "previousName": "Multipurpose link remover",
+      "name": "Multipurpose Link Remover",
+      "page": 8,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0076",
+      "previousName": "Link remover — big, 75 mm, 3 extra pins",
+      "name": "Large Link Remover 75 mm with Three Extra Pins",
+      "page": 8,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0077",
+      "previousName": "Link remover — adjustable red",
+      "name": "Adjustable Red Link Remover",
+      "page": 8,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0078",
+      "previousName": "Link remover — small, 25 mm, 3 extra pins",
+      "name": "Small Link Remover 25 mm with Three Extra Pins",
+      "page": 8,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0079",
+      "previousName": "Link remover — golden small",
+      "name": "Small Golden Link Remover",
+      "page": 9,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0080",
+      "previousName": "Link remover — horizontal",
+      "name": "Horizontal Link Remover",
+      "page": 9,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0081",
+      "previousName": "Link remover — double hand",
+      "name": "Double Hand Link Remover",
+      "page": 9,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0082",
+      "previousName": "Link remover base — red with pin",
+      "name": "Red Link Remover Base with Pins",
+      "page": 9,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0089",
+      "previousName": "Plastic pin block — red square",
+      "name": "Red Square Plastic Pin Block",
+      "page": 9,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0085",
+      "previousName": "Big rod — 7 mm, screw model, 3 pins",
+      "name": "Screw Type Pin Removal Rod 7 mm with Three Pins",
+      "page": 9,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0086",
+      "previousName": "Big rod — 7 mm, 3 pins",
+      "name": "Plain Pin Removal Rod 7 mm with Three Pins",
+      "page": 9,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0087",
+      "previousName": "Pin set — 0.6, 0.8 and 1 mm, 3 pieces",
+      "name": "Replacement Pin Set of 3",
+      "page": 9,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0088",
+      "previousName": "Replacement pin — 0.6, 0.8 or 1 mm",
+      "name": "Individual Replacement Pin",
+      "page": 9,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0095",
+      "previousName": "Link remover replacement pins — 0.8 and 1 mm",
+      "name": "Link Remover Replacement Pins 0.8 and 1.0 mm",
+      "page": 9,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0098",
+      "previousName": "Link remover pins with spring",
+      "name": "Link Remover Pins with Spring",
+      "page": 9,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0090",
+      "previousName": "G.B. long — set of 3",
+      "name": "GB Long Rod Set of 3",
+      "page": 10,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0091",
+      "previousName": "G.B. long — round and flat",
+      "name": "Round and Flat GB Long Rods",
+      "page": 10,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0092",
+      "previousName": "G.B. long — double end",
+      "name": "Double Ended GB Long Rod",
+      "page": 10,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0093",
+      "previousName": "Round gong — flat type",
+      "name": "Flat Type Round Clock Gong",
+      "page": 10,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0094",
+      "previousName": "Round gong — round type",
+      "name": "Round Type Clock Gong",
+      "page": 10,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0096",
+      "previousName": "Brass hook",
+      "name": "Brass Clock Hook",
+      "page": 10,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0099",
+      "previousName": "Delrin square block for pin removal",
+      "name": "Square Delrin Block for Pin Removal",
+      "page": 10,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0100",
+      "previousName": "Ratchet clip — 6 pieces with rivets, left and right",
+      "name": "Ratchet Clip Set with Six Rivets",
+      "page": 10,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0097",
+      "previousName": "M.S. hook",
+      "name": "MS Clock Hook",
+      "page": 10,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0104",
+      "previousName": "M.S. stabilizer — medium, complete",
+      "name": "Medium MS Clock Stabilizer",
+      "page": 10,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0105",
+      "previousName": "Brass stabilizer — big, complete",
+      "name": "Large Brass Clock Stabilizer",
+      "page": 10,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0101",
+      "previousName": "M.S. stabilizer — small, complete",
+      "name": "Small MS Clock Stabilizer",
+      "page": 10,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0102",
+      "previousName": "M.S. cover — 4.5 and 5.5 inch",
+      "name": "MS Clock Cover 4.5 and 5.5 Inch",
+      "page": 11,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0103",
+      "previousName": "Brass cover — 4.5 and 5.5 inch",
+      "name": "Brass Clock Cover 4.5 and 5.5 Inch",
+      "page": 11,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0107",
+      "previousName": "Diamond tray",
+      "name": "Diamond Tray",
+      "page": 11,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0083",
+      "previousName": "Aluminium tray — triangular",
+      "name": "Triangular Aluminium Tray",
+      "page": 11,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0084",
+      "previousName": "Plastic tray — white",
+      "name": "White Plastic Tray",
+      "page": 11,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0106",
+      "previousName": "Small novelty shovel",
+      "name": "Small Novelty Shovel",
+      "page": 11,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0108",
+      "previousName": "Shovel with handle",
+      "name": "Shovel with Handle",
+      "page": 11,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0109",
+      "previousName": "Chrome-plated shovel — patti",
+      "name": "Chrome Plated Flat Shovel",
+      "page": 11,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0152",
+      "previousName": "Aluminium round revolving soldering holder",
+      "name": "Round Aluminium Revolving Soldering Holder",
+      "page": 11,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0153",
+      "previousName": "Aluminium rectangular tray",
+      "name": "Rectangular Aluminium Tray",
+      "page": 11,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0154",
+      "previousName": "Solder tray with Delrin base — 148 × 78 mm",
+      "name": "Solder Tray with Delrin Base 148 by 78 mm",
+      "page": 11,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0110",
+      "previousName": "File holder with wooden handle",
+      "name": "File Holder with Wooden Handle",
+      "page": 12,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0111",
+      "previousName": "Case opener wrench with wooden handle",
+      "name": "Case Opener Wrench with Wooden Handle",
+      "page": 12,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0112",
+      "previousName": "Blade cutter with wooden handle",
+      "name": "Blade Cutter with Wooden Handle",
+      "page": 12,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0131",
+      "previousName": "Brass crank key — wooden handle",
+      "name": "Brass Crank Key with Wooden Handle",
+      "page": 12,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0134",
+      "previousName": "Novelty round key — double wing",
+      "name": "Double Wing Round Novelty Clock Key",
+      "page": 12,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0133",
+      "previousName": "Novelty round key — single wing",
+      "name": "Single Wing Round Novelty Clock Key",
+      "page": 12,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0128",
+      "previousName": "Pocket nickel key — 5 in 1",
+      "name": "Five in One Pocket Nickel Clock Key",
+      "page": 12,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0117",
+      "previousName": "Brass key — 5 in 1, all sizes",
+      "name": "Five in One Brass Clock Key",
+      "page": 12,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0118",
+      "previousName": "Brass key — 4 in 1, small",
+      "name": "Small Four in One Brass Clock Key",
+      "page": 12,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0119",
+      "previousName": "Brass key — 1.75 (000) to 3.00 (3)",
+      "name": "Brass Clock Key Sizes 1.75 to 3.00",
+      "page": 12,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0120",
+      "previousName": "Brass key — 3.25 (4) to 3.75 (6)",
+      "name": "Brass Clock Key Sizes 3.25 to 3.75",
+      "page": 12,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0121",
+      "previousName": "Brass key — 4.00 (7) to 4.50 (9)",
+      "name": "Brass Clock Key Sizes 4.00 to 4.50",
+      "page": 12,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0122",
+      "previousName": "Brass key — 4.75 (10) to 5.25 (12)",
+      "name": "Brass Clock Key Sizes 4.75 to 5.25",
+      "page": 13,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0123",
+      "previousName": "Brass key — 5.50 (13) to 6.00 (15)",
+      "name": "Brass Clock Key Sizes 5.50 to 6.00",
+      "page": 13,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0124",
+      "previousName": "Brass key — 6.25 (16) to 6.75 (18)",
+      "name": "Brass Clock Key Sizes 6.25 to 6.75",
+      "page": 13,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0125",
+      "previousName": "Nickel key — double end, all sizes",
+      "name": "Double Ended Nickel Clock Key",
+      "page": 13,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0126",
+      "previousName": "Nickel key — single end, all sizes",
+      "name": "Single Ended Nickel Clock Key",
+      "page": 13,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0116",
+      "previousName": "Key set for wooden-handle box — 3 pieces",
+      "name": "Three Piece Key Set for Wooden Handle Box",
+      "page": 13,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0132",
+      "previousName": "Wire crank key — all sizes",
+      "name": "Wire Crank Clock Key",
+      "page": 13,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0127",
+      "previousName": "Novelty crank key — all sizes",
+      "name": "Novelty Crank Clock Key",
+      "page": 13,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0130",
+      "previousName": "M.S. double-ended key — set of 18",
+      "name": "Double Ended MS Clock Key Set of 18",
+      "page": 13,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0129",
+      "previousName": "Brass double-ended key — set of 18",
+      "name": "Double Ended Brass Clock Key Set of 18",
+      "page": 13,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0135",
+      "previousName": "Aluminium knife opener — new type",
+      "name": "Aluminium Knife Case Opener",
+      "page": 13,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0136",
+      "previousName": "Aluminium knife opener — blade only",
+      "name": "Aluminium Knife Case Opener Replacement Blade",
+      "page": 13,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0137",
+      "previousName": "Back opener — set of 4",
+      "name": "Case Back Opener Set of 4",
+      "page": 14,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0138",
+      "previousName": "Back opener — new Renata type",
+      "name": "Renata Type Case Back Opener",
+      "page": 14,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0139",
+      "previousName": "Back opener — old model",
+      "name": "Original Model Case Back Opener",
+      "page": 14,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0140",
+      "previousName": "Back opener — new knife type",
+      "name": "Knife Type Case Back Opener",
+      "page": 14,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0141",
+      "previousName": "M.S. patti opener with screw and knife",
+      "name": "MS Flat Case Opener with Screw and Knife",
+      "page": 14,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0142",
+      "previousName": "Aluminium case holder",
+      "name": "Aluminium Case Holder",
+      "page": 14,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0143",
+      "previousName": "Plastic case holder",
+      "name": "Plastic Case Holder",
+      "page": 14,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0144",
+      "previousName": "Side bar opener — new",
+      "name": "Side Bar Opener",
+      "page": 14,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0145",
+      "previousName": "Side bar remover — blue",
+      "name": "Blue Side Bar Remover",
+      "page": 14,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0146",
+      "previousName": "Side bar and pin remover",
+      "name": "Side Bar and Pin Remover",
+      "page": 14,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0147",
+      "previousName": "M.S. side bar remover",
+      "name": "MS Side Bar Remover",
+      "page": 14,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0156",
+      "previousName": "New screwdriver stand — 9 holes with screwdrivers",
+      "name": "Nine Hole Screwdriver Stand with Screwdrivers",
+      "page": 15,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0157",
+      "previousName": "Revolving screwdriver stand — 8 pieces",
+      "name": "Revolving Screwdriver Stand with Eight Screwdrivers",
+      "page": 15,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0158",
+      "previousName": "Wooden screwdriver stand — set of 5",
+      "name": "Wooden Screwdriver Stand with Five Screwdrivers",
+      "page": 15,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0155",
+      "previousName": "Revolving screwdriver stand — only",
+      "name": "Revolving Screwdriver Stand without Tools",
+      "page": 15,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0167",
+      "previousName": "Aluminium screwdriver stand — 7 holes, stand only",
+      "name": "Seven Hole Aluminium Screwdriver Stand",
+      "page": 15,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0175",
+      "previousName": "Aluminium screwdriver stand — 5 holes, stand only",
+      "name": "Five Hole Aluminium Screwdriver Stand",
+      "page": 15,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0159",
+      "previousName": "Screwdriver set — 9 pieces, SS caps, extra pins",
+      "name": "Nine Piece Screwdriver Set with Stainless Steel Caps",
+      "page": 15,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0160",
+      "previousName": "Screwdriver set — 9 pieces, aluminium caps, extra pins",
+      "name": "Nine Piece Screwdriver Set with Aluminium Caps",
+      "page": 15,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0161",
+      "previousName": "Screwdriver and screw remover — Phillips crosshead",
+      "name": "Phillips Crosshead Screwdriver and Screw Remover",
+      "page": 15,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0162",
+      "previousName": "Screwdriver and screw remover — slotted head",
+      "name": "Slotted Head Screwdriver and Screw Remover",
+      "page": 15,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0163",
+      "previousName": "Screwdriver with extra grip",
+      "name": "Screwdriver with Extra Grip",
+      "page": 16,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0164",
+      "previousName": "Screwdriver with SS cap",
+      "name": "Screwdriver with Stainless Steel Cap",
+      "page": 16,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0165",
+      "previousName": "Screwdriver with aluminium cap",
+      "name": "Screwdriver with Aluminium Cap",
+      "page": 16,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0166",
+      "previousName": "New screwdriver with 4 replacement pins",
+      "name": "Screwdriver with Four Replacement Pins",
+      "page": 16,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0173",
+      "previousName": "Pin holder — 7 × 75 mm",
+      "name": "Pin Holder 7 by 75 mm",
+      "page": 16,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0189",
+      "previousName": "Pin pusher",
+      "name": "Pin Pusher",
+      "page": 16,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0194",
+      "previousName": "Hands presser — set of 4",
+      "name": "Hand Presser Set of 4",
+      "page": 16,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0195",
+      "previousName": "Hands",
+      "name": "Hand Fitting Tools",
+      "page": 16,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0177",
+      "previousName": "Hole punch",
+      "name": "Hole Punch",
+      "page": 16,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0178",
+      "previousName": "Rolex handle",
+      "name": "Rolex Handle",
+      "page": 16,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0113",
+      "previousName": "M.S. link remover pillar set",
+      "name": "MS Link Remover Pillar Set",
+      "page": 17,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0114",
+      "previousName": "S.S. link remover pillar set",
+      "name": "Stainless Steel Link Remover Pillar Set",
+      "page": 17,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0179",
+      "previousName": "Silicone casing",
+      "name": "Silicone Casing Cushion",
+      "page": 17,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0174",
+      "previousName": "Aluminium base — blue",
+      "name": "Blue Aluminium Base",
+      "page": 17,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0176",
+      "previousName": "Watch strap holder",
+      "name": "Watch Strap Holder",
+      "page": 17,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0150",
+      "previousName": "Cell tester tweezer — 1.5 V",
+      "name": "Cell Testing Tweezer 1.5 V",
+      "page": 17,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0151",
+      "previousName": "Cell tester tweezer — 1.5 to 3 V",
+      "name": "Cell Testing Tweezer 1.5 to 3 V",
+      "page": 17,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0168",
+      "previousName": "Acid bottle",
+      "name": "Acid Bottle",
+      "page": 17,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0148",
+      "previousName": "Rubber back opener with wooden handle",
+      "name": "Rubber Case Back Opener with Wooden Handle",
+      "page": 17,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0149",
+      "previousName": "BA spanner — set of 6",
+      "name": "BA Spanner Set of 6",
+      "page": 17,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0170",
+      "previousName": "Glass fitting machine — old model",
+      "name": "Original Model Glass Fitting Machine",
+      "page": 18,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0169",
+      "previousName": "Glass fitting machine — new model",
+      "name": "Glass Fitting Machine Model A",
+      "page": 18,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0171",
+      "previousName": "Delrin round and square bases — 12-set and 14-set",
+      "name": "Round and Square Delrin Fitting Bases",
+      "page": 18,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0115",
+      "previousName": "Delrin belt remover",
+      "name": "Delrin Belt Remover",
+      "page": 18,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0172",
+      "previousName": "Delrin square base — set of 6",
+      "name": "Square Delrin Base Set of 6",
+      "page": 18,
+      "slot": 6
+    },
+    {
+      "sku": "RIT-0182",
+      "previousName": "Bopp wire",
+      "name": "Bopp Wire",
+      "page": 18,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0183",
+      "previousName": "Aluminium screwdriver stand",
+      "name": "Aluminium Screwdriver Stand",
+      "page": 18,
+      "slot": 8
+    },
+    {
+      "sku": "RIT-0184",
+      "previousName": "Lid cover",
+      "name": "Lid Cover",
+      "page": 18,
+      "slot": 9
+    },
+    {
+      "sku": "RIT-0185",
+      "previousName": "M.S. hooks",
+      "name": "MS Hook",
+      "page": 18,
+      "slot": 10
+    },
+    {
+      "sku": "RIT-0186",
+      "previousName": "Ring clamp",
+      "name": "Ring Clamp",
+      "page": 18,
+      "slot": 11
+    },
+    {
+      "sku": "RIT-0190",
+      "previousName": "Finger gauge",
+      "name": "Finger Gauge",
+      "page": 18,
+      "slot": 12
+    },
+    {
+      "sku": "RIT-0187",
+      "previousName": "Cell tester",
+      "name": "Cell Tester",
+      "page": 19,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0188",
+      "previousName": "Tweezer holder",
+      "name": "Tweezer Holder",
+      "page": 19,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0191",
+      "previousName": "Side bar remover — plastic",
+      "name": "Plastic Side Bar Remover",
+      "page": 19,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0180",
+      "previousName": "Coiled spring — variant 1",
+      "name": "Dark Coiled Mainspring",
+      "page": 19,
+      "slot": 4
+    },
+    {
+      "sku": "RIT-0181",
+      "previousName": "Coiled spring — variant 2",
+      "name": "Bronze Tone Coiled Mainspring",
+      "page": 19,
+      "slot": 5
+    },
+    {
+      "sku": "RIT-0018",
+      "previousName": "Auxiliary eye glass lens",
+      "name": "Auxiliary Eye Glass Lens",
+      "page": 19,
+      "slot": 7
+    },
+    {
+      "sku": "RIT-0199",
+      "previousName": "Qibla compass — teardrop",
+      "name": "Teardrop Qibla Compass",
+      "page": 20,
+      "slot": 1
+    },
+    {
+      "sku": "RIT-0197",
+      "previousName": "Qibla compass — round hanging",
+      "name": "Round Hanging Qibla Compass",
+      "page": 20,
+      "slot": 2
+    },
+    {
+      "sku": "RIT-0198",
+      "previousName": "Roshan Industries compass — round hanging",
+      "name": "Roshan Industries Round Hanging Compass",
+      "page": 20,
+      "slot": 3
+    },
+    {
+      "sku": "RIT-0196",
+      "previousName": "Qibla compass — round dial",
+      "name": "Round Dial Qibla Compass",
+      "page": 20,
+      "slot": 4
+    }
+  ],
+  "categoryChanges": [
+    {
+      "id": "p16-12",
+      "sku": "RIT-0179",
+      "name": "Silicone Casing Cushion",
+      "category": "Glass and Hand Fitting",
+      "categoryId": "glass-hand-tools",
+      "family": "Watchmaking",
+      "page": 17,
+      "slot": 3,
+      "image": "assets/products/rit-0179-silicone-casing-cushion.webp",
+      "url": "products/rit-0179.html",
+      "nameConfirmed": true,
+      "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+      "sourceCatalogue": "roshan-industries-catalogue.pdf",
+      "sourcePanel": "Page 17 Panel 3",
+      "newArrival": false,
+      "previousName": "Silicone casing",
+      "previousCategory": "Trays, Covers & Storage"
+    }
+  ],
+  "pages": [
+    {
+      "page": 2,
+      "products": 12
+    },
+    {
+      "page": 3,
+      "products": 12
+    },
+    {
+      "page": 4,
+      "products": 12
+    },
+    {
+      "page": 5,
+      "products": 12
+    },
+    {
+      "page": 6,
+      "products": 12
+    },
+    {
+      "page": 7,
+      "products": 12
+    },
+    {
+      "page": 8,
+      "products": 12
+    },
+    {
+      "page": 9,
+      "products": 12
+    },
+    {
+      "page": 10,
+      "products": 12
+    },
+    {
+      "page": 11,
+      "products": 12
+    },
+    {
+      "page": 12,
+      "products": 12
+    },
+    {
+      "page": 13,
+      "products": 12
+    },
+    {
+      "page": 14,
+      "products": 12
+    },
+    {
+      "page": 15,
+      "products": 12
+    },
+    {
+      "page": 16,
+      "products": 12
+    },
+    {
+      "page": 17,
+      "products": 12
+    },
+    {
+      "page": 18,
+      "products": 12
+    },
+    {
+      "page": 19,
+      "products": 8
+    },
+    {
+      "page": 20,
+      "products": 4
+    }
+  ],
+  "reviewNotes": [
+    {
+      "page": 2,
+      "panels": [
+        1,
+        2,
+        3
+      ],
+      "note": "Printed eye glass captions conflict with the former wooden and aluminium titles. Latest printed plastic labels govern material wording; visible ring colours distinguish entries."
+    },
+    {
+      "page": 5,
+      "panels": [
+        6,
+        7
+      ],
+      "note": "Repeated captions are distinguished by the visible slotted and solid centres."
+    },
+    {
+      "page": 16,
+      "panel": 8,
+      "note": "Hands is illustrated as hand fitting tools; it is not a set of watch hands."
+    },
+    {
+      "page": 20,
+      "note": "No printed product captions. The four compass identities were matched visually to the previous confirmed compass names."
+    }
+  ]
+}

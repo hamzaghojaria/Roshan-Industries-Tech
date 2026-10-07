@@ -35,7 +35,7 @@ const assert = require('node:assert/strict');
       ...fs.readdirSync(path.join(root, 'categories')).map((file) => `categories/${file}`),
       ...fs.readdirSync(path.join(root, 'products')).map((file) => `products/${file}`),
     ];
-    for (const width of [320, 390, 760]) {
+    for (const width of process.argv.includes('--interactions-only') ? [] : [320, 390, 760]) {
       await audit.setViewportSize({ width, height: 844 });
       for (const file of routes) {
         await audit.goto(url(file));
@@ -64,9 +64,10 @@ const assert = require('node:assert/strict');
       assert.equal(trail[0], trail[1], 'Short breadcrumbs should stay on one line');
     }
     await audit.close();
-    console.log(
-      `PASS: ${routes.length} routes at 320/390/760px, no overflow, aligned breadcrumbs and inline short trails.`,
-    );
+    if (!process.argv.includes('--interactions-only'))
+      console.log(
+        `PASS: ${routes.length} routes at 320/390/760px, no overflow, aligned breadcrumbs and inline short trails.`,
+      );
     for (const width of [320, 390, 760]) {
       await page.setViewportSize({ width, height: 844 });
       await page.goto(url('index.html'));
@@ -102,7 +103,7 @@ const assert = require('node:assert/strict');
     assert.equal(await page.locator('[aria-label="Breadcrumb"] li').count(), 4);
     assert.match(
       await page.locator('[aria-label="Breadcrumb"] [aria-current="page"]').textContent(),
-      /Wooden eye glass/,
+      /Plastic Eye Glass with Golden Ring/,
     );
     await page.locator('.breadcrumb a').nth(1).click();
     assert.match(page.url(), /catalogue\.html/);
@@ -137,7 +138,10 @@ const assert = require('node:assert/strict');
     await page.goto(url('about.html'));
     assert.equal(await page.locator('#slider-generations > .family-chapter').count(), 4);
     assert.equal(await page.locator('.family-person h3').count(), 4);
-    assert.match(await page.locator('.family-person').last().textContent(), /Abdullah Roshan.*Mohammed Roshan/s);
+    assert.match(
+      await page.locator('.family-person').last().textContent(),
+      /Abdullah Roshan.*Mohammed Roshan/s,
+    );
     assert.equal(await page.locator('.leader-card').count(), 0);
     await page
       .locator('.leadership-section')

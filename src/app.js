@@ -153,15 +153,22 @@
     const familyButtons = [...slider.querySelectorAll('[data-family-index]')];
     const familyNavigation = slider.querySelector('.family-navigation');
     if (familyNavigation) familyNavigation.hidden = false;
-    familyButtons.forEach((button, index) => button.addEventListener('click', () => {
-      lastInteraction = Date.now();
-      track.scrollTo({left: cards[index].offsetLeft - cards[0].offsetLeft, behavior: motion.matches ? 'auto' : 'smooth'});
-    }));
+    familyButtons.forEach((button, index) =>
+      button.addEventListener('click', () => {
+        lastInteraction = Date.now();
+        track.scrollTo({
+          left: cards[index].offsetLeft - cards[0].offsetLeft,
+          behavior: motion.matches ? 'auto' : 'smooth',
+        });
+      }),
+    );
     const update = () => {
       frame = 0;
       const selected = current();
       position.textContent = `${selected + 1} / ${cards.length}`;
-      familyButtons.forEach((button, index) => button.setAttribute('aria-pressed', String(index === selected)));
+      familyButtons.forEach((button, index) =>
+        button.setAttribute('aria-pressed', String(index === selected)),
+      );
     };
     const advance = (direction) => {
       const max = track.scrollWidth - track.clientWidth;
@@ -269,14 +276,21 @@
       if (matchMedia('(max-width: 640px)').matches) {
         const filterBounds = arrivalFilters.getBoundingClientRect();
         const buttonBounds = button.getBoundingClientRect();
-        const offset = buttonBounds.left < filterBounds.left + 3
-          ? buttonBounds.left - filterBounds.left - 3
-          : buttonBounds.right > filterBounds.right - 3
-            ? buttonBounds.right - filterBounds.right + 3
-            : 0;
-        if (offset) arrivalFilters.scrollBy({left: offset, behavior: reducedMotion.matches ? 'auto' : 'smooth'});
+        const offset =
+          buttonBounds.left < filterBounds.left + 3
+            ? buttonBounds.left - filterBounds.left - 3
+            : buttonBounds.right > filterBounds.right - 3
+              ? buttonBounds.right - filterBounds.right + 3
+              : 0;
+        if (offset)
+          arrivalFilters.scrollBy({
+            left: offset,
+            behavior: reducedMotion.matches ? 'auto' : 'smooth',
+          });
       }
-      arrivalFilters.querySelectorAll('button').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      arrivalFilters
+        .querySelectorAll('button')
+        .forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
       cards.forEach((card) => {
         card.hidden = category !== 'all' && card.dataset.arrivalCategory !== category;
       });
@@ -340,7 +354,7 @@
     const visible = matches.slice(start, start + pageSize);
     grid.replaceChildren(...visible.map((item) => item.node));
     count.textContent = matches.length
-      ? `Showing ${start + 1}–${start + visible.length} of ${matches.length >= 200 ? '200+' : matches.length} products`
+      ? `Showing ${start + 1}–${start + visible.length} of ${matches.length} products`
       : '0 products';
     document.getElementById('empty-state').hidden = matches.length > 0;
     pagination.replaceChildren();

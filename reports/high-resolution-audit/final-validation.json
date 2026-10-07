@@ -1,0 +1,26 @@
+{
+  "reviewDate": "2026-10-07",
+  "sourcePages": 21,
+  "productPagesReviewed": 19,
+  "pdfProducts": 216,
+  "websiteProducts": 228,
+  "workbookProducts": 228,
+  "categories": 21,
+  "retainedSkus": 200,
+  "newProducts": 16,
+  "restoredPumpProducts": 12,
+  "nativeProductImages": 216,
+  "uniqueTitles": 228,
+  "freshDescriptions": 216,
+  "downloadLinks": 967,
+  "sourcePdfSha256": "3ab03d31c2e6abd1b9f548d24ff6aec837dc6d37a58989a74600f729c1ba099a",
+  "brandedPdfSha256": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+  "brandedCataloguePages": 52,
+  "validation": "Passed",
+  "notes": [
+    "Pages 1 and 21 are covers.",
+    "Page 19 has eight populated panels and four empty panels.",
+    "Page 20 has four compass photographs without printed captions. Names preserve previous visually matched confirmed identities.",
+    "Repeated printed captions are distinguished by visible product features."
+  ]
+}

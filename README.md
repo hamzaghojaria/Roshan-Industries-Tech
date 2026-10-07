@@ -4,7 +4,7 @@ Watch parts, tools and custom manufacturing in Mumbai. **Since 1900 · 125+ year
 
 [View website](https://roshan-industries-tech.onrender.com/) · [GitHub repository](https://github.com/hamzaghojaria/Roshan-Industries-Tech) · [Email us](mailto:roshanindustriestech@gmail.com)
 
-**212 products · 21 categories · 5 families**. Website headlines display **200+ products**.
+**216 products · 15 categories · 4 families**. All products and images are verified against the latest 21-page high resolution PDF.
 
 [Start locally](#start-locally) · [What to edit](#what-to-edit) · [Render](#publish-on-render) · [Hostinger](#publish-on-hostinger) · [PDF and Excel](#pdf-and-excel)
 
@@ -39,16 +39,15 @@ Open the generated `index.html` in your browser to preview the website. After ch
 
 ## What to edit
 
-| Change | File or folder |
-| --- | --- |
-| Page content, layouts, header and footer | [src/templates.mjs](src/templates.mjs) |
-| Colours, spacing and mobile appearance | [src/styles.css](src/styles.css), [src/modern.css](src/modern.css) |
-| Sliders, search, filters and mobile menu | [src/app.js](src/app.js) |
-| Original products and categories | [src/catalogue.mjs](src/catalogue.mjs), [src/data/](src/data/) |
-| Pump products and categories | [src/pumps.mjs](src/pumps.mjs) |
-| Product descriptions | [src/descriptions.mjs](src/descriptions.mjs) |
-| Office address and map | [src/location.mjs](src/location.mjs) |
-| Photos, logo and current downloadable PDF | [assets/](assets/) |
+| Change                                    | File or folder                                                                                                                                                                     |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Page content, layouts, header and footer  | [src/templates.mjs](src/templates.mjs)                                                                                                                                             |
+| Colours, spacing and mobile appearance    | [src/styles.css](src/styles.css), [src/modern.css](src/modern.css)                                                                                                                 |
+| Sliders, search, filters and mobile menu  | [src/app.js](src/app.js)                                                                                                                                                           |
+| Reviewed PDF products and categories      | [src/catalogue.mjs](src/catalogue.mjs), [src/data/reviewed-products.json](src/data/reviewed-products.json), [src/data/reviewed-categories.json](src/data/reviewed-categories.json) |
+| Product descriptions                      | [src/descriptions.mjs](src/descriptions.mjs)                                                                                                                                       |
+| Office address and map                    | [src/location.mjs](src/location.mjs)                                                                                                                                               |
+| Photos, logo and current downloadable PDF | [assets/](assets/)                                                                                                                                                                 |
 
 **Keep existing SKUs unchanged.** The permanent mapping lives in [src/data/sku-map.json](src/data/sku-map.json).
 
@@ -57,18 +56,18 @@ The footer stays at the bottom of short pages on mobile and desktop. On long pag
 <details>
 <summary><strong>Click to explore the folders</strong></summary>
 
-| Folder | Purpose |
-| --- | --- |
-| `src/` | Editable website code and templates |
-| `src/data/` | Original catalogue records, approved names and permanent SKUs |
-| `assets/` | Logo, product photos, pump photos and the current customer PDF |
-| `scripts/` | Build, validation, image extraction and catalogue export tools |
-| `tests/` | Browser checks for mobile layout and website behaviour |
-| `reports/` | Catalogue verification records and PDF page mappings |
-| `artifacts/` | Local screenshots and review files; ignored by Git |
-| `dist/` | Generated website ready for hosting; ignored by Git |
-| `products/`, `categories/` | Generated HTML for local previews; ignored by Git |
-| `.openai/` | Existing project metadata; not used by the Render build |
+| Folder                     | Purpose                                                        |
+| -------------------------- | -------------------------------------------------------------- |
+| `src/`                     | Editable website code and templates                            |
+| `src/data/`                | Original catalogue records, approved names and permanent SKUs  |
+| `assets/`                  | Logo, product photos, pump photos and the current customer PDF |
+| `scripts/`                 | Build, validation, image extraction and catalogue export tools |
+| `tests/`                   | Browser checks for mobile layout and website behaviour         |
+| `reports/`                 | Catalogue verification records and PDF page mappings           |
+| `artifacts/`               | Local screenshots and review files; ignored by Git             |
+| `dist/`                    | Generated website ready for hosting; ignored by Git            |
+| `products/`, `categories/` | Generated HTML for local previews; ignored by Git              |
+| `.openai/`                 | Existing project metadata; not used by the Render build        |
 
 Root HTML, CSS, JavaScript and CSV files are also generated local-preview copies. Make lasting changes in `src/` or `assets/`.
 
@@ -77,26 +76,23 @@ Root HTML, CSS, JavaScript and CSV files are also generated local-preview copies
 <details>
 <summary><strong>Click to explore supporting code files</strong></summary>
 
-| File | Purpose |
-| --- | --- |
-| `src/catalogue-index.mjs` | Fast lookups by product, category and family |
-| `src/data/catalogue-source.json` | Original PDF product records |
-| `src/data/name-confirmations.json` | Company-approved product names |
-| `scripts/build.mjs` | Generates pages and recreates `dist/` |
-| `scripts/check.mjs` | Checks links, images, product counts and SKU stability |
-| `scripts/export-updated-catalogue.py` | Creates the complete PDF and Excel, including pumps |
-| `scripts/workbook-overview.py` | Creates the simple Excel opening sheet with clickable categories |
-| `scripts/prepare-premium-pdf.py` | Verifies and prepares the original 200-product PDF |
-| `scripts/export-workbook.py` | Prepares the original workbook and internal audit |
-| `scripts/extract-catalogue.py` | Extracts product photos and the logo from the original scan |
-| `scripts/export-pdf.py` | Compatibility entry point for the premium PDF exporter |
-| `package.json` | Build, check, test and formatting commands |
-| `requirements.txt` | Python dependencies for catalogue tools |
-| `.gitignore` | Keeps generated files, exports and secrets out of GitHub |
-| `.prettierrc.json`, `.prettierignore` | Source formatting settings |
-| `pending task.txt` | Owner-maintained ideas and notes |
+| File                                         | Purpose                                                                 |
+| -------------------------------------------- | ----------------------------------------------------------------------- |
+| `src/catalogue-index.mjs`                    | Fast lookups by product, category and family                            |
+| `src/data/reviewed-products.json`            | Current PDF product records with page, panel, crop and image dimensions |
+| `src/data/new-arrivals.json`                 | Current arrivals and shared New badges                                  |
+| `scripts/build.mjs`                          | Generates pages and recreates `dist/`                                   |
+| `scripts/check.mjs`                          | Checks links, images, product counts and SKU stability                  |
+| `scripts/extract-high-resolution.py`         | Native scan extraction and image provenance                             |
+| `scripts/export-high-resolution-workbook.py` | Styled, synchronized Excel database                                     |
+| `scripts/validate-high-resolution.mjs`       | Complete source, product, image, download and XLSX audit                |
+| `package.json`                               | Build, check, test and formatting commands                              |
+| `requirements.txt`                           | Python dependencies for catalogue tools                                 |
+| `.gitignore`                                 | Keeps generated files, exports and secrets out of GitHub                |
+| `.prettierrc.json`, `.prettierignore`        | Source formatting settings                                              |
+| `pending task.txt`                           | Owner-maintained ideas and notes                                        |
 
-Browser checks in `tests/`: `mobile-qa.cjs` checks responsive pages; `anchor-qa.cjs` checks section links; `content-qa.cjs` checks enquiries and content; `hover-qa.cjs` checks effects; `multipage-qa.cjs` checks catalogue navigation and filters; `root-navigation-qa.cjs` checks home URLs; `pumps-qa.cjs` checks pump photos and categories; `sliders-qa.cjs` checks autoplay and controls.
+Browser checks in `tests/`: `mobile-qa.cjs` checks responsive pages; `anchor-qa.cjs` checks section links; `content-qa.cjs` checks enquiries and content; `hover-qa.cjs` checks effects; `multipage-qa.cjs` checks catalogue navigation and filters; `root-navigation-qa.cjs` checks home URLs; `sliders-qa.cjs` checks autoplay and controls.
 
 Tests currently use Microsoft Edge on Windows. Source code includes responsibility comments. JSON files contain data and cannot include comments.
 
@@ -104,13 +100,13 @@ Tests currently use Microsoft Edge on Windows. Source code includes responsibili
 
 ## Publish on Render
 
-| Setting | Value |
-| --- | --- |
-| Service type | Static Site |
-| Branch | `main` |
-| Root directory | Leave empty when `package.json` is at the repository root |
-| Build command | `npm run build` |
-| Publish directory | `dist` |
+| Setting           | Value                                                     |
+| ----------------- | --------------------------------------------------------- |
+| Service type      | Static Site                                               |
+| Branch            | `main`                                                    |
+| Root directory    | Leave empty when `package.json` is at the repository root |
+| Build command     | `npm run build`                                           |
+| Publish directory | `dist`                                                    |
 
 Render downloads your GitHub source, runs the build and serves `dist/`. With auto-deploy enabled, pushing changes updates the website.
 
@@ -139,38 +135,35 @@ You can also extract `roshan-website.zip` there. `index.html` must sit directly 
 
 ## PDF and Excel
 
-- **Website download:** [assets/roshan-updated-product-catalogue.pdf](assets/roshan-updated-product-catalogue.pdf), tracked in GitHub.
-- **Local PDF:** `Roshan-Industries-Catalogue-Premium-Verified.pdf`, ignored by Git.
-- **Local Excel:** `Roshan-Industries-Product-Catalogue.xlsx`, ignored by Git.
-- **Website ZIP:** `roshan-website.zip`, ready to upload.
-- **Source ZIP:** `Roshan-Industries-Source.zip`, editable project files.
+- **Website catalogue:** [assets/roshan-industries-catalogue.pdf](assets/roshan-industries-catalogue.pdf), a 52-page branded catalogue with the latest high resolution product images, a clickable category index, website headers and footers, and restored pump listings.
+- **Product database:** [Roshan-Industries-Product-Catalogue.xlsx](Roshan-Industries-Product-Catalogue.xlsx), tracked so website builds include the synchronized database.
+- **Audit:** [reports/high-resolution-audit/](reports/high-resolution-audit/) contains the page review, before and after inventory, native crop provenance and validation results.
 
-The PDF contains 48 pages and 212 entries. Pumps is last in the two-page index. Family/category navigation is clickable; product cards are not. Excel contains Overview, All Products and 21 category sheets with embedded photos, without audit or pump-source sheets.
+The site, branded catalogue and workbook contain 228 products in 21 categories and five families. All 200 previous photographed products retain their SKUs; 16 new PDF entries are added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
 
-Excel product and PDF hyperlinks use full live website URLs, so they work from any folder. Update those URLs and regenerate the workbook when moving to a new domain.
+Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions for PDF products, branded catalogue page links, source panel references, image dimensions, checksums, and 456 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
 
-<details>
-<summary><strong>Click for catalogue export commands</strong></summary>
-
-Keep the original documents outside the repository. This workstation stores reference PDFs in `../reference-documents/`. Set the source path when using another computer.
+For future content changes:
 
 ```powershell
 python -m pip install -r requirements.txt
 npm run build
-$env:ROSHAN_PREMIUM_SOURCE = "C:\path\to\owner-supplied-premium.pdf"
-python scripts/export-updated-catalogue.py --pdf "C:\path\to\20 page.pdf"
+python scripts/export-high-resolution-workbook.py
 npm run build
 npm run check
+node scripts/validate-high-resolution.mjs
 ```
 
-Close Excel before regenerating the workbook. Source verification and page mappings remain in `reports/`. Pump source/licence information remains in `assets/pumps/LICENSES.txt` and PDF metadata; there is no visible Photo credits page.
+Close Excel before regenerating the workbook. `src/data/reviewed-products.json` and `src/data/reviewed-categories.json` hold the reviewed records. Product descriptions come from `src/descriptions.mjs`. `src/data/new-arrivals.json` controls the shared New badges.
 
-</details>
+`extract-high-resolution.py` reproduces the native product crops from `../reference-documents/roshan-high-resolution-source.pdf`. It removes red page-frame fragments from crop corners without resampling the product images. The website PDF is never recompressed or rewritten.
 
 ## What belongs in GitHub?
 
-**Keep:** `src/`, `assets/`, `scripts/`, `tests/`, useful verification reports and configuration files.
+**Keep:** `src/`, `assets/`, `scripts/`, `tests/`, the synchronized XLSX, useful verification reports and configuration files.
 
-**Ignore:** `dist/`, generated preview files, local PDF/Excel/ZIP exports, screenshots, dependencies, caches and secrets. Old reference PDFs remain outside the repository.
+**Ignore:** `dist/`, generated preview files, historical PDF and ZIP exports, screenshots, dependencies, caches and secrets. Old reference PDFs remain outside the repository.
 
 Your normal workflow: **edit source → build and check → commit and push → Render deploys.**
+
+To refresh the branded exports, build the website, run `python scripts/export-branded-catalogue.py`, rebuild to refresh catalogue page links, run `python scripts/export-high-resolution-workbook.py`, then rebuild and validate. The original supplied PDF remains unchanged in the workspace reference documents.

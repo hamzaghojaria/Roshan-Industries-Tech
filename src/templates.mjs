@@ -4,14 +4,20 @@ import { categories } from './catalogue.mjs';
 import { officeLocation } from './location.mjs';
 import { indexCatalogue } from './catalogue-index.mjs';
 import fs from 'node:fs';
-// Verified premium-PDF pages keep each product's catalogue link in sync.
-const premiumAuditFile = new URL('../reports/premium-catalogue-audit.json', import.meta.url);
-const premiumCataloguePages = fs.existsSync(premiumAuditFile)
-  ? JSON.parse(fs.readFileSync(premiumAuditFile, 'utf8')).sku_pages
-  : {};
-const arrivalSelection = JSON.parse(fs.readFileSync(new URL('./data/new-arrivals.json', import.meta.url), 'utf8'));
+const catalogueRecords = JSON.parse(
+  fs.readFileSync(new URL('./data/reviewed-products.json', import.meta.url), 'utf8'),
+);
+const productCount =
+  catalogueRecords.length +
+  JSON.parse(fs.readFileSync(new URL('./data/pump-products.json', import.meta.url), 'utf8')).length;
+const arrivalSelection = JSON.parse(
+  fs.readFileSync(new URL('./data/new-arrivals.json', import.meta.url), 'utf8'),
+);
 const arrivalSkus = new Set(arrivalSelection.skus);
-const newBadge = (p, detail = false) => arrivalSkus.has(p.sku) ? `<span class="arrival-badge${detail ? ' arrival-badge-detail' : ''}">New</span>` : '';
+const newBadge = (p, detail = false) =>
+  arrivalSkus.has(p.sku)
+    ? `<span class="arrival-badge${detail ? ' arrival-badge-detail' : ''}">New</span>`
+    : '';
 // The same family order is used in desktop groups and mobile filters.
 const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'];
 // Keep catalogue labels and destinations identical in the header and footer at every width.
@@ -32,7 +38,7 @@ const whatsapp = (p) =>
 const whatsappIcon = `<svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 6.8c-.5 0-1.4.7-1.4 1.8 0 2.7 3.9 6.8 7.3 7.6 1.3.3 2.7-.5 2.9-1.5.1-.5 0-.6-.4-.8l-2-1c-.4-.2-.6-.1-.8.2l-.7.8c-.2.2-.4.2-.7.1-1.4-.6-2.6-1.6-3.4-2.9-.2-.3-.2-.5 0-.7l.6-.7c.2-.2.2-.4.1-.7L8.7 7c-.1-.2-.3-.2-.7-.2Z" fill="currentColor"/></svg>`;
 /** Prepare a catalogue enquiry; visitors review and send it in their email app. */
 export const mail = (p) =>
-  `mailto:${email}?subject=${encodeURIComponent(p ? `Product enquiry: ${p.sku} — ${p.name}` : 'Roshan Industries product enquiry')}&body=${encodeURIComponent(p ? `Hello Roshan Industries,\n\nProduct: ${p.name}\nSKU: ${p.sku}\nCatalogue reference: ${p.id.toUpperCase()}\n\nQuantity required: \nSpecifications: \nCompany: \nContact number: ` : 'Hello Roshan Industries,\n\nProduct / SKU: \nQuantity: \nSpecifications: \nCompany: \nContact number: ')}`;
+  `mailto:${email}?subject=${encodeURIComponent(p ? `Product enquiry: ${p.sku} — ${p.name}` : 'Roshan Industries product enquiry')}&body=${encodeURIComponent(p ? `Hello Roshan Industries,\n\nProduct: ${p.name}\nSKU: ${p.sku}\nCatalogue reference: ${p.sourcePanel}\n\nQuantity required: \nSpecifications: \nCompany: \nContact number: ` : 'Hello Roshan Industries,\n\nProduct / SKU: \nQuantity: \nSpecifications: \nCompany: \nContact number: ')}`;
 
 /** Prepare a custom-manufacturing enquiry, optionally referencing an existing SKU. */
 export const customMail = (p) =>
@@ -47,30 +53,25 @@ const customSection = (base = '', id = 'custom-manufacturing') =>
           <h2>Your requirement.<br />Our manufacturing experience.</h2>
         </div>
         <p class="lead">
-          Need a product beyond our catalogue? Share your drawing, sample or dimensions with Roshan Industries.
+          Need a product beyond our catalogue? Share your drawing, sample or dimensions with Roshan
+          Industries.
         </p>
       </div>
       <div class="custom-grid">
         <article>
           <span class="step-number">01</span>
           <h3>Tell us what you need</h3>
-          <p>
-            Share its purpose, dimensions, quantity and a drawing or sample.
-          </p>
+          <p>Share its purpose, dimensions, quantity and a drawing or sample.</p>
         </article>
         <article>
           <span class="step-number">02</span>
           <h3>Discuss the details</h3>
-          <p>
-            Review materials, finish and feasibility directly with our team.
-          </p>
+          <p>Review materials, finish and feasibility directly with our team.</p>
         </article>
         <article>
           <span class="step-number">03</span>
           <h3>Agree the next steps</h3>
-          <p>
-            Agree the specification, quotation and timeline before manufacturing.
-          </p>
+          <p>Agree the specification, quotation and timeline before manufacturing.</p>
         </article>
       </div>
       <div class="custom-actions">
@@ -86,7 +87,12 @@ export function card(p, base = '') {
   return /* HTML */ `<article class="product-card">
     ${newBadge(p)}
     <a class="product-image" href="${base + p.url}"
-      ><img src="${base + p.image}" alt="${esc(p.name)}" width="480" height="480" loading="lazy"
+      ><img
+        src="${base + p.image}"
+        alt="${esc(p.name)}"
+        width="${p.imageWidth}"
+        height="${p.imageHeight}"
+        loading="lazy"
     /></a>
     <div class="product-card-copy">
       <a class="product-category" href="${base}categories/${p.categoryId}.html"
@@ -131,7 +137,7 @@ export function layout(
     categories:
       'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
     products:
-      'Explore 200+ watchmaking, clockmaking, jewellery and workshop products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
+      'Explore 228 watchmaking, clockmaking, jewellery, workshop and pump products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.',
     about:
       'Discover Roshan Industries, a Mumbai watch parts manufacturer with 125+ years of service since 1900 and four generations of experience. Learn about our custom manufacturing.',
     contact:
@@ -207,9 +213,9 @@ export function layout(
             </form>
             <a
               class="catalogue-download"
-              href="${base}assets/roshan-updated-product-catalogue.pdf"
+              href="${base}assets/roshan-industries-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download catalogue<small>PDF &middot; 200+ products</small></a
+              >Download catalogue<small>PDF &middot; ${productCount} products</small></a
             >
           </div>
           <nav aria-label="Main navigation">
@@ -282,7 +288,7 @@ export function layout(
               <a href="${base || './'}#custom-manufacturing">Custom manufacturing</a
               ><a href="${base}about.html">About Us</a><a href="${base}contact.html">Contact Us</a>
               <a
-                href="${base}assets/roshan-updated-product-catalogue.pdf"
+                href="${base}assets/roshan-industries-catalogue.pdf"
                 download="Roshan-Industries-Catalogue.pdf"
                 >Download catalogue</a
               >
@@ -348,13 +354,39 @@ function arrivalProducts(products) {
   });
 }
 function arrivalCard(p) {
-  return card(p).replace('<article class="product-card">', '<article class="product-card arrival-card" data-arrival-category="' + esc(p.categoryId) + '">');
+  return card(p).replace(
+    '<article class="product-card">',
+    '<article class="product-card arrival-card" data-arrival-category="' + esc(p.categoryId) + '">',
+  );
 }
 export function newArrivalsPage(products) {
   const arrivals = arrivalProducts(products);
   const groups = [...new Map(arrivals.map((p) => [p.categoryId, p.category])).entries()];
-  return layout('New Arrivals',     breadcrumb('New Arrivals') +     '<section class="container arrivals-intro"><p class="eyebrow">DISCOVER WHAT’S NEW</p><h1>New to the Roshan Industries range.</h1><p>Explore the latest additions to our online range. Find a product and speak with our team about your requirements.</p></section>' +     '<section class="container arrivals-section" aria-label="New arrival products"><div class="arrivals-toolbar"><div class="arrival-filters" role="group" aria-label="Filter new arrivals by category" hidden><button type="button" data-arrival-filter="all" aria-pressed="true">All arrivals</button>' + groups.map(([id, name]) => '<button type="button" data-arrival-filter="' + esc(id) + '" aria-pressed="false">' + esc(name) + '</button>').join('') + '</div></div><div class="product-grid arrivals-grid">' + arrivals.map(arrivalCard).join('') + '</div><div class="arrivals-more"><p>Looking for something else?</p><a class="text-link" href="catalogue.html">Explore the complete catalogue &#8594;</a></div></section>',
-    {active: 'arrivals', page: 'arrivals', description: 'Explore new additions to the Roshan Industries online product range. View product details and enquire about specifications and availability.'});
+  return layout(
+    'New Arrivals',
+    breadcrumb('New Arrivals') +
+      '<section class="container arrivals-intro"><p class="eyebrow">DISCOVER WHAT’S NEW</p><h1>New to the Roshan Industries range.</h1><p>Explore the latest additions to our online range. Find a product and speak with our team about your requirements.</p></section>' +
+      '<section class="container arrivals-section" aria-label="New arrival products"><div class="arrivals-toolbar"><div class="arrival-filters" role="group" aria-label="Filter new arrivals by category" hidden><button type="button" data-arrival-filter="all" aria-pressed="true">All arrivals</button>' +
+      groups
+        .map(
+          ([id, name]) =>
+            '<button type="button" data-arrival-filter="' +
+            esc(id) +
+            '" aria-pressed="false">' +
+            esc(name) +
+            '</button>',
+        )
+        .join('') +
+      '</div></div><div class="product-grid arrivals-grid">' +
+      arrivals.map(arrivalCard).join('') +
+      '</div><div class="arrivals-more"><p>Looking for something else?</p><a class="text-link" href="catalogue.html">Explore the complete catalogue &#8594;</a></div></section>',
+    {
+      active: 'arrivals',
+      page: 'arrivals',
+      description:
+        'Explore new additions to the Roshan Industries online product range. View product details and enquire about specifications and availability.',
+    },
+  );
 }
 
 /** Homepage: custom manufacturing leads, followed by catalogue discovery. */
@@ -397,7 +429,7 @@ export function home(products) {
               aria-label="Explore Precision Screwdrivers"
             >
               <img
-                src="assets/products/p15-01.webp"
+                src="assets/products/rit-0156-nine-hole-screwdriver-stand-with-screwdrivers.webp"
                 alt="Roshan Industries precision screwdriver stand"
                 width="480"
                 height="480"
@@ -406,14 +438,14 @@ export function home(products) {
             <div class="hero-small">
               <a href="categories/eye-loupes.html"
                 ><img
-                  src="assets/products/p02-01.webp"
-                  alt="Roshan Industries wooden eye loupes"
+                  src="assets/products/rit-0001-plastic-eye-glass-with-golden-ring.webp"
+                  alt="Roshan Industries plastic eye loupes"
                   width="480"
                   height="480"
                 /><span>Eye loupes & magnifiers</span></a
               ><a href="categories/clock-keys.html"
                 ><img
-                  src="assets/products/p11-12.webp"
+                  src="assets/products/rit-0119-brass-clock-key-sizes-1-75-to-3-00.webp"
                   alt="Roshan Industries brass clock key"
                   width="480"
                   height="480"
@@ -428,32 +460,14 @@ export function home(products) {
           <strong>Manufacturing heritage</strong
           ><span>Since 1900 &middot; 125+ years of service</span>
         </div>
-        <div><strong>200+ products</strong><span>Organised for the way you work</span></div>
+        <div>
+          <strong>${productCount} products</strong><span>Organised for the way you work</span>
+        </div>
         <div>
           <strong>Custom manufacturing</strong
           ><span>Your drawings, dimensions and requirements</span>
         </div>
       </div>
-      <section class="section container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">EXPLORE PUMPS</p>
-            <h2>Discuss your pumping requirements.</h2>
-          </div>
-          <a class="text-link" href="catalogue.html?family=Pumps">Explore all pumps</a>
-        </div>
-        <p class="lead">
-          Tell us your requirements. We’ll help you find a suitable pump.
-        </p>
-        ${homeSlider(
-          'pumps',
-          'Pump categories',
-          categories
-            .filter((c) => c.family === 'Pumps')
-            .map((c) => categoryCard(c, products))
-            .join(''),
-        )}
-      </section>
       ${customSection()}
       <section class="section container">
         <div class="section-head">
@@ -484,7 +498,6 @@ export function home(products) {
           ${homeSlider('range', 'Featured products', featured.map((p) => card(p)).join(''))}
         </div>
       </section>
-      <section class="section container home-arrivals"><div class="section-head"><div><p class="eyebrow">NEW TO OUR RANGE</p><h2>Discover the latest additions.</h2></div><a class="text-link" href="new-arrivals.html">View all new arrivals &#8594;</a></div><div class="product-grid">        ${arrivalProducts(products).slice(0, 3).map(arrivalCard).join('')}      </div></section>
       <section class="section container legacy-layout">
         <div class="legacy-stat">
           <strong>125<span>+</span></strong>
@@ -579,7 +592,7 @@ export function cataloguePage(products, category = null) {
         <aside class="sidebar">
           <h2>Product categories</h2>
           <a href="${base}catalogue.html" ${!category ? ' class="active"' : ''}
-            >All products <span>200+</span></a
+            >All products <span>${productCount}</span></a
           >${familyNames
             .map(
               (family) =>
@@ -600,7 +613,7 @@ export function cataloguePage(products, category = null) {
         </aside>
         <div class="catalogue-content">
           <div class="catalogue-toolbar">
-            <p id="results-count">${items.length >= 200 ? '200+' : items.length} products</p>
+            <p id="results-count">${items.length} products</p>
             <div>
               <label for="sort">Sort by</label
               ><select id="sort">
@@ -666,7 +679,12 @@ export function productPage(p, products) {
     /* HTML */ `${breadcrumb(p.name, '../', /* HTML */ `<a href="../catalogue.html">Products</a><span>/</span><a href="../categories/${p.categoryId}.html">${esc(p.category)}</a><span>/</span>`)}
       <section class="container product-detail">
         <div class="detail-image">
-          <img src="../${p.image}" alt="${esc(p.name)}" width="480" height="480" />
+          <img
+            src="../${p.image}"
+            alt="${esc(p.name)}"
+            width="${p.imageWidth}"
+            height="${p.imageHeight}"
+          />
         </div>
         <div class="detail-copy">
           <a class="eyebrow" href="../categories/${p.categoryId}.html"
@@ -680,6 +698,7 @@ export function productPage(p, products) {
             <p>${esc(p.description)}</p>
           </div>
           <p class="product-note">${esc(p.note)}</p>
+          ${p.onlineRange ? `<p class="product-note">Photo: <a href="${esc(p.imageSource)}" target="_blank" rel="noopener">${esc(p.imageCredit)}</a>. <a href="${esc(p.imageLicense)}" target="_blank" rel="noopener">Image licence</a>. ${esc(p.imageChanges)}</p>` : ''}
           <dl class="spec-table">
             <div>
               <dt>SKU</dt>
@@ -691,9 +710,7 @@ export function productPage(p, products) {
             </div>
             <div>
               <dt>Catalogue reference</dt>
-              <dd>
-                ${p.onlineRange ? 'Online enquiry range' : `${p.id.toUpperCase()} · Page ${p.page}`}
-              </dd>
+              <dd>Page ${p.cataloguePage}</dd>
             </div>
             <div>
               <dt>Pricing & availability</dt>
@@ -711,8 +728,19 @@ export function productPage(p, products) {
             >
           </div>
           <div class="product-catalogue-actions">
-            ${!p.onlineRange ? `<a class="text-link" href="../assets/${premiumCataloguePages[p.sku] ? 'roshan-updated-product-catalogue.pdf' : 'roshan-product-catalogue.pdf'}#page=${premiumCataloguePages[p.sku] || p.page}" target="_blank" rel="noopener">View product in catalogue &#8599;</a>` : `<a class="text-link" href="../catalogue.html?q=${encodeURIComponent(p.sku)}">View product in catalogue &#8594;</a>`}
-            <a class="button button-light" href="../assets/roshan-updated-product-catalogue.pdf" download="Roshan-Industries-Catalogue.pdf">Download catalogue &#8595;</a>
+            <a
+              class="text-link"
+              href="../assets/roshan-industries-catalogue.pdf#page=${p.cataloguePage}"
+              target="_blank"
+              rel="noopener"
+              >View product in catalogue &#8599;</a
+            >
+            <a
+              class="button button-light"
+              href="../assets/roshan-industries-catalogue.pdf"
+              download="Roshan-Industries-Catalogue.pdf"
+              >Download catalogue &#8595;</a
+            >
           </div>
         </div>
       </section>
@@ -794,7 +822,7 @@ export function aboutPage(products) {
       <section class="section section-muted">
         <div class="container about-numbers">
           <div><strong>125+</strong><span>Years of service &middot; Since 1900</span></div>
-          <div><strong>200+</strong><span>Products in our catalogue</span></div>
+          <div><strong>${productCount}</strong><span>Products in our catalogue</span></div>
           <div><strong>${categories.length}</strong><span>Curated product categories</span></div>
         </div>
       </section>
@@ -831,24 +859,141 @@ export function aboutPage(products) {
           <a class="text-link" href="contact.html#custom-enquiry">Talk to us about your project</a>
         </div>
       </section>
-      <section class="section container leadership-section family-heritage" aria-labelledby="leaders-title">
-        <div class="family-heading"><div><p class="eyebrow">A FAMILY LEGACY &middot; SINCE 1900</p><h2 id="leaders-title">The family behind<br /><em>Roshan Industries.</em></h2></div><p>Four generations.<br />One name. A shared legacy.</p></div>
-        <div class="home-slider family-slider" data-slider role="region" aria-roledescription="carousel" aria-label="The family behind Roshan Industries">
-          <div class="family-navigation" aria-label="Explore the family generations" hidden><button type="button" data-family-index="0" aria-controls="slider-generations" aria-pressed="true"><span>01</span><strong>first generation</strong></button><button type="button" data-family-index="1" aria-controls="slider-generations" aria-pressed="false"><span>02</span><strong>second generation</strong></button><button type="button" data-family-index="2" aria-controls="slider-generations" aria-pressed="false"><span>03</span><strong>third generation</strong></button><button type="button" data-family-index="3" aria-controls="slider-generations" aria-pressed="false"><span>04</span><strong>fourth generation</strong></button></div>
-          <div class="slider-track" id="slider-generations" tabindex="0" aria-label="Family generations; swipe or use arrow keys"><article class="family-chapter" aria-label="first generation">
-  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">VM</span><span class="family-emblem-bottom">GENERATION 01</span></div>
-  <div class="family-person"><p class="eyebrow">FIRST GENERATION <span>/ The beginning</span></p><h3>Vali Mohammed Roshan</h3><p class="family-relationship">Great-grandfather</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
-</article><article class="family-chapter" aria-label="second generation">
-  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">AR</span><span class="family-emblem-bottom">GENERATION 02</span></div>
-  <div class="family-person"><p class="eyebrow">SECOND GENERATION <span>/ A legacy continued</span></p><h3>Ahmed Rashid Roshan</h3><p class="family-relationship">Father</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
-</article><article class="family-chapter" aria-label="third generation">
-  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">IR</span><span class="family-emblem-bottom">GENERATION 03</span></div>
-  <div class="family-person"><p class="eyebrow">THIRD GENERATION <span>/ The next chapter</span></p><h3>Imran Roshan</h3><p class="family-relationship">Son</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
-</article><article class="family-chapter" aria-label="fourth generation">
-  <div class="family-emblem" aria-hidden="true"><span class="family-emblem-top">ROSHAN INDUSTRIES</span><span class="family-monogram">AM</span><span class="family-emblem-bottom">GENERATION 04</span></div>
-  <div class="family-person"><p class="eyebrow">FOURTH GENERATION <span>/ Looking ahead</span></p><h3>Abdullah Roshan &amp;<br />Mohammed Roshan</h3><p class="family-relationship">Grandsons</p><div class="family-signature"><span></span>Part of our story. Part of our future.</div></div>
-</article></div>
-          <div class="slider-controls" hidden><span class="family-explore">EXPLORE OUR GENERATIONS</span><button type="button" data-slider-prev aria-controls="slider-generations" aria-label="Previous generation">&#8592;</button><span class="slider-position"></span><button type="button" data-slider-next aria-controls="slider-generations" aria-label="Next generation">&#8594;</button></div>
+      <section
+        class="section container leadership-section family-heritage"
+        aria-labelledby="leaders-title"
+      >
+        <div class="family-heading">
+          <div>
+            <p class="eyebrow">A FAMILY LEGACY &middot; SINCE 1900</p>
+            <h2 id="leaders-title">The family behind<br /><em>Roshan Industries.</em></h2>
+          </div>
+          <p>Four generations.<br />One name. A shared legacy.</p>
+        </div>
+        <div
+          class="home-slider family-slider"
+          data-slider
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="The family behind Roshan Industries"
+        >
+          <div class="family-navigation" aria-label="Explore the family generations" hidden>
+            <button
+              type="button"
+              data-family-index="0"
+              aria-controls="slider-generations"
+              aria-pressed="true"
+            >
+              <span>01</span><strong>first generation</strong></button
+            ><button
+              type="button"
+              data-family-index="1"
+              aria-controls="slider-generations"
+              aria-pressed="false"
+            >
+              <span>02</span><strong>second generation</strong></button
+            ><button
+              type="button"
+              data-family-index="2"
+              aria-controls="slider-generations"
+              aria-pressed="false"
+            >
+              <span>03</span><strong>third generation</strong></button
+            ><button
+              type="button"
+              data-family-index="3"
+              aria-controls="slider-generations"
+              aria-pressed="false"
+            >
+              <span>04</span><strong>fourth generation</strong>
+            </button>
+          </div>
+          <div
+            class="slider-track"
+            id="slider-generations"
+            tabindex="0"
+            aria-label="Family generations; swipe or use arrow keys"
+          >
+            <article class="family-chapter" aria-label="first generation">
+              <div class="family-emblem" aria-hidden="true">
+                <span class="family-emblem-top">ROSHAN INDUSTRIES</span
+                ><span class="family-monogram">VM</span
+                ><span class="family-emblem-bottom">GENERATION 01</span>
+              </div>
+              <div class="family-person">
+                <p class="eyebrow">FIRST GENERATION <span>/ The beginning</span></p>
+                <h3>Vali Mohammed Roshan</h3>
+                <p class="family-relationship">Great-grandfather</p>
+                <div class="family-signature">
+                  <span></span>Part of our story. Part of our future.
+                </div>
+              </div>
+            </article>
+            <article class="family-chapter" aria-label="second generation">
+              <div class="family-emblem" aria-hidden="true">
+                <span class="family-emblem-top">ROSHAN INDUSTRIES</span
+                ><span class="family-monogram">AR</span
+                ><span class="family-emblem-bottom">GENERATION 02</span>
+              </div>
+              <div class="family-person">
+                <p class="eyebrow">SECOND GENERATION <span>/ A legacy continued</span></p>
+                <h3>Ahmed Rashid Roshan</h3>
+                <p class="family-relationship">Father</p>
+                <div class="family-signature">
+                  <span></span>Part of our story. Part of our future.
+                </div>
+              </div>
+            </article>
+            <article class="family-chapter" aria-label="third generation">
+              <div class="family-emblem" aria-hidden="true">
+                <span class="family-emblem-top">ROSHAN INDUSTRIES</span
+                ><span class="family-monogram">IR</span
+                ><span class="family-emblem-bottom">GENERATION 03</span>
+              </div>
+              <div class="family-person">
+                <p class="eyebrow">THIRD GENERATION <span>/ The next chapter</span></p>
+                <h3>Imran Roshan</h3>
+                <p class="family-relationship">Son</p>
+                <div class="family-signature">
+                  <span></span>Part of our story. Part of our future.
+                </div>
+              </div>
+            </article>
+            <article class="family-chapter" aria-label="fourth generation">
+              <div class="family-emblem" aria-hidden="true">
+                <span class="family-emblem-top">ROSHAN INDUSTRIES</span
+                ><span class="family-monogram">AM</span
+                ><span class="family-emblem-bottom">GENERATION 04</span>
+              </div>
+              <div class="family-person">
+                <p class="eyebrow">FOURTH GENERATION <span>/ Looking ahead</span></p>
+                <h3>Abdullah Roshan &amp;<br />Mohammed Roshan</h3>
+                <p class="family-relationship">Grandsons</p>
+                <div class="family-signature">
+                  <span></span>Part of our story. Part of our future.
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="slider-controls" hidden>
+            <span class="family-explore">EXPLORE OUR GENERATIONS</span
+            ><button
+              type="button"
+              data-slider-prev
+              aria-controls="slider-generations"
+              aria-label="Previous generation"
+            >
+              &#8592;</button
+            ><span class="slider-position"></span
+            ><button
+              type="button"
+              data-slider-next
+              aria-controls="slider-generations"
+              aria-label="Next generation"
+            >
+              &#8594;
+            </button>
+          </div>
         </div>
       </section>
       ${customSection('', 'about-custom')}
@@ -857,7 +1002,7 @@ export function aboutPage(products) {
           <h2>For the work you do.</h2>
           <a class="text-link" href="categories.html">Explore categories</a>
         </div>
-${homeSlider('about-work', 'Tools for the work you do', [categories[0], categories[5], categories[7], categories[2], categories[10], categories[14]].map((c) => categoryCard(c, products)).join(''))}
+        ${homeSlider('about-work', 'Tools for the work you do', [categories[0], categories[5], categories[7], categories[2], categories[10], categories[14]].map((c) => categoryCard(c, products)).join(''))}
       </section>`,
     { active: 'about', page: 'about' },
   );
@@ -947,9 +1092,9 @@ export function contactPage() {
             <span class="eyebrow">PRODUCT CATALOGUE</span
             ><a
               class="text-link"
-              href="assets/roshan-updated-product-catalogue.pdf"
+              href="assets/roshan-industries-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download our 20-page catalogue</a
+              >Download our product catalogue</a
             >
           </div>
         </div>
@@ -989,4 +1134,3 @@ export function contactPage() {
     { active: 'contact', page: 'contact' },
   );
 }
-

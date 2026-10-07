@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-07",
+  "allRoutesMobile": {
+    "routes": 255,
+    "widths": [
+      320,
+      390,
+      760
+    ],
+    "overflow": false,
+    "brokenBreadcrumbs": false
+  },
+  "newArrivals": {
+    "widths": [
+      320,
+      390,
+      760,
+      1024,
+      1440
+    ],
+    "filters": true,
+    "images": true,
+    "activeNavigation": true,
+    "homePreview": false,
+    "homePreviewRemoved": true
+  },
+  "productBadges": {
+    "widths": [
+      390,
+      1440
+    ],
+    "selectedProducts": 16,
+    "matchedSharedSelection": true
+  },
+  "catalogue": {
+    "pagination": true,
+    "search": true,
+    "sorting": true,
+    "familyTotals": true,
+    "allCategories": true,
+    "reload": true
+  },
+  "accessibility": {
+    "enlargedText": "200 percent checked on changed page types",
+    "keyboardAndMobileMenu": true,
+    "reducedMotion": true,
+    "touchTargets": true
+  },
+  "nativeImages": {
+    "decoded": 216,
+    "dimensionsMatchSource": true
+  },
+  "catalogueDownload": {
+    "products": 228,
+    "pages": 52,
+    "clickableIndex": true,
+    "productPageLinksChecked": true
+  },
+  "errors": [],
+  "restoredPumps": {
+    "products": 12,
+    "categories": 6,
+    "filter": true,
+    "stableSkus": true,
+    "imagesDecode": true
+  },
+  "workbook": {
+    "products": 228,
+    "categorySheets": 21,
+    "familyNames": true,
+    "coloredTabs": true
+  }
+}

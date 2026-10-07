@@ -1,0 +1,149 @@
+[
+  {
+    "id": "eye-loupes",
+    "name": "Eye Loupes and Magnifiers",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0001-plastic-eye-glass-with-golden-ring.webp",
+    "description": "Explore eye loupes and magnifiers photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "screwdrivers",
+    "name": "Precision Screwdrivers",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0156-nine-hole-screwdriver-stand-with-screwdrivers.webp",
+    "description": "Explore precision screwdrivers photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "case-openers",
+    "name": "Case Opening Tools",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0135-aluminium-knife-case-opener.webp",
+    "description": "Explore case opening tools photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "link-strap-tools",
+    "name": "Bracelet and Strap Tools",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0076-large-link-remover-75-mm-with-three-extra-pins.webp",
+    "description": "Explore bracelet and strap tools photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "glass-hand-tools",
+    "name": "Glass and Hand Fitting",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0169-glass-fitting-machine-model-a.webp",
+    "description": "Explore glass and hand fitting photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "clock-keys",
+    "name": "Clock Winding Keys",
+    "family": "Clockmaking",
+    "image": "assets/products/rit-0119-brass-clock-key-sizes-1-75-to-3-00.webp",
+    "description": "Explore clock winding keys photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "clock-parts",
+    "name": "Clock Parts and Accessories",
+    "family": "Clockmaking",
+    "image": "assets/products/rit-0093-flat-type-round-clock-gong.webp",
+    "description": "Explore clock parts and accessories photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "jewellery-tools",
+    "name": "Jewellery Bench Tools",
+    "family": "Jewellery",
+    "image": "assets/products/rit-0060-aluminium-work-holder-with-60-holes.webp",
+    "description": "Explore jewellery bench tools photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "soldering-tools",
+    "name": "Soldering and Helping Hands",
+    "family": "Jewellery",
+    "image": "assets/products/rit-0071-fourth-hand-with-base.webp",
+    "description": "Explore soldering and helping hands photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "tweezers",
+    "name": "Tweezers",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0045-yellow-tweezer-set-of-3.webp",
+    "description": "Explore tweezers photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "oiling-tools",
+    "name": "Oil Cups and Oil Pins",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0052-three-in-one-oil-cup.webp",
+    "description": "Explore oil cups and oil pins photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "holders-stands",
+    "name": "Holders and Stands",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0028-movement-holder-set-of-12.webp",
+    "description": "Explore holders and stands photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "gauges-selectors",
+    "name": "Gauges and Selectors",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0040-ring-gauge-set-of-36.webp",
+    "description": "Explore gauges and selectors photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "trays-storage",
+    "name": "Trays, Covers and Storage",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0025-plastic-dividing-tray.webp",
+    "description": "Explore trays, covers and storage photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "compasses",
+    "name": "Compasses",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0198-roshan-industries-round-hanging-compass.webp",
+    "description": "Explore compasses photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+  },
+  {
+    "id": "centrifugal-pumps",
+    "name": "Centrifugal Pumps",
+    "family": "Pumps",
+    "description": "Liquid transfer, circulation and staged centrifugal pump configurations.",
+    "image": "assets/pumps/rit-0201-centrifugal-transfer-pump.jpg"
+  },
+  {
+    "id": "submersible-pumps",
+    "name": "Submersible Pumps",
+    "family": "Pumps",
+    "description": "Compact water-transfer and drainage pump configurations for submerged operation.",
+    "image": "assets/pumps/rit-0206-submersible-drainage-pump.png"
+  },
+  {
+    "id": "diaphragm-pumps",
+    "name": "Diaphragm Pumps",
+    "family": "Pumps",
+    "description": "Transfer, metal-body and sanitary-style diaphragm pump configurations.",
+    "image": "assets/pumps/rit-0203-diaphragm-transfer-pump.jpg"
+  },
+  {
+    "id": "gear-pumps",
+    "name": "Gear Pumps",
+    "family": "Pumps",
+    "description": "Positive displacement gear pump assemblies for application enquiries.",
+    "image": "assets/pumps/rit-0209-external-gear-pump-assembly.jpg"
+  },
+  {
+    "id": "peristaltic-pumps",
+    "name": "Peristaltic Pumps",
+    "family": "Pumps",
+    "description": "Tube-based pump configurations for laboratory transfer and controlled dosing.",
+    "image": "assets/pumps/rit-0210-laboratory-peristaltic-pump.jpg"
+  },
+  {
+    "id": "vacuum-pumps",
+    "name": "Vacuum Pumps",
+    "family": "Pumps",
+    "description": "Rotary vane vacuum pump configurations for process requirements.",
+    "image": "assets/pumps/rit-0212-rotary-vane-vacuum-pump.jpg"
+  }
+]

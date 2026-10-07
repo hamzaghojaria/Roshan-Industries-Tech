@@ -1,0 +1,16 @@
+{
+  "products": 228,
+  "categorySheets": 21,
+  "embeddedPhotos": 456,
+  "sourceSha256": "cb0d1ddb6d27025b1dbf0d64f9ae40b78c82fedd0242f1262a5489ff5580c3a9",
+  "familyColors": {
+    "Watchmaking": "315BD6",
+    "Clockmaking": "B68A42",
+    "Jewellery": "8B5CB2",
+    "Workshop Essentials": "2C8790",
+    "Pumps": "4B7F52"
+  },
+  "allTabsColored": true,
+  "allFieldsMatchWebsite": true,
+  "xlsxSha256": "203f498b6af0803bf3a6ece2a12c4a6f4526ea7fe96b103889f42db5c451ba16"
+}

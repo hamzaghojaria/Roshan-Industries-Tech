@@ -1,0 +1,6482 @@
+[
+  {
+    "id": "p02-01",
+    "sku": "RIT-0001",
+    "name": "Plastic Eye Glass with Golden Ring",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 1,
+    "image": "assets/products/rit-0001-plastic-eye-glass-with-golden-ring.webp",
+    "url": "products/rit-0001.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-02",
+    "sku": "RIT-0002",
+    "name": "Plastic Headband Eye Glass with Grey Ring",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 2,
+    "image": "assets/products/rit-0002-plastic-headband-eye-glass-with-grey-ring.webp",
+    "url": "products/rit-0002.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-03",
+    "sku": "RIT-0003",
+    "name": "Plastic Headband Eye Glass with Green Ring",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 3,
+    "image": "assets/products/rit-0003-plastic-headband-eye-glass-with-green-ring.webp",
+    "url": "products/rit-0003.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-04",
+    "sku": "RIT-0004",
+    "name": "Plastic Silver Ring Eye Glass Number 1 to 1.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 4,
+    "image": "assets/products/rit-0004-plastic-silver-ring-eye-glass-number-1-to-1-5.webp",
+    "url": "products/rit-0004.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-05",
+    "sku": "RIT-0005",
+    "name": "Plastic Silver Ring Eye Glass Number 2 to 4.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 5,
+    "image": "assets/products/rit-0005-plastic-silver-ring-eye-glass-number-2-to-4-5.webp",
+    "url": "products/rit-0005.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-06",
+    "sku": "RIT-0006",
+    "name": "Aluminium Eye Glass Number 1 to 1.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 6,
+    "image": "assets/products/rit-0006-aluminium-eye-glass-number-1-to-1-5.webp",
+    "url": "products/rit-0006.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-07",
+    "sku": "RIT-0007",
+    "name": "Aluminium Eye Glass Number 2 to 4.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 7,
+    "image": "assets/products/rit-0007-aluminium-eye-glass-number-2-to-4-5.webp",
+    "url": "products/rit-0007.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-08",
+    "sku": "RIT-0008",
+    "name": "Plastic Bergon Shape Eye Glass Number 1 to 1.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 8,
+    "image": "assets/products/rit-0008-plastic-bergon-shape-eye-glass-number-1-to-1-5.webp",
+    "url": "products/rit-0008.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-09",
+    "sku": "RIT-0009",
+    "name": "Plastic Bergon Shape Eye Glass Number 2 to 4.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 9,
+    "image": "assets/products/rit-0009-plastic-bergon-shape-eye-glass-number-2-to-4-5.webp",
+    "url": "products/rit-0009.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-10",
+    "sku": "RIT-0010",
+    "name": "Plastic Anchor Shape Eye Glass Number 1 to 1.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 10,
+    "image": "assets/products/rit-0010-plastic-anchor-shape-eye-glass-number-1-to-1-5.webp",
+    "url": "products/rit-0010.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-11",
+    "sku": "RIT-0011",
+    "name": "Plastic Anchor Shape Eye Glass Number 2 to 4.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 11,
+    "image": "assets/products/rit-0011-plastic-anchor-shape-eye-glass-number-2-to-4-5.webp",
+    "url": "products/rit-0011.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p2-12",
+    "sku": "RIT-0213",
+    "name": "Plastic Sawing Eye Glass Set of 4",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 2,
+    "slot": 12,
+    "image": "assets/products/rit-0213-plastic-sawing-eye-glass-set-of-4.webp",
+    "url": "products/rit-0213.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 2 Panel 12",
+    "newArrival": true,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 4,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p02-12",
+    "sku": "RIT-0012",
+    "name": "Plastic Spectacle Eye Glass Number 1 to 1.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 1,
+    "image": "assets/products/rit-0012-plastic-spectacle-eye-glass-number-1-to-1-5.webp",
+    "url": "products/rit-0012.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-01",
+    "sku": "RIT-0013",
+    "name": "Plastic Spectacle Eye Glass Number 2 to 4.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 2,
+    "image": "assets/products/rit-0013-plastic-spectacle-eye-glass-number-2-to-4-5.webp",
+    "url": "products/rit-0013.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-02",
+    "sku": "RIT-0014",
+    "name": "Plastic Headband Eye Glass Number 1 to 1.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 3,
+    "image": "assets/products/rit-0014-plastic-headband-eye-glass-number-1-to-1-5.webp",
+    "url": "products/rit-0014.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-03",
+    "sku": "RIT-0015",
+    "name": "Plastic Headband Eye Glass Number 2 to 4.5",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 4,
+    "image": "assets/products/rit-0015-plastic-headband-eye-glass-number-2-to-4-5.webp",
+    "url": "products/rit-0015.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-04",
+    "sku": "RIT-0016",
+    "name": "Plastic Sawing Eye Glass 10x",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 5,
+    "image": "assets/products/rit-0016-plastic-sawing-eye-glass-10x.webp",
+    "url": "products/rit-0016.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-05",
+    "sku": "RIT-0017",
+    "name": "Plastic Sawing Eye Glass 7x",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 6,
+    "image": "assets/products/rit-0017-plastic-sawing-eye-glass-7x.webp",
+    "url": "products/rit-0017.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-05",
+    "sku": "RIT-0029",
+    "name": "Stainless Steel Wire Hairband Eye Glass",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 7,
+    "image": "assets/products/rit-0029-stainless-steel-wire-hairband-eye-glass.webp",
+    "url": "products/rit-0029.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-07",
+    "sku": "RIT-0019",
+    "name": "Large Plastic Keychain Eye Glass",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 8,
+    "image": "assets/products/rit-0019-large-plastic-keychain-eye-glass.webp",
+    "url": "products/rit-0019.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-08",
+    "sku": "RIT-0020",
+    "name": "Small Plastic Keychain Eye Glass",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 3,
+    "slot": 9,
+    "image": "assets/products/rit-0020-small-plastic-keychain-eye-glass.webp",
+    "url": "products/rit-0020.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-09",
+    "sku": "RIT-0021",
+    "name": "Large Revolving Bur Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 3,
+    "slot": 10,
+    "image": "assets/products/rit-0021-large-revolving-bur-stand.webp",
+    "url": "products/rit-0021.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-10",
+    "sku": "RIT-0022",
+    "name": "Single Step Poger Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 3,
+    "slot": 11,
+    "image": "assets/products/rit-0022-single-step-poger-stand.webp",
+    "url": "products/rit-0022.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-11",
+    "sku": "RIT-0023",
+    "name": "Three Step Poger Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 3,
+    "slot": 12,
+    "image": "assets/products/rit-0023-three-step-poger-stand.webp",
+    "url": "products/rit-0023.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 3 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 12,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-01",
+    "sku": "RIT-0025",
+    "name": "Plastic Dividing Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 1,
+    "image": "assets/products/rit-0025-plastic-dividing-tray.webp",
+    "url": "products/rit-0025.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-02",
+    "sku": "RIT-0026",
+    "name": "Single Dust Cover",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 2,
+    "image": "assets/products/rit-0026-single-dust-cover.webp",
+    "url": "products/rit-0026.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-03",
+    "sku": "RIT-0027",
+    "name": "Double Dust Cover",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 3,
+    "image": "assets/products/rit-0027-double-dust-cover.webp",
+    "url": "products/rit-0027.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p4-04",
+    "sku": "RIT-0214",
+    "name": "Dust Cover with Rubber Base",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 4,
+    "image": "assets/products/rit-0214-dust-cover-with-rubber-base.webp",
+    "url": "products/rit-0214.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 4",
+    "newArrival": true,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p4-05",
+    "sku": "RIT-0215",
+    "name": "Plastic Storage Container for Watch Repair Parts",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 5,
+    "image": "assets/products/rit-0215-plastic-storage-container-for-watch-repair-parts.webp",
+    "url": "products/rit-0215.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 5",
+    "newArrival": true,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-04",
+    "sku": "RIT-0028",
+    "name": "Movement Holder Set of 12",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 6,
+    "image": "assets/products/rit-0028-movement-holder-set-of-12.webp",
+    "url": "products/rit-0028.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-12",
+    "sku": "RIT-0024",
+    "name": "Acrylic Pliers Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 7,
+    "image": "assets/products/rit-0024-acrylic-pliers-stand.webp",
+    "url": "products/rit-0024.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p4-08",
+    "sku": "RIT-0216",
+    "name": "Transparent Tool Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 8,
+    "image": "assets/products/rit-0216-transparent-tool-stand.webp",
+    "url": "products/rit-0216.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 8",
+    "newArrival": true,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-06",
+    "sku": "RIT-0030",
+    "name": "Movement Holder 10.5",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 9,
+    "image": "assets/products/rit-0030-movement-holder-10-5.webp",
+    "url": "products/rit-0030.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-07",
+    "sku": "RIT-0031",
+    "name": "Movement Holder for 2030 ST 96 Ladies Watches",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 10,
+    "image": "assets/products/rit-0031-movement-holder-for-2030-st-96-ladies-watches.webp",
+    "url": "products/rit-0031.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-08",
+    "sku": "RIT-0032",
+    "name": "Clips for Open Ended Watch Straps",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 4,
+    "slot": 11,
+    "image": "assets/products/rit-0032-clips-for-open-ended-watch-straps.webp",
+    "url": "products/rit-0032.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-09",
+    "sku": "RIT-0033",
+    "name": "Ring Gauge Stand Sizes 1 to 17",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 4,
+    "slot": 12,
+    "image": "assets/products/rit-0033-ring-gauge-stand-sizes-1-to-17.webp",
+    "url": "products/rit-0033.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 4 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 16,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-10",
+    "sku": "RIT-0034",
+    "name": "Large Matte Black Battery Selector",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 1,
+    "image": "assets/products/rit-0034-large-matte-black-battery-selector.webp",
+    "url": "products/rit-0034.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-11",
+    "sku": "RIT-0035",
+    "name": "Small Square Battery Selector",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 2,
+    "image": "assets/products/rit-0035-small-square-battery-selector.webp",
+    "url": "products/rit-0035.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p04-12",
+    "sku": "RIT-0036",
+    "name": "Green Round Battery Selector",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 3,
+    "image": "assets/products/rit-0036-green-round-battery-selector.webp",
+    "url": "products/rit-0036.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-01",
+    "sku": "RIT-0037",
+    "name": "Round Battery Selector",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 4,
+    "image": "assets/products/rit-0037-round-battery-selector.webp",
+    "url": "products/rit-0037.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-02",
+    "sku": "RIT-0038",
+    "name": "Bangle Size Gauge",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 5,
+    "image": "assets/products/rit-0038-bangle-size-gauge.webp",
+    "url": "products/rit-0038.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-03",
+    "sku": "RIT-0039",
+    "name": "Round Side Bar Selector with Slotted Centre",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 6,
+    "image": "assets/products/rit-0039-round-side-bar-selector-with-slotted-centre.webp",
+    "url": "products/rit-0039.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-04",
+    "sku": "RIT-0200",
+    "name": "Round Side Bar Selector with Solid Centre",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 7,
+    "image": "assets/products/rit-0200-round-side-bar-selector-with-solid-centre.webp",
+    "url": "products/rit-0200.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-05",
+    "sku": "RIT-0040",
+    "name": "Ring Gauge Set of 36",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 8,
+    "image": "assets/products/rit-0040-ring-gauge-set-of-36.webp",
+    "url": "products/rit-0040.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-06",
+    "sku": "RIT-0041",
+    "name": "Side Bar and Strap Gauge",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 9,
+    "image": "assets/products/rit-0041-side-bar-and-strap-gauge.webp",
+    "url": "products/rit-0041.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-07",
+    "sku": "RIT-0042",
+    "name": "Bur Stand with 40 Holes",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 10,
+    "image": "assets/products/rit-0042-bur-stand-with-40-holes.webp",
+    "url": "products/rit-0042.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-08",
+    "sku": "RIT-0043",
+    "name": "Bur Stand with 326 Holes",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 11,
+    "image": "assets/products/rit-0043-bur-stand-with-326-holes.webp",
+    "url": "products/rit-0043.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-09",
+    "sku": "RIT-0044",
+    "name": "Complete Bur Stand Set with 326 Holes",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 5,
+    "slot": 12,
+    "image": "assets/products/rit-0044-complete-bur-stand-set-with-326-holes.webp",
+    "url": "products/rit-0044.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 5 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 24,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-10",
+    "sku": "RIT-0045",
+    "name": "Yellow Tweezer Set of 3",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 6,
+    "slot": 1,
+    "image": "assets/products/rit-0045-yellow-tweezer-set-of-3.webp",
+    "url": "products/rit-0045.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-11",
+    "sku": "RIT-0046",
+    "name": "Large Tweezer 10 Inch",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 6,
+    "slot": 2,
+    "image": "assets/products/rit-0046-large-tweezer-10-inch.webp",
+    "url": "products/rit-0046.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p05-12",
+    "sku": "RIT-0047",
+    "name": "Medium Tweezer 7 Inch",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 6,
+    "slot": 3,
+    "image": "assets/products/rit-0047-medium-tweezer-7-inch.webp",
+    "url": "products/rit-0047.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-01",
+    "sku": "RIT-0048",
+    "name": "Small Tweezer 6 Inch",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 6,
+    "slot": 4,
+    "image": "assets/products/rit-0048-small-tweezer-6-inch.webp",
+    "url": "products/rit-0048.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-02",
+    "sku": "RIT-0049",
+    "name": "Plastic Tweezer",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 6,
+    "slot": 5,
+    "image": "assets/products/rit-0049-plastic-tweezer.webp",
+    "url": "products/rit-0049.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-03",
+    "sku": "RIT-0050",
+    "name": "Small Tweezer 5 Inch in Assorted Colours",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 6,
+    "slot": 6,
+    "image": "assets/products/rit-0050-small-tweezer-5-inch-in-assorted-colours.webp",
+    "url": "products/rit-0050.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-04",
+    "sku": "RIT-0051",
+    "name": "Single Oil Pin",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 6,
+    "slot": 7,
+    "image": "assets/products/rit-0051-single-oil-pin.webp",
+    "url": "products/rit-0051.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-10",
+    "sku": "RIT-0057",
+    "name": "Oil Pin Set of 5",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 6,
+    "slot": 8,
+    "image": "assets/products/rit-0057-oil-pin-set-of-5.webp",
+    "url": "products/rit-0057.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-11",
+    "sku": "RIT-0058",
+    "name": "Oil Pin Set of 3",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 6,
+    "slot": 9,
+    "image": "assets/products/rit-0058-oil-pin-set-of-3.webp",
+    "url": "products/rit-0058.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-07",
+    "sku": "RIT-0054",
+    "name": "Small Oil Cup",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 6,
+    "slot": 10,
+    "image": "assets/products/rit-0054-small-oil-cup.webp",
+    "url": "products/rit-0054.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-08",
+    "sku": "RIT-0055",
+    "name": "Oil Cup and Oil Pin Set of 4",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 6,
+    "slot": 11,
+    "image": "assets/products/rit-0055-oil-cup-and-oil-pin-set-of-4.webp",
+    "url": "products/rit-0055.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-09",
+    "sku": "RIT-0056",
+    "name": "Single Oil Cup and Oil Pin Set",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 6,
+    "slot": 12,
+    "image": "assets/products/rit-0056-single-oil-cup-and-oil-pin-set.webp",
+    "url": "products/rit-0056.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 6 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 28,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-05",
+    "sku": "RIT-0052",
+    "name": "Three in One Oil Cup",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 7,
+    "slot": 1,
+    "image": "assets/products/rit-0052-three-in-one-oil-cup.webp",
+    "url": "products/rit-0052.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-06",
+    "sku": "RIT-0053",
+    "name": "Single Oil Cup",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 7,
+    "slot": 2,
+    "image": "assets/products/rit-0053-single-oil-cup.webp",
+    "url": "products/rit-0053.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p06-12",
+    "sku": "RIT-0059",
+    "name": "Wooden Oil Cup",
+    "category": "Oil Cups and Oil Pins",
+    "categoryId": "oiling-tools",
+    "family": "Watchmaking",
+    "page": 7,
+    "slot": 3,
+    "image": "assets/products/rit-0059-wooden-oil-cup.webp",
+    "url": "products/rit-0059.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p18-01",
+    "sku": "RIT-0192",
+    "name": "Square Bench Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 7,
+    "slot": 4,
+    "image": "assets/products/rit-0192-square-bench-tray.webp",
+    "url": "products/rit-0192.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p18-02",
+    "sku": "RIT-0193",
+    "name": "Round Bench Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 7,
+    "slot": 5,
+    "image": "assets/products/rit-0193-round-bench-tray.webp",
+    "url": "products/rit-0193.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-01",
+    "sku": "RIT-0060",
+    "name": "Aluminium Work Holder with 60 Holes",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 7,
+    "slot": 6,
+    "image": "assets/products/rit-0060-aluminium-work-holder-with-60-holes.webp",
+    "url": "products/rit-0060.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-02",
+    "sku": "RIT-0061",
+    "name": "Melting Disc with Wooden Handle 18 Inch",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 7,
+    "slot": 7,
+    "image": "assets/products/rit-0061-melting-disc-with-wooden-handle-18-inch.webp",
+    "url": "products/rit-0061.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-03",
+    "sku": "RIT-0062",
+    "name": "Black Laser Marked Ring Stick Sizes 1 to 36",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 7,
+    "slot": 8,
+    "image": "assets/products/rit-0062-black-laser-marked-ring-stick-sizes-1-to-36.webp",
+    "url": "products/rit-0062.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-04",
+    "sku": "RIT-0063",
+    "name": "Stepped Ring Stick with Base Sizes 4 to 13",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 7,
+    "slot": 9,
+    "image": "assets/products/rit-0063-stepped-ring-stick-with-base-sizes-4-to-13.webp",
+    "url": "products/rit-0063.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-05",
+    "sku": "RIT-0064",
+    "name": "Stepped Ring Stick without Base Sizes 4 to 13",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 7,
+    "slot": 10,
+    "image": "assets/products/rit-0064-stepped-ring-stick-without-base-sizes-4-to-13.webp",
+    "url": "products/rit-0064.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-06",
+    "sku": "RIT-0065",
+    "name": "Ring Stick Sizes 1 to 33",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 7,
+    "slot": 11,
+    "image": "assets/products/rit-0065-ring-stick-sizes-1-to-33.webp",
+    "url": "products/rit-0065.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-07",
+    "sku": "RIT-0066",
+    "name": "Ceramic Clamp with Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 7,
+    "slot": 12,
+    "image": "assets/products/rit-0066-ceramic-clamp-with-base.webp",
+    "url": "products/rit-0066.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 7 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 36,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-08",
+    "sku": "RIT-0067",
+    "name": "Ceramic Clamp",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 1,
+    "image": "assets/products/rit-0067-ceramic-clamp.webp",
+    "url": "products/rit-0067.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-09",
+    "sku": "RIT-0068",
+    "name": "Torch Stand with Six Hole Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 2,
+    "image": "assets/products/rit-0068-torch-stand-with-six-hole-base.webp",
+    "url": "products/rit-0068.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-10",
+    "sku": "RIT-0069",
+    "name": "Ball Joint Third Hand with Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 3,
+    "image": "assets/products/rit-0069-ball-joint-third-hand-with-base.webp",
+    "url": "products/rit-0069.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-11",
+    "sku": "RIT-0070",
+    "name": "Ball Joint Third Hand without Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 4,
+    "image": "assets/products/rit-0070-ball-joint-third-hand-without-base.webp",
+    "url": "products/rit-0070.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p07-12",
+    "sku": "RIT-0071",
+    "name": "Fourth Hand with Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 5,
+    "image": "assets/products/rit-0071-fourth-hand-with-base.webp",
+    "url": "products/rit-0071.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-01",
+    "sku": "RIT-0072",
+    "name": "Fourth Hand without Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 6,
+    "image": "assets/products/rit-0072-fourth-hand-without-base.webp",
+    "url": "products/rit-0072.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-02",
+    "sku": "RIT-0073",
+    "name": "Large Ball Joint Third Hand",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 7,
+    "image": "assets/products/rit-0073-large-ball-joint-third-hand.webp",
+    "url": "products/rit-0073.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-03",
+    "sku": "RIT-0074",
+    "name": "Third Hand Base",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 8,
+    "slot": 8,
+    "image": "assets/products/rit-0074-third-hand-base.webp",
+    "url": "products/rit-0074.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-04",
+    "sku": "RIT-0075",
+    "name": "Multipurpose Link Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 8,
+    "slot": 9,
+    "image": "assets/products/rit-0075-multipurpose-link-remover.webp",
+    "url": "products/rit-0075.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-05",
+    "sku": "RIT-0076",
+    "name": "Large Link Remover 75 mm with Three Extra Pins",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 8,
+    "slot": 10,
+    "image": "assets/products/rit-0076-large-link-remover-75-mm-with-three-extra-pins.webp",
+    "url": "products/rit-0076.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-06",
+    "sku": "RIT-0077",
+    "name": "Adjustable Red Link Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 8,
+    "slot": 11,
+    "image": "assets/products/rit-0077-adjustable-red-link-remover.webp",
+    "url": "products/rit-0077.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-07",
+    "sku": "RIT-0078",
+    "name": "Small Link Remover 25 mm with Three Extra Pins",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 8,
+    "slot": 12,
+    "image": "assets/products/rit-0078-small-link-remover-25-mm-with-three-extra-pins.webp",
+    "url": "products/rit-0078.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 8 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 40,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-08",
+    "sku": "RIT-0079",
+    "name": "Small Golden Link Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 1,
+    "image": "assets/products/rit-0079-small-golden-link-remover.webp",
+    "url": "products/rit-0079.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-09",
+    "sku": "RIT-0080",
+    "name": "Horizontal Link Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 2,
+    "image": "assets/products/rit-0080-horizontal-link-remover.webp",
+    "url": "products/rit-0080.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-10",
+    "sku": "RIT-0081",
+    "name": "Double Hand Link Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 3,
+    "image": "assets/products/rit-0081-double-hand-link-remover.webp",
+    "url": "products/rit-0081.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p9-04",
+    "sku": "RIT-0217",
+    "name": "Plastic Link Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 4,
+    "image": "assets/products/rit-0217-plastic-link-remover.webp",
+    "url": "products/rit-0217.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 4",
+    "newArrival": true,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-11",
+    "sku": "RIT-0082",
+    "name": "Red Link Remover Base with Pins",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 5,
+    "image": "assets/products/rit-0082-red-link-remover-base-with-pins.webp",
+    "url": "products/rit-0082.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-06",
+    "sku": "RIT-0089",
+    "name": "Red Square Plastic Pin Block",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 6,
+    "image": "assets/products/rit-0089-red-square-plastic-pin-block.webp",
+    "url": "products/rit-0089.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-02",
+    "sku": "RIT-0085",
+    "name": "Screw Type Pin Removal Rod 7 mm with Three Pins",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 7,
+    "image": "assets/products/rit-0085-screw-type-pin-removal-rod-7-mm-with-three-pins.webp",
+    "url": "products/rit-0085.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-03",
+    "sku": "RIT-0086",
+    "name": "Plain Pin Removal Rod 7 mm with Three Pins",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 8,
+    "image": "assets/products/rit-0086-plain-pin-removal-rod-7-mm-with-three-pins.webp",
+    "url": "products/rit-0086.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-04",
+    "sku": "RIT-0087",
+    "name": "Replacement Pin Set of 3",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 9,
+    "image": "assets/products/rit-0087-replacement-pin-set-of-3.webp",
+    "url": "products/rit-0087.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-05",
+    "sku": "RIT-0088",
+    "name": "Individual Replacement Pin",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 10,
+    "image": "assets/products/rit-0088-individual-replacement-pin.webp",
+    "url": "products/rit-0088.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-12",
+    "sku": "RIT-0095",
+    "name": "Link Remover Replacement Pins 0.8 and 1.0 mm",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 11,
+    "image": "assets/products/rit-0095-link-remover-replacement-pins-0-8-and-1-0-mm.webp",
+    "url": "products/rit-0095.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-03",
+    "sku": "RIT-0098",
+    "name": "Link Remover Pins with Spring",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 9,
+    "slot": 12,
+    "image": "assets/products/rit-0098-link-remover-pins-with-spring.webp",
+    "url": "products/rit-0098.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 9 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 48,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-07",
+    "sku": "RIT-0090",
+    "name": "GB Long Rod Set of 3",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 1,
+    "image": "assets/products/rit-0090-gb-long-rod-set-of-3.webp",
+    "url": "products/rit-0090.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-08",
+    "sku": "RIT-0091",
+    "name": "Round and Flat GB Long Rods",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 2,
+    "image": "assets/products/rit-0091-round-and-flat-gb-long-rods.webp",
+    "url": "products/rit-0091.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-09",
+    "sku": "RIT-0092",
+    "name": "Double Ended GB Long Rod",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 3,
+    "image": "assets/products/rit-0092-double-ended-gb-long-rod.webp",
+    "url": "products/rit-0092.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-10",
+    "sku": "RIT-0093",
+    "name": "Flat Type Round Clock Gong",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 4,
+    "image": "assets/products/rit-0093-flat-type-round-clock-gong.webp",
+    "url": "products/rit-0093.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-11",
+    "sku": "RIT-0094",
+    "name": "Round Type Clock Gong",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 5,
+    "image": "assets/products/rit-0094-round-type-clock-gong.webp",
+    "url": "products/rit-0094.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-01",
+    "sku": "RIT-0096",
+    "name": "Brass Clock Hook",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 6,
+    "image": "assets/products/rit-0096-brass-clock-hook.webp",
+    "url": "products/rit-0096.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-04",
+    "sku": "RIT-0099",
+    "name": "Square Delrin Block for Pin Removal",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 10,
+    "slot": 7,
+    "image": "assets/products/rit-0099-square-delrin-block-for-pin-removal.webp",
+    "url": "products/rit-0099.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-05",
+    "sku": "RIT-0100",
+    "name": "Ratchet Clip Set with Six Rivets",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 8,
+    "image": "assets/products/rit-0100-ratchet-clip-set-with-six-rivets.webp",
+    "url": "products/rit-0100.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-02",
+    "sku": "RIT-0097",
+    "name": "MS Clock Hook",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 9,
+    "image": "assets/products/rit-0097-ms-clock-hook.webp",
+    "url": "products/rit-0097.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-09",
+    "sku": "RIT-0104",
+    "name": "Medium MS Clock Stabilizer",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 10,
+    "image": "assets/products/rit-0104-medium-ms-clock-stabilizer.webp",
+    "url": "products/rit-0104.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-10",
+    "sku": "RIT-0105",
+    "name": "Large Brass Clock Stabilizer",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 11,
+    "image": "assets/products/rit-0105-large-brass-clock-stabilizer.webp",
+    "url": "products/rit-0105.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-06",
+    "sku": "RIT-0101",
+    "name": "Small MS Clock Stabilizer",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 10,
+    "slot": 12,
+    "image": "assets/products/rit-0101-small-ms-clock-stabilizer.webp",
+    "url": "products/rit-0101.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 10 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 52,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-07",
+    "sku": "RIT-0102",
+    "name": "MS Clock Cover 4.5 and 5.5 Inch",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 11,
+    "slot": 1,
+    "image": "assets/products/rit-0102-ms-clock-cover-4-5-and-5-5-inch.webp",
+    "url": "products/rit-0102.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-08",
+    "sku": "RIT-0103",
+    "name": "Brass Clock Cover 4.5 and 5.5 Inch",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 11,
+    "slot": 2,
+    "image": "assets/products/rit-0103-brass-clock-cover-4-5-and-5-5-inch.webp",
+    "url": "products/rit-0103.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-12",
+    "sku": "RIT-0107",
+    "name": "Diamond Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 11,
+    "slot": 3,
+    "image": "assets/products/rit-0107-diamond-tray.webp",
+    "url": "products/rit-0107.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p08-12",
+    "sku": "RIT-0083",
+    "name": "Triangular Aluminium Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 11,
+    "slot": 4,
+    "image": "assets/products/rit-0083-triangular-aluminium-tray.webp",
+    "url": "products/rit-0083.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p09-01",
+    "sku": "RIT-0084",
+    "name": "White Plastic Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 11,
+    "slot": 5,
+    "image": "assets/products/rit-0084-white-plastic-tray.webp",
+    "url": "products/rit-0084.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p10-11",
+    "sku": "RIT-0106",
+    "name": "Small Novelty Shovel",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 11,
+    "slot": 6,
+    "image": "assets/products/rit-0106-small-novelty-shovel.webp",
+    "url": "products/rit-0106.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-01",
+    "sku": "RIT-0108",
+    "name": "Shovel with Handle",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 11,
+    "slot": 7,
+    "image": "assets/products/rit-0108-shovel-with-handle.webp",
+    "url": "products/rit-0108.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-02",
+    "sku": "RIT-0109",
+    "name": "Chrome Plated Flat Shovel",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 11,
+    "slot": 8,
+    "image": "assets/products/rit-0109-chrome-plated-flat-shovel.webp",
+    "url": "products/rit-0109.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-09",
+    "sku": "RIT-0152",
+    "name": "Round Aluminium Revolving Soldering Holder",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 11,
+    "slot": 9,
+    "image": "assets/products/rit-0152-round-aluminium-revolving-soldering-holder.webp",
+    "url": "products/rit-0152.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-10",
+    "sku": "RIT-0153",
+    "name": "Rectangular Aluminium Tray",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 11,
+    "slot": 10,
+    "image": "assets/products/rit-0153-rectangular-aluminium-tray.webp",
+    "url": "products/rit-0153.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-11",
+    "sku": "RIT-0154",
+    "name": "Solder Tray with Delrin Base 148 by 78 mm",
+    "category": "Soldering and Helping Hands",
+    "categoryId": "soldering-tools",
+    "family": "Jewellery",
+    "page": 11,
+    "slot": 11,
+    "image": "assets/products/rit-0154-solder-tray-with-delrin-base-148-by-78-mm.webp",
+    "url": "products/rit-0154.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p11-12",
+    "sku": "RIT-0218",
+    "name": "Swatch Case Opener",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 11,
+    "slot": 12,
+    "image": "assets/products/rit-0218-swatch-case-opener.webp",
+    "url": "products/rit-0218.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 11 Panel 12",
+    "newArrival": true,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 60,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-03",
+    "sku": "RIT-0110",
+    "name": "File Holder with Wooden Handle",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 12,
+    "slot": 1,
+    "image": "assets/products/rit-0110-file-holder-with-wooden-handle.webp",
+    "url": "products/rit-0110.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-04",
+    "sku": "RIT-0111",
+    "name": "Case Opener Wrench with Wooden Handle",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 12,
+    "slot": 2,
+    "image": "assets/products/rit-0111-case-opener-wrench-with-wooden-handle.webp",
+    "url": "products/rit-0111.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-05",
+    "sku": "RIT-0112",
+    "name": "Blade Cutter with Wooden Handle",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 12,
+    "slot": 3,
+    "image": "assets/products/rit-0112-blade-cutter-with-wooden-handle.webp",
+    "url": "products/rit-0112.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-12",
+    "sku": "RIT-0131",
+    "name": "Brass Crank Key with Wooden Handle",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 4,
+    "image": "assets/products/rit-0131-brass-crank-key-with-wooden-handle.webp",
+    "url": "products/rit-0131.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-03",
+    "sku": "RIT-0134",
+    "name": "Double Wing Round Novelty Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 5,
+    "image": "assets/products/rit-0134-double-wing-round-novelty-clock-key.webp",
+    "url": "products/rit-0134.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-02",
+    "sku": "RIT-0133",
+    "name": "Single Wing Round Novelty Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 6,
+    "image": "assets/products/rit-0133-single-wing-round-novelty-clock-key.webp",
+    "url": "products/rit-0133.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-09",
+    "sku": "RIT-0128",
+    "name": "Five in One Pocket Nickel Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 7,
+    "image": "assets/products/rit-0128-five-in-one-pocket-nickel-clock-key.webp",
+    "url": "products/rit-0128.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-10",
+    "sku": "RIT-0117",
+    "name": "Five in One Brass Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 8,
+    "image": "assets/products/rit-0117-five-in-one-brass-clock-key.webp",
+    "url": "products/rit-0117.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-11",
+    "sku": "RIT-0118",
+    "name": "Small Four in One Brass Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 9,
+    "image": "assets/products/rit-0118-small-four-in-one-brass-clock-key.webp",
+    "url": "products/rit-0118.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-12",
+    "sku": "RIT-0119",
+    "name": "Brass Clock Key Sizes 1.75 to 3.00",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 10,
+    "image": "assets/products/rit-0119-brass-clock-key-sizes-1-75-to-3-00.webp",
+    "url": "products/rit-0119.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-01",
+    "sku": "RIT-0120",
+    "name": "Brass Clock Key Sizes 3.25 to 3.75",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 11,
+    "image": "assets/products/rit-0120-brass-clock-key-sizes-3-25-to-3-75.webp",
+    "url": "products/rit-0120.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-02",
+    "sku": "RIT-0121",
+    "name": "Brass Clock Key Sizes 4.00 to 4.50",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 12,
+    "slot": 12,
+    "image": "assets/products/rit-0121-brass-clock-key-sizes-4-00-to-4-50.webp",
+    "url": "products/rit-0121.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 12 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 64,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-03",
+    "sku": "RIT-0122",
+    "name": "Brass Clock Key Sizes 4.75 to 5.25",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 1,
+    "image": "assets/products/rit-0122-brass-clock-key-sizes-4-75-to-5-25.webp",
+    "url": "products/rit-0122.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-04",
+    "sku": "RIT-0123",
+    "name": "Brass Clock Key Sizes 5.50 to 6.00",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 2,
+    "image": "assets/products/rit-0123-brass-clock-key-sizes-5-50-to-6-00.webp",
+    "url": "products/rit-0123.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-05",
+    "sku": "RIT-0124",
+    "name": "Brass Clock Key Sizes 6.25 to 6.75",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 3,
+    "image": "assets/products/rit-0124-brass-clock-key-sizes-6-25-to-6-75.webp",
+    "url": "products/rit-0124.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-06",
+    "sku": "RIT-0125",
+    "name": "Double Ended Nickel Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 4,
+    "image": "assets/products/rit-0125-double-ended-nickel-clock-key.webp",
+    "url": "products/rit-0125.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-07",
+    "sku": "RIT-0126",
+    "name": "Single Ended Nickel Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 5,
+    "image": "assets/products/rit-0126-single-ended-nickel-clock-key.webp",
+    "url": "products/rit-0126.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-09",
+    "sku": "RIT-0116",
+    "name": "Three Piece Key Set for Wooden Handle Box",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 6,
+    "image": "assets/products/rit-0116-three-piece-key-set-for-wooden-handle-box.webp",
+    "url": "products/rit-0116.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-01",
+    "sku": "RIT-0132",
+    "name": "Wire Crank Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 7,
+    "image": "assets/products/rit-0132-wire-crank-clock-key.webp",
+    "url": "products/rit-0132.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-08",
+    "sku": "RIT-0127",
+    "name": "Novelty Crank Clock Key",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 8,
+    "image": "assets/products/rit-0127-novelty-crank-clock-key.webp",
+    "url": "products/rit-0127.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-11",
+    "sku": "RIT-0130",
+    "name": "Double Ended MS Clock Key Set of 18",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 9,
+    "image": "assets/products/rit-0130-double-ended-ms-clock-key-set-of-18.webp",
+    "url": "products/rit-0130.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p12-10",
+    "sku": "RIT-0129",
+    "name": "Double Ended Brass Clock Key Set of 18",
+    "category": "Clock Winding Keys",
+    "categoryId": "clock-keys",
+    "family": "Clockmaking",
+    "page": 13,
+    "slot": 10,
+    "image": "assets/products/rit-0129-double-ended-brass-clock-key-set-of-18.webp",
+    "url": "products/rit-0129.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-04",
+    "sku": "RIT-0135",
+    "name": "Aluminium Knife Case Opener",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 13,
+    "slot": 11,
+    "image": "assets/products/rit-0135-aluminium-knife-case-opener.webp",
+    "url": "products/rit-0135.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-05",
+    "sku": "RIT-0136",
+    "name": "Aluminium Knife Case Opener Replacement Blade",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 13,
+    "slot": 12,
+    "image": "assets/products/rit-0136-aluminium-knife-case-opener-replacement-blade.webp",
+    "url": "products/rit-0136.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 13 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 72,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-06",
+    "sku": "RIT-0137",
+    "name": "Case Back Opener Set of 4",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 1,
+    "image": "assets/products/rit-0137-case-back-opener-set-of-4.webp",
+    "url": "products/rit-0137.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-07",
+    "sku": "RIT-0138",
+    "name": "Renata Type Case Back Opener",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 2,
+    "image": "assets/products/rit-0138-renata-type-case-back-opener.webp",
+    "url": "products/rit-0138.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-08",
+    "sku": "RIT-0139",
+    "name": "Original Model Case Back Opener",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 3,
+    "image": "assets/products/rit-0139-original-model-case-back-opener.webp",
+    "url": "products/rit-0139.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-09",
+    "sku": "RIT-0140",
+    "name": "Knife Type Case Back Opener",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 4,
+    "image": "assets/products/rit-0140-knife-type-case-back-opener.webp",
+    "url": "products/rit-0140.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-10",
+    "sku": "RIT-0141",
+    "name": "MS Flat Case Opener with Screw and Knife",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 5,
+    "image": "assets/products/rit-0141-ms-flat-case-opener-with-screw-and-knife.webp",
+    "url": "products/rit-0141.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-11",
+    "sku": "RIT-0142",
+    "name": "Aluminium Case Holder",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 14,
+    "slot": 6,
+    "image": "assets/products/rit-0142-aluminium-case-holder.webp",
+    "url": "products/rit-0142.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p13-12",
+    "sku": "RIT-0143",
+    "name": "Plastic Case Holder",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 14,
+    "slot": 7,
+    "image": "assets/products/rit-0143-plastic-case-holder.webp",
+    "url": "products/rit-0143.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-01",
+    "sku": "RIT-0144",
+    "name": "Side Bar Opener",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 8,
+    "image": "assets/products/rit-0144-side-bar-opener.webp",
+    "url": "products/rit-0144.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-02",
+    "sku": "RIT-0145",
+    "name": "Blue Side Bar Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 9,
+    "image": "assets/products/rit-0145-blue-side-bar-remover.webp",
+    "url": "products/rit-0145.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-03",
+    "sku": "RIT-0146",
+    "name": "Side Bar and Pin Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 10,
+    "image": "assets/products/rit-0146-side-bar-and-pin-remover.webp",
+    "url": "products/rit-0146.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p14-11",
+    "sku": "RIT-0219",
+    "name": "Spring Bar Remover with Measuring Scale",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 11,
+    "image": "assets/products/rit-0219-spring-bar-remover-with-measuring-scale.webp",
+    "url": "products/rit-0219.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 11",
+    "newArrival": true,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-04",
+    "sku": "RIT-0147",
+    "name": "MS Side Bar Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 14,
+    "slot": 12,
+    "image": "assets/products/rit-0147-ms-side-bar-remover.webp",
+    "url": "products/rit-0147.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 14 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 76,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-01",
+    "sku": "RIT-0156",
+    "name": "Nine Hole Screwdriver Stand with Screwdrivers",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 1,
+    "image": "assets/products/rit-0156-nine-hole-screwdriver-stand-with-screwdrivers.webp",
+    "url": "products/rit-0156.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-02",
+    "sku": "RIT-0157",
+    "name": "Revolving Screwdriver Stand with Eight Screwdrivers",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 2,
+    "image": "assets/products/rit-0157-revolving-screwdriver-stand-with-eight-screwdrivers.webp",
+    "url": "products/rit-0157.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p15-03",
+    "sku": "RIT-0220",
+    "name": "Brass Revolving Screwdriver Stand with Screwdrivers",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 3,
+    "image": "assets/products/rit-0220-brass-revolving-screwdriver-stand-with-screwdrivers.webp",
+    "url": "products/rit-0220.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 3",
+    "newArrival": true,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-03",
+    "sku": "RIT-0158",
+    "name": "Wooden Screwdriver Stand with Five Screwdrivers",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 4,
+    "image": "assets/products/rit-0158-wooden-screwdriver-stand-with-five-screwdrivers.webp",
+    "url": "products/rit-0158.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-12",
+    "sku": "RIT-0155",
+    "name": "Revolving Screwdriver Stand without Tools",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 15,
+    "slot": 5,
+    "image": "assets/products/rit-0155-revolving-screwdriver-stand-without-tools.webp",
+    "url": "products/rit-0155.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-12",
+    "sku": "RIT-0167",
+    "name": "Seven Hole Aluminium Screwdriver Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 15,
+    "slot": 6,
+    "image": "assets/products/rit-0167-seven-hole-aluminium-screwdriver-stand.webp",
+    "url": "products/rit-0167.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-08",
+    "sku": "RIT-0175",
+    "name": "Five Hole Aluminium Screwdriver Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 15,
+    "slot": 7,
+    "image": "assets/products/rit-0175-five-hole-aluminium-screwdriver-stand.webp",
+    "url": "products/rit-0175.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-04",
+    "sku": "RIT-0159",
+    "name": "Nine Piece Screwdriver Set with Stainless Steel Caps",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 8,
+    "image": "assets/products/rit-0159-nine-piece-screwdriver-set-with-stainless-steel-caps.webp",
+    "url": "products/rit-0159.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-05",
+    "sku": "RIT-0160",
+    "name": "Nine Piece Screwdriver Set with Aluminium Caps",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 9,
+    "image": "assets/products/rit-0160-nine-piece-screwdriver-set-with-aluminium-caps.webp",
+    "url": "products/rit-0160.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p15-10",
+    "sku": "RIT-0221",
+    "name": "Screwdriver Set in Wooden Box",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 10,
+    "image": "assets/products/rit-0221-screwdriver-set-in-wooden-box.webp",
+    "url": "products/rit-0221.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 10",
+    "newArrival": true,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-06",
+    "sku": "RIT-0161",
+    "name": "Phillips Crosshead Screwdriver and Screw Remover",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 11,
+    "image": "assets/products/rit-0161-phillips-crosshead-screwdriver-and-screw-remover.webp",
+    "url": "products/rit-0161.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-07",
+    "sku": "RIT-0162",
+    "name": "Slotted Head Screwdriver and Screw Remover",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 15,
+    "slot": 12,
+    "image": "assets/products/rit-0162-slotted-head-screwdriver-and-screw-remover.webp",
+    "url": "products/rit-0162.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 15 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 84,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-08",
+    "sku": "RIT-0163",
+    "name": "Screwdriver with Extra Grip",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 1,
+    "image": "assets/products/rit-0163-screwdriver-with-extra-grip.webp",
+    "url": "products/rit-0163.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-09",
+    "sku": "RIT-0164",
+    "name": "Screwdriver with Stainless Steel Cap",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 2,
+    "image": "assets/products/rit-0164-screwdriver-with-stainless-steel-cap.webp",
+    "url": "products/rit-0164.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-10",
+    "sku": "RIT-0165",
+    "name": "Screwdriver with Aluminium Cap",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 3,
+    "image": "assets/products/rit-0165-screwdriver-with-aluminium-cap.webp",
+    "url": "products/rit-0165.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p15-11",
+    "sku": "RIT-0166",
+    "name": "Screwdriver with Four Replacement Pins",
+    "category": "Precision Screwdrivers",
+    "categoryId": "screwdrivers",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 4,
+    "image": "assets/products/rit-0166-screwdriver-with-four-replacement-pins.webp",
+    "url": "products/rit-0166.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-06",
+    "sku": "RIT-0173",
+    "name": "Pin Holder 7 by 75 mm",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 5,
+    "image": "assets/products/rit-0173-pin-holder-7-by-75-mm.webp",
+    "url": "products/rit-0173.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-10",
+    "sku": "RIT-0189",
+    "name": "Pin Pusher",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 6,
+    "image": "assets/products/rit-0189-pin-pusher.webp",
+    "url": "products/rit-0189.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p18-03",
+    "sku": "RIT-0194",
+    "name": "Hand Presser Set of 4",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 7,
+    "image": "assets/products/rit-0194-hand-presser-set-of-4.webp",
+    "url": "products/rit-0194.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p18-04",
+    "sku": "RIT-0195",
+    "name": "Hand Fitting Tools",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 8,
+    "image": "assets/products/rit-0195-hand-fitting-tools.webp",
+    "url": "products/rit-0195.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p16-09",
+    "sku": "RIT-0222",
+    "name": "Hand Presser Set of 6",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 9,
+    "image": "assets/products/rit-0222-hand-presser-set-of-6.webp",
+    "url": "products/rit-0222.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 9",
+    "newArrival": true,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p16-10",
+    "sku": "RIT-0223",
+    "name": "Revolving Hand Press",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 10,
+    "image": "assets/products/rit-0223-revolving-hand-press.webp",
+    "url": "products/rit-0223.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 10",
+    "newArrival": true,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-10",
+    "sku": "RIT-0177",
+    "name": "Hole Punch",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 11,
+    "image": "assets/products/rit-0177-hole-punch.webp",
+    "url": "products/rit-0177.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-11",
+    "sku": "RIT-0178",
+    "name": "Rolex Handle",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 16,
+    "slot": 12,
+    "image": "assets/products/rit-0178-rolex-handle.webp",
+    "url": "products/rit-0178.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 16 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 90,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-06",
+    "sku": "RIT-0113",
+    "name": "MS Link Remover Pillar Set",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 17,
+    "slot": 1,
+    "image": "assets/products/rit-0113-ms-link-remover-pillar-set.webp",
+    "url": "products/rit-0113.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-07",
+    "sku": "RIT-0114",
+    "name": "Stainless Steel Link Remover Pillar Set",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 17,
+    "slot": 2,
+    "image": "assets/products/rit-0114-stainless-steel-link-remover-pillar-set.webp",
+    "url": "products/rit-0114.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-12",
+    "sku": "RIT-0179",
+    "name": "Silicone Casing Cushion",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 17,
+    "slot": 3,
+    "image": "assets/products/rit-0179-silicone-casing-cushion.webp",
+    "url": "products/rit-0179.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p17-04",
+    "sku": "RIT-0224",
+    "name": "Silicone Cushions",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 17,
+    "slot": 4,
+    "image": "assets/products/rit-0224-silicone-cushions.webp",
+    "url": "products/rit-0224.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 4",
+    "newArrival": true,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-07",
+    "sku": "RIT-0174",
+    "name": "Blue Aluminium Base",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 17,
+    "slot": 5,
+    "image": "assets/products/rit-0174-blue-aluminium-base.webp",
+    "url": "products/rit-0174.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-09",
+    "sku": "RIT-0176",
+    "name": "Watch Strap Holder",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 17,
+    "slot": 6,
+    "image": "assets/products/rit-0176-watch-strap-holder.webp",
+    "url": "products/rit-0176.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p17-07",
+    "sku": "RIT-0225",
+    "name": "Aluminium Movement Holder",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 17,
+    "slot": 7,
+    "image": "assets/products/rit-0225-aluminium-movement-holder.webp",
+    "url": "products/rit-0225.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 7",
+    "newArrival": true,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-07",
+    "sku": "RIT-0150",
+    "name": "Cell Testing Tweezer 1.5 V",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 17,
+    "slot": 8,
+    "image": "assets/products/rit-0150-cell-testing-tweezer-1-5-v.webp",
+    "url": "products/rit-0150.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-08",
+    "sku": "RIT-0151",
+    "name": "Cell Testing Tweezer 1.5 to 3 V",
+    "category": "Tweezers",
+    "categoryId": "tweezers",
+    "family": "Workshop Essentials",
+    "page": 17,
+    "slot": 9,
+    "image": "assets/products/rit-0151-cell-testing-tweezer-1-5-to-3-v.webp",
+    "url": "products/rit-0151.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-01",
+    "sku": "RIT-0168",
+    "name": "Acid Bottle",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 17,
+    "slot": 10,
+    "image": "assets/products/rit-0168-acid-bottle.webp",
+    "url": "products/rit-0168.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-05",
+    "sku": "RIT-0148",
+    "name": "Rubber Case Back Opener with Wooden Handle",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "page": 17,
+    "slot": 11,
+    "image": "assets/products/rit-0148-rubber-case-back-opener-with-wooden-handle.webp",
+    "url": "products/rit-0148.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p14-06",
+    "sku": "RIT-0149",
+    "name": "BA Spanner Set of 6",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 17,
+    "slot": 12,
+    "image": "assets/products/rit-0149-ba-spanner-set-of-6.webp",
+    "url": "products/rit-0149.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 17 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 94,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-03",
+    "sku": "RIT-0170",
+    "name": "Original Model Glass Fitting Machine",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 18,
+    "slot": 1,
+    "image": "assets/products/rit-0170-original-model-glass-fitting-machine.webp",
+    "url": "products/rit-0170.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-02",
+    "sku": "RIT-0169",
+    "name": "Glass Fitting Machine Model A",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 18,
+    "slot": 2,
+    "image": "assets/products/rit-0169-glass-fitting-machine-model-a.webp",
+    "url": "products/rit-0169.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p18-03",
+    "sku": "RIT-0226",
+    "name": "Glass Fitting Machine Model B",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 18,
+    "slot": 3,
+    "image": "assets/products/rit-0226-glass-fitting-machine-model-b.webp",
+    "url": "products/rit-0226.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 3",
+    "newArrival": true,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-04",
+    "sku": "RIT-0171",
+    "name": "Round and Square Delrin Fitting Bases",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 18,
+    "slot": 4,
+    "image": "assets/products/rit-0171-round-and-square-delrin-fitting-bases.webp",
+    "url": "products/rit-0171.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p11-08",
+    "sku": "RIT-0115",
+    "name": "Delrin Belt Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 18,
+    "slot": 5,
+    "image": "assets/products/rit-0115-delrin-belt-remover.webp",
+    "url": "products/rit-0115.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p16-05",
+    "sku": "RIT-0172",
+    "name": "Square Delrin Base Set of 6",
+    "category": "Glass and Hand Fitting",
+    "categoryId": "glass-hand-tools",
+    "family": "Watchmaking",
+    "page": 18,
+    "slot": 6,
+    "image": "assets/products/rit-0172-square-delrin-base-set-of-6.webp",
+    "url": "products/rit-0172.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 6",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-03",
+    "sku": "RIT-0182",
+    "name": "Bopp Wire",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 18,
+    "slot": 7,
+    "image": "assets/products/rit-0182-bopp-wire.webp",
+    "url": "products/rit-0182.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-04",
+    "sku": "RIT-0183",
+    "name": "Aluminium Screwdriver Stand",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 18,
+    "slot": 8,
+    "image": "assets/products/rit-0183-aluminium-screwdriver-stand.webp",
+    "url": "products/rit-0183.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 8",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-05",
+    "sku": "RIT-0184",
+    "name": "Lid Cover",
+    "category": "Trays, Covers and Storage",
+    "categoryId": "trays-storage",
+    "family": "Workshop Essentials",
+    "page": 18,
+    "slot": 9,
+    "image": "assets/products/rit-0184-lid-cover.webp",
+    "url": "products/rit-0184.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 9",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      1702,
+      1765,
+      2298,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-06",
+    "sku": "RIT-0185",
+    "name": "MS Hook",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 18,
+    "slot": 10,
+    "image": "assets/products/rit-0185-ms-hook.webp",
+    "url": "products/rit-0185.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 10",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      186,
+      2553,
+      785,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-07",
+    "sku": "RIT-0186",
+    "name": "Ring Clamp",
+    "category": "Jewellery Bench Tools",
+    "categoryId": "jewellery-tools",
+    "family": "Jewellery",
+    "page": 18,
+    "slot": 11,
+    "image": "assets/products/rit-0186-ring-clamp.webp",
+    "url": "products/rit-0186.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 11",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      942,
+      2553,
+      1542,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-11",
+    "sku": "RIT-0190",
+    "name": "Finger Gauge",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 18,
+    "slot": 12,
+    "image": "assets/products/rit-0190-finger-gauge.webp",
+    "url": "products/rit-0190.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 18 Panel 12",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 100,
+    "sourceCrop": [
+      1702,
+      2553,
+      2298,
+      3079
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-08",
+    "sku": "RIT-0187",
+    "name": "Cell Tester",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 19,
+    "slot": 1,
+    "image": "assets/products/rit-0187-cell-tester.webp",
+    "url": "products/rit-0187.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 1",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 525,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      186,
+      189,
+      785,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-09",
+    "sku": "RIT-0188",
+    "name": "Tweezer Holder",
+    "category": "Holders and Stands",
+    "categoryId": "holders-stands",
+    "family": "Workshop Essentials",
+    "page": 19,
+    "slot": 2,
+    "image": "assets/products/rit-0188-tweezer-holder.webp",
+    "url": "products/rit-0188.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 2",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 525,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      942,
+      189,
+      1542,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-12",
+    "sku": "RIT-0191",
+    "name": "Plastic Side Bar Remover",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 19,
+    "slot": 3,
+    "image": "assets/products/rit-0191-plastic-side-bar-remover.webp",
+    "url": "products/rit-0191.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 3",
+    "newArrival": false,
+    "imageWidth": 596,
+    "imageHeight": 525,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      1702,
+      189,
+      2298,
+      714
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-01",
+    "sku": "RIT-0180",
+    "name": "Dark Coiled Mainspring",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 19,
+    "slot": 4,
+    "image": "assets/products/rit-0180-dark-coiled-mainspring.webp",
+    "url": "products/rit-0180.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 4",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      186,
+      977,
+      785,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p17-02",
+    "sku": "RIT-0181",
+    "name": "Bronze Tone Coiled Mainspring",
+    "category": "Clock Parts and Accessories",
+    "categoryId": "clock-parts",
+    "family": "Clockmaking",
+    "page": 19,
+    "slot": 5,
+    "image": "assets/products/rit-0181-bronze-tone-coiled-mainspring.webp",
+    "url": "products/rit-0181.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 5",
+    "newArrival": false,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      942,
+      977,
+      1542,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p19-06",
+    "sku": "RIT-0227",
+    "name": "Watch Strap and Lug Measuring Tool",
+    "category": "Gauges and Selectors",
+    "categoryId": "gauges-selectors",
+    "family": "Workshop Essentials",
+    "page": 19,
+    "slot": 6,
+    "image": "assets/products/rit-0227-watch-strap-and-lug-measuring-tool.webp",
+    "url": "products/rit-0227.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 6",
+    "newArrival": true,
+    "imageWidth": 596,
+    "imageHeight": 526,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      1702,
+      977,
+      2298,
+      1503
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p03-06",
+    "sku": "RIT-0018",
+    "name": "Auxiliary Eye Glass Lens",
+    "category": "Eye Loupes and Magnifiers",
+    "categoryId": "eye-loupes",
+    "family": "Watchmaking",
+    "page": 19,
+    "slot": 7,
+    "image": "assets/products/rit-0018-auxiliary-eye-glass-lens.webp",
+    "url": "products/rit-0018.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 7",
+    "newArrival": false,
+    "imageWidth": 599,
+    "imageHeight": 526,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      186,
+      1765,
+      785,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "hr-p19-08",
+    "sku": "RIT-0228",
+    "name": "Brass Pin Pusher",
+    "category": "Bracelet and Strap Tools",
+    "categoryId": "link-strap-tools",
+    "family": "Watchmaking",
+    "page": 19,
+    "slot": 8,
+    "image": "assets/products/rit-0228-brass-pin-pusher.webp",
+    "url": "products/rit-0228.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 19 Panel 8",
+    "newArrival": true,
+    "imageWidth": 600,
+    "imageHeight": 526,
+    "sourceImageXref": 106,
+    "sourceCrop": [
+      942,
+      1765,
+      1542,
+      2291
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p19-04",
+    "sku": "RIT-0199",
+    "name": "Teardrop Qibla Compass",
+    "category": "Compasses",
+    "categoryId": "compasses",
+    "family": "Workshop Essentials",
+    "page": 20,
+    "slot": 1,
+    "image": "assets/products/rit-0199-teardrop-qibla-compass.webp",
+    "url": "products/rit-0199.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 20 Panel 1",
+    "newArrival": false,
+    "imageWidth": 1018,
+    "imageHeight": 1456,
+    "sourceImageXref": 110,
+    "sourceCrop": [
+      156,
+      235,
+      1174,
+      1691
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p19-02",
+    "sku": "RIT-0197",
+    "name": "Round Hanging Qibla Compass",
+    "category": "Compasses",
+    "categoryId": "compasses",
+    "family": "Workshop Essentials",
+    "page": 20,
+    "slot": 2,
+    "image": "assets/products/rit-0197-round-hanging-qibla-compass.webp",
+    "url": "products/rit-0197.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 20 Panel 2",
+    "newArrival": false,
+    "imageWidth": 1060,
+    "imageHeight": 1389,
+    "sourceImageXref": 110,
+    "sourceCrop": [
+      1347,
+      323,
+      2407,
+      1712
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p19-03",
+    "sku": "RIT-0198",
+    "name": "Roshan Industries Round Hanging Compass",
+    "category": "Compasses",
+    "categoryId": "compasses",
+    "family": "Workshop Essentials",
+    "page": 20,
+    "slot": 3,
+    "image": "assets/products/rit-0198-roshan-industries-round-hanging-compass.webp",
+    "url": "products/rit-0198.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 20 Panel 3",
+    "newArrival": false,
+    "imageWidth": 1033,
+    "imageHeight": 1270,
+    "sourceImageXref": 110,
+    "sourceCrop": [
+      136,
+      1957,
+      1169,
+      3227
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  },
+  {
+    "id": "p19-01",
+    "sku": "RIT-0196",
+    "name": "Round Dial Qibla Compass",
+    "category": "Compasses",
+    "categoryId": "compasses",
+    "family": "Workshop Essentials",
+    "page": 20,
+    "slot": 4,
+    "image": "assets/products/rit-0196-round-dial-qibla-compass.webp",
+    "url": "products/rit-0196.html",
+    "nameConfirmed": true,
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf",
+    "sourcePanel": "Page 20 Panel 4",
+    "newArrival": false,
+    "imageWidth": 1104,
+    "imageHeight": 1123,
+    "sourceImageXref": 110,
+    "sourceCrop": [
+      1312,
+      2108,
+      2416,
+      3231
+    ],
+    "sourceNativeSize": [
+      2481,
+      3508
+    ]
+  }
+]

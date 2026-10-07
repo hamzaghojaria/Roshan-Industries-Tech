@@ -21,7 +21,7 @@ try {
     const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
     await page.route('https://**/*', (r) => r.abort());
     await page.goto(home, { waitUntil: 'domcontentloaded' });
-    assert.equal(await page.locator('[data-slider]').count(), 3);
+    assert.equal(await page.locator('[data-slider]').count(), 2);
     for (const slider of await page.locator('[data-slider]').all()) {
       await slider.scrollIntoViewIfNeeded();
       await page.waitForTimeout(5500);
@@ -86,7 +86,7 @@ try {
       'auto',
     );
     console.log(
-      'PASS: three automatic sliders, responsive controls/wrapping, reduced motion and native no-JavaScript scrolling.',
+      'PASS: two automatic sliders, responsive controls/wrapping, reduced motion and native no-JavaScript scrolling.',
     );
   } finally {
     await browser.close();

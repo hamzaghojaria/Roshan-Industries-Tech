@@ -19,6 +19,7 @@ __pycache__/
 /categories.html
 /about.html
 /contact.html
+/new-arrivals.html
 /categories/
 /products/
 /products.js
@@ -29,14 +30,14 @@ __pycache__/
 
 # Retired generated page and old reference documents
 /photo-credits.html
-/assets/roshan-product-catalogue.pdf
 /src/data/roshan-premium-catalogue-source.pdf
 /reference-documents/
 
 # Local exports and review artifacts
-# Keep assets/roshan-updated-product-catalogue.pdf tracked for website downloads.
+# Keep the authoritative high resolution catalogue and synchronized workbook tracked.
 /Roshan-Industries-Catalogue-Premium-Verified.pdf
 *.xlsx
+!/Roshan-Industries-Product-Catalogue.xlsx
 ~$*
 *.zip
 *.tar.gz

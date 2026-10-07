@@ -1,6 +1,4 @@
-# PDF/image extraction and audited Excel export; unused by the website runtime.
+﻿# Native scan extraction and synchronized workbook export. Not needed by website hosting.
+pymupdf
 pillow
-pypdfium2
 openpyxl
-reportlab
-pypdf

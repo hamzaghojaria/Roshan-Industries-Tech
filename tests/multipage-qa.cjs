@@ -49,7 +49,7 @@ let browser;
   assert.equal(await page.locator('#pagination button[aria-label^="Page "]').count(), 3);
   assert.equal(await page.locator('.pagination-ellipsis').count(), 1);
   // Next traverses every page even though only three page numbers are shown.
-  for (let current = 2; current <= 9; current++) {
+  for (let current = 2; current <= 10; current++) {
     await page
       .locator('#pagination button')
       .filter({ hasText: /^Next$/ })
@@ -70,7 +70,7 @@ let browser;
   await page.locator('[data-page="2"]').first().click();
   assert.match(await page.locator('#results-count').textContent(), /Showing 25–48/);
   await page.locator('#catalogue-query').fill('glass fitting');
-  assert.equal(await page.locator('#catalogue-grid .product-card').count(), 6);
+  assert.equal(await page.locator('#catalogue-grid .product-card').count(), 11);
   assert.equal(await page.locator('#search').inputValue(), '');
   await page.reload();
   assert.equal(await page.locator('#catalogue-query').inputValue(), 'glass fitting');
@@ -82,14 +82,15 @@ let browser;
   await page.locator('#reset-search').click();
   assert.equal(await page.locator('#search').inputValue(), 'clock');
   await page.locator('#sort').selectOption('desc');
-  assert.match(await page.locator('#catalogue-grid h3').first().textContent(), /Yellow tweezer/);
+  assert.match(await page.locator('#catalogue-grid h3').first().textContent(), /Yellow Tweezer/);
   // Family selection composes with search, survives reload, and shows the correct totals.
   await page.goto(url('catalogue.html'));
   for (const [family, total] of [
-    ['Watchmaking', 86],
+    ['Watchmaking', 98],
     ['Clockmaking', 36],
     ['Jewellery', 21],
-    ['Workshop Essentials', 57],
+    ['Workshop Essentials', 61],
+    ['Pumps', 12],
   ]) {
     await page.goto(url('catalogue.html') + '?family=' + encodeURIComponent(family));
     assert.equal(await page.locator('#family-filter').count(), 0);
@@ -100,7 +101,7 @@ let browser;
     assert.equal(new URL(page.url()).searchParams.get('family'), family);
   }
   await page.reload();
-  assert.equal(new URL(page.url()).searchParams.get('family'), 'Workshop Essentials');
+  assert.equal(new URL(page.url()).searchParams.get('family'), 'Pumps');
   await page.goto(url('catalogue.html') + '?family=Watchmaking');
   await page.locator('#catalogue-query').fill('RIT-0001');
   assert.equal(await page.locator('#catalogue-grid .product-card').count(), 1);
@@ -114,20 +115,20 @@ let browser;
     await page.locator('#primary-navigation [aria-current="page"]').textContent(),
     'Products',
   );
-  assert.equal(await page.locator('.sidebar-family').count(), 4);
-  assert.equal(await page.locator('#category-jump optgroup').count(), 4);
+  assert.equal(await page.locator('.sidebar-family').count(), 5);
+  assert.equal(await page.locator('#category-jump optgroup').count(), 5);
   for (const file of fs.readdirSync(path.join(root, 'categories'))) {
     await page.goto(url('categories/' + file));
     assert((await page.locator('#catalogue-grid .product-card').count()) > 0);
     assert.equal(await page.locator('.sidebar [aria-current="page"]').count(), 1);
   }
   await page.goto(url('categories.html'));
-  assert.equal(await page.locator('.category-card').count(), 15);
-  assert.equal(await page.locator('.family-overview a').count(), 4);
-  assert.equal(await page.locator('.family-heading').count(), 4);
+  assert.equal(await page.locator('.category-card').count(), 21);
+  assert.equal(await page.locator('.family-overview a').count(), 5);
+  assert.equal(await page.locator('.family-heading').count(), 5);
   assert.equal(
     await page.locator('#family-watchmaking .family-count span').textContent(),
-    '6 categories · 86 products',
+    '6 categories · 98 products',
   );
   await page.locator('.family-overview a').first().click();
   assert.match(page.url(), /#family-watchmaking$/);
@@ -180,7 +181,7 @@ let browser;
   await page.goto(url('categories/clock-keys.html'));
   await page.locator('#category-jump').selectOption('../categories/screwdrivers.html');
   await page.waitForURL(/categories\/screwdrivers\.html/);
-  assert.equal(await page.locator('#catalogue-grid .product-card').count(), 11);
+  assert.equal(await page.locator('#catalogue-grid .product-card').count(), 13);
   assert.deepEqual(errors, []);
   console.log(
     'PASS: family filters and totals, reload/search combinations, category-to-family navigation, all categories, pagination, sorting and 200% text enlargement.',
