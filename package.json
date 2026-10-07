@@ -19,7 +19,8 @@
     "export:xlsx": "python scripts/export-high-resolution-workbook.py",
     "test:source": "node tests/high-resolution-qa.cjs",
     "check:source": "node scripts/validate-high-resolution.mjs",
-    "test:product-actions": "node tests/catalogue-actions-qa.cjs"
+    "test:product-actions": "node tests/catalogue-actions-qa.cjs",
+    "test:build": "node tests/fresh-build-qa.cjs"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",

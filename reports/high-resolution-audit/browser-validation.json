@@ -86,5 +86,12 @@
     "matchedWidths": true,
     "matchedDesktopHeights": true,
     "mobileStacked": true
+  },
+  "freshHostingBuild": {
+    "generatedFoldersInitiallyAbsent": true,
+    "firstBuildPassed": true,
+    "repeatBuildPassed": true,
+    "obsoleteRoutesRemoved": true,
+    "validatedPages": 255
   }
 }

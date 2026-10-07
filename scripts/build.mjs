@@ -52,6 +52,9 @@ for (const [directory, expected] of [
   ['categories', new Set(categories.map((c) => c.id + '.html'))],
 ]) {
   const location = path.join(root, directory);
+  // Generated folders are absent on a fresh Git checkout, including Render builds.
+  // The page writer creates them below; there are no stale routes to remove yet.
+  if (!fs.existsSync(location)) continue;
   if (path.relative(root, fs.realpathSync(location)) !== directory)
     throw new Error('Unexpected generated directory');
   for (const file of fs.readdirSync(location))
