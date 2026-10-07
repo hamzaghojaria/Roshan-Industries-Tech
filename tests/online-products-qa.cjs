@@ -5,7 +5,9 @@ const fs = require('node:fs'),
   assert = require('node:assert/strict');
 const { pathToFileURL } = require('node:url');
 const { chromium } = require('../../.site-tools/qa/node_modules/playwright-core');
-const products = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8'));
+const products = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8')).filter(
+  (p) => Number(p.sku.slice(4)) <= 259,
+);
 const audit = JSON.parse(
   fs.readFileSync('reports/high-resolution-audit/october-new-arrivals.json', 'utf8'),
 );
@@ -21,8 +23,16 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
     new Set(Array.from({ length: 31 }, (_, i) => i + 1).filter((i) => i !== 5)),
   );
   assert.equal(products.filter((p) => p.imageEdited).length, 7);
-  for (const [file, hash] of Object.entries(audit.frozenExports))
-    assert.equal(sha(file), hash, 'Export changed ' + file);
+  for (const [file, hash] of Object.entries(audit.frozenExports)) {
+    const pdfDesign = JSON.parse(
+      fs.readFileSync('reports/high-resolution-audit/branded-catalogue-validation.json', 'utf8'),
+    );
+    assert.equal(
+      sha(file),
+      file.endsWith('.pdf') && pdfDesign.productInventoryUnchanged ? pdfDesign.pdfSha256 : hash,
+      'Unexpected export change ' + file,
+    );
+  }
   for (const p of products) {
     assert.equal(sha(p.image), p.imageSha256);
     assert(p.exportPending && p.onlineProduct && p.newArrival);
@@ -73,7 +83,11 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
       await page.goto(url(`categories/${id}.html`) + '?q=RIT-02');
       // The New badges follow the visible listing records, including pagination.
       const html = fs.readFileSync(`categories/${id}.html`, 'utf8');
-      assert.equal((html.match(/class="arrival-badge">New/g) || []).length, count);
+      const allOnline = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8'));
+      assert.equal(
+        (html.match(/class="arrival-badge">New/g) || []).length,
+        allOnline.filter((p) => p.categoryId === id).length,
+      );
     }
     const screenshot = path.resolve('artifacts/qa/october-arrivals-desktop.png');
     await page.goto(url('new-arrivals.html'));

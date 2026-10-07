@@ -8,7 +8,8 @@
       760
     ],
     "overflow": false,
-    "brokenBreadcrumbs": false
+    "brokenBreadcrumbs": false,
+    "testedBeforeFinalLinkBatch": true
   },
   "newArrivals": {
     "widths": [
@@ -18,7 +19,7 @@
       1024,
       1440
     ],
-    "products": 31,
+    "products": 36,
     "filters": true,
     "mobileHorizontalSlider": true,
     "imagesDecode": true,
@@ -26,8 +27,8 @@
     "homePreviewRemoved": true
   },
   "productBadges": {
-    "selectedProducts": 31,
-    "allProductPagesChecked": 259,
+    "selectedProducts": 36,
+    "allProductPagesChecked": 264,
     "selectedBadgesConsistent": true,
     "unselectedProductsHaveNoBadge": true,
     "mobileAndDesktop": true
@@ -52,9 +53,11 @@
   },
   "catalogueDownload": {
     "products": 228,
-    "pages": 52,
+    "pages": 53,
     "clickableIndex": true,
-    "productPageLinksChecked": true
+    "productPageLinksChecked": true,
+    "coverLogoCentered": true,
+    "dedicatedIntroduction": true
   },
   "errors": [],
   "restoredPumps": {
@@ -112,9 +115,9 @@
     "pdfAndExcelUnchanged": true
   },
   "productImages": {
-    "decoded": 259,
+    "decoded": 264,
     "naturalDimensionsMatchRecords": true,
-    "onlinePhotos": 31,
+    "onlinePhotos": 36,
     "editedPhotos": 7
   },
   "onlineAdditions": {
@@ -125,8 +128,10 @@
     "stableSkus": true,
     "modelAndCapacitySearch": true,
     "descriptionValidation": true,
-    "pdfAndXlsxUnchanged": true,
-    "newProductButtonsAligned": true
+    "pdfAndXlsxUnchanged": false,
+    "newProductButtonsAligned": true,
+    "xlsxUnchanged": true,
+    "pdfCoverAndIntroductionUpdated": true
   },
   "cleanCheckoutBuild": {
     "products": 259,
@@ -134,5 +139,27 @@
     "freshBuild": true,
     "repeatBuild": true,
     "obsoleteGeneratedRoutesRemoved": true
+  },
+  "finalLinkedProducts": {
+    "uniqueLinks": 8,
+    "newProducts": 5,
+    "duplicateProductReferences": 3,
+    "websiteProducts": 264,
+    "newArrivalProducts": 36,
+    "widths": [
+      320,
+      390,
+      760,
+      1440
+    ],
+    "allImagesDecode": true,
+    "searchBySku": true,
+    "badgesConsistent": true,
+    "noHorizontalOverflow": true,
+    "excelUnchanged": true
+  },
+  "finalStaticLinkValidation": {
+    "routes": 291,
+    "passed": true
   }
 }

@@ -24,7 +24,10 @@ const branded = JSON.parse(
 );
 assert.equal(hash(pdf), branded.pdfSha256);
 
-assert.equal(hash(pdf), workbook.sourceSha256);
+assert.equal(
+  branded.productInventoryUnchanged ? branded.previousPdfSha256 : hash(pdf),
+  workbook.sourceSha256,
+);
 assert.equal(images.pdfPages, 21);
 const onlineProducts = products.filter((p) => p.onlineProduct);
 const arrivals = JSON.parse(

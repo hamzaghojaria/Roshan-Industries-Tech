@@ -2,7 +2,7 @@
 
 Source reviewed on 7 October 2026. The 21-page high resolution PDF is authoritative.
 
-The website has 259 products: 216 PDF entries, 12 restored pump listings and 31 online additions. PDF and XLSX retain 228 records until the user requests export updates. There are 21 categories and five families. Stable SKUs are preserved.
+The website has 264 products: 216 PDF entries, 12 restored pump listings and 36 online additions. PDF and XLSX retain 228 records until the user requests export updates. There are 21 categories and five families. Stable SKUs are preserved.
 
 The source inventory records 216 native scan crops and their page, panel, crop, dimensions and checksum. Requested online photograph replacements are tracked separately in product-image-overrides.json. All PDF product descriptions are newly generated.
 

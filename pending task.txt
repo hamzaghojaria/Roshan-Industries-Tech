@@ -1,8 +1,9 @@
 Can we get the images online based on image and title and
 Linkedun roshan account
 Admin pannel for website ?
+add a filter for new arrivals on product page
 New products add
-
+Update the pdf and excel based on new products added once it gets completed and for new product explore in catalogue button is not there
 
 Done:
 On product page of each product ass view product or download catalogue

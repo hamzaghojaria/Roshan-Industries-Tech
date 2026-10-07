@@ -4,7 +4,7 @@ Watch parts, tools and custom manufacturing in Mumbai. **Since 1900 · 125+ year
 
 [View website](https://roshan-industries-tech.onrender.com/) · [GitHub repository](https://github.com/hamzaghojaria/Roshan-Industries-Tech) · [Email us](mailto:roshanindustriestech@gmail.com)
 
-**259 products · 21 categories · 5 families**. The website includes 216 reviewed PDF products, 12 restored pump listings and 31 approved October New Arrivals. The PDF and XLSX remain at 228 products until the user requests an export update.
+**264 products · 21 categories · 5 families**. The website includes 216 reviewed PDF products, 12 restored pump listings and 36 approved October New Arrivals. The PDF and XLSX retain 228 products until the user requests the product export update. The PDF cover and dedicated introduction were refreshed separately; it now has 53 pages.
 
 [Start locally](#start-locally) · [What to edit](#what-to-edit) · [Render](#publish-on-render) · [Hostinger](#publish-on-hostinger) · [PDF and Excel](#pdf-and-excel)
 
@@ -36,6 +36,12 @@ npm run check
 ```
 
 Open the generated `index.html` in your browser to preview the website. After changing source files, run the build again and refresh the browser.
+
+## Latest catalogue presentation
+
+The cover has a logo centered vertically and horizontally. Page 2 introduces the business and enquiry process; the clickable category index is on pages 3 and 4. All 228 previously exported product pages and photographs are preserved. Website page links have been adjusted; Excel and the New Arrival product export remain deferred. `scripts/update-catalogue-introduction.py` reproduces this presentation update from the archived prior catalogue.
+
+Five further designs were added from eight unique links with repeated product references consolidated. Their SKUs are RIT-0260 through RIT-0264. The full New Arrivals selection now contains 36 products.
 
 ## October New Arrivals
 
@@ -143,7 +149,7 @@ You can also extract `roshan-website.zip` there. `index.html` must sit directly 
 - **Product database:** [Roshan-Industries-Product-Catalogue.xlsx](Roshan-Industries-Product-Catalogue.xlsx), tracked so website builds include the synchronized database.
 - **Audit:** [reports/high-resolution-audit/](reports/high-resolution-audit/) contains the page review, before and after inventory, native crop provenance and validation results.
 
-The website contains 259 products in 21 categories and five families. The branded catalogue and workbook retain 228 products while the October additions await the requested export update. All 200 previous photographed products retain their SKUs; 16 new PDF entries were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
+The website contains 264 products in 21 categories and five families. The branded catalogue and workbook retain 228 products while the October additions await the requested export update. All 200 previous photographed products retain their SKUs; 16 new PDF entries were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
 
 Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions for PDF products, branded catalogue page links, source panel references, image dimensions, checksums, and 456 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
 
