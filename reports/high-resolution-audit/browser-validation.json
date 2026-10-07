@@ -19,7 +19,7 @@
       1024,
       1440
     ],
-    "products": 36,
+    "products": 39,
     "filters": true,
     "mobileHorizontalSlider": true,
     "imagesDecode": true,
@@ -27,8 +27,8 @@
     "homePreviewRemoved": true
   },
   "productBadges": {
-    "selectedProducts": 36,
-    "allProductPagesChecked": 264,
+    "selectedProducts": 39,
+    "allProductPagesChecked": 267,
     "selectedBadgesConsistent": true,
     "unselectedProductsHaveNoBadge": true,
     "mobileAndDesktop": true
@@ -115,9 +115,9 @@
     "pdfAndExcelUnchanged": true
   },
   "productImages": {
-    "decoded": 264,
+    "decoded": 267,
     "naturalDimensionsMatchRecords": true,
-    "onlinePhotos": 36,
+    "onlinePhotos": 39,
     "editedPhotos": 7
   },
   "onlineAdditions": {
@@ -159,7 +159,26 @@
     "excelUnchanged": true
   },
   "finalStaticLinkValidation": {
-    "routes": 291,
+    "routes": 294,
     "passed": true
+  },
+  "thirdLinkedProducts": {
+    "linksChecked": 3,
+    "newProducts": 3,
+    "duplicateProductReferences": 0,
+    "websiteProducts": 267,
+    "newArrivalProducts": 39,
+    "widths": [
+      320,
+      390,
+      760,
+      1440
+    ],
+    "allImagesDecode": true,
+    "searchBySku": true,
+    "badgesConsistent": true,
+    "noHorizontalOverflow": true,
+    "pdfAndExcelUnchanged": true,
+    "earringImage": "Unwatermarked alternate photograph from the same supplier product gallery; hole layout differs from linked reference and is confirmed on enquiry."
   }
 }

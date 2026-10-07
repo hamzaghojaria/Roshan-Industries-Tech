@@ -8,7 +8,13 @@ const { pathToFileURL } = require('node:url');
   const products = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8')).filter(
     (p) => Number(p.sku.slice(4)) >= 260,
   );
-  assert.equal(products.length, 5);
+  assert.equal(products.length, 8);
+  const latestBatch = JSON.parse(
+    fs.readFileSync('reports/high-resolution-audit/third-link-arrivals.json', 'utf8'),
+  );
+  for (const [file, expected] of Object.entries(latestBatch.frozenExports)) {
+    assert.equal(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex'), expected);
+  }
   const exportReport = JSON.parse(
     fs.readFileSync('reports/high-resolution-audit/workbook-validation.json', 'utf8'),
   );
@@ -40,7 +46,7 @@ const { pathToFileURL } = require('node:url');
       }
     }
     console.log(
-      'PASS five additional products, image decoding, shared badges, SKU search, responsive detail pages and unchanged Excel.',
+      'PASS eight recent linked products, image decoding, shared badges, SKU search, responsive detail pages and unchanged PDF and Excel.',
     );
   } finally {
     await browser.close();

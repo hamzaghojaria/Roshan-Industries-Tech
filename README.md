@@ -145,11 +145,11 @@ You can also extract `roshan-website.zip` there. `index.html` must sit directly 
 
 ## PDF and Excel
 
-- **Website catalogue:** [assets/roshan-industries-catalogue.pdf](assets/roshan-industries-catalogue.pdf), a 52-page branded catalogue with the latest high resolution product images, a clickable category index, website headers and footers, and restored pump listings.
+- **Website catalogue:** [assets/roshan-industries-catalogue.pdf](assets/roshan-industries-catalogue.pdf), a 53-page branded catalogue with a centered cover logo, refreshed introduction, high resolution product images, a clickable category index, website headers and footers, and restored pump listings.
 - **Product database:** [Roshan-Industries-Product-Catalogue.xlsx](Roshan-Industries-Product-Catalogue.xlsx), tracked so website builds include the synchronized database.
 - **Audit:** [reports/high-resolution-audit/](reports/high-resolution-audit/) contains the page review, before and after inventory, native crop provenance and validation results.
 
-The website contains 264 products in 21 categories and five families. The branded catalogue and workbook retain 228 products while the October additions await the requested export update. All 200 previous photographed products retain their SKUs; 16 new PDF entries were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
+The website contains 267 products in 21 categories and five families, including 39 selected New Arrivals. The branded catalogue and workbook retain 228 products while the October additions await the requested export update. All 200 previous photographed products retain their SKUs; 16 new PDF entries were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
 
 Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions for PDF products, branded catalogue page links, source panel references, image dimensions, checksums, and 456 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
 
