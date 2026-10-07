@@ -2981,3 +2981,12 @@ main .button::after {
 @media (max-width: 760px) {
   .nav-links > a.nav-arrivals-highlight { align-self: stretch; min-height: 44px; }
 }
+
+/* Header and footer brand links share the same hover and focus behavior. */
+.header-main .brand:hover, .header-main .brand:focus-visible { color: var(--ink); }
+.footer-brand:hover, .footer-brand:focus-visible { color: #fff; }
+.brand:hover img, .brand:focus-visible img { transform: scale(1.045); }
+@media (prefers-reduced-motion: reduce) {
+  .brand img { transition: none; }
+  .brand:hover img, .brand:focus-visible img { transform: none; }
+}
