@@ -745,8 +745,7 @@ export function productPage(p, products) {
               width="${p.imageWidth}"
               height="${p.imageHeight}"
             />
-            <span class="image-enlarge-label">Click to enlarge</span></a
-          >
+          </a>
         </div>
         <div class="detail-copy">
           <a class="eyebrow" href="../categories/${p.categoryId}.html"

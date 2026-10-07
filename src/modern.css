@@ -3766,16 +3766,6 @@ main .button::after {
   color: #173faf;
   cursor: zoom-in;
 }
-.image-enlarge-label {
-  position: absolute;
-  right: 8px;
-  bottom: 8px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  background: #ffffffed;
-  font-size: 0.75rem;
-  border: 1px solid #d9e2f3;
-}
 .product-image-viewer {
   width: min(1100px, 94vw);
   height: min(820px, 90dvh);
