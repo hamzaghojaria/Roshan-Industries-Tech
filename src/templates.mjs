@@ -329,12 +329,14 @@ export function layout(
           </div>
         </footer>
         <a
-          class="floating-whatsapp"
+          class="${product ? 'mobile-product-enquiry' : 'floating-whatsapp'}"
           href="${esc(whatsapp(product))}"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Chat with Roshan Industries on WhatsApp"
-          >${whatsappIcon}<span>Chat on WhatsApp</span></a
+          aria-label="${product ? 'Enquire about this product on WhatsApp' : 'Chat with Roshan Industries on WhatsApp'}"
+          >${whatsappIcon}<span
+            >${product ? 'Enquire about this product' : 'Chat on WhatsApp'}</span
+          ></a
         >
       </body>
     </html>`;

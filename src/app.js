@@ -403,6 +403,53 @@
       render(true);
     });
   }
+  // Store browsing position on the current history entry, separately for each listing.
+  const listing = document.querySelector('[data-catalogue], .arrivals-section');
+  const rememberListing = (link = null) => {
+    if (!listing) return;
+    try {
+      history.replaceState(
+        {
+          ...history.state,
+          roshanListing: {
+            scrollY,
+            href: link?.getAttribute('href') || history.state?.roshanListing?.href || '',
+          },
+        },
+        '',
+        location.href,
+      );
+    } catch {
+      /* Browsing works when history storage is unavailable. */
+    }
+  };
+  const restoreListing = () => {
+    const saved = history.state?.roshanListing;
+    if (!listing || !saved || location.hash) return;
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: saved.scrollY, behavior: 'instant' });
+        if (saved.href)
+          [...listing.querySelectorAll('a[href]')]
+            .find((link) => link.getAttribute('href') === saved.href)
+            ?.focus({ preventScroll: true });
+      }),
+    );
+  };
+  if (listing) {
+    history.scrollRestoration = 'manual';
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('.product-card a[href]');
+      if (link && /\/products\/[^/]+\.html$/.test(new URL(link.href).pathname))
+        rememberListing(link);
+    });
+    window.addEventListener('pagehide', () => rememberListing());
+    window.addEventListener('pageshow', (event) => {
+      const navigation = performance.getEntriesByType('navigation')[0];
+      if (event.persisted || ['back_forward', 'reload'].includes(navigation?.type))
+        restoreListing();
+    });
+  }
   // Catalogue controls are installed only on catalogue/category listing pages.
   const section = document.querySelector('[data-catalogue]');
   if (!section) return;
@@ -428,7 +475,7 @@
   const pagination = document.getElementById('pagination');
   const requestedFamily = new URLSearchParams(location.search).get('family') || '';
   const state = {
-    page: 1,
+    page: Math.max(1, Number(new URLSearchParams(location.search).get('page')) || 1),
     query: new URLSearchParams(location.search).get('q') || '',
     sort: ['new', 'asc', 'desc', 'sku'].includes(new URLSearchParams(location.search).get('sort'))
       ? new URLSearchParams(location.search).get('sort')
@@ -452,7 +499,7 @@
     const url = new URL(location.href);
     if (state.arrivals) url.searchParams.set('new', '1');
     else url.searchParams.delete('new');
-    history.replaceState(null, '', url.href);
+    history.replaceState(history.state, '', url.href);
     render();
   });
 
@@ -481,7 +528,7 @@
       );
     if (state.sort === 'sku') matches.sort((a, b) => a.product.sku.localeCompare(b.product.sku));
     const pages = Math.max(1, Math.ceil(matches.length / pageSize));
-    state.page = Math.min(state.page, pages);
+    state.page = Number.isSafeInteger(state.page) ? Math.max(1, Math.min(state.page, pages)) : 1;
     const start = (state.page - 1) * pageSize;
     const visible = matches.slice(start, start + pageSize);
     grid.replaceChildren(...visible.map((item) => item.node));
@@ -490,6 +537,9 @@
       : '0 products';
     document.getElementById('empty-state').hidden = matches.length > 0;
     renderPages(pagination, state.page, pages);
+    const url = new URL(location.href);
+    state.page === 1 ? url.searchParams.delete('page') : url.searchParams.set('page', state.page);
+    if (url.href !== location.href) history.replaceState(history.state, '', url.href);
   }
   // Preserve catalogue filters in the URL without changing the separate header search.
   function updateQuery() {
@@ -498,7 +548,7 @@
     const url = new URL(location.href);
     if (state.query) url.searchParams.set('q', state.query);
     else url.searchParams.delete('q');
-    history.replaceState(null, '', url.href);
+    history.replaceState(history.state, '', url.href);
     render();
   }
   // Delegate pagination clicks because buttons are recreated during rendering.
@@ -513,7 +563,7 @@
     state.sort === 'catalogue'
       ? url.searchParams.delete('sort')
       : url.searchParams.set('sort', state.sort);
-    history.replaceState(null, '', url.href);
+    history.replaceState(history.state, '', url.href);
     state.page = 1;
     render();
   });

@@ -186,3 +186,5 @@ Photograph replacements are stored in `src/data/product-image-overrides.json`, w
 All Products and category pages include a New Arrivals filter beside sorting, with search and pagination support. A shared page loader appears during page navigation on phone and desktop, respects reduced motion and remains hidden without JavaScript. Every product page has an Explore in catalogue link to its correct PDF page.
 
 New Arrivals uses its original card layout with category filters and pagination of 24 products per page. All Products retains the highlighted New Arrivals first sorting option without the separate Show selector.
+
+Product pages include a mobile enquiry bar linking to WhatsApp with the product name and SKU. Listing history entries preserve scroll position and the selected product; pagination, search, sorting and category selection remain in the URL when visitors return or reload.
