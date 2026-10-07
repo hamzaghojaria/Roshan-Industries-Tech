@@ -45,7 +45,9 @@ def make_sheet(title,items,index):
     widths=[15,40,70,32,23,12,12,55,32,14,18,40,14,14,30]
     for col,width in enumerate(widths,1):ws.column_dimensions[get_column_letter(col)].width=width
     ws.column_dimensions['O'].hidden=True
-    ws.freeze_panes='C6';ws.auto_filter.ref=f'A5:O{ws.max_row}'
+    # The Excel table owns its filter. A second worksheet filter on the same range
+    # causes desktop Excel to report corrupt content.
+    ws.freeze_panes='C6'
     table=Table(displayName=f'Products{index}',ref=f'A5:O{ws.max_row}');table.tableStyleInfo=TableStyleInfo(name='TableStyleMedium2',showRowStripes=True);ws.add_table(table)
     ws.sheet_properties.pageSetUpPr.fitToPage=True;ws.page_setup.orientation='landscape';ws.page_setup.paperSize=ws.PAPERSIZE_A3;ws.page_setup.fitToWidth=1;ws.page_setup.fitToHeight=0;ws.print_title_rows='1:5'
     return ws
@@ -80,6 +82,8 @@ for values,p in zip(rows,products):
     assert values[9]==('Yes' if p['sku'] in selected else 'No')
 assert len(ws._images)==len(products)
 assert sum(len(s._images) for s in check)==len(products)*2
+assert all(s.auto_filter.ref is None for s in check)
+assert all(len(s.tables)==1 for s in list(check)[1:])
 assert all(s.sheet_properties.tabColor is not None for s in check)
 assert all('Family:' in str(s['A2'].value) for s in list(check)[1:])
 (ROOT/'reports/high-resolution-audit/workbook-validation.json').write_text(json.dumps({'products':len(rows),'categorySheets':len(categories),'embeddedPhotos':len(products)*2,'sourceSha256':source_hash,'familyColors':family_colors,'allTabsColored':True,'allFieldsMatchWebsite':True,'newArrivalProducts':len(selected),'xlsxSha256':hashlib.sha256((ROOT/'Roshan-Industries-Product-Catalogue.xlsx').read_bytes()).hexdigest()},indent=2),encoding='utf8')

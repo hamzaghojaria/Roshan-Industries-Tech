@@ -188,3 +188,5 @@ All Products and category pages include a New Arrivals filter beside sorting, wi
 New Arrivals uses its original card layout with category filters and pagination of 24 products per page. All Products retains the highlighted New Arrivals first sorting option without the separate Show selector.
 
 Product pages include a mobile enquiry bar linking to WhatsApp with the product name and SKU. Listing history entries preserve scroll position and the selected product; pagination, search, sorting and category selection remain in the URL when visitors return or reload.
+
+Current category or family selections appear as clearable Browsing chips above the results, including New Arrivals. Workbook tables provide their own filter dropdowns; overlapping worksheet filters are omitted for desktop Excel compatibility. The workbook was verified by normal read-only opening in Microsoft Excel, with all 268 products and 536 embedded photos retained.

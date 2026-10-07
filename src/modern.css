@@ -3732,3 +3732,46 @@ main .button::after {
     outline-offset: 3px;
   }
 }
+
+/* Keep the current selection visible beside the results. */
+.browsing-context {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.browsing-context[hidden] {
+  display: none;
+}
+.browsing-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #cddcfd;
+  border-radius: 10px;
+  background: #edf3ff;
+  color: #173faf;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+.browsing-chip span {
+  flex-shrink: 0;
+  font-size: 1.125rem;
+}
+.browsing-chip:hover {
+  background: #dfe9ff;
+  color: #173faf;
+}
+.browsing-chip:focus-visible {
+  outline: 2px solid #3156d9;
+  outline-offset: 3px;
+}

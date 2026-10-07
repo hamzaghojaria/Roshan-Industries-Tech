@@ -408,7 +408,7 @@ export function newArrivalsPage(products) {
             '</button>',
         )
         .join('') +
-      '</div></div><div class="product-grid arrivals-grid">' +
+      '</div></div><div id="arrival-context" class="browsing-context" role="group" aria-label="Current selection" hidden></div><div class="product-grid arrivals-grid">' +
       arrivals.map(arrivalCard).join('') +
       '</div><nav id="arrival-pagination" class="pagination" aria-label="New arrivals pages" hidden></nav><div class="arrivals-more"><p>Looking for something else?</p><a class="text-link" href="catalogue.html">Explore the complete catalogue &#8594;</a></div></section>',
     {
@@ -677,6 +677,15 @@ export function cataloguePage(products, category = null) {
             >
               Clear
             </button>
+          </div>
+          <div
+            id="browsing-context"
+            class="browsing-context"
+            role="group"
+            aria-label="Current selection"
+            ${category ? '' : 'hidden'}
+          >
+            ${category ? '<span>Browsing:</span><a class="browsing-chip" href="' + base + 'catalogue.html" aria-label="Clear category selection">' + esc(category.family) + ' · ' + esc(category.name) + '<span aria-hidden="true">×</span></a>' : ''}
           </div>
           <div class="mobile-category">
             <label for="category-jump">Browse category</label
