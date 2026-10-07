@@ -458,24 +458,6 @@
     window.addEventListener('resize', update, { passive: true });
     update();
   });
-  function showBrowsingContext(container, label, clear) {
-    container.replaceChildren();
-    container.hidden = !label;
-    if (!label) return;
-    const prefix = document.createElement('span');
-    prefix.textContent = 'Browsing:';
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'browsing-chip';
-    button.setAttribute('aria-label', 'Clear selection: ' + label);
-    button.append(document.createTextNode(label));
-    const cross = document.createElement('span');
-    cross.textContent = '×';
-    cross.setAttribute('aria-hidden', 'true');
-    button.append(cross);
-    button.addEventListener('click', clear);
-    container.append(prefix, button);
-  }
   function renderPages(container, current, pages) {
     container.replaceChildren();
     if (pages > 1) {
@@ -538,19 +520,6 @@
         );
       renderPages(pagination, page, pages);
       pagination.hidden = pages <= 1;
-      const activeCategory = [...arrivalFilters.querySelectorAll('button')].find(
-        (button) => button.dataset.arrivalFilter === category,
-      );
-      showBrowsingContext(
-        document.getElementById('arrival-context'),
-        category === 'all' ? '' : activeCategory.textContent.trim(),
-        () => {
-          arrivalFilters.querySelector('[data-arrival-filter="all"]').click();
-          arrivalFilters
-            .querySelector('[data-arrival-filter="all"]')
-            .focus({ preventScroll: true });
-        },
-      );
       const url = new URL(location.href);
       category === 'all'
         ? url.searchParams.delete('category')
@@ -733,26 +702,6 @@
       : '0 products';
     document.getElementById('empty-state').hidden = matches.length > 0;
     renderPages(pagination, state.page, pages);
-    const context = document.getElementById('browsing-context');
-    if (section.dataset.catalogue === 'all') {
-      showBrowsingContext(context, state.family, () => {
-        state.family = '';
-        state.page = 1;
-        const url = new URL(location.href);
-        url.searchParams.delete('family');
-        history.replaceState(history.state, '', url.href);
-        render();
-        queryInput.focus({ preventScroll: true });
-      });
-    } else {
-      const clearCategory = context.querySelector('a');
-      const target = new URL(clearCategory.href);
-      for (const key of ['q', 'sort', 'new']) {
-        const value = new URLSearchParams(location.search).get(key);
-        if (value) target.searchParams.set(key, value);
-      }
-      clearCategory.href = target.href;
-    }
     const url = new URL(location.href);
     state.page === 1 ? url.searchParams.delete('page') : url.searchParams.set('page', state.page);
     if (url.href !== location.href) history.replaceState(history.state, '', url.href);
