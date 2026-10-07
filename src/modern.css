@@ -2808,13 +2808,20 @@ main .button::after {
   }
 }
 
+.detail-copy .enquiry-actions,
 .product-catalogue-actions {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   gap: 12px;
-  margin-top: 24px;
 }
+.detail-copy .enquiry-actions {
+  margin: 20px 0 0;
+}
+.product-catalogue-actions {
+  margin-top: 12px;
+}
+.detail-copy .enquiry-actions .button,
 .product-catalogue-actions .button {
   display: flex;
   align-items: center;
@@ -2823,6 +2830,16 @@ main .button::after {
   padding: 12px 14px;
   text-align: center;
   white-space: normal;
+}
+.product-catalogue-actions .button {
+  border-color: #dbe3ef;
+  background: #f8faff;
+  color: #344760;
+}
+.product-catalogue-actions .button:hover {
+  border-color: #91a8d9;
+  background: #edf3ff;
+  color: #254bb9;
 }
 #slider-about-work > * {
   flex-basis: calc((100% - 40px) / 3);
@@ -3072,6 +3089,7 @@ main .button::after {
     font-size: 0.55rem;
     letter-spacing: 0.07em;
   }
+  .detail-copy .enquiry-actions,
   .product-catalogue-actions {
     grid-template-columns: 1fr;
   }

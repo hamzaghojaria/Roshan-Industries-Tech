@@ -747,7 +747,7 @@ export function productPage(p, products) {
               href="../assets/roshan-industries-catalogue.pdf#page=${p.cataloguePage}"
               target="_blank"
               rel="noopener"
-              >View product in catalogue &#8599;</a
+              >View in catalogue &#8599;</a
             >
             <a
               class="button button-light"

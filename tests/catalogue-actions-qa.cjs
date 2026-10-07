@@ -41,6 +41,19 @@ const assert = require('node:assert/strict');
         assert.equal(await actions.count(), 2);
         const a = await actions.nth(0).boundingBox(),
           b = await actions.nth(1).boundingBox();
+        const enquiry = page.locator('.enquiry-actions .button');
+        const primary = await enquiry.nth(0).boundingBox(),
+          whatsapp = await enquiry.nth(1).boundingBox();
+        assert(Math.abs(primary.x - a.x) < 1, 'First column misaligned at ' + width);
+        assert(Math.abs(whatsapp.x - b.x) < 1, 'Second column misaligned at ' + width);
+        assert(
+          Math.abs(primary.width - a.width) < 1,
+          'Enquiry and catalogue widths differ at ' + width,
+        );
+        assert(
+          Math.abs(whatsapp.width - b.width) < 1,
+          'WhatsApp and download widths differ at ' + width,
+        );
         assert(Math.abs(a.width - b.width) < 1, 'Unequal button widths at ' + width);
         if (width > 760) {
           assert(Math.abs(a.y - b.y) < 1);
