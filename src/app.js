@@ -6,29 +6,6 @@
   window.addEventListener('pageshow', hidePageLoader);
   const imageTrigger = document.querySelector('.product-image-open');
   const imageViewer = document.querySelector('.product-image-viewer');
-  if (imageTrigger) {
-    const hoverPointer = matchMedia('(hover: hover) and (pointer: fine)');
-    let magnifierFrame = 0;
-    const stopMagnifier = () => {
-      cancelAnimationFrame(magnifierFrame);
-      imageTrigger.classList.remove('is-magnifying');
-      imageTrigger.style.removeProperty('--magnifier-origin');
-    };
-    imageTrigger.addEventListener('pointermove', (event) => {
-      if (!hoverPointer.matches || event.pointerType === 'touch') return;
-      const bounds = imageTrigger.getBoundingClientRect();
-      const x = Math.max(0, Math.min(100, ((event.clientX - bounds.left) / bounds.width) * 100));
-      const y = Math.max(0, Math.min(100, ((event.clientY - bounds.top) / bounds.height) * 100));
-      cancelAnimationFrame(magnifierFrame);
-      magnifierFrame = requestAnimationFrame(() => {
-        imageTrigger.style.setProperty('--magnifier-origin', `${x}% ${y}%`);
-        imageTrigger.classList.add('is-magnifying');
-      });
-    });
-    imageTrigger.addEventListener('pointerleave', stopMagnifier);
-    imageTrigger.addEventListener('click', stopMagnifier);
-    hoverPointer.addEventListener('change', stopMagnifier);
-  }
   if (imageTrigger && imageViewer && typeof imageViewer.showModal === 'function') {
     const photos = JSON.parse(imageTrigger.dataset.productPhotos);
     const stage = imageViewer.querySelector('.viewer-stage');

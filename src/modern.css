@@ -1982,7 +1982,12 @@ select {
   .breadcrumb {
     padding-top: 18px;
     font-size: 0.875rem;
+    text-align: left;
   } /* Keep short trails inline; long product trails give the product its own row. */
+
+  .breadcrumb ol {
+    justify-content: flex-start;
+  }
 
   .breadcrumb li:last-child:nth-child(n + 4) {
     flex-basis: 100%;
@@ -3852,22 +3857,13 @@ main .button::after {
   min-width: 40px;
   text-align: center;
 }
-/* Cursor-following magnification is reserved for devices with a hover pointer. */
+/* Keep the product photo still; the image viewer opens on click. */
 .product-image-open {
   overflow: hidden;
   border-radius: 8px;
 }
 .detail-image .product-image-open img {
   transform: none;
-}
-@media (hover: hover) and (pointer: fine) {
-  .detail-image .product-image-open.is-magnifying img {
-    transform: scale(2.2);
-    transform-origin: var(--magnifier-origin, center);
-  }
-  .product-image-open.is-magnifying {
-    cursor: zoom-in;
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .detail-image .product-image-open img {

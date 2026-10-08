@@ -316,7 +316,7 @@ export function layout(
               <a
                 href="${base}assets/roshan-industries-catalogue.pdf"
                 download="Roshan-Industries-Catalogue.pdf"
-                >Download catalogue</a
+                >Download Catalogue</a
               >
             </div>
             <div class="footer-location">

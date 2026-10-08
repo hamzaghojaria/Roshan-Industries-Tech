@@ -1,8 +1,36 @@
+
+
+Remove zoom effect 
+
+In mobile view new arrivals should be left aligned
+
+Download catalogue in footer to have C capital
+
+Analyse all the code files optimize it
+
+
+
+
+
+Social media links update
+
+Check the product which maaz bhai said is wrong
+
+Change the Logo to Roshan and then industries
+
+
+
+
+SKeptical:
+Download catalogue category
+Search by image
 Can we get the images online based on image and title and
 Linkedun roshan account
+Exploded view of a pump image
+
+
+
 Admin pannel for website ?
-
-
 Yes—a small admin panel would be useful now, given how often you add products, replace images and change New Arrivals.
 I’d keep it focused on:
 - Adding and editing products, descriptions and images.
