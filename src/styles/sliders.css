@@ -1,0 +1,419 @@
+/* Home discovery sliders: three cards on desktop, two on tablets, one with a swipe hint on phones. */
+.home-slider {
+  min-width: 0;
+  margin-top: 24px;
+}
+.slider-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #b9c7dd transparent;
+  padding: 8px 0 14px;
+  position: relative;
+}
+.slider-track > * {
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
+  scroll-snap-align: start;
+}
+.slider-track .product-card {
+  display: flex;
+  flex-direction: column;
+}
+.slider-track .product-card-copy {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.slider-track .card-bottom {
+  margin-top: auto;
+  padding-top: 16px;
+}
+.slider-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.slider-controls[hidden] {
+  display: none;
+}
+.slider-controls button {
+  min-height: 44px;
+  min-width: 44px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
+  font: inherit;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.slider-controls button:hover {
+  background: #edf3ff;
+  border-color: #91a6c4;
+}
+.slider-playback {
+  padding: 0 18px;
+}
+.slider-position {
+  min-width: 42px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--slate);
+}
+@media (max-width: 1024px) {
+  .slider-track > * {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 600px) {
+  .slider-track {
+    gap: 14px;
+  }
+  .slider-track > * {
+    flex-basis: 86%;
+  }
+  .slider-controls {
+    justify-content: center;
+  }
+}
+
+/* Compact homepage discovery imagery and a restrained heritage gradient. */
+#slider-range .product-image {
+  padding: 14px;
+}
+#slider-range .product-image img {
+  aspect-ratio: auto;
+  height: 180px;
+  object-fit: contain;
+}
+.heritage-line {
+  padding: 10px 16px;
+  margin-top: 20px;
+  border-radius: 12px;
+  background: linear-gradient(115deg, #eaf0ff, #f3f7ff 65%, #fff2e5);
+  border: 1px solid #dce6f7;
+  gap: 14px;
+}
+.heritage-line strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+.heritage-line span {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  #slider-range .product-image img {
+    height: 140px;
+  }
+  .heritage-line {
+    padding: 10px 12px;
+    margin-top: 16px;
+  }
+  .heritage-line strong {
+    font-size: 1.8rem;
+  }
+}
+
+.detail-copy .enquiry-actions,
+.product-catalogue-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 12px;
+}
+.detail-copy .enquiry-actions {
+  margin: 20px 0 0;
+}
+.product-catalogue-actions {
+  margin-top: 12px;
+}
+.product-catalogue-actions-single .button {
+  grid-column: 1 / -1;
+}
+.detail-copy .enquiry-actions .button,
+.product-catalogue-actions .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 12px 14px;
+  text-align: center;
+  white-space: normal;
+}
+.product-catalogue-actions .button {
+  border-color: #dbe3ef;
+  background: #f8faff;
+  color: #344760;
+}
+.product-catalogue-actions .button:hover {
+  border-color: #91a8d9;
+  background: #edf3ff;
+  color: #254bb9;
+}
+#slider-about-work > * {
+  flex-basis: calc((100% - 40px) / 3);
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  #slider-about-work > * {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+.family-heritage {
+  background: #f6f2e9;
+  border: 1px solid #e5ddce;
+  border-radius: 4px;
+  padding: clamp(20px, 3vw, 36px);
+  color: #28372f;
+}
+.family-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.family-heading .eyebrow {
+  color: #746448;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+}
+.family-heading h2 {
+  font:
+    400 clamp(1.7rem, 3vw, 2.7rem)/1.14 Georgia,
+    serif;
+  letter-spacing: -0.035em;
+  margin: 14px 0 0;
+  color: #28372f;
+}
+.family-heading h2 em {
+  font-weight: 400;
+  color: #82704e;
+}
+.family-heading > p {
+  font-size: 0.95rem;
+  color: #706c62;
+  line-height: 1.8;
+}
+.family-navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #d7cdbb;
+}
+.family-navigation[hidden] {
+  display: none;
+}
+.family-navigation button {
+  text-align: left;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  padding: 12px 10px;
+  color: #777266;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.family-navigation button strong {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.family-navigation button > span {
+  font:
+    italic 1.3rem Georgia,
+    serif;
+  color: #9c8b6e;
+}
+.family-navigation button[aria-pressed='true'] {
+  border-bottom-color: #82704e;
+  color: #28372f;
+  background: #eee7d9;
+}
+.family-navigation button:hover {
+  background: #eee7d9;
+}
+#slider-generations {
+  gap: 20px;
+  padding: 0;
+  scrollbar-width: none;
+}
+#slider-generations::-webkit-scrollbar {
+  display: none;
+}
+#slider-generations > .family-chapter {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: 0.85fr 1.6fr;
+  align-items: center;
+  gap: 32px;
+  min-height: 200px;
+  padding: 18px 12px;
+}
+.family-emblem {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #bba984;
+  outline: 1px solid #d9ccb3;
+  outline-offset: -12px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fffdf7, #eee5d3);
+  position: relative;
+  margin: auto;
+}
+.family-emblem::before,
+.family-emblem::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 1px;
+  background: #bba984;
+}
+.family-emblem::before {
+  left: 22px;
+}
+.family-emblem::after {
+  right: 22px;
+}
+.family-emblem-top,
+.family-emblem-bottom {
+  font-size: 0.56rem;
+  letter-spacing: 0.2em;
+  color: #82704e;
+}
+.family-monogram {
+  font:
+    italic 3.5rem/1.5 Georgia,
+    serif;
+  letter-spacing: -0.08em;
+  padding-right: 0.08em;
+  color: #34473b;
+}
+.family-person .eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: #82704e;
+}
+.family-person .eyebrow span {
+  color: #837e71;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.family-person h3 {
+  font:
+    400 clamp(1.5rem, 2.6vw, 2.3rem)/1.2 Georgia,
+    serif;
+  color: #28372f;
+  letter-spacing: -0.025em;
+  margin: 12px 0 8px;
+}
+.family-relationship {
+  color: #706c62;
+  margin: 0;
+}
+.family-signature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  color: #82704e;
+  font:
+    italic 0.95rem Georgia,
+    serif;
+}
+.family-signature span {
+  width: 32px;
+  height: 1px;
+  background: #bba984;
+  flex-shrink: 0;
+}
+.family-slider .slider-controls {
+  border-top: 1px solid #d7cdbb;
+  padding-top: 12px;
+  margin-top: 0;
+}
+.family-slider .slider-controls button {
+  background: transparent;
+  color: #34473b;
+  border-color: #cdbfa5;
+  border-radius: 50%;
+}
+.family-slider .slider-controls button:hover {
+  background: #e9e0cf;
+}
+.family-explore {
+  margin-right: auto;
+  font-size: 0.62rem;
+  letter-spacing: 0.17em;
+  color: #82704e;
+}
+@media (max-width: 760px) {
+  .family-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .family-heading > p {
+    margin: 0;
+  }
+  .family-navigation button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 12px 6px;
+  }
+  .family-navigation button strong {
+    font-size: 0.63rem;
+  }
+  #slider-generations > .family-chapter {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px 0;
+    min-height: 310px;
+  }
+  .family-emblem {
+    width: 120px;
+    height: 120px;
+  }
+  .family-monogram {
+    font-size: 2.7rem;
+  }
+  .family-person {
+    text-align: center;
+  }
+  .family-person .eyebrow span {
+    display: block;
+    margin-top: 4px;
+  }
+  .family-signature {
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-top: 22px;
+  }
+  .family-explore {
+    font-size: 0.55rem;
+    letter-spacing: 0.07em;
+  }
+  .detail-copy .enquiry-actions,
+  .product-catalogue-actions {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  #slider-about-work > * {
+    flex-basis: 88%;
+  }
+}

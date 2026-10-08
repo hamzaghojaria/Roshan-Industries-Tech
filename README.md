@@ -23,27 +23,31 @@ This workspace also retains portable Node and test dependencies under ../.site-t
 
 ## Project structure
 
-| Location                                 | Responsibility                                                                                                |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| src/templates.mjs                        | Shared HTML, page content, navigation, breadcrumbs, footer and product cards                                  |
-| src/app.js                               | Named initializers for search, navigation, effects, sliders, arrivals, listing history and catalogue controls |
-| src/styles.css                           | Base document layout and responsive components                                                                |
-| src/modern.css                           | Brand theme and ordered component/mobile refinements; loaded after styles.css                                 |
-| src/catalogue.mjs                        | Load records, validate permanent SKUs and merge image/export metadata                                         |
-| src/catalogue-index.mjs                  | Cached product/category/family lookups per catalogue array                                                    |
-| src/descriptions.mjs                     | Descriptions for reviewed catalogue products                                                                  |
-| src/location.mjs                         | Confirmed office address and map                                                                              |
-| src/data/                                | Reviewed records, approved arrivals, image overrides, SKU and PDF-page mappings                               |
-| assets/                                  | Published photos, logo and customer PDF                                                                       |
-| scripts/                                 | Build, syntax checks, test runner, export and audit tools                                                     |
-| tests/                                   | Browser and fresh-build regressions; helpers/browser.cjs owns browser setup                                   |
-| docs/code-reference.md                   | Purpose of every maintained code file and data/configuration notes                                            |
-| reports/high-resolution-audit/           | Export reports, image provenance and retained source audits                                                   |
-| artifacts/                               | Ignored local screenshots and temporary test output                                                           |
-| dist/                                    | Generated hosting output, recreated on every build                                                            |
-| products/, categories/, root HTML/CSS/JS | Generated local-preview copies                                                                                |
+| Location                                 | Responsibility                                                                          |
+| ---------------------------------------- | --------------------------------------------------------------------------------------- |
+| src/templates.mjs                        | Stable public interface for page generators                                             |
+| src/templates/                           | Individual pages plus shared layout, cards, enquiry links and breadcrumbs               |
+| src/app.js                               | Browser startup; the build assembles its private feature scope                          |
+| src/browser/                             | Focused search, navigation, effects, sliders, arrivals, history and catalogue functions |
+| src/styles.css                           | Base document layout and responsive components                                          |
+| src/styles/                              | Ordered theme, navigation, sliders, manufacturing, footer, arrivals and product styles  |
+| scripts/browser-build.mjs                | Assemble browser code, CSS and compact search data without extra build dependencies     |
+| scripts/export_data.py                   | Shared read-only full catalogue input for PDF and Excel exporters                       |
+| src/catalogue.mjs                        | Load records, validate permanent SKUs and merge image/export metadata                   |
+| src/catalogue-index.mjs                  | Cached product/category/family lookups per catalogue array                              |
+| src/descriptions.mjs                     | Descriptions for reviewed catalogue products                                            |
+| src/location.mjs                         | Confirmed office address and map                                                        |
+| src/data/                                | Reviewed records, approved arrivals, image overrides, SKU and PDF-page mappings         |
+| assets/                                  | Published photos, logo and customer PDF                                                 |
+| scripts/                                 | Build, syntax checks, test runner, export and audit tools                               |
+| tests/                                   | Browser and fresh-build regressions; helpers/browser.cjs owns browser setup             |
+| docs/code-reference.md                   | Purpose of every maintained code file and data/configuration notes                      |
+| reports/high-resolution-audit/           | Export reports, image provenance and retained source audits                             |
+| artifacts/                               | Ignored local screenshots and temporary test output                                     |
+| dist/                                    | Generated hosting output, recreated on every build                                      |
+| products/, categories/, root HTML/CSS/JS | Generated local-preview copies                                                          |
 
-**Edit src/ and assets/, then rebuild.** Generated pages carry a source-location comment. Root products.js stays readable for PDF/XLSX tools; dist/products.js contains identical records with compact JSON to reduce download size. CSS rules keep their existing order so mobile and accessibility overrides remain predictable.
+**Edit src/ and assets/, then rebuild.** Generated pages carry a source-location comment. Root products.js stays readable for PDF/XLSX tools; dist/products.js contains identical complete records. Pages load browser-products.js, which contains only search/filter fields. Browser feature files are assembled into one classic app.js so direct file previews keep working. Base and component CSS are assembled into one site.css in their original cascade order. Generated app.js, styles.css, modern.css, site.css and browser-products.js are build outputs, not editable sources.
 
 JSON is strict data and cannot contain comments. Data and configuration responsibilities are documented in the code reference instead.
 
@@ -134,3 +138,11 @@ For Hostinger, upload the contents of dist/ directly into public_html/ so index.
 Keep source, assets, scripts, tests, docs, configuration, the synchronized XLSX and useful audit reports. Ignore generated previews, dist, screenshots, dependencies, caches and secrets. Owner notes in pending task.txt are maintained separately.
 
 Normal workflow: edit source -> format -> build -> check and test -> review -> commit and publish.
+
+## Refactored source workflow
+
+Edit the matching page in src/templates/, browser feature in src/browser/, or component in src/styles/. src/templates.mjs remains the page-generator interface. scripts/build.mjs has separate stages for main pages, retired-route cleanup, catalogue routes and the disposable hosting copy.
+
+Manual Python maintenance tools have explicit main() entry points. Importing them does not regenerate catalogues, extract photos or package archives. PDF and Excel run state belongs to the export invocation, and both read complete records through scripts/export_data.py.
+
+To verify exporters without replacing customer downloads, run `python -B tests/export-entrypoints-qa.py` with the export dependencies installed. It checks import safety and generates validated PDF/Excel files in a temporary project copy, then removes that copy.

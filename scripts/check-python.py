@@ -7,7 +7,8 @@ import sys
 
 def main():
     """Report every syntax error and return a status suitable for automated checks."""
-    files = sorted(Path(__file__).resolve().parent.glob("*.py"))
+    root = Path(__file__).resolve().parents[1]
+    files = sorted([*root.joinpath("scripts").rglob("*.py"), *root.joinpath("tests").rglob("*.py")])
     failures = 0
     for file in files:
         try:

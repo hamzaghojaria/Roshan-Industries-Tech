@@ -5,6 +5,7 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import { categories, loadCatalogue } from '../src/catalogue.mjs';
+import { buildBrowserScript, buildThemeStyles, browserProducts } from './browser-build.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Evaluate the generated browser data in isolation without running a browser.
@@ -19,13 +20,31 @@ assert.equal(
   JSON.stringify(products),
   'Published catalogue records differ from local export records.',
 );
-for (const file of ['app.js', 'styles.css', 'modern.css']) {
-  const source = fs.readFileSync(path.join(root, 'src', file), 'utf8');
+const baseStyles = fs.readFileSync(path.join(root, 'src/styles.css'), 'utf8');
+const themeStyles = buildThemeStyles(root);
+for (const [file, source] of Object.entries({
+  'app.js': buildBrowserScript(root),
+  'styles.css': baseStyles,
+  'modern.css': themeStyles,
+  'site.css': `${baseStyles}\n${themeStyles}`,
+})) {
   assert.equal(fs.readFileSync(path.join(root, file), 'utf8'), source, `Stale preview ${file}`);
   assert.equal(
     fs.readFileSync(path.join(root, 'dist', file), 'utf8'),
     source,
     `Stale published ${file}`,
+  );
+}
+// Compact search records must exactly match the browser fields of full export records.
+for (const directory of ['', 'dist']) {
+  const context = { window: {} };
+  vm.runInNewContext(
+    fs.readFileSync(path.join(root, directory, 'browser-products.js'), 'utf8'),
+    context,
+  );
+  assert.equal(
+    JSON.stringify(context.window.ROSHAN_PRODUCTS),
+    JSON.stringify(browserProducts(products)),
   );
 }
 const expectedProducts = loadCatalogue(root).length;
@@ -77,7 +96,7 @@ for (const file of files) {
     html = fs.readFileSync(filename, 'utf8');
   assert.match(html, /<title>[^<]+<\/title>/);
   // Every route uses the shared catalogue for header search suggestions.
-  assert(html.includes('products.js'), `Missing catalogue search records: ${file}`);
+  assert(html.includes('browser-products.js'), `Missing catalogue search records: ${file}`);
   const ids = new Set([...html.matchAll(/id="([^"]+)"/g)].map((m) => m[1]));
   for (const m of html.matchAll(/(?:href|src|action)="([^"]+)"/g)) {
     const value = decode(m[1]);

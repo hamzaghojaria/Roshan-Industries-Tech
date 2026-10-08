@@ -1,0 +1,77 @@
+/* The homepage also offers the established mobile shortcut on desktop. */
+.floating-whatsapp {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: #17683e;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 5px 18px #111d3028;
+  text-decoration: none;
+}
+.floating-whatsapp[hidden] {
+  display: none !important;
+}
+.floating-whatsapp:hover {
+  background: #10512f;
+  color: #fff;
+}
+body[data-page='home'] .floating-whatsapp {
+  display: inline-flex;
+}
+@media (max-width: 760px) {
+  .floating-whatsapp {
+    display: inline-flex;
+  }
+}
+
+/* Reserved social-profile labels: activate only after real profile URLs are supplied. */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-block: 12px;
+  line-height: 1.4;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  color: #dce7ff;
+  font-size: 0.875rem;
+}
+.footer-social > span,
+.footer-social > a {
+  padding-block: 0;
+  text-decoration: underline;
+  text-decoration-color: #819ac4;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/* Fill category rows evenly so families with two or five tiles have no empty columns. */
+.family-section .category-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.family-section .category-card {
+  flex: 1 1 calc(33.333% - 16px);
+  min-width: min(100%, 260px);
+}
+@media (max-width: 760px) {
+  .family-section .category-card {
+    flex-basis: calc(50% - 12px);
+    min-width: min(100%, 240px);
+  }
+}

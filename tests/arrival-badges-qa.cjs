@@ -32,7 +32,7 @@ const path = require('node:path');
       assert.equal(await p.locator('.arrival-badge-detail').count(), 1);
     }
     await p.goto(pathToFileURL(path.resolve('new-arrivals.html')).href);
-    assert.equal(await p.locator('.arrival-badge').count(), Math.min(24, selected.size));
+    assert.equal(await p.locator('.arrival-badge').count(), Math.min(12, selected.size));
     await p.goto(pathToFileURL(path.resolve('index.html')).href);
     assert.equal(await p.locator('.home-arrivals .arrival-badge').count(), 0);
     assert(!(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)));

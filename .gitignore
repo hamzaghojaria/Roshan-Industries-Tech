@@ -27,6 +27,8 @@ __pycache__/
 /app.js
 /styles.css
 /modern.css
+/site.css
+/browser-products.js
 
 # Retired generated page and old reference documents
 /photo-credits.html

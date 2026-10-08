@@ -3,11 +3,25 @@ const { chromium } = require('./helpers/browser.cjs');
 const { pathToFileURL } = require('node:url');
 const path = require('node:path');
 const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
 (async () => {
   const browser = await chromium.launch({
     headless: true,
   });
   try {
+    // Select current products by family; retired pump SKUs must not be test fixtures.
+    const context = { window: {} };
+    vm.runInNewContext(fs.readFileSync('products.js', 'utf8'), context);
+    const products = context.window.ROSHAN_PRODUCTS;
+    const selected = new Set(
+      JSON.parse(fs.readFileSync('src/data/new-arrivals.json', 'utf8')).skus,
+    );
+    const representatives = ['Watchmaking', 'Precision Machining', 'Jewellery'].map((family) => {
+      const product = products.find((item) => item.family === family);
+      assert(product, `Missing family fixture: ${family}`);
+      return product;
+    });
     const page = await browser.newPage({ reducedMotion: 'reduce' });
     await page.route('https://**/*', (r) => r.abort());
     const url = (file) => pathToFileURL(path.resolve(file)).href;
@@ -31,12 +45,8 @@ const assert = require('node:assert/strict');
       await track.scrollIntoViewIfNeeded();
       await page.locator('[aria-controls="slider-about-work"][data-slider-next]').click();
       assert(await track.evaluate((el) => el.scrollLeft > 0));
-      for (const file of [
-        'products/rit-0001.html',
-        'products/rit-0201.html',
-        'products/rit-0219.html',
-      ]) {
-        await page.goto(url(file));
+      for (const product of representatives) {
+        await page.goto(url(product.url));
         const actions = page.locator('.product-catalogue-actions .button');
         assert.equal(await actions.count(), 2);
         const a = await actions.nth(0).boundingBox(),
@@ -63,7 +73,10 @@ const assert = require('node:assert/strict');
           assert(b.y >= a.y + a.height);
         }
         assert(a.height >= 44 && b.height >= 44);
-        assert.equal(await page.locator('.arrival-badge').count(), 0);
+        assert.equal(
+          await page.locator('.arrival-badge-detail').count(),
+          Number(selected.has(product.sku)),
+        );
         assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)));
       }
       console.log('PASS About slider and aligned catalogue actions at ' + width + 'px');

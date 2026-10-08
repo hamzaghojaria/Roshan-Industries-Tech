@@ -6,14 +6,18 @@ This inventory covers editable code. Generated HTML/CSS/JS copies inherit source
 
 | File                                       | Responsibility                                                                                                                 |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| src/app.js                                 | Browser feature initializers; DOM-only enhancement with a readable no-JavaScript fallback.                                     |
+| src/app.js                                 | Feature startup and page-loader cleanup; assembled after browser feature definitions.                                          |
+| src/browser/*.js                           | Independent stateful feature functions; renderPages is the shared pagination helper.                                           |
 | src/catalogue-index.mjs                    | WeakMap-cached indexes by product ID, category and family; treat input arrays as immutable.                                    |
 | src/catalogue.mjs                          | Load and validate records, preserve permanent SKUs and merge image/PDF metadata.                                               |
 | src/descriptions.mjs                       | Generate grounded application descriptions without inventing specifications.                                                   |
 | src/location.mjs                           | Owner-confirmed office address and exact Google Maps identifier.                                                               |
-| src/modern.css                             | Brand theme, component refinements, mobile rules and reduced-motion overrides. Preserve cascade order.                         |
+| src/styles/*.css                           | Ordered theme and component overrides, assembled without changing cascade precedence.                                          |
 | src/styles.css                             | Base document, responsive layout, reusable components and footer placement.                                                    |
-| src/templates.mjs                          | HTML generation, shared header/footer, product cards and page content; escape inserted text.                                   |
+| src/templates.mjs                          | Public page-generator exports; no duplicated page markup.                                                                      |
+| src/templates/*.mjs                        | Focused page generators and shared components with escaped catalogue text.                                                     |
+| scripts/browser-build.mjs                  | Browser bundling, one stylesheet and projected search records.                                                                 |
+| scripts/export_data.py                     | Full generated catalogue input; separate from compact browser search records.                                                  |
 | scripts/build.mjs                          | Build local previews and dist; validates records, cleans only verified generated routes and compacts published catalogue JSON. |
 | scripts/check-syntax.mjs                   | Parse every maintained JavaScript file without executing maintenance operations.                                               |
 | scripts/check-python.py                    | Parse Python maintenance code without importing export dependencies or running exports.                                        |
@@ -83,8 +87,14 @@ File headers explain responsibility; function comments explain boundaries and co
 
 ## Maintenance constraints
 
-Keep CSS order: styles.css is the base and modern.css supplies later overrides. Keep generated local records readable because Python exporters parse products.js. Published dist/products.js is compact but semantically identical. Export/source-audit tools may write data and reports; normal website builds never re-export the PDF or workbook.
+Keep CSS order: src/styles.css is the base; themeComponents in scripts/browser-build.mjs defines the later component order. Generated site.css combines both without changing precedence. Keep generated local records readable because Python exporters parse products.js. Published dist/products.js is compact but semantically identical; pages load the separately projected browser-products.js. Export/source-audit tools may write data and reports; normal website builds never re-export the PDF or workbook.
 
 Python scripts are formatted at 100 columns. All maintained scripts were parsed and their formatting was checked against unchanged syntax trees. Export regeneration is a separate catalogue maintenance operation.
 
 The workbook image helper, scripts/workbook_images.py, encodes JPEG previews and shares identical image resources within the XLSX package. Original website images remain unchanged, and each product retains its photo on both the All Products and category sheets.
+
+## Module and export boundaries
+
+Templates import shared helpers from src/templates/shared.mjs. Browser sources share one private scope in the generated bundle; they require no module loader, preserve file previews and do not expose initializer globals. Slider positions and card widths are cached until a ResizeObserver reports a size change. Search names, SKUs and category text are normalized once per page.
+
+Maintenance Python commands perform work only through main(). Utility modules keep reusable functions at module scope. The isolated export-entrypoints regression checks the actual PDF/XLSX outputs and import safety without altering the customer downloads.

@@ -5,17 +5,16 @@ import { describeProduct } from './descriptions.mjs';
 export const categories = JSON.parse(
   fs.readFileSync(new URL('./data/reviewed-categories.json', import.meta.url), 'utf8'),
 );
+// Load immutable source records once for page counts, validation and export metadata.
+export const catalogueRecords = ['reviewed-products', 'pump-products', 'online-products'].flatMap(
+  (name) => JSON.parse(fs.readFileSync(new URL(`./data/${name}.json`, import.meta.url), 'utf8')),
+);
 /** Validate permanent identifiers and merge current image/export metadata. */
 export function loadCatalogue(root) {
   const categoryIds = new Set(categories.map((category) => category.id));
   const imageOverrides = JSON.parse(
     fs.readFileSync(path.join(root, 'src/data/product-image-overrides.json'), 'utf8'),
   );
-  const records = [
-    ...JSON.parse(fs.readFileSync(path.join(root, 'src/data/reviewed-products.json'), 'utf8')),
-    ...JSON.parse(fs.readFileSync(path.join(root, 'src/data/pump-products.json'), 'utf8')),
-    ...JSON.parse(fs.readFileSync(path.join(root, 'src/data/online-products.json'), 'utf8')),
-  ];
   const cataloguePages = JSON.parse(
     fs.readFileSync(path.join(root, 'src/data/catalogue-pages.json'), 'utf8'),
   );
@@ -25,7 +24,7 @@ export function loadCatalogue(root) {
   const ids = new Set(),
     skus = new Set(),
     names = new Set();
-  return records.map((record) => {
+  return catalogueRecords.map((record) => {
     if (ids.has(record.id) || skus.has(record.sku) || names.has(record.name))
       throw new Error('Duplicate reviewed product ' + record.sku);
     ids.add(record.id);
