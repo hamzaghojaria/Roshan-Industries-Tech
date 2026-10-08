@@ -1,10 +1,10 @@
-﻿const { chromium } = require('../../.site-tools/qa/node_modules/playwright-core');
+// Regression check: related slider. Run after rebuilding the website.
+const { chromium } = require('./helpers/browser.cjs');
 const assert = require('node:assert/strict');
 const { pathToFileURL } = require('node:url');
 const path = require('node:path');
 (async () => {
   const b = await chromium.launch({
-    executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {

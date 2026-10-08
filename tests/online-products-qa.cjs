@@ -4,7 +4,7 @@ const fs = require('node:fs'),
   crypto = require('node:crypto'),
   assert = require('node:assert/strict');
 const { pathToFileURL } = require('node:url');
-const { chromium } = require('../../.site-tools/qa/node_modules/playwright-core');
+const { chromium } = require('./helpers/browser.cjs');
 const products = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8')).filter(
   (p) => Number(p.sku.slice(4)) <= 259,
 );
@@ -42,7 +42,6 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
     for (const spec of p.specifications) assert(html.includes(spec.value));
   }
   const browser = await chromium.launch({
-    executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {

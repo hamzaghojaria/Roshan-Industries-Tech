@@ -1,26 +1,17 @@
 // Regression checks for mobile menu, breadcrumbs, straight hero and footer/map layout.
-const { createRequire } = require('node:module');
 const path = require('node:path');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(path.resolve(__dirname, '../../.site-tools/qa/package.json'))(
-    'playwright-core',
-  ));
-}
+const { chromium } = require('./helpers/browser.cjs');
 const { pathToFileURL } = require('node:url');
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 (async () => {
   const root = path.resolve(__dirname, '..');
   const browser = await chromium.launch({
-    executablePath:
-      process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {
     const page = await browser.newPage();
+    await page.route('https://**/*', (route) => route.abort());
     const url = (file) => pathToFileURL(path.join(root, file)).href;
     // Audit every generated route; map network availability does not affect local geometry.
     const audit = await browser.newPage({ reducedMotion: 'reduce' });
@@ -36,9 +27,11 @@ const assert = require('node:assert/strict');
       ...fs.readdirSync(path.join(root, 'products')).map((file) => `products/${file}`),
     ];
     for (const width of process.argv.includes('--interactions-only') ? [] : [320, 390, 760]) {
+      console.log(`[mobile] Auditing ${routes.length} routes at ${width}px...`);
       await audit.setViewportSize({ width, height: 844 });
       for (const file of routes) {
-        await audit.goto(url(file));
+        // Geometry needs loaded CSS and enhancement, not a completed large image download.
+        await audit.goto(url(file), { waitUntil: 'domcontentloaded' });
         const geometry = await audit.evaluate(() => {
           const breadcrumb = document.querySelector('.breadcrumb');
           const content = document.querySelector('.page-intro, .product-detail');
@@ -126,6 +119,7 @@ const assert = require('node:assert/strict');
       viewport: { width: 390, height: 844 },
     });
     const plain = await noJs.newPage();
+    await plain.route('https://**/*', (route) => route.abort());
     await plain.goto(url('index.html'));
     assert(await plain.locator('#primary-navigation').isVisible());
     await noJs.close();

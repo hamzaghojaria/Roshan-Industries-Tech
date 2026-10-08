@@ -217,6 +217,7 @@ const rules = [
     'A measuring reference for comparing watch strap and lug widths during replacement work. Confirm the marked range and required fitting application with Roshan Industries before ordering.',
   ],
 ];
+/** Prefer a specific name rule, then fall back to the reviewed category application. */
 export function describeProduct(product) {
   const application =
     rules.find(([pattern]) => pattern.test(product.name))?.[1] || applications[product.categoryId];

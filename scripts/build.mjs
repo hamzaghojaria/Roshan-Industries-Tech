@@ -16,6 +16,7 @@ import {
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Resolve source data once so every page and export uses the same records.
 const products = loadCatalogue(root);
+console.log(`[build] Loaded ${products.length} validated products. Generating pages...`);
 // Generated HTML is stamped with its source location to discourage manual edits.
 const write = (file, html) => {
   const target = path.join(root, file);
@@ -106,6 +107,11 @@ for (const file of [
   fs.copyFileSync(path.join(root, file), path.join(output, file));
 for (const dir of ['assets', 'categories', 'products'])
   fs.cpSync(path.join(root, dir), path.join(output, dir), { recursive: true });
+// Visitors need the same records without development indentation; local exports stay readable.
+fs.writeFileSync(
+  path.join(output, 'products.js'),
+  `// Generated catalogue data. Edit src/data/ and rebuild.\nwindow.ROSHAN_PRODUCTS = ${JSON.stringify(products)};\n`,
+);
 console.log(
-  `Built ${products.length} product pages, ${categories.length} category pages and 6 main pages. Stable SKUs saved to sku-map.json.`,
+  `[build] Ready: ${products.length} product pages, ${categories.length} category pages and 6 main pages in dist/. Permanent SKUs validated against src/data/sku-map.json.`,
 );

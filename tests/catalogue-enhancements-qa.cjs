@@ -1,8 +1,9 @@
+// Regression check: catalogue enhancements. Run after rebuilding the website.
 const fs = require('node:fs'),
   path = require('node:path'),
   http = require('node:http'),
   assert = require('node:assert/strict');
-const { chromium } = require('../../.site-tools/qa/node_modules/playwright-core');
+const { chromium } = require('./helpers/browser.cjs');
 const root = path.resolve(__dirname, '..');
 const server = http.createServer((req, res) => {
   const pathname = new URL(req.url, 'http://localhost').pathname;
@@ -26,7 +27,6 @@ const server = http.createServer((req, res) => {
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
   const origin = 'http://127.0.0.1:' + server.address().port;
   const browser = await chromium.launch({
-    executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {

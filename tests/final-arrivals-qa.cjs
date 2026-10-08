@@ -1,8 +1,9 @@
+// Regression check: final arrivals. Run after rebuilding the website.
 const fs = require('node:fs'),
   assert = require('node:assert/strict'),
   path = require('node:path'),
   crypto = require('node:crypto');
-const { chromium } = require('../../.site-tools/qa/node_modules/playwright-core');
+const { chromium } = require('./helpers/browser.cjs');
 const { pathToFileURL } = require('node:url');
 (async () => {
   const products = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8')).filter(
@@ -30,7 +31,6 @@ const { pathToFileURL } = require('node:url');
     exportReport.xlsxSha256,
   );
   const browser = await chromium.launch({
-    executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {

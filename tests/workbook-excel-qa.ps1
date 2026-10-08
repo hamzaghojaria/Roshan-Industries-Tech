@@ -1,3 +1,4 @@
+# Read-only Microsoft Excel COM verification of sheets, records and embedded photos; writes an audit report.
 ﻿$ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $workbookPath = Join-Path $projectRoot 'Roshan-Industries-Product-Catalogue.xlsx'

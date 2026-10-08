@@ -1,14 +1,6 @@
 // Browser regression checks: custom enquiries, descriptive content and responsive layouts.
 // Use an installed test dependency, with the retained portable tooling as a fallback.
-const { createRequire } = require('node:module');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(
-    require('node:path').resolve(__dirname, '../../.site-tools/qa/package.json'),
-  )('playwright-core'));
-}
+const { chromium } = require('./helpers/browser.cjs');
 const { pathToFileURL } = require('node:url');
 const path = require('node:path');
 const assert = require('node:assert/strict');
@@ -16,8 +8,6 @@ const assert = require('node:assert/strict');
   const root = path.resolve(__dirname, '..');
   require('node:fs').mkdirSync(path.join(root, 'artifacts/qa'), { recursive: true });
   const browser = await chromium.launch({
-    executablePath:
-      process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {

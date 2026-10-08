@@ -1,19 +1,10 @@
 // Exercise real carousel movement, pause, reduced motion and mobile geometry.
-const { createRequire } = require('node:module');
 const path = require('node:path');
 const { pathToFileURL } = require('node:url');
 const assert = require('node:assert/strict');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(path.resolve(__dirname, '../../.site-tools/qa/package.json'))(
-    'playwright-core',
-  ));
-}
+const { chromium } = require('./helpers/browser.cjs');
 (async () => {
   const browser = await chromium.launch({
-    executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   const home = pathToFileURL(path.resolve(__dirname, '../index.html')).href;

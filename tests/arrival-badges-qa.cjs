@@ -1,6 +1,7 @@
+// Regression check: arrival badges. Run after rebuilding the website.
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
-const { chromium } = require('../../.site-tools/qa/node_modules/playwright-core');
+const { chromium } = require('./helpers/browser.cjs');
 const { pathToFileURL } = require('node:url');
 const path = require('node:path');
 (async () => {
@@ -17,7 +18,6 @@ const path = require('node:path');
     );
   }
   const b = await chromium.launch({
-    executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   const p = await b.newPage({ reducedMotion: 'reduce' });

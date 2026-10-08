@@ -1,14 +1,6 @@
 // Browser regression checks: navigation, all categories, search and pagination.
 // Use an installed test dependency, with the retained portable tooling as a fallback.
-const { createRequire } = require('node:module');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(
-    require('node:path').resolve(__dirname, '../../.site-tools/qa/package.json'),
-  )('playwright-core'));
-}
+const { chromium } = require('./helpers/browser.cjs');
 const fs = require('node:fs');
 const path = require('node:path');
 const { pathToFileURL } = require('node:url');
@@ -25,8 +17,6 @@ let browser;
   require('node:fs').mkdirSync(path.join(root, 'artifacts/qa'), { recursive: true });
   const url = (file) => pathToFileURL(path.join(root, file)).href;
   browser = await chromium.launch({
-    executablePath:
-      process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
@@ -133,7 +123,9 @@ let browser;
   assert.equal(await page.locator('.family-overview a').count(), 5);
   assert.equal(await page.locator('.family-heading').count(), 5);
   assert.equal(
-    await page.locator('#family-watchmaking .family-count span').textContent(),
+    (await page.locator('#family-watchmaking .family-count span').textContent())
+      .replace(/\s+/g, ' ')
+      .trim(),
     '6 categories · 98 products',
   );
   await page.locator('.family-overview a').first().click();

@@ -1,5 +1,6 @@
 // Cache one lookup index per catalogue array. Source records stay unchanged.
 const indexes = new WeakMap();
+/** Reuse indexes while the array stays immutable; a new array receives a new index. */
 export function indexCatalogue(products) {
   if (indexes.has(products)) return indexes.get(products);
   const index = { byId: new Map(), byCategory: new Map(), byFamily: new Map() };

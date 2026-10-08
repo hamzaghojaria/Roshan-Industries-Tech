@@ -334,7 +334,8 @@ export function layout(
           </div>
           <div class="container footer-bottom">
             <div class="footer-social" role="group" aria-label="Social media">
-              <span>LinkedIn</span><a
+              <span>LinkedIn</span
+              ><a
                 href="https://www.instagram.com/roshanindustriestech?stkn=MXQxbTN2cDkzZm9reg=="
                 target="_blank"
                 rel="noopener noreferrer"
@@ -563,18 +564,16 @@ export function home(products) {
     { active: 'home', page: 'home' },
   );
 }
-/** Group the fifteen category pages by trade. */
+/** Group the current category inventory by trade using the shared family order. */
 export function categoriesPage(products) {
   // Compute family totals once, then reuse them for overview links and section headers.
   const index = indexCatalogue(products);
-  const families = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'].map(
-    (name) => ({
-      name,
-      id: name.toLowerCase().replaceAll(' ', '-'),
-      categories: categories.filter((category) => category.family === name),
-      count: index.byFamily.get(name)?.length || 0,
-    }),
-  );
+  const families = familyNames.map((name) => ({
+    name,
+    id: name.toLowerCase().replaceAll(' ', '-'),
+    categories: categories.filter((category) => category.family === name),
+    count: index.byFamily.get(name)?.length || 0,
+  }));
   return layout(
     'Product Categories',
     /* HTML */ `${breadcrumb('Categories')}
@@ -599,7 +598,8 @@ export function categoriesPage(products) {
                 </div>
                 <div class="family-count">
                   <span
-                    >${family.categories.length}&nbsp;categories &middot; ${family.count}&nbsp;products</span
+                    >${family.categories.length}&nbsp;categories &middot;
+                    ${family.count}&nbsp;products</span
                   >
                 </div>
               </div>

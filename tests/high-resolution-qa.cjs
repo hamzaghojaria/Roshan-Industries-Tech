@@ -1,18 +1,11 @@
-﻿// Verify all images decode and the download served by the site is the current branded PDF.
+// Regression check: high resolution. Run after rebuilding the website.
+// Verify all images decode and the download served by the site is the current branded PDF.
 const fs = require('node:fs'),
   path = require('node:path'),
   http = require('node:http'),
   crypto = require('node:crypto'),
   assert = require('node:assert/strict');
-const { createRequire } = require('node:module');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(path.resolve(__dirname, '../../.site-tools/qa/package.json'))(
-    'playwright-core',
-  ));
-}
+const { chromium } = require('./helpers/browser.cjs');
 const root = path.resolve(__dirname, '..');
 const server = http.createServer((req, res) => {
   const requestPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
@@ -37,8 +30,6 @@ const server = http.createServer((req, res) => {
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
   const origin = 'http://127.0.0.1:' + server.address().port;
   const b = await chromium.launch({
-    executablePath:
-      process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {
@@ -96,11 +87,11 @@ const server = http.createServer((req, res) => {
     );
     fs.unlinkSync(destination);
     await page.screenshot({
-      path: path.join(root, 'reports/high-resolution-audit/new-arrivals-mobile.png'),
+      path: path.join(root, 'artifacts/qa/new-arrivals-mobile.png'),
     });
     await page.goto(origin + '/products/rit-0226.html');
     await page.screenshot({
-      path: path.join(root, 'reports/high-resolution-audit/new-product-mobile.png'),
+      path: path.join(root, 'artifacts/qa/new-product-mobile.png'),
       fullPage: true,
     });
     console.log(

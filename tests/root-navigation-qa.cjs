@@ -3,15 +3,7 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const { createRequire } = require('node:module');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(path.resolve(__dirname, '../../.site-tools/qa/package.json'))(
-    'playwright-core',
-  ));
-}
+const { chromium } = require('./helpers/browser.cjs');
 (async () => {
   const root = path.resolve(__dirname, '..');
   const server = http.createServer((request, response) => {
@@ -34,8 +26,6 @@ try {
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${server.address().port}`;
   const browser = await chromium.launch({
-    executablePath:
-      process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {

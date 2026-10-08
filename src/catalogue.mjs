@@ -5,7 +5,9 @@ import { describeProduct } from './descriptions.mjs';
 export const categories = JSON.parse(
   fs.readFileSync(new URL('./data/reviewed-categories.json', import.meta.url), 'utf8'),
 );
+/** Validate permanent identifiers and merge current image/export metadata. */
 export function loadCatalogue(root) {
+  const categoryIds = new Set(categories.map((category) => category.id));
   const imageOverrides = JSON.parse(
     fs.readFileSync(path.join(root, 'src/data/product-image-overrides.json'), 'utf8'),
   );
@@ -31,7 +33,7 @@ export function loadCatalogue(root) {
     names.add(record.name);
     if (permanentSkus[record.id] !== record.sku)
       throw new Error('Permanent SKU changed ' + record.id);
-    if (!categories.some((c) => c.id === record.categoryId))
+    if (!categoryIds.has(record.categoryId))
       throw new Error('Unknown category ' + record.categoryId);
     if (!/^[A-Za-z0-9 .-]+$/.test(record.name)) throw new Error('Unclean title ' + record.name);
     const { previousName, previousCategory, ...current } = record;

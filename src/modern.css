@@ -1,5 +1,4 @@
-﻿/* Brand theme, responsive refinements, hover effects and WhatsApp styling. */
-/* Shared visual theme: applied to every generated page. */
+﻿/* Shared visual theme: applied to every generated page. */
 
 :root {
   --navy: #111d30;
@@ -598,11 +597,6 @@ header nav {
   border-color: #b6c7ed;
 }
 
-.product-card:hover .product-image img,
-.product-card:focus-within .product-image img {
-  transform: translateY(-3px);
-}
-
 .product-card:hover h3 > a {
   color: var(--slate);
 }
@@ -1040,10 +1034,6 @@ select {
 .detail-image img {
   mix-blend-mode: multiply;
   transition: transform 0.65s var(--ease);
-}
-
-.detail-image:hover img {
-  transform: translateY(-3px);
 }
 
 .detail-copy h1 {

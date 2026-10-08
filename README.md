@@ -1,159 +1,105 @@
 # Roshan Industries
 
-Watch parts, tools and custom manufacturing in Mumbai. **Since 1900 · 125+ years of service.**
+Watch parts, tools and custom manufacturing in Mumbai, serving customers since 1900.
 
-[View website](https://roshan-industries-tech.onrender.com/) · [GitHub repository](https://github.com/hamzaghojaria/Roshan-Industries-Tech) · [Email us](mailto:roshanindustriestech@gmail.com)
+[Website](https://roshan-industries-tech.onrender.com/) | [GitHub](https://github.com/hamzaghojaria/Roshan-Industries-Tech) | [Email](mailto:roshanindustriestech@gmail.com)
 
-**264 products · 21 categories · 5 families**. The website includes 216 reviewed PDF products, 12 restored pump listings and 36 approved October New Arrivals. The PDF and XLSX retain 228 products until the user requests the product export update. The PDF cover and dedicated introduction were refreshed separately; it now has 53 pages.
-
-[Start locally](#start-locally) · [What to edit](#what-to-edit) · [Render](#publish-on-render) · [Hostinger](#publish-on-hostinger) · [PDF and Excel](#pdf-and-excel)
-
-## How it works
-
-```text
-Edit src/ and assets/
-         |
-         v
-npm run build
-         |
-         v
-dist/ = finished website
-         |
-         v
-Render publishes dist/ OR you upload its contents to Hostinger
-```
-
-**You edit the source. The build creates the finished pages.** `dist` means distribution: the files ready to publish. It is recreated automatically and does not need to be committed to GitHub.
+The current website contains **268 products, 21 categories, five families and 40 New Arrivals**. The synchronized customer PDF has 59 pages; the workbook contains 23 sheets and 536 embedded photographs. These totals describe the current records, not permanent limits.
 
 ## Start locally
 
-Open a terminal inside `roshan-industries-tech`. Use Node.js 22 or newer.
+Use Node.js 22 or newer. From this project directory:
 
 ```powershell
 npm install
 npm run build
 npm run check
+npm run check:syntax
 ```
 
-Open the generated `index.html` in your browser to preview the website. After changing source files, run the build again and refresh the browser.
+Open the generated index.html for a local preview. Rebuild after editing source. Hosting requires only the build command; Python and a browser are needed only for their respective maintenance checks.
 
-## Latest catalogue presentation
+This workspace also retains portable Node and test dependencies under ../.site-tools/. They are local tooling and are excluded from hosting and source archives.
 
-The cover has a logo centered vertically and horizontally. Page 2 introduces the business and enquiry process; the clickable category index is on pages 3 and 4. All 228 previously exported product pages and photographs are preserved. Website page links have been adjusted; Excel and the New Arrival product export remain deferred. `scripts/update-catalogue-introduction.py` reproduces this presentation update from the archived prior catalogue.
+## Project structure
 
-Five further designs were added from eight unique links with repeated product references consolidated. Their SKUs are RIT-0260 through RIT-0264. The full New Arrivals selection now contains 36 products.
+| Location                                 | Responsibility                                                                                                |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| src/templates.mjs                        | Shared HTML, page content, navigation, breadcrumbs, footer and product cards                                  |
+| src/app.js                               | Named initializers for search, navigation, effects, sliders, arrivals, listing history and catalogue controls |
+| src/styles.css                           | Base document layout and responsive components                                                                |
+| src/modern.css                           | Brand theme and ordered component/mobile refinements; loaded after styles.css                                 |
+| src/catalogue.mjs                        | Load records, validate permanent SKUs and merge image/export metadata                                         |
+| src/catalogue-index.mjs                  | Cached product/category/family lookups per catalogue array                                                    |
+| src/descriptions.mjs                     | Descriptions for reviewed catalogue products                                                                  |
+| src/location.mjs                         | Confirmed office address and map                                                                              |
+| src/data/                                | Reviewed records, approved arrivals, image overrides, SKU and PDF-page mappings                               |
+| assets/                                  | Published photos, logo and customer PDF                                                                       |
+| scripts/                                 | Build, syntax checks, test runner, export and audit tools                                                     |
+| tests/                                   | Browser and fresh-build regressions; helpers/browser.cjs owns browser setup                                   |
+| docs/code-reference.md                   | Purpose of every maintained code file and data/configuration notes                                            |
+| reports/high-resolution-audit/           | Export reports, image provenance and retained source audits                                                   |
+| artifacts/                               | Ignored local screenshots and temporary test output                                                           |
+| dist/                                    | Generated hosting output, recreated on every build                                                            |
+| products/, categories/, root HTML/CSS/JS | Generated local-preview copies                                                                                |
 
-## October New Arrivals
+**Edit src/ and assets/, then rebuild.** Generated pages carry a source-location comment. Root products.js stays readable for PDF/XLSX tools; dist/products.js contains identical records with compact JSON to reduce download size. CSS rules keep their existing order so mobile and accessibility overrides remain predictable.
 
-`src/data/online-products.json` holds the approved linked acrylic stand and 30 distinct ZIP products. One repeated ZIP image was excluded. `src/data/new-arrivals.json` controls the shared blue New badges across listings and detail pages. New products have stable SKUs RIT-0229 through RIT-0259. They have no PDF page link until exported. Supplied dimensions are recorded separately from generated descriptions. Seven images were cleaned using the built in imagegen tool; original references and edits are tracked in the source data.
+JSON is strict data and cannot contain comments. Data and configuration responsibilities are documented in the code reference instead.
 
-## What to edit
+## Current interface behavior
 
-| Change                                    | File or folder                                                                                                                                                                     |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Page content, layouts, header and footer  | [src/templates.mjs](src/templates.mjs)                                                                                                                                             |
-| Colours, spacing and mobile appearance    | [src/styles.css](src/styles.css), [src/modern.css](src/modern.css)                                                                                                                 |
-| Sliders, search, filters and mobile menu  | [src/app.js](src/app.js)                                                                                                                                                           |
-| Reviewed PDF products and categories      | [src/catalogue.mjs](src/catalogue.mjs), [src/data/reviewed-products.json](src/data/reviewed-products.json), [src/data/reviewed-categories.json](src/data/reviewed-categories.json) |
-| Product descriptions                      | [src/descriptions.mjs](src/descriptions.mjs)                                                                                                                                       |
-| Office address and map                    | [src/location.mjs](src/location.mjs)                                                                                                                                               |
-| Photos, logo and current downloadable PDF | [assets/](assets/)                                                                                                                                                                 |
+- Every page shares the same header and footer. On mobile, the highlighted New Arrivals navigation label and its dot are left aligned.
+- Breadcrumbs are left aligned on mobile, use subtle chevrons, and keep long product titles on a separate row. Category counts keep each number with its label when wrapping.
+- Product images lift slightly on desktop hover and mobile interaction without changing size. There is no magnifier or image zoom dialog. Reduced-motion preferences disable the lift.
+- The footer says Download Catalogue. Instagram links to the supplied company profile in a new tab; X has been removed.
+- Header search supports thumbnails, SKUs, categories and keyboard navigation. Catalogue and arrivals listings use URL-backed filters and pagination, with 24 products per page.
+- Returning from a product preserves listing position, filters and focus. Related products form a desktop grid and a manual mobile slider.
+- Content and links remain usable without JavaScript. Enquiries are prepared in the visitor's email or WhatsApp app.
 
-**Keep existing SKUs unchanged.** The permanent mapping lives in [src/data/sku-map.json](src/data/sku-map.json).
-
-The footer stays at the bottom of short pages on mobile and desktop. On long pages it follows the content naturally. This layout is defined in `src/styles.css`; the footer does not cover page content while scrolling.
-
-<details>
-<summary><strong>Click to explore the folders</strong></summary>
-
-| Folder                     | Purpose                                                        |
-| -------------------------- | -------------------------------------------------------------- |
-| `src/`                     | Editable website code and templates                            |
-| `src/data/`                | Original catalogue records, approved names and permanent SKUs  |
-| `assets/`                  | Logo, product photos, pump photos and the current customer PDF |
-| `scripts/`                 | Build, validation, image extraction and catalogue export tools |
-| `tests/`                   | Browser checks for mobile layout and website behaviour         |
-| `reports/`                 | Catalogue verification records and PDF page mappings           |
-| `artifacts/`               | Local screenshots and review files; ignored by Git             |
-| `dist/`                    | Generated website ready for hosting; ignored by Git            |
-| `products/`, `categories/` | Generated HTML for local previews; ignored by Git              |
-| `.openai/`                 | Existing project metadata; not used by the Render build        |
-
-Root HTML, CSS, JavaScript and CSV files are also generated local-preview copies. Make lasting changes in `src/` or `assets/`.
-
-</details>
-
-<details>
-<summary><strong>Click to explore supporting code files</strong></summary>
-
-| File                                         | Purpose                                                                 |
-| -------------------------------------------- | ----------------------------------------------------------------------- |
-| `src/catalogue-index.mjs`                    | Fast lookups by product, category and family                            |
-| `src/data/reviewed-products.json`            | Current PDF product records with page, panel, crop and image dimensions |
-| `src/data/new-arrivals.json`                 | Current arrivals and shared New badges                                  |
-| `scripts/build.mjs`                          | Generates pages and recreates `dist/`                                   |
-| `scripts/check.mjs`                          | Checks links, images, product counts and SKU stability                  |
-| `scripts/extract-high-resolution.py`         | Native scan extraction and image provenance                             |
-| `scripts/export-high-resolution-workbook.py` | Styled, synchronized Excel database                                     |
-| `scripts/validate-high-resolution.mjs`       | Complete source, product, image, download and XLSX audit                |
-| `package.json`                               | Build, check, test and formatting commands                              |
-| `requirements.txt`                           | Python dependencies for catalogue tools                                 |
-| `.gitignore`                                 | Keeps generated files, exports and secrets out of GitHub                |
-| `.prettierrc.json`, `.prettierignore`        | Source formatting settings                                              |
-| `pending task.txt`                           | Owner-maintained ideas and notes                                        |
-
-Browser checks in `tests/`: `mobile-qa.cjs` checks responsive pages; `anchor-qa.cjs` checks section links; `content-qa.cjs` checks enquiries and content; `hover-qa.cjs` checks effects; `multipage-qa.cjs` checks catalogue navigation and filters; `root-navigation-qa.cjs` checks home URLs; `sliders-qa.cjs` checks autoplay and controls.
-
-Tests currently use Microsoft Edge on Windows. Source code includes responsibility comments. JSON files contain data and cannot include comments.
-
-</details>
-
-## Publish on Render
-
-| Setting           | Value                                                     |
-| ----------------- | --------------------------------------------------------- |
-| Service type      | Static Site                                               |
-| Branch            | `main`                                                    |
-| Root directory    | Leave empty when `package.json` is at the repository root |
-| Build command     | `npm run build`                                           |
-| Publish directory | `dist`                                                    |
-
-Render downloads your GitHub source, runs the build and serves `dist/`. With auto-deploy enabled, pushing changes updates the website.
+## Validation and maintenance
 
 ```powershell
-git add .
-git commit -m "Update website"
-git push origin main
+npm run check:syntax
+npm run format:check
+npm run check
+npm test
 ```
 
-Render does not generate PDF or Excel files. Commit the updated website PDF in `assets/` and its page mapping in `reports/` when updating the catalogue.
+npm test runs all *-qa.cjs suites sequentially, prints each suite name, continues after failures and exits with a failing status if any suite fails. Build before running it. To rerun selected suites, use `npm test -- hover-qa.cjs mobile-qa.cjs`. It includes a temporary fresh-checkout build; screenshot capture and Excel COM automation remain manual tools.
 
-## Publish on Hostinger
+Browser checks load the installed playwright-core dependency, with the retained workspace tooling as a fallback. Windows defaults to Microsoft Edge. Set BROWSER_PATH to an installed Chromium/Chrome/Edge executable on another system; EDGE_PATH is also accepted. On other operating systems, the Playwright default executable is used when no override is supplied.
 
-Create a **Custom PHP/HTML website**, open File Manager and upload the **contents of `dist/`** into `public_html/`.
-
-```text
-public_html/
-├── index.html
-├── assets/
-├── products/
-├── categories/
-└── ...other files from dist/
+```powershell
+$env:BROWSER_PATH = 'C:/path/to/chrome.exe'
+npm run test:mobile
 ```
 
-You can also extract `roshan-website.zip` there. `index.html` must sit directly inside `public_html/`. After source changes, rebuild and upload the updated files. Update the existing Render-domain URLs before moving to your final domain.
+| Command                | Checks                                                                       |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| npm run test:build     | Fresh checkout, repeat build, stale generated route removal                  |
+| npm run test:mobile    | Responsive layout, mobile menu and accessibility                             |
+| npm run test:catalogue | Search, sorting and pagination                                               |
+| npm run test:images    | Small image lift, no zoom, reduced motion and no-JavaScript image visibility |
+| npm run test:search    | Header suggestions and keyboard behavior                                     |
+| npm run test:history   | Listing return position and saved filters                                    |
+| npm run test:cards     | Whole-card native link behavior                                              |
+| npm run test:related   | Related-product mobile slider and desktop grid                               |
+| npm run test:sliders   | Carousel controls, autoplay and reduced motion                               |
+| npm run test:motion    | Hover feedback and reduced-motion behavior                                   |
+| npm run check:python   | Parse Python scripts without running exporters                               |
+| npm run check:source   | Detailed source/export provenance audit                                      |
+| npm run format         | Format maintained JavaScript, CSS, JSON configuration and Markdown           |
 
-## PDF and Excel
+Tests print PASS messages or assertion failures with a nonzero exit code. The website uses visible accessible status messages for results and pagination; maintenance logging belongs in scripts/tests rather than customer-facing copy.
 
-- **Website catalogue:** [assets/roshan-industries-catalogue.pdf](assets/roshan-industries-catalogue.pdf), a 59-page branded catalogue with a centered cover logo, refreshed introduction, high resolution product images, a clickable category index, website headers and footers, and restored pump listings.
-- **Product database:** [Roshan-Industries-Product-Catalogue.xlsx](Roshan-Industries-Product-Catalogue.xlsx), tracked so website builds include the synchronized database.
-- **Audit:** [reports/high-resolution-audit/](reports/high-resolution-audit/) contains the page review, before and after inventory, native crop provenance and validation results.
+## Catalogue records and exports
 
-The website, branded catalogue and workbook contain 268 products in 21 categories and five families, including 40 selected New Arrivals. All 200 previous photographed products retain their SKUs; 16 new source PDF entries and 40 online arrivals were added. The 12 pump enquiry entries retain their original SKUs, images and enquiry descriptions. Historical records and exporter scripts are archived in the workspace reference documents, outside the published website.
+Keep permanent SKUs unchanged in src/data/sku-map.json. Reviewed PDF records, restored pumps and approved online products are merged by loadCatalogue(). Duplicate IDs, SKUs or names, unknown categories and changed permanent mappings fail the build. Image replacements belong in src/data/product-image-overrides.json. New badges follow src/data/new-arrivals.json.
 
-Excel contains an Overview, All Products and 21 category sheets. Family names appear on the overview, every category header and each product row. Category tabs share a color by family. It includes fresh descriptions, branded catalogue page links, source panel references, image dimensions, checksums, and 536 embedded PNG previews. Image and product links are relative to the website folder; keep the workbook with the website files when using them locally.
+The customer PDF is assets/roshan-industries-catalogue.pdf. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx. Preserve native images and source provenance when updating either export.
 
-For future content changes:
+To regenerate both exports after a catalogue change, use a working Python interpreter and install requirements.txt:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -163,40 +109,24 @@ npm run build
 python scripts/export-high-resolution-workbook.py
 npm run build
 npm run check
-node scripts/validate-high-resolution.mjs
+npm run check:source
 python scripts/validate-synchronized-exports.py
 ```
 
-Close Excel before regenerating the workbook. `src/data/reviewed-products.json` and `src/data/reviewed-categories.json` hold the reviewed records. Product descriptions come from `src/descriptions.mjs`. `src/data/new-arrivals.json` controls the shared New badges.
+Python scripts use UTF-8 input and are formatted with Black at 100 columns. Run `python scripts/check-python.py` for dependency-free syntax validation; `python -m black --line-length 100 scripts` formats them when Black is installed.
 
-`extract-high-resolution.py` reproduces the native product crops from `../reference-documents/roshan-high-resolution-source.pdf`. It removes red page-frame fragments from crop corners without resampling the product images. The original supplied PDF remains unchanged.
+Close Excel before regenerating its workbook. The build reads the current XLSX and PDF; it does not regenerate them. Source-image extraction and inspection need ../reference-documents/roshan-high-resolution-source.pdf, which is outside the published website.
 
-## What belongs in GitHub?
+scripts/update-catalogue-introduction.py is a historical tool for the archived 228-product export, not the current 268-product export workflow. See the code reference before running tools that write records or export files.
 
-**Keep:** `src/`, `assets/`, `scripts/`, `tests/`, the synchronized XLSX, useful verification reports and configuration files.
+## Publishing
 
-**Ignore:** `dist/`, generated preview files, historical PDF and ZIP exports, screenshots, dependencies, caches and secrets. Old reference PDFs remain outside the repository.
+The existing Render static site builds with npm run build and publishes dist/. With auto-deploy configured, pushing reviewed source changes triggers the hosting build. This cleanup does not publish or push changes.
 
-Your normal workflow: **edit source → build and check → commit and push → Render deploys.**
+For Hostinger, upload the contents of dist/ directly into public_html/ so index.html sits at its root. Update hardcoded Render-domain URLs before moving to another public domain. scripts/package-delivery.py can package the finished website and editable source after a successful build.
 
-To refresh the branded exports, build the website, run `python scripts/export-branded-catalogue.py`, rebuild to refresh catalogue page links, run `python scripts/export-high-resolution-workbook.py`, then rebuild and validate. The original supplied PDF remains unchanged in the workspace reference documents.
+## Source control
 
-Photograph replacements are stored in `src/data/product-image-overrides.json`, with source URLs, natural image dimensions and checksums. The current loupe photos and replacement scissors stand image are included in the PDF and XLSX. Run `python scripts/validate-synchronized-exports.py` to compare every PDF image and workbook row/photo with the website.
+Keep source, assets, scripts, tests, docs, configuration, the synchronized XLSX and useful audit reports. Ignore generated previews, dist, screenshots, dependencies, caches and secrets. Owner notes in pending task.txt are maintained separately.
 
-All Products and category pages include a New Arrivals filter beside sorting, with search and pagination support. A shared page loader appears during page navigation on phone and desktop, respects reduced motion and remains hidden without JavaScript. Every product page has an Explore in catalogue link to its correct PDF page.
-
-New Arrivals uses its original card layout with category filters and pagination of 24 products per page. All Products retains the highlighted New Arrivals first sorting option without the separate Show selector.
-
-Listing history entries preserve scroll position and the selected product; pagination, search, sorting and category selection remain in the URL when visitors return or reload.
-
-Workbook tables provide their own filter dropdowns; overlapping worksheet filters are omitted for desktop Excel compatibility. The workbook was verified by normal read-only opening in Microsoft Excel, with all 268 products and 536 embedded photos retained.
-
-Header search offers product thumbnails, names, SKUs and categories, category links and full search results, with keyboard navigation and mobile support. The full-width mobile product enquiry bar has been removed.
-
-Product photographs open in an accessible image dialog with zoom controls, reset, drag to pan, mobile pinch zoom and Escape to close. Product additionalImages entries are supported as additional photographs; navigation controls appear only when multiple photographs are supplied. Without JavaScript the image opens directly.
-
-Product detail photographs magnify under a desktop hover pointer, following the cursor and resetting on exit. Touch devices use the tap-to-enlarge viewer. The Show selector is omitted from both All Products and category pages.
-
-In the same category uses a manual horizontal product slider on mobile, with swipe/native scrolling, a thin scrollbar and arrow controls. Desktop related products retain their grid layout.
-
-The product title link extends across each card, making the card clickable with native browser link behavior. Category labels are plain text, so every area of the card opens the product page. Sliders retain native touch scrolling.
+Normal workflow: edit source -> format -> build -> check and test -> review -> commit and publish.

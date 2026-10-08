@@ -11,6 +11,23 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sandbox = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'products.js'), 'utf8'), sandbox);
 const products = sandbox.window.ROSHAN_PRODUCTS;
+// Compact hosting data must be identical to the readable records used by exporters.
+const published = { window: {} };
+vm.runInNewContext(fs.readFileSync(path.join(root, 'dist/products.js'), 'utf8'), published);
+assert.equal(
+  JSON.stringify(published.window.ROSHAN_PRODUCTS),
+  JSON.stringify(products),
+  'Published catalogue records differ from local export records.',
+);
+for (const file of ['app.js', 'styles.css', 'modern.css']) {
+  const source = fs.readFileSync(path.join(root, 'src', file), 'utf8');
+  assert.equal(fs.readFileSync(path.join(root, file), 'utf8'), source, `Stale preview ${file}`);
+  assert.equal(
+    fs.readFileSync(path.join(root, 'dist', file), 'utf8'),
+    source,
+    `Stale published ${file}`,
+  );
+}
 const expectedProducts = loadCatalogue(root).length;
 assert.equal(products.length, expectedProducts);
 assert(
@@ -60,12 +77,7 @@ for (const file of files) {
     html = fs.readFileSync(filename, 'utf8');
   assert.match(html, /<title>[^<]+<\/title>/);
   // Every route uses the shared catalogue for header search suggestions.
-  const needsCatalogue = true;
-  assert.equal(
-    html.includes('products.js'),
-    needsCatalogue,
-    `Unexpected catalogue script: ${file}`,
-  );
+  assert(html.includes('products.js'), `Missing catalogue search records: ${file}`);
   const ids = new Set([...html.matchAll(/id="([^"]+)"/g)].map((m) => m[1]));
   for (const m of html.matchAll(/(?:href|src|action)="([^"]+)"/g)) {
     const value = decode(m[1]);

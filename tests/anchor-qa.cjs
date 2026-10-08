@@ -1,23 +1,13 @@
 // Check the hero category destination and both custom-manufacturing header anchors.
-const { createRequire } = require('node:module');
 const path = require('node:path');
 const { pathToFileURL } = require('node:url');
 const assert = require('node:assert/strict');
-let chromium;
-try {
-  ({ chromium } = require('playwright-core'));
-} catch {
-  ({ chromium } = createRequire(path.resolve(__dirname, '../../.site-tools/qa/package.json'))(
-    'playwright-core',
-  ));
-}
+const { chromium } = require('./helpers/browser.cjs');
 (async () => {
   const root = path.resolve(__dirname, '..');
   const url = (file) => pathToFileURL(path.join(root, file)).href;
   const destination = 'categories/screwdrivers.html';
   const browser = await chromium.launch({
-    executablePath:
-      process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
     headless: true,
   });
   try {
