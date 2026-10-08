@@ -587,7 +587,7 @@ export function categoriesPage(products) {
         </p>
       </section>
       <nav class="container family-overview" aria-label="Category families">
-        ${families.map((family) => `<a href="#family-${family.id}"><span class="eyebrow">CATEGORY FAMILY</span><strong>${esc(family.name)}</strong><span>${family.categories.length} categories · ${family.count} products</span></a>`).join('')}
+        ${families.map((family) => `<a href="#family-${family.id}"><span class="eyebrow">CATEGORY FAMILY</span><strong>${esc(family.name)}</strong><span>${family.categories.length}&nbsp;categories · ${family.count}&nbsp;products</span></a>`).join('')}
       </nav>
       ${families
         .map(
@@ -599,7 +599,7 @@ export function categoriesPage(products) {
                 </div>
                 <div class="family-count">
                   <span
-                    >${family.categories.length} categories &middot; ${family.count} products</span
+                    >${family.categories.length}&nbsp;categories &middot; ${family.count}&nbsp;products</span
                   >
                 </div>
               </div>
