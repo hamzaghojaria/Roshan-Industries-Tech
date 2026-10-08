@@ -334,7 +334,12 @@ export function layout(
           </div>
           <div class="container footer-bottom">
             <div class="footer-social" role="group" aria-label="Social media">
-              <span>LinkedIn</span><span>Instagram</span><span>X</span>
+              <span>LinkedIn</span><a
+                href="https://www.instagram.com/roshanindustriestech?stkn=MXQxbTN2cDkzZm9reg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
             </div>
             <span class="footer-heritage">Roshan Industries · Since 1900</span>
           </div>
@@ -714,13 +719,6 @@ export function cataloguePage(products, category = null) {
 }
 /** Product details, grounded description, enquiry links and related entries. */
 export function productPage(p, products) {
-  const photos = [
-    { src: '../' + p.image, alt: p.name },
-    ...(p.additionalImages || []).map((image) => ({
-      src: '../' + (typeof image === 'string' ? image : image.image || image.src),
-      alt: p.name,
-    })),
-  ];
   const related = (indexCatalogue(products).byCategory.get(p.categoryId) || [])
     .filter((q) => q.id !== p.id)
     .slice(0, 4);
@@ -729,21 +727,14 @@ export function productPage(p, products) {
     /* HTML */ `${breadcrumb(p.name, '../', /* HTML */ `<a href="../catalogue.html">Products</a><span>/</span><a href="../categories/${p.categoryId}.html">${esc(p.category)}</a><span>/</span>`)}
       <section class="container product-detail">
         <div class="detail-image">
-          <a
-            class="product-image-open"
-            href="../${p.image}"
-            target="_blank"
-            rel="noopener"
-            aria-label="Enlarge ${esc(p.name)}"
-            data-product-photos="${esc(JSON.stringify(photos))}"
-          >
+          <div class="product-photo">
             <img
               src="../${p.image}"
               alt="${esc(p.name)}"
               width="${p.imageWidth}"
               height="${p.imageHeight}"
             />
-          </a>
+          </div>
         </div>
         <div class="detail-copy">
           <a class="eyebrow" href="../categories/${p.categoryId}.html"
@@ -814,23 +805,6 @@ export function productPage(p, products) {
           </div>
         </div>
       </section>
-      <dialog class="product-image-viewer" aria-labelledby="viewer-title">
-        <div class="viewer-toolbar">
-          <h2 id="viewer-title">${esc(p.name)}</h2>
-          <button type="button" data-viewer-close aria-label="Close image viewer">×</button>
-        </div>
-        <div class="viewer-stage">
-          <div class="viewer-canvas"><img alt="" /></div>
-        </div>
-        <div class="viewer-controls">
-          <button type="button" data-viewer-prev aria-label="Previous photograph" hidden>←</button
-          ><button type="button" data-viewer-out aria-label="Zoom out">−</button
-          ><button type="button" data-viewer-reset>Reset</button
-          ><button type="button" data-viewer-in aria-label="Zoom in">+</button
-          ><button type="button" data-viewer-next aria-label="Next photograph" hidden>→</button
-          ><span class="viewer-status" role="status" aria-live="polite"></span>
-        </div>
-      </dialog>
       <section class="container product-custom">
         <div>
           <p class="eyebrow">NEED SOMETHING DIFFERENT?</p>

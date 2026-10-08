@@ -29,10 +29,12 @@ let browser;
   await page.waitForTimeout(400);
   const lifted = await card.evaluate((el) => getComputedStyle(el).transform);
   assert.match(lifted, /matrix\(1, 0, 0, 1, 0, -6\)/);
-  const zoom = await card
-    .locator('img')
-    .evaluate((el) => new DOMMatrix(getComputedStyle(el).transform).a);
-  assert(zoom > 1.03, 'Product photo should gently zoom on hover.');
+  const imageTransform = await card.locator('img').evaluate((el) => {
+    const matrix = new DOMMatrix(getComputedStyle(el).transform);
+    return { scale: matrix.a, lift: matrix.f };
+  });
+  assert.equal(imageTransform.scale, 1, 'Product photo should keep its original size.');
+  assert.equal(imageTransform.lift, -3, 'Product photo should lift slightly on hover.');
   await page.goto(url('categories.html'));
   const category = page.locator('.category-card').first();
   await category.hover();
@@ -90,7 +92,7 @@ let browser;
   assert.equal(await noJS.locator('.product-card').first().isVisible(), true);
   await context.close();
   console.log(
-    'PASS: card lift, image zoom, category hover, button feedback, search focus, sticky header, reduced motion and no-JavaScript visibility.',
+    'PASS: card lift, image lift, category hover, button feedback, search focus, sticky header, reduced motion and no-JavaScript visibility.',
   );
   await browser.close();
 })().catch(async (error) => {

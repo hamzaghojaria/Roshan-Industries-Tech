@@ -1,22 +1,5 @@
-
-
-Remove zoom effect 
-
-In mobile view new arrivals should be left aligned
-
-Download catalogue in footer to have C capital
-
 Analyse all the code files optimize it
-
-
-
-
-
-Social media links update
-
 Check the product which maaz bhai said is wrong
-
-Change the Logo to Roshan and then industries
 
 
 
@@ -27,9 +10,10 @@ Search by image
 Can we get the images online based on image and title and
 Linkedun roshan account
 Exploded view of a pump image
+Change the Logo to Roshan and then industries
 
 
-
+''''
 Admin pannel for website ?
 Yes—a small admin panel would be useful now, given how often you add products, replace images and change New Arrivals.
 I’d keep it focused on:
@@ -39,3 +23,4 @@ I’d keep it focused on:
 - Generating the catalogue PDF and Excel from the same product data.
 The biggest benefit is keeping the website, PDF and Excel synchronized, so each update happens once.
 Your static website can stay as it is for visitors. The admin panel would manage its content and publish updates. I’d avoid adding inventory, orders or customer accounts until you need them.
+'''
