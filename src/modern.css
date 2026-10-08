@@ -3475,6 +3475,13 @@ body[data-page='home'] .floating-whatsapp {
   }
 }
 @media (max-width: 640px) {
+  /* Keep homepage browse links left aligned beneath their headings on mobile. */
+  .section-head > .home-browse-link {
+    flex-basis: 100%;
+    margin-right: auto;
+    text-align: left;
+  }
+
   .home-arrivals > .product-grid {
     grid-template-columns: 1fr;
   }

@@ -536,7 +536,7 @@ export function home(products) {
             <p class="eyebrow">BROWSE WITH PURPOSE</p>
             <h2>Products for your trade</h2>
           </div>
-          <a class="text-link" href="categories.html">View all categories</a>
+          <a class="text-link home-browse-link" href="categories.html">View all categories</a>
         </div>
         ${homeSlider(
           'trades',
@@ -551,7 +551,7 @@ export function home(products) {
               <p class="eyebrow">FROM THE ROSHAN INDUSTRIES CATALOGUE</p>
               <h2>Explore the range</h2>
             </div>
-            <a class="text-link" href="catalogue.html">Browse all products</a>
+            <a class="text-link home-browse-link" href="catalogue.html">Browse all products</a>
           </div>
           ${homeSlider('range', 'Featured products', featured.map((p) => card(p)).join(''))}
         </div>
