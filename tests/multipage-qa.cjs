@@ -86,7 +86,7 @@ let browser;
     ['Clockmaking', 36],
     ['Jewellery', 21],
     ['Workshop Essentials', products.filter((p) => p.family === 'Workshop Essentials').length],
-    ['Precision Machining', 25],
+    ['Precision Machining', 54],
   ]) {
     await page.goto(url('catalogue.html') + '?family=' + encodeURIComponent(family));
     assert.equal(await page.locator('#family-filter').count(), 0);

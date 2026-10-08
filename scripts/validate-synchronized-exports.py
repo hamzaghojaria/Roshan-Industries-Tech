@@ -47,10 +47,15 @@ assert all(
 # Verify the replacement range and retired pump SKUs in customer exports.
 assert not any(product["family"] == "Pumps" for product in products)
 machining = [product for product in products if product["family"] == "Precision Machining"]
-assert len(machining) == 25
+assert len(machining) == 54
 assert {product["sku"] for product in machining} == {
-    f"RIT-{number:04d}" for number in range(272, 297)
+    f"RIT-{number:04d}" for number in range(272, 326)
 }
+# Every requested manufacturer product must be represented exactly once.
+coverage = read("reports/high-resolution-audit/precitech-website-coverage.json")
+expected_sources = set(coverage["expectedProductSourceUrls"])
+assert {product["sourceUrl"] for product in machining} == expected_sources
+assert len(expected_sources) == len(machining)
 export_text = "\n".join(page.get_text() for page in doc)
 assert all(product["name"] in export_text.replace("\n", " ") for product in machining)
 assert "pump" not in export_text.lower()

@@ -194,19 +194,204 @@
     "RIT-0211",
     "RIT-0212"
   ],
-  "products": 282,
+  "products": 311,
   "categories": 17,
-  "newArrivals": 66,
-  "pdfPages": 57,
+  "newArrivals": 95,
+  "pdfPages": 61,
   "workbookSheets": 19,
-  "workbookEmbeddedPhotos": 564,
+  "workbookEmbeddedPhotos": 622,
   "machiningClassification": "Indicative; final machining operations depend on customer drawings.",
   "brochureRangeEntries": [
     "Oil and Gas Machined Components",
     "Pressure Gauge Accessories"
   ],
-  "representativeImages": [
-    "Tube Fittings: male connector",
-    "Pressure Gauge Accessories: gauge saver"
+  "addedWebsiteProducts": [
+    {
+      "sku": "RIT-0297",
+      "name": "Reducer",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/53/reducer"
+    },
+    {
+      "sku": "RIT-0298",
+      "name": "Female Run Tee",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/52/female-run-tee"
+    },
+    {
+      "sku": "RIT-0299",
+      "name": "Female Branch Tee",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/51/female-branch-tee"
+    },
+    {
+      "sku": "RIT-0300",
+      "name": "Male Branch Tee",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/50/male-branch-tee"
+    },
+    {
+      "sku": "RIT-0301",
+      "name": "Male Run Tee",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/49/male-run-tee"
+    },
+    {
+      "sku": "RIT-0302",
+      "name": "Reducing Union Tee",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/47/reducing-union-tee"
+    },
+    {
+      "sku": "RIT-0303",
+      "name": "Union Tee",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/46/union-tee"
+    },
+    {
+      "sku": "RIT-0304",
+      "name": "Union Cross",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/45/union-cross"
+    },
+    {
+      "sku": "RIT-0305",
+      "name": "Female Adapter",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/44/female-adapter"
+    },
+    {
+      "sku": "RIT-0306",
+      "name": "Male Adapter",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/43/male-adapter"
+    },
+    {
+      "sku": "RIT-0307",
+      "name": "Female Elbow",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/42/female-elbow"
+    },
+    {
+      "sku": "RIT-0308",
+      "name": "Male Elbow",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/41/male-elbow"
+    },
+    {
+      "sku": "RIT-0309",
+      "name": "Union Elbow",
+      "categoryId": "vmc-milling",
+      "sourceUrl": "https://www.precitech.net/Products/40/union-elbow"
+    },
+    {
+      "sku": "RIT-0310",
+      "name": "Bulkhead Reducer Union",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/37/bulkhead-reducer-union"
+    },
+    {
+      "sku": "RIT-0311",
+      "name": "Bulkhead Union",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/36/bulkhead-union"
+    },
+    {
+      "sku": "RIT-0312",
+      "name": "Bulkhead Female Connector",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/35/bulkhead-female-connector"
+    },
+    {
+      "sku": "RIT-0313",
+      "name": "Bulkhead Male Connector",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/34/bulkhead-male-connector"
+    },
+    {
+      "sku": "RIT-0314",
+      "name": "Reducing Union",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/33/reducing-union"
+    },
+    {
+      "sku": "RIT-0315",
+      "name": "Union",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/32/union"
+    },
+    {
+      "sku": "RIT-0316",
+      "name": "Female Connector",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/31/female-connector"
+    },
+    {
+      "sku": "RIT-0317",
+      "name": "Tube Fitting Nut",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/29/nut"
+    },
+    {
+      "sku": "RIT-0318",
+      "name": "Back Ferrule",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/28/back-ferrule"
+    },
+    {
+      "sku": "RIT-0319",
+      "name": "Front Ferrule",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/27/front-ferrule"
+    },
+    {
+      "sku": "RIT-0320",
+      "name": "3 Piece Union Nipple",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/26/3-piece-union-nipple"
+    },
+    {
+      "sku": "RIT-0321",
+      "name": "3 Piece Union",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/25/3-piece-union"
+    },
+    {
+      "sku": "RIT-0322",
+      "name": "Syphon Tube Coupling",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/24/syphon-tube-coupling"
+    },
+    {
+      "sku": "RIT-0323",
+      "name": "Gauge Cock",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/23/gauge-cock"
+    },
+    {
+      "sku": "RIT-0324",
+      "name": "Gauge Adapter",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/22/gauge-adapter"
+    },
+    {
+      "sku": "RIT-0325",
+      "name": "Snubber",
+      "categoryId": "cnc-turning",
+      "sourceUrl": "https://www.precitech.net/Products/19/snubber"
+    }
+  ],
+  "machiningProducts": 54,
+  "cncTurningProducts": 36,
+  "vmcMillingProducts": 18,
+  "renamedEntries": [
+    {
+      "sku": "RIT-0284",
+      "name": "Male Connector"
+    },
+    {
+      "sku": "RIT-0296",
+      "name": "Gauge Saver"
+    }
   ]
 }
