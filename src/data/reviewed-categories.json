@@ -105,17 +105,38 @@
     "description": "Explore compasses photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
   },
   {
-    "id": "cnc-turning",
-    "name": "CNC Turning",
+    "id": "tube-instrumentation-fittings",
+    "name": "Tube and Instrumentation Fittings",
     "family": "Precision Machining",
-    "image": "assets/products/rit-0272-banjo-bolt.jpg",
-    "description": "Custom turned components for enquiries based on customer drawings and samples."
+    "image": "assets/products/rit-0284-tube-fittings.jpeg",
+    "description": "Tube connectors, valves, adapters, unions, tees, elbows and ferrules for instrumentation enquiries."
   },
   {
-    "id": "vmc-milling",
-    "name": "VMC Milling",
+    "id": "hydraulic-hose-fittings",
+    "name": "Hydraulic and Hose Fittings",
+    "family": "Precision Machining",
+    "image": "assets/products/rit-0272-banjo-bolt.jpg",
+    "description": "Hydraulic connectors, plugs, spindles and hose fitting components for custom manufacturing enquiries."
+  },
+  {
+    "id": "valve-bodies-manifolds",
+    "name": "Valve Bodies and Manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0289-check-valve-housing.jpg",
-    "description": "Custom milled components for enquiries based on customer drawings and samples."
+    "description": "Valve bodies, housings and instrumentation manifolds for application and drawing-based enquiries."
+  },
+  {
+    "id": "pressure-gauge-accessories",
+    "name": "Pressure Gauge Accessories",
+    "family": "Precision Machining",
+    "image": "assets/products/rit-0296-pressure-gauge-accessories.png",
+    "description": "Gauge savers, snubbers, adapters, cocks, couplings and unions for pressure instrument enquiries."
+  },
+  {
+    "id": "custom-machined-components",
+    "name": "Custom Machined Components",
+    "family": "Precision Machining",
+    "image": "assets/products/rit-0282-customized-fasteners.jpg",
+    "description": "Sensor bodies, custom fasteners and oil and gas components manufactured to customer drawings and samples."
   }
 ]

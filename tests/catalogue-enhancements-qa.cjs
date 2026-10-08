@@ -44,12 +44,12 @@ const server = http.createServer((req, res) => {
           'of ' + selected.length + ' products',
         ),
       );
-      assert.equal(await page.locator('#catalogue-grid .product-card').count(), 24);
-      assert.equal(await page.locator('#catalogue-grid .arrival-badge').count(), 24);
+      assert.equal(await page.locator('#catalogue-grid .product-card').count(), 12);
+      assert.equal(await page.locator('#catalogue-grid .arrival-badge').count(), 12);
       await page.locator('#pagination button').filter({ hasText: 'Next' }).click();
       assert.equal(
         await page.locator('#catalogue-grid .arrival-badge').count(),
-        selected.length - 24,
+        Math.min(12, selected.length - 12),
       );
       await page.reload();
       assert.equal(await page.locator('#arrival-filter').count(), 0);
@@ -100,7 +100,7 @@ const server = http.createServer((req, res) => {
     assert(!(await plain.locator('.page-loader').isVisible()));
     assert.equal(
       await plain.locator('#catalogue-grid .product-card').count(),
-      Object.keys(JSON.parse(fs.readFileSync('src/data/sku-map.json', 'utf8'))).length,
+      (await import('../src/catalogue.mjs')).loadCatalogue(root).length,
     );
     await noJs.close();
     assert.deepEqual(errors, []);

@@ -1,8 +1,19 @@
 {
   "products": 311,
-  "categorySheets": 17,
+  "categorySheets": 20,
   "embeddedPhotos": 622,
-  "sourceSha256": "114d31e4c26d7d87c474799e68453d8909d64b14c895c1209897f91f61b62f18",
+  "imageOptimization": {
+    "format": "JPEG",
+    "maxWidth": 240,
+    "maxHeight": 210,
+    "jpegQuality": 85,
+    "subsampling": 2,
+    "sharedImageResources": true
+  },
+  "xlsxBytes": 2132285,
+  "uniqueImageResources": 309,
+  "duplicateImageResourcesRemoved": 313,
+  "sourceSha256": "42b0a8255d5aab1002c952bf8a09e35db88b8b71adc08c4b06b0ab31b6ed6840",
   "familyColors": {
     "Watchmaking": "315BD6",
     "Clockmaking": "B68A42",
@@ -13,5 +24,5 @@
   "allTabsColored": true,
   "allFieldsMatchWebsite": true,
   "newArrivalProducts": 95,
-  "xlsxSha256": "c617aecf2cf1e9c6ea6b6723347838c684d7c1fd7db202322b1636530b7601f4"
+  "xlsxSha256": "27a7c719c2def004cbd45d66e240ae0a815848768cf3296113c40a66e6dd11e4"
 }

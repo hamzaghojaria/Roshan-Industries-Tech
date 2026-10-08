@@ -86,3 +86,5 @@ File headers explain responsibility; function comments explain boundaries and co
 Keep CSS order: styles.css is the base and modern.css supplies later overrides. Keep generated local records readable because Python exporters parse products.js. Published dist/products.js is compact but semantically identical. Export/source-audit tools may write data and reports; normal website builds never re-export the PDF or workbook.
 
 Python scripts are formatted at 100 columns. All maintained scripts were parsed and their formatting was checked against unchanged syntax trees. Export regeneration is a separate catalogue maintenance operation.
+
+The workbook image helper, scripts/workbook_images.py, encodes JPEG previews and shares identical image resources within the XLSX package. Original website images remain unchanged, and each product retains its photo on both the All Products and category sheets.

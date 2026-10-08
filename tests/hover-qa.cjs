@@ -72,7 +72,7 @@ let browser;
     '0s',
   );
   assert.equal(await page.locator('.scroll-revealed').count(), 0);
-  assert.equal(await page.locator('#catalogue-grid .product-card').count(), 24);
+  assert.equal(await page.locator('#catalogue-grid .product-card').count(), 12);
   const context = await browser.newContext({
     javaScriptEnabled: false,
     viewport: { width: 1440, height: 900 },

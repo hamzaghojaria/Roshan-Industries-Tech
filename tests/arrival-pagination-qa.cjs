@@ -20,10 +20,10 @@ const { pathToFileURL } = require('node:url');
   for (const width of [320, 390, 760, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(arrivals);
-    assert.equal(await page.locator('.arrival-card').count(), 24);
+    assert.equal(await page.locator('.arrival-card').count(), 12);
     assert.equal(await page.locator('#arrival-page-status').count(), 0);
     let links = new Set();
-    for (let n = 1; n <= 2; n++) {
+    for (let n = 1; n <= Math.ceil(arrivalCount / 12); n++) {
       assert.equal(
         await page.locator('#arrival-pagination [aria-current]').getAttribute('data-page'),
         String(n),
@@ -32,24 +32,24 @@ const { pathToFileURL } = require('node:url');
         .locator('.arrival-card .product-image')
         .evaluateAll((nodes) => nodes.map((n) => n.href)))
         links.add(href);
-      if (n < 2)
+      if (n < Math.ceil(arrivalCount / 12))
         await page
           .locator('#arrival-pagination button')
           .filter({ hasText: /^Next$/ })
           .click();
     }
     assert.equal(links.size, arrivalCount);
-    assert.equal(await page.locator('.arrival-card').count(), arrivalCount - 24);
+    assert.equal(await page.locator('.arrival-card').count(), arrivalCount % 12 || 12);
     await page.reload();
     assert.equal(
       await page.locator('#arrival-pagination [aria-current]').getAttribute('data-page'),
-      '2',
+      String(Math.ceil(arrivalCount / 12)),
     );
     await page.locator('[data-arrival-filter="holders-stands"]').click();
     assert.equal(await page.locator('.arrival-card').count(), 10);
     assert(await page.locator('#arrival-pagination').isHidden());
     await page.locator('[data-arrival-filter="all"]').click();
-    assert.equal(await page.locator('.arrival-card').count(), 24);
+    assert.equal(await page.locator('.arrival-card').count(), 12);
     assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)));
     await page.screenshot({
       path: 'artifacts/qa/compact-arrivals-' + width + '.png',
@@ -59,7 +59,7 @@ const { pathToFileURL } = require('node:url');
   }
   await page.goto(pathToFileURL(path.resolve('catalogue.html')).href);
   await page.locator('#sort').selectOption('new');
-  assert.equal(await page.locator('.product-card .arrival-badge').count(), 24);
+  assert.equal(await page.locator('.product-card .arrival-badge').count(), 12);
   assert(await page.locator('#sort').evaluate((n) => n.classList.contains('is-new-sort')));
   assert.equal(
     (await page.locator('.product-card .sku').first().textContent()).trim(),

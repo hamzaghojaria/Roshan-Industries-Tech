@@ -1853,8 +1853,8 @@
     "sku": "RIT-0272",
     "name": "Banjo Bolt",
     "description": "Banjo Bolt. A drilled bolt used in suitable banjo connections for routing hydraulic fluid. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0272-banjo-bolt.jpg",
     "url": "products/rit-0272.html",
@@ -1877,16 +1877,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-273",
     "sku": "RIT-0273",
     "name": "Hydraulic Valve Spindle",
     "description": "Hydraulic Valve Spindle. A machined spindle for the actuation or adjustment of a compatible hydraulic valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0273-hydraulic-valve-spindle.jpg",
     "url": "products/rit-0273.html",
@@ -1909,16 +1908,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-274",
     "sku": "RIT-0274",
     "name": "Hydraulic Plug",
     "description": "Hydraulic Plug. A plug for closing a compatible hydraulic port or passage. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0274-hydraulic-plug.jpg",
     "url": "products/rit-0274.html",
@@ -1941,16 +1939,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-275",
     "sku": "RIT-0275",
     "name": "Hydraulic Connector",
     "description": "Hydraulic Connector. A connector for joining compatible hydraulic pipes, tubes or assemblies. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0275-hydraulic-connector.jpg",
     "url": "products/rit-0275.html",
@@ -1973,16 +1970,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-276",
     "sku": "RIT-0276",
     "name": "Crimped Nut Nipple",
     "description": "Crimped Nut Nipple. A nut and nipple component for a compatible crimped hose connection. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0276-crimped-nut-nipple.jpg",
     "url": "products/rit-0276.html",
@@ -2005,16 +2001,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-277",
     "sku": "RIT-0277",
     "name": "Hose Fitting Nipple",
     "description": "Hose Fitting Nipple. A nipple component for connecting a suitable hose to its mating assembly. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0277-hose-fitting-nipple.jpg",
     "url": "products/rit-0277.html",
@@ -2037,16 +2032,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-278",
     "sku": "RIT-0278",
     "name": "Hose Fitting Nut",
     "description": "Hose Fitting Nut. A machined nut for securing the mating components of a compatible hose fitting. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0278-hose-fitting-nut.jpg",
     "url": "products/rit-0278.html",
@@ -2069,16 +2063,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-279",
     "sku": "RIT-0279",
     "name": "Hose Fitting Stem",
     "description": "Hose Fitting Stem. A stem component for a compatible hose fitting assembly. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0279-hose-fitting-stem.jpg",
     "url": "products/rit-0279.html",
@@ -2101,16 +2094,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-280",
     "sku": "RIT-0280",
     "name": "Grooved Pipe",
     "description": "Grooved Pipe. A pipe component with a grooved connection profile for a compatible coupling. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0280-grooved-pipe.jpg",
     "url": "products/rit-0280.html",
@@ -2133,16 +2125,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-281",
     "sku": "RIT-0281",
     "name": "Hose Fitting Ferrule",
     "description": "Hose Fitting Ferrule. A ferrule component for securing a suitable hose in its specified fitting assembly. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Hydraulic and Hose Fittings",
+    "categoryId": "hydraulic-hose-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0281-hose-fitting-ferrule.jpg",
     "url": "products/rit-0281.html",
@@ -2165,16 +2156,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-282",
     "sku": "RIT-0282",
     "name": "Customized Fasteners",
     "description": "Customized Fasteners. Custom fasteners developed to customer drawings, samples or technical specifications. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Custom Machined Components",
+    "categoryId": "custom-machined-components",
     "family": "Precision Machining",
     "image": "assets/products/rit-0282-customized-fasteners.jpg",
     "url": "products/rit-0282.html",
@@ -2197,16 +2187,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 4,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-283",
     "sku": "RIT-0283",
     "name": "Sensor Body",
     "description": "Sensor Body. A machined body designed to house and support the internal elements of a compatible sensor. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Custom Machined Components",
+    "categoryId": "custom-machined-components",
     "family": "Precision Machining",
     "image": "assets/products/rit-0283-sensor-body.jpg",
     "url": "products/rit-0283.html",
@@ -2229,16 +2218,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 4,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-284",
     "sku": "RIT-0284",
     "name": "Male Connector",
     "description": "Male Connector. A male connector for joining compatible tubing to a mating threaded connection. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0284-tube-fittings.jpeg",
     "url": "products/rit-0284.html",
@@ -2261,16 +2249,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-285",
     "sku": "RIT-0285",
     "name": "Instrumentation Check Valve",
     "description": "Instrumentation Check Valve. A valve type used to permit flow in one direction and prevent reverse flow in a compatible system. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0285-instrumentation-check-valve.png",
     "url": "products/rit-0285.html",
@@ -2293,16 +2280,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-286",
     "sku": "RIT-0286",
     "name": "Instrumentation Ball Valve",
     "description": "Instrumentation Ball Valve. A valve type using a ball closure for isolating fluid flow in a compatible instrumentation system. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0286-instrumentation-ball-valve.png",
     "url": "products/rit-0286.html",
@@ -2325,16 +2311,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-287",
     "sku": "RIT-0287",
     "name": "Instrumentation Needle Valve",
     "description": "Instrumentation Needle Valve. A valve type used for fine flow adjustment in a compatible instrumentation system. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0287-instrumentation-needle-valve.jpeg",
     "url": "products/rit-0287.html",
@@ -2357,16 +2342,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-288",
     "sku": "RIT-0288",
     "name": "Customized Fittings",
     "description": "Customized Fittings. Custom connection fittings developed to customer drawings and application requirements. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0288-customized-fittings.jpg",
     "url": "products/rit-0288.html",
@@ -2389,16 +2373,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-289",
     "sku": "RIT-0289",
     "name": "Check Valve Housing",
     "description": "Check Valve Housing. A machined housing for supporting and enclosing the internal components of a compatible check valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Valve Bodies and Manifolds",
+    "categoryId": "valve-bodies-manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0289-check-valve-housing.jpg",
     "url": "products/rit-0289.html",
@@ -2421,16 +2404,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-290",
     "sku": "RIT-0290",
     "name": "Check Valve Body",
     "description": "Check Valve Body. A machined valve body containing the connection ports and passages of a compatible check valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Valve Bodies and Manifolds",
+    "categoryId": "valve-bodies-manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0290-check-valve-body.jpg",
     "url": "products/rit-0290.html",
@@ -2453,16 +2435,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-291",
     "sku": "RIT-0291",
     "name": "Ball Valve Housing",
     "description": "Ball Valve Housing. A machined housing for the closure and sealing components of a compatible ball valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Valve Bodies and Manifolds",
+    "categoryId": "valve-bodies-manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0291-ball-valve-housing.jpg",
     "url": "products/rit-0291.html",
@@ -2485,16 +2466,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 3,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-292",
     "sku": "RIT-0292",
     "name": "2 Valve Instrumentation Manifold",
     "description": "2 Valve Instrumentation Manifold. A two-valve manifold arrangement for isolating and servicing a compatible measurement instrument. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Valve Bodies and Manifolds",
+    "categoryId": "valve-bodies-manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0292-2-valve-instrumentation-manifold.png",
     "url": "products/rit-0292.html",
@@ -2517,16 +2497,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-293",
     "sku": "RIT-0293",
     "name": "3 Valve Instrumentation Manifold",
     "description": "3 Valve Instrumentation Manifold. A three-valve manifold arrangement for compatible differential pressure instrumentation. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Valve Bodies and Manifolds",
+    "categoryId": "valve-bodies-manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0293-3-valve-instrumentation-manifold.png",
     "url": "products/rit-0293.html",
@@ -2549,16 +2528,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-294",
     "sku": "RIT-0294",
     "name": "5 Valve Instrumentation Manifold",
     "description": "5 Valve Instrumentation Manifold. A five-valve manifold arrangement for compatible differential pressure measurement and servicing. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Valve Bodies and Manifolds",
+    "categoryId": "valve-bodies-manifolds",
     "family": "Precision Machining",
     "image": "assets/products/rit-0294-5-valve-instrumentation-manifold.png",
     "url": "products/rit-0294.html",
@@ -2581,16 +2559,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 2,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-295",
     "sku": "RIT-0295",
     "name": "Oil and Gas Machined Components",
     "description": "Oil and Gas Machined Components. Custom machined components for oil and gas equipment, developed to the application drawing and material requirements. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Custom Machined Components",
+    "categoryId": "custom-machined-components",
     "family": "Precision Machining",
     "image": "assets/products/rit-0295-oil-and-gas-machined-components.jpg",
     "url": "products/rit-0295.html",
@@ -2613,16 +2590,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 4,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-296",
     "sku": "RIT-0296",
     "name": "Gauge Saver",
     "description": "Gauge Saver. An accessory for protecting a compatible pressure gauge from pressure exceeding the specified instrument limit. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0296-pressure-gauge-accessories.png",
     "url": "products/rit-0296.html",
@@ -2645,16 +2621,15 @@
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, compatibility and quantity when requesting a quotation.",
     "sourceCatalogue": "roshan-industries-catalogue.pdf",
     "brochurePage": 5,
-    "brochureSource": "Precitech Broucher (3).pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "brochureSource": "Precitech Broucher (3).pdf"
   },
   {
     "id": "online-oct2026-297",
     "sku": "RIT-0297",
     "name": "Reducer",
     "description": "Reducer. A reducing fitting for connecting compatible lines of different sizes. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0297-reducer.png",
     "url": "products/rit-0297.html",
@@ -2675,16 +2650,15 @@
     "imageSha256": "0fab340a4956173a9c6ac2472b328bf27ae4eba1bedc7d0d204aaff7c6c93673",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-298",
     "sku": "RIT-0298",
     "name": "Female Run Tee",
     "description": "Female Run Tee. A tee fitting with a female threaded connection on the run of the fitting. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0298-female-run-tee.png",
     "url": "products/rit-0298.html",
@@ -2705,16 +2679,15 @@
     "imageSha256": "91286ae1c6673d7d6642268a039d4e1cdc05bed98f5d54263a677f79b308fb76",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-299",
     "sku": "RIT-0299",
     "name": "Female Branch Tee",
     "description": "Female Branch Tee. A tee fitting with a female threaded branch connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0299-female-branch-tee.png",
     "url": "products/rit-0299.html",
@@ -2735,16 +2708,15 @@
     "imageSha256": "534e8c54f832bac9ef3f7c33cec28e1a64520684890a24734a6aece1c54bbf4e",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-300",
     "sku": "RIT-0300",
     "name": "Male Branch Tee",
     "description": "Male Branch Tee. A tee fitting with a male threaded branch connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0300-male-branch-tee.jpeg",
     "url": "products/rit-0300.html",
@@ -2765,16 +2737,15 @@
     "imageSha256": "33376900792a40d675a601e6a43db163d4ee0f73654d1a0c598657f867138f65",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-301",
     "sku": "RIT-0301",
     "name": "Male Run Tee",
     "description": "Male Run Tee. A tee fitting with a male threaded connection on the run of the fitting. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0301-male-run-tee.jpeg",
     "url": "products/rit-0301.html",
@@ -2795,16 +2766,15 @@
     "imageSha256": "d7c04856b4f4ccd99c6b3f162aabc02e7934e86cdcef6451268a1e9edb5a1afb",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-302",
     "sku": "RIT-0302",
     "name": "Reducing Union Tee",
     "description": "Reducing Union Tee. A tee fitting for joining compatible tubing with different connection sizes. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0302-reducing-union-tee.png",
     "url": "products/rit-0302.html",
@@ -2825,16 +2795,15 @@
     "imageSha256": "0574469ca4b398714ecd1000f6cf26dca4e725ac4036c55fb8a7361d17bb4766",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-303",
     "sku": "RIT-0303",
     "name": "Union Tee",
     "description": "Union Tee. A tee fitting for joining three compatible tube connections. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0303-union-tee.jpeg",
     "url": "products/rit-0303.html",
@@ -2855,16 +2824,15 @@
     "imageSha256": "219719a47e8104bb016f16289cf949a278352056753d1a0fbb61004e3a556a03",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-304",
     "sku": "RIT-0304",
     "name": "Union Cross",
     "description": "Union Cross. A cross fitting for joining four compatible tube connections. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0304-union-cross.png",
     "url": "products/rit-0304.html",
@@ -2885,16 +2853,15 @@
     "imageSha256": "88d5443bd97cb239848671ae30a2533ca863b9d17393b6afa6914413c2de1d02",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-305",
     "sku": "RIT-0305",
     "name": "Female Adapter",
     "description": "Female Adapter. An adapter for joining a compatible tube fitting to a female threaded connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0305-female-adapter.png",
     "url": "products/rit-0305.html",
@@ -2915,16 +2882,15 @@
     "imageSha256": "bb829f9f938289ad840f60eb019c39c82ebbc31de27d7da62d9bee90d3c818f1",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-306",
     "sku": "RIT-0306",
     "name": "Male Adapter",
     "description": "Male Adapter. An adapter for joining a compatible tube fitting to a male threaded connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0306-male-adapter.png",
     "url": "products/rit-0306.html",
@@ -2945,16 +2911,15 @@
     "imageSha256": "1c327e07302908e19f5709f831bb80daad3c94a81c5ee72b5f6982d79bedf5d5",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-307",
     "sku": "RIT-0307",
     "name": "Female Elbow",
     "description": "Female Elbow. An elbow fitting with a female threaded connection for changing the direction of a compatible line. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0307-female-elbow.png",
     "url": "products/rit-0307.html",
@@ -2975,16 +2940,15 @@
     "imageSha256": "f11a05f1e49026e8f06a01a94fe62fa33c99f0de0bd91e24a1bd1bfb637da5f9",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-308",
     "sku": "RIT-0308",
     "name": "Male Elbow",
     "description": "Male Elbow. An elbow fitting with a male threaded connection for changing the direction of a compatible line. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0308-male-elbow.jpeg",
     "url": "products/rit-0308.html",
@@ -3005,16 +2969,15 @@
     "imageSha256": "c9a4875aed7a9b65d16e88b1abf38b4336b42204d148a9e695d381edd6597d78",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-309",
     "sku": "RIT-0309",
     "name": "Union Elbow",
     "description": "Union Elbow. An elbow fitting for joining compatible tubing at a change of direction. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "VMC Milling",
-    "categoryId": "vmc-milling",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0309-union-elbow.png",
     "url": "products/rit-0309.html",
@@ -3035,16 +2998,15 @@
     "imageSha256": "c1e4d77835825691534bc72b7a12ee6aea5af8598e7496bcc30eaa7c56fe6732",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-310",
     "sku": "RIT-0310",
     "name": "Bulkhead Reducer Union",
     "description": "Bulkhead Reducer Union. A reducing union for joining different compatible tube sizes through a panel or bulkhead. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0310-bulkhead-reducer-union.png",
     "url": "products/rit-0310.html",
@@ -3065,16 +3027,15 @@
     "imageSha256": "de804eac76400df124056958328363cfba69312f0b1270704d475841f7bb5951",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-311",
     "sku": "RIT-0311",
     "name": "Bulkhead Union",
     "description": "Bulkhead Union. A union for joining compatible tubing through a panel or bulkhead. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0311-bulkhead-union.png",
     "url": "products/rit-0311.html",
@@ -3095,16 +3056,15 @@
     "imageSha256": "8f796f66f17bec7600102a7f1eb00067a994380fdfe29b6dd86cba68f6af1409",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-312",
     "sku": "RIT-0312",
     "name": "Bulkhead Female Connector",
     "description": "Bulkhead Female Connector. A female connector for a compatible panel or bulkhead tube connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0312-bulkhead-female-connector.png",
     "url": "products/rit-0312.html",
@@ -3125,16 +3085,15 @@
     "imageSha256": "1607e26ba6304ad7b3276e6af02438797ea02194f4565cd68a8c68e21706b2e6",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-313",
     "sku": "RIT-0313",
     "name": "Bulkhead Male Connector",
     "description": "Bulkhead Male Connector. A male connector for a compatible panel or bulkhead tube connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0313-bulkhead-male-connector.jpeg",
     "url": "products/rit-0313.html",
@@ -3155,16 +3114,15 @@
     "imageSha256": "843e8f25c32d2928d4f9ccbe584c9ce104be69d9f0a2af059674062d6289912f",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-314",
     "sku": "RIT-0314",
     "name": "Reducing Union",
     "description": "Reducing Union. A reducing union for joining two compatible tube sizes. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0314-reducing-union.png",
     "url": "products/rit-0314.html",
@@ -3185,16 +3143,15 @@
     "imageSha256": "0fab340a4956173a9c6ac2472b328bf27ae4eba1bedc7d0d204aaff7c6c93673",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-315",
     "sku": "RIT-0315",
     "name": "Union",
     "description": "Union. A union fitting for joining compatible tubing. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0315-union.png",
     "url": "products/rit-0315.html",
@@ -3215,16 +3172,15 @@
     "imageSha256": "a7528c9857ce971e6b4c861e4c72fc729c41f9666eb34488e070105f53dec6ac",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-316",
     "sku": "RIT-0316",
     "name": "Female Connector",
     "description": "Female Connector. A female connector for joining compatible tubing to a mating threaded connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0316-female-connector.png",
     "url": "products/rit-0316.html",
@@ -3245,16 +3201,15 @@
     "imageSha256": "b0c465389552dcf393de76585c08633670d60fcd65fed535f0202e17ef842dba",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-317",
     "sku": "RIT-0317",
     "name": "Tube Fitting Nut",
     "description": "Tube Fitting Nut. A nut for securing the mating components of a compatible instrumentation tube fitting. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0317-tube-fitting-nut.png",
     "url": "products/rit-0317.html",
@@ -3275,16 +3230,15 @@
     "imageSha256": "4a921497e3beef646bdd77b4f7df2b5dae24ddcc371afd766a33a0372779ae61",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-318",
     "sku": "RIT-0318",
     "name": "Back Ferrule",
     "description": "Back Ferrule. A back ferrule component for a compatible tube fitting assembly. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0318-back-ferrule.png",
     "url": "products/rit-0318.html",
@@ -3305,16 +3259,15 @@
     "imageSha256": "9939c6c1dc656355a9ababa3794001da7fc97c3b0eb78ba105358f2cb08200a3",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-319",
     "sku": "RIT-0319",
     "name": "Front Ferrule",
     "description": "Front Ferrule. A front ferrule component for a compatible tube fitting assembly. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Tube and Instrumentation Fittings",
+    "categoryId": "tube-instrumentation-fittings",
     "family": "Precision Machining",
     "image": "assets/products/rit-0319-front-ferrule.png",
     "url": "products/rit-0319.html",
@@ -3335,16 +3288,15 @@
     "imageSha256": "cb7689004a453f432bc716149d6468e063e3b363b2e24596ea35f9137c8c941e",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-320",
     "sku": "RIT-0320",
     "name": "3 Piece Union Nipple",
     "description": "3 Piece Union Nipple. A nipple component for a compatible three piece union assembly. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0320-3-piece-union-nipple.jpeg",
     "url": "products/rit-0320.html",
@@ -3365,16 +3317,15 @@
     "imageSha256": "cc086246249084149cb6c65ca3a60aad82af54991529f4b5b857da62624549b9",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-321",
     "sku": "RIT-0321",
     "name": "3 Piece Union",
     "description": "3 Piece Union. A three piece union for a compatible pressure instrument connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0321-3-piece-union.png",
     "url": "products/rit-0321.html",
@@ -3395,16 +3346,15 @@
     "imageSha256": "3c1422fdfd386b54263ba05b4e868e61481ba81e6e5552692785c4e8682dab4a",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-322",
     "sku": "RIT-0322",
     "name": "Syphon Tube Coupling",
     "description": "Syphon Tube Coupling. A coupling for a compatible pressure gauge syphon tube connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0322-syphon-tube-coupling.jpg",
     "url": "products/rit-0322.html",
@@ -3425,16 +3375,15 @@
     "imageSha256": "f719f13d451d2d66df4edfe4e17a0a726fcd5f93d4f16b70b55607e791eee0b0",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-323",
     "sku": "RIT-0323",
     "name": "Gauge Cock",
     "description": "Gauge Cock. A cock for isolating a compatible pressure gauge connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0323-gauge-cock.png",
     "url": "products/rit-0323.html",
@@ -3455,16 +3404,15 @@
     "imageSha256": "2648ed553c1156e4c92d6854ff9ce41cb9632def152b69088d4710d8c5c3f3f5",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-324",
     "sku": "RIT-0324",
     "name": "Gauge Adapter",
     "description": "Gauge Adapter. An adapter for connecting a suitable pressure gauge to a compatible instrument port. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0324-gauge-adapter.jpg",
     "url": "products/rit-0324.html",
@@ -3485,16 +3433,15 @@
     "imageSha256": "908a95c2b163612ae55a761267284b51f75f7d22518490411317d98ff1bc65ef",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   },
   {
     "id": "online-oct2026-325",
     "sku": "RIT-0325",
     "name": "Snubber",
     "description": "Snubber. An accessory for moderating pressure fluctuations at a compatible pressure gauge connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation.",
-    "category": "CNC Turning",
-    "categoryId": "cnc-turning",
+    "category": "Pressure Gauge Accessories",
+    "categoryId": "pressure-gauge-accessories",
     "family": "Precision Machining",
     "image": "assets/products/rit-0325-snubber.png",
     "url": "products/rit-0325.html",
@@ -3515,7 +3462,6 @@
     "imageSha256": "4f43fb1731832fd51c8d0cdd3b8e4a3fdb9208c48cdf29f34112f186baa261c2",
     "specifications": [],
     "note": "Reference image. Manufacturing may require both turning and milling, depending on the drawing. Please confirm dimensions, material, tolerances, connection type, compatibility and quantity when requesting a quotation.",
-    "sourceCatalogue": "roshan-industries-catalogue.pdf",
-    "machiningClassification": "Indicative grouping; exact operations depend on the drawing."
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
   }
 ]

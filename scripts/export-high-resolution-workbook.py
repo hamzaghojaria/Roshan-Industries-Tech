@@ -12,8 +12,10 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.drawing.image import Image as ExcelImage
 from openpyxl.worksheet.table import Table, TableStyleInfo
 from openpyxl.utils import get_column_letter
+from workbook_images import preview_bytes, share_image_resources, WORKBOOK_IMAGE_PROFILE
 
 ROOT = Path(__file__).resolve().parents[1]
+thumbnail_cache = {}
 products = json.loads(
     (ROOT / "products.js")
     .read_text(encoding="utf8")
@@ -120,12 +122,10 @@ def make_sheet(title, items, index):
         )
         for col in [8, 9, 12]:
             ws.cell(row, col).font = Font(name="Calibri", size=10, color=blue, underline="single")
-        # Excel receives supported PNG thumbnails; full resolution is retained in the linked website file.
-        photo = Image.open(ROOT / p["image"]).convert("RGB")
-        photo.thumbnail((240, 210), Image.Resampling.LANCZOS)
-        buffer = BytesIO()
-        photo.save(buffer, format="PNG")
-        buffer.seek(0)
+        # Reuse the same encoded preview across All Products and category sheets.
+        if p["image"] not in thumbnail_cache:
+            thumbnail_cache[p["image"]] = preview_bytes(ROOT / p["image"])
+        buffer = BytesIO(thumbnail_cache[p["image"]])
         image = ExcelImage(buffer)
         scale = min(115 / image.width, 100 / image.height)
         image.width *= scale
@@ -205,7 +205,9 @@ for family, color in family_colors.items():
 for col, width in zip("ABCD", [40, 25, 14, 22]):
     overview.column_dimensions[col].width = width
 overview.freeze_panes = "A12"
-wb.save(ROOT / "Roshan-Industries-Product-Catalogue.xlsx")
+output = ROOT / "Roshan-Industries-Product-Catalogue.xlsx"
+wb.save(output)
+image_resources = share_image_resources(output)
 check = load_workbook(ROOT / "Roshan-Industries-Product-Catalogue.xlsx")
 ws = check["All Products"]
 rows = list(ws.iter_rows(min_row=6, values_only=True))
@@ -225,6 +227,9 @@ assert all("Family:" in str(s["A2"].value) for s in list(check)[1:])
             "products": len(rows),
             "categorySheets": len(categories),
             "embeddedPhotos": len(products) * 2,
+            "imageOptimization": WORKBOOK_IMAGE_PROFILE,
+            "xlsxBytes": output.stat().st_size,
+            **image_resources,
             "sourceSha256": source_hash,
             "familyColors": family_colors,
             "allTabsColored": True,

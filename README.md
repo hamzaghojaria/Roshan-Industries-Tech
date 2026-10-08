@@ -4,7 +4,7 @@ Watch parts, tools and custom manufacturing in Mumbai, serving customers since 1
 
 [Website](https://roshan-industries-tech.onrender.com/) | [GitHub](https://github.com/hamzaghojaria/Roshan-Industries-Tech) | [Email](mailto:roshanindustriestech@gmail.com)
 
-The current website contains **311 products, 17 categories, five families and 95 New Arrivals**. The synchronized customer PDF has 61 pages; the workbook contains 19 sheets and 622 embedded photographs. These totals describe the current records, not permanent limits.
+The current website contains **311 products, 20 categories, five families and 95 New Arrivals**. The synchronized customer PDF has 63 pages; the workbook contains 22 sheets and 622 embedded photographs. These totals describe the current records, not permanent limits.
 
 ## Start locally
 
@@ -53,7 +53,7 @@ JSON is strict data and cannot contain comments. Data and configuration responsi
 - Breadcrumbs are left aligned on mobile, use subtle chevrons, and keep long product titles on a separate row. Category counts keep each number with its label when wrapping.
 - Product images lift slightly on desktop hover and mobile interaction without changing size. There is no magnifier or image zoom dialog. Reduced-motion preferences disable the lift.
 - The footer says Download Catalogue. Instagram links to the supplied company profile in a new tab; X has been removed.
-- Header search supports thumbnails, SKUs, categories and keyboard navigation. Catalogue and arrivals listings use URL-backed filters and pagination, with 24 products per page.
+- Header search supports thumbnails, SKUs, categories and keyboard navigation. Catalogue and arrivals listings use URL-backed filters and pagination, with 12 products per page on mobile and desktop.
 - Returning from a product preserves listing position, filters and focus. Related products form a desktop grid and a manual mobile slider.
 - Content and links remain usable without JavaScript. Enquiries are prepared in the visitor's email or WhatsApp app.
 
@@ -97,7 +97,7 @@ Tests print PASS messages or assertion failures with a nonzero exit code. The we
 
 Keep permanent SKUs unchanged in src/data/sku-map.json. Reviewed PDF records and approved online products, including CNC and VMC machining enquiries, are merged by loadCatalogue(). Duplicate IDs, SKUs or names, unknown categories and changed permanent mappings fail the build. Image replacements belong in src/data/product-image-overrides.json. New badges follow src/data/new-arrivals.json.
 
-The customer PDF is assets/roshan-industries-catalogue.pdf, approximately **10.1 MB** for the current 311 products (previously 96.4 MB). It uses the approved web profile: product photos up to 900 pixels on the longest edge, JPEG quality 85 and a lossless logo. Original website photographs and workbook images keep their original resolution. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx.
+The customer PDF is assets/roshan-industries-catalogue.pdf, approximately **10.1 MB** for the current 311 products (previously 96.4 MB). It uses the approved web profile: product photos up to 900 pixels on the longest edge, JPEG quality 85 and a lossless logo. Original website photographs remain unchanged. Excel uses 240 by 210 pixel JPEG previews at quality 85, with identical image resources shared between sheets; all 622 visible photos remain. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx, approximately **2.0 MB** (previously 20.6 MB).
 
 Processed PDF images are cached in artifacts/catalogue-image-cache/. Unchanged photos reuse their encodings; a source-image, compression-setting or Pillow-version change creates a fresh cache entry. The cache is disposable and excluded from Git and delivery archives. A repeat export measured 3.29 seconds with all 270 image encodings reused; timing depends on the machine and changed content. The local pre-compression PDF is preserved at artifacts/catalogue-archive/roshan-catalogue-native-269-products.pdf. Normal styling changes only need npm run build; they do not need PDF or workbook regeneration.
 

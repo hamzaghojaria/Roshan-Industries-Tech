@@ -1,7 +1,7 @@
 {
   "description": "Approved compact website catalogue with reusable image encodings.",
   "originalPdfBytes": 101050159,
-  "compactPdfBytes": 10613151,
+  "compactPdfBytes": 10618589,
   "reductionPercent": 89.5,
   "profile": {
     "name": "web",
@@ -11,12 +11,12 @@
     "logoLossless": true
   },
   "products": 311,
-  "pages": 61,
+  "pages": 63,
   "initialExportSeconds": 11,
-  "cachedExportSeconds": 4.28,
-  "cachedImageHits": 284,
-  "cachedImageMisses": 28,
+  "cachedExportSeconds": 4.78,
+  "cachedImageHits": 312,
+  "cachedImageMisses": 0,
   "originalSourceFilesPreserved": true,
   "localNativeBackup": "artifacts/catalogue-archive/roshan-catalogue-native-269-products.pdf",
-  "pdfSha256": "114d31e4c26d7d87c474799e68453d8909d64b14c895c1209897f91f61b62f18"
+  "pdfSha256": "42b0a8255d5aab1002c952bf8a09e35db88b8b71adc08c4b06b0ab31b6ed6840"
 }

@@ -34,7 +34,7 @@ const arrivals = JSON.parse(
   fs.readFileSync(path.join(root, 'src/data/new-arrivals.json'), 'utf8'),
 ).skus;
 assert.equal(products.length, 216 + onlineProducts.length);
-assert.equal(categories.length, 17);
+assert.equal(categories.length, 20);
 assert.equal(new Set(products.map((p) => p.name)).size, products.length);
 assert.equal(new Set(products.map((p) => p.sku)).size, products.length);
 assert.equal(images.images.length, 216);
@@ -202,7 +202,7 @@ const lines = [
   '',
   'The source inventory records 216 native scan crops and their page, panel, crop, dimensions and checksum. Requested online photograph replacements are tracked separately in product-image-overrides.json. All PDF product descriptions are newly generated.',
   '',
-  `The supplied PDF is preserved unchanged as the original image and product reference. The branded downloadable catalogue contains ${products.length} products with a centered cover logo, introductory page, clickable category index and website headers and footers. The XLSX contains ${products.length} records, ${categories.length} family-colored category sheets and ${products.length * 2} embedded PNG previews.`,
+  `The supplied PDF is preserved unchanged as the original image and product reference. The branded downloadable catalogue contains ${products.length} products with a centered cover logo, introductory page, clickable category index and website headers and footers. The XLSX contains ${products.length} records, ${categories.length} family-colored category sheets and ${products.length * 2} embedded image previews.`,
   'All new products and current website photograph replacements are included in the PDF and XLSX.',
   '',
   '## Page Coverage',

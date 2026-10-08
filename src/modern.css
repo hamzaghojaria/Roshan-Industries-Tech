@@ -3710,7 +3710,7 @@ main .button::after {
   font-weight: 600;
 }
 
-/* Original New Arrivals card layout. */
+/* New Arrivals keeps the catalogue two-column layout on mobile. */
 .arrivals-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -3721,7 +3721,7 @@ main .button::after {
 }
 @media (max-width: 640px) {
   .arrivals-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

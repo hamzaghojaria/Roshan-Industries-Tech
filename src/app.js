@@ -529,6 +529,8 @@
       const grid = document.querySelector('.arrivals-grid');
       const pagination = document.getElementById('arrival-pagination');
       const categories = new Set(['all', ...cards.map((card) => card.dataset.arrivalCategory)]);
+      // Keep New Arrivals compact on mobile and desktop.
+      const pageSize = 12;
       let category = 'all',
         page = 1;
       const read = () => {
@@ -541,9 +543,9 @@
         const matches = cards.filter(
           (card) => category === 'all' || card.dataset.arrivalCategory === category,
         );
-        const pages = Math.max(1, Math.ceil(matches.length / 24));
+        const pages = Math.max(1, Math.ceil(matches.length / pageSize));
         page = Math.min(page, pages);
-        grid.replaceChildren(...matches.slice((page - 1) * 24, page * 24));
+        grid.replaceChildren(...matches.slice((page - 1) * pageSize, page * pageSize));
         arrivalFilters
           .querySelectorAll('button')
           .forEach((button) =>
@@ -698,7 +700,8 @@
           ? requestedFamily
           : '',
     };
-    const pageSize = 24;
+    // Use the same compact page size for all product and category listings.
+    const pageSize = 12;
     count.setAttribute('role', 'status');
     count.setAttribute('aria-live', 'polite');
     queryInput.value = state.query;

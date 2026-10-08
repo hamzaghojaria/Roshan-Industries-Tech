@@ -1,0 +1,22 @@
+{
+  "originalWorkbookBytes": 21547766,
+  "originalMediaFiles": 622,
+  "originalMediaCompressedBytes": 21293106,
+  "originalMediaUncompressedBytes": 21335692,
+  "localBackup": "artifacts\\catalogue-archive\\roshan-workbook-png-311-products.xlsx",
+  "compactWorkbookBytes": 2132285,
+  "reductionPercent": 90.1,
+  "profile": {
+    "format": "JPEG",
+    "maxWidth": 240,
+    "maxHeight": 210,
+    "jpegQuality": 85,
+    "subsampling": 2,
+    "sharedImageResources": true
+  },
+  "uniqueImageResources": 309,
+  "duplicateImageResourcesRemoved": 313,
+  "visiblePhotos": 622,
+  "originalSourceFilesPreserved": true,
+  "xlsxSha256": "27a7c719c2def004cbd45d66e240ae0a815848768cf3296113c40a66e6dd11e4"
+}

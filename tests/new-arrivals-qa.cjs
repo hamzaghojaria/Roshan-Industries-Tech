@@ -15,9 +15,10 @@ const assert = require('node:assert/strict');
   p.on('pageerror', (e) => errors.push(e.message));
   await p.route('https://**/*', (r) => r.abort());
   for (const width of [320, 390, 760, 1024, 1440]) {
+    const pageSize = 12;
     await p.setViewportSize({ width, height: 900 });
     await p.goto(pathToFileURL(path.resolve('new-arrivals.html')).href);
-    assert.equal(await p.locator('.arrival-card').count(), Math.min(24, arrivalCount));
+    assert.equal(await p.locator('.arrival-card').count(), Math.min(pageSize, arrivalCount));
     for (const filter of await p.locator('[data-arrival-filter]').all()) {
       await filter.click();
       const id = await filter.getAttribute('data-arrival-filter');
@@ -31,7 +32,7 @@ const assert = require('node:assert/strict');
     else assert.equal(await p.locator('[data-arrival-filter]').count(), 0);
     assert.equal(
       await p.locator('.arrival-card:not([hidden])').count(),
-      Math.min(24, arrivalCount),
+      Math.min(pageSize, arrivalCount),
     );
     assert(
       !(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)),
@@ -44,6 +45,25 @@ const assert = require('node:assert/strict');
         .then((t) => t.trim()),
       'New Arrivals',
     );
+    if (width <= 640 && arrivalCount >= 2) {
+      const first = await p.locator('.arrival-card').nth(0).boundingBox();
+      const second = await p.locator('.arrival-card').nth(1).boundingBox();
+      assert(
+        Math.abs(first.y - second.y) < 1 && second.x > first.x,
+        'Expected two mobile cards per row',
+      );
+    }
+    if (arrivalCount > pageSize) {
+      const firstSku = await p.locator('.arrival-card .sku').first().textContent();
+      await p.getByRole('button', { name: 'Page 2', exact: true }).click();
+      assert.equal(new URL(p.url()).searchParams.get('page'), '2');
+      assert.notEqual(await p.locator('.arrival-card .sku').first().textContent(), firstSku);
+      await p.reload();
+      assert.equal(
+        await p.locator('.arrival-card').count(),
+        Math.min(pageSize, arrivalCount - pageSize),
+      );
+    }
     for (const img of await p.locator('.arrival-card img').all()) {
       await img.scrollIntoViewIfNeeded();
       assert(await img.evaluate((el) => el.complete && el.naturalWidth > 0), 'Broken image');

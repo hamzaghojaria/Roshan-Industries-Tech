@@ -117,6 +117,16 @@ for number in sorted(set(report["skuPages"].values())):
         )
         assert any(link.get("uri", "").endswith("/" + product["url"]) for link in page.get_links())
         image_checks += 1
+workbook_report = read("reports/high-resolution-audit/workbook-validation.json")
+workbook_profile = workbook_report["imageOptimization"]
+assert workbook_profile == {
+    "format": "JPEG",
+    "maxWidth": 240,
+    "maxHeight": 210,
+    "jpegQuality": 85,
+    "subsampling": 2,
+    "sharedImageResources": True,
+}
 wb = load_workbook(ROOT / "Roshan-Industries-Product-Catalogue.xlsx")
 fields = [
     "sku",
@@ -168,6 +178,9 @@ for title, items in [("All Products", products)] + [
         )
         source = Image.open(ROOT / product["image"]).convert("RGB")
         source.thumbnail((240, 210), Image.Resampling.LANCZOS)
+        expected = BytesIO()
+        source.save(expected, format="JPEG", quality=85, subsampling=2, optimize=True)
+        source = Image.open(BytesIO(expected.getvalue())).convert("RGB")
         embedded = Image.open(BytesIO(sheet._images[row - 6]._data())).convert("RGB")
         assert source.size == embedded.size and source.tobytes() == embedded.tobytes(), (
             product["sku"] + " Excel thumbnail"
@@ -184,6 +197,7 @@ result = dict(
     coverLogoCentered=True,
     allPhotosMatchWebsite=True,
     pdfImageProfile=profile or "native",
+    workbookImageProfile=workbook_profile,
     pdfSha256=hashlib.sha256(
         (ROOT / "assets/roshan-industries-catalogue.pdf").read_bytes()
     ).hexdigest(),
@@ -193,6 +207,6 @@ result = dict(
 )
 print(
     f"PASS synchronized exports: {image_checks} PDF photos verified against their source "
-    f"and export profile; {rows_checked} original Excel rows/photos matched to website; "
+    f"and export profile; {rows_checked} Excel rows/photos matched to their source and preview profile; "
     "category records and page links valid."
 )
