@@ -582,7 +582,7 @@
         const button = event.target.closest('[data-arrival-filter]');
         if (!button) return;
         category = button.dataset.arrivalFilter;
-        if (matchMedia('(max-width: 640px)').matches) {
+        {
           const filterBounds = arrivalFilters.getBoundingClientRect();
           const buttonBounds = button.getBoundingClientRect();
           const offset =

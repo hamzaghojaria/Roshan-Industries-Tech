@@ -443,6 +443,15 @@ export function newArrivalsPage(products) {
 
 /** Homepage: custom manufacturing leads, followed by catalogue discovery. */
 export function home(products) {
+  // Feature the expanded manufacturing range alongside jewellery bench tools.
+  const featuredCategories = [
+    'tube-instrumentation-fittings',
+    'hydraulic-hose-fittings',
+    'valve-bodies-manifolds',
+    'pressure-gauge-accessories',
+    'custom-machined-components',
+    'jewellery-tools',
+  ].map((id) => categories.find((category) => category.id === id));
   const featured = [
     'p15-01',
     'p02-01',
@@ -525,17 +534,14 @@ export function home(products) {
         <div class="section-head">
           <div>
             <p class="eyebrow">BROWSE WITH PURPOSE</p>
-            <h2>Tools for your trade</h2>
+            <h2>Products for your trade</h2>
           </div>
           <a class="text-link" href="categories.html">View all categories</a>
         </div>
         ${homeSlider(
           'trades',
-          'Tool categories',
-          categories
-            .slice(0, 6)
-            .map((c) => categoryCard(c, products))
-            .join(''),
+          'Product categories',
+          featuredCategories.map((c) => categoryCard(c, products)).join(''),
         )}
       </section>
       <section class="section section-muted">

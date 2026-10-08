@@ -2701,37 +2701,38 @@ main .button::after {
   gap: 8px;
 }
 
+/* The homepage also offers the established mobile shortcut on desktop. */
 .floating-whatsapp {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
   display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  background: #17683e;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 5px 18px #111d3028;
+  text-decoration: none;
 }
-
 .floating-whatsapp[hidden] {
   display: none !important;
 }
+.floating-whatsapp:hover {
+  background: #10512f;
+  color: #fff;
+}
+body[data-page='home'] .floating-whatsapp {
+  display: inline-flex;
+}
 @media (max-width: 760px) {
-  /* The shortcut hides near the footer, so no empty space is needed below it. */
   .floating-whatsapp {
-    position: fixed;
-    right: 16px;
-    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
-    z-index: 40;
     display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    min-height: 48px;
-    padding: 11px 16px;
-    border-radius: 999px;
-    background: #17683e;
-    color: #fff;
-    font-size: 0.875rem;
-    font-weight: 600;
-    box-shadow: 0 5px 18px #111d3028;
-    text-decoration: none;
-  }
-
-  .floating-whatsapp:hover {
-    background: #10512f;
-    color: #fff;
   }
 }
 
@@ -3587,26 +3588,27 @@ main .button::after {
   }
 }
 
-/* Swipe through arrival categories on small screens. */
-@media (max-width: 640px) {
-  .arrivals-toolbar {
-    min-width: 0;
-  }
-  .arrival-filters {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    scrollbar-width: thin;
-    scrollbar-color: #b6c6db transparent;
-    padding: 5px 3px 10px;
-    scroll-padding-inline: 3px;
-  }
-  .arrival-filters button {
-    flex: 0 0 auto;
-    white-space: nowrap;
-    scroll-snap-align: start;
-  }
+/* Scroll overflowing category filters on desktop as well as touch screens. */
+.arrivals-toolbar {
+  min-width: 0;
+}
+.arrival-filters {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: #b6c6db transparent;
+  padding: 5px 3px 10px;
+  scroll-padding-inline: 3px;
+}
+.arrival-filters button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  scroll-snap-align: start;
 }
 
 /* Give New Arrivals a consistent accent in the shared navigation. */
