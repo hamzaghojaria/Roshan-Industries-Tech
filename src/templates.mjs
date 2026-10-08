@@ -534,7 +534,7 @@ export function home(products) {
         <div class="section-head">
           <div>
             <p class="eyebrow">BROWSE WITH PURPOSE</p>
-            <h2>Products for your trade</h2>
+            <h2>Browse our categories</h2>
           </div>
           <a class="text-link home-browse-link" href="categories.html">View all categories</a>
         </div>
@@ -868,7 +868,10 @@ export function aboutPage(products) {
       <section class="container page-intro">
         <p class="eyebrow">QUALITY HAS A NAME</p>
         <h1>A heritage built around the details.</h1>
-        <p>Roshan Industries. Watch parts manufacturing and tools for the craft of time.</p>
+        <p>
+          Watch parts manufacturing, specialist tools and precision machined components from Roshan
+          Industries in Mumbai.
+        </p>
       </section>
       <section class="section container about-story">
         <div class="about-mark">
@@ -880,23 +883,27 @@ export function aboutPage(products) {
           <h2>Rooted in Mumbai.<br />Connected to the craft.</h2>
           <p class="lead">Since 1900. Over 125 years of service.</p>
           <p>
-            Roshan Industries works in watch parts manufacturing in Mumbai. Our catalogue brings
-            together horological and watchmaker’s tools, jewellery tools and allied products.
+            With roots in watch parts manufacturing, Roshan Industries brings together tools and
+            components for watchmaking, clockmaking, jewellery, workshop work and precision
+            machining.
           </p>
           <p>
             Our range includes inspection loupes, precision screwdrivers, case opening and bracelet
-            tools, clock keys, bench holders and accessories. Each has its own place in the work of
-            making, maintaining and repairing.
+            tools, clock keys, bench holders and accessories for making, maintaining and repairing.
+            Our Precision Machining range also includes tube and instrumentation fittings, hydraulic
+            and hose fittings, valve bodies and manifolds, pressure gauge accessories and custom
+            machined components.
           </p>
           <p>
             Alongside our catalogue, custom product manufacturing is a central part of what we
-            offer. A requirement may begin with a drawing, a sample, a photograph or a conversation
-            about how a part needs to work.
+            offer. Share a drawing, sample, photograph or specification, and speak with our team
+            about dimensions, materials, finish, quantity and how the part needs to work.
           </p>
           <p>
             We welcome enquiries from watchmakers, repair workshops, jewellery professionals and
-            businesses. Whether you are selecting a catalogue tool or developing a custom product,
-            our team is your direct point of contact for specifications and quotations.
+            engineering businesses. Whether you are selecting a catalogue product or developing a
+            custom component, our team is your direct point of contact for specifications,
+            availability and quotations.
           </p>
         </div>
       </section>
@@ -1097,8 +1104,8 @@ export function contactPage() {
         <p class="eyebrow">LET’S DISCUSS THE DETAILS</p>
         <h1>Contact Roshan Industries.</h1>
         <p>
-          For custom product manufacturing or a catalogue enquiry, speak directly with our team in
-          Mumbai.
+          Speak with our Mumbai team about catalogue products, precision machined components or
+          custom manufacturing. Contact us by email or WhatsApp to discuss your requirements.
         </p>
       </section>
       <section class="container custom-enquiry" id="custom-enquiry">
@@ -1106,9 +1113,10 @@ export function contactPage() {
           <p class="eyebrow">CUSTOM MANUFACTURING ENQUIRIES</p>
           <h2>Tell us what you want to make.</h2>
           <p>
-            Share a drawing, reference photograph or details of an existing part. Include its
-            intended use, dimensions, preferred materials or finish, quantity and target timeline.
-            Our team will discuss feasibility and the next steps with you.
+            Need a custom part or a product beyond our catalogue? Share a drawing, sample reference
+            or photograph, along with its intended use, dimensions and tolerances, preferred
+            material and finish, quantity and target timeline. Our team will review the requirement
+            and discuss feasibility and the next steps with you.
           </p>
           <a class="button button-navy" href="${esc(customMail())}"
             >Prepare a custom product enquiry</a
@@ -1132,8 +1140,9 @@ export function contactPage() {
           <h2>Your next project<br />starts here.</h2>
           <a class="contact-email" href="mailto:${email}">${email}</a>
           <p>
-            Tell us which product you’re interested in and the quantity you need. Include the SKU
-            where possible so we can identify the exact catalogue entry.
+            Share the product name or SKU, quantity and required specifications. Include the size,
+            material or variant where relevant, along with your contact details and preferred
+            timeline. We can then discuss availability and a quotation for your requirement.
           </p>
           <div class="enquiry-actions">
             <a class="button button-navy" href="${esc(mail())}">Prepare an email enquiry</a>
