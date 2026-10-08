@@ -105,45 +105,17 @@
     "description": "Explore compasses photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
   },
   {
-    "id": "centrifugal-pumps",
-    "name": "Centrifugal Pumps",
-    "family": "Pumps",
-    "description": "Liquid transfer, circulation and staged centrifugal pump configurations.",
-    "image": "assets/pumps/rit-0201-centrifugal-transfer-pump.jpg"
+    "id": "cnc-turning",
+    "name": "CNC Turning",
+    "family": "Precision Machining",
+    "image": "assets/products/rit-0272-banjo-bolt.jpg",
+    "description": "Custom turned components for enquiries based on customer drawings and samples."
   },
   {
-    "id": "submersible-pumps",
-    "name": "Submersible Pumps",
-    "family": "Pumps",
-    "description": "Compact water-transfer and drainage pump configurations for submerged operation.",
-    "image": "assets/pumps/rit-0206-submersible-drainage-pump.png"
-  },
-  {
-    "id": "diaphragm-pumps",
-    "name": "Diaphragm Pumps",
-    "family": "Pumps",
-    "description": "Transfer, metal-body and sanitary-style diaphragm pump configurations.",
-    "image": "assets/pumps/rit-0203-diaphragm-transfer-pump.jpg"
-  },
-  {
-    "id": "gear-pumps",
-    "name": "Gear Pumps",
-    "family": "Pumps",
-    "description": "Positive displacement gear pump assemblies for application enquiries.",
-    "image": "assets/pumps/rit-0209-external-gear-pump-assembly.jpg"
-  },
-  {
-    "id": "peristaltic-pumps",
-    "name": "Peristaltic Pumps",
-    "family": "Pumps",
-    "description": "Tube-based pump configurations for laboratory transfer and controlled dosing.",
-    "image": "assets/pumps/rit-0210-laboratory-peristaltic-pump.jpg"
-  },
-  {
-    "id": "vacuum-pumps",
-    "name": "Vacuum Pumps",
-    "family": "Pumps",
-    "description": "Rotary vane vacuum pump configurations for process requirements.",
-    "image": "assets/pumps/rit-0212-rotary-vane-vacuum-pump.jpg"
+    "id": "vmc-milling",
+    "name": "VMC Milling",
+    "family": "Precision Machining",
+    "image": "assets/products/rit-0289-check-valve-housing.jpg",
+    "description": "Custom milled components for enquiries based on customer drawings and samples."
   }
 ]

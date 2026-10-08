@@ -44,6 +44,18 @@ assert all(
     "Pump photograph credits" not in page.get_text() and "Image licence" not in page.get_text()
     for page in doc
 )
+# Verify the replacement range and retired pump SKUs in customer exports.
+assert not any(product["family"] == "Pumps" for product in products)
+machining = [product for product in products if product["family"] == "Precision Machining"]
+assert len(machining) == 25
+assert {product["sku"] for product in machining} == {
+    f"RIT-{number:04d}" for number in range(272, 297)
+}
+export_text = "\n".join(page.get_text() for page in doc)
+assert all(product["name"] in export_text.replace("\n", " ") for product in machining)
+assert "pump" not in export_text.lower()
+for number in range(201, 213):
+    assert f"RIT-{number:04d}" not in export_text
 logo_info = doc[0].get_image_info(xrefs=True)[0]
 logo = logo_info["bbox"]
 assert (

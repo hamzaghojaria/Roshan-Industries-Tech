@@ -33,8 +33,8 @@ const onlineProducts = products.filter((p) => p.onlineProduct);
 const arrivals = JSON.parse(
   fs.readFileSync(path.join(root, 'src/data/new-arrivals.json'), 'utf8'),
 ).skus;
-assert.equal(products.length, 228 + onlineProducts.length);
-assert.equal(categories.length, 21);
+assert.equal(products.length, 216 + onlineProducts.length);
+assert.equal(categories.length, 17);
 assert.equal(new Set(products.map((p) => p.name)).size, products.length);
 assert.equal(new Set(products.map((p) => p.sku)).size, products.length);
 assert.equal(images.images.length, 216);
@@ -105,10 +105,7 @@ assert(
 );
 assert.equal(workbook.allTabsColored, true);
 for (const old of changes.removed)
-  assert(
-    products.some((p) => p.sku === old.sku),
-    'Pump listing was not restored',
-  );
+  assert(!products.some((p) => p.sku === old.sku), 'Retired pump listing remains');
 assert.deepEqual(
   new Set(fs.readdirSync(path.join(root, 'assets/products'))),
   new Set(products.filter((p) => !p.onlineRange).map((p) => path.basename(p.image))),
@@ -117,7 +114,7 @@ assert.deepEqual(
   fs.readdirSync(path.join(root, 'assets')).filter((f) => f.endsWith('.pdf')),
   ['roshan-industries-catalogue.pdf'],
 );
-assert.equal(products.filter((p) => p.onlineRange).length, 12);
+assert.equal(products.filter((p) => p.onlineRange).length, 0);
 assert.equal(
   hash(path.join(root, 'Roshan-Industries-Product-Catalogue.xlsx')),
   workbook.xlsxSha256,
@@ -167,10 +164,10 @@ const result = {
   pdfProducts: 216,
   websiteProducts: products.length,
   workbookProducts: workbook.products,
-  categories: 21,
+  categories: categories.length,
   retainedSkus: 200,
   newProducts: 16,
-  restoredPumpProducts: 12,
+  restoredPumpProducts: 0,
   nativeProductImages: products.filter(
     (p) => !p.onlineRange && !p.imageOverride && !p.onlineProduct,
   ).length,
@@ -201,11 +198,11 @@ const lines = [
   '',
   'Source reviewed on 7 October 2026. The 21-page high resolution PDF is authoritative.',
   '',
-  `The website, PDF and XLSX each contain ${products.length} products: 216 source PDF entries, 12 restored pump listings and ${onlineProducts.length} online additions. There are 21 categories and five families. Stable SKUs are preserved.`,
+  `The website, PDF and XLSX each contain ${products.length} products: 216 source PDF entries and ${onlineProducts.length} online additions. There are ${categories.length} categories and five families. Stable SKUs are preserved.`,
   '',
   'The source inventory records 216 native scan crops and their page, panel, crop, dimensions and checksum. Requested online photograph replacements are tracked separately in product-image-overrides.json. All PDF product descriptions are newly generated.',
   '',
-  `The supplied PDF is preserved unchanged as the original image and product reference. The branded downloadable catalogue contains ${products.length} products with a centered cover logo, introductory page, clickable category index and website headers and footers. The XLSX contains ${products.length} records, 21 family-colored category sheets and ${products.length * 2} embedded PNG previews.`,
+  `The supplied PDF is preserved unchanged as the original image and product reference. The branded downloadable catalogue contains ${products.length} products with a centered cover logo, introductory page, clickable category index and website headers and footers. The XLSX contains ${products.length} records, ${categories.length} family-colored category sheets and ${products.length * 2} embedded PNG previews.`,
   'All new products and current website photograph replacements are included in the PDF and XLSX.',
   '',
   '## Page Coverage',
@@ -241,5 +238,5 @@ const lines = [
 ];
 fs.writeFileSync(path.join(auditPath, 'Catalogue-Update-Audit.md'), lines.join('\n') + '\n');
 console.log(
-  'PASS: PDF coverage, all 216 images and fresh descriptions, stable SKUs, clean titles, branded catalogue links and restored pumps. Export image synchronization is reported separately.',
+  'PASS: PDF coverage, all 216 images and fresh descriptions, stable SKUs, clean titles, branded catalogue links and custom machining products. Export image synchronization is reported separately.',
 );

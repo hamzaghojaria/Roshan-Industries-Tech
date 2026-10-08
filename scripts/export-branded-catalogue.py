@@ -21,13 +21,6 @@ def read(file):
     return json.loads((ROOT / file).read_text(encoding="utf8"))
 
 
-# Restore natural image dimensions without resampling the original pump photographs.
-pumps = read("src/data/pump-products.json")
-for p in pumps:
-    p["imageWidth"], p["imageHeight"] = Image.open(ROOT / p["image"]).size
-(ROOT / "src/data/pump-products.json").write_text(
-    json.dumps(pumps, indent=2) + "\n", encoding="utf8"
-)
 products = json.loads(
     (ROOT / "products.js")
     .read_text(encoding="utf8")
@@ -277,7 +270,7 @@ doc.set_metadata(
     {
         "title": "Roshan Industries Product Catalogue",
         "author": "Roshan Industries",
-        "subject": "Watch parts and custom manufacturing. Category index and pump enquiry range.",
+        "subject": "Watch parts and custom manufacturing. Category index and CNC and VMC machining range.",
     }
 )
 output = ROOT / "assets/roshan-industries-catalogue.pdf"

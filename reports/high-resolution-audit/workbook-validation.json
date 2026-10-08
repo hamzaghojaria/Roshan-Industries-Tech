@@ -1,17 +1,17 @@
 {
-  "products": 269,
-  "categorySheets": 21,
-  "embeddedPhotos": 538,
-  "sourceSha256": "c6e2ed8e7b18c7da64d535bae6734cfb485eaef2c05c8802e252bc2fd0c71e8e",
+  "products": 282,
+  "categorySheets": 17,
+  "embeddedPhotos": 564,
+  "sourceSha256": "1825867636582431274723b1a0a10424c5993e7e0c8bd5980854001efcb870f2",
   "familyColors": {
     "Watchmaking": "315BD6",
     "Clockmaking": "B68A42",
     "Jewellery": "8B5CB2",
     "Workshop Essentials": "2C8790",
-    "Pumps": "4B7F52"
+    "Precision Machining": "4B7F52"
   },
   "allTabsColored": true,
   "allFieldsMatchWebsite": true,
-  "newArrivalProducts": 41,
-  "xlsxSha256": "c2e0149f1473ff9bd558c6a0a5e4435442a8c6a590a764b61351e36ca958c234"
+  "newArrivalProducts": 66,
+  "xlsxSha256": "0c173abecad9bea12fb580eeed69e1396f9f675ad21802f2e79d0c16704cc895"
 }

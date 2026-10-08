@@ -64,7 +64,7 @@ This inventory covers editable code. Generated HTML/CSS/JS copies inherit source
 | src/data/new-arrivals.json            | Selected arrival SKUs for shared badges and arrival listings.                            |
 | src/data/online-products.json         | Approved linked/photo product records, supplied specifications and source references.    |
 | src/data/product-image-overrides.json | Approved replacement photo metadata, dimensions, checksums and source URLs.              |
-| src/data/pump-products.json           | Restored pump enquiry products with permanent SKUs and original photos.                  |
+| src/data/pump-products.json           | Empty retired pump range; permanent SKU mappings are retained to prevent reuse.          |
 | src/data/reviewed-categories.json     | Category IDs, family assignment, labels and source references.                           |
 | src/data/reviewed-products.json       | Reviewed native-PDF product inventory and source provenance.                             |
 | src/data/sku-map.json                 | Permanent product ID to SKU mapping. Never renumber existing records.                    |

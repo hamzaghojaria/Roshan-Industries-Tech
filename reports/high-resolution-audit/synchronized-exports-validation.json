@@ -1,10 +1,10 @@
 {
-  "products": 269,
-  "pdfPages": 58,
-  "pdfImagesMatched": 269,
-  "workbookRowsMatched": 538,
-  "categorySheets": 21,
-  "newArrivalProducts": 41,
+  "products": 282,
+  "pdfPages": 57,
+  "pdfImagesMatched": 282,
+  "workbookRowsMatched": 564,
+  "categorySheets": 17,
+  "newArrivalProducts": 66,
   "allProductPageLinksValid": true,
   "coverLogoCentered": true,
   "allPhotosMatchWebsite": true,
@@ -15,5 +15,5 @@
     "subsampling": 2,
     "logoLossless": true
   },
-  "pdfSha256": "c6e2ed8e7b18c7da64d535bae6734cfb485eaef2c05c8802e252bc2fd0c71e8e"
+  "pdfSha256": "1825867636582431274723b1a0a10424c5993e7e0c8bd5980854001efcb870f2"
 }

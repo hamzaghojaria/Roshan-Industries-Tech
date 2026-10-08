@@ -36,7 +36,7 @@ family_colors = {
     "Clockmaking": "B68A42",
     "Jewellery": "8B5CB2",
     "Workshop Essentials": "2C8790",
-    "Pumps": "4B7F52",
+    "Precision Machining": "4B7F52",
 }
 headers = [
     "SKU",
@@ -165,7 +165,7 @@ for row, text in enumerate(
     [
         f"{len(products)} products",
         f"{len(categories)} categories across {len(family_colors)} families",
-        f"216 source catalogue products, 12 pump listings and {sum(bool(p.get('onlineProduct')) for p in products)} new online products",
+        f"216 source catalogue products and {sum(bool(p.get('onlineProduct')) for p in products)} new online products",
         "Updated website catalogue with clickable category index",
     ],
     4,

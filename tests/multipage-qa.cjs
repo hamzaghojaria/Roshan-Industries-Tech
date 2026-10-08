@@ -86,7 +86,7 @@ let browser;
     ['Clockmaking', 36],
     ['Jewellery', 21],
     ['Workshop Essentials', products.filter((p) => p.family === 'Workshop Essentials').length],
-    ['Pumps', 12],
+    ['Precision Machining', 25],
   ]) {
     await page.goto(url('catalogue.html') + '?family=' + encodeURIComponent(family));
     assert.equal(await page.locator('#family-filter').count(), 0);
@@ -97,7 +97,7 @@ let browser;
     assert.equal(new URL(page.url()).searchParams.get('family'), family);
   }
   await page.reload();
-  assert.equal(new URL(page.url()).searchParams.get('family'), 'Pumps');
+  assert.equal(new URL(page.url()).searchParams.get('family'), 'Precision Machining');
   await page.goto(url('catalogue.html') + '?family=Watchmaking');
   await page.locator('#catalogue-query').fill('RIT-0001');
   assert.equal(await page.locator('#catalogue-grid .product-card').count(), 1);
@@ -119,7 +119,7 @@ let browser;
     assert.equal(await page.locator('.sidebar [aria-current="page"]').count(), 1);
   }
   await page.goto(url('categories.html'));
-  assert.equal(await page.locator('.category-card').count(), 21);
+  assert.equal(await page.locator('.category-card').count(), 17);
   assert.equal(await page.locator('.family-overview a').count(), 5);
   assert.equal(await page.locator('.family-heading').count(), 5);
   assert.equal(

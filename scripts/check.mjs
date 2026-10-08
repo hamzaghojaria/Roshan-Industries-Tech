@@ -38,7 +38,7 @@ assert.equal(new Set(products.map((p) => p.sku)).size, expectedProducts);
 assert.equal(new Set(products.map((p) => p.id)).size, expectedProducts);
 assert.equal(products.find((p) => p.id === 'p05-03').sku, 'RIT-0039');
 assert.equal(products.find((p) => p.id === 'p05-04').sku, 'RIT-0200');
-assert.equal(new Set(products.map((p) => p.categoryId)).size, 21);
+assert.equal(new Set(products.map((p) => p.categoryId)).size, categories.length);
 // Every product photo has a live product page.
 assert.equal(
   fs.readdirSync(path.join(root, 'products')).filter((p) => p.endsWith('.html')).length,
@@ -46,7 +46,7 @@ assert.equal(
 );
 assert.equal(
   fs.readdirSync(path.join(root, 'categories')).filter((p) => p.endsWith('.html')).length,
-  21,
+  categories.length,
 );
 const expectedImages = new Set(products.map((p) => path.basename(p.image)));
 for (const image of fs.readdirSync(path.join(root, 'assets/products'))) {
@@ -137,5 +137,5 @@ for (const file of files) {
   assert(!/\bRoshan\b(?! Industries)/i.test(visible), `Shortened company name: ${file}`);
 }
 console.log(
-  `PASS: ${files.length} pages, all local links/assets, ${expectedProducts} unique stable SKUs, 21 categories, clean product text and shared header/footer logos.`,
+  `PASS: ${files.length} pages, all local links/assets, ${expectedProducts} unique stable SKUs, ${categories.length} categories, clean product text and shared header/footer logos.`,
 );

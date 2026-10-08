@@ -23,7 +23,13 @@ const newBadge = (p, detail = false) =>
     ? `<span class="arrival-badge${detail ? ' arrival-badge-detail' : ''}">New</span>`
     : '';
 // The same family order is used in desktop groups and mobile filters.
-const familyNames = ['Watchmaking', 'Clockmaking', 'Jewellery', 'Workshop Essentials', 'Pumps'];
+const familyNames = [
+  'Watchmaking',
+  'Clockmaking',
+  'Jewellery',
+  'Workshop Essentials',
+  'Precision Machining',
+];
 // Keep catalogue labels and destinations identical in the header and footer at every width.
 const catalogueNavigation = [
   ['catalogue.html', 'Products', 'products'],
@@ -138,7 +144,7 @@ export function layout(
     home: 'Roshan Industries manufactures watch parts and custom products in Mumbai, with 125+ years of service since 1900. Explore our tools and discuss your requirements.',
     categories:
       'Browse Roshan Industries watchmaking, clockmaking, jewellery and workshop tool categories. Find products and enquire about custom manufacturing in Mumbai.',
-    products: `Explore ${productCount} watchmaking, clockmaking, jewellery, workshop and pump products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.`,
+    products: `Explore ${productCount} watchmaking, clockmaking, jewellery, workshop and precision machining products from Roshan Industries in Mumbai. Search by name or SKU and enquire about custom products.`,
     about:
       'Discover Roshan Industries, a Mumbai watch parts manufacturer with 125+ years of service since 1900 and four generations of experience. Learn about our custom manufacturing.',
     contact:

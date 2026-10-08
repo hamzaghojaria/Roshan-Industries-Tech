@@ -1,0 +1,212 @@
+{
+  "addedProducts": [
+    {
+      "sku": "RIT-0272",
+      "name": "Banjo Bolt",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/61/banjo-bolt"
+    },
+    {
+      "sku": "RIT-0273",
+      "name": "Hydraulic Valve Spindle",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/14/hydraulic-valve-spindle"
+    },
+    {
+      "sku": "RIT-0274",
+      "name": "Hydraulic Plug",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/13/plug"
+    },
+    {
+      "sku": "RIT-0275",
+      "name": "Hydraulic Connector",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/9/connector"
+    },
+    {
+      "sku": "RIT-0276",
+      "name": "Crimped Nut Nipple",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/8/crimped-nut-nipple"
+    },
+    {
+      "sku": "RIT-0277",
+      "name": "Hose Fitting Nipple",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/7/hose-fitting-nipple"
+    },
+    {
+      "sku": "RIT-0278",
+      "name": "Hose Fitting Nut",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/6/nut"
+    },
+    {
+      "sku": "RIT-0279",
+      "name": "Hose Fitting Stem",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/5/hose-fitting-stem-"
+    },
+    {
+      "sku": "RIT-0280",
+      "name": "Grooved Pipe",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/4/grooved-pipe"
+    },
+    {
+      "sku": "RIT-0281",
+      "name": "Hose Fitting Ferrule",
+      "categoryId": "cnc-turning",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/3/hose-fitting-ferrule"
+    },
+    {
+      "sku": "RIT-0282",
+      "name": "Customized Fasteners",
+      "categoryId": "cnc-turning",
+      "brochurePage": 4,
+      "sourceUrl": "https://www.precitech.net/Products/15/customized-fasteners"
+    },
+    {
+      "sku": "RIT-0283",
+      "name": "Sensor Body",
+      "categoryId": "cnc-turning",
+      "brochurePage": 4,
+      "sourceUrl": "https://www.precitech.net/Products/16/sensor-body"
+    },
+    {
+      "sku": "RIT-0284",
+      "name": "Tube Fittings",
+      "categoryId": "cnc-turning",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/30/male-connector"
+    },
+    {
+      "sku": "RIT-0285",
+      "name": "Instrumentation Check Valve",
+      "categoryId": "cnc-turning",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/56/check-valves"
+    },
+    {
+      "sku": "RIT-0286",
+      "name": "Instrumentation Ball Valve",
+      "categoryId": "cnc-turning",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/55/ball-valves"
+    },
+    {
+      "sku": "RIT-0287",
+      "name": "Instrumentation Needle Valve",
+      "categoryId": "cnc-turning",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/54/needles-valves"
+    },
+    {
+      "sku": "RIT-0288",
+      "name": "Customized Fittings",
+      "categoryId": "cnc-turning",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/60/customized-fitting"
+    },
+    {
+      "sku": "RIT-0289",
+      "name": "Check Valve Housing",
+      "categoryId": "vmc-milling",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/12/check-valve-housing-"
+    },
+    {
+      "sku": "RIT-0290",
+      "name": "Check Valve Body",
+      "categoryId": "vmc-milling",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/11/check-valve-body"
+    },
+    {
+      "sku": "RIT-0291",
+      "name": "Ball Valve Housing",
+      "categoryId": "vmc-milling",
+      "brochurePage": 3,
+      "sourceUrl": "https://www.precitech.net/Products/10/ball-valve-housing-"
+    },
+    {
+      "sku": "RIT-0292",
+      "name": "2 Valve Instrumentation Manifold",
+      "categoryId": "vmc-milling",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/57/2-valve-manifold"
+    },
+    {
+      "sku": "RIT-0293",
+      "name": "3 Valve Instrumentation Manifold",
+      "categoryId": "vmc-milling",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/58/3-valve-manifold"
+    },
+    {
+      "sku": "RIT-0294",
+      "name": "5 Valve Instrumentation Manifold",
+      "categoryId": "vmc-milling",
+      "brochurePage": 2,
+      "sourceUrl": "https://www.precitech.net/Products/59/5-valve-manifold-"
+    },
+    {
+      "sku": "RIT-0295",
+      "name": "Oil and Gas Machined Components",
+      "categoryId": "vmc-milling",
+      "brochurePage": 4,
+      "sourceUrl": "https://www.precitech.net/Products/17/oil--gas-components"
+    },
+    {
+      "sku": "RIT-0296",
+      "name": "Pressure Gauge Accessories",
+      "categoryId": "vmc-milling",
+      "brochurePage": 5,
+      "sourceUrl": "https://www.precitech.net/Products/20/gauge-saver"
+    }
+  ],
+  "retiredGenericEntries": [
+    "RIT-0270",
+    "RIT-0271"
+  ],
+  "retiredProducts": [
+    "RIT-0201",
+    "RIT-0202",
+    "RIT-0203",
+    "RIT-0204",
+    "RIT-0205",
+    "RIT-0206",
+    "RIT-0207",
+    "RIT-0208",
+    "RIT-0209",
+    "RIT-0210",
+    "RIT-0211",
+    "RIT-0212"
+  ],
+  "products": 282,
+  "categories": 17,
+  "newArrivals": 66,
+  "pdfPages": 57,
+  "workbookSheets": 19,
+  "workbookEmbeddedPhotos": 564,
+  "machiningClassification": "Indicative; final machining operations depend on customer drawings.",
+  "brochureRangeEntries": [
+    "Oil and Gas Machined Components",
+    "Pressure Gauge Accessories"
+  ],
+  "representativeImages": [
+    "Tube Fittings: male connector",
+    "Pressure Gauge Accessories: gauge saver"
+  ]
+}
