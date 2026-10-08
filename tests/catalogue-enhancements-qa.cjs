@@ -98,7 +98,10 @@ const server = http.createServer((req, res) => {
     const plain = await noJs.newPage();
     await plain.goto(origin + '/catalogue.html');
     assert(!(await plain.locator('.page-loader').isVisible()));
-    assert.equal(await plain.locator('#catalogue-grid .product-card').count(), 268);
+    assert.equal(
+      await plain.locator('#catalogue-grid .product-card').count(),
+      Object.keys(JSON.parse(fs.readFileSync('src/data/sku-map.json', 'utf8'))).length,
+    );
     await noJs.close();
     assert.deepEqual(errors, []);
     console.log(

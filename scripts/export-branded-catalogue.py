@@ -1,14 +1,19 @@
-"""Build the website-branded catalogue from current records and native product images."""
+"""Build the compact website catalogue, preserving original product photographs."""
 
 # Run directly from a working Python installation; see README for inputs and write effects.
 
 from pathlib import Path
-from io import BytesIO
 import json, hashlib, math
+from time import perf_counter
 import pymupdf as fitz
 from PIL import Image
+from catalogue_images import CatalogueImageCache, WEB_IMAGE_PROFILE
 
 ROOT = Path(__file__).resolve().parents[1]
+started = perf_counter()
+image_cache = CatalogueImageCache(ROOT / "artifacts/catalogue-image-cache")
+image_xrefs = {}
+print("[catalogue] Building compact PDF; reusing unchanged image encodings...", flush=True)
 
 
 def read(file):
@@ -84,12 +89,12 @@ def goto(page, rect, target):
 
 
 def image(page, file, rect):
-    im = Image.open(ROOT / file).convert("RGBA")
-    bg = Image.new("RGBA", im.size, "white")
-    im = Image.alpha_composite(bg, im).convert("RGB")
-    buf = BytesIO()
-    im.save(buf, format="PNG")
-    page.insert_image(fitz.Rect(rect), stream=buf.getvalue(), keep_proportion=True)
+    """Reuse PDF objects for repeated logos and cached JPEGs for product photos."""
+    if file in image_xrefs:
+        page.insert_image(fitz.Rect(rect), xref=image_xrefs[file], keep_proportion=True)
+        return
+    encoded = image_cache.prepare(ROOT / file, lossless=file == "assets/roshan-logo.png")
+    image_xrefs[file] = page.insert_image(fitz.Rect(rect), stream=encoded, keep_proportion=True)
 
 
 def chrome(page, title=None, family=None):
@@ -312,7 +317,13 @@ report = {
     "categoryPages": category_pages,
     "links": sum(len(p.get_links()) for p in check),
     "pdfSha256": hashlib.sha256(output.read_bytes()).hexdigest(),
-    "nativeSourceImagesPreserved": True,
+    "nativeSourceImagesPreserved": False,
+    "originalSourceFilesPreserved": True,
+    "imageOptimization": dict(WEB_IMAGE_PROFILE),
+    "pdfBytes": output.stat().st_size,
+    "imageCacheHits": image_cache.hits,
+    "imageCacheMisses": image_cache.misses,
+    "exportSeconds": round(perf_counter() - started, 2),
     "coverLogoCentered": True,
     "introductionPage": 2,
     "categoryIndexPages": [3, 4],
@@ -323,6 +334,9 @@ report = {
     json.dumps(report, indent=2) + "\n", encoding="utf8"
 )
 print(
-    f"PASS branded catalogue: {len(check)} pages, {len(products)} products, clickable category index, website headers and footers.",
+    f"PASS compact catalogue: {len(check)} pages, {len(products)} products, "
+    f"{output.stat().st_size / 1024 / 1024:.1f} MB in {report['exportSeconds']:.2f}s; "
+    f"{image_cache.hits} cached images, {image_cache.misses} newly encoded. "
+    "Clickable index, product links and original source files preserved.",
     flush=True,
 )

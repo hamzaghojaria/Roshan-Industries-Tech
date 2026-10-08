@@ -4,7 +4,7 @@ Watch parts, tools and custom manufacturing in Mumbai, serving customers since 1
 
 [Website](https://roshan-industries-tech.onrender.com/) | [GitHub](https://github.com/hamzaghojaria/Roshan-Industries-Tech) | [Email](mailto:roshanindustriestech@gmail.com)
 
-The current website contains **268 products, 21 categories, five families and 40 New Arrivals**. The synchronized customer PDF has 59 pages; the workbook contains 23 sheets and 536 embedded photographs. These totals describe the current records, not permanent limits.
+The current website contains **269 products, 21 categories, five families and 41 New Arrivals**. The synchronized customer PDF has 59 pages; the workbook contains 23 sheets and 538 embedded photographs. These totals describe the current records, not permanent limits.
 
 ## Start locally
 
@@ -97,7 +97,9 @@ Tests print PASS messages or assertion failures with a nonzero exit code. The we
 
 Keep permanent SKUs unchanged in src/data/sku-map.json. Reviewed PDF records, restored pumps and approved online products are merged by loadCatalogue(). Duplicate IDs, SKUs or names, unknown categories and changed permanent mappings fail the build. Image replacements belong in src/data/product-image-overrides.json. New badges follow src/data/new-arrivals.json.
 
-The customer PDF is assets/roshan-industries-catalogue.pdf. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx. Preserve native images and source provenance when updating either export.
+The customer PDF is assets/roshan-industries-catalogue.pdf, approximately **9.4 MB** for the current 269 products (previously 96.4 MB). It uses the approved web profile: product photos up to 900 pixels on the longest edge, JPEG quality 85 and a lossless logo. Original website photographs and workbook images keep their original resolution. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx.
+
+Processed PDF images are cached in artifacts/catalogue-image-cache/. Unchanged photos reuse their encodings; a source-image, compression-setting or Pillow-version change creates a fresh cache entry. The cache is disposable and excluded from Git and delivery archives. A repeat export measured 3.29 seconds with all 270 image encodings reused; timing depends on the machine and changed content. The local pre-compression PDF is preserved at artifacts/catalogue-archive/roshan-catalogue-native-269-products.pdf. Normal styling changes only need npm run build; they do not need PDF or workbook regeneration.
 
 To regenerate both exports after a catalogue change, use a working Python interpreter and install requirements.txt:
 
@@ -113,11 +115,13 @@ npm run check:source
 python scripts/validate-synchronized-exports.py
 ```
 
+Run `python tests/catalogue-image-cache-qa.py` to verify image cache reuse, invalidation and logo/photo settings. Export progress reports the PDF size, elapsed time and cache hits/misses.
+
 Python scripts use UTF-8 input and are formatted with Black at 100 columns. Run `python scripts/check-python.py` for dependency-free syntax validation; `python -m black --line-length 100 scripts` formats them when Black is installed.
 
 Close Excel before regenerating its workbook. The build reads the current XLSX and PDF; it does not regenerate them. Source-image extraction and inspection need ../reference-documents/roshan-high-resolution-source.pdf, which is outside the published website.
 
-scripts/update-catalogue-introduction.py is a historical tool for the archived 228-product export, not the current 268-product export workflow. See the code reference before running tools that write records or export files.
+scripts/update-catalogue-introduction.py is a historical tool for the archived 228-product export, not the current 269-product export workflow. See the code reference before running tools that write records or export files.
 
 ## Publishing
 

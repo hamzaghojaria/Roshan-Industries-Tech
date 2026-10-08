@@ -18,7 +18,8 @@ This inventory covers editable code. Generated HTML/CSS/JS copies inherit source
 | scripts/check-syntax.mjs                   | Parse every maintained JavaScript file without executing maintenance operations.                                               |
 | scripts/check-python.py                    | Parse Python maintenance code without importing export dependencies or running exports.                                        |
 | scripts/check.mjs                          | Check all generated routes, local links/assets, text, product totals and permanent SKU mapping.                                |
-| scripts/export-branded-catalogue.py        | Write the current branded PDF, page mappings and audit; refresh pump image dimensions in source data.                          |
+| scripts/catalogue_images.py                | Approved PDF JPEG profile and content/settings/version keyed image cache; originals stay unchanged.                            |
+| scripts/export-branded-catalogue.py        | Write the compact branded PDF, page mappings and audit; reuse cached photo encodings and repeated logo objects.                |
 | scripts/export-high-resolution-workbook.py | Write the synchronized XLSX with styled category sheets and embedded product photos.                                           |
 | scripts/extract-high-resolution.py         | Extract native PDF crops; writes product images, reviewed records and provenance reports.                                      |
 | scripts/inspect-high-resolution.py         | Inspect original scans and workbook; writes contact sheets, PDF text and inspection reports.                                   |
@@ -52,6 +53,7 @@ This inventory covers editable code. Generated HTML/CSS/JS copies inherit source
 | tests/sliders-qa.cjs                       | Exercise real carousel movement, pause, reduced motion and mobile geometry.                                                    |
 | tests/whole-card-qa.cjs                    | Regression check: whole card. Run after rebuilding the website.                                                                |
 | tests/workbook-excel-qa.ps1                | Read-only Microsoft Excel COM verification of sheets, records and embedded photos; writes an audit report.                     |
+| tests/catalogue-image-cache-qa.py          | Check PDF image cache reuse, source/settings invalidation, size limits and lossless logos.                                     |
 | tests/helpers/browser.cjs                  | Shared Playwright dependency loading and BROWSER_PATH/EDGE_PATH selection.                                                     |
 
 ## Data and configuration
@@ -83,4 +85,4 @@ File headers explain responsibility; function comments explain boundaries and co
 
 Keep CSS order: styles.css is the base and modern.css supplies later overrides. Keep generated local records readable because Python exporters parse products.js. Published dist/products.js is compact but semantically identical. Export/source-audit tools may write data and reports; normal website builds never re-export the PDF or workbook.
 
-Python scripts are formatted at 100 columns. All nine scripts were parsed and their formatting was checked against unchanged syntax trees. Export regeneration is a separate catalogue maintenance operation.
+Python scripts are formatted at 100 columns. All maintained scripts were parsed and their formatting was checked against unchanged syntax trees. Export regeneration is a separate catalogue maintenance operation.

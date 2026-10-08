@@ -9,7 +9,10 @@ const { pathToFileURL } = require('node:url');
   const products = JSON.parse(fs.readFileSync('src/data/online-products.json', 'utf8')).filter(
     (p) => Number(p.sku.slice(4)) >= 260,
   );
-  assert.equal(products.length, 9);
+  assert.equal(products.length, 10);
+  assert(
+    products.some((product) => product.sku === 'RIT-0269' && product.categoryId === 'case-openers'),
+  );
   const pdfReport = JSON.parse(
     fs.readFileSync('reports/high-resolution-audit/branded-catalogue-validation.json', 'utf8'),
   );
@@ -54,7 +57,7 @@ const { pathToFileURL } = require('node:url');
       }
     }
     console.log(
-      'PASS nine recent linked products, image decoding, shared badges, SKU search, responsive detail pages and synchronized PDF and Excel.',
+      `PASS ${products.length} recent linked products, image decoding, shared badges, SKU search, responsive detail pages and synchronized PDF and Excel.`,
     );
   } finally {
     await browser.close();

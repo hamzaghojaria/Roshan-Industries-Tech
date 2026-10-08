@@ -1,5 +1,5 @@
 {
-  "products": 268,
+  "products": 269,
   "categories": 21,
   "families": [
     "Watchmaking",
@@ -55,6 +55,7 @@
     "RIT-0140": 13,
     "RIT-0141": 13,
     "RIT-0148": 13,
+    "RIT-0269": 13,
     "RIT-0032": 14,
     "RIT-0075": 14,
     "RIT-0076": 14,
@@ -302,9 +303,21 @@
     "peristaltic-pumps": 57,
     "vacuum-pumps": 58
   },
-  "links": 553,
-  "pdfSha256": "355bc23f50759e5a37dda3e928245d5b737a982f73cf4512cae13b59363ebae2",
-  "nativeSourceImagesPreserved": true,
+  "links": 554,
+  "pdfSha256": "0d98ae6f60200441fd4e1b15c24c17d35e01503c78c9d9f8ed392823ee460de1",
+  "nativeSourceImagesPreserved": false,
+  "originalSourceFilesPreserved": true,
+  "imageOptimization": {
+    "name": "web",
+    "maxImageEdge": 900,
+    "jpegQuality": 85,
+    "subsampling": 2,
+    "logoLossless": true
+  },
+  "pdfBytes": 9841943,
+  "imageCacheHits": 270,
+  "imageCacheMisses": 0,
+  "exportSeconds": 3.29,
   "coverLogoCentered": true,
   "introductionPage": 2,
   "categoryIndexPages": [

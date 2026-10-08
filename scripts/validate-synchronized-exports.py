@@ -1,4 +1,4 @@
-"""Validate current product records, PDF photo pixels/page links and Excel category rows."""
+"""Validate compressed PDF photos, original workbook thumbnails and catalogue records."""
 
 # Run directly from a working Python installation; see README for inputs and write effects.
 
@@ -6,7 +6,7 @@ from pathlib import Path
 from io import BytesIO
 import json, hashlib
 import pymupdf as fitz
-from PIL import Image
+from PIL import Image, ImageChops
 from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,16 +25,47 @@ products = json.loads(
 )
 categories = read("src/data/reviewed-categories.json")
 report = read("reports/high-resolution-audit/branded-catalogue-validation.json")
+profile = report.get("imageOptimization")
+if profile:
+    # The approved web profile changes PDF photos only, never source images or workbook photos.
+    assert profile == {
+        "name": "web",
+        "maxImageEdge": 900,
+        "jpegQuality": 85,
+        "subsampling": 2,
+        "logoLossless": True,
+    }
 selected = set(read("src/data/new-arrivals.json")["skus"])
 doc = fitz.open(ROOT / "assets/roshan-industries-catalogue.pdf")
 assert (ROOT / "Roshan-Industries-Catalogue.pdf").read_bytes() == (
     ROOT / "assets/roshan-industries-catalogue.pdf"
 ).read_bytes()
-logo = doc[0].get_image_info()[0]["bbox"]
+logo_info = doc[0].get_image_info(xrefs=True)[0]
+logo = logo_info["bbox"]
 assert (
     abs((logo[0] + logo[2]) / 2 - doc[0].rect.width / 2) < 0.1
     and abs((logo[1] + logo[3]) / 2 - doc[0].rect.height / 2) < 0.1
 )
+with Image.open(ROOT / "assets/roshan-logo.png") as original_logo:
+    rgba = original_logo.convert("RGBA")
+    source_logo = Image.alpha_composite(Image.new("RGBA", rgba.size, "white"), rgba).convert("RGB")
+embedded_logo = Image.open(BytesIO(doc.extract_image(logo_info["xref"])["image"])).convert("RGBA")
+logo_mask = next(
+    image[1] for image in doc[0].get_images(full=True) if image[0] == logo_info["xref"]
+)
+if logo_mask:
+    embedded_logo.putalpha(Image.open(BytesIO(doc.extract_image(logo_mask)["image"])).convert("L"))
+embedded_logo = Image.alpha_composite(
+    Image.new("RGBA", embedded_logo.size, "white"), embedded_logo
+).convert("RGB")
+assert embedded_logo.size == source_logo.size
+# A PDF transparency mask can round alpha composition by one channel value.
+assert (
+    max(high for low, high in ImageChops.difference(embedded_logo, source_logo).getextrema()) <= 1
+)
+header_logo = doc[1].get_image_info(xrefs=True)[0]
+header_pixels = Image.open(BytesIO(doc.extract_image(header_logo["xref"])["image"])).convert("RGB")
+assert header_pixels.size == source_logo.size and header_pixels.tobytes() == source_logo.tobytes()
 assert "Our manufacturing experience." in doc[1].get_text()
 for page in doc:
     for link in page.get_links():
@@ -53,6 +84,12 @@ for number in sorted(set(report["skuPages"].values())):
         source = Image.alpha_composite(Image.new("RGBA", source.size, "white"), source).convert(
             "RGB"
         )
+        if profile:
+            # Recompute independently from originals; don't trust the export cache or report alone.
+            source.thumbnail((900, 900), Image.Resampling.LANCZOS)
+            expected = BytesIO()
+            source.save(expected, format="JPEG", quality=85, optimize=True, subsampling=2)
+            source = Image.open(BytesIO(expected.getvalue())).convert("RGB")
         embedded = Image.open(BytesIO(doc.extract_image(info["xref"])["image"])).convert("RGB")
         assert embedded.size == source.size and embedded.tobytes() == source.tobytes(), (
             product["sku"] + " PDF image pixels"
@@ -106,6 +143,7 @@ result = dict(
     allProductPageLinksValid=True,
     coverLogoCentered=True,
     allPhotosMatchWebsite=True,
+    pdfImageProfile=profile or "native",
     pdfSha256=hashlib.sha256(
         (ROOT / "assets/roshan-industries-catalogue.pdf").read_bytes()
     ).hexdigest(),
@@ -114,5 +152,7 @@ result = dict(
     json.dumps(result, indent=2) + "\n"
 )
 print(
-    f"PASS synchronized exports: {image_checks} full resolution PDF photos and {rows_checked} Excel rows/photos matched to website; category records and page links valid."
+    f"PASS synchronized exports: {image_checks} PDF photos verified against their source "
+    f"and export profile; {rows_checked} original Excel rows/photos matched to website; "
+    "category records and page links valid."
 )

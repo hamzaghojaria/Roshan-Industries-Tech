@@ -29,7 +29,9 @@
     "test:history": "node tests/browsing-return-qa.cjs",
     "test:cards": "node tests/whole-card-qa.cjs",
     "test:related": "node tests/related-slider-qa.cjs",
-    "check:python": "python scripts/check-python.py"
+    "check:python": "python scripts/check-python.py",
+    "test:pdf-images": "python tests/catalogue-image-cache-qa.py",
+    "export:pdf": "python scripts/export-branded-catalogue.py"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",

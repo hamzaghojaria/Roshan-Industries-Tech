@@ -1,0 +1,43 @@
+{
+  "description": "User requested addition of the missing adjustable pressing-wheel watch case opener.",
+  "product": {
+    "id": "online-oct2026-269",
+    "sku": "RIT-0269",
+    "name": "Watch Case Opening Tool with Adjustable Pressing Wheel",
+    "description": "A bench mounted tool for opening suitable watch cases using an adjustable pressing wheel and interchangeable opening tips. The pictured arrangement includes a case support, a screw adjustment handle and spare tips stored in the base. Contact Roshan Industries to confirm case compatibility, the required tip configuration and order quantity.",
+    "category": "Case Opening Tools",
+    "categoryId": "case-openers",
+    "family": "Watchmaking",
+    "image": "assets/products/rit-0269-watch-case-opening-tool-with-adjustable-pressing-wheel.jpg",
+    "url": "products/rit-0269.html",
+    "onlineProduct": true,
+    "nameConfirmed": true,
+    "newArrival": true,
+    "exportPending": false,
+    "page": null,
+    "slot": null,
+    "sourcePanel": "Online product range",
+    "sourceType": "User linked supplier photograph",
+    "sourceUrl": "https://share.google/wcRu6nKnlAvc4w3hT",
+    "imageSourceUrl": "https://blingqueen.in/products/watch-case-opening-tool-with-adjustable-pressing-wheel",
+    "imageDownloadUrl": "https://blingqueen.in/cdn/shop/files/611hxMRaLOL._UL2000.jpg?v=1790137571",
+    "imageWidth": 2000,
+    "imageHeight": 2000,
+    "imageKind": "photograph",
+    "imageSha256": "1bcd0efe8d949397fe0a2bc393da01ac1ee2bae6bb1eb2bceb2b50cebba2cbb5",
+    "specifications": [],
+    "note": "Please contact Roshan Industries to confirm the required variant, application, quantity and quotation.",
+    "sourceCatalogue": "roshan-industries-catalogue.pdf"
+  },
+  "originalPhotographPreserved": true,
+  "specificationsNotSupplied": true,
+  "supplierPriceNotImported": true,
+  "cataloguePage": 13,
+  "validation": {
+    "websiteProducts": 269,
+    "newArrivals": 41,
+    "pdfPages": 59,
+    "workbookEmbeddedPhotos": 538,
+    "originalPhotographPreserved": true
+  }
+}

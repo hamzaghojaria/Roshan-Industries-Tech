@@ -2,6 +2,11 @@
 const { chromium } = require('./helpers/browser.cjs');
 const assert = require('node:assert/strict');
 const path = require('node:path');
+const arrivalSkus = JSON.parse(
+  require('node:fs').readFileSync('src/data/new-arrivals.json', 'utf8'),
+).skus;
+const arrivalCount = arrivalSkus.length;
+const latestArrivalSku = [...arrivalSkus].sort().at(-1);
 const { pathToFileURL } = require('node:url');
 (async () => {
   const browser = await chromium.launch({
@@ -33,8 +38,8 @@ const { pathToFileURL } = require('node:url');
           .filter({ hasText: /^Next$/ })
           .click();
     }
-    assert.equal(links.size, 40);
-    assert.equal(await page.locator('.arrival-card').count(), 16);
+    assert.equal(links.size, arrivalCount);
+    assert.equal(await page.locator('.arrival-card').count(), arrivalCount - 24);
     await page.reload();
     assert.equal(
       await page.locator('#arrival-pagination [aria-current]').getAttribute('data-page'),
@@ -56,7 +61,10 @@ const { pathToFileURL } = require('node:url');
   await page.locator('#sort').selectOption('new');
   assert.equal(await page.locator('.product-card .arrival-badge').count(), 24);
   assert(await page.locator('#sort').evaluate((n) => n.classList.contains('is-new-sort')));
-  assert((await page.locator('.product-card .sku').first().textContent()).includes('0268'));
+  assert.equal(
+    (await page.locator('.product-card .sku').first().textContent()).trim(),
+    latestArrivalSku,
+  );
   await page.reload();
   assert.equal(await page.locator('#sort').inputValue(), 'new');
   assert.equal(await page.locator('#arrival-filter').count(), 0);

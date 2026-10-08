@@ -82,7 +82,7 @@ let browser;
   // Family selection composes with search, survives reload, and shows the correct totals.
   await page.goto(url('catalogue.html'));
   for (const [family, total] of [
-    ['Watchmaking', 98],
+    ['Watchmaking', products.filter((product) => product.family === 'Watchmaking').length],
     ['Clockmaking', 36],
     ['Jewellery', 21],
     ['Workshop Essentials', products.filter((p) => p.family === 'Workshop Essentials').length],
@@ -126,7 +126,7 @@ let browser;
     (await page.locator('#family-watchmaking .family-count span').textContent())
       .replace(/\s+/g, ' ')
       .trim(),
-    '6 categories · 98 products',
+    `6 categories ${String.fromCharCode(183)} ${products.filter((product) => product.family === 'Watchmaking').length} products`,
   );
   await page.locator('.family-overview a').first().click();
   assert.match(page.url(), /#family-watchmaking$/);
