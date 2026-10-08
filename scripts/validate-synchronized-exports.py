@@ -40,6 +40,10 @@ doc = fitz.open(ROOT / "assets/roshan-industries-catalogue.pdf")
 assert (ROOT / "Roshan-Industries-Catalogue.pdf").read_bytes() == (
     ROOT / "assets/roshan-industries-catalogue.pdf"
 ).read_bytes()
+assert all(
+    "Pump photograph credits" not in page.get_text() and "Image licence" not in page.get_text()
+    for page in doc
+)
 logo_info = doc[0].get_image_info(xrefs=True)[0]
 logo = logo_info["bbox"]
 assert (
@@ -108,6 +112,25 @@ fields = [
     "image",
     "url",
 ]
+# Customer workbook cells, comments and hyperlinks must not contain photo credits.
+for sheet in wb:
+    for row in sheet:
+        for cell in row:
+            content = (
+                str(cell.value or "")
+                + str(cell.comment.text if cell.comment else "")
+                + str(cell.hyperlink.target if cell.hyperlink else "")
+            )
+            assert not any(
+                label in content.lower()
+                for label in (
+                    "image licence",
+                    "photo credits",
+                    "creativecommons.org",
+                    "wikimedia.org",
+                    "cc by-sa",
+                )
+            )
 rows_checked = 0
 for title, items in [("All Products", products)] + [
     (c["name"].replace(" and ", " ")[:31], [p for p in products if p["categoryId"] == c["id"]])

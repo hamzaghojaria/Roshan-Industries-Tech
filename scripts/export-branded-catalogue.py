@@ -267,25 +267,6 @@ for family in families:
                 if font.text_length(summary, fontsize=7) > 420:
                     summary = "Contact Roshan Industries to discuss your product requirements and quantity."
                 block(p, summary, (x + 11, y + 165, x + cw - 11, y + 187), 7, color=MUTED)
-# Licence appendix keeps the restored pump photographs properly attributed.
-p = doc.new_page(width=W, height=H)
-chrome(p, "Pump photograph credits.", "Pumps")
-y = 160
-for item in products:
-    if not item.get("onlineRange"):
-        continue
-    text(p, item["sku"] + "  " + item["name"], 38, y, 9, True)
-    block(
-        p,
-        item["imageCredit"] + ". " + item["imageChanges"],
-        (38, y + 5, W - 38, y + 32),
-        8,
-        color=MUTED,
-    )
-    uri(p, (38, y - 12, 350, y + 33), item["imageSource"])
-    text(p, "Image licence >", W - 121, y, 8, color=BLUE)
-    uri(p, (W - 125, y - 12, W - 38, y + 5), item["imageLicense"])
-    y += 48
 for page, rect, target in pending:
     assert 0 <= target < len(doc)
     doc[page].insert_link(

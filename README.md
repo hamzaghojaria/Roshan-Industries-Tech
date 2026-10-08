@@ -4,7 +4,7 @@ Watch parts, tools and custom manufacturing in Mumbai, serving customers since 1
 
 [Website](https://roshan-industries-tech.onrender.com/) | [GitHub](https://github.com/hamzaghojaria/Roshan-Industries-Tech) | [Email](mailto:roshanindustriestech@gmail.com)
 
-The current website contains **269 products, 21 categories, five families and 41 New Arrivals**. The synchronized customer PDF has 59 pages; the workbook contains 23 sheets and 538 embedded photographs. These totals describe the current records, not permanent limits.
+The current website contains **269 products, 21 categories, five families and 41 New Arrivals**. The synchronized customer PDF has 58 pages; the workbook contains 23 sheets and 538 embedded photographs. These totals describe the current records, not permanent limits.
 
 ## Start locally
 

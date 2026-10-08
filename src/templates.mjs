@@ -748,7 +748,6 @@ export function productPage(p, products) {
             <p>${esc(p.description)}</p>
           </div>
           <p class="product-note">${esc(p.note)}</p>
-          ${p.onlineRange ? `<p class="product-note">Photo: <a href="${esc(p.imageSource)}" target="_blank" rel="noopener">${esc(p.imageCredit)}</a>. <a href="${esc(p.imageLicense)}" target="_blank" rel="noopener">Image licence</a>. ${esc(p.imageChanges)}</p>` : ''}
           <dl class="spec-table">
             <div>
               <dt>SKU</dt>

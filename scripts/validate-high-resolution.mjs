@@ -75,7 +75,7 @@ for (const p of products) {
   if (p.onlineRange) {
     assert.equal(p.family, 'Pumps');
     assert(p.imageWidth > 0 && p.imageHeight > 0);
-    assert(html.includes(p.imageLicense), 'Pump photograph licence missing');
+    assert(!html.includes(p.imageLicense), 'Pump photograph credit link remains');
     continue;
   }
   assert(

@@ -2,7 +2,7 @@
   "products": 269,
   "categorySheets": 21,
   "embeddedPhotos": 538,
-  "sourceSha256": "0d98ae6f60200441fd4e1b15c24c17d35e01503c78c9d9f8ed392823ee460de1",
+  "sourceSha256": "c6e2ed8e7b18c7da64d535bae6734cfb485eaef2c05c8802e252bc2fd0c71e8e",
   "familyColors": {
     "Watchmaking": "315BD6",
     "Clockmaking": "B68A42",
@@ -13,5 +13,5 @@
   "allTabsColored": true,
   "allFieldsMatchWebsite": true,
   "newArrivalProducts": 41,
-  "xlsxSha256": "3d0d12427d3dcc201ab478f43b0a2b2f3ecfd7cd8327e29fb6a3ef206e642628"
+  "xlsxSha256": "c2e0149f1473ff9bd558c6a0a5e4435442a8c6a590a764b61351e36ca958c234"
 }
