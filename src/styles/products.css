@@ -16,7 +16,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;
-    scrollbar-color: #3156d9 #edf3ff;
+    scrollbar-color: #991b28 #fcf1f2;
   }
   .related-slider .slider-track > * {
     flex: 0 0 82%;
@@ -30,7 +30,7 @@
     height: 5px;
   }
   .related-slider .slider-track::-webkit-scrollbar-thumb {
-    background: #3156d9;
+    background: #991b28;
     border-radius: 5px;
   }
 }
@@ -54,7 +54,7 @@
   align-self: flex-start;
 }
 .product-card h3 a:focus-visible::after {
-  outline: 3px solid #3156d9;
+  outline: 3px solid #991b28;
   outline-offset: -3px;
 }
 

@@ -90,3 +90,30 @@
     padding-block: 6px;
   }
 }
+
+/* Preserve the supplied red wordmark against the navy footer. */
+.footer-brand img {
+  filter: none;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+.footer-brand {
+  gap: 14px;
+}
+.footer-brand > span {
+  color: #fff;
+}
+.footer-brand small {
+  color: #c4cddb;
+}
+.footer-grid > div:not(:first-child) > a:hover,
+.footer-email:hover {
+  color: #f2bdc6;
+}
+@media (max-width: 760px) {
+  .footer-brand img {
+    width: 88px;
+    height: 88px;
+  }
+}

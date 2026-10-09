@@ -144,7 +144,7 @@ export function layout(
   };
   const pageDescription = description || descriptions[active] || descriptions.home;
   const logo = /* HTML */ `<img
-      src="${base}assets/roshan-logo.png"
+      src="${base}assets/roshan-logo-new.png"
       width="102"
       height="65"
       alt="Roshan Industries"
@@ -161,7 +161,7 @@ export function layout(
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Roshan Industries" />
         <meta name="theme-color" content="#111d30" />
-        <link rel="icon" href="${base}assets/roshan-logo.png" />
+        <link rel="icon" href="${base}assets/roshan-logo-new.png" />
         <link rel="stylesheet" href="${base}site.css" />
         <script src="${base}browser-products.js" defer></script>
         <script src="${base}app.js" defer></script>
@@ -174,7 +174,7 @@ export function layout(
       </head>
       <body data-page="${page}">
         <div class="page-loader" aria-hidden="true">
-          <img src="${base}assets/roshan-logo.png" alt="" width="92" height="62" /><span
+          <img src="${base}assets/roshan-logo-new.png" alt="" width="80" height="80" /><span
             class="page-loader-ring"
           ></span
           ><span>Loading</span>

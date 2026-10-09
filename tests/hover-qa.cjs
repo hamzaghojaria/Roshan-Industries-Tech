@@ -48,7 +48,7 @@ let browser;
   await page.waitForTimeout(250);
   assert.equal(
     await page.locator('.header-search').evaluate((el) => getComputedStyle(el).borderTopColor),
-    'rgb(154, 177, 241)',
+    'rgb(210, 152, 162)',
   );
   await page.evaluate(() => window.scrollTo(0, 500));
   await page.waitForFunction(() =>

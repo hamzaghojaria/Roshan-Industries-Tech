@@ -56,7 +56,7 @@
     border-color 0.2s;
 }
 .slider-controls button:hover {
-  background: #edf3ff;
+  background: #fcf1f2;
   border-color: #91a6c4;
 }
 .slider-playback {
@@ -98,8 +98,8 @@
   padding: 10px 16px;
   margin-top: 20px;
   border-radius: 12px;
-  background: linear-gradient(115deg, #eaf0ff, #f3f7ff 65%, #fff2e5);
-  border: 1px solid #dce6f7;
+  background: #faf7f0;
+  border: 1px solid #e6cbd0;
   gap: 14px;
 }
 .heritage-line strong {
@@ -151,13 +151,13 @@
 }
 .product-catalogue-actions .button {
   border-color: #dbe3ef;
-  background: #f8faff;
+  background: #faf7f0;
   color: #344760;
 }
 .product-catalogue-actions .button:hover {
   border-color: #91a8d9;
-  background: #edf3ff;
-  color: #254bb9;
+  background: #fcf1f2;
+  color: #761321;
 }
 #slider-about-work > * {
   flex-basis: calc((100% - 40px) / 3);

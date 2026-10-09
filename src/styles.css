@@ -731,7 +731,7 @@ footer {
 }
 
 .footer-brand img {
-  filter: brightness(0) invert(1);
+  filter: none;
 }
 
 .footer-brand small {

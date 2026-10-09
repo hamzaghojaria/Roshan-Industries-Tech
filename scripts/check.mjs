@@ -113,7 +113,7 @@ for (const file of files) {
     assert(fs.existsSync(local), `Broken local link ${file}: ${value}`);
     assert(local === root || local.startsWith(root + path.sep), `Link outside the site: ${value}`);
   }
-  const logos = [...html.matchAll(/<img\s+src="([^"]+roshan-logo\.png)"/g)];
+  const logos = [...html.matchAll(/<img\s+src="([^"]+roshan-logo-new\.png)"/g)];
   assert(logos.length >= 2, `Missing shared header/footer logo: ${file}`);
   assert.equal(logos[0][1], logos[logos.length - 1][1]);
 }

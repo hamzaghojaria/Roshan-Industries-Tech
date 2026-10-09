@@ -24,7 +24,7 @@ export function aboutPage(products) {
       </section>
       <section class="section container about-story">
         <div class="about-mark">
-          <img src="assets/roshan-logo.png" alt="Roshan Industries" width="306" height="195" />
+          <img src="assets/roshan-logo-new.png" alt="Roshan Industries" width="260" height="260" />
           <p>ROSHAN INDUSTRIES</p>
           <span>Mumbai, India</span>
         </div>
