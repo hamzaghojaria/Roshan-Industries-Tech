@@ -68,7 +68,7 @@ def main():
         abs((logo[0] + logo[2]) / 2 - doc[0].rect.width / 2) < 0.1
         and abs((logo[1] + logo[3]) / 2 - doc[0].rect.height / 2) < 0.1
     )
-    with Image.open(ROOT / "assets/roshan-logo.png") as original_logo:
+    with Image.open(ROOT / "assets/roshan-logo-new.png") as original_logo:
         rgba = original_logo.convert("RGBA")
         source_logo = Image.alpha_composite(Image.new("RGBA", rgba.size, "white"), rgba).convert(
             "RGB"

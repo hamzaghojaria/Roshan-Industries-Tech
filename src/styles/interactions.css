@@ -1,0 +1,174 @@
+/* Shared interaction states: readable labels and restrained motion. */
+.topbar .header-email {
+  background: #303136;
+  border-color: #62636a;
+  color: #fff;
+}
+.topbar .header-email:hover,
+.topbar .header-email:focus-visible {
+  background: #44454b;
+  border-color: #d9acb4;
+  color: #fff;
+}
+.button::before,
+.button::after,
+main .button::after,
+body[data-page='home'] .hero-actions .button::after {
+  content: none;
+}
+.button-gold:hover,
+.button-gold:focus-visible,
+.nav-links > .nav-enquiry:hover,
+.nav-links > .nav-enquiry:focus-visible {
+  background: #761321;
+  border-color: #761321;
+  color: #fff;
+}
+.button-navy:hover,
+.button-navy:focus-visible {
+  background: #303136;
+  color: #fff;
+}
+.button-light:hover,
+.button-light:focus-visible {
+  background: #fcf1f2;
+  border-color: #ddb1b9;
+  color: #761321;
+}
+.custom-section {
+  background: #202124;
+}
+.custom-grid article {
+  background: #2b2c30;
+  border-color: #515257;
+}
+.custom-grid article:hover {
+  border-color: #c98e99;
+}
+.custom-heading .lead,
+.custom-grid p,
+.custom-actions span {
+  color: #d6d7dc;
+}
+.enquiry-strip {
+  background: linear-gradient(110deg, #202124, #531822);
+}
+.enquiry-strip .eyebrow {
+  color: #f0bec7;
+}
+.custom-section .button-light,
+.enquiry-strip .button-light {
+  color: #761321;
+}
+.contact-email:hover,
+.contact-email:focus-visible {
+  color: #761321;
+  border-color: #991b28;
+}
+.footer-grid a:not(.button):hover,
+.footer-grid a:not(.button):focus-visible {
+  color: #f2bdc6;
+}
+.topbar .header-whatsapp:hover,
+.topbar .header-whatsapp:focus-visible,
+.footer-grid .whatsapp-link:hover,
+.footer-grid .whatsapp-link:focus-visible {
+  color: #bef1d4;
+}
+.arrival-filters button[aria-pressed='true']:hover,
+.arrival-filters button[aria-pressed='true']:focus-visible {
+  background: #303136;
+  color: #fff;
+  border-color: #d9acb4;
+}
+.arrival-filters button[aria-pressed='true']:hover::before {
+  background: #f0bec7;
+}
+a:focus-visible,
+button:focus-visible {
+  outline-color: #991b28;
+}
+.topbar a:focus-visible,
+footer a:focus-visible,
+.custom-section a:focus-visible {
+  outline-color: #f0bec7;
+}
+@media (prefers-reduced-motion: reduce) {
+  .custom-grid article:hover {
+    transform: none;
+  }
+}
+/* Matching WhatsApp links on the charcoal top bar and footer. */
+.topbar .header-whatsapp,
+.footer-grid .whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  min-height: 38px;
+  border: 1px solid #527b65;
+  border-radius: 7px;
+  background: #24362c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 1.4;
+  transform: none;
+}
+.topbar .header-whatsapp:hover,
+.topbar .header-whatsapp:focus-visible,
+.footer-grid .whatsapp-link:hover,
+.footer-grid .whatsapp-link:focus-visible {
+  background: #17683e;
+  border-color: #76b68e;
+  color: #fff;
+  text-decoration: none;
+  transform: none;
+}
+/* A single, sequential process-line reveal; steps remain readable at all times. */
+.custom-grid article {
+  position: relative;
+}
+.custom-grid article:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 22px;
+  right: -23px;
+  top: 46px;
+  background: #c98e99;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 500ms ease-out;
+  pointer-events: none;
+}
+.custom-grid article:nth-child(2)::after {
+  transition-delay: 180ms;
+}
+.custom-grid.process-pending article:not(:last-child)::after {
+  transform: scaleX(0);
+}
+@media (max-width: 900px) {
+  .custom-grid article:not(:last-child)::after {
+    width: 2px;
+    height: 22px;
+    left: 25px;
+    right: auto;
+    top: auto;
+    bottom: -23px;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  .custom-grid.process-pending article:not(:last-child)::after {
+    transform: scaleY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .custom-grid article:not(:last-child)::after {
+    transition: none;
+  }
+  .custom-grid.process-pending article:not(:last-child)::after {
+    transform: none;
+  }
+}

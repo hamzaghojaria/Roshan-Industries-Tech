@@ -3,6 +3,35 @@
 function initVisualEffects() {
   // Reveal below-the-fold sections once; respect reduced-motion preferences.
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  // Draw the manufacturing connectors once, without hiding any step content.
+  const processes = document.querySelectorAll('.custom-grid');
+  let processObserver;
+  if (!reducedMotion.matches && 'IntersectionObserver' in window) {
+    processObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries)
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('process-pending');
+            entry.target.classList.add('process-ready');
+            processObserver.unobserve(entry.target);
+          }
+      },
+      { threshold: 0.15 },
+    );
+    processes.forEach((process) => {
+      process.classList.add('process-pending');
+      processObserver.observe(process);
+    });
+  }
+  reducedMotion.addEventListener('change', (event) => {
+    if (event.matches) {
+      processObserver?.disconnect();
+      processes.forEach((process) => {
+        process.classList.remove('process-pending');
+        process.classList.add('process-ready');
+      });
+    }
+  });
   // Hide the mobile shortcut where enquiry buttons, pagination or the footer are visible.
   const floatingWhatsApp = document.querySelector('.floating-whatsapp');
   if (floatingWhatsApp && 'IntersectionObserver' in window) {

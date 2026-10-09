@@ -168,11 +168,11 @@
   }
 }
 .family-heritage {
-  background: #f6f2e9;
-  border: 1px solid #e5ddce;
-  border-radius: 4px;
+  background: #faf7f0;
+  border: 1px solid #e6cbd0;
+  border-radius: 16px;
   padding: clamp(20px, 3vw, 36px);
-  color: #28372f;
+  color: #202124;
 }
 .family-heading {
   display: flex;
@@ -182,7 +182,7 @@
   padding-bottom: 20px;
 }
 .family-heading .eyebrow {
-  color: #746448;
+  color: #991b28;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
 }
@@ -192,21 +192,21 @@
     serif;
   letter-spacing: -0.035em;
   margin: 14px 0 0;
-  color: #28372f;
+  color: #202124;
 }
 .family-heading h2 em {
   font-weight: 400;
-  color: #82704e;
+  color: #991b28;
 }
 .family-heading > p {
   font-size: 0.95rem;
-  color: #706c62;
+  color: #66666b;
   line-height: 1.8;
 }
 .family-navigation {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-bottom: 1px solid #d7cdbb;
+  border-bottom: 1px solid #e6cbd0;
 }
 .family-navigation[hidden] {
   display: none;
@@ -217,7 +217,7 @@
   border-bottom: 3px solid transparent;
   background: transparent;
   padding: 12px 10px;
-  color: #777266;
+  color: #66666b;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -231,15 +231,15 @@
   font:
     italic 1.3rem Georgia,
     serif;
-  color: #9c8b6e;
+  color: #991b28;
 }
 .family-navigation button[aria-pressed='true'] {
-  border-bottom-color: #82704e;
-  color: #28372f;
-  background: #eee7d9;
+  border-bottom-color: #991b28;
+  color: #202124;
+  background: #fcf1f2;
 }
 .family-navigation button:hover {
-  background: #eee7d9;
+  background: #fcf1f2;
 }
 #slider-generations {
   gap: 20px;
@@ -261,15 +261,15 @@
 .family-emblem {
   width: 150px;
   height: 150px;
-  border: 1px solid #bba984;
-  outline: 1px solid #d9ccb3;
+  border: 1px solid #c98e99;
+  outline: 1px solid #e6cbd0;
   outline-offset: -12px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #fffdf7, #eee5d3);
+  background: radial-gradient(circle, #fffdfa, #f6e9e7);
   position: relative;
   margin: auto;
 }
@@ -280,7 +280,7 @@
   top: 50%;
   width: 18px;
   height: 1px;
-  background: #bba984;
+  background: #c98e99;
 }
 .family-emblem::before {
   left: 22px;
@@ -292,7 +292,7 @@
 .family-emblem-bottom {
   font-size: 0.56rem;
   letter-spacing: 0.2em;
-  color: #82704e;
+  color: #991b28;
 }
 .family-monogram {
   font:
@@ -300,15 +300,15 @@
     serif;
   letter-spacing: -0.08em;
   padding-right: 0.08em;
-  color: #34473b;
+  color: #991b28;
 }
 .family-person .eyebrow {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
-  color: #82704e;
+  color: #991b28;
 }
 .family-person .eyebrow span {
-  color: #837e71;
+  color: #66666b;
   letter-spacing: 0;
   text-transform: none;
 }
@@ -316,12 +316,12 @@
   font:
     400 clamp(1.5rem, 2.6vw, 2.3rem)/1.2 Georgia,
     serif;
-  color: #28372f;
+  color: #202124;
   letter-spacing: -0.025em;
   margin: 12px 0 8px;
 }
 .family-relationship {
-  color: #706c62;
+  color: #66666b;
   margin: 0;
 }
 .family-signature {
@@ -329,7 +329,7 @@
   align-items: center;
   gap: 14px;
   margin-top: 20px;
-  color: #82704e;
+  color: #991b28;
   font:
     italic 0.95rem Georgia,
     serif;
@@ -337,28 +337,28 @@
 .family-signature span {
   width: 32px;
   height: 1px;
-  background: #bba984;
+  background: #c98e99;
   flex-shrink: 0;
 }
 .family-slider .slider-controls {
-  border-top: 1px solid #d7cdbb;
+  border-top: 1px solid #e6cbd0;
   padding-top: 12px;
   margin-top: 0;
 }
 .family-slider .slider-controls button {
   background: transparent;
-  color: #34473b;
-  border-color: #cdbfa5;
+  color: #991b28;
+  border-color: #e6cbd0;
   border-radius: 50%;
 }
 .family-slider .slider-controls button:hover {
-  background: #e9e0cf;
+  background: #fcf1f2;
 }
 .family-explore {
   margin-right: auto;
   font-size: 0.62rem;
   letter-spacing: 0.17em;
-  color: #82704e;
+  color: #991b28;
 }
 @media (max-width: 760px) {
   .family-heading {

@@ -20,6 +20,7 @@ export const themeComponents = [
   'footer',
   'arrivals',
   'products',
+  'interactions',
 ];
 
 /** Keep all feature state private and preserve the existing file:// preview workflow. */

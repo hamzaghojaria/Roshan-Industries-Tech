@@ -90,7 +90,7 @@ header.is-scrolled {
 }
 
 .topbar {
-  background: #111d30;
+  background: #202124;
 }
 
 .topbar .container {
@@ -648,7 +648,7 @@ header nav {
 }
 
 footer {
-  background: #111d30;
+  background: #202124;
 }
 
 .footer-grid {
@@ -2116,9 +2116,9 @@ footer {
 .footer-custom-highlight {
   margin-top: 24px;
   padding: 22px 18px;
-  border: 1px solid #46566d;
+  border: 1px solid #515257;
   border-radius: 12px;
-  background: #1b293e;
+  background: #2b2c30;
 }
 
 .footer-custom-highlight h3 {

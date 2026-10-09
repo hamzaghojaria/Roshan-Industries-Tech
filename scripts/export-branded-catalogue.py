@@ -42,11 +42,11 @@ def main():
         json.dumps(mapping, indent=2) + "\n", encoding="utf8"
     )
     W, H = 595.28, 841.89
-    NAVY = (0.067, 0.114, 0.188)
-    BLUE = (0.192, 0.357, 0.839)
+    NAVY = (0.125, 0.129, 0.141)
+    BLUE = (0.600, 0.106, 0.157)
     MUTED = (0.376, 0.443, 0.545)
     LINE = (0.894, 0.914, 0.949)
-    LIGHT = (0.957, 0.965, 0.984)
+    LIGHT = (0.988, 0.945, 0.949)
     SITE = "https://roshan-industries-tech.onrender.com"
     doc = fitz.open()
     pending = []
@@ -87,12 +87,12 @@ def main():
         if file in image_xrefs:
             page.insert_image(fitz.Rect(rect), xref=image_xrefs[file], keep_proportion=True)
             return
-        encoded = image_cache.prepare(ROOT / file, lossless=file == "assets/roshan-logo.png")
+        encoded = image_cache.prepare(ROOT / file, lossless=file == "assets/roshan-logo-new.png")
         image_xrefs[file] = page.insert_image(fitz.Rect(rect), stream=encoded, keep_proportion=True)
 
     def chrome(page, title=None, family=None):
         page.draw_rect(fitz.Rect(0, 0, 5, 58), color=None, fill=BLUE)
-        image(page, "assets/roshan-logo.png", (38, 12, 86, 43))
+        image(page, "assets/roshan-logo-new.png", (38, 8, 80, 50))
         text(page, "ROSHAN INDUSTRIES", 96, 25, 9, True)
         text(page, "WATCH PARTS AND CUSTOM MANUFACTURING", 96, 39, 6, color=MUTED)
         text(page, "SINCE 1900", W - 103, 29, 7, True, BLUE)
@@ -132,11 +132,11 @@ def main():
         )
 
     centered("PRODUCT CATALOGUE", (38, 165, W - 38, 190), 11, True, BLUE)
-    logo = fitz.Pixmap(ROOT / "assets/roshan-logo.png")
+    logo = fitz.Pixmap(ROOT / "assets/roshan-logo-new.png")
     lw = 260
     lh = lw * logo.height / logo.width
     logo_rect = fitz.Rect((W - lw) / 2, (H - lh) / 2, (W + lw) / 2, (H + lh) / 2)
-    p.insert_image(logo_rect, filename=str(ROOT / "assets/roshan-logo.png"), keep_proportion=True)
+    p.insert_image(logo_rect, filename=str(ROOT / "assets/roshan-logo-new.png"), keep_proportion=True)
     centered(
         "ROSHAN INDUSTRIES",
         (38, logo_rect.y1 + 30, W - 38, logo_rect.y1 + 72),

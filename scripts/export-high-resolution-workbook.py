@@ -28,12 +28,12 @@ def main():
     wb = Workbook()
     overview = wb.active
     overview.title = "Overview"
-    navy = "14263D"
-    blue = "315BD6"
-    light = "EDF3FF"
+    navy = "202124"
+    blue = "991B28"
+    light = "FCF1F2"
     muted = "61717C"
     family_colors = {
-        "Watchmaking": "315BD6",
+        "Watchmaking": "991B28",
         "Clockmaking": "B68A42",
         "Jewellery": "8B5CB2",
         "Workshop Essentials": "2C8790",
@@ -108,7 +108,7 @@ def main():
                 cell.font = Font(name="Calibri", size=10, color=navy)
                 cell.alignment = Alignment(vertical="center", wrap_text=True)
                 if row % 2 == 0:
-                    cell.fill = PatternFill("solid", fgColor="F4F7FB")
+                    cell.fill = PatternFill("solid", fgColor="FCF1F2")
             ws.cell(row, 8).hyperlink = p["image"]
             ws.cell(row, 9).hyperlink = p["url"]
             ws.cell(row, 12).hyperlink = "assets/" + p["sourceCatalogue"]
@@ -140,7 +140,7 @@ def main():
         # causes desktop Excel to report corrupt content.
         ws.freeze_panes = "C6"
         table = Table(displayName=f"Products{index}", ref=f"A5:O{ws.max_row}")
-        table.tableStyleInfo = TableStyleInfo(name="TableStyleMedium2", showRowStripes=True)
+        table.tableStyleInfo = TableStyleInfo(name="TableStyleLight1", showRowStripes=True)
         ws.add_table(table)
         ws.sheet_properties.pageSetUpPr.fitToPage = True
         ws.page_setup.orientation = "landscape"
@@ -153,6 +153,9 @@ def main():
     selected = set(
         json.loads((ROOT / "src/data/new-arrivals.json").read_text(encoding="utf8"))["skus"]
     )
+    logo = ExcelImage(ROOT / "assets/roshan-logo-new.png")
+    logo.width = logo.height = 100
+    overview.add_image(logo, "E1")
     overview.sheet_view.showGridLines = False
     overview.merge_cells("A1:D1")
     overview["A1"] = "Roshan Industries"
@@ -221,7 +224,7 @@ def main():
         assert list(values[:9]) == [p[k] for k in fields]
         assert values[9] == ("Yes" if p["sku"] in selected else "No")
     assert len(ws._images) == len(products)
-    assert sum(len(s._images) for s in check) == len(products) * 2
+    assert sum(len(s._images) for s in check) == len(products) * 2 + 1
     assert all(s.auto_filter.ref is None for s in check)
     assert all(len(s.tables) == 1 for s in list(check)[1:])
     assert all(s.sheet_properties.tabColor is not None for s in check)
