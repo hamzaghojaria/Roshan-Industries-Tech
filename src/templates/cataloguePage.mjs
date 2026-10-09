@@ -26,6 +26,7 @@ export function cataloguePage(products, category = null) {
         <p>
           ${esc(category ? category.description : 'Browse tools and components by category. Search by name or SKU and contact us for specifications, availability and quotations.')}
         </p>
+        ${!category ? '<div class="catalogue-export-actions"><a class="button button-gold" href="assets/roshan-industries-catalogue.pdf" download="Roshan-Industries-Catalogue.pdf">Download PDF catalogue</a><a class="button button-light" href="Roshan-Industries-Product-Catalogue.xlsx" download="Roshan-Industries-Product-Catalogue.xlsx">Download Excel catalogue</a></div>' : ''}
       </section>
       <section
         class="container catalogue-section"

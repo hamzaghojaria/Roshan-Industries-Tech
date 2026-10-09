@@ -172,3 +172,18 @@ footer a:focus-visible,
     transform: none;
   }
 }
+.catalogue-export-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.catalogue-export-actions .button-light {
+  border-color: #e6cbd0;
+  color: #761321;
+}
+@media (max-width: 600px) {
+  .catalogue-export-actions {
+    flex-direction: column;
+  }
+}
