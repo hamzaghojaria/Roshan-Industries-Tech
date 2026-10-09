@@ -70,8 +70,30 @@ body[data-page='home'] .floating-whatsapp {
   min-width: min(100%, 260px);
 }
 @media (max-width: 760px) {
+  .family-section .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
   .family-section .category-card {
-    flex-basis: calc(50% - 12px);
-    min-width: min(100%, 240px);
+    min-width: 0;
+    align-items: stretch;
+  }
+  .family-section .category-image {
+    padding: 12px;
+  }
+  .family-section .category-image img {
+    height: 120px;
+  }
+  .family-section .category-card > div:last-child {
+    padding: 12px;
+  }
+  .family-section .category-card .eyebrow {
+    font-size: 0.625rem;
+    overflow-wrap: anywhere;
+  }
+  .family-section .category-card h3 {
+    font-size: 0.9375rem;
+    overflow-wrap: anywhere;
   }
 }
