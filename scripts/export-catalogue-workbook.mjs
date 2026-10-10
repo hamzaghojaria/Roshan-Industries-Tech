@@ -159,6 +159,7 @@ for (const [family, color] of Object.entries(colors)) {
     ).format.columnWidth = width),
 );
 wb.recalculate();
+wb.recalculate();
 await fs.writeFile('artifacts/workbook-sheet-manifest.json', JSON.stringify(manifest, null, 2));
 await (await SpreadsheetFile.exportXlsx(wb)).save('Roshan-Industries-Product-Catalogue.xlsx');
 console.log(

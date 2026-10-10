@@ -171,20 +171,27 @@ def main():
         True,
     )
     centered(
+        "Custom CNC & VMC - All Jobs",
+        (38, logo_rect.y1 + 76, W - 38, logo_rect.y1 + 101),
+        12,
+        True,
+        color=BLUE,
+    )
+    centered(
         "Watch parts, tools and custom manufacturing",
-        (38, logo_rect.y1 + 81, W - 38, logo_rect.y1 + 110),
+        (38, logo_rect.y1 + 105, W - 38, logo_rect.y1 + 130),
         11,
         color=MUTED,
     )
     centered(
         "A family business. Since 1900.",
-        (38, logo_rect.y1 + 118, W - 38, logo_rect.y1 + 145),
+        (38, logo_rect.y1 + 139, W - 38, logo_rect.y1 + 162),
         10,
         color=MUTED,
     )
     centered(
         f"{len(products)} products across {len(categories)} categories",
-        (38, logo_rect.y1 + 159, W - 38, logo_rect.y1 + 185),
+        (38, logo_rect.y1 + 172, W - 38, logo_rect.y1 + 195),
         10,
         color=BLUE,
     )

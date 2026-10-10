@@ -347,7 +347,7 @@
     "custom-machined-components": 65
   },
   "links": 598,
-  "pdfSha256": "a997fdd49cc457f098e77ae0a8b568be43d48cdc6d9c1aab639008367197d309",
+  "pdfSha256": "e3d7d6e85ce31d3d7cb3b1de15941c3377b7e1eb2c3f6e517e116d155e87100f",
   "nativeSourceImagesPreserved": false,
   "originalSourceFilesPreserved": true,
   "imageOptimization": {
@@ -357,10 +357,10 @@
     "subsampling": 2,
     "logoLossless": true
   },
-  "pdfBytes": 12021474,
+  "pdfBytes": 12021599,
   "imageCacheHits": 311,
   "imageCacheMisses": 0,
-  "exportSeconds": 12.07,
+  "exportSeconds": 27.51,
   "coverLogoCentered": true,
   "introductionPage": 2,
   "categoryIndexPages": [
