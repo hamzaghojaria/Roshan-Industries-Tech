@@ -347,7 +347,7 @@
     "custom-machined-components": 65
   },
   "links": 598,
-  "pdfSha256": "e3d7d6e85ce31d3d7cb3b1de15941c3377b7e1eb2c3f6e517e116d155e87100f",
+  "pdfSha256": "f2bd7e8166240311eb22eef272a341d61c2f20443725095e6bdb38a9ab6371ea",
   "nativeSourceImagesPreserved": false,
   "originalSourceFilesPreserved": true,
   "imageOptimization": {
@@ -357,10 +357,10 @@
     "subsampling": 2,
     "logoLossless": true
   },
-  "pdfBytes": 12021599,
+  "pdfBytes": 12027336,
   "imageCacheHits": 311,
   "imageCacheMisses": 0,
-  "exportSeconds": 27.51,
+  "exportSeconds": 12.41,
   "coverLogoCentered": true,
   "introductionPage": 2,
   "categoryIndexPages": [
@@ -370,5 +370,7 @@
   "allProductsSynchronized": true,
   "websiteImageOverridesIncluded": true,
   "imageProportionsPreserved": true,
+  "productWatermark": "ROSHAN INDUSTRIES",
+  "watermarkedProductImages": 311,
   "imagePlacementsChecked": 376
 }

@@ -10,10 +10,10 @@
     "subsampling": 2,
     "sharedImageResources": true
   },
-  "xlsxBytes": 2887833,
+  "xlsxBytes": 2887794,
   "uniqueImageResources": 310,
   "duplicateImageResourcesRemoved": 313,
-  "sourceSha256": "e3d7d6e85ce31d3d7cb3b1de15941c3377b7e1eb2c3f6e517e116d155e87100f",
+  "sourceSha256": "f2bd7e8166240311eb22eef272a341d61c2f20443725095e6bdb38a9ab6371ea",
   "familyColors": {
     "Watchmaking": "991B28",
     "Clockmaking": "B68A42",
@@ -24,5 +24,5 @@
   "allTabsColored": true,
   "allFieldsMatchWebsite": true,
   "newArrivalProducts": 95,
-  "xlsxSha256": "e6253740fb0c2a4f3a86523702ab2b9716c31747fae0e7fa0b78ea5d6b0cc162"
+  "xlsxSha256": "2f7c5b8ed7d0f0aa141f7eb380d52371fc641588b2fface2ebcf1c998404ef22"
 }

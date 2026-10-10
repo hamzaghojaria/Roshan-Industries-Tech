@@ -97,3 +97,50 @@
   min-width: 0;
   overflow-wrap: anywhere;
 }
+
+/* Render brand watermarks without changing the original product photographs. */
+.product-image,
+.category-image,
+.hero-product,
+.hero-small > a,
+.product-photo,
+.search-product-photo {
+  position: relative;
+}
+.product-image::after,
+.category-image::after,
+.hero-product::after,
+.hero-small > a::after,
+.product-photo::after,
+.search-product-photo::after {
+  content: 'ROSHAN INDUSTRIES';
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  max-width: 94%;
+  padding: 3px 7px;
+  border-radius: 3px;
+  background: rgb(255 255 255 / 55%);
+  color: rgb(90 34 42 / 50%);
+  font-family: Arial, sans-serif;
+  font-size: clamp(8px, 1.1vw, 12px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+.search-product-photo {
+  display: block;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+}
+.search-product-photo::after {
+  padding: 1px;
+  font-size: 4px;
+  letter-spacing: 0;
+}

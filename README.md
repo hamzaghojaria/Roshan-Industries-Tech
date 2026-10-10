@@ -67,6 +67,8 @@ JSON is strict data and cannot contain comments. Data and configuration responsi
 
 ## Current interface behavior
 
+- Product-image displays carry a subtle ROSHAN INDUSTRIES watermark across listings, detail pages, categories, homepage photos and search thumbnails. The PDF uses matching vector text overlays on every product photograph. Original image assets and Excel thumbnails remain unchanged.
+
 - Shared entrances, floating banner images, section reveals, hover feedback and mobile slider highlights respect reduced-motion preferences. Dynamically filtered cards are scheduled within their listing grid.
 - Product details consistently show SKU, Product, Category and Catalogue reference. Customer pages offer the PDF catalogue; the synchronized Excel file remains available for direct sharing.
 

@@ -81,7 +81,10 @@ function initSearch() {
           photo.alt = '';
           photo.width = 48;
           photo.height = 48;
-          link.append(photo);
+          const photoFrame = document.createElement('span');
+          photoFrame.className = 'search-product-photo';
+          photoFrame.append(photo);
+          link.append(photoFrame);
         }
         const copy = document.createElement('span');
         const title = document.createElement('strong');

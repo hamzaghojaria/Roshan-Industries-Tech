@@ -115,6 +115,21 @@ def main():
             prefix = (f"q\n{clip.x0:.6f} {page.rect.height-clip.y1:.6f} "
                       f"{clip.width:.6f} {clip.height:.6f} re W n\n").encode("ascii")
             doc.update_stream(content, prefix + doc.xref_stream(content) + b"\nQ\n")
+        return clip if clip else fitted
+
+    def watermark(page, rect):
+        """Place a translucent vector label inside the visible product photograph."""
+        visible = fitz.Rect(rect)
+        label = "ROSHAN INDUSTRIES"
+        font = fitz.Font("hebo")
+        size = min(6.5, visible.height * 0.2, visible.width * 0.88 / font.text_length(label, fontsize=1))
+        width = font.text_length(label, fontsize=size)
+        x = visible.x0 + (visible.width - width) / 2
+        y = visible.y0 + visible.height * 0.75
+        page.draw_rect(fitz.Rect(x - 3, y - size - 2, x + width + 3, y + 2),
+                       color=None, fill=(1, 1, 1), fill_opacity=0.55, overlay=True)
+        page.insert_text((x, y), label, fontname="hebo", fontsize=size,
+                         color=(0.353, 0.133, 0.165), fill_opacity=0.5, overlay=True)
 
     def chrome(page, title=None, family=None):
         page.draw_rect(fitz.Rect(0, 0, 5, 58), color=None, fill=BLUE)
@@ -324,7 +339,8 @@ def main():
                     frame = None
                     if item.get("imageKind") == "owner-supplied-photograph" and item.get("imageFrame"):
                         frame = {**item["imageFrame"], "width": item["imageWidth"], "height": item["imageHeight"]}
-                    image(p, item["image"], (x + 10, y + 7, x + cw - 10, y + 110), frame)
+                    photo_rect = image(p, item["image"], (x + 10, y + 7, x + cw - 10, y + 110), frame)
+                    watermark(p, photo_rect)
                     block(
                         p,
                         item["name"],
@@ -406,6 +422,8 @@ def main():
         "allProductsSynchronized": True,
         "websiteImageOverridesIncluded": True,
         "imageProportionsPreserved": True,
+        "productWatermark": "ROSHAN INDUSTRIES",
+        "watermarkedProductImages": len(products),
         "imagePlacementsChecked": proportion_checks,
     }
     (ROOT / "reports/high-resolution-audit/branded-catalogue-validation.json").write_text(

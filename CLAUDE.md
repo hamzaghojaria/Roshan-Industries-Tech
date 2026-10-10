@@ -32,3 +32,7 @@ scripts/prepare-workbook-previews.py and scripts/finish-catalogue-workbook.py ex
 ## Delivery
 
 Render builds with npm run build and serves dist/. scripts/package-delivery.py packages the built site and editable source, including README.md and CLAUDE.md. Preserve pending task.txt as owner notes. Do not commit secrets, dependency directories, caches or temporary archives.
+
+## Product watermarks
+
+Website product watermarks are CSS overlays in src/styles/products.css, including the search thumbnail wrapper in src/browser/initSearch.js. PDF watermarks are vector overlays in scripts/export-branded-catalogue.py and fit inside each visible photo rectangle. Keep original image assets and proportions intact. Cover/header logos are not product photos and should not receive these watermarks. Refresh catalogues after editing the PDF watermark helper.
