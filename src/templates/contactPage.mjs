@@ -1,6 +1,5 @@
 // Generate the contactPage route using shared accessible components.
 import {
-  officeLocation,
   esc,
   email,
   whatsapp,
@@ -10,6 +9,7 @@ import {
   layout,
   breadcrumb,
 } from './shared.mjs';
+import { officeLocations, officeCard } from './officesPage.mjs';
 
 /** Contact details, practical enquiry guidance and custom manufacturing questions. */
 export function contactPage() {
@@ -55,36 +55,8 @@ export function contactPage() {
           <p class="eyebrow">EMAIL OUR TEAM</p>
           <h2>Your next project<br />starts here.</h2>
           <a class="contact-email" href="mailto:${email}">${email}</a>
-          <p>
-            Share the product name or SKU, quantity and required specifications. Include the size,
-            material or variant where relevant, along with your contact details and preferred
-            timeline. We can then discuss availability and a quotation for your requirement.
-          </p>
-          <div class="enquiry-actions">
-            <a class="button button-navy" href="${esc(mail())}">Prepare an email enquiry</a>
-            <a
-              class="button whatsapp-link"
-              href="${esc(whatsapp())}"
-              target="_blank"
-              rel="noopener noreferrer"
-              >${whatsappIcon}Chat on WhatsApp</a
-            >
-          </div>
-        </div>
-        <div class="contact-info">
-          <div>
-            <span class="eyebrow">LOCATION</span>
-            <h3>Goregaon West, Mumbai</h3>
-            <address>${esc(officeLocation.address)}</address>
-            <a
-              class="text-link"
-              href="${esc(officeLocation.directionsUrl)}"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Get directions to our office</a
-            >
-          </div>
-          <div>
+          <p>Include these details so our team can discuss availability and prepare a quotation.</p>
+          <div class="office-enquiry-guide">
             <span class="eyebrow">INCLUDE IN YOUR ENQUIRY</span>
             <ul>
               <li>Product name and SKU</li>
@@ -94,14 +66,62 @@ export function contactPage() {
               <li>Preferred timeline</li>
             </ul>
           </div>
-          <div>
-            <span class="eyebrow">PRODUCT CATALOGUE</span
-            ><a
-              class="text-link"
+
+          <div class="enquiry-actions">
+            <a class="button button-navy" href="${esc(mail())}">Prepare an email enquiry</a>
+            <a
+              class="button whatsapp-link"
+              href="${esc(whatsapp())}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >${whatsappIcon}Chat on WhatsApp</a
+            >
+            <a
+              class="button button-gold"
               href="assets/roshan-industries-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download our product catalogue</a
+              >Download Catalogue</a
             >
+          </div>
+        </div>
+        <div class="contact-office-card">
+          <div
+            class="contact-office-slider"
+            data-slider
+            data-static-slider
+            data-initial-slide="1"
+            aria-label="Our office locations"
+          >
+            <div class="family-navigation office-navigation" hidden aria-label="Choose an office">
+              ${officeLocations.map((location, index) => `<button type="button" data-family-index="${index}" aria-controls="slider-contact-offices" aria-pressed="${index === 1}">${esc(location.name)}</button>`).join('')}
+            </div>
+            <div
+              class="slider-track contact-office-track"
+              id="slider-contact-offices"
+              tabindex="0"
+              aria-label="Office cards; swipe or use arrow keys"
+            >
+              ${officeLocations.map((location, index) => officeCard(location, index)).join('')}
+            </div>
+            <div class="slider-controls" hidden>
+              <button
+                type="button"
+                data-slider-prev
+                aria-controls="slider-contact-offices"
+                aria-label="Previous office"
+              >
+                &#8592;
+              </button>
+              <span class="slider-position" aria-live="polite"></span>
+              <button
+                type="button"
+                data-slider-next
+                aria-controls="slider-contact-offices"
+                aria-label="Next office"
+              >
+                &#8594;
+              </button>
+            </div>
           </div>
         </div>
       </section>

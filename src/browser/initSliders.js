@@ -163,6 +163,14 @@ function initSliders() {
       { once: true },
     );
     measure();
+    // Select the configured starting card without moving keyboard focus or the page.
+    if (slider.hasAttribute('data-initial-slide')) {
+      const initial = Number(slider.dataset.initialSlide);
+      const index = Number.isSafeInteger(initial)
+        ? Math.max(0, Math.min(cards.length - 1, initial))
+        : 0;
+      track.scrollTo({ left: offsets[index], behavior: 'instant' });
+    }
     update();
   });
 }

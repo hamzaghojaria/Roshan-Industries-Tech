@@ -6,8 +6,8 @@ Add a punchline to the first page of the catalogue PDF. - Completed
 Home pange banner to have CNC VMC categories -Completed
 
 
-Add a watermark to all product images.
-exploded image
+Add a watermark to all product images.-- Working
+exploded image - -- Working
 
 founder photographs. -- Pending
 Gujrat Plant address update -- Pending
