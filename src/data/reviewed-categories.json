@@ -91,11 +91,25 @@
     "description": "Explore gauges and selectors photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
   },
   {
-    "id": "trays-storage",
-    "name": "Trays, Covers and Storage",
+    "id": "trays",
+    "name": "Trays",
     "family": "Workshop Essentials",
     "image": "assets/products/rit-0025-plastic-dividing-tray.webp",
-    "description": "Explore trays, covers and storage photographed in the latest Roshan Industries catalogue. View individual products for their listed variants and enquiry details."
+    "description": "Bench trays and dividing trays for sorting and handling small parts at the workbench."
+  },
+  {
+    "id": "covers",
+    "name": "Covers",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0026-single-dust-cover.webp",
+    "description": "Dust covers and lid covers for protecting watch parts and workshop items."
+  },
+  {
+    "id": "storage",
+    "name": "Storage",
+    "family": "Workshop Essentials",
+    "image": "assets/products/rit-0215-plastic-storage-container-for-watch-repair-parts.webp",
+    "description": "Storage boxes, covered organisers, removable container sets and aluminium tins for keeping small parts organised."
   },
   {
     "id": "compasses",

@@ -18,8 +18,8 @@ const { pathToFileURL } = require('node:url');
       for (const listing of [
         'catalogue.html?sort=new&page=2',
         'catalogue.html?q=box&sort=desc&page=2',
-        'categories/trays-storage.html?sort=asc&page=2',
-        'new-arrivals.html?category=trays-storage&page=2',
+        'categories/storage.html?sort=asc&page=2',
+        'new-arrivals.html?category=storage&page=2',
       ]) {
         const [file, params] = listing.split('?');
         await page.goto(url(file) + '?' + params);

@@ -150,7 +150,7 @@ export function layout(
       width="102"
       height="65"
       alt="Roshan Industries"
-    /><span>ROSHAN INDUSTRIES<small>WATCHMAKING · CLOCK · JEWELLERY</small></span>`;
+    /><span>ROSHAN INDUSTRIES<small>Custom CNC &amp; VMC - All Jobs</small></span>`;
   return /* HTML */ `<!doctype html>
     <html lang="en">
       <head>

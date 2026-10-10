@@ -1,10 +1,10 @@
-Fix the Plastic Spectacle image, product code 0012 — completed.
-Founders and Our Offices page - Complted 
+Fix the Plastic Spectacle image, product code 0012 — Completed
+Founders and Our Offices page - Completed 
+Replace “Watchmaking” in the logo text with “CNC & VMC – All Jobs”. - Completed
+Organize Trays, Covers and Storage into different categories. - Completed
 
 
-2. Organize trays into their respective categories.
 3. Add a watermark to all product images.
-4. Replace “Watchmaking” in the logo text with “CNC & VMC – All Jobs”.
 5. Add a punchline to the first page of the catalogue PDF.
 
 

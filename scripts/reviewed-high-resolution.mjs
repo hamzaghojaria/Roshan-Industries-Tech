@@ -3,7 +3,9 @@
 export const categoryCodes = {
   E: 'eye-loupes',
   H: 'holders-stands',
-  T: 'trays-storage',
+  T: 'trays',
+  R: 'covers',
+  B: 'storage',
   G: 'gauges-selectors',
   L: 'link-strap-tools',
   W: 'tweezers',
@@ -43,10 +45,10 @@ export const reviewedPages = {
 22|H|Single Step Poger Stand
 23|H|Three Step Poger Stand`,
   4: `25|T|Plastic Dividing Tray
-26|T|Single Dust Cover
-27|T|Double Dust Cover
-0|T|Dust Cover with Rubber Base
-0|T|Plastic Storage Container for Watch Repair Parts
+26|R|Single Dust Cover
+27|R|Double Dust Cover
+0|R|Dust Cover with Rubber Base
+0|B|Plastic Storage Container for Watch Repair Parts
 28|H|Movement Holder Set of 12
 24|H|Acrylic Pliers Stand
 0|H|Transparent Tool Stand
@@ -218,7 +220,7 @@ export const reviewedPages = {
 172|F|Square Delrin Base Set of 6
 182|C|Bopp Wire
 183|H|Aluminium Screwdriver Stand
-184|T|Lid Cover
+184|R|Lid Cover
 185|C|MS Hook
 186|J|Ring Clamp
 190|G|Finger Gauge`,

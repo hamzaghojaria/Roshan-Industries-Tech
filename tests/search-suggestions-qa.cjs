@@ -20,7 +20,7 @@ const { pathToFileURL } = require('node:url');
         'catalogue.html',
         'new-arrivals.html',
         'products/rit-0268.html',
-        'categories/trays-storage.html',
+        'categories/trays.html',
       ]) {
         await p.goto(url(file));
         const input = p.locator('#search');
@@ -39,7 +39,7 @@ const { pathToFileURL } = require('node:url');
         await input.press('Escape');
         assert(await p.locator('#search-suggestions').isHidden());
         await input.fill('trays');
-        await p.locator('#search-suggestions a[href*="categories/trays-storage"]').waitFor();
+        await p.locator('#search-suggestions a[href*="categories/trays"]').waitFor();
         await input.fill('zzzzzzunknown');
         await p.waitForTimeout(150);
         assert((await p.locator('#search-suggestions').textContent()).includes('No suggestions'));
@@ -61,9 +61,9 @@ const { pathToFileURL } = require('node:url');
     await p.locator('#search').press('Enter');
     await p.waitForURL(/products\/rit-0268/);
     await p.locator('#search').fill('trays');
-    await p.locator('#search-suggestions a[href*="categories/trays-storage"]').waitFor();
-    await p.locator('#search-suggestions a[href*="categories/trays-storage"]').click();
-    await p.waitForURL(/categories\/trays-storage/);
+    await p.locator('#search-suggestions a[href*="categories/trays"]').waitFor();
+    await p.locator('#search-suggestions a[href*="categories/trays"]').click();
+    await p.waitForURL(/categories\/trays/);
     await p.locator('#search').fill('box');
     await p.locator('#search').press('Enter');
     await p.waitForURL(/catalogue.html\?q=box/);

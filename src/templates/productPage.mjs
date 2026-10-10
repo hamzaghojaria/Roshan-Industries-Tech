@@ -48,21 +48,18 @@ export function productPage(p, products) {
               <dd>${p.sku}</dd>
             </div>
             <div>
+              <dt>Product</dt>
+              <dd>${esc(p.name)}</dd>
+            </div>
+            <div>
               <dt>Category</dt>
               <dd><a href="../categories/${p.categoryId}.html">${esc(p.category)}</a></dd>
             </div>
-            ${
-              p.cataloguePage
-                ? `<div>
-              <dt>Catalogue reference</dt>
-              <dd>Page ${p.cataloguePage}</dd>
-            </div>`
-                : ''
-            }
-            ${(p.specifications || []).map((s) => `<div><dt>${esc(s.label)}</dt><dd>${esc(s.value)}</dd></div>`).join('')}
             <div>
-              <dt>Pricing & availability</dt>
-              <dd>On enquiry</dd>
+              <dt>Catalogue reference</dt>
+              <dd>
+                ${p.cataloguePage ? `Page ${p.cataloguePage}` : 'Confirm with Roshan Industries'}
+              </dd>
             </div>
           </dl>
           <div class="enquiry-actions">

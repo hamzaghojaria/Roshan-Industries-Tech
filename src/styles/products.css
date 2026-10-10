@@ -93,3 +93,7 @@
     transform: none;
   }
 }
+.spec-table dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

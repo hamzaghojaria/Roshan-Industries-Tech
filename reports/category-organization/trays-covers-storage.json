@@ -1,0 +1,254 @@
+[
+  {
+    "sku": "RIT-0025",
+    "name": "Plastic Dividing Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0025-plastic-dividing-tray.webp"
+  },
+  {
+    "sku": "RIT-0026",
+    "name": "Single Dust Cover",
+    "category": "Covers",
+    "image": "assets/products/rit-0026-single-dust-cover.webp"
+  },
+  {
+    "sku": "RIT-0027",
+    "name": "Double Dust Cover",
+    "category": "Covers",
+    "image": "assets/products/rit-0027-double-dust-cover.webp"
+  },
+  {
+    "sku": "RIT-0214",
+    "name": "Dust Cover with Rubber Base",
+    "category": "Covers",
+    "image": "assets/products/rit-0214-dust-cover-with-rubber-base.webp"
+  },
+  {
+    "sku": "RIT-0215",
+    "name": "Plastic Storage Container for Watch Repair Parts",
+    "category": "Storage",
+    "image": "assets/products/rit-0215-plastic-storage-container-for-watch-repair-parts.webp"
+  },
+  {
+    "sku": "RIT-0192",
+    "name": "Square Bench Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0192-square-bench-tray.webp"
+  },
+  {
+    "sku": "RIT-0193",
+    "name": "Round Bench Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0193-round-bench-tray.webp"
+  },
+  {
+    "sku": "RIT-0107",
+    "name": "Diamond Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0107-diamond-tray.webp"
+  },
+  {
+    "sku": "RIT-0083",
+    "name": "Triangular Aluminium Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0083-triangular-aluminium-tray.webp"
+  },
+  {
+    "sku": "RIT-0084",
+    "name": "White Plastic Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0084-white-plastic-tray.webp"
+  },
+  {
+    "sku": "RIT-0153",
+    "name": "Rectangular Aluminium Tray",
+    "category": "Trays",
+    "image": "assets/products/rit-0153-rectangular-aluminium-tray.webp"
+  },
+  {
+    "sku": "RIT-0184",
+    "name": "Lid Cover",
+    "category": "Covers",
+    "image": "assets/products/rit-0184-lid-cover.webp"
+  },
+  {
+    "sku": "RIT-0230",
+    "name": "Plastic Storage Box with 12 Square Containers and Window Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0230-plastic-storage-box-with-12-square-containers-and-window-lid.webp"
+  },
+  {
+    "sku": "RIT-0231",
+    "name": "Aluminium Storage Box with 12 Tins Model 4112",
+    "category": "Storage",
+    "image": "assets/products/rit-0231-aluminium-storage-box-with-12-tins-model-4112.webp"
+  },
+  {
+    "sku": "RIT-0232",
+    "name": "Boxed Aluminium Tin Set with 6 Containers Model 4A",
+    "category": "Storage",
+    "image": "assets/products/rit-0232-boxed-aluminium-tin-set-with-6-containers-model-4a.webp"
+  },
+  {
+    "sku": "RIT-0233",
+    "name": "Plastic Storage Box with 20 Round Containers and Window Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0233-plastic-storage-box-with-20-round-containers-and-window-lid.webp"
+  },
+  {
+    "sku": "RIT-0234",
+    "name": "Plastic Storage Box with 12 Round Containers and Window Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0234-plastic-storage-box-with-12-round-containers-and-window-lid.webp"
+  },
+  {
+    "sku": "RIT-0235",
+    "name": "Aluminium Storage Box with 24 Tins Model 2624",
+    "category": "Storage",
+    "image": "assets/products/rit-0235-aluminium-storage-box-with-24-tins-model-2624.webp"
+  },
+  {
+    "sku": "RIT-0236",
+    "name": "Plastic Storage Box with 20 Round Containers and Plain Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0236-plastic-storage-box-with-20-round-containers-and-plain-lid.webp"
+  },
+  {
+    "sku": "RIT-0237",
+    "name": "Ivory Plastic Storage Tray with 9 Round Containers",
+    "category": "Storage",
+    "image": "assets/products/rit-0237-ivory-plastic-storage-tray-with-9-round-containers.webp"
+  },
+  {
+    "sku": "RIT-0238",
+    "name": "Aluminium Storage Box with 15 Tins Model 4715",
+    "category": "Storage",
+    "image": "assets/products/rit-0238-aluminium-storage-box-with-15-tins-model-4715.webp"
+  },
+  {
+    "sku": "RIT-0239",
+    "name": "Aluminium Storage Box with 20 Tins Model 3320",
+    "category": "Storage",
+    "image": "assets/products/rit-0239-aluminium-storage-box-with-20-tins-model-3320.webp"
+  },
+  {
+    "sku": "RIT-0240",
+    "name": "Plastic Storage Box with 6 Rectangular Containers and Window Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0240-plastic-storage-box-with-6-rectangular-containers-and-window-lid.webp"
+  },
+  {
+    "sku": "RIT-0241",
+    "name": "Aluminium Storage Box with 12 Tins Model 3312",
+    "category": "Storage",
+    "image": "assets/products/rit-0241-aluminium-storage-box-with-12-tins-model-3312.webp"
+  },
+  {
+    "sku": "RIT-0242",
+    "name": "Plastic Storage Box with 12 Round Containers and Plain Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0242-plastic-storage-box-with-12-round-containers-and-plain-lid.webp"
+  },
+  {
+    "sku": "RIT-0243",
+    "name": "Ivory Plastic Storage Tray with 15 Round Containers",
+    "category": "Storage",
+    "image": "assets/products/rit-0243-ivory-plastic-storage-tray-with-15-round-containers.webp"
+  },
+  {
+    "sku": "RIT-0244",
+    "name": "Ivory Plastic Storage Tray with 6 Round Containers",
+    "category": "Storage",
+    "image": "assets/products/rit-0244-ivory-plastic-storage-tray-with-6-round-containers.webp"
+  },
+  {
+    "sku": "RIT-0245",
+    "name": "Aluminium Storage Box with 6 Tins Model 7506",
+    "category": "Storage",
+    "image": "assets/products/rit-0245-aluminium-storage-box-with-6-tins-model-7506.webp"
+  },
+  {
+    "sku": "RIT-0246",
+    "name": "Aluminium Storage Box with 12 Tins Model 5312",
+    "category": "Storage",
+    "image": "assets/products/rit-0246-aluminium-storage-box-with-12-tins-model-5312.webp"
+  },
+  {
+    "sku": "RIT-0247",
+    "name": "Boxed Aluminium Tin Set with 12 Containers Model 5324",
+    "category": "Storage",
+    "image": "assets/products/rit-0247-boxed-aluminium-tin-set-with-12-containers-model-5324.webp"
+  },
+  {
+    "sku": "RIT-0248",
+    "name": "Boxed Aluminium Tin Set with 6 Containers Model 63",
+    "category": "Storage",
+    "image": "assets/products/rit-0248-boxed-aluminium-tin-set-with-6-containers-model-63.webp"
+  },
+  {
+    "sku": "RIT-0249",
+    "name": "Aluminium Storage Box with 15 Tins Model 3715",
+    "category": "Storage",
+    "image": "assets/products/rit-0249-aluminium-storage-box-with-15-tins-model-3715.webp"
+  },
+  {
+    "sku": "RIT-0250",
+    "name": "Plastic Storage Box with 6 Rectangular Containers and Plain Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0250-plastic-storage-box-with-6-rectangular-containers-and-plain-lid.webp"
+  },
+  {
+    "sku": "RIT-0251",
+    "name": "Aluminium Storage Tin 150 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0251-aluminium-storage-tin-150-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0252",
+    "name": "Aluminium Storage Tin 100 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0252-aluminium-storage-tin-100-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0253",
+    "name": "Aluminium Storage Tin 120 ml with Push Fit Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0253-aluminium-storage-tin-120-ml-with-push-fit-lid.webp"
+  },
+  {
+    "sku": "RIT-0254",
+    "name": "Aluminium Storage Tin 20 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0254-aluminium-storage-tin-20-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0255",
+    "name": "Aluminium Storage Tin 15 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0255-aluminium-storage-tin-15-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0256",
+    "name": "Aluminium Storage Tin 5 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0256-aluminium-storage-tin-5-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0257",
+    "name": "Aluminium Storage Tin 30 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0257-aluminium-storage-tin-30-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0258",
+    "name": "Aluminium Storage Tin 10 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0258-aluminium-storage-tin-10-ml-with-screw-lid.webp"
+  },
+  {
+    "sku": "RIT-0259",
+    "name": "Aluminium Storage Tin 60 ml with Screw Lid",
+    "category": "Storage",
+    "image": "assets/products/rit-0259-aluminium-storage-tin-60-ml-with-screw-lid.webp"
+  }
+]

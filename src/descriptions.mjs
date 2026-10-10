@@ -27,7 +27,11 @@ const applications = {
     'A bench holder or stand for supporting parts and organising tools during workshop tasks. Confirm the listed configuration and fit for your equipment with Roshan Industries.',
   'gauges-selectors':
     'A comparison tool for identifying or checking component sizes at the workbench. Confirm the marked range and the parts you need to compare with Roshan Industries before ordering.',
-  'trays-storage':
+  trays:
+    'A bench tray for keeping small parts organised during watch and jewellery work. Confirm the pictured layout and required size with Roshan Industries for your workshop setup.',
+  covers:
+    'A cover for protecting parts and workshop items. Confirm the pictured style, dimensions and compatibility with Roshan Industries before ordering.',
+  storage:
     'A storage accessory for organising small watch and jewellery parts during bench work. Confirm the pictured layout and required capacity with Roshan Industries for your workshop setup.',
   compasses:
     'A directional compass pictured in the Roshan Industries catalogue. Its dial layout and body shape distinguish this model; contact our team to confirm the required format and available options.',

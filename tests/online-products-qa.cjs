@@ -75,7 +75,7 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
     assert.equal(await page.locator('#catalogue-grid .sku').textContent(), 'RIT-0251');
     for (const [id, count] of [
       ['holders-stands', 1],
-      ['trays-storage', 30],
+      ['storage', 30],
     ]) {
       await page.goto(url(`categories/${id}.html`) + '?q=RIT-02');
       // The New badges follow the visible listing records, including pagination.
