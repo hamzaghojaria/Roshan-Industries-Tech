@@ -98,7 +98,10 @@ function initVisualEffects() {
       });
     };
     schedule(document);
-    listingObserver = new MutationObserver(() => schedule(document));
+    listingObserver = new MutationObserver((mutations) => {
+      // Filtering replaces cards within a listing; avoid rescanning unrelated page sections.
+      for (const grid of new Set(mutations.map((mutation) => mutation.target))) schedule(grid);
+    });
     document.querySelectorAll('.catalogue-grid, .arrivals-grid').forEach((grid) => {
       listingObserver.observe(grid, { childList: true });
     });

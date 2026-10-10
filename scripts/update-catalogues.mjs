@@ -9,7 +9,17 @@ process.chdir(root);
 const started = Date.now();
 const statePath = 'reports/catalogue-export-state.json';
 const hash = (value) => crypto.createHash('sha256').update(value).digest('hex');
-const fileHash = (file) => (fs.existsSync(file) ? hash(fs.readFileSync(file)) : null);
+const fileHashes = new Map();
+const fileHash = (file) => {
+  if (!fs.existsSync(file)) return null;
+  const stat = fs.statSync(file);
+  const stamp = `${stat.size}:${stat.mtimeMs}:${stat.ctimeMs}`;
+  const cached = fileHashes.get(file);
+  if (cached?.stamp === stamp) return cached.hash;
+  const value = hash(fs.readFileSync(file));
+  fileHashes.set(file, { stamp, hash: value });
+  return value;
+};
 const old = fs.existsSync(statePath) ? JSON.parse(fs.readFileSync(statePath, 'utf8')) : {};
 function run(command, args, options = {}) {
   const result = spawnSync(command, args, {
@@ -24,7 +34,8 @@ function run(command, args, options = {}) {
   const completedWorkbook =
     options.workbook &&
     [1, 3221226505].includes(result.status) &&
-    result.stdout?.includes('Exported 311 records') &&
+    result.stdout?.includes(`Exported ${options.productCount} records`) &&
+    fs.existsSync('Roshan-Industries-Product-Catalogue.xlsx') &&
     fs.statSync('Roshan-Industries-Product-Catalogue.xlsx').mtimeMs >= options.started;
   if (result.error || (result.status !== 0 && !completedWorkbook))
     throw result.error || new Error(`${command} failed (${result.status})`);
@@ -51,7 +62,13 @@ const readProducts = () =>
   );
 let products = readProducts();
 const images = [...new Set(['assets/roshan-logo-new.png', ...products.map((p) => p.image)])];
-const pdfFiles = ['scripts/export-branded-catalogue.py', 'scripts/catalogue_images.py', ...images];
+const sharedFiles = ['src/data/reviewed-categories.json', 'scripts/export_data.py'];
+const pdfFiles = [
+  ...sharedFiles,
+  'scripts/export-branded-catalogue.py',
+  'scripts/catalogue_images.py',
+  ...images,
+];
 const pdf = 'assets/roshan-industries-catalogue.pdf';
 const xlsx = 'Roshan-Industries-Product-Catalogue.xlsx';
 const pdfInput = signature(pdfFiles, products);
@@ -62,6 +79,7 @@ if (updatePdf) {
   products = readProducts();
 } else console.log('[catalogue] PDF unchanged; reusing the verified export.');
 const xlsxFiles = [
+  ...sharedFiles,
   'scripts/export-catalogue-workbook.mjs',
   'scripts/finish-catalogue-workbook.py',
   'scripts/prepare-workbook-previews.py',
@@ -75,6 +93,7 @@ if (updateXlsx) {
   python('scripts/prepare-workbook-previews.py');
   run(process.execPath, ['scripts/export-catalogue-workbook.mjs'], {
     workbook: true,
+    productCount: products.length,
     started: Date.now(),
   });
   python('scripts/finish-catalogue-workbook.py');

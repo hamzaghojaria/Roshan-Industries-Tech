@@ -19,6 +19,8 @@ def main():
     for name in (
         "export-branded-catalogue.py",
         "export-high-resolution-workbook.py",
+        "prepare-workbook-previews.py",
+        "finish-catalogue-workbook.py",
         "preview-branded-catalogue.py",
         "package-delivery.py",
         "inspect-high-resolution.py",
@@ -40,11 +42,43 @@ def main():
             shutil.copytree(root / name, fixture / name)
         shutil.copy2(root / "products.js", fixture / "products.js")
         (fixture / "reports/high-resolution-audit").mkdir(parents=True)
-        for name in (
-            "export-branded-catalogue.py",
-            "export-high-resolution-workbook.py",
-        ):
-            subprocess.run([sys.executable, "-B", str(fixture / "scripts" / name)], check=True)
+        # Exercise the actual authoring stages without the compatibility updater's
+        # site/source-audit requirements, which are outside this isolated fixture.
+        env = os.environ.copy()
+        env["PYTHONPATH"] = os.pathsep.join(
+            str(Path(entry).resolve()) for entry in sys.path if entry
+        )
+        for name in ("export-branded-catalogue.py", "prepare-workbook-previews.py"):
+            subprocess.run(
+                [sys.executable, "-B", str(fixture / "scripts" / name)],
+                cwd=fixture,
+                env=env,
+                check=True,
+            )
+        node = os.environ.get("CATALOGUE_NODE") or shutil.which("node")
+        if not node:
+            portable = root.parent / ".site-tools/node-ready/node-v22.14.0-win-x64/node.exe"
+            node = str(portable) if portable.is_file() else None
+        assert node, "Node.js is required for Artifact Tool workbook authoring"
+        result = subprocess.run(
+            [node, "scripts/export-catalogue-workbook.mjs"],
+            cwd=fixture,
+            env=env,
+            text=True,
+            capture_output=True,
+        )
+        print(result.stdout, end="")
+        assert result.returncode == 0 or (
+            result.returncode in (1, 3221226505)
+            and "Exported " in result.stdout
+            and (fixture / "Roshan-Industries-Product-Catalogue.xlsx").is_file()
+        ), result.stderr
+        subprocess.run(
+            [sys.executable, "-B", str(fixture / "scripts/finish-catalogue-workbook.py")],
+            cwd=fixture,
+            env=env,
+            check=True,
+        )
         expected = json.loads(
             (root / "products.js")
             .read_text(encoding="utf8")

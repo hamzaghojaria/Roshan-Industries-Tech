@@ -6,7 +6,7 @@ const { chromium } = require('./helpers/browser.cjs');
 (async () => {
   const root = path.resolve(__dirname, '..');
   const url = (file) => pathToFileURL(path.join(root, file)).href;
-  const destination = 'categories/screwdrivers.html';
+  const destination = 'categories/custom-machined-components.html';
   const browser = await chromium.launch({
     headless: true,
   });
@@ -47,7 +47,7 @@ const { chromium } = require('./helpers/browser.cjs');
       await aligned('custom-enquiry');
     }
     console.log(
-      'PASS: Watchmaker’s Bench opens Precision Screwdrivers; both header custom anchors align below the actual header on mobile, tablet and desktop.',
+      'PASS: homepage banner opens Custom Machined Components; both header custom anchors align below the actual header on mobile, tablet and desktop.',
     );
   } finally {
     await browser.close();

@@ -67,6 +67,9 @@ JSON is strict data and cannot contain comments. Data and configuration responsi
 
 ## Current interface behavior
 
+- Shared entrances, floating banner images, section reveals, hover feedback and mobile slider highlights respect reduced-motion preferences. Dynamically filtered cards are scheduled within their listing grid.
+- Product details consistently show SKU, Product, Category and Catalogue reference. Customer pages offer the PDF catalogue; the synchronized Excel file remains available for direct sharing.
+
 - Every page shares the same header and footer. On mobile, the highlighted New Arrivals navigation label and its dot are left aligned.
 - Breadcrumbs are left aligned on mobile, use subtle chevrons, and keep long product titles on a separate row. Category counts keep each number with its label when wrapping.
 - Product images lift slightly on desktop hover and mobile interaction without changing size. There is no magnifier or image zoom dialog. Reduced-motion preferences disable the lift.
@@ -115,22 +118,15 @@ Tests print PASS messages or assertion failures with a nonzero exit code. The we
 
 Keep permanent SKUs unchanged in src/data/sku-map.json. Reviewed PDF records and approved online products, including CNC and VMC machining enquiries, are merged by loadCatalogue(). Duplicate IDs, SKUs or names, unknown categories and changed permanent mappings fail the build. Image replacements belong in src/data/product-image-overrides.json. New badges follow src/data/new-arrivals.json.
 
-The customer PDF is assets/roshan-industries-catalogue.pdf, approximately **10.1 MB** for the current 311 products (previously 96.4 MB). It uses the approved web profile: product photos up to 900 pixels on the longest edge, JPEG quality 85 and a lossless logo. Original website photographs remain unchanged. Excel uses 240 by 210 pixel JPEG previews at quality 85, with identical image resources shared between sheets; all 622 visible photos remain. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx, approximately **2.0 MB** (previously 20.6 MB).
+The customer PDF is assets/roshan-industries-catalogue.pdf, approximately **12.0 MB** for the current 311 products (previously 96.4 MB). It uses the approved web profile: product photos up to 900 pixels on the longest edge, JPEG quality 85 and a lossless logo. Original website photographs remain unchanged. Excel uses 240 by 210 pixel JPEG previews at quality 85, with identical image resources shared between sheets; all 622 visible photos remain. The synchronized workbook is Roshan-Industries-Product-Catalogue.xlsx, approximately **2.9 MB** (previously 20.6 MB).
 
-Processed PDF images are cached in artifacts/catalogue-image-cache/. Unchanged photos reuse their encodings; a source-image, compression-setting or Pillow-version change creates a fresh cache entry. The cache is disposable and excluded from Git and delivery archives. A repeat export measured 3.29 seconds with all 270 image encodings reused; timing depends on the machine and changed content. The local pre-compression PDF is preserved at artifacts/catalogue-archive/roshan-catalogue-native-269-products.pdf. Normal styling changes only need npm run build; they do not need PDF or workbook regeneration.
+Processed PDF images are cached in artifacts/catalogue-image-cache/. Unchanged photos reuse their encodings; a source-image, compression-setting or Pillow-version change creates a fresh cache entry. The cache is disposable and excluded from Git and delivery archives. The complete refresh previously measured about 66 seconds; an unchanged run took about 3 seconds. Timing depends on the machine and changed content. The local pre-compression PDF is preserved at artifacts/catalogue-archive/roshan-catalogue-native-269-products.pdf. Normal styling changes only need npm run build; they do not need PDF or workbook regeneration.
 
 To regenerate both exports after a catalogue change, use a working Python interpreter and install requirements.txt:
 
 ```powershell
 python -m pip install -r requirements.txt
-npm run build
-python scripts/export-branded-catalogue.py
-npm run build
-python scripts/export-high-resolution-workbook.py
-npm run build
-npm run check
-npm run check:source
-python scripts/validate-synchronized-exports.py
+npm run update:catalogues
 ```
 
 Run `python tests/catalogue-image-cache-qa.py` to verify image cache reuse, invalidation and logo/photo settings. Export progress reports the PDF size, elapsed time and cache hits/misses.
@@ -153,10 +149,14 @@ Keep source, assets, scripts, tests, docs, configuration, the synchronized XLSX 
 
 Normal workflow: edit source -> format -> build -> check and test -> review -> commit and publish.
 
-## Refactored source workflow
+## Maintainer guidance
 
 Edit the matching page in src/templates/, browser feature in src/browser/, or component in src/styles/. src/templates.mjs remains the page-generator interface. scripts/build.mjs has separate stages for main pages, retired-route cleanup, catalogue routes and the disposable hosting copy.
 
-Manual Python maintenance tools have explicit main() entry points. Importing them does not regenerate catalogues, extract photos or package archives. PDF and Excel run state belongs to the export invocation, and both read complete records through scripts/export_data.py.
+Python maintenance commands have explicit main() entry points. Importing them does not regenerate catalogues, extract photos or package archives. PDF and Excel run state belongs to the export invocation, and both read complete records through scripts/export_data.py.
 
 To verify exporters without replacing customer downloads, run `python -B tests/export-entrypoints-qa.py` with the export dependencies installed. It checks import safety and generates validated PDF/Excel files in a temporary project copy, then removes that copy.
+
+Read [CLAUDE.md](CLAUDE.md) before maintenance. Export fingerprints include category definitions, shared input code, product records, exporter code and source photographs. File hashes are reused within a command while file changes invalidate cached hashes. Filtering schedules animations only inside the changed listing grid.
+
+The folder layout separates editable source, published assets, maintained tools, audit reports and disposable output. Keep original photographs and provenance reports; clean only generated output and caches. Founder and office preview routes, Artifact Tool inspection output and temporary artifacts are ignored. The source delivery archive includes CLAUDE.md.

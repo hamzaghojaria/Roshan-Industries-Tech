@@ -14,6 +14,9 @@ let browser;
     sandbox,
   );
   const products = sandbox.window.ROSHAN_PRODUCTS;
+  const categories = JSON.parse(
+    fs.readFileSync(path.join(root, 'src/data/reviewed-categories.json'), 'utf8'),
+  );
   require('node:fs').mkdirSync(path.join(root, 'artifacts/qa'), { recursive: true });
   const url = (file) => pathToFileURL(path.join(root, file)).href;
   browser = await chromium.launch({
@@ -119,14 +122,14 @@ let browser;
     assert.equal(await page.locator('.sidebar [aria-current="page"]').count(), 1);
   }
   await page.goto(url('categories.html'));
-  assert.equal(await page.locator('.category-card').count(), 20);
+  assert.equal(await page.locator('.category-card').count(), categories.length);
   assert.equal(await page.locator('.family-overview a').count(), 5);
   assert.equal(await page.locator('.family-heading').count(), 5);
   assert.equal(
     (await page.locator('#family-watchmaking .family-count span').textContent())
       .replace(/\s+/g, ' ')
       .trim(),
-    `6 categories ${String.fromCharCode(183)} ${products.filter((product) => product.family === 'Watchmaking').length} products`,
+    `${categories.filter((category) => category.family === 'Watchmaking').length} categories ${String.fromCharCode(183)} ${products.filter((product) => product.family === 'Watchmaking').length} products`,
   );
   await page.locator('.family-overview a').first().click();
   assert.match(page.url(), /#family-watchmaking$/);

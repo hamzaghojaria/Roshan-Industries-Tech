@@ -39,7 +39,12 @@ const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).
     assert(!/Page undefined|#page=undefined/.test(html));
     assert(html.includes('Explore in catalogue'));
     assert(html.includes('Download catalogue'));
-    for (const spec of p.specifications) assert(html.includes(spec.value));
+    assert.deepEqual(
+      [...html.matchAll(new RegExp('<dt>([^<]+)</dt>', 'g'))].map((match) => match[1]),
+      ['SKU', 'Product', 'Category', 'Catalogue reference'],
+      p.sku + ' uses the uniform product details',
+    );
+    assert(!/href="[^"]*\.xlsx"/.test(html), p.sku + ' has no Excel download');
   }
   const browser = await chromium.launch({
     headless: true,

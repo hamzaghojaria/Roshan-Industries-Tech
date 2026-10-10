@@ -20,6 +20,8 @@ __pycache__/
 /about.html
 /contact.html
 /new-arrivals.html
+/founder.html
+/offices.html
 /categories/
 /products/
 /products.js
@@ -47,6 +49,7 @@ __pycache__/
 /reports/catalogue-audit/page-*-comparison.jpg
 
 # Logs and operating-system files
+*.inspect.ndjson
 *.log
 .DS_Store
 Thumbs.db

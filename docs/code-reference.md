@@ -24,7 +24,7 @@ This inventory covers editable code. Generated HTML/CSS/JS copies inherit source
 | scripts/check.mjs                          | Check all generated routes, local links/assets, text, product totals and permanent SKU mapping.                                |
 | scripts/catalogue_images.py                | Approved PDF JPEG profile and content/settings/version keyed image cache; originals stay unchanged.                            |
 | scripts/export-branded-catalogue.py        | Write the compact branded PDF, page mappings and audit; reuse cached photo encodings and repeated logo objects.                |
-| scripts/export-high-resolution-workbook.py | Write the synchronized XLSX with styled category sheets and embedded product photos.                                           |
+| scripts/export-high-resolution-workbook.py | Compatibility entry point for the synchronized catalogue updater.                                                              |
 | scripts/extract-high-resolution.py         | Extract native PDF crops; writes product images, reviewed records and provenance reports.                                      |
 | scripts/inspect-high-resolution.py         | Inspect original scans and workbook; writes contact sheets, PDF text and inspection reports.                                   |
 | scripts/package-delivery.py                | Package existing dist and editable source into ZIP files without workspace tooling or secrets.                                 |
@@ -98,3 +98,18 @@ The workbook image helper, scripts/workbook_images.py, encodes JPEG previews and
 Templates import shared helpers from src/templates/shared.mjs. Browser sources share one private scope in the generated bundle; they require no module loader, preserve file previews and do not expose initializer globals. Slider positions and card widths are cached until a ResizeObserver reports a size change. Search names, SKUs and category text are normalized once per page.
 
 Maintenance Python commands perform work only through main(). Utility modules keep reusable functions at module scope. The isolated export-entrypoints regression checks the actual PDF/XLSX outputs and import safety without altering the customer downloads.
+
+## Current export and motion additions
+
+| File                                  | Responsibility                                                                           |
+| ------------------------------------- | ---------------------------------------------------------------------------------------- |
+| scripts/update-catalogues.mjs         | Fingerprint inputs and outputs; rebuild only stale exports and validate synchronization. |
+| scripts/export-catalogue-workbook.mjs | Author the seven-column workbook with Artifact Tool.                                     |
+| scripts/prepare-workbook-previews.py  | Encode each distinct source photo once per workbook preparation; import safe.            |
+| scripts/finish-catalogue-workbook.py  | Add public hyperlinks, print settings and shared image resources; import safe.           |
+| scripts/brand-workbook.mjs            | Compatibility command delegating to the current updater; no obsolete branding layout.    |
+| src/styles/motion.css                 | Shared entrance, floating banner and slider feedback with reduced-motion overrides.      |
+| tests/shared-motion-qa.cjs            | Verify shared animations, dynamically replaced cards and reduced-motion behavior.        |
+| CLAUDE.md                             | Maintainer boundaries, commands, export dependencies and delivery guidance.              |
+
+Listing animation observers rescan only grids whose children changed. The updater reuses source-file hashes within an invocation and refreshes them when size or timestamps change. Category definitions and shared export-input code participate in both catalogue fingerprints.

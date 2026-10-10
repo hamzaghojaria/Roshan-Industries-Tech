@@ -1,1 +1,57 @@
-﻿const {chromium}=require('./helpers/browser.cjs');const {pathToFileURL}=require('url');const path=require('path'),assert=require('assert/strict');(async()=>{const browser=await chromium.launch({headless:true});try{for(const width of [390,1440]){const page=await browser.newPage({viewport:{width,height:850}});await page.route('https://**/*',r=>r.abort());await page.goto(pathToFileURL(path.resolve('index.html')).href);const grid=page.locator('.custom-grid');assert(await grid.evaluate(e=>e.classList.contains('process-pending')));await grid.scrollIntoViewIfNeeded();await page.waitForFunction(()=>document.querySelector('.custom-grid').classList.contains('process-ready'));await page.waitForTimeout(750);const line=await grid.locator('article').first().evaluate(e=>{const s=getComputedStyle(e,'::after');return {transform:s.transform,width:s.width,height:s.height};});assert.equal(line.transform,'matrix(1, 0, 0, 1, 0, 0)');assert.equal(width===390?line.width:line.height,'2px');assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.emulateMedia({reducedMotion:'reduce'});assert.equal(await grid.locator('article').first().evaluate(e=>getComputedStyle(e,'::after').transitionDuration),'0s');await page.close();}for(const options of [{reducedMotion:'reduce'},{javaScriptEnabled:false}]){const context=await browser.newContext(options);const page=await context.newPage();await page.route('https://**/*',r=>r.abort());await page.goto(pathToFileURL(path.resolve('about.html')).href);assert.equal(await page.locator('.custom-grid.process-pending').count(),0);assert.equal(await page.locator('.custom-grid article').count(),3);await context.close();}console.log('PASS manufacturing connectors: desktop/mobile reveal, reduced motion and no-JavaScript fallback');}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
+﻿const { chromium } = require('./helpers/browser.cjs');
+const { pathToFileURL } = require('url');
+const path = require('path'),
+  assert = require('assert/strict');
+(async () => {
+  const browser = await chromium.launch({ headless: true });
+  try {
+    for (const width of [390, 1440]) {
+      const page = await browser.newPage({ viewport: { width, height: 850 } });
+      await page.route('https://**/*', (r) => r.abort());
+      await page.goto(pathToFileURL(path.resolve('index.html')).href);
+      const grid = page.locator('.custom-grid');
+      assert(await grid.evaluate((e) => e.classList.contains('process-pending')));
+      await grid.scrollIntoViewIfNeeded();
+      await page.waitForFunction(() =>
+        document.querySelector('.custom-grid').classList.contains('process-ready'),
+      );
+      await page.waitForTimeout(750);
+      const line = await grid
+        .locator('article')
+        .first()
+        .evaluate((e) => {
+          const s = getComputedStyle(e, '::after');
+          return { transform: s.transform, width: s.width, height: s.height };
+        });
+      assert.equal(line.transform, 'matrix(1, 0, 0, 1, 0, 0)');
+      assert.equal(width === 390 ? line.width : line.height, '2px');
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      assert.equal(
+        await grid
+          .locator('article')
+          .first()
+          .evaluate((e) => getComputedStyle(e, '::after').transitionDuration),
+        '0s',
+      );
+      await page.close();
+    }
+    for (const options of [{ reducedMotion: 'reduce' }, { javaScriptEnabled: false }]) {
+      const context = await browser.newContext(options);
+      const page = await context.newPage();
+      await page.route('https://**/*', (r) => r.abort());
+      await page.goto(pathToFileURL(path.resolve('about.html')).href);
+      assert.equal(await page.locator('.custom-grid.process-pending').count(), 0);
+      assert.equal(await page.locator('.custom-grid article').count(), 3);
+      await context.close();
+    }
+    console.log(
+      'PASS manufacturing connectors: desktop/mobile reveal, reduced motion and no-JavaScript fallback',
+    );
+  } finally {
+    await browser.close();
+  }
+})().catch((e) => {
+  console.error(e);
+  process.exitCode = 1;
+});

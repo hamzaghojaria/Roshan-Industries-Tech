@@ -36,6 +36,7 @@ def main():
     )
     for name in [
         "README.md",
+        "CLAUDE.md",
         "package.json",
         "package-lock.json",
         "requirements.txt",

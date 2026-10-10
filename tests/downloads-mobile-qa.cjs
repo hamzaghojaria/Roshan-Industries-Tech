@@ -43,7 +43,6 @@ const { chromium } = require('./helpers/browser.cjs');
       await page.goto(base + '/catalogue.html');
       for (const [text, file] of [
         ['Download PDF catalogue', 'assets/roshan-industries-catalogue.pdf'],
-        ['Download Excel catalogue', 'Roshan-Industries-Product-Catalogue.xlsx'],
       ]) {
         const button = page.getByRole('link', { name: text, exact: true });
         const box = await button.boundingBox();
@@ -56,6 +55,17 @@ const { chromium } = require('./helpers/browser.cjs');
         assert.equal(await download.failure(), null);
         assert.equal(sha(saved), sha(path.join(root, file)));
       }
+      assert.equal(await page.locator('a[href$=".xlsx"]').count(), 0);
+      // The shared Excel file remains published for direct sharing.
+      const workbook = await fetch(base + '/Roshan-Industries-Product-Catalogue.xlsx');
+      assert.equal(workbook.status, 200);
+      assert.equal(
+        crypto
+          .createHash('sha256')
+          .update(Buffer.from(await workbook.arrayBuffer()))
+          .digest('hex'),
+        sha(path.join(root, 'Roshan-Industries-Product-Catalogue.xlsx')),
+      );
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
     }
     const records = JSON.parse(
@@ -85,7 +95,7 @@ const { chromium } = require('./helpers/browser.cjs');
       await response.arrayBuffer();
     }
     console.log(
-      'PASS HTTP mobile downloads: PDF/XLSX clicks at 320/390px match published files; enquiries and PDFs work across all 5 product families',
+      'PASS HTTP mobile downloads: PDF clicks and shared XLSX at 320/390px match published files; enquiries and PDFs work across all 5 product families',
     );
   } finally {
     await browser.close();

@@ -21,7 +21,12 @@ try {
     $records = $auditBook.Worksheets.Item('All Products').UsedRange.Rows.Count - 5
     if ($records -ne $expectedRecords) { throw 'Unexpected product count' }
     $photos = 0
-    foreach ($sheet in $auditBook.Worksheets) { $photos += $sheet.Shapes.Count }
+    foreach ($sheet in $auditBook.Worksheets) {
+        if ($sheet.Name -ne 'Overview') {
+            $photos += $sheet.Shapes.Count
+            if ($sheet.UsedRange.Columns.Count -ne 7) { throw 'Unexpected product column count' }
+        }
+    }
     if ($photos -ne $expectedPhotos) { throw 'Unexpected photo count' }
     $report = @{ excelNormalOpen = $true; products = $records; sheets = $expectedSheets; embeddedPhotos = $photos; xlsxSha256 = (Get-FileHash -LiteralPath $workbookPath -Algorithm SHA256).Hash.ToLower(); duplicateWorksheetFiltersRemoved = $true }
     $report | ConvertTo-Json | Set-Content -Encoding UTF8 (Join-Path $projectRoot 'reports/high-resolution-audit/excel-desktop-validation.json')

@@ -35,8 +35,16 @@ const arrivals = JSON.parse(
 ).skus;
 assert.equal(products.length, 216 + onlineProducts.length);
 assert.equal(categories.length, 22);
-for (const [id, count] of [['trays', 7], ['covers', 4], ['storage', 31]])
-  assert.equal(products.filter((p) => p.categoryId === id).length, count, id + ' category coverage');
+for (const [id, count] of [
+  ['trays', 7],
+  ['covers', 4],
+  ['storage', 31],
+])
+  assert.equal(
+    products.filter((p) => p.categoryId === id).length,
+    count,
+    id + ' category coverage',
+  );
 assert.equal(new Set(products.map((p) => p.name)).size, products.length);
 assert.equal(new Set(products.map((p) => p.sku)).size, products.length);
 assert.equal(images.images.length, 216);
