@@ -1,0 +1,2228 @@
+{
+  "reviewedProducts": 311,
+  "correctedProducts": 14,
+  "titleChanges": 0,
+  "method": "Visual review of all catalogue product photographs against current website titles and descriptions. Current override photos were also checked for corrected products. Product dimensions, capacity, materials, optical ranges and internal valve function cannot be authenticated from photographs alone; existing source specifications were retained.",
+  "liveSite": "The public Render URL could not be accessed by the web tool. Reviewed the website source and generated pages in the workspace.",
+  "products": [
+    {
+      "sku": "RIT-0001",
+      "image": "assets/products/rit-0001-plastic-eye-glass-with-golden-ring.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Eye Glass with Golden Ring",
+      "description": "Plastic Eye Glass with Golden Ring. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0002",
+      "image": "assets/products/rit-0002-plastic-headband-eye-glass-with-grey-ring.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Headband Eye Glass with Grey Ring",
+      "description": "Plastic Headband Eye Glass with Grey Ring. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0003",
+      "image": "assets/products/rit-0003-plastic-headband-eye-glass-with-green-ring.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Headband Eye Glass with Green Ring",
+      "description": "Plastic Headband Eye Glass with Green Ring. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0004",
+      "image": "assets/products/rit-0004-plastic-silver-ring-eye-glass-number-1-to-1-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Silver Ring Eye Glass Number 1 to 1.5",
+      "description": "Plastic Silver Ring Eye Glass Number 1 to 1.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0005",
+      "image": "assets/products/rit-0005-plastic-silver-ring-eye-glass-number-2-to-4-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Silver Ring Eye Glass Number 2 to 4.5",
+      "description": "Plastic Silver Ring Eye Glass Number 2 to 4.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0006",
+      "image": "assets/products/rit-0006-aluminium-eye-glass-number-1-to-1-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Eye Glass Number 1 to 1.5",
+      "description": "Aluminium Eye Glass Number 1 to 1.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0007",
+      "image": "assets/products/rit-0007-aluminium-eye-glass-number-2-to-4-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Eye Glass Number 2 to 4.5",
+      "description": "Aluminium Eye Glass Number 2 to 4.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0008",
+      "image": "assets/products/rit-0008-plastic-bergon-shape-eye-glass-number-1-to-1-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Bergon Shape Eye Glass Number 1 to 1.5",
+      "description": "Plastic Bergon Shape Eye Glass Number 1 to 1.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0009",
+      "image": "assets/products/rit-0009-plastic-bergon-shape-eye-glass-number-2-to-4-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Bergon Shape Eye Glass Number 2 to 4.5",
+      "description": "Plastic Bergon Shape Eye Glass Number 2 to 4.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0010",
+      "image": "assets/products/rit-0010-plastic-anchor-shape-eye-glass-number-1-to-1-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Anchor Shape Eye Glass Number 1 to 1.5",
+      "description": "Plastic Anchor Shape Eye Glass Number 1 to 1.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0011",
+      "image": "assets/products/rit-0011-plastic-anchor-shape-eye-glass-number-2-to-4-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Anchor Shape Eye Glass Number 2 to 4.5",
+      "description": "Plastic Anchor Shape Eye Glass Number 2 to 4.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0213",
+      "image": "assets/products/rit-0213-plastic-sawing-eye-glass-set-of-4.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Sawing Eye Glass Set of 4",
+      "description": "Plastic Sawing Eye Glass Set of 4. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0012",
+      "image": "assets/reference-products/spectacle-eye-glass-grey-ridged-rim-owner.jpeg",
+      "status": "copy-corrected",
+      "name": "Plastic Spectacle Eye Glass Number 1 to 1.5",
+      "description": "Plastic Spectacle Eye Glass Number 1 to 1.5. A spectacle-mounted eye loupe with a black body, ridged grey lens ring and metal spectacle attachment, as shown in the reference photograph. It supports close inspection of small watch parts. Confirm the listed optical variant and attachment fit with Roshan Industries.",
+      "previousName": "Plastic Spectacle Eye Glass Number 1 to 1.5",
+      "previousDescription": "Plastic Spectacle Eye Glass Number 1 to 1.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries.",
+      "reason": "Clarified the spectacle attachment visible in the owner reference photo."
+    },
+    {
+      "sku": "RIT-0013",
+      "image": "assets/reference-products/spectacle-eye-glass-grey-ridged-rim-owner.jpeg",
+      "status": "copy-corrected",
+      "name": "Plastic Spectacle Eye Glass Number 2 to 4.5",
+      "description": "Plastic Spectacle Eye Glass Number 2 to 4.5. A spectacle-mounted eye loupe with a black body, ridged grey lens ring and metal spectacle attachment, as shown in the reference photograph. It supports close inspection of small watch parts. Confirm the listed optical variant and attachment fit with Roshan Industries.",
+      "previousName": "Plastic Spectacle Eye Glass Number 2 to 4.5",
+      "previousDescription": "Plastic Spectacle Eye Glass Number 2 to 4.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries.",
+      "reason": "Clarified the spectacle attachment; the shared photo does not prove the optical variant."
+    },
+    {
+      "sku": "RIT-0014",
+      "image": "assets/products/rit-0014-plastic-headband-eye-glass-number-1-to-1-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Headband Eye Glass Number 1 to 1.5",
+      "description": "Plastic Headband Eye Glass Number 1 to 1.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0015",
+      "image": "assets/products/rit-0015-plastic-headband-eye-glass-number-2-to-4-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Headband Eye Glass Number 2 to 4.5",
+      "description": "Plastic Headband Eye Glass Number 2 to 4.5. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0016",
+      "image": "assets/products/rit-0016-plastic-sawing-eye-glass-10x.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Sawing Eye Glass 10x",
+      "description": "Plastic Sawing Eye Glass 10x. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0017",
+      "image": "assets/products/rit-0017-plastic-sawing-eye-glass-7x.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Sawing Eye Glass 7x",
+      "description": "Plastic Sawing Eye Glass 7x. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0029",
+      "image": "assets/products/rit-0029-stainless-steel-wire-hairband-eye-glass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Stainless Steel Wire Hairband Eye Glass",
+      "description": "Stainless Steel Wire Hairband Eye Glass. A magnifier for close visual inspection of watch components and small workshop parts. Select the photographed style for your working setup and confirm the required optical variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0019",
+      "image": "assets/products/rit-0019-large-plastic-keychain-eye-glass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Plastic Keychain Eye Glass",
+      "description": "Large Plastic Keychain Eye Glass. A portable keychain magnifier for examining small details away from the workbench. Confirm the required size and lens option with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0020",
+      "image": "assets/products/rit-0020-small-plastic-keychain-eye-glass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Plastic Keychain Eye Glass",
+      "description": "Small Plastic Keychain Eye Glass. A portable keychain magnifier for examining small details away from the workbench. Confirm the required size and lens option with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0021",
+      "image": "assets/products/rit-0021-large-revolving-bur-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Revolving Bur Stand",
+      "description": "Large Revolving Bur Stand. A bench stand for organising burs and small tool accessories. Review the photographed arrangement and confirm the required hole configuration and tool fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0022",
+      "image": "assets/products/rit-0022-single-step-poger-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Single Step Poger Stand",
+      "description": "Single Step Poger Stand. A bench stand for organising burs and small tool accessories. Review the photographed arrangement and confirm the required hole configuration and tool fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0023",
+      "image": "assets/products/rit-0023-three-step-poger-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Three Step Poger Stand",
+      "description": "Three Step Poger Stand. A bench stand for organising burs and small tool accessories. Review the photographed arrangement and confirm the required hole configuration and tool fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0025",
+      "image": "assets/products/rit-0025-plastic-dividing-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Dividing Tray",
+      "description": "Plastic Dividing Tray. A divided tray for separating small parts during watch servicing and assembly. Confirm the compartment arrangement and workshop requirements with Roshan Industries before selecting this model."
+    },
+    {
+      "sku": "RIT-0026",
+      "image": "assets/products/rit-0026-single-dust-cover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Single Dust Cover",
+      "description": "Single Dust Cover. A cover for protecting small parts from dust between workshop operations. Discuss the required clearance and bench arrangement with Roshan Industries to confirm the pictured cover is suitable."
+    },
+    {
+      "sku": "RIT-0027",
+      "image": "assets/products/rit-0027-double-dust-cover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Dust Cover",
+      "description": "Double Dust Cover. A cover for protecting small parts from dust between workshop operations. Discuss the required clearance and bench arrangement with Roshan Industries to confirm the pictured cover is suitable."
+    },
+    {
+      "sku": "RIT-0214",
+      "image": "assets/products/rit-0214-dust-cover-with-rubber-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Dust Cover with Rubber Base",
+      "description": "Dust Cover with Rubber Base. A cover for protecting small parts from dust between workshop operations. Discuss the required clearance and bench arrangement with Roshan Industries to confirm the pictured cover is suitable."
+    },
+    {
+      "sku": "RIT-0215",
+      "image": "assets/products/rit-0215-plastic-storage-container-for-watch-repair-parts.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Container for Watch Repair Parts",
+      "description": "Plastic Storage Container for Watch Repair Parts. A container for keeping watch repair parts grouped and accessible at the bench. Discuss your storage needs and required configuration with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0028",
+      "image": "assets/products/rit-0028-movement-holder-set-of-12.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Movement Holder Set of 12",
+      "description": "Movement Holder Set of 12. A holder for supporting a watch movement during inspection and servicing. Match the listed holder style to the movement you work with and confirm fit through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0024",
+      "image": "assets/products/rit-0024-acrylic-pliers-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Acrylic Pliers Stand",
+      "description": "Acrylic Pliers Stand. A stand for keeping pliers and similar bench tools organised and accessible. Confirm the pictured arrangement and tool fit with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0216",
+      "image": "assets/products/rit-0216-transparent-tool-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Transparent Tool Stand",
+      "description": "Transparent Tool Stand. A stand for keeping pliers and similar bench tools organised and accessible. Confirm the pictured arrangement and tool fit with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0030",
+      "image": "assets/products/rit-0030-movement-holder-10-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Movement Holder 10.5",
+      "description": "Movement Holder 10.5. A holder for supporting a watch movement during inspection and servicing. Match the listed holder style to the movement you work with and confirm fit through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0031",
+      "image": "assets/products/rit-0031-movement-holder-for-2030-st-96-ladies-watches.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Movement Holder for 2030 ST 96 Ladies Watches",
+      "description": "Movement Holder for 2030 ST 96 Ladies Watches. A holder for supporting a watch movement during inspection and servicing. Match the listed holder style to the movement you work with and confirm fit through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0032",
+      "image": "assets/products/rit-0032-clips-for-open-ended-watch-straps.webp",
+      "status": "copy-corrected",
+      "name": "Clips for Open Ended Watch Straps",
+      "description": "Clips for Open Ended Watch Straps. Clips for securing compatible open ended watch straps. The photograph shows the clip components separately so their fastening shape can be compared with the existing strap. Confirm strap width, fastening arrangement and quantity with Roshan Industries.",
+      "previousName": "Clips for Open Ended Watch Straps",
+      "previousDescription": "Clips for Open Ended Watch Straps. A workshop tool for bracelet and strap servicing. Share the fastening arrangement and part dimensions with Roshan Industries to confirm the right configuration for your repair work.",
+      "reason": "The image shows fastening components, rather than a servicing tool."
+    },
+    {
+      "sku": "RIT-0033",
+      "image": "assets/products/rit-0033-ring-gauge-stand-sizes-1-to-17.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ring Gauge Stand Sizes 1 to 17",
+      "description": "Ring Gauge Stand Sizes 1 to 17. A stand for arranging ring gauges in an orderly bench setup. Confirm the listed positions and compatibility with your gauges through Roshan Industries before selecting this model."
+    },
+    {
+      "sku": "RIT-0034",
+      "image": "assets/products/rit-0034-large-matte-black-battery-selector.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Matte Black Battery Selector",
+      "description": "Large Matte Black Battery Selector. A reference selector for comparing watch battery formats during servicing. Use the photographed chart or selector arrangement as a starting point and confirm the required battery coverage with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0035",
+      "image": "assets/products/rit-0035-small-square-battery-selector.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Square Battery Selector",
+      "description": "Small Square Battery Selector. A reference selector for comparing watch battery formats during servicing. Use the photographed chart or selector arrangement as a starting point and confirm the required battery coverage with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0036",
+      "image": "assets/products/rit-0036-green-round-battery-selector.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Green Round Battery Selector",
+      "description": "Green Round Battery Selector. A reference selector for comparing watch battery formats during servicing. Use the photographed chart or selector arrangement as a starting point and confirm the required battery coverage with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0037",
+      "image": "assets/products/rit-0037-round-battery-selector.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Battery Selector",
+      "description": "Round Battery Selector. A reference selector for comparing watch battery formats during servicing. Use the photographed chart or selector arrangement as a starting point and confirm the required battery coverage with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0038",
+      "image": "assets/products/rit-0038-bangle-size-gauge.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bangle Size Gauge",
+      "description": "Bangle Size Gauge. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0039",
+      "image": "assets/products/rit-0039-round-side-bar-selector-with-slotted-centre.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Side Bar Selector with Slotted Centre",
+      "description": "Round Side Bar Selector with Slotted Centre. A sizing reference for comparing watch side bars and strap fittings. Discuss the parts you need to identify and confirm the marked range with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0200",
+      "image": "assets/products/rit-0200-round-side-bar-selector-with-solid-centre.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Side Bar Selector with Solid Centre",
+      "description": "Round Side Bar Selector with Solid Centre. A sizing reference for comparing watch side bars and strap fittings. Discuss the parts you need to identify and confirm the marked range with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0040",
+      "image": "assets/products/rit-0040-ring-gauge-set-of-36.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ring Gauge Set of 36",
+      "description": "Ring Gauge Set of 36. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0041",
+      "image": "assets/products/rit-0041-side-bar-and-strap-gauge.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Side Bar and Strap Gauge",
+      "description": "Side Bar and Strap Gauge. A sizing reference for comparing watch side bars and strap fittings. Discuss the parts you need to identify and confirm the marked range with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0042",
+      "image": "assets/products/rit-0042-bur-stand-with-40-holes.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bur Stand with 40 Holes",
+      "description": "Bur Stand with 40 Holes. A bench stand for organising burs and small tool accessories. Review the photographed arrangement and confirm the required hole configuration and tool fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0043",
+      "image": "assets/products/rit-0043-bur-stand-with-326-holes.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bur Stand with 326 Holes",
+      "description": "Bur Stand with 326 Holes. A bench stand for organising burs and small tool accessories. Review the photographed arrangement and confirm the required hole configuration and tool fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0044",
+      "image": "assets/products/rit-0044-complete-bur-stand-set-with-326-holes.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Complete Bur Stand Set with 326 Holes",
+      "description": "Complete Bur Stand Set with 326 Holes. A bench stand for organising burs and small tool accessories. Review the photographed arrangement and confirm the required hole configuration and tool fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0045",
+      "image": "assets/products/rit-0045-yellow-tweezer-set-of-3.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Yellow Tweezer Set of 3",
+      "description": "Yellow Tweezer Set of 3. A tweezer for handling small parts during watch repair and workshop assembly. Confirm the tip arrangement and listed size with Roshan Industries to suit your bench routine."
+    },
+    {
+      "sku": "RIT-0046",
+      "image": "assets/products/rit-0046-large-tweezer-10-inch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Tweezer 10 Inch",
+      "description": "Large Tweezer 10 Inch. A tweezer for handling small parts during watch repair and workshop assembly. Confirm the tip arrangement and listed size with Roshan Industries to suit your bench routine."
+    },
+    {
+      "sku": "RIT-0047",
+      "image": "assets/products/rit-0047-medium-tweezer-7-inch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Medium Tweezer 7 Inch",
+      "description": "Medium Tweezer 7 Inch. A tweezer for handling small parts during watch repair and workshop assembly. Confirm the tip arrangement and listed size with Roshan Industries to suit your bench routine."
+    },
+    {
+      "sku": "RIT-0048",
+      "image": "assets/products/rit-0048-small-tweezer-6-inch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Tweezer 6 Inch",
+      "description": "Small Tweezer 6 Inch. A tweezer for handling small parts during watch repair and workshop assembly. Confirm the tip arrangement and listed size with Roshan Industries to suit your bench routine."
+    },
+    {
+      "sku": "RIT-0049",
+      "image": "assets/products/rit-0049-plastic-tweezer.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Tweezer",
+      "description": "Plastic Tweezer. A tweezer for handling small parts during watch repair and workshop assembly. Confirm the tip arrangement and listed size with Roshan Industries to suit your bench routine."
+    },
+    {
+      "sku": "RIT-0050",
+      "image": "assets/products/rit-0050-small-tweezer-5-inch-in-assorted-colours.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Tweezer 5 Inch in Assorted Colours",
+      "description": "Small Tweezer 5 Inch in Assorted Colours. A tweezer for handling small parts during watch repair and workshop assembly. Confirm the tip arrangement and listed size with Roshan Industries to suit your bench routine."
+    },
+    {
+      "sku": "RIT-0051",
+      "image": "assets/products/rit-0051-single-oil-pin.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Single Oil Pin",
+      "description": "Single Oil Pin. An applicator for placing lubricant during watch servicing. Confirm the listed single or set arrangement with Roshan Industries to suit your lubrication routine and workshop requirements."
+    },
+    {
+      "sku": "RIT-0057",
+      "image": "assets/products/rit-0057-oil-pin-set-of-5.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Oil Pin Set of 5",
+      "description": "Oil Pin Set of 5. An applicator for placing lubricant during watch servicing. Confirm the listed single or set arrangement with Roshan Industries to suit your lubrication routine and workshop requirements."
+    },
+    {
+      "sku": "RIT-0058",
+      "image": "assets/products/rit-0058-oil-pin-set-of-3.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Oil Pin Set of 3",
+      "description": "Oil Pin Set of 3. An applicator for placing lubricant during watch servicing. Confirm the listed single or set arrangement with Roshan Industries to suit your lubrication routine and workshop requirements."
+    },
+    {
+      "sku": "RIT-0054",
+      "image": "assets/products/rit-0054-small-oil-cup.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Oil Cup",
+      "description": "Small Oil Cup. An oil cup for holding small quantities of lubricant at the watchmaking bench. Select the photographed cup arrangement and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0055",
+      "image": "assets/products/rit-0055-oil-cup-and-oil-pin-set-of-4.webp",
+      "status": "copy-corrected",
+      "name": "Oil Cup and Oil Pin Set of 4",
+      "description": "Oil Cup and Oil Pin Set of 4. A set combining four oil cups with four oil pins, shown in matching colours. The cups hold small quantities of lubricant while the pins help apply it during watch servicing. Confirm the required set configuration and quantity with Roshan Industries.",
+      "previousName": "Oil Cup and Oil Pin Set of 4",
+      "previousDescription": "Oil Cup and Oil Pin Set of 4. An applicator for placing lubricant during watch servicing. Confirm the listed single or set arrangement with Roshan Industries to suit your lubrication routine and workshop requirements.",
+      "reason": "Describe both cups and applicators visible in the set."
+    },
+    {
+      "sku": "RIT-0056",
+      "image": "assets/products/rit-0056-single-oil-cup-and-oil-pin-set.webp",
+      "status": "copy-corrected",
+      "name": "Single Oil Cup and Oil Pin Set",
+      "description": "Single Oil Cup and Oil Pin Set. A single oil cup and oil pin supplied together for watch servicing. The photographed cup has a removable cover, and the separate pin provides an applicator for small lubrication tasks. Confirm the required configuration and quantity with Roshan Industries.",
+      "previousName": "Single Oil Cup and Oil Pin Set",
+      "previousDescription": "Single Oil Cup and Oil Pin Set. An applicator for placing lubricant during watch servicing. Confirm the listed single or set arrangement with Roshan Industries to suit your lubrication routine and workshop requirements.",
+      "reason": "Describe the cup and pin together."
+    },
+    {
+      "sku": "RIT-0052",
+      "image": "assets/products/rit-0052-three-in-one-oil-cup.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Three in One Oil Cup",
+      "description": "Three in One Oil Cup. An oil cup for holding small quantities of lubricant at the watchmaking bench. Select the photographed cup arrangement and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0053",
+      "image": "assets/products/rit-0053-single-oil-cup.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Single Oil Cup",
+      "description": "Single Oil Cup. An oil cup for holding small quantities of lubricant at the watchmaking bench. Select the photographed cup arrangement and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0059",
+      "image": "assets/products/rit-0059-wooden-oil-cup.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Wooden Oil Cup",
+      "description": "Wooden Oil Cup. An oil cup for holding small quantities of lubricant at the watchmaking bench. Select the photographed cup arrangement and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0192",
+      "image": "assets/products/rit-0192-square-bench-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Square Bench Tray",
+      "description": "Square Bench Tray. A bench tray for keeping small parts organised during watch and jewellery work. Confirm the pictured layout and required size with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0193",
+      "image": "assets/products/rit-0193-round-bench-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Bench Tray",
+      "description": "Round Bench Tray. A bench tray for keeping small parts organised during watch and jewellery work. Confirm the pictured layout and required size with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0060",
+      "image": "assets/products/rit-0060-aluminium-work-holder-with-60-holes.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Work Holder with 60 Holes",
+      "description": "Aluminium Work Holder with 60 Holes. A hand held work holder for supporting small items during jewellery bench tasks. Review the pictured holder arrangement and confirm suitability for your workpieces with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0061",
+      "image": "assets/products/rit-0061-melting-disc-with-wooden-handle-18-inch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Melting Disc with Wooden Handle 18 Inch",
+      "description": "Melting Disc with Wooden Handle 18 Inch. A wooden handled support tool for jewellery heating and bench preparation tasks. Confirm the listed length and intended working setup with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0062",
+      "image": "assets/products/rit-0062-black-laser-marked-ring-stick-sizes-1-to-36.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Black Laser Marked Ring Stick Sizes 1 to 36",
+      "description": "Black Laser Marked Ring Stick Sizes 1 to 36. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0063",
+      "image": "assets/products/rit-0063-stepped-ring-stick-with-base-sizes-4-to-13.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Stepped Ring Stick with Base Sizes 4 to 13",
+      "description": "Stepped Ring Stick with Base Sizes 4 to 13. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0064",
+      "image": "assets/products/rit-0064-stepped-ring-stick-without-base-sizes-4-to-13.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Stepped Ring Stick without Base Sizes 4 to 13",
+      "description": "Stepped Ring Stick without Base Sizes 4 to 13. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0065",
+      "image": "assets/products/rit-0065-ring-stick-sizes-1-to-33.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ring Stick Sizes 1 to 33",
+      "description": "Ring Stick Sizes 1 to 33. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0066",
+      "image": "assets/products/rit-0066-ceramic-clamp-with-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ceramic Clamp with Base",
+      "description": "Ceramic Clamp with Base. A clamp for holding small workpieces during jewellery bench and soldering preparation. Select the listed version with or without a base and confirm the arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0067",
+      "image": "assets/products/rit-0067-ceramic-clamp.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ceramic Clamp",
+      "description": "Ceramic Clamp. A clamp for holding small workpieces during jewellery bench and soldering preparation. Select the listed version with or without a base and confirm the arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0068",
+      "image": "assets/products/rit-0068-torch-stand-with-six-hole-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Torch Stand with Six Hole Base",
+      "description": "Torch Stand with Six Hole Base. A bench stand for supporting a compatible torch in a workshop setup. Confirm the holder arrangement and suitability for your equipment with Roshan Industries before use."
+    },
+    {
+      "sku": "RIT-0069",
+      "image": "assets/products/rit-0069-ball-joint-third-hand-with-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ball Joint Third Hand with Base",
+      "description": "Ball Joint Third Hand with Base. An additional workpiece support for positioning small items during jewellery bench tasks. Check the pictured joints, clamps and base arrangement with Roshan Industries before selecting the listed version."
+    },
+    {
+      "sku": "RIT-0070",
+      "image": "assets/products/rit-0070-ball-joint-third-hand-without-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ball Joint Third Hand without Base",
+      "description": "Ball Joint Third Hand without Base. An additional workpiece support for positioning small items during jewellery bench tasks. Check the pictured joints, clamps and base arrangement with Roshan Industries before selecting the listed version."
+    },
+    {
+      "sku": "RIT-0071",
+      "image": "assets/products/rit-0071-fourth-hand-with-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Fourth Hand with Base",
+      "description": "Fourth Hand with Base. An additional workpiece support for positioning small items during jewellery bench tasks. Check the pictured joints, clamps and base arrangement with Roshan Industries before selecting the listed version."
+    },
+    {
+      "sku": "RIT-0072",
+      "image": "assets/products/rit-0072-fourth-hand-without-base.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Fourth Hand without Base",
+      "description": "Fourth Hand without Base. An additional workpiece support for positioning small items during jewellery bench tasks. Check the pictured joints, clamps and base arrangement with Roshan Industries before selecting the listed version."
+    },
+    {
+      "sku": "RIT-0073",
+      "image": "assets/products/rit-0073-large-ball-joint-third-hand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Ball Joint Third Hand",
+      "description": "Large Ball Joint Third Hand. An additional workpiece support for positioning small items during jewellery bench tasks. Check the pictured joints, clamps and base arrangement with Roshan Industries before selecting the listed version."
+    },
+    {
+      "sku": "RIT-0074",
+      "image": "assets/products/rit-0074-third-hand-base.webp",
+      "status": "copy-corrected",
+      "name": "Third Hand Base",
+      "description": "Third Hand Base. A separate base for a compatible third hand support. The photograph shows the base alone, without an articulated arm or clamp. Confirm the mounting arrangement and compatibility with your existing third hand through Roshan Industries before ordering.",
+      "previousName": "Third Hand Base",
+      "previousDescription": "Third Hand Base. An additional workpiece support for positioning small items during jewellery bench tasks. Check the pictured joints, clamps and base arrangement with Roshan Industries before selecting the listed version.",
+      "reason": "The photograph is the base alone, not a complete articulated support."
+    },
+    {
+      "sku": "RIT-0075",
+      "image": "assets/products/rit-0075-multipurpose-link-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Multipurpose Link Remover",
+      "description": "Multipurpose Link Remover. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0076",
+      "image": "assets/products/rit-0076-large-link-remover-75-mm-with-three-extra-pins.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Link Remover 75 mm with Three Extra Pins",
+      "description": "Large Link Remover 75 mm with Three Extra Pins. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0077",
+      "image": "assets/products/rit-0077-adjustable-red-link-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Adjustable Red Link Remover",
+      "description": "Adjustable Red Link Remover. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0078",
+      "image": "assets/products/rit-0078-small-link-remover-25-mm-with-three-extra-pins.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Link Remover 25 mm with Three Extra Pins",
+      "description": "Small Link Remover 25 mm with Three Extra Pins. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0079",
+      "image": "assets/products/rit-0079-small-golden-link-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Golden Link Remover",
+      "description": "Small Golden Link Remover. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0080",
+      "image": "assets/products/rit-0080-horizontal-link-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Horizontal Link Remover",
+      "description": "Horizontal Link Remover. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0081",
+      "image": "assets/products/rit-0081-double-hand-link-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Hand Link Remover",
+      "description": "Double Hand Link Remover. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0217",
+      "image": "assets/products/rit-0217-plastic-link-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Link Remover",
+      "description": "Plastic Link Remover. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0082",
+      "image": "assets/products/rit-0082-red-link-remover-base-with-pins.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Red Link Remover Base with Pins",
+      "description": "Red Link Remover Base with Pins. A support block for positioning a bracelet during pin removal work. Check the photographed slots and seating arrangement with Roshan Industries to confirm compatibility with your repair setup."
+    },
+    {
+      "sku": "RIT-0089",
+      "image": "assets/products/rit-0089-red-square-plastic-pin-block.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Red Square Plastic Pin Block",
+      "description": "Red Square Plastic Pin Block. A support block for positioning a bracelet during pin removal work. Check the photographed slots and seating arrangement with Roshan Industries to confirm compatibility with your repair setup."
+    },
+    {
+      "sku": "RIT-0085",
+      "image": "assets/products/rit-0085-screw-type-pin-removal-rod-7-mm-with-three-pins.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Screw Type Pin Removal Rod 7 mm with Three Pins",
+      "description": "Screw Type Pin Removal Rod 7 mm with Three Pins. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0086",
+      "image": "assets/products/rit-0086-plain-pin-removal-rod-7-mm-with-three-pins.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plain Pin Removal Rod 7 mm with Three Pins",
+      "description": "Plain Pin Removal Rod 7 mm with Three Pins. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0087",
+      "image": "assets/products/rit-0087-replacement-pin-set-of-3.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Replacement Pin Set of 3",
+      "description": "Replacement Pin Set of 3. A replacement pin accessory for compatible bracelet link removal tools. Confirm the listed pin size and attachment arrangement with Roshan Industries against your existing equipment."
+    },
+    {
+      "sku": "RIT-0088",
+      "image": "assets/products/rit-0088-individual-replacement-pin.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Individual Replacement Pin",
+      "description": "Individual Replacement Pin. A replacement pin accessory for compatible bracelet link removal tools. Confirm the listed pin size and attachment arrangement with Roshan Industries against your existing equipment."
+    },
+    {
+      "sku": "RIT-0095",
+      "image": "assets/products/rit-0095-link-remover-replacement-pins-0-8-and-1-0-mm.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Link Remover Replacement Pins 0.8 and 1.0 mm",
+      "description": "Link Remover Replacement Pins 0.8 and 1.0 mm. A replacement pin accessory for compatible bracelet link removal tools. Confirm the listed pin size and attachment arrangement with Roshan Industries against your existing equipment."
+    },
+    {
+      "sku": "RIT-0098",
+      "image": "assets/products/rit-0098-link-remover-pins-with-spring.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Link Remover Pins with Spring",
+      "description": "Link Remover Pins with Spring. A replacement pin accessory for compatible bracelet link removal tools. Confirm the listed pin size and attachment arrangement with Roshan Industries against your existing equipment."
+    },
+    {
+      "sku": "RIT-0090",
+      "image": "assets/products/rit-0090-gb-long-rod-set-of-3.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "GB Long Rod Set of 3",
+      "description": "GB Long Rod Set of 3. A GB long rod configuration listed among the clock workshop components. Share the mechanism reference and required rod format with Roshan Industries to confirm the correct application and fit."
+    },
+    {
+      "sku": "RIT-0091",
+      "image": "assets/products/rit-0091-round-and-flat-gb-long-rods.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round and Flat GB Long Rods",
+      "description": "Round and Flat GB Long Rods. A GB long rod configuration listed among the clock workshop components. Share the mechanism reference and required rod format with Roshan Industries to confirm the correct application and fit."
+    },
+    {
+      "sku": "RIT-0092",
+      "image": "assets/products/rit-0092-double-ended-gb-long-rod.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Ended GB Long Rod",
+      "description": "Double Ended GB Long Rod. A GB long rod configuration listed among the clock workshop components. Share the mechanism reference and required rod format with Roshan Industries to confirm the correct application and fit."
+    },
+    {
+      "sku": "RIT-0093",
+      "image": "assets/products/rit-0093-flat-type-round-clock-gong.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Flat Type Round Clock Gong",
+      "description": "Flat Type Round Clock Gong. A replacement gong for a compatible clock striking mechanism. Select the pictured flat or round configuration and confirm mounting and mechanism fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0094",
+      "image": "assets/products/rit-0094-round-type-clock-gong.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Type Clock Gong",
+      "description": "Round Type Clock Gong. A replacement gong for a compatible clock striking mechanism. Select the pictured flat or round configuration and confirm mounting and mechanism fit with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0096",
+      "image": "assets/products/rit-0096-brass-clock-hook.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Hook",
+      "description": "Brass Clock Hook. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0099",
+      "image": "assets/products/rit-0099-square-delrin-block-for-pin-removal.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Square Delrin Block for Pin Removal",
+      "description": "Square Delrin Block for Pin Removal. A support block for positioning a bracelet during pin removal work. Check the photographed slots and seating arrangement with Roshan Industries to confirm compatibility with your repair setup."
+    },
+    {
+      "sku": "RIT-0100",
+      "image": "assets/products/rit-0100-ratchet-clip-set-with-six-rivets.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ratchet Clip Set with Six Rivets",
+      "description": "Ratchet Clip Set with Six Rivets. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0097",
+      "image": "assets/products/rit-0097-ms-clock-hook.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "MS Clock Hook",
+      "description": "MS Clock Hook. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0104",
+      "image": "assets/products/rit-0104-medium-ms-clock-stabilizer.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Medium MS Clock Stabilizer",
+      "description": "Medium MS Clock Stabilizer. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0105",
+      "image": "assets/products/rit-0105-large-brass-clock-stabilizer.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Large Brass Clock Stabilizer",
+      "description": "Large Brass Clock Stabilizer. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0101",
+      "image": "assets/products/rit-0101-small-ms-clock-stabilizer.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small MS Clock Stabilizer",
+      "description": "Small MS Clock Stabilizer. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0102",
+      "image": "assets/products/rit-0102-ms-clock-cover-4-5-and-5-5-inch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "MS Clock Cover 4.5 and 5.5 Inch",
+      "description": "MS Clock Cover 4.5 and 5.5 Inch. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0103",
+      "image": "assets/products/rit-0103-brass-clock-cover-4-5-and-5-5-inch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Cover 4.5 and 5.5 Inch",
+      "description": "Brass Clock Cover 4.5 and 5.5 Inch. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0107",
+      "image": "assets/products/rit-0107-diamond-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Diamond Tray",
+      "description": "Diamond Tray. A jewellery bench accessory for collecting or transferring small loose items. Confirm the photographed shape and required working arrangement with Roshan Industries for your handling task."
+    },
+    {
+      "sku": "RIT-0083",
+      "image": "assets/products/rit-0083-triangular-aluminium-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Triangular Aluminium Tray",
+      "description": "Triangular Aluminium Tray. A bench tray for keeping small parts organised during watch and jewellery work. Confirm the pictured layout and required size with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0084",
+      "image": "assets/products/rit-0084-white-plastic-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "White Plastic Tray",
+      "description": "White Plastic Tray. A bench tray for keeping small parts organised during watch and jewellery work. Confirm the pictured layout and required size with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0106",
+      "image": "assets/products/rit-0106-small-novelty-shovel.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Novelty Shovel",
+      "description": "Small Novelty Shovel. A jewellery bench accessory for collecting or transferring small loose items. Confirm the photographed shape and required working arrangement with Roshan Industries for your handling task."
+    },
+    {
+      "sku": "RIT-0108",
+      "image": "assets/products/rit-0108-shovel-with-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Shovel with Handle",
+      "description": "Shovel with Handle. A jewellery bench accessory for collecting or transferring small loose items. Confirm the photographed shape and required working arrangement with Roshan Industries for your handling task."
+    },
+    {
+      "sku": "RIT-0109",
+      "image": "assets/products/rit-0109-chrome-plated-flat-shovel.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Chrome Plated Flat Shovel",
+      "description": "Chrome Plated Flat Shovel. A jewellery bench accessory for collecting or transferring small loose items. Confirm the photographed shape and required working arrangement with Roshan Industries for your handling task."
+    },
+    {
+      "sku": "RIT-0152",
+      "image": "assets/products/rit-0152-round-aluminium-revolving-soldering-holder.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Aluminium Revolving Soldering Holder",
+      "description": "Round Aluminium Revolving Soldering Holder. A bench accessory for supporting jewellery soldering preparation and small workpieces. Confirm the listed base or holder arrangement with Roshan Industries against your workshop setup."
+    },
+    {
+      "sku": "RIT-0153",
+      "image": "assets/products/rit-0153-rectangular-aluminium-tray.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Rectangular Aluminium Tray",
+      "description": "Rectangular Aluminium Tray. A bench tray for keeping small parts organised during watch and jewellery work. Confirm the pictured layout and required size with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0154",
+      "image": "assets/products/rit-0154-solder-tray-with-delrin-base-148-by-78-mm.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Solder Tray with Delrin Base 148 by 78 mm",
+      "description": "Solder Tray with Delrin Base 148 by 78 mm. A bench accessory for supporting jewellery soldering preparation and small workpieces. Confirm the listed base or holder arrangement with Roshan Industries against your workshop setup."
+    },
+    {
+      "sku": "RIT-0218",
+      "image": "assets/products/rit-0218-swatch-case-opener.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Swatch Case Opener",
+      "description": "Swatch Case Opener. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0110",
+      "image": "assets/products/rit-0110-file-holder-with-wooden-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "File Holder with Wooden Handle",
+      "description": "File Holder with Wooden Handle. A wooden handled holder for a compatible file used in bench preparation work. Discuss the file fitting and required handle arrangement with Roshan Industries to confirm a suitable option."
+    },
+    {
+      "sku": "RIT-0111",
+      "image": "assets/products/rit-0111-case-opener-wrench-with-wooden-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Case Opener Wrench with Wooden Handle",
+      "description": "Case Opener Wrench with Wooden Handle. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0112",
+      "image": "assets/products/rit-0112-blade-cutter-with-wooden-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Blade Cutter with Wooden Handle",
+      "description": "Blade Cutter with Wooden Handle. A wooden handled cutting tool for controlled jewellery bench preparation tasks. Confirm the intended material and blade arrangement with Roshan Industries before selecting this model."
+    },
+    {
+      "sku": "RIT-0131",
+      "image": "assets/products/rit-0131-brass-crank-key-with-wooden-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Crank Key with Wooden Handle",
+      "description": "Brass Crank Key with Wooden Handle. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0134",
+      "image": "assets/products/rit-0134-double-wing-round-novelty-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Wing Round Novelty Clock Key",
+      "description": "Double Wing Round Novelty Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0133",
+      "image": "assets/products/rit-0133-single-wing-round-novelty-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Single Wing Round Novelty Clock Key",
+      "description": "Single Wing Round Novelty Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0128",
+      "image": "assets/products/rit-0128-five-in-one-pocket-nickel-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Five in One Pocket Nickel Clock Key",
+      "description": "Five in One Pocket Nickel Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0117",
+      "image": "assets/products/rit-0117-five-in-one-brass-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Five in One Brass Clock Key",
+      "description": "Five in One Brass Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0118",
+      "image": "assets/products/rit-0118-small-four-in-one-brass-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Small Four in One Brass Clock Key",
+      "description": "Small Four in One Brass Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0119",
+      "image": "assets/products/rit-0119-brass-clock-key-sizes-1-75-to-3-00.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Key Sizes 1.75 to 3.00",
+      "description": "Brass Clock Key Sizes 1.75 to 3.00. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0120",
+      "image": "assets/products/rit-0120-brass-clock-key-sizes-3-25-to-3-75.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Key Sizes 3.25 to 3.75",
+      "description": "Brass Clock Key Sizes 3.25 to 3.75. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0121",
+      "image": "assets/products/rit-0121-brass-clock-key-sizes-4-00-to-4-50.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Key Sizes 4.00 to 4.50",
+      "description": "Brass Clock Key Sizes 4.00 to 4.50. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0122",
+      "image": "assets/products/rit-0122-brass-clock-key-sizes-4-75-to-5-25.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Key Sizes 4.75 to 5.25",
+      "description": "Brass Clock Key Sizes 4.75 to 5.25. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0123",
+      "image": "assets/products/rit-0123-brass-clock-key-sizes-5-50-to-6-00.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Key Sizes 5.50 to 6.00",
+      "description": "Brass Clock Key Sizes 5.50 to 6.00. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0124",
+      "image": "assets/products/rit-0124-brass-clock-key-sizes-6-25-to-6-75.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Clock Key Sizes 6.25 to 6.75",
+      "description": "Brass Clock Key Sizes 6.25 to 6.75. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0125",
+      "image": "assets/products/rit-0125-double-ended-nickel-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Ended Nickel Clock Key",
+      "description": "Double Ended Nickel Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0126",
+      "image": "assets/products/rit-0126-single-ended-nickel-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Single Ended Nickel Clock Key",
+      "description": "Single Ended Nickel Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0116",
+      "image": "assets/products/rit-0116-three-piece-key-set-for-wooden-handle-box.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Three Piece Key Set for Wooden Handle Box",
+      "description": "Three Piece Key Set for Wooden Handle Box. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0132",
+      "image": "assets/products/rit-0132-wire-crank-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Wire Crank Clock Key",
+      "description": "Wire Crank Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0127",
+      "image": "assets/products/rit-0127-novelty-crank-clock-key.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Novelty Crank Clock Key",
+      "description": "Novelty Crank Clock Key. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0130",
+      "image": "assets/products/rit-0130-double-ended-ms-clock-key-set-of-18.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Ended MS Clock Key Set of 18",
+      "description": "Double Ended MS Clock Key Set of 18. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0129",
+      "image": "assets/products/rit-0129-double-ended-brass-clock-key-set-of-18.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Double Ended Brass Clock Key Set of 18",
+      "description": "Double Ended Brass Clock Key Set of 18. A winding key for mechanical clock servicing. Match the photographed key style and listed size range to the winding arbor, and confirm the required option with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0135",
+      "image": "assets/products/rit-0135-aluminium-knife-case-opener.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Knife Case Opener",
+      "description": "Aluminium Knife Case Opener. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0136",
+      "image": "assets/products/rit-0136-aluminium-knife-case-opener-replacement-blade.webp",
+      "status": "copy-corrected",
+      "name": "Aluminium Knife Case Opener Replacement Blade",
+      "description": "Aluminium Knife Case Opener Replacement Blade. A replacement blade for a compatible aluminium knife case opener. The photograph shows the blade on its own, without the opener handle. Compare its fixing hole and blade shape with your existing opener, and confirm compatibility with Roshan Industries.",
+      "previousName": "Aluminium Knife Case Opener Replacement Blade",
+      "previousDescription": "Aluminium Knife Case Opener Replacement Blade. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering.",
+      "reason": "The blade is an accessory, not a complete case-opening tool."
+    },
+    {
+      "sku": "RIT-0137",
+      "image": "assets/products/rit-0137-case-back-opener-set-of-4.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Case Back Opener Set of 4",
+      "description": "Case Back Opener Set of 4. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0138",
+      "image": "assets/products/rit-0138-renata-type-case-back-opener.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Renata Type Case Back Opener",
+      "description": "Renata Type Case Back Opener. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0139",
+      "image": "assets/products/rit-0139-original-model-case-back-opener.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Original Model Case Back Opener",
+      "description": "Original Model Case Back Opener. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0140",
+      "image": "assets/products/rit-0140-knife-type-case-back-opener.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Knife Type Case Back Opener",
+      "description": "Knife Type Case Back Opener. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0141",
+      "image": "assets/products/rit-0141-ms-flat-case-opener-with-screw-and-knife.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "MS Flat Case Opener with Screw and Knife",
+      "description": "MS Flat Case Opener with Screw and Knife. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0142",
+      "image": "assets/products/rit-0142-aluminium-case-holder.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Case Holder",
+      "description": "Aluminium Case Holder. A holder for supporting a watch case during servicing operations. Confirm the seating arrangement and case compatibility with Roshan Industries before ordering the photographed model."
+    },
+    {
+      "sku": "RIT-0143",
+      "image": "assets/products/rit-0143-plastic-case-holder.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Case Holder",
+      "description": "Plastic Case Holder. A holder for supporting a watch case during servicing operations. Confirm the seating arrangement and case compatibility with Roshan Industries before ordering the photographed model."
+    },
+    {
+      "sku": "RIT-0144",
+      "image": "assets/products/rit-0144-side-bar-opener.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Side Bar Opener",
+      "description": "Side Bar Opener. A tool for fitting or removing watch strap spring bars during servicing. Confirm the tip arrangement and compatibility with the watch lugs and fastening system through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0145",
+      "image": "assets/products/rit-0145-blue-side-bar-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Blue Side Bar Remover",
+      "description": "Blue Side Bar Remover. A tool for fitting or removing watch strap spring bars during servicing. Confirm the tip arrangement and compatibility with the watch lugs and fastening system through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0146",
+      "image": "assets/products/rit-0146-side-bar-and-pin-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Side Bar and Pin Remover",
+      "description": "Side Bar and Pin Remover. A tool for fitting or removing watch strap spring bars during servicing. Confirm the tip arrangement and compatibility with the watch lugs and fastening system through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0219",
+      "image": "assets/products/rit-0219-spring-bar-remover-with-measuring-scale.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Spring Bar Remover with Measuring Scale",
+      "description": "Spring Bar Remover with Measuring Scale. A tool for fitting or removing watch strap spring bars during servicing. Confirm the tip arrangement and compatibility with the watch lugs and fastening system through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0147",
+      "image": "assets/products/rit-0147-ms-side-bar-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "MS Side Bar Remover",
+      "description": "MS Side Bar Remover. A tool for fitting or removing watch strap spring bars during servicing. Confirm the tip arrangement and compatibility with the watch lugs and fastening system through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0156",
+      "image": "assets/products/rit-0156-nine-hole-screwdriver-stand-with-screwdrivers.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Nine Hole Screwdriver Stand with Screwdrivers",
+      "description": "Nine Hole Screwdriver Stand with Screwdrivers. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0157",
+      "image": "assets/products/rit-0157-revolving-screwdriver-stand-with-eight-screwdrivers.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Revolving Screwdriver Stand with Eight Screwdrivers",
+      "description": "Revolving Screwdriver Stand with Eight Screwdrivers. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0220",
+      "image": "assets/products/rit-0220-brass-revolving-screwdriver-stand-with-screwdrivers.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Revolving Screwdriver Stand with Screwdrivers",
+      "description": "Brass Revolving Screwdriver Stand with Screwdrivers. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0158",
+      "image": "assets/products/rit-0158-wooden-screwdriver-stand-with-five-screwdrivers.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Wooden Screwdriver Stand with Five Screwdrivers",
+      "description": "Wooden Screwdriver Stand with Five Screwdrivers. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0155",
+      "image": "assets/products/rit-0155-revolving-screwdriver-stand-without-tools.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Revolving Screwdriver Stand without Tools",
+      "description": "Revolving Screwdriver Stand without Tools. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0167",
+      "image": "assets/products/rit-0167-seven-hole-aluminium-screwdriver-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Seven Hole Aluminium Screwdriver Stand",
+      "description": "Seven Hole Aluminium Screwdriver Stand. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0175",
+      "image": "assets/products/rit-0175-five-hole-aluminium-screwdriver-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Five Hole Aluminium Screwdriver Stand",
+      "description": "Five Hole Aluminium Screwdriver Stand. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0159",
+      "image": "assets/products/rit-0159-nine-piece-screwdriver-set-with-stainless-steel-caps.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Nine Piece Screwdriver Set with Stainless Steel Caps",
+      "description": "Nine Piece Screwdriver Set with Stainless Steel Caps. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0160",
+      "image": "assets/products/rit-0160-nine-piece-screwdriver-set-with-aluminium-caps.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Nine Piece Screwdriver Set with Aluminium Caps",
+      "description": "Nine Piece Screwdriver Set with Aluminium Caps. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0221",
+      "image": "assets/products/rit-0221-screwdriver-set-in-wooden-box.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Screwdriver Set in Wooden Box",
+      "description": "Screwdriver Set in Wooden Box. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0161",
+      "image": "assets/products/rit-0161-phillips-crosshead-screwdriver-and-screw-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Phillips Crosshead Screwdriver and Screw Remover",
+      "description": "Phillips Crosshead Screwdriver and Screw Remover. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0162",
+      "image": "assets/products/rit-0162-slotted-head-screwdriver-and-screw-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Slotted Head Screwdriver and Screw Remover",
+      "description": "Slotted Head Screwdriver and Screw Remover. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0163",
+      "image": "assets/products/rit-0163-screwdriver-with-extra-grip.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Screwdriver with Extra Grip",
+      "description": "Screwdriver with Extra Grip. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0164",
+      "image": "assets/products/rit-0164-screwdriver-with-stainless-steel-cap.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Screwdriver with Stainless Steel Cap",
+      "description": "Screwdriver with Stainless Steel Cap. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0165",
+      "image": "assets/products/rit-0165-screwdriver-with-aluminium-cap.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Screwdriver with Aluminium Cap",
+      "description": "Screwdriver with Aluminium Cap. A bench tool for controlled screw work during watch servicing and small assembly tasks. Roshan Industries can help confirm the appropriate tip and listed configuration for your application."
+    },
+    {
+      "sku": "RIT-0166",
+      "image": "assets/products/rit-0166-screwdriver-with-four-replacement-pins.webp",
+      "status": "copy-corrected",
+      "name": "Screwdriver with Four Replacement Pins",
+      "description": "Screwdriver with Four Replacement Pins. A screwdriver handle supplied with four interchangeable replacement tips, pictured separately below the handle. The removable tips allow the working end to be selected for small screw tasks. Confirm the required tip profiles and fitting with Roshan Industries.",
+      "previousName": "Screwdriver with Four Replacement Pins",
+      "previousDescription": "Screwdriver with Four Replacement Pins. A replacement pin accessory for compatible bracelet link removal tools. Confirm the listed pin size and attachment arrangement with Roshan Industries against your existing equipment.",
+      "reason": "The general replacement-pin rule incorrectly described bracelet removal; the photo shows a screwdriver with tips."
+    },
+    {
+      "sku": "RIT-0173",
+      "image": "assets/products/rit-0173-pin-holder-7-by-75-mm.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Pin Holder 7 by 75 mm",
+      "description": "Pin Holder 7 by 75 mm. A hand tool for controlled pin handling during watch and bracelet servicing. Match the working end to the pin and assembly, and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0189",
+      "image": "assets/products/rit-0189-pin-pusher.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Pin Pusher",
+      "description": "Pin Pusher. A hand tool for controlled pin handling during watch and bracelet servicing. Match the working end to the pin and assembly, and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0194",
+      "image": "assets/products/rit-0194-hand-presser-set-of-4.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hand Presser Set of 4",
+      "description": "Hand Presser Set of 4. A fitting tool for controlled placement of watch hands during servicing and assembly. Confirm the tip arrangement and suitability for the movement with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0195",
+      "image": "assets/products/rit-0195-hand-fitting-tools.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hand Fitting Tools",
+      "description": "Hand Fitting Tools. A fitting tool for controlled placement of watch hands during servicing and assembly. Confirm the tip arrangement and suitability for the movement with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0222",
+      "image": "assets/products/rit-0222-hand-presser-set-of-6.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hand Presser Set of 6",
+      "description": "Hand Presser Set of 6. A fitting tool for controlled placement of watch hands during servicing and assembly. Confirm the tip arrangement and suitability for the movement with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0223",
+      "image": "assets/products/rit-0223-revolving-hand-press.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Revolving Hand Press",
+      "description": "Revolving Hand Press. A fitting tool for controlled placement of watch hands during servicing and assembly. Confirm the tip arrangement and suitability for the movement with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0177",
+      "image": "assets/products/rit-0177-hole-punch.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hole Punch",
+      "description": "Hole Punch. A punch for preparing holes during watch strap and workshop fitting tasks. Discuss the intended strap material and hole requirements with Roshan Industries to confirm the appropriate configuration."
+    },
+    {
+      "sku": "RIT-0178",
+      "image": "assets/products/rit-0178-rolex-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Rolex Handle",
+      "description": "Rolex Handle. A handle listed for compatible watch servicing tools in the catalogue. Confirm the intended attachment and equipment compatibility directly with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0113",
+      "image": "assets/products/rit-0113-ms-link-remover-pillar-set.webp",
+      "status": "copy-corrected",
+      "name": "MS Link Remover Pillar Set",
+      "description": "MS Link Remover Pillar Set. A pillar and attachment set for a compatible bracelet link removal tool. The photograph shows separate pillars, working attachments and fittings for matching to an existing tool. Confirm the mounting dimensions and required configuration with Roshan Industries.",
+      "previousName": "MS Link Remover Pillar Set",
+      "previousDescription": "MS Link Remover Pillar Set. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries.",
+      "reason": "Describe separate replacement or assembly components, not a complete remover."
+    },
+    {
+      "sku": "RIT-0114",
+      "image": "assets/products/rit-0114-stainless-steel-link-remover-pillar-set.webp",
+      "status": "copy-corrected",
+      "name": "Stainless Steel Link Remover Pillar Set",
+      "description": "Stainless Steel Link Remover Pillar Set. A pillar and attachment set for a compatible bracelet link removal tool. The photograph shows separate pillars, working attachments and fittings for matching to an existing tool. Confirm the mounting dimensions and required configuration with Roshan Industries.",
+      "previousName": "Stainless Steel Link Remover Pillar Set",
+      "previousDescription": "Stainless Steel Link Remover Pillar Set. A tool for removing bracelet link pins during watch strap adjustment. Match the pictured operating arrangement and listed accessories to the bracelet, and confirm suitability with Roshan Industries.",
+      "reason": "Describe separate replacement or assembly components, not a complete remover."
+    },
+    {
+      "sku": "RIT-0179",
+      "image": "assets/products/rit-0179-silicone-casing-cushion.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Silicone Casing Cushion",
+      "description": "Silicone Casing Cushion. A cushioning accessory for supporting a watch case during bench assembly and servicing. Discuss the pictured cushion arrangement and fit requirements with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0224",
+      "image": "assets/products/rit-0224-silicone-cushions.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Silicone Cushions",
+      "description": "Silicone Cushions. A cushioning accessory for supporting a watch case during bench assembly and servicing. Discuss the pictured cushion arrangement and fit requirements with Roshan Industries for your workshop setup."
+    },
+    {
+      "sku": "RIT-0174",
+      "image": "assets/products/rit-0174-blue-aluminium-base.webp",
+      "status": "copy-corrected",
+      "name": "Blue Aluminium Base",
+      "description": "Blue Aluminium Base. A blue aluminium bench base with drilled positions for arranging small tool attachments. The photograph shows a compact rectangular base with attachments standing upright. Confirm the required hole layout, tool fit and supply configuration with Roshan Industries.",
+      "previousName": "Blue Aluminium Base",
+      "previousDescription": "Blue Aluminium Base. A bench holder or stand for supporting parts and organising tools during workshop tasks. Confirm the listed configuration and fit for your equipment with Roshan Industries.",
+      "reason": "Replace a generic holder description with the visible drilled base arrangement."
+    },
+    {
+      "sku": "RIT-0176",
+      "image": "assets/products/rit-0176-watch-strap-holder.webp",
+      "status": "copy-corrected",
+      "name": "Watch Strap Holder",
+      "description": "Watch Strap Holder. A bench holder for positioning a watch strap during servicing. The photograph shows a flat blue base with two upright bent supports and a central round support. Confirm strap dimensions and the required working arrangement with Roshan Industries.",
+      "previousName": "Watch Strap Holder",
+      "previousDescription": "Watch Strap Holder. A workshop tool for bracelet and strap servicing. Share the fastening arrangement and part dimensions with Roshan Industries to confirm the right configuration for your repair work.",
+      "reason": "Describe the photographed support arrangement instead of an unspecified servicing tool."
+    },
+    {
+      "sku": "RIT-0225",
+      "image": "assets/products/rit-0225-aluminium-movement-holder.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Movement Holder",
+      "description": "Aluminium Movement Holder. A holder for supporting a watch movement during inspection and servicing. Match the listed holder style to the movement you work with and confirm fit through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0150",
+      "image": "assets/products/rit-0150-cell-testing-tweezer-1-5-v.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Cell Testing Tweezer 1.5 V",
+      "description": "Cell Testing Tweezer 1.5 V. A battery testing tool for watch servicing and bench checks. Confirm the supported cell format and any listed voltage range with Roshan Industries before selecting this model."
+    },
+    {
+      "sku": "RIT-0151",
+      "image": "assets/products/rit-0151-cell-testing-tweezer-1-5-to-3-v.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Cell Testing Tweezer 1.5 to 3 V",
+      "description": "Cell Testing Tweezer 1.5 to 3 V. A battery testing tool for watch servicing and bench checks. Confirm the supported cell format and any listed voltage range with Roshan Industries before selecting this model."
+    },
+    {
+      "sku": "RIT-0168",
+      "image": "assets/products/rit-0168-acid-bottle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Acid Bottle",
+      "description": "Acid Bottle. A bottle for a suitable jewellery bench liquid handling setup. Confirm the intended contents and material compatibility with Roshan Industries before filling or using the pictured bottle."
+    },
+    {
+      "sku": "RIT-0148",
+      "image": "assets/products/rit-0148-rubber-case-back-opener-with-wooden-handle.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Rubber Case Back Opener with Wooden Handle",
+      "description": "Rubber Case Back Opener with Wooden Handle. A servicing tool for working with watch case backs. Discuss the case construction and opening method with Roshan Industries to confirm compatibility before ordering."
+    },
+    {
+      "sku": "RIT-0149",
+      "image": "assets/products/rit-0149-ba-spanner-set-of-6.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "BA Spanner Set of 6",
+      "description": "BA Spanner Set of 6. A spanner set for compatible small fasteners used in bench maintenance work. Confirm the listed set arrangement and required fastener sizes with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0170",
+      "image": "assets/products/rit-0170-original-model-glass-fitting-machine.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Original Model Glass Fitting Machine",
+      "description": "Original Model Glass Fitting Machine. A fitting machine or base for controlled watch glass assembly and servicing. Confirm the listed model and base compatibility with Roshan Industries against your watch and workshop equipment."
+    },
+    {
+      "sku": "RIT-0169",
+      "image": "assets/products/rit-0169-glass-fitting-machine-model-a.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Glass Fitting Machine Model A",
+      "description": "Glass Fitting Machine Model A. A fitting machine or base for controlled watch glass assembly and servicing. Confirm the listed model and base compatibility with Roshan Industries against your watch and workshop equipment."
+    },
+    {
+      "sku": "RIT-0226",
+      "image": "assets/products/rit-0226-glass-fitting-machine-model-b.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Glass Fitting Machine Model B",
+      "description": "Glass Fitting Machine Model B. A fitting machine or base for controlled watch glass assembly and servicing. Confirm the listed model and base compatibility with Roshan Industries against your watch and workshop equipment."
+    },
+    {
+      "sku": "RIT-0171",
+      "image": "assets/products/rit-0171-round-and-square-delrin-fitting-bases.webp",
+      "status": "copy-corrected",
+      "name": "Round and Square Delrin Fitting Bases",
+      "description": "Round and Square Delrin Fitting Bases. Separate round and square fitting bases for a compatible watch glass fitting press. The photograph shows the bases and attachments without a press frame. Confirm the required sizes, mounting arrangement and press compatibility with Roshan Industries.",
+      "previousName": "Round and Square Delrin Fitting Bases",
+      "previousDescription": "Round and Square Delrin Fitting Bases. A fitting machine or base for controlled watch glass assembly and servicing. Confirm the listed model and base compatibility with Roshan Industries against your watch and workshop equipment.",
+      "reason": "Describe fitting bases only, rather than a machine."
+    },
+    {
+      "sku": "RIT-0115",
+      "image": "assets/products/rit-0115-delrin-belt-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Delrin Belt Remover",
+      "description": "Delrin Belt Remover. A workshop tool for bracelet and strap servicing. Share the fastening arrangement and part dimensions with Roshan Industries to confirm the right configuration for your repair work."
+    },
+    {
+      "sku": "RIT-0172",
+      "image": "assets/products/rit-0172-square-delrin-base-set-of-6.webp",
+      "status": "copy-corrected",
+      "name": "Square Delrin Base Set of 6",
+      "description": "Square Delrin Base Set of 6. A set of six square fitting bases for a compatible watch glass fitting press. The photograph shows individual bases with central mounting points. Confirm the required base sizes, attachment arrangement and press compatibility with Roshan Industries.",
+      "previousName": "Square Delrin Base Set of 6",
+      "previousDescription": "Square Delrin Base Set of 6. A fitting machine or base for controlled watch glass assembly and servicing. Confirm the listed model and base compatibility with Roshan Industries against your watch and workshop equipment.",
+      "reason": "Describe the six photographed bases without implying a complete press."
+    },
+    {
+      "sku": "RIT-0182",
+      "image": "assets/products/rit-0182-bopp-wire.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bopp Wire",
+      "description": "Bopp Wire. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0183",
+      "image": "assets/products/rit-0183-aluminium-screwdriver-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Screwdriver Stand",
+      "description": "Aluminium Screwdriver Stand. A screwdriver stand for organising tools at the watchmaking bench. Check whether the listed configuration includes screwdrivers or the stand alone, and confirm the required arrangement with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0184",
+      "image": "assets/products/rit-0184-lid-cover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Lid Cover",
+      "description": "Lid Cover. A cover for protecting small parts from dust between workshop operations. Discuss the required clearance and bench arrangement with Roshan Industries to confirm the pictured cover is suitable."
+    },
+    {
+      "sku": "RIT-0185",
+      "image": "assets/products/rit-0185-ms-hook.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "MS Hook",
+      "description": "MS Hook. A clock component for maintenance or assembly of a compatible mechanism. Compare the photographed shape with your existing part and discuss fit and mounting requirements with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0186",
+      "image": "assets/products/rit-0186-ring-clamp.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ring Clamp",
+      "description": "Ring Clamp. A clamp for supporting rings during jewellery preparation and finishing work. Confirm the gripping arrangement and suitability for your workpieces with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0190",
+      "image": "assets/products/rit-0190-finger-gauge.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Finger Gauge",
+      "description": "Finger Gauge. A jewellery sizing tool for comparing ring or bangle dimensions. Check the pictured scale against your sizing system and confirm the required variant with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0187",
+      "image": "assets/products/rit-0187-cell-tester.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Cell Tester",
+      "description": "Cell Tester. A battery testing tool for watch servicing and bench checks. Confirm the supported cell format and any listed voltage range with Roshan Industries before selecting this model."
+    },
+    {
+      "sku": "RIT-0188",
+      "image": "assets/products/rit-0188-tweezer-holder.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Tweezer Holder",
+      "description": "Tweezer Holder. A holder for positioning compatible tweezers in a bench setup. Confirm the photographed attachment and support arrangement with Roshan Industries to match your workshop task."
+    },
+    {
+      "sku": "RIT-0191",
+      "image": "assets/products/rit-0191-plastic-side-bar-remover.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Side Bar Remover",
+      "description": "Plastic Side Bar Remover. A tool for fitting or removing watch strap spring bars during servicing. Confirm the tip arrangement and compatibility with the watch lugs and fastening system through Roshan Industries."
+    },
+    {
+      "sku": "RIT-0180",
+      "image": "assets/products/rit-0180-dark-coiled-mainspring.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Dark Coiled Mainspring",
+      "description": "Dark Coiled Mainspring. A coiled spring for a compatible clock mechanism. Match the photographed form to your existing assembly and confirm fit and winding requirements with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0181",
+      "image": "assets/products/rit-0181-bronze-tone-coiled-mainspring.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bronze Tone Coiled Mainspring",
+      "description": "Bronze Tone Coiled Mainspring. A coiled spring for a compatible clock mechanism. Match the photographed form to your existing assembly and confirm fit and winding requirements with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0227",
+      "image": "assets/products/rit-0227-watch-strap-and-lug-measuring-tool.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Watch Strap and Lug Measuring Tool",
+      "description": "Watch Strap and Lug Measuring Tool. A measuring reference for comparing watch strap and lug widths during replacement work. Confirm the marked range and required fitting application with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0018",
+      "image": "assets/cleaned-products/rit-0018-auxiliary-eye-glass-lens-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Auxiliary Eye Glass Lens",
+      "description": "Auxiliary Eye Glass Lens. An auxiliary lens for use with a compatible eye glass during close component inspection. Roshan Industries can confirm lens suitability for your existing magnifier and the intended workshop task."
+    },
+    {
+      "sku": "RIT-0228",
+      "image": "assets/products/rit-0228-brass-pin-pusher.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Brass Pin Pusher",
+      "description": "Brass Pin Pusher. A hand tool for controlled pin handling during watch and bracelet servicing. Match the working end to the pin and assembly, and confirm the listed configuration with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0199",
+      "image": "assets/products/rit-0199-teardrop-qibla-compass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Teardrop Qibla Compass",
+      "description": "Teardrop Qibla Compass. A directional compass pictured in the Roshan Industries catalogue. Its dial layout and body shape distinguish this model; contact our team to confirm the required format and available options."
+    },
+    {
+      "sku": "RIT-0197",
+      "image": "assets/products/rit-0197-round-hanging-qibla-compass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Hanging Qibla Compass",
+      "description": "Round Hanging Qibla Compass. A directional compass pictured in the Roshan Industries catalogue. Its dial layout and body shape distinguish this model; contact our team to confirm the required format and available options."
+    },
+    {
+      "sku": "RIT-0198",
+      "image": "assets/products/rit-0198-roshan-industries-round-hanging-compass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Roshan Industries Round Hanging Compass",
+      "description": "Roshan Industries Round Hanging Compass. A directional compass pictured in the Roshan Industries catalogue. Its dial layout and body shape distinguish this model; contact our team to confirm the required format and available options."
+    },
+    {
+      "sku": "RIT-0196",
+      "image": "assets/products/rit-0196-round-dial-qibla-compass.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Round Dial Qibla Compass",
+      "description": "Round Dial Qibla Compass. A directional compass pictured in the Roshan Industries catalogue. Its dial layout and body shape distinguish this model; contact our team to confirm the required format and available options."
+    },
+    {
+      "sku": "RIT-0229",
+      "image": "assets/products/rit-0229-angled-acrylic-drill-bit-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Angled Acrylic Drill Bit Stand",
+      "description": "An angled acrylic stand that keeps drill bits and burs organised and visible at the workbench. The inclined holder presents tools in rows for easy selection during watch repair, jewellery work and small component preparation. Contact Roshan Industries to confirm the required hole layout and tool fit."
+    },
+    {
+      "sku": "RIT-0230",
+      "image": "assets/products/rit-0230-plastic-storage-box-with-12-square-containers-and-window-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 12 Square Containers and Window Lid",
+      "description": "A plastic storage box with twelve square containers and a window lid for viewing small parts without opening the outer box. The individual containers help separate watch components, findings and other workshop items. Share your storage requirements with Roshan Industries when ordering."
+    },
+    {
+      "sku": "RIT-0231",
+      "image": "assets/cleaned-products/rit-0231-aluminium-storage-box-with-12-tins-model-4112-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 12 Tins Model 4112",
+      "description": "Model 4112 combines a hinged aluminium storage box with 12 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0232",
+      "image": "assets/products/rit-0232-boxed-aluminium-tin-set-with-6-containers-model-4a.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Boxed Aluminium Tin Set with 6 Containers Model 4A",
+      "description": "Model 4A groups 6 round aluminium tins in a presentation box for keeping watch components, jewellery findings and small workshop parts separate. Individual tins can be removed for use at the bench. Contact Roshan Industries to confirm the set configuration and quantity required."
+    },
+    {
+      "sku": "RIT-0233",
+      "image": "assets/products/rit-0233-plastic-storage-box-with-20-round-containers-and-window-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 20 Round Containers and Window Lid",
+      "description": "A plastic storage box with 20 removable round containers for separating watch parts, jewellery findings and small assembly components. The outer window lid lets you view the contents at a glance. Discuss your required quantity and storage application with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0234",
+      "image": "assets/products/rit-0234-plastic-storage-box-with-12-round-containers-and-window-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 12 Round Containers and Window Lid",
+      "description": "A plastic storage box with 12 removable round containers for separating watch parts, jewellery findings and small assembly components. The outer window lid lets you view the contents at a glance. Discuss your required quantity and storage application with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0235",
+      "image": "assets/cleaned-products/rit-0235-aluminium-storage-box-with-24-tins-model-2624-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 24 Tins Model 2624",
+      "description": "Model 2624 combines a hinged aluminium storage box with 24 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0236",
+      "image": "assets/products/rit-0236-plastic-storage-box-with-20-round-containers-and-plain-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 20 Round Containers and Plain Lid",
+      "description": "A plastic storage box with 20 removable round containers for separating watch parts, jewellery findings and small assembly components. The plain hinged outer lid closes over the individual containers between jobs. Discuss your required quantity and storage application with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0237",
+      "image": "assets/cleaned-products/rit-0237-ivory-plastic-storage-tray-with-9-round-containers-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ivory Plastic Storage Tray with 9 Round Containers",
+      "description": "An ivory plastic storage tray with 9 round containers and a transparent outer cover. The compartment layout helps keep small watch parts, jewellery findings and repair items grouped and visible on the workbench. Contact Roshan Industries to confirm the required tray configuration and quantity."
+    },
+    {
+      "sku": "RIT-0238",
+      "image": "assets/products/rit-0238-aluminium-storage-box-with-15-tins-model-4715.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 15 Tins Model 4715",
+      "description": "Model 4715 combines a hinged aluminium storage box with 15 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0239",
+      "image": "assets/cleaned-products/rit-0239-aluminium-storage-box-with-20-tins-model-3320.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 20 Tins Model 3320",
+      "description": "Model 3320 combines a hinged aluminium storage box with 20 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0240",
+      "image": "assets/products/rit-0240-plastic-storage-box-with-6-rectangular-containers-and-window-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 6 Rectangular Containers and Window Lid",
+      "description": "A plastic storage box with 6 removable rectangular containers for separating watch parts, jewellery findings and small assembly components. The outer window lid lets you view the contents at a glance. Discuss your required quantity and storage application with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0241",
+      "image": "assets/products/rit-0241-aluminium-storage-box-with-12-tins-model-3312.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 12 Tins Model 3312",
+      "description": "Model 3312 combines a hinged aluminium storage box with 12 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0242",
+      "image": "assets/products/rit-0242-plastic-storage-box-with-12-round-containers-and-plain-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 12 Round Containers and Plain Lid",
+      "description": "A plastic storage box with 12 removable round containers for separating watch parts, jewellery findings and small assembly components. The plain hinged outer lid closes over the individual containers between jobs. Discuss your required quantity and storage application with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0243",
+      "image": "assets/cleaned-products/rit-0243-ivory-plastic-storage-tray-with-15-round-containers-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ivory Plastic Storage Tray with 15 Round Containers",
+      "description": "An ivory plastic storage tray with 15 round containers and a transparent outer cover. The compartment layout helps keep small watch parts, jewellery findings and repair items grouped and visible on the workbench. Contact Roshan Industries to confirm the required tray configuration and quantity."
+    },
+    {
+      "sku": "RIT-0244",
+      "image": "assets/cleaned-products/rit-0244-ivory-plastic-storage-tray-with-6-round-containers-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ivory Plastic Storage Tray with 6 Round Containers",
+      "description": "An ivory plastic storage tray with 6 round containers and a transparent outer cover. The compartment layout helps keep small watch parts, jewellery findings and repair items grouped and visible on the workbench. Contact Roshan Industries to confirm the required tray configuration and quantity."
+    },
+    {
+      "sku": "RIT-0245",
+      "image": "assets/products/rit-0245-aluminium-storage-box-with-6-tins-model-7506.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 6 Tins Model 7506",
+      "description": "Model 7506 combines a hinged aluminium storage box with 6 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0246",
+      "image": "assets/products/rit-0246-aluminium-storage-box-with-12-tins-model-5312.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 12 Tins Model 5312",
+      "description": "Model 5312 combines a hinged aluminium storage box with 12 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0247",
+      "image": "assets/products/rit-0247-boxed-aluminium-tin-set-with-12-containers-model-5324.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Boxed Aluminium Tin Set with 12 Containers Model 5324",
+      "description": "Model 5324 groups 12 round aluminium tins in a presentation box for keeping watch components, jewellery findings and small workshop parts separate. Individual tins can be removed for use at the bench. Contact Roshan Industries to confirm the set configuration and quantity required."
+    },
+    {
+      "sku": "RIT-0248",
+      "image": "assets/products/rit-0248-boxed-aluminium-tin-set-with-6-containers-model-63.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Boxed Aluminium Tin Set with 6 Containers Model 63",
+      "description": "Model 63 groups 6 round aluminium tins in a presentation box for keeping watch components, jewellery findings and small workshop parts separate. Individual tins can be removed for use at the bench. Contact Roshan Industries to confirm the set configuration and quantity required."
+    },
+    {
+      "sku": "RIT-0249",
+      "image": "assets/products/rit-0249-aluminium-storage-box-with-15-tins-model-3715.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Box with 15 Tins Model 3715",
+      "description": "Model 3715 combines a hinged aluminium storage box with 15 removable round tins. The separate tins help organise watch components, jewellery findings and small workshop parts while keeping them together in one case. Contact Roshan Industries to confirm the required quantity and application."
+    },
+    {
+      "sku": "RIT-0250",
+      "image": "assets/products/rit-0250-plastic-storage-box-with-6-rectangular-containers-and-plain-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Plastic Storage Box with 6 Rectangular Containers and Plain Lid",
+      "description": "A plastic storage box with 6 removable rectangular containers for separating watch parts, jewellery findings and small assembly components. The plain hinged outer lid closes over the individual containers between jobs. Discuss your required quantity and storage application with Roshan Industries."
+    },
+    {
+      "sku": "RIT-0251",
+      "image": "assets/products/rit-0251-aluminium-storage-tin-150-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 150 ml with Screw Lid",
+      "description": "A 150 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0252",
+      "image": "assets/cleaned-products/rit-0252-aluminium-storage-tin-100-ml-with-screw-lid-annotations-cleaned.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 100 ml with Screw Lid",
+      "description": "A 100 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0253",
+      "image": "assets/cleaned-products/rit-0253-aluminium-storage-tin-120-ml-with-push-fit-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 120 ml with Push Fit Lid",
+      "description": "A 120 ml round aluminium tin with a push fit lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0254",
+      "image": "assets/cleaned-products/rit-0254-aluminium-storage-tin-20-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 20 ml with Screw Lid",
+      "description": "A 20 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0255",
+      "image": "assets/products/rit-0255-aluminium-storage-tin-15-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 15 ml with Screw Lid",
+      "description": "A 15 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0256",
+      "image": "assets/products/rit-0256-aluminium-storage-tin-5-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 5 ml with Screw Lid",
+      "description": "A 5 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0257",
+      "image": "assets/products/rit-0257-aluminium-storage-tin-30-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 30 ml with Screw Lid",
+      "description": "A 30 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0258",
+      "image": "assets/products/rit-0258-aluminium-storage-tin-10-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 10 ml with Screw Lid",
+      "description": "A 10 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0259",
+      "image": "assets/products/rit-0259-aluminium-storage-tin-60-ml-with-screw-lid.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Aluminium Storage Tin 60 ml with Screw Lid",
+      "description": "A 60 ml round aluminium tin with a screw lid for keeping small workshop items together. The removable lid provides access to watch parts, jewellery findings or other loose components during sorting and repair work. Contact Roshan Industries to confirm suitability for your intended contents and order quantity."
+    },
+    {
+      "sku": "RIT-0260",
+      "image": "assets/products/rit-0260-clear-acrylic-pen-display-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Clear Acrylic Pen Display Stand",
+      "description": "A clear acrylic pen stand with an upright notched support and a drilled base for organising writing instruments. The transparent construction keeps the display visually light while separating individual pens on a desk or counter. Contact Roshan Industries to discuss your required layout and quantity."
+    },
+    {
+      "sku": "RIT-0261",
+      "image": "assets/products/rit-0261-acrylic-pipette-holder-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Acrylic Pipette Holder Stand",
+      "description": "An acrylic pipette holder with open support slots arranged along two levels. The rack provides a designated place to organise pipettes upright between tasks and helps keep the bench clear. Contact Roshan Industries to confirm pipette fit, the required configuration and order quantity."
+    },
+    {
+      "sku": "RIT-0262",
+      "image": "assets/products/rit-0262-drilled-acrylic-tool-block.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Drilled Acrylic Tool Block",
+      "description": "A clear acrylic block with a grid of drilled openings for arranging small tools or components in separate positions. The compact rectangular format can support orderly bench storage and visual sorting. Share your tool dimensions and required hole layout with Roshan Industries before ordering."
+    },
+    {
+      "sku": "RIT-0263",
+      "image": "assets/products/rit-0263-dual-post-acrylic-pen-display-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Dual Post Acrylic Pen Display Stand",
+      "description": "A clear acrylic pen display stand with two supporting posts, a notched upper rail and a drilled base. The raised rail separates writing instruments while keeping them visible for selection on a desk or display counter. Contact Roshan Industries to confirm the required layout, fit and quantity."
+    },
+    {
+      "sku": "RIT-0264",
+      "image": "assets/products/rit-0264-curved-clear-plastic-pen-display-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Curved Clear Plastic Pen Display Stand",
+      "description": "A clear plastic pen stand with a curved upper rail and matching base for presenting writing instruments in individual positions. The open design keeps pens visible and accessible on a desk or display counter. Contact Roshan Industries to confirm the required configuration and order quantity."
+    },
+    {
+      "sku": "RIT-0265",
+      "image": "assets/products/rit-0265-compact-two-level-acrylic-pen-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Compact Two Level Acrylic Pen Stand",
+      "description": "A compact clear acrylic pen stand with two notched support levels for separating and presenting writing instruments. The open rack keeps individual pens visible and accessible on a desk or display counter. Contact Roshan Industries to confirm the required pen fit, layout and order quantity."
+    },
+    {
+      "sku": "RIT-0266",
+      "image": "assets/products/rit-0266-six-position-acrylic-pen-display-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Six Position Acrylic Pen Display Stand",
+      "description": "A clear acrylic pen display stand with six upper support slots and corresponding openings in the base. The angled support presents writing instruments in separate positions for desk organisation or counter display. Contact Roshan Industries to confirm pen compatibility and the quantity required."
+    },
+    {
+      "sku": "RIT-0267",
+      "image": "assets/products/rit-0267-clear-acrylic-earring-display-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Clear Acrylic Earring Display Stand",
+      "description": "A clear acrylic earring display stand with a perforated panel and a bent base for countertop presentation. The open hole layout helps arrange studs and suitable hanging earrings while keeping each item visible for selection. Contact Roshan Industries to confirm the required hole layout, display size and quantity."
+    },
+    {
+      "sku": "RIT-0268",
+      "image": "assets/products/rit-0268-six-position-acrylic-scissors-stand.webp",
+      "status": "no-clear-visual-mismatch",
+      "name": "Six Position Acrylic Scissors Stand",
+      "description": "A clear acrylic scissors stand with six openings in the raised support for arranging suitable scissors and shears in individual positions. The bent profile provides a freestanding format for bench organisation or countertop display. Contact Roshan Industries to confirm scissors fit, the required configuration and order quantity."
+    },
+    {
+      "sku": "RIT-0269",
+      "image": "assets/products/rit-0269-watch-case-opening-tool-with-adjustable-pressing-wheel.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Watch Case Opening Tool with Adjustable Pressing Wheel",
+      "description": "A bench mounted tool for opening suitable watch cases using an adjustable pressing wheel and interchangeable opening tips. The pictured arrangement includes a case support, a screw adjustment handle and spare tips stored in the base. Contact Roshan Industries to confirm case compatibility, the required tip configuration and order quantity."
+    },
+    {
+      "sku": "RIT-0272",
+      "image": "assets/products/rit-0272-banjo-bolt.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Banjo Bolt",
+      "description": "Banjo Bolt. A drilled bolt used in suitable banjo connections for routing hydraulic fluid. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0273",
+      "image": "assets/products/rit-0273-hydraulic-valve-spindle.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hydraulic Valve Spindle",
+      "description": "Hydraulic Valve Spindle. A machined spindle for the actuation or adjustment of a compatible hydraulic valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0274",
+      "image": "assets/products/rit-0274-hydraulic-plug.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hydraulic Plug",
+      "description": "Hydraulic Plug. A plug for closing a compatible hydraulic port or passage. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0275",
+      "image": "assets/products/rit-0275-hydraulic-connector.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hydraulic Connector",
+      "description": "Hydraulic Connector. A connector for joining compatible hydraulic pipes, tubes or assemblies. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0276",
+      "image": "assets/products/rit-0276-crimped-nut-nipple.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Crimped Nut Nipple",
+      "description": "Crimped Nut Nipple. A nut and nipple component for a compatible crimped hose connection. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0277",
+      "image": "assets/products/rit-0277-hose-fitting-nipple.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hose Fitting Nipple",
+      "description": "Hose Fitting Nipple. A nipple component for connecting a suitable hose to its mating assembly. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0278",
+      "image": "assets/products/rit-0278-hose-fitting-nut.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hose Fitting Nut",
+      "description": "Hose Fitting Nut. A machined nut for securing the mating components of a compatible hose fitting. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0279",
+      "image": "assets/products/rit-0279-hose-fitting-stem.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hose Fitting Stem",
+      "description": "Hose Fitting Stem. A stem component for a compatible hose fitting assembly. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0280",
+      "image": "assets/products/rit-0280-grooved-pipe.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Grooved Pipe",
+      "description": "Grooved Pipe. A pipe component with a grooved connection profile for a compatible coupling. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0281",
+      "image": "assets/products/rit-0281-hose-fitting-ferrule.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Hose Fitting Ferrule",
+      "description": "Hose Fitting Ferrule. A ferrule component for securing a suitable hose in its specified fitting assembly. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0282",
+      "image": "assets/products/rit-0282-customized-fasteners.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Customized Fasteners",
+      "description": "Customized Fasteners. Custom fasteners developed to customer drawings, samples or technical specifications. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0283",
+      "image": "assets/products/rit-0283-sensor-body.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Sensor Body",
+      "description": "Sensor Body. A machined body designed to house and support the internal elements of a compatible sensor. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0284",
+      "image": "assets/products/rit-0284-tube-fittings.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Male Connector",
+      "description": "Male Connector. A male connector for joining compatible tubing to a mating threaded connection. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0285",
+      "image": "assets/products/rit-0285-instrumentation-check-valve.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Instrumentation Check Valve",
+      "description": "Instrumentation Check Valve. A valve type used to permit flow in one direction and prevent reverse flow in a compatible system. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0286",
+      "image": "assets/products/rit-0286-instrumentation-ball-valve.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Instrumentation Ball Valve",
+      "description": "Instrumentation Ball Valve. A valve type using a ball closure for isolating fluid flow in a compatible instrumentation system. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0287",
+      "image": "assets/products/rit-0287-instrumentation-needle-valve.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Instrumentation Needle Valve",
+      "description": "Instrumentation Needle Valve. A valve type used for fine flow adjustment in a compatible instrumentation system. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0288",
+      "image": "assets/products/rit-0288-customized-fittings.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Customized Fittings",
+      "description": "Customized Fittings. Custom connection fittings developed to customer drawings and application requirements. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0289",
+      "image": "assets/products/rit-0289-check-valve-housing.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Check Valve Housing",
+      "description": "Check Valve Housing. A machined housing for supporting and enclosing the internal components of a compatible check valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0290",
+      "image": "assets/products/rit-0290-check-valve-body.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Check Valve Body",
+      "description": "Check Valve Body. A machined valve body containing the connection ports and passages of a compatible check valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0291",
+      "image": "assets/products/rit-0291-ball-valve-housing.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Ball Valve Housing",
+      "description": "Ball Valve Housing. A machined housing for the closure and sealing components of a compatible ball valve. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0292",
+      "image": "assets/products/rit-0292-2-valve-instrumentation-manifold.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "2 Valve Instrumentation Manifold",
+      "description": "2 Valve Instrumentation Manifold. A two-valve manifold arrangement for isolating and servicing a compatible measurement instrument. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0293",
+      "image": "assets/products/rit-0293-3-valve-instrumentation-manifold.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "3 Valve Instrumentation Manifold",
+      "description": "3 Valve Instrumentation Manifold. A three-valve manifold arrangement for compatible differential pressure instrumentation. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0294",
+      "image": "assets/products/rit-0294-5-valve-instrumentation-manifold.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "5 Valve Instrumentation Manifold",
+      "description": "5 Valve Instrumentation Manifold. A five-valve manifold arrangement for compatible differential pressure measurement and servicing. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0295",
+      "image": "assets/products/rit-0295-oil-and-gas-machined-components.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Oil and Gas Machined Components",
+      "description": "Oil and Gas Machined Components. Custom machined components for oil and gas equipment, developed to the application drawing and material requirements. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review the required machining operations and quotation."
+    },
+    {
+      "sku": "RIT-0296",
+      "image": "assets/products/rit-0296-pressure-gauge-accessories.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Gauge Saver",
+      "description": "Gauge Saver. An accessory for protecting a compatible pressure gauge from pressure exceeding the specified instrument limit. Share your drawing or sample, material requirements and order quantity so Roshan Industries can review compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0297",
+      "image": "assets/products/rit-0297-reducer.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Reducer",
+      "description": "Reducer. A reducing fitting for connecting compatible lines of different sizes. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0298",
+      "image": "assets/products/rit-0298-female-run-tee.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Female Run Tee",
+      "description": "Female Run Tee. A tee fitting with a female threaded connection on the run of the fitting. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0299",
+      "image": "assets/products/rit-0299-female-branch-tee.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Female Branch Tee",
+      "description": "Female Branch Tee. A tee fitting with a female threaded branch connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0300",
+      "image": "assets/products/rit-0300-male-branch-tee.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Male Branch Tee",
+      "description": "Male Branch Tee. A tee fitting with a male threaded branch connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0301",
+      "image": "assets/products/rit-0301-male-run-tee.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Male Run Tee",
+      "description": "Male Run Tee. A tee fitting with a male threaded connection on the run of the fitting. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0302",
+      "image": "assets/products/rit-0302-reducing-union-tee.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Reducing Union Tee",
+      "description": "Reducing Union Tee. A tee fitting for joining compatible tubing with different connection sizes. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0303",
+      "image": "assets/products/rit-0303-union-tee.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Union Tee",
+      "description": "Union Tee. A tee fitting for joining three compatible tube connections. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0304",
+      "image": "assets/products/rit-0304-union-cross.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Union Cross",
+      "description": "Union Cross. A cross fitting for joining four compatible tube connections. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0305",
+      "image": "assets/products/rit-0305-female-adapter.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Female Adapter",
+      "description": "Female Adapter. An adapter for joining a compatible tube fitting to a female threaded connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0306",
+      "image": "assets/products/rit-0306-male-adapter.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Male Adapter",
+      "description": "Male Adapter. An adapter for joining a compatible tube fitting to a male threaded connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0307",
+      "image": "assets/products/rit-0307-female-elbow.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Female Elbow",
+      "description": "Female Elbow. An elbow fitting with a female threaded connection for changing the direction of a compatible line. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0308",
+      "image": "assets/products/rit-0308-male-elbow.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Male Elbow",
+      "description": "Male Elbow. An elbow fitting with a male threaded connection for changing the direction of a compatible line. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0309",
+      "image": "assets/products/rit-0309-union-elbow.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Union Elbow",
+      "description": "Union Elbow. An elbow fitting for joining compatible tubing at a change of direction. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0310",
+      "image": "assets/products/rit-0310-bulkhead-reducer-union.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bulkhead Reducer Union",
+      "description": "Bulkhead Reducer Union. A reducing union for joining different compatible tube sizes through a panel or bulkhead. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0311",
+      "image": "assets/products/rit-0311-bulkhead-union.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bulkhead Union",
+      "description": "Bulkhead Union. A union for joining compatible tubing through a panel or bulkhead. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0312",
+      "image": "assets/products/rit-0312-bulkhead-female-connector.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bulkhead Female Connector",
+      "description": "Bulkhead Female Connector. A female connector for a compatible panel or bulkhead tube connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0313",
+      "image": "assets/products/rit-0313-bulkhead-male-connector.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Bulkhead Male Connector",
+      "description": "Bulkhead Male Connector. A male connector for a compatible panel or bulkhead tube connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0314",
+      "image": "assets/products/rit-0314-reducing-union.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Reducing Union",
+      "description": "Reducing Union. A reducing union for joining two compatible tube sizes. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0315",
+      "image": "assets/products/rit-0315-union.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Union",
+      "description": "Union. A union fitting for joining compatible tubing. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0316",
+      "image": "assets/products/rit-0316-female-connector.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Female Connector",
+      "description": "Female Connector. A female connector for joining compatible tubing to a mating threaded connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0317",
+      "image": "assets/products/rit-0317-tube-fitting-nut.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Tube Fitting Nut",
+      "description": "Tube Fitting Nut. A nut for securing the mating components of a compatible instrumentation tube fitting. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0318",
+      "image": "assets/products/rit-0318-back-ferrule.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Back Ferrule",
+      "description": "Back Ferrule. A back ferrule component for a compatible tube fitting assembly. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0319",
+      "image": "assets/products/rit-0319-front-ferrule.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Front Ferrule",
+      "description": "Front Ferrule. A front ferrule component for a compatible tube fitting assembly. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0320",
+      "image": "assets/products/rit-0320-3-piece-union-nipple.jpeg",
+      "status": "no-clear-visual-mismatch",
+      "name": "3 Piece Union Nipple",
+      "description": "3 Piece Union Nipple. A nipple component for a compatible three piece union assembly. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0321",
+      "image": "assets/products/rit-0321-3-piece-union.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "3 Piece Union",
+      "description": "3 Piece Union. A three piece union for a compatible pressure instrument connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0322",
+      "image": "assets/products/rit-0322-syphon-tube-coupling.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Syphon Tube Coupling",
+      "description": "Syphon Tube Coupling. A coupling for a compatible pressure gauge syphon tube connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0323",
+      "image": "assets/products/rit-0323-gauge-cock.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Gauge Cock",
+      "description": "Gauge Cock. A cock for isolating a compatible pressure gauge connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0324",
+      "image": "assets/products/rit-0324-gauge-adapter.jpg",
+      "status": "no-clear-visual-mismatch",
+      "name": "Gauge Adapter",
+      "description": "Gauge Adapter. An adapter for connecting a suitable pressure gauge to a compatible instrument port. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    },
+    {
+      "sku": "RIT-0325",
+      "image": "assets/products/rit-0325-snubber.png",
+      "status": "no-clear-visual-mismatch",
+      "name": "Snubber",
+      "description": "Snubber. An accessory for moderating pressure fluctuations at a compatible pressure gauge connection. Share your drawing or sample, connection requirements, material and order quantity so Roshan Industries can review the required machining operations, compatibility and quotation."
+    }
+  ]
+}

@@ -329,12 +329,18 @@ def main():
                     text(p, "VIEW PRODUCT >", x + cw - 92, y + 158, 7, True, BLUE)
                     uri(p, (x, y, x + cw, y + 190), SITE + "/" + item["url"])
                     # Concise newly generated copy is included beneath the title.
-                    desc = item["description"].split(". ", 1)[-1]
+                    desc = item["description"]
+                    title_prefix = item["name"] + ". "
+                    if desc.startswith(title_prefix):
+                        desc = desc[len(title_prefix):]
                     # Two clean lines preserve the original compact card geometry.
                     summary = desc.split(". ", 1)[0].rstrip(".") + "."
                     font = fitz.Font("helv")
                     if font.text_length(summary, fontsize=7) > 420:
-                        summary = "Contact Roshan Industries to discuss your product requirements and quantity."
+                        words = summary.rstrip(".").split()
+                        while font.text_length(" ".join(words) + "...", fontsize=7) > 420:
+                            words.pop()
+                        summary = " ".join(words) + "..."
                     block(
                         p,
                         summary,

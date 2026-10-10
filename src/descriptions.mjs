@@ -223,6 +223,7 @@ const rules = [
 ];
 /** Prefer a specific name rule, then fall back to the reviewed category application. */
 export function describeProduct(product) {
+  if (product.description) return product.description;
   const application =
     rules.find(([pattern]) => pattern.test(product.name))?.[1] || applications[product.categoryId];
   if (!application) throw new Error('No application description for ' + product.sku);
