@@ -55,7 +55,7 @@ export function officeCard(location, index) {
 
 export function officesSection() {
   return `<section class="section container" id="offices" aria-labelledby="offices-title"><p class="eyebrow">OUR LOCATIONS</p><h2 id="offices-title">Our Offices</h2><p>Our retail office, head office and manufacturing unit, and plant. Contact our team to connect with the right location.</p></section>
-      <section class="section container company-slider office-slider" data-slider data-mobile-only data-static-slider aria-label="Roshan Industries locations"><div class="slider-track office-grid" id="slider-company-offices" tabindex="0" aria-label="Office locations; swipe or use arrow keys">
+      <section class="section container company-slider office-slider" data-slider data-mobile-only data-static-slider data-initial-slide="1" aria-label="Roshan Industries locations"><div class="slider-track office-grid" id="slider-company-offices" tabindex="0" aria-label="Office locations; swipe or use arrow keys">
         ${officeLocations.map((location, index) => officeCard(location, index)).join('')}</div><div class="slider-controls" hidden><button type="button" data-slider-prev aria-controls="slider-company-offices" aria-label="Previous office">&#8592;</button><span class="slider-position" aria-live="polite"></span><button type="button" data-slider-next aria-controls="slider-company-offices" aria-label="Next office">&#8594;</button></div>
       </section>
       <section class="section section-muted">
