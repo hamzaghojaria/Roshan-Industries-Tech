@@ -158,6 +158,7 @@ def main():
         )
 
     centered("PRODUCT CATALOGUE", (38, 165, W - 38, 190), 11, True, BLUE)
+    centered("Your ideas. Our precision.", (38, 218, W - 38, 257), 21, True)
     logo = fitz.Pixmap(ROOT / "assets/roshan-logo-new.png")
     lw = 260
     lh = lw * logo.height / logo.width
@@ -191,51 +192,47 @@ def main():
     centered("EXPLORE THE CATEGORY INDEX", (38, H - 94, W - 38, H - 65), 10, True, BLUE)
     p = doc.new_page(width=W, height=H)
     chrome(p)
-    text(p, "OUR STORY", 38, 113, 9, True, BLUE)
+    text(p, "A FAMILY BUSINESS SINCE 1900", 38, 100, 9, True, BLUE)
     block(
         p,
-        "A long-standing connection\nto the craft of time.",
-        (38, 142, W - 38, 243),
-        30,
-        bold=True,
-    )
-    block(
-        p,
-        "Serving the bench. Supporting your next idea.",
-        (38, 262, W - 38, 295),
-        14,
+        "Generations of service.\nPrecision for your next idea.",
+        (38, 122, W - 38, 205),
+        27,
         bold=True,
     )
     block(
         p,
         "Since 1900, Roshan Industries has served watchmakers, clockmakers and jewellery workshops from Mumbai. Our family business brings together watch parts, horological tools and workshop essentials, with a practical focus on helping customers find the right product for their work.",
-        (38, 310, W - 38, 415),
+        (38, 218, W - 38, 300),
         11,
         color=MUTED,
     )
-    p.draw_rect(fitz.Rect(38, 445, W - 38, 591), color=None, fill=LIGHT)
+    for left, right, label, title, copy in [
+        (38, 290, "PRODUCT RANGE", "For the workshop", "Watch and clock parts, tools, jewellery workshop essentials, trays, covers and storage. Browse by category to find what you need."),
+        (305, W - 38, "CUSTOM MANUFACTURING", "Custom CNC & VMC - All Jobs", "Share a drawing, sample or requirement. Our team can discuss the application, material, dimensions, finish and quantity."),
+    ]:
+        p.draw_rect(fitz.Rect(left, 320, right, 486), color=None, fill=LIGHT)
+        text(p, label, left + 16, 347, 8, True, BLUE)
+        block(p, title, (left + 16, 363, right - 16, 408), 15, bold=True)
+        block(p, copy, (left + 16, 418, right - 16, 476), 9.5, color=MUTED)
     block(
         p,
         "Your requirement. Our manufacturing experience.",
-        (55, 462, W - 55, 503),
-        16,
+        (38, 514, W - 38, 549),
+        15,
         bold=True,
     )
-    block(
-        p,
-        "Have a drawing, a sample or a specific requirement? Share your application, dimensions, material, finish and quantity. Our team can review the request and discuss feasibility, quotation and the next steps.",
-        (55, 514, W - 55, 581),
-        10,
-        color=MUTED,
-    )
-    block(p, "How to use this catalogue", (38, 623, W - 38, 650), 13, bold=True)
-    block(
-        p,
-        "Use the clickable family and category index to find products. Each listing includes a stable SKU and a link to its website page. Quote the SKU when enquiring. Pricing, exact specifications and availability are confirmed by our team.",
-        (38, 665, W - 38, 735),
-        10,
-        color=MUTED,
-    )
+    for number, title, copy, y in [
+        ("01", "Find your product", "Use the clickable category index. Open a product's website link for more details.", 571),
+        ("02", "Share your requirement", "Quote the SKU and tell us the required variant, application and quantity.", 625),
+        ("03", "Confirm with our team", "Contact us to confirm specifications, availability and your quotation.", 679),
+    ]:
+        text(p, number, 38, y, 18, True, BLUE)
+        text(p, title, 78, y - 3, 11, True)
+        block(p, copy, (78, y + 6, W - 38, y + 40), 9.5, color=MUTED)
+    p.draw_rect(fitz.Rect(38, 741, W - 38, 772), color=None, fill=BLUE)
+    block(p, "EXPLORE THE CATEGORY INDEX  >", (55, 750, W - 55, 769), 10, color=(1, 1, 1), bold=True)
+    goto(p, (38, 741, W - 38, 772), 2)
     # Two index pages preserve the previous family grouping.
     index_groups = [families[:3], families[3:]]
     for index, group in enumerate(index_groups):

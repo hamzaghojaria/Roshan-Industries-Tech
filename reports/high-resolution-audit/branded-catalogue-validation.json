@@ -346,8 +346,8 @@
     "pressure-gauge-accessories": 63,
     "custom-machined-components": 65
   },
-  "links": 597,
-  "pdfSha256": "346bc43dcd5eed47b54ebab96be746a28b34aa0aaaf3a6037cdead791e2bf178",
+  "links": 598,
+  "pdfSha256": "4f197dc3e13dea9cac876d9e22ec4e3ec688d4f839d9bb6a308f9031e473fdad",
   "nativeSourceImagesPreserved": false,
   "originalSourceFilesPreserved": true,
   "imageOptimization": {
@@ -357,10 +357,10 @@
     "subsampling": 2,
     "logoLossless": true
   },
-  "pdfBytes": 12240694,
-  "imageCacheHits": 304,
-  "imageCacheMisses": 7,
-  "exportSeconds": 6.7,
+  "pdfBytes": 12243871,
+  "imageCacheHits": 311,
+  "imageCacheMisses": 0,
+  "exportSeconds": 3.03,
   "coverLogoCentered": true,
   "introductionPage": 2,
   "categoryIndexPages": [
