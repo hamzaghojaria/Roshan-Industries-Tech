@@ -3,11 +3,14 @@
 # Run directly from a working Python installation; see README for inputs and write effects.
 
 from pathlib import Path
+from io import BytesIO
 import json, hashlib, math
 from time import perf_counter
 import pymupdf as fitz
 from PIL import Image
-from catalogue_images import CatalogueImageCache, WEB_IMAGE_PROFILE
+from catalogue_images import (
+    CatalogueImageCache, WEB_IMAGE_PROFILE, fit_image_rect, validate_image_proportions,
+)
 
 from export_data import load_products, read_json
 
@@ -82,13 +85,36 @@ def main():
         """Defer internal links until every destination page exists."""
         pending.append((page.number, fitz.Rect(rect), target))
 
-    def image(page, file, rect):
+    def image(page, file, rect, frame=None):
         """Reuse PDF objects for repeated logos and cached JPEGs for product photos."""
         if file in image_xrefs:
-            page.insert_image(fitz.Rect(rect), xref=image_xrefs[file], keep_proportion=True)
-            return
-        encoded = image_cache.prepare(ROOT / file, lossless=file == "assets/roshan-logo-new.png")
-        image_xrefs[file] = page.insert_image(fitz.Rect(rect), stream=encoded, keep_proportion=True)
+            xref, dimensions = image_xrefs[file]
+            encoded = None
+        else:
+            encoded = image_cache.prepare(ROOT / file, lossless=file == "assets/roshan-logo-new.png")
+            with Image.open(BytesIO(encoded)) as prepared:
+                dimensions = prepared.size
+            xref = 0
+        fitted = fitz.Rect(fit_image_rect(rect, dimensions))
+        clip = None
+        if frame:
+            # Match the website display frame using PDF clipping; retain the complete photograph.
+            clip = fitz.Rect(fit_image_rect(rect, (frame["size"], frame["size"])))
+            scale = clip.width / frame["size"]
+            left = clip.x0 - frame["x"] * scale
+            top = clip.y0 - frame["y"] * scale
+            fitted = fitz.Rect(left, top, left + frame["width"] * scale,
+                               top + frame["height"] * scale)
+        if xref:
+            page.insert_image(fitted, xref=xref, keep_proportion=False)
+        else:
+            xref = page.insert_image(fitted, stream=encoded, keep_proportion=False)
+            image_xrefs[file] = (xref, dimensions)
+        if clip:
+            content = page.get_contents()[-1]
+            prefix = (f"q\n{clip.x0:.6f} {page.rect.height-clip.y1:.6f} "
+                      f"{clip.width:.6f} {clip.height:.6f} re W n\n").encode("ascii")
+            doc.update_stream(content, prefix + doc.xref_stream(content) + b"\nQ\n")
 
     def chrome(page, title=None, family=None):
         page.draw_rect(fitz.Rect(0, 0, 5, 58), color=None, fill=BLUE)
@@ -291,7 +317,10 @@ def main():
                         fill=(1, 1, 1),
                         width=0.5,
                     )
-                    image(p, item["image"], (x + 10, y + 7, x + cw - 10, y + 110))
+                    frame = None
+                    if item.get("imageKind") == "owner-supplied-photograph" and item.get("imageFrame"):
+                        frame = {**item["imageFrame"], "width": item["imageWidth"], "height": item["imageHeight"]}
+                    image(p, item["image"], (x + 10, y + 7, x + cw - 10, y + 110), frame)
                     block(
                         p,
                         item["name"],
@@ -335,6 +364,8 @@ def main():
         }
     )
     output = ROOT / "assets/roshan-industries-catalogue.pdf"
+    # Validate the actual PDF transformation matrices, not just matching image pixels.
+    proportion_checks = validate_image_proportions(doc)
     doc.save(output, garbage=4, deflate=True)
     doc.close()
     (ROOT / "Roshan-Industries-Catalogue.pdf").write_bytes(output.read_bytes())
@@ -364,6 +395,8 @@ def main():
         "categoryIndexPages": [3, 4],
         "allProductsSynchronized": True,
         "websiteImageOverridesIncluded": True,
+        "imageProportionsPreserved": True,
+        "imagePlacementsChecked": proportion_checks,
     }
     (ROOT / "reports/high-resolution-audit/branded-catalogue-validation.json").write_text(
         json.dumps(report, indent=2) + "\n", encoding="utf8"

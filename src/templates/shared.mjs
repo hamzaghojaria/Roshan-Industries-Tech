@@ -84,18 +84,20 @@ const customSection = (base = '', id = 'custom-manufacturing') =>
     </div>
   </section>`;
 
+/** Frame excess source whitespace without changing or stretching the product pixels. */
+export function productPhoto(p, base = '', lazy = false) {
+  const image = `<img src="${base + p.image}" alt="${esc(p.name)}" width="${p.imageWidth}" height="${p.imageHeight}"${lazy ? ' loading="lazy"' : ''} />`;
+  if (!p.imageFrame) return image;
+  const { x, y, size } = p.imageFrame;
+  const percent = (n) => ((n / size) * 100).toFixed(4) + '%';
+  return `<span class="product-photo-framed" style="--photo-width:${percent(p.imageWidth)};--photo-height:${percent(p.imageHeight)};--photo-left:${percent(-x)};--photo-top:${percent(-y)}">${image}</span>`;
+}
+
 /** Render one product card with links relative to its current page depth. */
 export function card(p, base = '') {
   return /* HTML */ `<article class="product-card">
     ${newBadge(p)}
-    <a class="product-image" href="${base + p.url}"
-      ><img
-        src="${base + p.image}"
-        alt="${esc(p.name)}"
-        width="${p.imageWidth}"
-        height="${p.imageHeight}"
-        loading="lazy"
-    /></a>
+    <a class="product-image" href="${base + p.url}">${productPhoto(p, base, true)}</a>
     <div class="product-card-copy">
       <span class="product-category">${esc(p.category)}</span>
       <h3><a href="${base + p.url}">${esc(p.name)}</a></h3>

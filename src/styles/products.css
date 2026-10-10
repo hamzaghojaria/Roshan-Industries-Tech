@@ -58,6 +58,24 @@
   outline-offset: -3px;
 }
 
+/* Center selected fittings by excluding excess blank source margins. */
+.product-photo-framed {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.product-photo-framed img {
+  position: absolute;
+  width: var(--photo-width);
+  height: var(--photo-height);
+  max-width: none;
+  max-height: none;
+  left: var(--photo-left);
+  top: var(--photo-top);
+  aspect-ratio: auto;
+}
+
 /* A small lift on hover or touch, without enlarging product photos. */
 .product-card:hover .product-image img,
 .product-card:focus-within .product-image img,

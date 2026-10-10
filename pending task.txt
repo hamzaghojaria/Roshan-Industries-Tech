@@ -1,7 +1,24 @@
+1. Fix the Plastic Spectacle image, product code 0012 — completed.
+2. Organize trays into their respective categories.
+3. Add a watermark to all product images.
+4. Replace “Watchmaking” in the logo text with “CNC & VMC – All Jobs”.
+5. Add a punchline to the first page of the catalogue PDF.
+6. Update the “Our Offices” page:
+   - Abdul Rehman Street — Retail Office
+   - Goregaon — Manufacturing Unit
+   - Gujarat — Plant
+7. Update the contact number to the new number.
+8. Add founder photographs.
+9. Create a new catalogue with product prices for clients.
+
+
+
+Please contact Roshan Industries to confirm the required variant, application, quantity and quotation. on product page not for new arrivals page product 
+remove catalogue excel from all product page 
+
 
 
 SKeptical:
-Can we get the images online based on image and title and
 Linkedun roshan account
 
 

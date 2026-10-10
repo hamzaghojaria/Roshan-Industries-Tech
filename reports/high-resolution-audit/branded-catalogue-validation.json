@@ -345,7 +345,7 @@
     "custom-machined-components": 63
   },
   "links": 587,
-  "pdfSha256": "f95e44dc9cb7979a5e26d065cdf5a09ace7873993b3c9fe8df1e8674cb871304",
+  "pdfSha256": "b6a490abf8680e658e207e355b3d6eb04269121c377570d27efef9889dce7913",
   "nativeSourceImagesPreserved": false,
   "originalSourceFilesPreserved": true,
   "imageOptimization": {
@@ -355,10 +355,10 @@
     "subsampling": 2,
     "logoLossless": true
   },
-  "pdfBytes": 12131944,
-  "imageCacheHits": 2,
-  "imageCacheMisses": 310,
-  "exportSeconds": 29.44,
+  "pdfBytes": 12238076,
+  "imageCacheHits": 310,
+  "imageCacheMisses": 1,
+  "exportSeconds": 7.14,
   "coverLogoCentered": true,
   "introductionPage": 2,
   "categoryIndexPages": [
@@ -366,5 +366,7 @@
     4
   ],
   "allProductsSynchronized": true,
-  "websiteImageOverridesIncluded": true
+  "websiteImageOverridesIncluded": true,
+  "imageProportionsPreserved": true,
+  "imagePlacementsChecked": 374
 }

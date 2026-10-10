@@ -12,6 +12,7 @@ import {
   layout,
   breadcrumb,
   homeSlider,
+  productPhoto,
 } from './shared.mjs';
 
 /** Product details, grounded descriptions, enquiry links and related products. */
@@ -24,14 +25,7 @@ export function productPage(p, products) {
     /* HTML */ `${breadcrumb(p.name, '../', /* HTML */ `<a href="../catalogue.html">Products</a><span>/</span><a href="../categories/${p.categoryId}.html">${esc(p.category)}</a><span>/</span>`)}
       <section class="container product-detail">
         <div class="detail-image">
-          <div class="product-photo">
-            <img
-              src="../${p.image}"
-              alt="${esc(p.name)}"
-              width="${p.imageWidth}"
-              height="${p.imageHeight}"
-            />
-          </div>
+          <div class="product-photo">${productPhoto(p, '../')}</div>
         </div>
         <div class="detail-copy">
           <a class="eyebrow" href="../categories/${p.categoryId}.html"

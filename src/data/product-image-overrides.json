@@ -1,24 +1,232 @@
 {
   "RIT-0012": {
-    "imageWidth": 1100,
-    "imageHeight": 1100,
+    "image": "assets/reference-products/spectacle-eye-glass-grey-ridged-rim-owner.jpeg",
+    "imageWidth": 1200,
+    "imageHeight": 1600,
     "imageOverride": true,
-    "imageKind": "reference-photograph",
-    "imageSource": "https://www.timeconnectioninc.com/products/watchmaker-loupe-for-spectacle",
-    "imageSourceUrl": "https://www.timeconnectioninc.com/cdn/shop/products/13405_de0ee0a9-c994-4f5e-9f7e-baa51af0ee4a.jpg?v=1659131236",
-    "imageSha256": "3cc9650e9b62ff40ccb647afd5e2c2b23c7d0d285a298c8f314b8fc021bcb5dd",
-    "imageChanges": "Lossless WebP conversion. No crop, retouching or upscaling.",
-    "imageBrandingReview": "No visible watermark or brand name."
+    "imageKind": "owner-supplied-photograph",
+    "imageSource": "Owner supplied actual product photograph",
+    "imageSourceUrl": "assets/reference-products/spectacle-eye-glass-grey-ridged-rim-owner.jpeg",
+    "imageSourceFile": "WhatsApp Image 2026-10-06 at 11.02.24 AM.jpeg",
+    "imageSha256": "320b75120f7012de60f973fcda81ac3555e7d02edaeb03d1d2c1d0c700945c1b",
+    "imageChanges": "Exact original JPEG copied without retouching, resizing or recompression. Website display frame isolates the loupe and clip; the optical variant is not inferred from the photograph.",
+    "imageBrandingReview": "No visible product branding in the selected display frame.",
+    "imageFrame": {
+      "x": 200,
+      "y": 280,
+      "size": 740
+    }
   },
   "RIT-0013": {
-    "imageWidth": 1100,
-    "imageHeight": 1100,
+    "image": "assets/reference-products/spectacle-eye-glass-grey-ridged-rim-owner.jpeg",
+    "imageWidth": 1200,
+    "imageHeight": 1600,
     "imageOverride": true,
-    "imageKind": "reference-photograph",
-    "imageSource": "https://www.timeconnectioninc.com/products/watchmaker-loupe-for-spectacle",
-    "imageSourceUrl": "https://www.timeconnectioninc.com/cdn/shop/products/13405_de0ee0a9-c994-4f5e-9f7e-baa51af0ee4a.jpg?v=1659131236",
-    "imageSha256": "3cc9650e9b62ff40ccb647afd5e2c2b23c7d0d285a298c8f314b8fc021bcb5dd",
-    "imageChanges": "Lossless WebP conversion. No crop, retouching or upscaling.",
-    "imageBrandingReview": "No visible watermark or brand name."
+    "imageKind": "owner-supplied-photograph",
+    "imageSource": "Owner supplied actual product photograph",
+    "imageSourceUrl": "assets/reference-products/spectacle-eye-glass-grey-ridged-rim-owner.jpeg",
+    "imageSourceFile": "WhatsApp Image 2026-10-06 at 11.02.24 AM.jpeg",
+    "imageSha256": "320b75120f7012de60f973fcda81ac3555e7d02edaeb03d1d2c1d0c700945c1b",
+    "imageChanges": "Exact original JPEG copied without retouching, resizing or recompression. Website display frame isolates the loupe and clip; the optical variant is not inferred from the photograph.",
+    "imageBrandingReview": "No visible product branding in the selected display frame.",
+    "imageFrame": {
+      "x": 200,
+      "y": 280,
+      "size": 740
+    }
+  },
+  "RIT-0239": {
+    "image": "assets/cleaned-products/rit-0239-aluminium-storage-box-with-20-tins-model-3320.webp",
+    "imageWidth": 1239,
+    "imageHeight": 1269,
+    "imageOverride": true,
+    "imageSourceUrl": "roshan-industries-catalogue.pdf",
+    "imageKind": "cleaned-reference-photograph",
+    "imageSha256": "c2ded8c77b0fa046bd1a81867c29414da5e310e77389e722be905689c51a6cf3",
+    "imageChanges": "ImageGen cleanup of clipped annotation or stray text fragment; visually reviewed. Original photograph retained at assets/products/rit-0239-aluminium-storage-box-with-20-tins-model-3320.webp. Generated output encoded as WebP.",
+    "imageBrandingReview": "No new branding or watermark."
+  },
+  "RIT-0253": {
+    "image": "assets/cleaned-products/rit-0253-aluminium-storage-tin-120-ml-with-push-fit-lid.webp",
+    "imageWidth": 1663,
+    "imageHeight": 946,
+    "imageOverride": true,
+    "imageSourceUrl": "roshan-industries-catalogue.pdf",
+    "imageKind": "cleaned-reference-photograph",
+    "imageSha256": "828276507b2d06abbe7931173585d43155ca410bea8465cd535bb5541c2572dc",
+    "imageChanges": "ImageGen cleanup of clipped annotation or stray text fragment; visually reviewed. Original photograph retained at assets/products/rit-0253-aluminium-storage-tin-120-ml-with-push-fit-lid.webp. Generated output encoded as WebP.",
+    "imageBrandingReview": "No new branding or watermark."
+  },
+  "RIT-0254": {
+    "image": "assets/cleaned-products/rit-0254-aluminium-storage-tin-20-ml-with-screw-lid.webp",
+    "imageWidth": 1710,
+    "imageHeight": 919,
+    "imageOverride": true,
+    "imageSourceUrl": "roshan-industries-catalogue.pdf",
+    "imageKind": "cleaned-reference-photograph",
+    "imageSha256": "cdf8ca12abc675c4dc430adec1b7cad8e8d94ec75405c39570e8a283abc66cac",
+    "imageChanges": "ImageGen cleanup of clipped annotation or stray text fragment; visually reviewed. Original photograph retained at assets/products/rit-0254-aluminium-storage-tin-20-ml-with-screw-lid.webp. Generated output encoded as WebP.",
+    "imageBrandingReview": "No new branding or watermark."
+  },
+  "RIT-0297": {
+    "imageFrame": {
+      "x": 195,
+      "y": 70,
+      "size": 590
+    }
+  },
+  "RIT-0298": {
+    "imageFrame": {
+      "x": 151,
+      "y": 63,
+      "size": 630
+    }
+  },
+  "RIT-0299": {
+    "imageFrame": {
+      "x": 161,
+      "y": 63,
+      "size": 595
+    }
+  },
+  "RIT-0300": {
+    "imageFrame": {
+      "x": 145,
+      "y": 214,
+      "size": 702
+    }
+  },
+  "RIT-0301": {
+    "imageFrame": {
+      "x": 206,
+      "y": 105,
+      "size": 582
+    }
+  },
+  "RIT-0302": {
+    "imageFrame": {
+      "x": 171,
+      "y": 101,
+      "size": 582
+    }
+  },
+  "RIT-0303": {
+    "imageFrame": {
+      "x": 163,
+      "y": 91,
+      "size": 645
+    }
+  },
+  "RIT-0304": {
+    "imageFrame": {
+      "x": 183,
+      "y": 93,
+      "size": 597
+    }
+  },
+  "RIT-0305": {
+    "imageFrame": {
+      "x": 160,
+      "y": 65,
+      "size": 582
+    }
+  },
+  "RIT-0306": {
+    "imageFrame": {
+      "x": 202,
+      "y": 102,
+      "size": 582
+    }
+  },
+  "RIT-0307": {
+    "imageFrame": {
+      "x": 165,
+      "y": 54,
+      "size": 582
+    }
+  },
+  "RIT-0308": {
+    "imageFrame": {
+      "x": 151,
+      "y": 156,
+      "size": 624
+    }
+  },
+  "RIT-0309": {
+    "imageFrame": {
+      "x": 187,
+      "y": 73,
+      "size": 582
+    }
+  },
+  "RIT-0310": {
+    "imageFrame": {
+      "x": 187,
+      "y": 86,
+      "size": 603
+    }
+  },
+  "RIT-0311": {
+    "imageFrame": {
+      "x": 156,
+      "y": 38,
+      "size": 685
+    }
+  },
+  "RIT-0312": {
+    "imageFrame": {
+      "x": 153,
+      "y": 3,
+      "size": 680
+    }
+  },
+  "RIT-0313": {
+    "imageFrame": {
+      "x": 109,
+      "y": 155,
+      "size": 684
+    }
+  },
+  "RIT-0314": {
+    "imageFrame": {
+      "x": 195,
+      "y": 70,
+      "size": 590
+    }
+  },
+  "RIT-0315": {
+    "imageFrame": {
+      "x": 126,
+      "y": 56,
+      "size": 636
+    }
+  },
+  "RIT-0316": {
+    "imageFrame": {
+      "x": 177,
+      "y": 49,
+      "size": 639
+    }
+  },
+  "RIT-0317": {
+    "imageFrame": {
+      "x": 199,
+      "y": 62,
+      "size": 582
+    }
+  },
+  "RIT-0318": {
+    "imageFrame": {
+      "x": 195,
+      "y": 60,
+      "size": 610
+    }
+  },
+  "RIT-0319": {
+    "imageFrame": {
+      "x": 149,
+      "y": 102,
+      "size": 582
+    }
   }
 }

@@ -82,7 +82,7 @@ for (const p of products) {
     previous.every((old) => old.description !== p.description),
     'Reused PDF product description',
   );
-  assert(/^[a-z0-9-]+\.webp$/.test(path.basename(p.image)));
+  assert(/^[a-z0-9-]+\.(webp|jpe?g|png)$/.test(path.basename(p.image)));
   const image = images.images.find((i) => i.sku === p.sku);
   assert(image);
   assert.equal(image.page, p.page);

@@ -4,7 +4,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
-import { categories, loadCatalogue } from '../src/catalogue.mjs';
+import { categories, catalogueRecords, loadCatalogue } from '../src/catalogue.mjs';
 import { buildBrowserScript, buildThemeStyles, browserProducts } from './browser-build.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -67,7 +67,10 @@ assert.equal(
   fs.readdirSync(path.join(root, 'categories')).filter((p) => p.endsWith('.html')).length,
   categories.length,
 );
-const expectedImages = new Set(products.map((p) => path.basename(p.image)));
+// Retain reviewed source photographs when a documented override replaces their display image.
+const expectedImages = new Set(
+  [...products, ...catalogueRecords].map((p) => path.basename(p.image)),
+);
 for (const image of fs.readdirSync(path.join(root, 'assets/products'))) {
   assert(expectedImages.has(image), `Unreferenced product image: ${image}`);
 }

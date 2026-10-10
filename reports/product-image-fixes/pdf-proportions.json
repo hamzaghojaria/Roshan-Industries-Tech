@@ -1,0 +1,35 @@
+{
+  "pages": 63,
+  "products": 311,
+  "imagePlacementsChecked": 374,
+  "distortedImages": 0,
+  "correctedSkus": [
+    "RIT-0012",
+    "RIT-0013",
+    "RIT-0229",
+    "RIT-0233",
+    "RIT-0237",
+    "RIT-0244",
+    "RIT-0260",
+    "RIT-0261",
+    "RIT-0262",
+    "RIT-0265",
+    "RIT-0266",
+    "RIT-0267",
+    "RIT-0268",
+    "RIT-0269"
+  ],
+  "textAndLinkCountsPreserved": true,
+  "renderedPages": [
+    7,
+    13,
+    40,
+    41,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "pdfSha256": "b6a490abf8680e658e207e355b3d6eb04269121c377570d27efef9889dce7913"
+}
