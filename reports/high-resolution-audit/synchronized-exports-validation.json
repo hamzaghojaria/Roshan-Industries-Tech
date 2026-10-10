@@ -1,9 +1,9 @@
 {
   "products": 311,
-  "pdfPages": 63,
+  "pdfPages": 65,
   "pdfImagesMatched": 311,
   "workbookRowsMatched": 622,
-  "categorySheets": 20,
+  "categorySheets": 22,
   "newArrivalProducts": 95,
   "allProductPageLinksValid": true,
   "coverLogoCentered": true,
@@ -23,5 +23,5 @@
     "subsampling": 2,
     "sharedImageResources": true
   },
-  "pdfSha256": "f95e44dc9cb7979a5e26d065cdf5a09ace7873993b3c9fe8df1e8674cb871304"
+  "pdfSha256": "346bc43dcd5eed47b54ebab96be746a28b34aa0aaaf3a6037cdead791e2bf178"
 }

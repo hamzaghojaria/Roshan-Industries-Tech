@@ -228,5 +228,96 @@
       "y": 102,
       "size": 582
     }
+  },
+  "RIT-0018": {
+    "image": "assets/cleaned-products/rit-0018-auxiliary-eye-glass-lens-annotations-cleaned.webp",
+    "imageWidth": 1338,
+    "imageHeight": 1175,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0018-auxiliary-eye-glass-lens.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed packaging reference number 1525; retained lens and product label.",
+    "imageSha256": "73ca9ceaae3009f23443c09da8e3f45af9ad8a405bd63a2b704f20cc4d1343e7",
+    "imageSourceUrl": "assets/products/rit-0018-auxiliary-eye-glass-lens.webp"
+  },
+  "RIT-0231": {
+    "image": "assets/cleaned-products/rit-0231-aluminium-storage-box-with-12-tins-model-4112-annotations-cleaned.webp",
+    "imageWidth": 1240,
+    "imageHeight": 1269,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0231-aluminium-storage-box-with-12-tins-model-4112.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed external reference number or height annotation.",
+    "imageSha256": "4cb60a556cbaf1d5e48ae3aa51812ccf1f6d5fc7b6344f3837900bc1621f8629",
+    "imageSourceUrl": "assets/products/rit-0231-aluminium-storage-box-with-12-tins-model-4112.webp"
+  },
+  "RIT-0235": {
+    "image": "assets/cleaned-products/rit-0235-aluminium-storage-box-with-24-tins-model-2624-annotations-cleaned.webp",
+    "imageWidth": 1254,
+    "imageHeight": 1254,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0235-aluminium-storage-box-with-24-tins-model-2624.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed external reference number or height annotation.",
+    "imageSha256": "a1b1f8801dcc68cd8135dfa8198f8376823f3642a5e80c0a8e2d5cf3f05aecf5",
+    "imageSourceUrl": "assets/products/rit-0235-aluminium-storage-box-with-24-tins-model-2624.webp"
+  },
+  "RIT-0237": {
+    "image": "assets/cleaned-products/rit-0237-ivory-plastic-storage-tray-with-9-round-containers-annotations-cleaned.webp",
+    "imageWidth": 1254,
+    "imageHeight": 1254,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0237-ivory-plastic-storage-tray-with-9-round-containers.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed dimension text, red measurement arrows and yellow annotation box.",
+    "imageSha256": "c9397af79f013579659346c3bbd1fd39782891b8e2182e2fc5bd953ae48d9ca4",
+    "imageSourceUrl": "assets/products/rit-0237-ivory-plastic-storage-tray-with-9-round-containers.webp"
+  },
+  "RIT-0243": {
+    "image": "assets/cleaned-products/rit-0243-ivory-plastic-storage-tray-with-15-round-containers-annotations-cleaned.webp",
+    "imageWidth": 1491,
+    "imageHeight": 1055,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0243-ivory-plastic-storage-tray-with-15-round-containers.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed dimension text, red measurement arrows and yellow annotation box.",
+    "imageSha256": "558b0eb507d658ead4a1ae0a29503e27fb087ca0134787603f4a162806494c7d",
+    "imageSourceUrl": "assets/products/rit-0243-ivory-plastic-storage-tray-with-15-round-containers.webp"
+  },
+  "RIT-0244": {
+    "image": "assets/cleaned-products/rit-0244-ivory-plastic-storage-tray-with-6-round-containers-annotations-cleaned.webp",
+    "imageWidth": 1254,
+    "imageHeight": 1254,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0244-ivory-plastic-storage-tray-with-6-round-containers.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed dimension text, red measurement arrows and yellow annotation box.",
+    "imageSha256": "81d4c3c1b3fb684b9c3090f68f5a599861b21cbd172aa534b00a1743e512199d",
+    "imageSourceUrl": "assets/products/rit-0244-ivory-plastic-storage-tray-with-6-round-containers.webp"
+  },
+  "RIT-0252": {
+    "image": "assets/cleaned-products/rit-0252-aluminium-storage-tin-100-ml-with-screw-lid-annotations-cleaned.webp",
+    "imageWidth": 1908,
+    "imageHeight": 824,
+    "imageOverride": true,
+    "imageKind": "photograph",
+    "imageEdited": true,
+    "imageSource": "assets/products/rit-0252-aluminium-storage-tin-100-ml-with-screw-lid.webp",
+    "imageEditMethod": "Built in imagegen annotation removal",
+    "imageChanges": "Removed external reference number or height annotation.",
+    "imageSha256": "5a37e6498e4f53c2385f18f4980d33c4cca52f128b79866326b2eca51e979625",
+    "imageSourceUrl": "assets/products/rit-0252-aluminium-storage-tin-100-ml-with-screw-lid.webp"
   }
 }

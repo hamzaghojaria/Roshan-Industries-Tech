@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import assert from 'node:assert/strict';
-import { categories, loadCatalogue } from '../src/catalogue.mjs';
+import { categories, catalogueRecords, loadCatalogue } from '../src/catalogue.mjs';
 const root = process.cwd();
 const products = loadCatalogue(root);
 const auditPath = path.join(root, 'reports/high-resolution-audit');
@@ -34,7 +34,9 @@ const arrivals = JSON.parse(
   fs.readFileSync(path.join(root, 'src/data/new-arrivals.json'), 'utf8'),
 ).skus;
 assert.equal(products.length, 216 + onlineProducts.length);
-assert.equal(categories.length, 20);
+assert.equal(categories.length, 22);
+for (const [id, count] of [['trays', 7], ['covers', 4], ['storage', 31]])
+  assert.equal(products.filter((p) => p.categoryId === id).length, count, id + ' category coverage');
 assert.equal(new Set(products.map((p) => p.name)).size, products.length);
 assert.equal(new Set(products.map((p) => p.sku)).size, products.length);
 assert.equal(images.images.length, 216);
@@ -108,7 +110,7 @@ for (const old of changes.removed)
   assert(!products.some((p) => p.sku === old.sku), 'Retired pump listing remains');
 assert.deepEqual(
   new Set(fs.readdirSync(path.join(root, 'assets/products'))),
-  new Set(products.filter((p) => !p.onlineRange).map((p) => path.basename(p.image))),
+  new Set(catalogueRecords.filter((p) => !p.onlineRange).map((p) => path.basename(p.image))),
 );
 assert.deepEqual(
   fs.readdirSync(path.join(root, 'assets')).filter((f) => f.endsWith('.pdf')),

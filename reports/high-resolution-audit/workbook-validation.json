@@ -1,6 +1,6 @@
 {
   "products": 311,
-  "categorySheets": 20,
+  "categorySheets": 22,
   "embeddedPhotos": 622,
   "imageOptimization": {
     "format": "JPEG",
@@ -10,12 +10,12 @@
     "subsampling": 2,
     "sharedImageResources": true
   },
-  "xlsxBytes": 2985843,
+  "xlsxBytes": 2947126,
   "uniqueImageResources": 310,
-  "duplicateImageResourcesRemoved": 309,
-  "sourceSha256": "f95e44dc9cb7979a5e26d065cdf5a09ace7873993b3c9fe8df1e8674cb871304",
+  "duplicateImageResourcesRemoved": 313,
+  "sourceSha256": "346bc43dcd5eed47b54ebab96be746a28b34aa0aaaf3a6037cdead791e2bf178",
   "familyColors": {
-    "Watchmaking": "315BD6",
+    "Watchmaking": "991B28",
     "Clockmaking": "B68A42",
     "Jewellery": "8B5CB2",
     "Workshop Essentials": "2C8790",
@@ -24,6 +24,5 @@
   "allTabsColored": true,
   "allFieldsMatchWebsite": true,
   "newArrivalProducts": 95,
-  "xlsxSha256": "6432d1891bb3cdc4fa6b15e8ace87134db26635e4f960d57b052d67ef8ef4afd",
-  "embeddedLogos": 1
+  "xlsxSha256": "1cf3e7f086091151dc0b0b0c3f82ef27cf07795732fcae02803cf2f0d1ec11c9"
 }
