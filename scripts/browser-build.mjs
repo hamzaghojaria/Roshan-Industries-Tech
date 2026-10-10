@@ -20,6 +20,7 @@ export const themeComponents = [
   'footer',
   'arrivals',
   'products',
+  'company',
   'interactions',
 ];
 

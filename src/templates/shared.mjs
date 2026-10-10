@@ -250,6 +250,7 @@ export function layout(
                 ...catalogueNavigation,
                 ['./#custom-manufacturing', 'Custom Manufacturing', 'custom'],
                 ['about.html', 'About Us', 'about'],
+                ['founder.html', 'Our Founders & Offices', 'founder'],
                 ['contact.html', 'Contact Us', 'contact'],
               ]
                 .map(
@@ -311,7 +312,9 @@ export function layout(
                 .map(([url, label]) => `<a href="${base + url}">${label}</a>`)
                 .join('')}
               <a href="${base || './'}#custom-manufacturing">Custom manufacturing</a
-              ><a href="${base}about.html">About Us</a><a href="${base}contact.html">Contact Us</a>
+              ><a href="${base}about.html">About Us</a
+              ><a href="${base}founder.html">Our Founders &amp; Offices</a
+              ><a href="${base}contact.html">Contact Us</a>
               <a
                 href="${base}assets/roshan-industries-catalogue.pdf"
                 download="Roshan-Industries-Catalogue.pdf"

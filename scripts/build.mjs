@@ -12,6 +12,8 @@ import {
   aboutPage,
   contactPage,
   newArrivalsPage,
+  founderPage,
+  officesPage,
 } from '../src/templates.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -42,6 +44,8 @@ function writeMainPages(products) {
   write('about.html', aboutPage(products));
   write('contact.html', contactPage());
   write('new-arrivals.html', newArrivalsPage(products));
+  write('founder.html', founderPage());
+  write('offices.html', officesPage());
 }
 
 /** Remove only verified generated routes that no longer exist in the catalogue. */
@@ -107,6 +111,8 @@ function publishDirectory(products) {
     'about.html',
     'contact.html',
     'new-arrivals.html',
+    'founder.html',
+    'offices.html',
     'styles.css',
     'modern.css',
     'app.js',
@@ -135,7 +141,7 @@ export function buildSite() {
   writeCataloguePages(products);
   publishDirectory(products);
   console.log(
-    `[build] Ready: ${products.length} product pages, ${categories.length} category pages and 6 main pages in dist/. Permanent SKUs validated against src/data/sku-map.json.`,
+    `[build] Ready: ${products.length} product pages, ${categories.length} category pages and 8 main pages in dist/. Permanent SKUs validated against src/data/sku-map.json.`,
   );
 }
 

@@ -1,0 +1,171 @@
+/* Founder heritage and the three owner-confirmed operating locations. */
+.generation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.generation-card {
+  overflow: hidden;
+  border: 1px solid #ecdde0;
+  border-left: 4px solid #991b28;
+  border-radius: 16px;
+  background: white;
+}
+.generation-card h3 {
+  font-size: 20px;
+  line-height: 1.25;
+}
+.page-intro .text-link + .text-link {
+  margin-left: 24px;
+}
+#offices,
+#generations {
+  scroll-margin-top: 24px;
+}
+@media (max-width: 760px) {
+  .generation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.office-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid #ecdde0;
+  border-top: 4px solid #991b28;
+  border-radius: 16px;
+  background: white;
+}
+.office-number {
+  margin-bottom: 12px;
+  color: #991b28;
+  font-family: Georgia, serif;
+  font-size: 30px;
+}
+.office-card h2 {
+  font-size: 22px;
+  line-height: 1.25;
+}
+.office-card address {
+  font-style: normal;
+  color: var(--slate);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.office-actions {
+  display: grid;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+@media (max-width: 900px) {
+  .office-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Keep all company links reachable when the desktop navigation spans two rows. */
+@media (min-width: 761px) {
+  .nav-links {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 0;
+    overflow-x: visible;
+  }
+}
+
+.generation-portrait {
+  height: 150px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8e9eb, #eee8e1);
+  color: #991b28;
+}
+.generation-portrait span {
+  font-family: Georgia, serif;
+  font-size: 60px;
+}
+.generation-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.generation-copy {
+  padding: 20px;
+}
+.generation-copy p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.generation-copy p:last-child {
+  margin-bottom: 0;
+}
+body[data-page='founder'] .section {
+  padding-block: 36px;
+}
+body[data-page='founder'] .page-intro {
+  padding: 28px;
+  margin-bottom: 24px;
+}
+body[data-page='founder'] #offices {
+  padding-bottom: 8px;
+}
+body[data-page='founder'] .office-grid {
+  padding-top: 12px;
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  .generation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  body[data-page='founder'] .section {
+    padding-block: 24px;
+  }
+  body[data-page='founder'] .page-intro {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .generation-portrait {
+    height: 120px;
+  }
+}
+.company-slider {
+  min-width: 0;
+}
+.company-slider .slider-track {
+  display: grid;
+  overflow: visible;
+  scroll-snap-type: none;
+  padding: 0;
+}
+.company-slider .slider-controls {
+  display: none;
+}
+@media (max-width: 760px) {
+  .company-slider .slider-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 14px;
+    padding: 0 0 10px;
+    scrollbar-color: #991b28 #fcf1f2;
+  }
+  .company-slider .slider-track > article {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+  }
+  .company-slider .slider-controls:not([hidden]) {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}

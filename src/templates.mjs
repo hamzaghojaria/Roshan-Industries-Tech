@@ -7,3 +7,5 @@ export { cataloguePage } from './templates/cataloguePage.mjs';
 export { productPage } from './templates/productPage.mjs';
 export { aboutPage } from './templates/aboutPage.mjs';
 export { contactPage } from './templates/contactPage.mjs';
+export { founderPage } from './templates/founderPage.mjs';
+export { officesPage } from './templates/officesPage.mjs';
