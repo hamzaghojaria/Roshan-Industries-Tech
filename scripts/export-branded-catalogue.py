@@ -369,7 +369,7 @@ def main():
     output = ROOT / "assets/roshan-industries-catalogue.pdf"
     # Validate the actual PDF transformation matrices, not just matching image pixels.
     proportion_checks = validate_image_proportions(doc)
-    doc.save(output, garbage=4, deflate=True)
+    doc.save(output, garbage=4, deflate=True, use_objstms=1, compression_effort=100)
     doc.close()
     (ROOT / "Roshan-Industries-Catalogue.pdf").write_bytes(output.read_bytes())
     check = fitz.open(output)

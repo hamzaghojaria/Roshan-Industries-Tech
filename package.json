@@ -16,7 +16,8 @@
     "test:home": "node tests/root-navigation-qa.cjs",
     "test:sliders": "node tests/sliders-qa.cjs",
     "test:arrivals": "node tests/new-arrivals-qa.cjs",
-    "export:xlsx": "python scripts/export-high-resolution-workbook.py",
+    "export:xlsx": "node scripts/update-catalogues.mjs",
+    "update:catalogues": "node scripts/update-catalogues.mjs",
     "test:source": "node tests/high-resolution-qa.cjs",
     "check:source": "node scripts/validate-high-resolution.mjs",
     "test:product-actions": "node tests/catalogue-actions-qa.cjs",
@@ -31,7 +32,7 @@
     "test:related": "node tests/related-slider-qa.cjs",
     "check:python": "python scripts/check-python.py",
     "test:pdf-images": "python tests/catalogue-image-cache-qa.py",
-    "export:pdf": "python scripts/export-branded-catalogue.py"
+    "export:pdf": "node scripts/update-catalogues.mjs"
   },
   "devDependencies": {
     "playwright-core": "1.63.0",

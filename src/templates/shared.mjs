@@ -240,7 +240,7 @@ export function layout(
               class="catalogue-download"
               href="${base}assets/roshan-industries-catalogue.pdf"
               download="Roshan-Industries-Catalogue.pdf"
-              >Download catalogue<small>PDF &middot; ${downloadProductCount} products</small></a
+              >Download Catalogue<small>PDF &middot; ${downloadProductCount} products</small></a
             >
           </div>
           <nav aria-label="Main navigation">

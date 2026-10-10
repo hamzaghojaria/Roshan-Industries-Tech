@@ -1,0 +1,9 @@
+{
+  "beforeBytes": 12248434,
+  "afterBytes": 12021474,
+  "reductionPercent": 1.85,
+  "pagesCompared": 65,
+  "maximumRenderedChannelDifference": 0,
+  "productImageProfileUnchanged": true,
+  "method": "Compress PDF object streams and existing streams, retaining original logo and product image pixels and encoding profile."
+}

@@ -12,14 +12,13 @@ import {
 
 /** Homepage manufacturing story, featured categories and product discovery. */
 export function home(products) {
-  // Feature the expanded manufacturing range alongside jewellery bench tools.
+  // Feature the Precision Machining range in the banner and category carousel.
   const featuredCategories = [
     'tube-instrumentation-fittings',
     'hydraulic-hose-fittings',
     'valve-bodies-manifolds',
     'pressure-gauge-accessories',
     'custom-machined-components',
-    'jewellery-tools',
   ].map((id) => categories.find((category) => category.id === id));
   const featured = [
     'p15-01',
@@ -55,31 +54,31 @@ export function home(products) {
           <div class="hero-visual">
             <a
               class="hero-product"
-              href="categories/screwdrivers.html"
-              aria-label="Explore Precision Screwdrivers"
+              href="categories/custom-machined-components.html"
+              aria-label="Explore Custom Machined Components"
             >
               <img
-                src="assets/products/rit-0156-nine-hole-screwdriver-stand-with-screwdrivers.webp"
-                alt="Roshan Industries precision screwdriver stand"
+                src="assets/products/rit-0282-customized-fasteners.jpg"
+                alt="Roshan Industries custom machined components"
                 width="480"
                 height="480"
-              /><span>THE WATCHMAKER’S BENCH</span>
+              /><span>CUSTOM MACHINED COMPONENTS</span>
             </a>
             <div class="hero-small">
-              <a href="categories/eye-loupes.html"
+              <a href="categories/tube-instrumentation-fittings.html"
                 ><img
-                  src="assets/products/rit-0001-plastic-eye-glass-with-golden-ring.webp"
-                  alt="Roshan Industries plastic eye loupes"
+                  src="assets/products/rit-0284-tube-fittings.jpeg"
+                  alt="Roshan Industries tube and instrumentation fittings"
                   width="480"
                   height="480"
-                /><span>Eye loupes & magnifiers</span></a
-              ><a href="categories/clock-keys.html"
+                /><span>Tube & instrumentation fittings</span></a
+              ><a href="categories/valve-bodies-manifolds.html"
                 ><img
-                  src="assets/products/rit-0119-brass-clock-key-sizes-1-75-to-3-00.webp"
-                  alt="Roshan Industries brass clock key"
+                  src="assets/products/rit-0289-check-valve-housing.jpg"
+                  alt="Roshan Industries valve bodies and manifolds"
                   width="480"
                   height="480"
-                /><span>Clock winding keys</span></a
+                /><span>Valve bodies & manifolds</span></a
               >
             </div>
           </div>

@@ -142,17 +142,7 @@ def main():
         "sharedImageResources": True,
     }
     wb = load_workbook(ROOT / "Roshan-Industries-Product-Catalogue.xlsx")
-    fields = [
-        "sku",
-        "name",
-        "description",
-        "category",
-        "family",
-        "cataloguePage",
-        "slot",
-        "image",
-        "url",
-    ]
+    fields = ["sku", "name", "description", "category"]
     # Customer workbook cells, comments and hyperlinks must not contain photo credits.
     for sheet in wb:
         for row in sheet:
@@ -178,20 +168,21 @@ def main():
         for c in categories
     ]:
         sheet = wb[title]
+        assert sheet.max_column == 7
+        assert [sheet.cell(5, col).value for col in range(1, 8)] == [
+            "SKU", "Product", "Description", "Category", "Photo", "Product Page", "Catalogue Reference"
+        ]
         assert sheet.max_row == len(items) + 5
         assert sheet.sheet_properties.tabColor is not None and "Family:" in sheet["A2"].value
         for row, product in enumerate(items, 6):
-            assert [sheet.cell(row, col).value for col in range(1, 10)] == [
+            assert [sheet.cell(row, col).value for col in range(1, 5)] == [
                 product[k] for k in fields
             ]
-            assert sheet.cell(row, 10).value == ("Yes" if product["sku"] in selected else "No")
-            assert sheet.cell(row, 6).hyperlink.target.endswith(
+            assert sheet.cell(row, 7).value == "Page " + str(product["cataloguePage"])
+            assert sheet.cell(row, 7).hyperlink.target.endswith(
                 "#page=" + str(product["cataloguePage"])
             )
-            assert (
-                sheet.cell(row, 8).hyperlink.target == product["image"]
-                and sheet.cell(row, 9).hyperlink.target == product["url"]
-            )
+            assert sheet.cell(row, 6).hyperlink.target == "https://roshan-industries-tech.onrender.com/" + product["url"]
             source = Image.open(ROOT / product["image"]).convert("RGB")
             source.thumbnail((240, 210), Image.Resampling.LANCZOS)
             expected = BytesIO()

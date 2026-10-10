@@ -4,7 +4,21 @@ Watch parts, tools and custom manufacturing in Mumbai, serving customers since 1
 
 [Website](https://roshan-industries-tech.onrender.com/) | [GitHub](https://github.com/hamzaghojaria/Roshan-Industries-Tech) | [Email](mailto:roshanindustriestech@gmail.com)
 
-The current website contains **311 products, 20 categories, five families and 95 New Arrivals**. The synchronized customer PDF has 63 pages; the workbook contains 22 sheets and 622 embedded photographs. These totals describe the current records, not permanent limits.
+The current website contains **311 products, 22 categories, five families and 95 New Arrivals**. The synchronized customer PDF has 65 pages; the workbook contains 24 sheets and 622 product photographs. These totals describe the current records, not permanent limits.
+
+## Update both catalogues
+
+Edit product information once in `src/data/` (or the reviewed descriptions in `src/descriptions.mjs`), then run:
+
+```powershell
+npm run update:catalogues
+```
+
+This builds the website, refreshes stale PDF and Excel exports, verifies their products, photos and links, and copies the results into `dist/`. Unchanged exports are reused. PDF image encodings are cached, so unchanged photographs do not need to be processed again. Internal fingerprints live in `reports/catalogue-export-state.json`, outside the customer workbook.
+
+The Excel catalogue keeps seven customer columns: SKU, Product, Description, Category, Photo, Product Page and Catalogue Reference. Category tabs, filters, frozen headings and embedded photos remain available. Links point to the public website so the workbook can be shared on its own.
+
+The export command requires Python with PyMuPDF, Pillow and openpyxl for read-only verification, plus the bundled Codex Artifact Tool for Excel authoring. This workspace already provides those dependencies. `CATALOGUE_PYTHON` can select another Python executable. Website-only layout changes still need just `npm run build`.
 
 ## Start locally
 
