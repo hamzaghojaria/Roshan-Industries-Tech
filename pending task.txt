@@ -4,9 +4,8 @@ Replace “Watchmaking” in the logo text with “CNC & VMC – All Jobs”. - 
 Organize Trays, Covers and Storage into different categories. - Completed
 Add a punchline to the first page of the catalogue PDF. - Completed
 Home pange banner to have CNC VMC categories -Completed
+Add a watermark to all product images.-- Completed
 
-
-Add a watermark to all product images.-- Working
 exploded image - -- Working
 
 founder photographs. -- Pending
