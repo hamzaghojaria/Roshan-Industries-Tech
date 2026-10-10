@@ -1,0 +1,121 @@
+/* Shared entrance motion uses translate so existing hover transforms stay independent. */
+@keyframes content-arrive {
+  from {
+    opacity: 0.55;
+    translate: 0 12px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.motion-enter {
+  animation: content-arrive 480ms cubic-bezier(0.2, 0.7, 0.3, 1) var(--motion-delay, 0ms) backwards;
+}
+.hero-small > a:nth-child(2) {
+  --motion-delay: 180ms;
+}
+@keyframes banner-drift {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 -4px;
+  }
+}
+.banner-floating .hero-product img {
+  animation: banner-drift 7s ease-in-out infinite alternate;
+}
+.banner-floating .hero-small img {
+  animation: banner-drift 8s ease-in-out 900ms infinite alternate;
+}
+.motion-paused .banner-floating img {
+  animation-play-state: paused;
+}
+@media (hover: hover) and (pointer: fine) {
+  .generation-card,
+  .office-card {
+    transition:
+      transform 220ms ease,
+      box-shadow 220ms ease,
+      border-color 220ms ease;
+  }
+  .generation-card:hover,
+  .office-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #2021240c;
+    border-color: #d9acb4;
+  }
+  .product-card img,
+  .category-card img {
+    transition: transform 320ms ease;
+  }
+}
+.text-link,
+.quiet-link,
+.nav-links > a:not(.button):not(.nav-enquiry) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  transition:
+    color 180ms ease,
+    text-underline-offset 180ms ease;
+}
+.text-link:hover,
+.quiet-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.button,
+.catalogue-download,
+.slider-controls button {
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+@keyframes slide-focus {
+  from {
+    box-shadow: inset 0 0 0 1px #991b2840;
+  }
+  to {
+    box-shadow: inset 0 0 0 1px transparent;
+  }
+}
+@media (max-width: 760px) {
+  .company-slider .slide-settled {
+    animation: slide-focus 420ms ease-out;
+  }
+  .company-slider .generation-portrait {
+    transition: background-color 220ms ease;
+  }
+  .company-slider .is-current-slide .generation-portrait {
+    background-color: #f9ecef;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-enter,
+  .banner-floating img,
+  .company-slider .slide-settled {
+    animation: none !important;
+    opacity: 1;
+    translate: none;
+  }
+  .generation-card:hover,
+  .office-card:hover {
+    transform: none;
+  }
+  .text-link,
+  .quiet-link,
+  .button,
+  .catalogue-download,
+  .slider-controls button,
+  .generation-card,
+  .office-card,
+  .product-card img,
+  .category-card img,
+  .company-slider .generation-portrait {
+    transition: none !important;
+  }
+}

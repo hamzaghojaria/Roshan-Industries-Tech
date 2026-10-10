@@ -17,6 +17,7 @@ function initSliders() {
     let frame = 0;
     let offsets = [];
     let step = 0;
+    let previousSelection = -1;
     // Read geometry only when the track changes size, rather than during every scroll.
     const measure = () => {
       const origin = cards[0].offsetLeft;
@@ -53,6 +54,12 @@ function initSliders() {
     const update = () => {
       frame = 0;
       const selected = current();
+      cards.forEach((card, index) => card.classList.toggle('is-current-slide', index === selected));
+      if (selected !== previousSelection && previousSelection >= 0 && !motion.matches) {
+        cards[selected].classList.remove('slide-settled');
+        requestAnimationFrame(() => cards[selected].classList.add('slide-settled'));
+      }
+      previousSelection = selected;
       position.textContent = `${selected + 1} / ${cards.length}`;
       familyButtons.forEach((button, index) =>
         button.setAttribute('aria-pressed', String(index === selected)),

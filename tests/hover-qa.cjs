@@ -38,10 +38,16 @@ let browser;
   // Both enquiry channels should retain the same hover feedback.
   for (const button of await page.locator('.contact-primary .button').all()) {
     await button.hover();
-    await page.waitForTimeout(350);
-    assert.match(
-      await button.evaluate((el) => getComputedStyle(el).transform),
-      /matrix\(1, 0, 0, 1, 0, -2\)/,
+    await page.waitForFunction(
+      (el) => Math.abs(new DOMMatrix(getComputedStyle(el).transform).f + 2) < 0.01,
+      await button.elementHandle(),
+      { timeout: 2000 },
+    );
+    assert.ok(
+      await button.evaluate(
+        (el) => Math.abs(new DOMMatrix(getComputedStyle(el).transform).f + 2) < 0.01,
+      ),
+      'Enquiry button settles at its two-pixel hover lift',
     );
   }
   await page.locator('#search').focus();

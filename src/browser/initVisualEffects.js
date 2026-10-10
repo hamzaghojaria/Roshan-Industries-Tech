@@ -64,23 +64,67 @@ function initVisualEffects() {
     showcase.addEventListener('pointerleave', () => showcase.classList.remove('spotlight-active'));
     reducedMotion.addEventListener('change', () => showcase.classList.remove('spotlight-active'));
   }
+  // Content is always visible; entrance effects start only when it reaches the viewport.
+  const entrances =
+    'main > section:first-of-type:not(.hero):not(.product-detail), .hero-copy, .page-intro, .detail-image, .detail-copy, .hero-product, .hero-small > a';
+  const reveals =
+    '.section-head, .legacy-layout, .about-story, .about-numbers, .contact-layout, .enquiry-strip, .custom-heading, .custom-grid article, .product-card, .category-card, .generation-card, .office-card';
+  const scheduled = new WeakSet();
+  let revealObserver;
+  let listingObserver;
   if ('IntersectionObserver' in window && !reducedMotion.matches) {
-    const observer = new IntersectionObserver(
+    revealObserver = new IntersectionObserver(
       (entries) => {
         for (const entry of entries)
           if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-revealed');
-            observer.unobserve(entry.target);
+            entry.target.classList.add('motion-enter');
+            revealObserver.unobserve(entry.target);
           }
       },
-      { threshold: 0.12 },
+      { threshold: 0.08 },
     );
-    document
-      .querySelectorAll(
-        '.section-head, .legacy-layout, .about-story, .about-numbers, .contact-layout, .enquiry-strip',
-      )
-      .forEach((element) => {
-        if (element.getBoundingClientRect().top > innerHeight) observer.observe(element);
+    const schedule = (scope) => {
+      scope.querySelectorAll(`${entrances}, ${reveals}`).forEach((element) => {
+        if (scheduled.has(element)) return;
+        scheduled.add(element);
+        const siblings = [...element.parentElement.children];
+        const delay = element.matches('.hero-product')
+          ? 90
+          : element.matches('.hero-small > a')
+            ? 180 + siblings.indexOf(element) * 90
+            : (siblings.indexOf(element) % 6) * 45;
+        element.style.setProperty('--motion-delay', `${delay}ms`);
+        revealObserver.observe(element);
       });
+    };
+    schedule(document);
+    listingObserver = new MutationObserver(() => schedule(document));
+    document.querySelectorAll('.catalogue-grid, .arrivals-grid').forEach((grid) => {
+      listingObserver.observe(grid, { childList: true });
+    });
+    const banner = document.querySelector('.hero-visual');
+    if (banner) {
+      const bannerObserver = new IntersectionObserver(([entry]) => {
+        banner.classList.toggle('banner-floating', entry.isIntersecting && !reducedMotion.matches);
+      });
+      bannerObserver.observe(banner);
+      reducedMotion.addEventListener('change', () => {
+        if (reducedMotion.matches) {
+          bannerObserver.disconnect();
+          banner.classList.remove('banner-floating');
+        }
+      });
+    }
   }
+  reducedMotion.addEventListener('change', () => {
+    if (!reducedMotion.matches) return;
+    revealObserver?.disconnect();
+    listingObserver?.disconnect();
+    document
+      .querySelectorAll('.motion-enter')
+      .forEach((element) => element.classList.remove('motion-enter'));
+  });
+  document.addEventListener('visibilitychange', () => {
+    document.documentElement.classList.toggle('motion-paused', document.hidden);
+  });
 }

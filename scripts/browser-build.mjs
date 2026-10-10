@@ -22,6 +22,7 @@ export const themeComponents = [
   'products',
   'company',
   'interactions',
+  'motion',
 ];
 
 /** Keep all feature state private and preserve the existing file:// preview workflow. */

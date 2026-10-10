@@ -8,7 +8,7 @@
     "check": "node scripts/check.mjs",
     "test:content": "node tests/content-qa.cjs",
     "test:catalogue": "node tests/multipage-qa.cjs",
-    "test:motion": "node tests/hover-qa.cjs",
+    "test:motion": "node tests/shared-motion-qa.cjs && node tests/hover-qa.cjs",
     "test:mobile": "node tests/mobile-qa.cjs",
     "test:anchors": "node tests/anchor-qa.cjs",
     "format": "prettier --write src scripts/*.mjs tests/**/*.cjs package.json README.md docs/*.md",
