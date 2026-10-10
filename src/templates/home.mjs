@@ -58,8 +58,8 @@ export function home(products) {
               aria-label="Explore Custom Machined Components"
             >
               <img
-                src="assets/products/rit-0282-customized-fasteners.jpg"
-                alt="Roshan Industries custom machined components"
+                src="assets/products/rit-0295-oil-and-gas-machined-components.jpg"
+                alt="Precision machined metal housings and flanges from Roshan Industries"
                 width="480"
                 height="480"
               /><span>CUSTOM MACHINED COMPONENTS</span>
