@@ -38,7 +38,10 @@ export function productPage(p, products) {
             <h2>About this product</h2>
             <p>${esc(p.description)}</p>
           </div>
-          <p class="product-note">${esc(p.note)}</p>
+          <p class="product-note">
+            Please contact Roshan Industries to confirm the required variant, application, quantity
+            and quotation.
+          </p>
           <dl class="spec-table">
             <div>
               <dt>SKU</dt>
